@@ -1,5 +1,15 @@
 # 次元战争 · Web 垂直切片
 
+## GitHub Pages 正式体验
+
+正式网站：[直接游玩次元战争](https://yeklongdi.github.io/dimensional-war-game-pages/)，无需 GitHub 登录。
+
+工程与原始文档保存在私有仓库 `yeklongdi/dimensional-war-game`；公开仓库 `yeklongdi/dimensional-war-game-pages` 仅保存 8 个静态运行文件、部署工作流与简短说明。私有仓库 Actions 使用 `npm ci` 和现有脚本构建检查；通过已登录的 GitHub CLI 同步成品后，公开仓库的 main push 自动部署，不向 Actions 添加跨仓库凭据。
+
+本次部署检查为20个测试文件、292项通过（保留原285项，新增7项素材路径检查）。已在线验证菜单、地图、p001–p006、序幕战斗移动规划、独立调试入口及刷新继续；没有在线完整通关七关或打完两战。具体版本、验收证据与更新步骤见 [GitHub Pages 部署记录](docs/github-pages-deployment.md)。
+
+localhost 与正式网站的存档相互独立，不会自动迁移或跨设备同步。两首 WAV 保留原音质，较大的音乐文件可能使首次加载变慢。
+
 当前已完成 M0–M4、「太阳市大地图分关选关」及「战棋移动路线、终点虚影与拐点规划」。正常流程为：主菜单 → 太阳市彩绘地图 → 地点及右侧关卡面板 → 开始／继续本关 → 本关完成直接返回地图。七关顺序覆盖序幕与第一幕的 25 个主场景，两场真实战斗保留。
 
 工程目录：`E:\笔记\次元战争设定\游戏文件`。任务依据为 `docs/01-任务书.md` §12 与 `docs/map-selection-spec.md`；M4 三卡、整幕重玩和 v1 唯一格式已被替代，历史验收不改写。
