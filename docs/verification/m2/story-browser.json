@@ -1,0 +1,325 @@
+{
+  "visitedScenes": [
+    "p001",
+    "p002",
+    "p003",
+    "p004",
+    "p005",
+    "p006",
+    "p007",
+    "p008",
+    "p009",
+    "a001",
+    "a002",
+    "a003",
+    "a004",
+    "a005",
+    "a006",
+    "a007",
+    "a008",
+    "a009",
+    "a010",
+    "a011",
+    "a012",
+    "a013",
+    "a014",
+    "a015",
+    "a016"
+  ],
+  "forbiddenText": [],
+  "battleCalls": [
+    "battle_prologue_tutorial",
+    "battle_black_humanoid"
+  ],
+  "checks": {
+    "a007DisabledUnchanged": true,
+    "a008StreamerRight": true,
+    "a008ExtraActorsHidden": true,
+    "a010OriginalExplanation": true,
+    "a010ReturnedToSameChoice": true,
+    "act1End": true,
+    "flags12": true,
+    "restartP001": true
+  },
+  "checkpoints": [
+    {
+      "actors": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "image": "/assets/portraits/hero.png",
+          "name": "",
+          "position": "left",
+          "rear": "false",
+          "slot": "left",
+          "speaking": "false"
+        },
+        {
+          "actor": "黑衣人甲",
+          "asset": "char_organization_member_placeholder",
+          "name": "黑\n黑衣人甲\n立绘占位",
+          "position": "left",
+          "rear": "false",
+          "slot": "left",
+          "speaking": "false"
+        },
+        {
+          "actor": "黑衣人乙",
+          "asset": "char_organization_member_placeholder",
+          "name": "黑\n黑衣人乙\n立绘占位",
+          "position": "right",
+          "rear": "false",
+          "slot": "right",
+          "speaking": "false"
+        },
+        {
+          "actor": "怪盗",
+          "asset": "char_thief_masked_black_placeholder",
+          "name": "蒙\n蒙面人\n立绘占位",
+          "position": "center",
+          "rear": "false",
+          "slot": "center",
+          "speaking": "false"
+        }
+      ],
+      "stage": {
+        "actId": "prologue",
+        "nodeIndex": "3",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "p006",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "battle",
+        "waitToken": "1:35"
+      },
+      "text": "M1 · 战斗占位\n战斗\nbattle_prologue_tutorial\n\n本阶段按胜利结果继续剧情。\n\n点击继续"
+    },
+    {
+      "actors": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "image": "/assets/portraits/hero.png",
+          "name": "",
+          "position": "bed",
+          "rear": "false",
+          "slot": "center",
+          "speaking": "false"
+        },
+        {
+          "actor": "黑色结晶",
+          "asset": "prop_dark_god_crystal_placeholder",
+          "name": "黑\n黑色结晶\n立绘占位",
+          "position": "center",
+          "rear": "false",
+          "slot": "center",
+          "speaking": "false"
+        }
+      ],
+      "stage": {
+        "actId": "prologue",
+        "nodeIndex": "14",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "p009",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "end",
+        "waitToken": "1:55"
+      },
+      "text": "次元战争\n序幕结束\n进入第一幕"
+    },
+    {
+      "actors": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "image": "/assets/portraits/hero.png",
+          "name": "",
+          "position": "center",
+          "rear": "false",
+          "slot": "center",
+          "speaking": "false"
+        },
+        {
+          "actor": "虚拟主播",
+          "asset": "char_virtual_streamer_shy",
+          "name": "虚\n虚拟主播\n立绘占位",
+          "position": "right",
+          "rear": "false",
+          "slot": "right",
+          "speaking": "false"
+        },
+        {
+          "actor": "怪盗",
+          "asset": "char_thief_smile",
+          "image": "/assets/portraits/thief.png",
+          "name": "",
+          "position": "window",
+          "rear": "false",
+          "slot": "far-left",
+          "speaking": "false"
+        },
+        {
+          "actor": "老师",
+          "asset": "char_teacher_placeholder",
+          "name": "老\n老师\n立绘占位",
+          "position": "front",
+          "rear": "false",
+          "slot": "center",
+          "speaking": "false"
+        },
+        {
+          "actor": "反派",
+          "asset": "char_villain_calm",
+          "name": "反\n反派\n立绘占位",
+          "position": "back",
+          "rear": "true",
+          "slot": "far-right",
+          "speaking": "false"
+        }
+      ],
+      "stage": {
+        "actId": "act1",
+        "nodeIndex": "2",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "a007",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "choice",
+        "waitToken": "1:102"
+      },
+      "text": "男高选择由谁带他参观校园。\n怪盗。\n暂未开放\n虚拟主播。\n反派。\n暂未开放\n让老师选择。\n暂未开放"
+    },
+    {
+      "actors": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "image": "/assets/portraits/hero.png",
+          "name": "",
+          "position": "left",
+          "rear": "false",
+          "slot": "left",
+          "speaking": "false"
+        },
+        {
+          "actor": "虚拟主播",
+          "asset": "char_virtual_streamer_shy",
+          "name": "虚\n虚拟主播\n立绘占位",
+          "position": "right",
+          "rear": "false",
+          "slot": "right",
+          "speaking": "false"
+        }
+      ],
+      "stage": {
+        "actId": "act1",
+        "nodeIndex": "2",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "a010",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "choice",
+        "waitToken": "1:123"
+      },
+      "text": "男高是否进入废弃施工现场。\n去废弃施工现场看看。\n回班上。"
+    },
+    {
+      "actors": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "image": "/assets/portraits/hero.png",
+          "name": "",
+          "position": "bottom_center",
+          "rear": "false",
+          "slot": "center",
+          "speaking": "false"
+        },
+        {
+          "actor": "虚拟主播",
+          "asset": "char_virtual_streamer_shy",
+          "name": "虚\n虚拟主播\n立绘占位",
+          "position": "top_right",
+          "rear": "false",
+          "slot": "right",
+          "speaking": "false"
+        },
+        {
+          "actor": "大师之剑",
+          "asset": "prop_master_sword_corrupted_placeholder",
+          "name": "大\n大师之剑\n立绘占位",
+          "position": "bottom_center",
+          "rear": "false",
+          "slot": "center",
+          "speaking": "false"
+        },
+        {
+          "actor": "黑色人形",
+          "asset": "char_black_humanoid_placeholder",
+          "name": "黑\n黑色人形\n立绘占位",
+          "position": "bottom_left",
+          "rear": "false",
+          "slot": "left",
+          "speaking": "false"
+        }
+      ],
+      "stage": {
+        "actId": "act1",
+        "nodeIndex": "3",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "a014",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "battle",
+        "waitToken": "1:160"
+      },
+      "text": "M1 · 战斗占位\n战斗\nbattle_black_humanoid\n\n本阶段按胜利结果继续剧情。\n\n点击继续"
+    },
+    {
+      "actors": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "image": "/assets/portraits/hero.png",
+          "name": "",
+          "position": "center",
+          "rear": "false",
+          "slot": "center",
+          "speaking": "false"
+        },
+        {
+          "actor": "虚拟主播",
+          "asset": "char_virtual_streamer_shy",
+          "name": "虚\n虚拟主播\n立绘占位",
+          "position": "center_front",
+          "rear": "false",
+          "slot": "center",
+          "speaking": "false"
+        }
+      ],
+      "stage": {
+        "actId": "act1",
+        "nodeIndex": "5",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "a016",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "end",
+        "waitToken": "1:168"
+      },
+      "text": "次元战争\n第一幕结束\n重新开始"
+    }
+  ],
+  "console": {
+    "errors": [],
+    "warningCount": 51,
+    "uniqueWarnings": 51
+  }
+}

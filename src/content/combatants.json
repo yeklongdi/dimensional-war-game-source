@@ -1,0 +1,34 @@
+[
+  {
+    "id": "hero", "name": "男高", "team": "player",
+    "abilities": { "str": 8, "dex": 15, "con": 14, "int": null, "wis": 15, "cha": 8 },
+    "ac": 14, "maxHp": 10, "speed": 30,
+    "attacks": [{ "id": "unarmed", "name": "徒手", "kind": "melee", "bonus": 4, "damage": "1d4+2", "damageType": "bludgeoning", "reach": 1, "martial": true }],
+    "features": ["martial_arts", "death_saves"], "resistances": [], "immunities": [], "vulnerabilities": []
+  },
+  {
+    "id": "black_a", "name": "黑衣人甲", "team": "enemy",
+    "abilities": { "str": 11, "dex": 12, "con": 10, "int": 10, "wis": 11, "cha": 10 },
+    "ac": 12, "maxHp": 6, "speed": 30,
+    "attacks": [{ "id": "slash", "name": "挥砍", "kind": "melee", "bonus": 2, "damage": "1d6", "damageType": "slashing", "reach": 1 }],
+    "features": [], "resistances": [], "immunities": [], "vulnerabilities": []
+  },
+  {
+    "id": "black_b", "name": "黑衣人乙", "team": "enemy",
+    "abilities": { "str": 11, "dex": 12, "con": 10, "int": 10, "wis": 11, "cha": 10 },
+    "ac": 12, "maxHp": 6, "speed": 30,
+    "attacks": [
+      { "id": "slash", "name": "挥砍", "kind": "melee", "bonus": 2, "damage": "1d6", "damageType": "slashing", "reach": 1 },
+      { "id": "device", "name": "金属装置", "kind": "ranged", "bonus": 2, "damage": "1d6", "damageType": "piercing", "range": { "normal": 4, "max": 12 } }
+    ],
+    "features": ["prefer_ranged"], "resistances": [], "immunities": [], "vulnerabilities": []
+  },
+  {
+    "id": "black_humanoid", "name": "黑色人形", "team": "enemy",
+    "abilities": { "str": 6, "dex": 14, "con": 13, "int": 6, "wis": 10, "cha": 8 },
+    "ac": 12, "maxHp": 16, "speed": 40,
+    "attacks": [{ "id": "claw", "name": "爪击", "kind": "melee", "bonus": 4, "damage": "2d6+2", "damageType": "necrotic", "reach": 1 }],
+    "features": [], "resistances": ["acid", "cold", "fire", "lightning", "thunder"],
+    "immunities": ["necrotic", "poison"], "vulnerabilities": ["radiant"]
+  }
+]

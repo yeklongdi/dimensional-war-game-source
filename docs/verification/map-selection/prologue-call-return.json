@@ -1,0 +1,36 @@
+{
+  "audioCount": 1,
+  "body": "仓库区外围·怪盗离开\n蒙\n蒙面人\n立绘占位\n序幕　 /　 次元战争\n\n几个黑衣人倒在\n\n点击补全文字\n返回地图\n返回主菜单\n\n最近存档：仓库区事件 · 仓库区外围·怪盗离开 · 2026/10/21 17:23:55",
+  "buttons": [
+    {
+      "disabled": false,
+      "id": "return-map",
+      "text": "返回地图"
+    },
+    {
+      "disabled": false,
+      "id": "return-menu",
+      "text": "返回主菜单"
+    }
+  ],
+  "stage": {
+    "actId": "prologue",
+    "bgmId": "bgm_first_battle_after",
+    "navToken": "5:4:story",
+    "nodeIndex": "3",
+    "optionIndex": "",
+    "optionNodeIndex": "",
+    "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p007\"},\"savedAt\":1792574635876}",
+    "saveRequest": "11",
+    "saveStatus": "saved",
+    "sceneId": "p007",
+    "session": "5",
+    "testid": "story-stage",
+    "typingComplete": "false",
+    "waitKind": "text",
+    "waitToken": "5:12"
+  },
+  "stageCount": 1,
+  "text": "几个黑衣人倒在",
+  "units": []
+}

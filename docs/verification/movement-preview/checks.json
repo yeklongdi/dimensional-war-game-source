@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-21",
+  "typecheck": "passed",
+  "testFiles": 19,
+  "tests": 285,
+  "previousTestsUnmodified": 242,
+  "addedTests": 43,
+  "build": "passed",
+  "buildModules": 63,
+  "codeFilesChecked": 87,
+  "codeFilesOver400": 0,
+  "newAny": 0,
+  "newDependencies": 0,
+  "protectedFiles": 158,
+  "protectedUnchanged": 158,
+  "mainlineScenes": 25,
+  "mainlineTexts": 161,
+  "sceneAndTextComparison": "equal",
+  "consoleErrors": 0,
+  "consoleWarnings": 51,
+  "distinctWarnings": 51,
+  "m2": {
+    "seed": 42,
+    "runs": 2,
+    "round": 3,
+    "heroHp": 10,
+    "rngDraws": 17,
+    "fullLog": "equal"
+  }
+}

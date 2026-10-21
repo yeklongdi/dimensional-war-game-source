@@ -1,0 +1,597 @@
+[
+  {
+    "name": "corrupt",
+    "protectedBefore": {
+      "page": {
+        "audioCount": 1,
+        "body": "奶奶家门前\n序幕　 /　 次元战争\n\n点击补全文字\n返回地图\n返回主菜单\n\nv2 存档无法读取：格式损坏。原文已保留，本次进度暂不保存。\n\n放弃旧档，重新保存",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          },
+          {
+            "disabled": false,
+            "id": "replace-save",
+            "text": "放弃旧档，重新保存"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:2:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "",
+          "saveRequest": "2",
+          "saveStatus": "blocked",
+          "sceneId": "p001",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "stageCount": 1,
+        "text": "",
+        "units": []
+      },
+      "storage": {
+        "originalV1": "",
+        "raw": "这是一份无法读取的v2验收存档",
+        "scenario": "corrupt",
+        "testid": "fixture-storage",
+        "v1": "",
+        "v1Unchanged": "true",
+        "writeKeys": "",
+        "writes": "0"
+      }
+    },
+    "cancelled": {
+      "page": {
+        "audioCount": 1,
+        "body": "奶奶家门前\n序幕　 /　 次元战争\n\n男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前\n\n点击补全文字\n返回地图\n返回主菜单\n\nv2 存档无法读取：格式损坏。原文已保留，本次进度暂不保存。\n\n放弃旧档，重新保存",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          },
+          {
+            "disabled": false,
+            "id": "replace-save",
+            "text": "放弃旧档，重新保存"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:4:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "",
+          "saveRequest": "2",
+          "saveStatus": "blocked",
+          "sceneId": "p001",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "stageCount": 1,
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前",
+        "units": []
+      },
+      "storage": {
+        "originalV1": "",
+        "raw": "这是一份无法读取的v2验收存档",
+        "scenario": "corrupt",
+        "testid": "fixture-storage",
+        "v1": "",
+        "v1Unchanged": "true",
+        "writeKeys": "",
+        "writes": "0"
+      }
+    },
+    "confirmed": {
+      "page": {
+        "audioCount": 1,
+        "body": "奶奶家门前\n序幕　 /　 次元战争\n\n男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。\n\n点击 / 空格 / 回车　继续 ▸\n返回地图\n返回主菜单\n\n最近存档：搬入奶奶家 · 奶奶家门前 · 2026/10/21 17:39:20",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:6:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792575560578}",
+          "saveRequest": "3",
+          "saveStatus": "saved",
+          "sceneId": "p001",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "stageCount": 1,
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。",
+        "units": []
+      },
+      "storage": {
+        "originalV1": "",
+        "raw": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792575560578}",
+        "scenario": "corrupt",
+        "testid": "fixture-storage",
+        "v1": "",
+        "v1Unchanged": "true",
+        "writeKeys": "dw.save.v2",
+        "writes": "1"
+      }
+    },
+    "saved": {
+      "page": {
+        "audioCount": 1,
+        "body": "奶奶家门前\n序幕　 /　 次元战争\n\n男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。\n\n点击 / 空格 / 回车　继续 ▸\n返回地图\n返回主菜单\n\n最近存档：搬入奶奶家 · 奶奶家门前 · 2026/10/21 17:39:20",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:6:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792575560578}",
+          "saveRequest": "3",
+          "saveStatus": "saved",
+          "sceneId": "p001",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "stageCount": 1,
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。",
+        "units": []
+      },
+      "storage": {
+        "originalV1": "",
+        "raw": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792575560578}",
+        "scenario": "corrupt",
+        "testid": "fixture-storage",
+        "v1": "",
+        "v1Unchanged": "true",
+        "writeKeys": "dw.save.v2",
+        "writes": "1"
+      }
+    }
+  },
+  {
+    "name": "corrupt-v1",
+    "protectedBefore": {
+      "page": {
+        "audioCount": 1,
+        "body": "奶奶家门前\n序幕　 /　 次元战争\n\n男\n\n点击补全文字\n返回地图\n返回主菜单\n\n旧存档无法读取：格式损坏。原存档已保留，本次进度暂不保存。\n\n放弃旧档，重新保存",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          },
+          {
+            "disabled": false,
+            "id": "replace-save",
+            "text": "放弃旧档，重新保存"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:2:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "",
+          "saveRequest": "2",
+          "saveStatus": "blocked",
+          "sceneId": "p001",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "stageCount": 1,
+        "text": "男",
+        "units": []
+      },
+      "storage": {
+        "originalV1": "  无法读取的v1原件\n ",
+        "raw": "",
+        "scenario": "corrupt-v1",
+        "testid": "fixture-storage",
+        "v1": "  无法读取的v1原件\n ",
+        "v1Unchanged": "true",
+        "writeKeys": "",
+        "writes": "0"
+      }
+    },
+    "cancelled": {
+      "page": {
+        "audioCount": 1,
+        "body": "奶奶家门前\n序幕　 /　 次元战争\n\n男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前\n\n点击补全文字\n返回地图\n返回主菜单\n\n旧存档无法读取：格式损坏。原存档已保留，本次进度暂不保存。\n\n放弃旧档，重新保存",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          },
+          {
+            "disabled": false,
+            "id": "replace-save",
+            "text": "放弃旧档，重新保存"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:4:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "",
+          "saveRequest": "2",
+          "saveStatus": "blocked",
+          "sceneId": "p001",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "stageCount": 1,
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前",
+        "units": []
+      },
+      "storage": {
+        "originalV1": "  无法读取的v1原件\n ",
+        "raw": "",
+        "scenario": "corrupt-v1",
+        "testid": "fixture-storage",
+        "v1": "  无法读取的v1原件\n ",
+        "v1Unchanged": "true",
+        "writeKeys": "",
+        "writes": "0"
+      }
+    },
+    "confirmed": {
+      "page": {
+        "audioCount": 1,
+        "body": "奶奶家门前\n序幕　 /　 次元战争\n\n男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。\n\n点击 / 空格 / 回车　继续 ▸\n返回地图\n返回主菜单\n\n最近存档：搬入奶奶家 · 奶奶家门前 · 2026/10/21 17:39:26",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:6:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792575566135}",
+          "saveRequest": "3",
+          "saveStatus": "saved",
+          "sceneId": "p001",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "stageCount": 1,
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。",
+        "units": []
+      },
+      "storage": {
+        "originalV1": "  无法读取的v1原件\n ",
+        "raw": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792575566135}",
+        "scenario": "corrupt-v1",
+        "testid": "fixture-storage",
+        "v1": "  无法读取的v1原件\n ",
+        "v1Unchanged": "true",
+        "writeKeys": "dw.save.v2",
+        "writes": "1"
+      }
+    },
+    "saved": {
+      "page": {
+        "audioCount": 1,
+        "body": "奶奶家门前\n序幕　 /　 次元战争\n\n男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。\n\n点击 / 空格 / 回车　继续 ▸\n返回地图\n返回主菜单\n\n最近存档：搬入奶奶家 · 奶奶家门前 · 2026/10/21 17:39:26",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:6:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792575566135}",
+          "saveRequest": "3",
+          "saveStatus": "saved",
+          "sceneId": "p001",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "stageCount": 1,
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。",
+        "units": []
+      },
+      "storage": {
+        "originalV1": "  无法读取的v1原件\n ",
+        "raw": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792575566135}",
+        "scenario": "corrupt-v1",
+        "testid": "fixture-storage",
+        "v1": "  无法读取的v1原件\n ",
+        "v1Unchanged": "true",
+        "writeKeys": "dw.save.v2",
+        "writes": "1"
+      }
+    }
+  },
+  {
+    "name": "corrupt-delayed",
+    "confirmed": {
+      "page": {
+        "audioCount": 1,
+        "body": "奶奶家门前\n序幕　 /　 次元战争\n\n男高拎着行李箱\n\n点击补全文字\n返回地图\n返回主菜单\n\n正在保存…",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:4:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "",
+          "saveRequest": "3",
+          "saveStatus": "saving",
+          "sceneId": "p001",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "stageCount": 1,
+        "text": "男高拎着行李箱",
+        "units": []
+      },
+      "storage": {
+        "originalV1": "",
+        "raw": "这是一份无法读取的v2验收存档",
+        "scenario": "corrupt-delayed",
+        "testid": "fixture-storage",
+        "v1": "",
+        "v1Unchanged": "true",
+        "writeKeys": "",
+        "writes": "0"
+      }
+    },
+    "transferred": {
+      "page": {
+        "audioCount": 1,
+        "body": "次元战争 · 主线地图\n\n太阳市\n\n主线进度 0 / 7 · 搬入奶奶家\n\n奶\n奶奶家\n\n地点 / 关卡\n\n奶奶家\n\n第 1 关 · 序幕\n\n搬入奶奶家\n\n已保留最近场景检查点\n\n继续关卡\n\n完成本关后自动返回地图。已完成关卡仅供查看。\n\n＋\n−\n定位当前关卡\n返回主菜单\n\n正在保存…",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "location-grandma_home",
+            "text": "奶奶奶家"
+          },
+          {
+            "disabled": true,
+            "id": "enter-prologue_01",
+            "text": "继续关卡"
+          },
+          {
+            "disabled": false,
+            "id": "map-zoom-in",
+            "text": "＋"
+          },
+          {
+            "disabled": false,
+            "id": "map-zoom-out",
+            "text": "−"
+          },
+          {
+            "disabled": false,
+            "id": "map-focus",
+            "text": "定位当前关卡"
+          },
+          {
+            "disabled": false,
+            "id": "map-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-25.39199999999994}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "navToken": "4:5:map",
+          "saveJson": "",
+          "saveRequest": "4",
+          "saveStatus": "saving",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "4",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "visibleNodes": "1"
+        },
+        "stageCount": 1,
+        "text": "",
+        "units": []
+      },
+      "storage": {
+        "originalV1": "",
+        "raw": "这是一份无法读取的v2验收存档",
+        "scenario": "corrupt-delayed",
+        "testid": "fixture-storage",
+        "v1": "",
+        "v1Unchanged": "true",
+        "writeKeys": "",
+        "writes": "0"
+      }
+    },
+    "saved": {
+      "page": {
+        "audioCount": 1,
+        "body": "次元战争 · 主线地图\n\n太阳市\n\n主线进度 0 / 7 · 搬入奶奶家\n\n奶\n奶奶家\n\n地点 / 关卡\n\n奶奶家\n\n第 1 关 · 序幕\n\n搬入奶奶家\n\n已保留最近场景检查点\n\n继续关卡\n\n完成本关后自动返回地图。已完成关卡仅供查看。\n\n＋\n−\n定位当前关卡\n返回主菜单\n\n最近存档：搬入奶奶家 · 奶奶家门前 · 2026/10/21 17:41:05",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "location-grandma_home",
+            "text": "奶奶奶家"
+          },
+          {
+            "disabled": false,
+            "id": "enter-prologue_01",
+            "text": "继续关卡"
+          },
+          {
+            "disabled": false,
+            "id": "map-zoom-in",
+            "text": "＋"
+          },
+          {
+            "disabled": false,
+            "id": "map-zoom-out",
+            "text": "−"
+          },
+          {
+            "disabled": false,
+            "id": "map-focus",
+            "text": "定位当前关卡"
+          },
+          {
+            "disabled": false,
+            "id": "map-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-25.39199999999994}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "navToken": "4:5:map",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792575665066}",
+          "saveRequest": "4",
+          "saveStatus": "saved",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "4",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "visibleNodes": "1"
+        },
+        "stageCount": 1,
+        "text": "",
+        "units": []
+      },
+      "storage": {
+        "originalV1": "",
+        "raw": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792575665066}",
+        "scenario": "corrupt-delayed",
+        "testid": "fixture-storage",
+        "v1": "",
+        "v1Unchanged": "true",
+        "writeKeys": "dw.save.v2",
+        "writes": "1"
+      }
+    }
+  }
+]

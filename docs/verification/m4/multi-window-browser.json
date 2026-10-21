@@ -1,0 +1,366 @@
+{
+  "checks": [
+    {
+      "name": "第二窗口从A016继续",
+      "state": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false"
+          },
+          {
+            "actor": "虚拟主播",
+            "asset": "char_virtual_streamer_shy",
+            "position": "center_front",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false"
+          }
+        ],
+        "audio": [
+          {
+            "assetId": "bgm_scene_transition",
+            "audioState": "silent",
+            "paused": true,
+            "src": null,
+            "testid": "bgm-player"
+          }
+        ],
+        "body": "第一幕结束\n虚\n虚拟主播\n立绘占位\n第一幕　 /　 次元战争\n\n第一幕结束。\n\n点击 / 空格 / 回车　继续 ▸\n返回主菜单\n\n最近存档：第一幕 · 第一幕结束 · 2026/10/21 08:35:03",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "act1",
+          "bgmId": "bgm_scene_transition",
+          "navToken": "2:1:story",
+          "nodeIndex": "2",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"actId\":\"act1\",\"sceneId\":\"a016\",\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true,\"flag_battle_black_humanoid_won\":true,\"flag_act1_a014_01\":true,\"flag_act1_a014_02\":true,\"flag_act1_a015_01\":true,\"flag_act1_a016_01\":true,\"flag_act1_completed\":true},\"savedAt\":1792542903514,\"unlockedActs\":[\"prologue\",\"act1\"]}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "sceneId": "a016",
+          "session": "2",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "2:1"
+        },
+        "stageCount": 1,
+        "text": "第一幕结束。",
+        "units": []
+      }
+    },
+    {
+      "name": "窗口一重玩序幕",
+      "a": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false"
+          }
+        ],
+        "audio": [
+          {
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "paused": false,
+            "src": "/assets/audio/homecoming.wav",
+            "testid": "bgm-player"
+          }
+        ],
+        "body": "奶奶家门前\n序幕　 /　 次元战争\n\n男高拎着行李箱和行李\n\n点击补全文字\n返回主菜单\n\n最近存档：序幕 · 奶奶家门前 · 2026/10/21 08:35:04",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:2:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"actId\":\"prologue\",\"sceneId\":\"p001\",\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true,\"flag_battle_black_humanoid_won\":true,\"flag_act1_a014_01\":true,\"flag_act1_a014_02\":true,\"flag_act1_a015_01\":true,\"flag_act1_a016_01\":true,\"flag_act1_completed\":true},\"savedAt\":1792542904280,\"unlockedActs\":[\"prologue\",\"act1\"]}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "sceneId": "p001",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "stageCount": 1,
+        "text": "男高拎着行李箱和行李",
+        "units": []
+      },
+      "b": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false"
+          },
+          {
+            "actor": "虚拟主播",
+            "asset": "char_virtual_streamer_shy",
+            "position": "center_front",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false"
+          }
+        ],
+        "audio": [
+          {
+            "assetId": "bgm_scene_transition",
+            "audioState": "silent",
+            "paused": true,
+            "src": null,
+            "testid": "bgm-player"
+          }
+        ],
+        "body": "第一幕结束\n虚\n虚拟主播\n立绘占位\n第一幕　 /　 次元战争\n\n第一幕结束。\n\n点击 / 空格 / 回车　继续 ▸\n返回主菜单\n\n最近存档：序幕 · 奶奶家门前 · 2026/10/21 08:35:04",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "act1",
+          "bgmId": "bgm_scene_transition",
+          "navToken": "2:1:story",
+          "nodeIndex": "2",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"actId\":\"prologue\",\"sceneId\":\"p001\",\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true,\"flag_battle_black_humanoid_won\":true,\"flag_act1_a014_01\":true,\"flag_act1_a014_02\":true,\"flag_act1_a015_01\":true,\"flag_act1_a016_01\":true,\"flag_act1_completed\":true},\"savedAt\":1792542904280,\"unlockedActs\":[\"prologue\",\"act1\"]}",
+          "saveRequest": "1",
+          "saveStatus": "ready",
+          "sceneId": "a016",
+          "session": "2",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "2:1"
+        },
+        "stageCount": 1,
+        "text": "第一幕结束。",
+        "units": []
+      }
+    },
+    {
+      "name": "窗口二最后保存A016，窗口一不跳场景",
+      "a": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false"
+          }
+        ],
+        "audio": [
+          {
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "paused": false,
+            "src": "/assets/audio/homecoming.wav",
+            "testid": "bgm-player"
+          }
+        ],
+        "body": "奶奶家门前\n序幕　 /　 次元战争\n\n男高拎着行李箱和行李袋，站在奶奶家门前。\n\n\n点击补全文字\n返回主菜单\n\n最近存档：第一幕 · 第一幕结束 · 2026/10/21 08:35:04",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:2:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"actId\":\"act1\",\"sceneId\":\"a016\",\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true,\"flag_battle_black_humanoid_won\":true,\"flag_act1_a014_01\":true,\"flag_act1_a014_02\":true,\"flag_act1_a015_01\":true,\"flag_act1_a016_01\":true,\"flag_act1_completed\":true},\"savedAt\":1792542904717,\"unlockedActs\":[\"prologue\",\"act1\"]}",
+          "saveRequest": "1",
+          "saveStatus": "ready",
+          "sceneId": "p001",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "stageCount": 1,
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n",
+        "units": []
+      },
+      "b": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false"
+          },
+          {
+            "actor": "虚拟主播",
+            "asset": "char_virtual_streamer_shy",
+            "position": "center_front",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false"
+          }
+        ],
+        "audio": [
+          {
+            "assetId": "bgm_scene_transition",
+            "audioState": "silent",
+            "paused": true,
+            "src": null,
+            "testid": "bgm-player"
+          }
+        ],
+        "body": "第一幕结束\n虚\n虚拟主播\n立绘占位\n第一幕　 /　 次元战争\n次元战争\n第一幕结束\n返回关卡选择\n返回主菜单\n\n最近存档：第一幕 · 第一幕结束 · 2026/10/21 08:35:04",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "end-levels",
+            "text": "返回关卡选择"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "act1",
+          "bgmId": "bgm_scene_transition",
+          "navToken": "2:1:story",
+          "nodeIndex": "5",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"actId\":\"act1\",\"sceneId\":\"a016\",\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true,\"flag_battle_black_humanoid_won\":true,\"flag_act1_a014_01\":true,\"flag_act1_a014_02\":true,\"flag_act1_a015_01\":true,\"flag_act1_a016_01\":true,\"flag_act1_completed\":true},\"savedAt\":1792542904717,\"unlockedActs\":[\"prologue\",\"act1\"]}",
+          "saveRequest": "2",
+          "saveStatus": "saved",
+          "sceneId": "a016",
+          "session": "2",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "end",
+          "waitToken": "2:2"
+        },
+        "stageCount": 1,
+        "units": []
+      }
+    },
+    {
+      "name": "窗口一继续最新A016",
+      "state": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false"
+          },
+          {
+            "actor": "虚拟主播",
+            "asset": "char_virtual_streamer_shy",
+            "position": "center_front",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false"
+          }
+        ],
+        "audio": [
+          {
+            "assetId": "bgm_scene_transition",
+            "audioState": "silent",
+            "paused": true,
+            "src": null,
+            "testid": "bgm-player"
+          }
+        ],
+        "body": "第一幕结束\n虚\n虚拟主播\n立绘占位\n第一幕　 /　 次元战争\n\n第一幕结束。\n\n点击 / 空格 / 回车　继续 ▸\n返回主菜单\n\n最近存档：第一幕 · 第一幕结束 · 2026/10/21 08:35:05",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "act1",
+          "bgmId": "bgm_scene_transition",
+          "navToken": "5:4:story",
+          "nodeIndex": "2",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"actId\":\"act1\",\"sceneId\":\"a016\",\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true,\"flag_battle_black_humanoid_won\":true,\"flag_act1_a014_01\":true,\"flag_act1_a014_02\":true,\"flag_act1_a015_01\":true,\"flag_act1_a016_01\":true,\"flag_act1_completed\":true},\"savedAt\":1792542905362,\"unlockedActs\":[\"prologue\",\"act1\"]}",
+          "saveRequest": "2",
+          "saveStatus": "saved",
+          "sceneId": "a016",
+          "session": "5",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "5:1"
+        },
+        "stageCount": 1,
+        "text": "第一幕结束。",
+        "units": []
+      }
+    }
+  ],
+  "logs": [
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_school_hallway_day] 背景 bg_school_hallway_day 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T00:35:03.521Z",
+      "url": "http://127.0.0.1:5174/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bgm_scene_transition] 音频 bgm_scene_transition 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T00:35:03.522Z",
+      "url": "http://127.0.0.1:5174/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:char_virtual_streamer_shy] 立绘 char_virtual_streamer_shy 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T00:35:03.522Z",
+      "url": "http://127.0.0.1:5174/@vite/client"
+    }
+  ]
+}

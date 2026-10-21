@@ -1,0 +1,457 @@
+[
+  {
+    "case": "迁移写失败仍可按旧进度在内存继续",
+    "map": {
+      "page": {
+        "audioCount": 1,
+        "body": "次元战争 · 主线地图\n\n太阳市\n\n主线进度 1 / 7 · 仓库区事件\n\n奶\n奶奶家\n旧\n旧街区仓库\n\n地点 / 关卡\n\n旧街区仓库\n\n第 2 关 · 序幕\n\n仓库区事件\n\n已保留最近场景检查点\n\n继续关卡\n\n完成本关后自动返回地图。已完成关卡仅供查看。\n\n＋\n−\n定位当前关卡\n返回主菜单\n\n保存失败，本次进度仍在当前页面；关闭或刷新可能丢失新进度。",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "location-grandma_home",
+            "text": "奶奶奶家"
+          },
+          {
+            "disabled": false,
+            "id": "location-old_warehouse",
+            "text": "旧旧街区仓库"
+          },
+          {
+            "disabled": false,
+            "id": "enter-prologue_02",
+            "text": "继续关卡"
+          },
+          {
+            "disabled": false,
+            "id": "map-zoom-in",
+            "text": "＋"
+          },
+          {
+            "disabled": false,
+            "id": "map-zoom-out",
+            "text": "−"
+          },
+          {
+            "disabled": false,
+            "id": "map-focus",
+            "text": "定位当前关卡"
+          },
+          {
+            "disabled": false,
+            "id": "map-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":-114.21199999999999,\"y\":-220.79999999999995}",
+          "completedLevels": "prologue_01",
+          "currentLevel": "prologue_02",
+          "navToken": "2:1:map",
+          "saveJson": "",
+          "saveRequest": "1",
+          "saveStatus": "error",
+          "screen": "map",
+          "selectedLocation": "old_warehouse",
+          "session": "2",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "visibleNodes": "2"
+        },
+        "stageCount": 1,
+        "text": "",
+        "units": []
+      },
+      "storage": {
+        "originalV1": " \n{\"actId\":\"prologue\",\"sceneId\":\"p006\",\"flags\":{},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\"]}\n ",
+        "raw": "",
+        "scenario": "migration-write-failure",
+        "testid": "fixture-storage",
+        "v1": " \n{\"actId\":\"prologue\",\"sceneId\":\"p006\",\"flags\":{},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\"]}\n ",
+        "v1Unchanged": "true",
+        "writeKeys": "",
+        "writes": "0"
+      }
+    },
+    "playing": {
+      "page": {
+        "audioCount": 1,
+        "body": "仓库区外围·第一次战斗\n黑\n黑衣人甲\n立绘占位\n黑\n黑衣人乙\n立绘占位\n蒙\n蒙面人\n立绘占位\n序幕　 /　 次元战争\n\n黑衣\n\n点击补全文字\n返回地图\n返回主菜单\n\n保存失败，本次进度仍在当前页面；关闭或刷新可能丢失新进度。",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_first_battle",
+          "navToken": "3:2:story",
+          "nodeIndex": "2",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "",
+          "saveRequest": "2",
+          "saveStatus": "error",
+          "sceneId": "p006",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "stageCount": 1,
+        "text": "黑衣",
+        "units": []
+      },
+      "storage": {
+        "originalV1": " \n{\"actId\":\"prologue\",\"sceneId\":\"p006\",\"flags\":{},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\"]}\n ",
+        "raw": "",
+        "scenario": "migration-write-failure",
+        "testid": "fixture-storage",
+        "v1": " \n{\"actId\":\"prologue\",\"sceneId\":\"p006\",\"flags\":{},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\"]}\n ",
+        "v1Unchanged": "true",
+        "writeKeys": "",
+        "writes": "0"
+      }
+    }
+  },
+  {
+    "case": "read-failure",
+    "playing": {
+      "page": {
+        "audioCount": 1,
+        "body": "奶奶家·客厅\n奶\n奶奶\n立绘占位\n序幕　 /　 次元战争\n\n客厅\n\n点击补全文字\n返回地图\n返回主菜单\n\n无法读取浏览器存档。本次仍可游玩，进度暂不保存。",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:2:story",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "",
+          "saveRequest": "4",
+          "saveStatus": "error",
+          "sceneId": "p003",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "3:11"
+        },
+        "stageCount": 1,
+        "text": "客厅",
+        "units": []
+      },
+      "storage": {
+        "originalV1": "",
+        "raw": "",
+        "scenario": "read-failure",
+        "testid": "fixture-storage",
+        "v1": "",
+        "v1Unchanged": "true",
+        "writeKeys": "",
+        "writes": "0"
+      }
+    },
+    "map": {
+      "page": {
+        "audioCount": 1,
+        "body": "次元战争 · 主线地图\n\n太阳市\n\n主线进度 0 / 7 · 搬入奶奶家\n\n奶\n奶奶家\n\n地点 / 关卡\n\n奶奶家\n\n第 1 关 · 序幕\n\n搬入奶奶家\n\n已保留最近场景检查点\n\n继续关卡\n\n完成本关后自动返回地图。已完成关卡仅供查看。\n\n＋\n−\n定位当前关卡\n返回主菜单\n\n无法读取浏览器存档。本次仍可游玩，进度暂不保存。",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "location-grandma_home",
+            "text": "奶奶奶家"
+          },
+          {
+            "disabled": false,
+            "id": "enter-prologue_01",
+            "text": "继续关卡"
+          },
+          {
+            "disabled": false,
+            "id": "map-zoom-in",
+            "text": "＋"
+          },
+          {
+            "disabled": false,
+            "id": "map-zoom-out",
+            "text": "−"
+          },
+          {
+            "disabled": false,
+            "id": "map-focus",
+            "text": "定位当前关卡"
+          },
+          {
+            "disabled": false,
+            "id": "map-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-25.39199999999994}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "navToken": "4:3:map",
+          "saveJson": "",
+          "saveRequest": "4",
+          "saveStatus": "error",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "4",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "visibleNodes": "1"
+        },
+        "stageCount": 1,
+        "text": "",
+        "units": []
+      },
+      "storage": {
+        "originalV1": "",
+        "raw": "",
+        "scenario": "read-failure",
+        "testid": "fixture-storage",
+        "v1": "",
+        "v1Unchanged": "true",
+        "writeKeys": "",
+        "writes": "0"
+      }
+    },
+    "resumed": {
+      "page": {
+        "audioCount": 1,
+        "body": "奶奶家·客厅\n奶\n奶奶\n立绘占位\n序幕　 /　 次元战争\n\n点击补全文字\n返回地图\n返回主菜单\n\n无法读取浏览器存档。本次仍可游玩，进度暂不保存。",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "5:4:story",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "",
+          "saveRequest": "5",
+          "saveStatus": "error",
+          "sceneId": "p003",
+          "session": "5",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "5:1"
+        },
+        "stageCount": 1,
+        "text": "",
+        "units": []
+      },
+      "storage": {
+        "originalV1": "",
+        "raw": "",
+        "scenario": "read-failure",
+        "testid": "fixture-storage",
+        "v1": "",
+        "v1Unchanged": "true",
+        "writeKeys": "",
+        "writes": "0"
+      }
+    }
+  },
+  {
+    "case": "write-failure",
+    "playing": {
+      "page": {
+        "audioCount": 1,
+        "body": "奶奶家·客厅\n奶\n奶奶\n立绘占位\n序幕　 /　 次元战争\n\n客\n\n点击补全文字\n返回地图\n返回主菜单\n\n保存失败，本次进度仍在当前页面；关闭或刷新可能丢失新进度。",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:2:story",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "",
+          "saveRequest": "4",
+          "saveStatus": "error",
+          "sceneId": "p003",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "3:11"
+        },
+        "stageCount": 1,
+        "text": "客",
+        "units": []
+      },
+      "storage": {
+        "originalV1": "",
+        "raw": "",
+        "scenario": "write-failure",
+        "testid": "fixture-storage",
+        "v1": "",
+        "v1Unchanged": "true",
+        "writeKeys": "",
+        "writes": "0"
+      }
+    },
+    "map": {
+      "page": {
+        "audioCount": 1,
+        "body": "次元战争 · 主线地图\n\n太阳市\n\n主线进度 0 / 7 · 搬入奶奶家\n\n奶\n奶奶家\n\n地点 / 关卡\n\n奶奶家\n\n第 1 关 · 序幕\n\n搬入奶奶家\n\n已保留最近场景检查点\n\n继续关卡\n\n完成本关后自动返回地图。已完成关卡仅供查看。\n\n＋\n−\n定位当前关卡\n返回主菜单\n\n保存失败，本次进度仍在当前页面；关闭或刷新可能丢失新进度。",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "location-grandma_home",
+            "text": "奶奶奶家"
+          },
+          {
+            "disabled": false,
+            "id": "enter-prologue_01",
+            "text": "继续关卡"
+          },
+          {
+            "disabled": false,
+            "id": "map-zoom-in",
+            "text": "＋"
+          },
+          {
+            "disabled": false,
+            "id": "map-zoom-out",
+            "text": "−"
+          },
+          {
+            "disabled": false,
+            "id": "map-focus",
+            "text": "定位当前关卡"
+          },
+          {
+            "disabled": false,
+            "id": "map-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-25.39199999999994}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "navToken": "4:3:map",
+          "saveJson": "",
+          "saveRequest": "4",
+          "saveStatus": "error",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "4",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "visibleNodes": "1"
+        },
+        "stageCount": 1,
+        "text": "",
+        "units": []
+      },
+      "storage": {
+        "originalV1": "",
+        "raw": "",
+        "scenario": "write-failure",
+        "testid": "fixture-storage",
+        "v1": "",
+        "v1Unchanged": "true",
+        "writeKeys": "",
+        "writes": "0"
+      }
+    },
+    "resumed": {
+      "page": {
+        "audioCount": 1,
+        "body": "奶奶家·客厅\n奶\n奶奶\n立绘占位\n序幕　 /　 次元战争\n\n客厅保留旧木柜、茶壶和墙上的老照片。\n奶奶\n\n点击补全文字\n返回地图\n返回主菜单\n\n保存失败，本次进度仍在当前页面；关闭或刷新可能丢失新进度。",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "5:4:story",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "",
+          "saveRequest": "5",
+          "saveStatus": "error",
+          "sceneId": "p003",
+          "session": "5",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "5:1"
+        },
+        "stageCount": 1,
+        "text": "客厅保留旧木柜、茶壶和墙上的老照片。\n奶奶",
+        "units": []
+      },
+      "storage": {
+        "originalV1": "",
+        "raw": "",
+        "scenario": "write-failure",
+        "testid": "fixture-storage",
+        "v1": "",
+        "v1Unchanged": "true",
+        "writeKeys": "",
+        "writes": "0"
+      }
+    }
+  }
+]

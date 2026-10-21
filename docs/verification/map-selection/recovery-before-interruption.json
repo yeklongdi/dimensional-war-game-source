@@ -1,0 +1,38 @@
+[
+  {
+    "case": "普通剧情刷新，从p004首句恢复",
+    "page": {
+      "body": "奶奶家·整理房间与出门\n序幕　 /　 次元战争\n\n男高把行李搬进自己的房间。\n\n点击 / 空格 / 回车　继续 ▸\n返回地图\n返回主菜单\n\n最近存档：搬入奶奶家 · 奶奶家·整理房间与出门 · 2026/10/21 15:33:00",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "return-map",
+          "text": "返回地图"
+        },
+        {
+          "disabled": false,
+          "id": "return-menu",
+          "text": "返回主菜单"
+        }
+      ],
+      "stage": {
+        "actId": "prologue",
+        "bgmId": "bgm_homecoming_warm",
+        "navToken": "2:1:story",
+        "nodeIndex": "3",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p004\"},\"savedAt\":1792567980534}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "p004",
+        "session": "2",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "text",
+        "waitToken": "2:1"
+      },
+      "text": "男高把行李搬进自己的房间。"
+    }
+  }
+]

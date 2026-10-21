@@ -1,0 +1,1601 @@
+{
+  "page": {
+    "audioCount": 1,
+    "body": "第一幕 · 黑色人形战斗\n\n第 5 轮\n\n男高\n先攻 8 · HP 0/10\n黑色人形\n先攻 3 · HP 16/16\n黑色人形的回合\n\n移动 40尺　动作 0\n\n附赠 0　反应 1\n\n男高\n\nHP 0/10 · 临时 0\n\n死亡 · (0,2)\n\n主手：大师之剑 1d8+2\n\n附赠：徒手 1d4+2\n\n黑色人形\n\nHP 16/16 · 临时 0\n\n可行动 · (1,3)\n\n战斗记录\n\n剑形灼痕共鸣：获得5点临时生命值\n\n先攻第1位 男高：d20(6) [普通]+2=8\n\n先攻第2位 黑色人形：d20(1) [普通]+2=3\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n第 1 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：移动至(1,3)\n\n黑色人形 (3,3)→(2,4)，消耗5尺，剩余35尺\n\n黑色人形 (2,4)→(1,3)，消耗5尺，剩余30尺\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(5) [普通]+4=9 vs AC14，失误\n\nAI 黑色人形：结束回合\n\n第 2 轮 · 男高回合开始，刷新回合资源及反应\n\n第 2 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(3) [普通]+4=7 vs AC14，失误\n\nAI 黑色人形：结束回合\n\n第 3 轮 · 男高回合开始，刷新回合资源及反应\n\n第 3 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(10) [普通]+4=14 vs AC14，命中\n\n伤害 2d6+2：d6(4,4)+2=10 暗蚀；无伤害减免→10；临时HP 5→0；男高 HP 10→5\n\nAI 黑色人形：结束回合\n\n第 4 轮 · 男高回合开始，刷新回合资源及反应\n\n第 4 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(13) [普通]+4=17 vs AC14，命中\n\n伤害 2d6+2：d6(3,4)+2=9 暗蚀；无伤害减免→9；临时HP 0→0；男高 HP 5→0\n\n男高：昏迷、倒地、失能\n\nAI 黑色人形：结束回合\n\n第 5 轮 · 男高回合开始，刷新回合资源及反应\n\n男高 死亡豁免 d20(5) [普通] vs DC10，成功0/失败1；失败\n\n第 5 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(2,19)取19 [优势]+4=23 vs AC14，命中·重击；优势：目标昏迷\n\n伤害 2d6+2（重击加倍骰子）：d6(3,5,4,5)+2=19 暗蚀；无伤害减免→19；临时HP 0→0；男高 HP 0→0；死亡失败 +2\n\n男高：死亡\n\n失败：男高死亡\n\n选择结算操作\n\n战斗失败\n\n男高死亡。\n\n重试\n返回地图\n返回主菜单\n\n最近存档：施工区事件 · 黑色人形战斗 · 2026/10/21 17:28:13",
+    "buttons": [
+      {
+        "disabled": false,
+        "id": "cell-0-0",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-1-0",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-2-0",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-3-0",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-4-0",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-5-0",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-6-0",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-0-1",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-1-1",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-2-1",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-3-1",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-4-1",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-5-1",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-6-1",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-0-2",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-1-2",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-2-2",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-3-2",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-4-2",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-5-2",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-6-2",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-0-3",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-1-3",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-2-3",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-3-3",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-4-3",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-5-3",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-6-3",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-0-4",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-1-4",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-2-4",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-3-4",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-4-4",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-5-4",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-6-4",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "battle-retry",
+        "text": "重试"
+      },
+      {
+        "disabled": false,
+        "id": "return-map",
+        "text": "返回地图"
+      },
+      {
+        "disabled": false,
+        "id": "return-menu",
+        "text": "返回主菜单"
+      }
+    ],
+    "stage": {
+      "actId": "act1",
+      "battleId": "battle_black_humanoid",
+      "bgmId": "bgm_black_humanoid_battle",
+      "fixtureDone": "false",
+      "mode": "idle",
+      "navToken": "2:1:battle",
+      "result": "dead",
+      "returnNodeIndex": "4",
+      "rngDraws": "17",
+      "round": "5",
+      "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a014\"},\"savedAt\":1792574893348}",
+      "saveRequest": "2",
+      "saveStatus": "saved",
+      "sceneId": "a014",
+      "screen": "battle",
+      "seed": "0",
+      "session": "2",
+      "storyWaitToken": "2:2",
+      "testid": "battle-stage",
+      "token": "1:18",
+      "turnId": "black_humanoid",
+      "turnTeam": "enemy",
+      "waiting": "result"
+    },
+    "stageCount": 1,
+    "text": "",
+    "units": [
+      {
+        "action": "true",
+        "bonus": "true",
+        "col": "0",
+        "hp": "0",
+        "primaryAttack": "master_sword",
+        "reaction": "true",
+        "row": "2",
+        "savesFailure": "3",
+        "savesSuccess": "0",
+        "status": "dead",
+        "tempHp": "0",
+        "testid": "unit-hero"
+      },
+      {
+        "action": "false",
+        "bonus": "false",
+        "col": "1",
+        "hp": "16",
+        "primaryAttack": "claw",
+        "reaction": "true",
+        "row": "3",
+        "savesFailure": "0",
+        "savesSuccess": "0",
+        "status": "active",
+        "tempHp": "0",
+        "testid": "unit-black_humanoid"
+      }
+    ]
+  },
+  "trace": [
+    {
+      "audioCount": 1,
+      "body": "第一幕 · 黑色人形战斗\n\n第 1 轮\n\n男高\n先攻 8 · HP 10/10\n黑色人形\n先攻 3 · HP 16/16\n男高的回合\n\n移动 30尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 5\n\n可行动 · (0,2)\n\n主手：大师之剑 1d8+2\n\n附赠：徒手 1d4+2\n\n黑色人形\n\nHP 16/16 · 临时 0\n\n可行动 · (3,3)\n\n攻击\n移动\n技能\n战斗记录\n\n剑形灼痕共鸣：获得5点临时生命值\n\n先攻第1位 男高：d20(6) [普通]+2=8\n\n先攻第2位 黑色人形：d20(1) [普通]+2=3\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n选择操作；技能中可结束回合\n\n返回地图\n返回主菜单\n\n最近存档：施工区事件 · 黑色人形战斗 · 2026/10/21 17:27:49",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": true,
+          "id": "mode-attack",
+          "text": "攻击"
+        },
+        {
+          "disabled": false,
+          "id": "mode-move",
+          "text": "移动"
+        },
+        {
+          "disabled": false,
+          "id": "mode-skills",
+          "text": "技能"
+        },
+        {
+          "disabled": false,
+          "id": "return-map",
+          "text": "返回地图"
+        },
+        {
+          "disabled": false,
+          "id": "return-menu",
+          "text": "返回主菜单"
+        }
+      ],
+      "stage": {
+        "actId": "act1",
+        "battleId": "battle_black_humanoid",
+        "bgmId": "bgm_black_humanoid_battle",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "navToken": "2:1:battle",
+        "result": "",
+        "returnNodeIndex": "4",
+        "rngDraws": "2",
+        "round": "1",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a014\"},\"savedAt\":1792574869044}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "a014",
+        "screen": "battle",
+        "seed": "0",
+        "session": "2",
+        "storyWaitToken": "2:2",
+        "testid": "battle-stage",
+        "token": "1:1",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "0",
+          "hp": "10",
+          "primaryAttack": "master_sword",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "5",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "3",
+          "hp": "16",
+          "primaryAttack": "claw",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_humanoid"
+        }
+      ]
+    },
+    {
+      "audioCount": 1,
+      "body": "第一幕 · 黑色人形战斗\n\n第 2 轮\n\n男高\n先攻 8 · HP 10/10\n黑色人形\n先攻 3 · HP 16/16\n男高的回合\n\n移动 30尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 5\n\n可行动 · (0,2)\n\n主手：大师之剑 1d8+2\n\n附赠：徒手 1d4+2\n\n黑色人形\n\nHP 16/16 · 临时 0\n\n可行动 · (1,3)\n\n攻击\n移动\n技能\n战斗记录\n\n剑形灼痕共鸣：获得5点临时生命值\n\n先攻第1位 男高：d20(6) [普通]+2=8\n\n先攻第2位 黑色人形：d20(1) [普通]+2=3\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n第 1 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：移动至(1,3)\n\n黑色人形 (3,3)→(2,4)，消耗5尺，剩余35尺\n\n黑色人形 (2,4)→(1,3)，消耗5尺，剩余30尺\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(5) [普通]+4=9 vs AC14，失误\n\nAI 黑色人形：结束回合\n\n第 2 轮 · 男高回合开始，刷新回合资源及反应\n\n选择操作；技能中可结束回合\n\n返回地图\n返回主菜单\n\n最近存档：施工区事件 · 黑色人形战斗 · 2026/10/21 17:27:49",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "mode-attack",
+          "text": "攻击"
+        },
+        {
+          "disabled": false,
+          "id": "mode-move",
+          "text": "移动"
+        },
+        {
+          "disabled": false,
+          "id": "mode-skills",
+          "text": "技能"
+        },
+        {
+          "disabled": false,
+          "id": "return-map",
+          "text": "返回地图"
+        },
+        {
+          "disabled": false,
+          "id": "return-menu",
+          "text": "返回主菜单"
+        }
+      ],
+      "stage": {
+        "actId": "act1",
+        "battleId": "battle_black_humanoid",
+        "bgmId": "bgm_black_humanoid_battle",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "navToken": "2:1:battle",
+        "result": "",
+        "returnNodeIndex": "4",
+        "rngDraws": "3",
+        "round": "2",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a014\"},\"savedAt\":1792574869044}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "a014",
+        "screen": "battle",
+        "seed": "0",
+        "session": "2",
+        "storyWaitToken": "2:2",
+        "testid": "battle-stage",
+        "token": "1:7",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "0",
+          "hp": "10",
+          "primaryAttack": "master_sword",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "5",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "1",
+          "hp": "16",
+          "primaryAttack": "claw",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_humanoid"
+        }
+      ]
+    },
+    {
+      "audioCount": 1,
+      "body": "第一幕 · 黑色人形战斗\n\n第 3 轮\n\n男高\n先攻 8 · HP 10/10\n黑色人形\n先攻 3 · HP 16/16\n男高的回合\n\n移动 30尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 5\n\n可行动 · (0,2)\n\n主手：大师之剑 1d8+2\n\n附赠：徒手 1d4+2\n\n黑色人形\n\nHP 16/16 · 临时 0\n\n可行动 · (1,3)\n\n攻击\n移动\n技能\n战斗记录\n\n剑形灼痕共鸣：获得5点临时生命值\n\n先攻第1位 男高：d20(6) [普通]+2=8\n\n先攻第2位 黑色人形：d20(1) [普通]+2=3\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n第 1 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：移动至(1,3)\n\n黑色人形 (3,3)→(2,4)，消耗5尺，剩余35尺\n\n黑色人形 (2,4)→(1,3)，消耗5尺，剩余30尺\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(5) [普通]+4=9 vs AC14，失误\n\nAI 黑色人形：结束回合\n\n第 2 轮 · 男高回合开始，刷新回合资源及反应\n\n第 2 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(3) [普通]+4=7 vs AC14，失误\n\nAI 黑色人形：结束回合\n\n第 3 轮 · 男高回合开始，刷新回合资源及反应\n\n选择操作；技能中可结束回合\n\n返回地图\n返回主菜单\n\n最近存档：施工区事件 · 黑色人形战斗 · 2026/10/21 17:27:49",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "mode-attack",
+          "text": "攻击"
+        },
+        {
+          "disabled": false,
+          "id": "mode-move",
+          "text": "移动"
+        },
+        {
+          "disabled": false,
+          "id": "mode-skills",
+          "text": "技能"
+        },
+        {
+          "disabled": false,
+          "id": "return-map",
+          "text": "返回地图"
+        },
+        {
+          "disabled": false,
+          "id": "return-menu",
+          "text": "返回主菜单"
+        }
+      ],
+      "stage": {
+        "actId": "act1",
+        "battleId": "battle_black_humanoid",
+        "bgmId": "bgm_black_humanoid_battle",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "navToken": "2:1:battle",
+        "result": "",
+        "returnNodeIndex": "4",
+        "rngDraws": "4",
+        "round": "3",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a014\"},\"savedAt\":1792574869044}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "a014",
+        "screen": "battle",
+        "seed": "0",
+        "session": "2",
+        "storyWaitToken": "2:2",
+        "testid": "battle-stage",
+        "token": "1:10",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "0",
+          "hp": "10",
+          "primaryAttack": "master_sword",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "5",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "1",
+          "hp": "16",
+          "primaryAttack": "claw",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_humanoid"
+        }
+      ]
+    },
+    {
+      "audioCount": 1,
+      "body": "第一幕 · 黑色人形战斗\n\n第 4 轮\n\n男高\n先攻 8 · HP 5/10\n黑色人形\n先攻 3 · HP 16/16\n男高的回合\n\n移动 30尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 5/10 · 临时 0\n\n可行动 · (0,2)\n\n主手：大师之剑 1d8+2\n\n附赠：徒手 1d4+2\n\n黑色人形\n\nHP 16/16 · 临时 0\n\n可行动 · (1,3)\n\n攻击\n移动\n技能\n战斗记录\n\n剑形灼痕共鸣：获得5点临时生命值\n\n先攻第1位 男高：d20(6) [普通]+2=8\n\n先攻第2位 黑色人形：d20(1) [普通]+2=3\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n第 1 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：移动至(1,3)\n\n黑色人形 (3,3)→(2,4)，消耗5尺，剩余35尺\n\n黑色人形 (2,4)→(1,3)，消耗5尺，剩余30尺\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(5) [普通]+4=9 vs AC14，失误\n\nAI 黑色人形：结束回合\n\n第 2 轮 · 男高回合开始，刷新回合资源及反应\n\n第 2 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(3) [普通]+4=7 vs AC14，失误\n\nAI 黑色人形：结束回合\n\n第 3 轮 · 男高回合开始，刷新回合资源及反应\n\n第 3 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(10) [普通]+4=14 vs AC14，命中\n\n伤害 2d6+2：d6(4,4)+2=10 暗蚀；无伤害减免→10；临时HP 5→0；男高 HP 10→5\n\nAI 黑色人形：结束回合\n\n第 4 轮 · 男高回合开始，刷新回合资源及反应\n\n选择操作；技能中可结束回合\n\n返回地图\n返回主菜单\n\n最近存档：施工区事件 · 黑色人形战斗 · 2026/10/21 17:27:49",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "mode-attack",
+          "text": "攻击"
+        },
+        {
+          "disabled": false,
+          "id": "mode-move",
+          "text": "移动"
+        },
+        {
+          "disabled": false,
+          "id": "mode-skills",
+          "text": "技能"
+        },
+        {
+          "disabled": false,
+          "id": "return-map",
+          "text": "返回地图"
+        },
+        {
+          "disabled": false,
+          "id": "return-menu",
+          "text": "返回主菜单"
+        }
+      ],
+      "stage": {
+        "actId": "act1",
+        "battleId": "battle_black_humanoid",
+        "bgmId": "bgm_black_humanoid_battle",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "navToken": "2:1:battle",
+        "result": "",
+        "returnNodeIndex": "4",
+        "rngDraws": "7",
+        "round": "4",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a014\"},\"savedAt\":1792574869044}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "a014",
+        "screen": "battle",
+        "seed": "0",
+        "session": "2",
+        "storyWaitToken": "2:2",
+        "testid": "battle-stage",
+        "token": "1:13",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "0",
+          "hp": "5",
+          "primaryAttack": "master_sword",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "1",
+          "hp": "16",
+          "primaryAttack": "claw",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_humanoid"
+        }
+      ]
+    },
+    {
+      "audioCount": 1,
+      "body": "第一幕 · 黑色人形战斗\n\n第 5 轮\n\n男高\n先攻 8 · HP 0/10\n黑色人形\n先攻 3 · HP 16/16\n黑色人形的回合\n\n移动 40尺　动作 0\n\n附赠 0　反应 1\n\n男高\n\nHP 0/10 · 临时 0\n\n死亡 · (0,2)\n\n主手：大师之剑 1d8+2\n\n附赠：徒手 1d4+2\n\n黑色人形\n\nHP 16/16 · 临时 0\n\n可行动 · (1,3)\n\n战斗记录\n\n剑形灼痕共鸣：获得5点临时生命值\n\n先攻第1位 男高：d20(6) [普通]+2=8\n\n先攻第2位 黑色人形：d20(1) [普通]+2=3\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n第 1 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：移动至(1,3)\n\n黑色人形 (3,3)→(2,4)，消耗5尺，剩余35尺\n\n黑色人形 (2,4)→(1,3)，消耗5尺，剩余30尺\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(5) [普通]+4=9 vs AC14，失误\n\nAI 黑色人形：结束回合\n\n第 2 轮 · 男高回合开始，刷新回合资源及反应\n\n第 2 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(3) [普通]+4=7 vs AC14，失误\n\nAI 黑色人形：结束回合\n\n第 3 轮 · 男高回合开始，刷新回合资源及反应\n\n第 3 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(10) [普通]+4=14 vs AC14，命中\n\n伤害 2d6+2：d6(4,4)+2=10 暗蚀；无伤害减免→10；临时HP 5→0；男高 HP 10→5\n\nAI 黑色人形：结束回合\n\n第 4 轮 · 男高回合开始，刷新回合资源及反应\n\n第 4 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(13) [普通]+4=17 vs AC14，命中\n\n伤害 2d6+2：d6(3,4)+2=9 暗蚀；无伤害减免→9；临时HP 0→0；男高 HP 5→0\n\n男高：昏迷、倒地、失能\n\nAI 黑色人形：结束回合\n\n第 5 轮 · 男高回合开始，刷新回合资源及反应\n\n男高 死亡豁免 d20(5) [普通] vs DC10，成功0/失败1；失败\n\n第 5 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(2,19)取19 [优势]+4=23 vs AC14，命中·重击；优势：目标昏迷\n\n伤害 2d6+2（重击加倍骰子）：d6(3,5,4,5)+2=19 暗蚀；无伤害减免→19；临时HP 0→0；男高 HP 0→0；死亡失败 +2\n\n男高：死亡\n\n失败：男高死亡\n\n选择结算操作\n\n战斗失败\n\n男高死亡。\n\n重试\n返回地图\n返回主菜单\n\n最近存档：施工区事件 · 黑色人形战斗 · 2026/10/21 17:28:13",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "battle-retry",
+          "text": "重试"
+        },
+        {
+          "disabled": false,
+          "id": "return-map",
+          "text": "返回地图"
+        },
+        {
+          "disabled": false,
+          "id": "return-menu",
+          "text": "返回主菜单"
+        }
+      ],
+      "stage": {
+        "actId": "act1",
+        "battleId": "battle_black_humanoid",
+        "bgmId": "bgm_black_humanoid_battle",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "navToken": "2:1:battle",
+        "result": "dead",
+        "returnNodeIndex": "4",
+        "rngDraws": "17",
+        "round": "5",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a014\"},\"savedAt\":1792574893348}",
+        "saveRequest": "2",
+        "saveStatus": "saved",
+        "sceneId": "a014",
+        "screen": "battle",
+        "seed": "0",
+        "session": "2",
+        "storyWaitToken": "2:2",
+        "testid": "battle-stage",
+        "token": "1:18",
+        "turnId": "black_humanoid",
+        "turnTeam": "enemy",
+        "waiting": "result"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "0",
+          "hp": "0",
+          "primaryAttack": "master_sword",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "3",
+          "savesSuccess": "0",
+          "status": "dead",
+          "tempHp": "0",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "1",
+          "hp": "16",
+          "primaryAttack": "claw",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_humanoid"
+        }
+      ]
+    }
+  ],
+  "logs": [
+    "剑形灼痕共鸣：获得5点临时生命值",
+    "先攻第1位 男高：d20(6) [普通]+2=8",
+    "先攻第2位 黑色人形：d20(1) [普通]+2=3",
+    "第 1 轮 · 男高回合开始，刷新回合资源及反应",
+    "第 1 轮 · 黑色人形回合开始，刷新回合资源及反应",
+    "AI 黑色人形：移动至(1,3)",
+    "黑色人形 (3,3)→(2,4)，消耗5尺，剩余35尺",
+    "黑色人形 (2,4)→(1,3)，消耗5尺，剩余30尺",
+    "AI 黑色人形：攻击男高",
+    "黑色人形→男高 动作·爪击：d20(5) [普通]+4=9 vs AC14，失误",
+    "AI 黑色人形：结束回合",
+    "第 2 轮 · 男高回合开始，刷新回合资源及反应",
+    "第 2 轮 · 黑色人形回合开始，刷新回合资源及反应",
+    "AI 黑色人形：攻击男高",
+    "黑色人形→男高 动作·爪击：d20(3) [普通]+4=7 vs AC14，失误",
+    "AI 黑色人形：结束回合",
+    "第 3 轮 · 男高回合开始，刷新回合资源及反应",
+    "第 3 轮 · 黑色人形回合开始，刷新回合资源及反应",
+    "AI 黑色人形：攻击男高",
+    "黑色人形→男高 动作·爪击：d20(10) [普通]+4=14 vs AC14，命中",
+    "伤害 2d6+2：d6(4,4)+2=10 暗蚀；无伤害减免→10；临时HP 5→0；男高 HP 10→5",
+    "AI 黑色人形：结束回合",
+    "第 4 轮 · 男高回合开始，刷新回合资源及反应",
+    "第 4 轮 · 黑色人形回合开始，刷新回合资源及反应",
+    "AI 黑色人形：攻击男高",
+    "黑色人形→男高 动作·爪击：d20(13) [普通]+4=17 vs AC14，命中",
+    "伤害 2d6+2：d6(3,4)+2=9 暗蚀；无伤害减免→9；临时HP 0→0；男高 HP 5→0",
+    "男高：昏迷、倒地、失能",
+    "AI 黑色人形：结束回合",
+    "第 5 轮 · 男高回合开始，刷新回合资源及反应",
+    "男高 死亡豁免 d20(5) [普通] vs DC10，成功0/失败1；失败",
+    "第 5 轮 · 黑色人形回合开始，刷新回合资源及反应",
+    "AI 黑色人形：攻击男高",
+    "黑色人形→男高 动作·爪击：d20(2,19)取19 [优势]+4=23 vs AC14，命中·重击；优势：目标昏迷",
+    "伤害 2d6+2（重击加倍骰子）：d6(3,5,4,5)+2=19 暗蚀；无伤害减免→19；临时HP 0→0；男高 HP 0→0；死亡失败 +2",
+    "男高：死亡",
+    "失败：男高死亡"
+  ]
+}

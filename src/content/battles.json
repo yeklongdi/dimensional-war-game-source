@@ -1,0 +1,24 @@
+[
+  {
+    "id": "battle_debug_core", "title": "M2 · 战棋核心调试场",
+    "map": [".......", "..X....", "H...X..", ".....E.", "......E"],
+    "spawnOrder": ["hero", "black_a", "black_b"]
+  },
+  {
+    "id": "battle_prologue_tutorial", "title": "序幕 · 仓库区冲突",
+    "map": [".......", "..X....", "H...X..", ".....E.", "......E"],
+    "spawnOrder": ["hero", "black_a", "black_b"],
+    "heroLoadout": { "inspiration": 1 }, "tutorial": true,
+    "victoryText": "两个黑衣人均已被击败。"
+  },
+  {
+    "id": "battle_black_humanoid", "title": "第一幕 · 黑色人形战斗",
+    "map": [".......", "...X...", "H......", "...B...", "......."],
+    "spawnOrder": ["hero", "black_humanoid"],
+    "heroLoadout": {
+      "tempHp": 5,
+      "primary": { "id": "master_sword", "name": "大师之剑", "kind": "melee", "bonus": 4, "damage": "1d8+2", "damageType": "slashing", "reach": 1, "martial": true, "finesse": true, "magical": true }
+    },
+    "opening": "sword", "victoryText": "黑色人形已被击败。"
+  }
+]

@@ -1,0 +1,173 @@
+{
+  "protectedFiles": [
+    {
+      "file": "source/story/prologue.md",
+      "before": "aad4cc222e351fe389d9a0164138ec9168b6cf1f9032fa4bdd21479dbfe597dc",
+      "after": "aad4cc222e351fe389d9a0164138ec9168b6cf1f9032fa4bdd21479dbfe597dc",
+      "unchanged": true
+    },
+    {
+      "file": "source/story/act1.md",
+      "before": "2d322c786a744cad4912f098523a9ad61955fc1b59040a0dc5ff08f08921a3bf",
+      "after": "2d322c786a744cad4912f098523a9ad61955fc1b59040a0dc5ff08f08921a3bf",
+      "unchanged": true
+    },
+    {
+      "file": "source/data/hero.md",
+      "before": "dfad52adf111217b4481a99828d346bb3d4dd6a3b2cdd513b0f3033bebda95cc",
+      "after": "dfad52adf111217b4481a99828d346bb3d4dd6a3b2cdd513b0f3033bebda95cc",
+      "unchanged": true
+    },
+    {
+      "file": "source/data/org_grunt.md",
+      "before": "6c2c331ae4f919aec3080c96eb1b970ebc2a9c166274b873a6fda58bfc1134f8",
+      "after": "6c2c331ae4f919aec3080c96eb1b970ebc2a9c166274b873a6fda58bfc1134f8",
+      "unchanged": true
+    },
+    {
+      "file": "src/content/prologue.json",
+      "before": "e270bee77596a9662445ce87c9bd09b4be4386780568ae368ff24184683be10a",
+      "after": "e270bee77596a9662445ce87c9bd09b4be4386780568ae368ff24184683be10a",
+      "unchanged": true
+    },
+    {
+      "file": "src/content/act1.json",
+      "before": "b835a2ddd354a53bed9aa14489bfe90f1accf5821019b3c94388c35719992bcd",
+      "after": "b835a2ddd354a53bed9aa14489bfe90f1accf5821019b3c94388c35719992bcd",
+      "unchanged": true
+    },
+    {
+      "file": "src/content/index.json",
+      "before": "a6ae3ad75097e31f89561601750275244829758bb5091b5f139cdad615eac532",
+      "after": "a6ae3ad75097e31f89561601750275244829758bb5091b5f139cdad615eac532",
+      "unchanged": true
+    },
+    {
+      "file": "src/content/types.ts",
+      "before": "63ad78f5bea78f8a3e984526de9c7391f70814951b34a7c9da3126e18d66113d",
+      "after": "63ad78f5bea78f8a3e984526de9c7391f70814951b34a7c9da3126e18d66113d",
+      "unchanged": true
+    },
+    {
+      "file": "tools/export-story.mjs",
+      "before": "a6d5d3a31b8c68505beb69e61ae914a551bafa1f1aca2dd548fbd8ae4c597b2a",
+      "after": "a6d5d3a31b8c68505beb69e61ae914a551bafa1f1aca2dd548fbd8ae4c597b2a",
+      "unchanged": true
+    },
+    {
+      "file": "tools/story-bundle.d.mts",
+      "before": "b4cec81681de27fffab59c27dc28ca195d1a43fad9669f8058e5f7063c9e1180",
+      "after": "b4cec81681de27fffab59c27dc28ca195d1a43fad9669f8058e5f7063c9e1180",
+      "unchanged": true
+    },
+    {
+      "file": "tools/story-bundle.mjs",
+      "before": "e28f6692b51953400f78a6e5d60b876d310f44b8b85faa0c0bec159ff1dc0e02",
+      "after": "e28f6692b51953400f78a6e5d60b876d310f44b8b85faa0c0bec159ff1dc0e02",
+      "unchanged": true
+    },
+    {
+      "file": "tools/story-diagnostics.mjs",
+      "before": "95e1d27faab7010d52e05510822be67fb4124431fad1896ca3206be01483a3f0",
+      "after": "95e1d27faab7010d52e05510822be67fb4124431fad1896ca3206be01483a3f0",
+      "unchanged": true
+    },
+    {
+      "file": "tools/story-normalize.mjs",
+      "before": "edaa763b64b30b6bc7c164c86be0396bff4377665e805a242fffb133f77d93ae",
+      "after": "edaa763b64b30b6bc7c164c86be0396bff4377665e805a242fffb133f77d93ae",
+      "unchanged": true
+    },
+    {
+      "file": "tools/story-parser.d.mts",
+      "before": "60e133d55bfb19dac9bc3f1903176baaaae12a0f0b0e68c5e5e9a54412bbed3f",
+      "after": "60e133d55bfb19dac9bc3f1903176baaaae12a0f0b0e68c5e5e9a54412bbed3f",
+      "unchanged": true
+    },
+    {
+      "file": "tools/story-parser.mjs",
+      "before": "e12373cbd7a745561d0fdade720efbf3e1cb0ea5a3755ba2af180eabbadea5c7",
+      "after": "e12373cbd7a745561d0fdade720efbf3e1cb0ea5a3755ba2af180eabbadea5c7",
+      "unchanged": true
+    },
+    {
+      "file": "tools/story-syntax.mjs",
+      "before": "a62951c391d9386bd97b8fb7afd569007a5290768a48d24b973caa681dbd5234",
+      "after": "a62951c391d9386bd97b8fb7afd569007a5290768a48d24b973caa681dbd5234",
+      "unchanged": true
+    },
+    {
+      "file": "src/tests/export-helpers.ts",
+      "before": "afee24c7a6c65ebc743f6856d34918785e2341c2b46837869ad5c8b2d0f2ca3a",
+      "after": "afee24c7a6c65ebc743f6856d34918785e2341c2b46837869ad5c8b2d0f2ca3a",
+      "unchanged": true
+    },
+    {
+      "file": "src/tests/export.test.ts",
+      "before": "6d38cbf9e5eafcb33b536cdfcad117e83fbb6de5fcc10ce5a65e8aa60d7398fb",
+      "after": "6d38cbf9e5eafcb33b536cdfcad117e83fbb6de5fcc10ce5a65e8aa60d7398fb",
+      "unchanged": true
+    },
+    {
+      "file": "src/tests/parser.test.ts",
+      "before": "f81e976fd783bcef32eb46d32add6fc4f8e3ed033e47e4a73273ad0b46c6901e",
+      "after": "f81e976fd783bcef32eb46d32add6fc4f8e3ed033e47e4a73273ad0b46c6901e",
+      "unchanged": true
+    }
+  ],
+  "media": [
+    {
+      "source": "E:\\笔记\\次元战争设定\\角色\\御主\\御主：热血男高+saber\\图片\\热血男高_主立绘.png",
+      "file": "public/assets/portraits/hero.png",
+      "sha256": "4d0a2884c88a31808289400f30ecc38edaa2e38cf6f5bc2ad2a3167905aee8b3",
+      "originalSha256": "4d0a2884c88a31808289400f30ecc38edaa2e38cf6f5bc2ad2a3167905aee8b3",
+      "identical": true
+    },
+    {
+      "source": "E:\\笔记\\次元战争设定\\角色\\御主\\御主：怪盗+（rider）\\图片\\怪盗 站立 待机.png",
+      "file": "public/assets/portraits/thief.png",
+      "sha256": "dd9cc178984660fee4eb49997d3242b8fdee35d5e92d577ffc45436f32e66f63",
+      "originalSha256": "dd9cc178984660fee4eb49997d3242b8fdee35d5e92d577ffc45436f32e66f63",
+      "identical": true
+    },
+    {
+      "source": "E:\\笔记\\次元战争设定\\音乐\\①史诗氛围包\\Homecoming.wav",
+      "file": "public/assets/audio/homecoming.wav",
+      "sha256": "48791878ab477239c5301855cd8fcf9ce8d05eef75a1f3c07055527470a16701",
+      "originalSha256": "48791878ab477239c5301855cd8fcf9ce8d05eef75a1f3c07055527470a16701",
+      "identical": true
+    },
+    {
+      "source": "E:\\笔记\\次元战争设定\\音乐\\①史诗氛围包\\缧绁.wav",
+      "file": "public/assets/audio/liuxie.wav",
+      "sha256": "2eeedb6dc5ebc450adcf33f340a0d66b8fd8ed30f7872ac9155532c44bef5c05",
+      "originalSha256": "2eeedb6dc5ebc450adcf33f340a0d66b8fd8ed30f7872ac9155532c44bef5c05",
+      "identical": true
+    }
+  ],
+  "build": {
+    "files": [
+      "dist/assets/audio/homecoming.wav",
+      "dist/assets/audio/liuxie.wav",
+      "dist/assets/index--kgG8Zw1.js",
+      "dist/assets/index-C_2y8YjP.css",
+      "dist/assets/portraits/hero.png",
+      "dist/assets/portraits/thief.png",
+      "dist/index.html"
+    ],
+    "added": [
+      "dist/assets/audio/homecoming.wav",
+      "dist/assets/audio/liuxie.wav",
+      "dist/assets/index--kgG8Zw1.js",
+      "dist/assets/index-C_2y8YjP.css",
+      "dist/assets/portraits/hero.png",
+      "dist/assets/portraits/thief.png"
+    ],
+    "removed": [
+      "dist/assets/index-P2Xu9kJm.js"
+    ],
+    "rebuilt": [
+      "dist/index.html"
+    ]
+  }
+}

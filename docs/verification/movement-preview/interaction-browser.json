@@ -1,0 +1,4204 @@
+[
+  {
+    "name": "keyboard-focus-preview",
+    "page": {
+      "audioCount": 0,
+      "body": "M2 · 战棋调试场\n\nseed 42 · 骰子 5 次 · 第 1 轮\n\n黑衣人乙\n先攻 19 · HP 6/6\n男高\n先攻 15 · HP 10/10\n黑衣人甲\n先攻 10 · HP 6/6\n重新开始\n男高的回合\n\n移动 30尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (0,2)\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n战斗记录\n\n先攻第1位 黑衣人乙：d20(18) [普通]+1=19\n\n先攻第2位 男高：d20(13) [普通]+2=15\n\n先攻第3位 黑衣人甲：d20(9) [普通]+1=10\n\n第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程\n\nAI 黑衣人乙：结束回合\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n已选 0 步 · 0 尺　可再规划 30 尺　悬停仅预览\n\n确认移动\n撤回一点\n清空路线\n取消移动",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "battle-restart",
+          "text": "重新开始"
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": true,
+          "id": "move-confirm",
+          "text": "确认移动"
+        },
+        {
+          "disabled": true,
+          "id": "move-undo",
+          "text": "撤回一点"
+        },
+        {
+          "disabled": false,
+          "id": "move-clear",
+          "text": "清空路线"
+        },
+        {
+          "disabled": false,
+          "id": "move-cancel",
+          "text": "取消移动"
+        }
+      ],
+      "stage": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "move",
+        "remainingSteps": "6",
+        "result": "",
+        "rngDraws": "5",
+        "round": "1",
+        "routeKind": "planning",
+        "routePath": "[{\"col\":1,\"row\":2},{\"col\":2,\"row\":2}]",
+        "routeRisks": "[]",
+        "routeWaypoints": "[]",
+        "screen": "battle-debug",
+        "seed": "42",
+        "selectedSteps": "0",
+        "testid": "battle-stage",
+        "token": "1:2",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "0",
+          "hp": "10",
+          "primaryAttack": "unarmed",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "5",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_a"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "6",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "4",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_b"
+        }
+      ]
+    },
+    "focus": "cell-2-2"
+  },
+  {
+    "name": "keyboard-add-once-hover-not-selected",
+    "page": {
+      "audioCount": 0,
+      "body": "M2 · 战棋调试场\n\nseed 42 · 骰子 5 次 · 第 1 轮\n\n黑衣人乙\n先攻 19 · HP 6/6\n男高\n先攻 15 · HP 10/10\n黑衣人甲\n先攻 10 · HP 6/6\n重新开始\n男高的回合\n\n移动 30尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (0,2)\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n战斗记录\n\n先攻第1位 黑衣人乙：d20(18) [普通]+1=19\n\n先攻第2位 男高：d20(13) [普通]+2=15\n\n先攻第3位 黑衣人甲：d20(9) [普通]+1=10\n\n第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程\n\nAI 黑衣人乙：结束回合\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n已选 2 步 · 10 尺　可再规划 20 尺　悬停仅预览\n\n确认移动\n撤回一点\n清空路线\n取消移动",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "battle-restart",
+          "text": "重新开始"
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "move-confirm",
+          "text": "确认移动"
+        },
+        {
+          "disabled": false,
+          "id": "move-undo",
+          "text": "撤回一点"
+        },
+        {
+          "disabled": false,
+          "id": "move-clear",
+          "text": "清空路线"
+        },
+        {
+          "disabled": false,
+          "id": "move-cancel",
+          "text": "取消移动"
+        }
+      ],
+      "stage": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "move",
+        "remainingSteps": "4",
+        "result": "",
+        "rngDraws": "5",
+        "round": "1",
+        "routeKind": "planning",
+        "routePath": "[{\"col\":1,\"row\":2},{\"col\":2,\"row\":2},{\"col\":3,\"row\":2}]",
+        "routeRisks": "[]",
+        "routeWaypoints": "[{\"col\":2,\"row\":2}]",
+        "screen": "battle-debug",
+        "seed": "42",
+        "selectedSteps": "2",
+        "testid": "battle-stage",
+        "token": "1:2",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "0",
+          "hp": "10",
+          "primaryAttack": "unarmed",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "5",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_a"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "6",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "4",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_b"
+        }
+      ]
+    },
+    "focus": "cell-3-2"
+  },
+  {
+    "name": "confirm-excludes-hover",
+    "page": {
+      "audioCount": 0,
+      "body": "M2 · 战棋调试场\n\nseed 42 · 骰子 5 次 · 第 1 轮\n\n黑衣人乙\n先攻 19 · HP 6/6\n男高\n先攻 15 · HP 10/10\n黑衣人甲\n先攻 10 · HP 6/6\n重新开始\n男高的回合\n\n移动 20尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (2,2)\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n攻击\n移动\n技能\n战斗记录\n\n先攻第1位 黑衣人乙：d20(18) [普通]+1=19\n\n先攻第2位 男高：d20(13) [普通]+2=15\n\n先攻第3位 黑衣人甲：d20(9) [普通]+1=10\n\n第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程\n\nAI 黑衣人乙：结束回合\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n男高 (0,2)→(1,2)，消耗5尺，剩余25尺\n\n男高 (1,2)→(2,2)，消耗5尺，剩余20尺\n\n选择操作；技能中可结束回合",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "battle-restart",
+          "text": "重新开始"
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": true,
+          "id": "mode-attack",
+          "text": "攻击"
+        },
+        {
+          "disabled": false,
+          "id": "mode-move",
+          "text": "移动"
+        },
+        {
+          "disabled": false,
+          "id": "mode-skills",
+          "text": "技能"
+        },
+        {
+          "disabled": false,
+          "id": "move-confirm",
+          "text": "确认移动"
+        },
+        {
+          "disabled": false,
+          "id": "move-undo",
+          "text": "撤回一点"
+        },
+        {
+          "disabled": false,
+          "id": "move-clear",
+          "text": "清空路线"
+        },
+        {
+          "disabled": false,
+          "id": "move-cancel",
+          "text": "取消移动"
+        }
+      ],
+      "stage": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "remainingSteps": "0",
+        "result": "",
+        "rngDraws": "5",
+        "round": "1",
+        "routeKind": "",
+        "routePath": "[]",
+        "routeRisks": "[]",
+        "routeWaypoints": "[]",
+        "screen": "battle-debug",
+        "seed": "42",
+        "selectedSteps": "0",
+        "testid": "battle-stage",
+        "token": "1:5",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "2",
+          "hp": "10",
+          "primaryAttack": "unarmed",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "5",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_a"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "6",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "4",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_b"
+        }
+      ]
+    }
+  },
+  {
+    "name": "pointer-hover-risk-no-execution",
+    "page": {
+      "audioCount": 0,
+      "body": "M2 · 战棋调试场\n\nseed 42 · 骰子 5 次 · 第 1 轮\n\n黑衣人乙\n先攻 19 · HP 6/6\n男高\n先攻 15 · HP 10/10\n黑衣人甲\n先攻 10 · HP 6/6\n重新开始\n男高的回合\n\n移动 20尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (2,2)\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n战斗记录\n\n先攻第1位 黑衣人乙：d20(18) [普通]+1=19\n\n先攻第2位 男高：d20(13) [普通]+2=15\n\n先攻第3位 黑衣人甲：d20(9) [普通]+1=10\n\n第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程\n\nAI 黑衣人乙：结束回合\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n男高 (0,2)→(1,2)，消耗5尺，剩余25尺\n\n男高 (1,2)→(2,2)，消耗5尺，剩余20尺\n\n已选 2 步 · 10 尺　可再规划 10 尺　悬停仅预览\n\n确认移动\n撤回一点\n清空路线\n取消移动",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "battle-restart",
+          "text": "重新开始"
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "move-confirm",
+          "text": "确认移动"
+        },
+        {
+          "disabled": false,
+          "id": "move-undo",
+          "text": "撤回一点"
+        },
+        {
+          "disabled": false,
+          "id": "move-clear",
+          "text": "清空路线"
+        },
+        {
+          "disabled": false,
+          "id": "move-cancel",
+          "text": "取消移动"
+        }
+      ],
+      "stage": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "move",
+        "remainingSteps": "2",
+        "result": "",
+        "rngDraws": "5",
+        "round": "1",
+        "routeKind": "planning",
+        "routePath": "[{\"col\":3,\"row\":3},{\"col\":4,\"row\":3},{\"col\":3,\"row\":3}]",
+        "routeRisks": "[{\"from\":{\"col\":4,\"row\":3},\"to\":{\"col\":3,\"row\":3},\"enemies\":[\"black_a\"]}]",
+        "routeWaypoints": "[{\"col\":4,\"row\":3}]",
+        "screen": "battle-debug",
+        "seed": "42",
+        "selectedSteps": "2",
+        "testid": "battle-stage",
+        "token": "1:5",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "2",
+          "hp": "10",
+          "primaryAttack": "unarmed",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "5",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_a"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "6",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "4",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_b"
+        }
+      ]
+    }
+  },
+  {
+    "name": "risk-fixed-route",
+    "page": {
+      "audioCount": 0,
+      "body": "M2 · 战棋调试场\n\nseed 42 · 骰子 5 次 · 第 1 轮\n\n黑衣人乙\n先攻 19 · HP 6/6\n男高\n先攻 15 · HP 10/10\n黑衣人甲\n先攻 10 · HP 6/6\n重新开始\n男高的回合\n\n移动 20尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (2,2)\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n战斗记录\n\n先攻第1位 黑衣人乙：d20(18) [普通]+1=19\n\n先攻第2位 男高：d20(13) [普通]+2=15\n\n先攻第3位 黑衣人甲：d20(9) [普通]+1=10\n\n第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程\n\nAI 黑衣人乙：结束回合\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n男高 (0,2)→(1,2)，消耗5尺，剩余25尺\n\n男高 (1,2)→(2,2)，消耗5尺，剩余20尺\n\n已选 3 步 · 15 尺　可再规划 5 尺　悬停仅预览\n\n确认移动\n撤回一点\n清空路线\n取消移动",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "battle-restart",
+          "text": "重新开始"
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "move-confirm",
+          "text": "确认移动"
+        },
+        {
+          "disabled": false,
+          "id": "move-undo",
+          "text": "撤回一点"
+        },
+        {
+          "disabled": false,
+          "id": "move-clear",
+          "text": "清空路线"
+        },
+        {
+          "disabled": false,
+          "id": "move-cancel",
+          "text": "取消移动"
+        }
+      ],
+      "stage": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "move",
+        "remainingSteps": "1",
+        "result": "",
+        "rngDraws": "5",
+        "round": "1",
+        "routeKind": "planning",
+        "routePath": "[{\"col\":3,\"row\":3},{\"col\":4,\"row\":3},{\"col\":3,\"row\":3}]",
+        "routeRisks": "[{\"from\":{\"col\":4,\"row\":3},\"to\":{\"col\":3,\"row\":3},\"enemies\":[\"black_a\"]}]",
+        "routeWaypoints": "[{\"col\":4,\"row\":3},{\"col\":3,\"row\":3}]",
+        "screen": "battle-debug",
+        "seed": "42",
+        "selectedSteps": "3",
+        "testid": "battle-stage",
+        "token": "1:5",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "2",
+          "hp": "10",
+          "primaryAttack": "unarmed",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "5",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_a"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "6",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "4",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_b"
+        }
+      ]
+    }
+  },
+  {
+    "name": "moving-real-remaining",
+    "page": {
+      "audioCount": 0,
+      "body": "M2 · 战棋调试场\n\nseed 42 · 骰子 5 次 · 第 1 轮\n\n黑衣人乙\n先攻 19 · HP 6/6\n男高\n先攻 15 · HP 10/10\n黑衣人甲\n先攻 10 · HP 6/6\n重新开始\n男高的回合\n\n移动 15尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (3,3)\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n战斗记录\n\n先攻第1位 黑衣人乙：d20(18) [普通]+1=19\n\n先攻第2位 男高：d20(13) [普通]+2=15\n\n先攻第3位 黑衣人甲：d20(9) [普通]+1=10\n\n第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程\n\nAI 黑衣人乙：结束回合\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n男高 (0,2)→(1,2)，消耗5尺，剩余25尺\n\n男高 (1,2)→(2,2)，消耗5尺，剩余20尺\n\n男高 (2,2)→(3,3)，消耗5尺，剩余15尺\n\n正在逐格移动并检查借机攻击",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "battle-restart",
+          "text": "重新开始"
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "move-confirm",
+          "text": "确认移动"
+        },
+        {
+          "disabled": false,
+          "id": "move-undo",
+          "text": "撤回一点"
+        },
+        {
+          "disabled": false,
+          "id": "move-clear",
+          "text": "清空路线"
+        },
+        {
+          "disabled": false,
+          "id": "move-cancel",
+          "text": "取消移动"
+        }
+      ],
+      "stage": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "remainingSteps": "3",
+        "result": "",
+        "rngDraws": "5",
+        "round": "1",
+        "routeKind": "executing",
+        "routePath": "[{\"col\":4,\"row\":3},{\"col\":3,\"row\":3}]",
+        "routeRisks": "[{\"from\":{\"col\":4,\"row\":3},\"to\":{\"col\":3,\"row\":3},\"enemies\":[\"black_a\"]}]",
+        "routeWaypoints": "[]",
+        "screen": "battle-debug",
+        "seed": "42",
+        "selectedSteps": "2",
+        "testid": "battle-stage",
+        "token": "1:7",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "moving"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "3",
+          "hp": "10",
+          "primaryAttack": "unarmed",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "5",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_a"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "6",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "4",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_b"
+        }
+      ]
+    }
+  },
+  {
+    "name": "risk-route-executed",
+    "page": {
+      "audioCount": 0,
+      "body": "M2 · 战棋调试场\n\nseed 42 · 骰子 6 次 · 第 1 轮\n\n黑衣人乙\n先攻 19 · HP 6/6\n男高\n先攻 15 · HP 10/10\n黑衣人甲\n先攻 10 · HP 6/6\n重新开始\n男高的回合\n\n移动 5尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (3,3)\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n攻击\n移动\n技能\n战斗记录\n\n先攻第1位 黑衣人乙：d20(18) [普通]+1=19\n\n先攻第2位 男高：d20(13) [普通]+2=15\n\n先攻第3位 黑衣人甲：d20(9) [普通]+1=10\n\n第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程\n\nAI 黑衣人乙：结束回合\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n男高 (0,2)→(1,2)，消耗5尺，剩余25尺\n\n男高 (1,2)→(2,2)，消耗5尺，剩余20尺\n\n男高 (2,2)→(3,3)，消耗5尺，剩余15尺\n\n男高 (3,3)→(4,3)，消耗5尺，剩余10尺\n\n黑衣人甲对男高：借机攻击，消耗反应\n\n黑衣人甲→男高 借机·挥砍：d20(11) [普通]+2=13 vs AC14，失误\n\n男高 (4,3)→(3,3)，消耗5尺，剩余5尺\n\n选择操作；技能中可结束回合",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "battle-restart",
+          "text": "重新开始"
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": true,
+          "id": "mode-attack",
+          "text": "攻击"
+        },
+        {
+          "disabled": false,
+          "id": "mode-move",
+          "text": "移动"
+        },
+        {
+          "disabled": false,
+          "id": "mode-skills",
+          "text": "技能"
+        },
+        {
+          "disabled": false,
+          "id": "move-confirm",
+          "text": "确认移动"
+        },
+        {
+          "disabled": false,
+          "id": "move-undo",
+          "text": "撤回一点"
+        },
+        {
+          "disabled": false,
+          "id": "move-clear",
+          "text": "清空路线"
+        },
+        {
+          "disabled": false,
+          "id": "move-cancel",
+          "text": "取消移动"
+        }
+      ],
+      "stage": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "remainingSteps": "0",
+        "result": "",
+        "rngDraws": "6",
+        "round": "1",
+        "routeKind": "",
+        "routePath": "[]",
+        "routeRisks": "[]",
+        "routeWaypoints": "[]",
+        "screen": "battle-debug",
+        "seed": "42",
+        "selectedSteps": "0",
+        "testid": "battle-stage",
+        "token": "1:10",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "3",
+          "hp": "10",
+          "primaryAttack": "unarmed",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "5",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "false",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_a"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "6",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "4",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_b"
+        }
+      ]
+    }
+  },
+  {
+    "name": "backspace-undo",
+    "page": {
+      "audioCount": 0,
+      "body": "M2 · 战棋调试场\n\nseed 42 · 骰子 5 次 · 第 1 轮\n\n黑衣人乙\n先攻 19 · HP 6/6\n男高\n先攻 15 · HP 10/10\n黑衣人甲\n先攻 10 · HP 6/6\n重新开始\n男高的回合\n\n移动 30尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (0,2)\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n战斗记录\n\n先攻第1位 黑衣人乙：d20(18) [普通]+1=19\n\n先攻第2位 男高：d20(13) [普通]+2=15\n\n先攻第3位 黑衣人甲：d20(9) [普通]+1=10\n\n第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程\n\nAI 黑衣人乙：结束回合\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n已选 1 步 · 5 尺　可再规划 25 尺　悬停仅预览\n\n确认移动\n撤回一点\n清空路线\n取消移动",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "battle-restart",
+          "text": "重新开始"
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "move-confirm",
+          "text": "确认移动"
+        },
+        {
+          "disabled": false,
+          "id": "move-undo",
+          "text": "撤回一点"
+        },
+        {
+          "disabled": false,
+          "id": "move-clear",
+          "text": "清空路线"
+        },
+        {
+          "disabled": false,
+          "id": "move-cancel",
+          "text": "取消移动"
+        }
+      ],
+      "stage": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "move",
+        "remainingSteps": "5",
+        "result": "",
+        "rngDraws": "5",
+        "round": "1",
+        "routeKind": "planning",
+        "routePath": "[{\"col\":1,\"row\":2}]",
+        "routeRisks": "[]",
+        "routeWaypoints": "[{\"col\":1,\"row\":2}]",
+        "screen": "battle-debug",
+        "seed": "42",
+        "selectedSteps": "1",
+        "testid": "battle-stage",
+        "token": "2:2",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "0",
+          "hp": "10",
+          "primaryAttack": "unarmed",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "5",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_a"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "6",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "4",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_b"
+        }
+      ]
+    }
+  },
+  {
+    "name": "clear-keeps-mode",
+    "page": {
+      "audioCount": 0,
+      "body": "M2 · 战棋调试场\n\nseed 42 · 骰子 5 次 · 第 1 轮\n\n黑衣人乙\n先攻 19 · HP 6/6\n男高\n先攻 15 · HP 10/10\n黑衣人甲\n先攻 10 · HP 6/6\n重新开始\n男高的回合\n\n移动 30尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (0,2)\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n战斗记录\n\n先攻第1位 黑衣人乙：d20(18) [普通]+1=19\n\n先攻第2位 男高：d20(13) [普通]+2=15\n\n先攻第3位 黑衣人甲：d20(9) [普通]+1=10\n\n第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程\n\nAI 黑衣人乙：结束回合\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n已选 0 步 · 0 尺　可再规划 30 尺　悬停仅预览\n\n确认移动\n撤回一点\n清空路线\n取消移动",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "battle-restart",
+          "text": "重新开始"
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": true,
+          "id": "move-confirm",
+          "text": "确认移动"
+        },
+        {
+          "disabled": true,
+          "id": "move-undo",
+          "text": "撤回一点"
+        },
+        {
+          "disabled": true,
+          "id": "move-clear",
+          "text": "清空路线"
+        },
+        {
+          "disabled": false,
+          "id": "move-cancel",
+          "text": "取消移动"
+        }
+      ],
+      "stage": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "move",
+        "remainingSteps": "6",
+        "result": "",
+        "rngDraws": "5",
+        "round": "1",
+        "routeKind": "planning",
+        "routePath": "[]",
+        "routeRisks": "[]",
+        "routeWaypoints": "[]",
+        "screen": "battle-debug",
+        "seed": "42",
+        "selectedSteps": "0",
+        "testid": "battle-stage",
+        "token": "2:2",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "0",
+          "hp": "10",
+          "primaryAttack": "unarmed",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "5",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_a"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "6",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "4",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_b"
+        }
+      ]
+    }
+  },
+  {
+    "name": "escape-cancel",
+    "page": {
+      "audioCount": 0,
+      "body": "M2 · 战棋调试场\n\nseed 42 · 骰子 5 次 · 第 1 轮\n\n黑衣人乙\n先攻 19 · HP 6/6\n男高\n先攻 15 · HP 10/10\n黑衣人甲\n先攻 10 · HP 6/6\n重新开始\n男高的回合\n\n移动 30尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (0,2)\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n攻击\n移动\n技能\n战斗记录\n\n先攻第1位 黑衣人乙：d20(18) [普通]+1=19\n\n先攻第2位 男高：d20(13) [普通]+2=15\n\n先攻第3位 黑衣人甲：d20(9) [普通]+1=10\n\n第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程\n\nAI 黑衣人乙：结束回合\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n选择操作；技能中可结束回合",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "battle-restart",
+          "text": "重新开始"
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": true,
+          "id": "mode-attack",
+          "text": "攻击"
+        },
+        {
+          "disabled": false,
+          "id": "mode-move",
+          "text": "移动"
+        },
+        {
+          "disabled": false,
+          "id": "mode-skills",
+          "text": "技能"
+        },
+        {
+          "disabled": true,
+          "id": "move-confirm",
+          "text": "确认移动"
+        },
+        {
+          "disabled": true,
+          "id": "move-undo",
+          "text": "撤回一点"
+        },
+        {
+          "disabled": true,
+          "id": "move-clear",
+          "text": "清空路线"
+        },
+        {
+          "disabled": false,
+          "id": "move-cancel",
+          "text": "取消移动"
+        }
+      ],
+      "stage": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "remainingSteps": "0",
+        "result": "",
+        "rngDraws": "5",
+        "round": "1",
+        "routeKind": "",
+        "routePath": "[]",
+        "routeRisks": "[]",
+        "routeWaypoints": "[]",
+        "screen": "battle-debug",
+        "seed": "42",
+        "selectedSteps": "0",
+        "testid": "battle-stage",
+        "token": "2:2",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "0",
+          "hp": "10",
+          "primaryAttack": "unarmed",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "5",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_a"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "6",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "4",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_b"
+        }
+      ]
+    }
+  },
+  {
+    "name": "loop-planned",
+    "page": {
+      "audioCount": 0,
+      "body": "M2 · 战棋调试场\n\nseed 42 · 骰子 5 次 · 第 1 轮\n\n黑衣人乙\n先攻 19 · HP 6/6\n男高\n先攻 15 · HP 10/10\n黑衣人甲\n先攻 10 · HP 6/6\n重新开始\n男高的回合\n\n移动 30尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (0,2)\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n战斗记录\n\n先攻第1位 黑衣人乙：d20(18) [普通]+1=19\n\n先攻第2位 男高：d20(13) [普通]+2=15\n\n先攻第3位 黑衣人甲：d20(9) [普通]+1=10\n\n第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程\n\nAI 黑衣人乙：结束回合\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n已选 4 步 · 20 尺　可再规划 10 尺　悬停仅预览\n\n确认移动\n撤回一点\n清空路线\n取消移动",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "battle-restart",
+          "text": "重新开始"
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "move-confirm",
+          "text": "确认移动"
+        },
+        {
+          "disabled": false,
+          "id": "move-undo",
+          "text": "撤回一点"
+        },
+        {
+          "disabled": false,
+          "id": "move-clear",
+          "text": "清空路线"
+        },
+        {
+          "disabled": false,
+          "id": "move-cancel",
+          "text": "取消移动"
+        }
+      ],
+      "stage": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "move",
+        "remainingSteps": "2",
+        "result": "",
+        "rngDraws": "5",
+        "round": "1",
+        "routeKind": "planning",
+        "routePath": "[{\"col\":1,\"row\":2},{\"col\":1,\"row\":3},{\"col\":0,\"row\":3},{\"col\":0,\"row\":2}]",
+        "routeRisks": "[]",
+        "routeWaypoints": "[{\"col\":1,\"row\":2},{\"col\":1,\"row\":3},{\"col\":0,\"row\":3},{\"col\":0,\"row\":2}]",
+        "screen": "battle-debug",
+        "seed": "42",
+        "selectedSteps": "4",
+        "testid": "battle-stage",
+        "token": "2:2",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "0",
+          "hp": "10",
+          "primaryAttack": "unarmed",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "5",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_a"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "6",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "4",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_b"
+        }
+      ]
+    }
+  },
+  {
+    "name": "loop-executed-double-confirm",
+    "page": {
+      "audioCount": 0,
+      "body": "M2 · 战棋调试场\n\nseed 42 · 骰子 5 次 · 第 1 轮\n\n黑衣人乙\n先攻 19 · HP 6/6\n男高\n先攻 15 · HP 10/10\n黑衣人甲\n先攻 10 · HP 6/6\n重新开始\n男高的回合\n\n移动 10尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (0,2)\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n攻击\n移动\n技能\n战斗记录\n\n先攻第1位 黑衣人乙：d20(18) [普通]+1=19\n\n先攻第2位 男高：d20(13) [普通]+2=15\n\n先攻第3位 黑衣人甲：d20(9) [普通]+1=10\n\n第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程\n\nAI 黑衣人乙：结束回合\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n男高 (0,2)→(1,2)，消耗5尺，剩余25尺\n\n男高 (1,2)→(1,3)，消耗5尺，剩余20尺\n\n男高 (1,3)→(0,3)，消耗5尺，剩余15尺\n\n男高 (0,3)→(0,2)，消耗5尺，剩余10尺\n\n选择操作；技能中可结束回合",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "battle-restart",
+          "text": "重新开始"
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": true,
+          "id": "mode-attack",
+          "text": "攻击"
+        },
+        {
+          "disabled": false,
+          "id": "mode-move",
+          "text": "移动"
+        },
+        {
+          "disabled": false,
+          "id": "mode-skills",
+          "text": "技能"
+        },
+        {
+          "disabled": false,
+          "id": "move-confirm",
+          "text": "确认移动"
+        },
+        {
+          "disabled": false,
+          "id": "move-undo",
+          "text": "撤回一点"
+        },
+        {
+          "disabled": false,
+          "id": "move-clear",
+          "text": "清空路线"
+        },
+        {
+          "disabled": false,
+          "id": "move-cancel",
+          "text": "取消移动"
+        }
+      ],
+      "stage": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "remainingSteps": "0",
+        "result": "",
+        "rngDraws": "5",
+        "round": "1",
+        "routeKind": "",
+        "routePath": "[]",
+        "routeRisks": "[]",
+        "routeWaypoints": "[]",
+        "screen": "battle-debug",
+        "seed": "42",
+        "selectedSteps": "0",
+        "testid": "battle-stage",
+        "token": "2:7",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "0",
+          "hp": "10",
+          "primaryAttack": "unarmed",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "5",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_a"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "6",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "4",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_b"
+        }
+      ]
+    }
+  },
+  {
+    "name": "over-budget-rejected",
+    "page": {
+      "audioCount": 0,
+      "body": "M2 · 战棋调试场\n\nseed 42 · 骰子 5 次 · 第 1 轮\n\n黑衣人乙\n先攻 19 · HP 6/6\n男高\n先攻 15 · HP 10/10\n黑衣人甲\n先攻 10 · HP 6/6\n重新开始\n男高的回合\n\n移动 10尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (0,2)\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n战斗记录\n\n先攻第1位 黑衣人乙：d20(18) [普通]+1=19\n\n先攻第2位 男高：d20(13) [普通]+2=15\n\n先攻第3位 黑衣人甲：d20(9) [普通]+1=10\n\n第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程\n\nAI 黑衣人乙：结束回合\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n男高 (0,2)→(1,2)，消耗5尺，剩余25尺\n\n男高 (1,2)→(1,3)，消耗5尺，剩余20尺\n\n男高 (1,3)→(0,3)，消耗5尺，剩余15尺\n\n男高 (0,3)→(0,2)，消耗5尺，剩余10尺\n\n已选 2 步 · 10 尺　可再规划 0 尺　悬停仅预览\n\n确认移动\n撤回一点\n清空路线\n取消移动\n\n整条路线超出剩余移动力",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "battle-restart",
+          "text": "重新开始"
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "move-confirm",
+          "text": "确认移动"
+        },
+        {
+          "disabled": false,
+          "id": "move-undo",
+          "text": "撤回一点"
+        },
+        {
+          "disabled": false,
+          "id": "move-clear",
+          "text": "清空路线"
+        },
+        {
+          "disabled": false,
+          "id": "move-cancel",
+          "text": "取消移动"
+        }
+      ],
+      "stage": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "move",
+        "remainingSteps": "0",
+        "result": "",
+        "rngDraws": "5",
+        "round": "1",
+        "routeKind": "planning",
+        "routePath": "[{\"col\":0,\"row\":1},{\"col\":1,\"row\":0}]",
+        "routeRisks": "[]",
+        "routeWaypoints": "[{\"col\":1,\"row\":0}]",
+        "screen": "battle-debug",
+        "seed": "42",
+        "selectedSteps": "2",
+        "testid": "battle-stage",
+        "token": "2:7",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "0",
+          "hp": "10",
+          "primaryAttack": "unarmed",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "5",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_a"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "6",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "4",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_b"
+        }
+      ]
+    }
+  },
+  {
+    "name": "crate-rejected",
+    "page": {
+      "audioCount": 0,
+      "body": "M2 · 战棋调试场\n\nseed 42 · 骰子 5 次 · 第 1 轮\n\n黑衣人乙\n先攻 19 · HP 6/6\n男高\n先攻 15 · HP 10/10\n黑衣人甲\n先攻 10 · HP 6/6\n重新开始\n男高的回合\n\n移动 10尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (0,2)\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n战斗记录\n\n先攻第1位 黑衣人乙：d20(18) [普通]+1=19\n\n先攻第2位 男高：d20(13) [普通]+2=15\n\n先攻第3位 黑衣人甲：d20(9) [普通]+1=10\n\n第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程\n\nAI 黑衣人乙：结束回合\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n男高 (0,2)→(1,2)，消耗5尺，剩余25尺\n\n男高 (1,2)→(1,3)，消耗5尺，剩余20尺\n\n男高 (1,3)→(0,3)，消耗5尺，剩余15尺\n\n男高 (0,3)→(0,2)，消耗5尺，剩余10尺\n\n已选 2 步 · 10 尺　可再规划 0 尺　悬停仅预览\n\n确认移动\n撤回一点\n清空路线\n取消移动\n\n目标被占用或是不可进入的地形",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "battle-restart",
+          "text": "重新开始"
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "move-confirm",
+          "text": "确认移动"
+        },
+        {
+          "disabled": false,
+          "id": "move-undo",
+          "text": "撤回一点"
+        },
+        {
+          "disabled": false,
+          "id": "move-clear",
+          "text": "清空路线"
+        },
+        {
+          "disabled": false,
+          "id": "move-cancel",
+          "text": "取消移动"
+        }
+      ],
+      "stage": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "move",
+        "remainingSteps": "0",
+        "result": "",
+        "rngDraws": "5",
+        "round": "1",
+        "routeKind": "planning",
+        "routePath": "[{\"col\":0,\"row\":1},{\"col\":1,\"row\":0}]",
+        "routeRisks": "[]",
+        "routeWaypoints": "[{\"col\":1,\"row\":0}]",
+        "screen": "battle-debug",
+        "seed": "42",
+        "selectedSteps": "2",
+        "testid": "battle-stage",
+        "token": "2:7",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "0",
+          "hp": "10",
+          "primaryAttack": "unarmed",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "5",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_a"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "6",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "4",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_b"
+        }
+      ]
+    }
+  },
+  {
+    "name": "pointer-leave-keeps-selected",
+    "page": {
+      "audioCount": 0,
+      "body": "M2 · 战棋调试场\n\nseed 42 · 骰子 5 次 · 第 1 轮\n\n黑衣人乙\n先攻 19 · HP 6/6\n男高\n先攻 15 · HP 10/10\n黑衣人甲\n先攻 10 · HP 6/6\n重新开始\n男高的回合\n\n移动 10尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (0,2)\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n战斗记录\n\n先攻第1位 黑衣人乙：d20(18) [普通]+1=19\n\n先攻第2位 男高：d20(13) [普通]+2=15\n\n先攻第3位 黑衣人甲：d20(9) [普通]+1=10\n\n第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程\n\nAI 黑衣人乙：结束回合\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n男高 (0,2)→(1,2)，消耗5尺，剩余25尺\n\n男高 (1,2)→(1,3)，消耗5尺，剩余20尺\n\n男高 (1,3)→(0,3)，消耗5尺，剩余15尺\n\n男高 (0,3)→(0,2)，消耗5尺，剩余10尺\n\n已选 2 步 · 10 尺　可再规划 0 尺　悬停仅预览\n\n确认移动\n撤回一点\n清空路线\n取消移动\n\n目标被占用或是不可进入的地形",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "battle-restart",
+          "text": "重新开始"
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "move-confirm",
+          "text": "确认移动"
+        },
+        {
+          "disabled": false,
+          "id": "move-undo",
+          "text": "撤回一点"
+        },
+        {
+          "disabled": false,
+          "id": "move-clear",
+          "text": "清空路线"
+        },
+        {
+          "disabled": false,
+          "id": "move-cancel",
+          "text": "取消移动"
+        }
+      ],
+      "stage": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "move",
+        "remainingSteps": "0",
+        "result": "",
+        "rngDraws": "5",
+        "round": "1",
+        "routeKind": "planning",
+        "routePath": "[{\"col\":0,\"row\":1},{\"col\":1,\"row\":0}]",
+        "routeRisks": "[]",
+        "routeWaypoints": "[{\"col\":1,\"row\":0}]",
+        "screen": "battle-debug",
+        "seed": "42",
+        "selectedSteps": "2",
+        "testid": "battle-stage",
+        "token": "2:7",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "0",
+          "hp": "10",
+          "primaryAttack": "unarmed",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "5",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_a"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "6",
+          "hp": "6",
+          "primaryAttack": "slash",
+          "reaction": "true",
+          "row": "4",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_b"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "typecheck": "passed",
+  "tests": {
+    "files": 11,
+    "total": 116,
+    "existing": 90,
+    "added": 26
+  },
+  "build": {
+    "status": "passed",
+    "modules": 44
+  },
+  "protectedFiles": 33,
+  "allProtected": true,
+  "longest": [
+    {
+      "path": "src/tests/player.test.ts",
+      "lines": 218
+    },
+    {
+      "path": "src/styles/player.css",
+      "lines": 198
+    },
+    {
+      "path": "tools/story-parser.mjs",
+      "lines": 172
+    },
+    {
+      "path": "src/game/story/player.ts",
+      "lines": 168
+    },
+    {
+      "path": "src/game/ui/battle-view.ts",
+      "lines": 159
+    }
+  ],
+  "filesOver400": [],
+  "anyOrImplicitRandom": [],
+  "devTestPagesInBuild": [],
+  "browserChecks": {
+    "prologueRetryInitial": true,
+    "prologueRetryLog": true,
+    "shadowRetryInitial": true,
+    "shadowRetryLog": true,
+    "postludeExact": true,
+    "flags14": true,
+    "all25Scenes": true,
+    "returnPosition": true,
+    "noForbiddenText": true,
+    "postludeAfterCallExact": true
+  },
+  "console": {
+    "errors": 0,
+    "warnings": 51,
+    "uniqueWarnings": 51
+  }
+}

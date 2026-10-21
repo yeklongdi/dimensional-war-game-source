@@ -1,0 +1,352 @@
+{
+  "checks": [
+    {
+      "name": "坏档不自动覆盖",
+      "state": {
+        "actors": [],
+        "audio": [
+          {
+            "assetId": "",
+            "audioState": "silent",
+            "paused": true,
+            "src": null,
+            "testid": "bgm-player"
+          }
+        ],
+        "body": "垂直切片\n\n次元战争\n开始游戏\n继续\nv0.0.0\n\n旧存档无法读取：格式损坏。原存档已保留，本次进度暂不保存。\n\n放弃旧档，重新保存\n仅验收 · 假存储 · corrupt\n成功写入 0 次\n原始值：这是一份无法读取的验收存档",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "start-game",
+            "text": "开始游戏"
+          },
+          {
+            "disabled": true,
+            "id": "continue-game",
+            "text": "继续"
+          },
+          {
+            "disabled": false,
+            "id": "replace-save",
+            "text": "放弃旧档，重新保存"
+          }
+        ],
+        "stage": {
+          "bgmId": "",
+          "navToken": "1:0:menu",
+          "saveJson": "",
+          "saveRequest": "0",
+          "saveStatus": "blocked",
+          "screen": "menu",
+          "session": "1",
+          "testid": "main-menu"
+        },
+        "stageCount": 1,
+        "units": []
+      },
+      "storage": "0"
+    },
+    {
+      "name": "坏档下仍可玩且零写入",
+      "state": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false"
+          }
+        ],
+        "audio": [
+          {
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "paused": false,
+            "src": "/assets/audio/homecoming.wav",
+            "testid": "bgm-player"
+          }
+        ],
+        "body": "奶奶家门前\n序幕　 /　 次元战争\n\n男高拎着行李箱和行\n\n点击补全文字\n返回主菜单\n\n旧存档无法读取：格式损坏。原存档已保留，本次进度暂不保存。\n\n放弃旧档，重新保存\n仅验收 · 假存储 · corrupt\n成功写入 0 次\n原始值：这是一份无法读取的验收存档",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          },
+          {
+            "disabled": false,
+            "id": "replace-save",
+            "text": "放弃旧档，重新保存"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:2:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "",
+          "saveRequest": "1",
+          "saveStatus": "blocked",
+          "sceneId": "p001",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "stageCount": 1,
+        "text": "男高拎着行李箱和行",
+        "units": []
+      },
+      "writes": "0"
+    },
+    {
+      "name": "取消保留原档",
+      "writes": "0"
+    },
+    {
+      "name": "明确确认后仅写一次",
+      "state": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false"
+          }
+        ],
+        "audio": [
+          {
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "paused": false,
+            "src": "/assets/audio/homecoming.wav",
+            "testid": "bgm-player"
+          }
+        ],
+        "body": "奶奶家门前\n序幕　 /　 次元战争\n\n男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前\n\n点击补全文字\n返回主菜单\n\n最近存档：序幕 · 奶奶家门前 · 2026/10/21 08:35:33\n\n仅验收 · 假存储 · corrupt\n成功写入 1 次\n原始值：{\"actId\":\"prologue\",\"sceneId\":\"p001\",\"flags\":{},\"savedAt\":1792542933773,\"unlockedActs\":[\"prologue\"]}",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:6:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"actId\":\"prologue\",\"sceneId\":\"p001\",\"flags\":{},\"savedAt\":1792542933773,\"unlockedActs\":[\"prologue\"]}",
+          "saveRequest": "2",
+          "saveStatus": "saved",
+          "sceneId": "p001",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "stageCount": 1,
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前",
+        "units": []
+      },
+      "writes": "1",
+      "raw": "{\"actId\":\"prologue\",\"sceneId\":\"p001\",\"flags\":{},\"savedAt\":1792542933773,\"unlockedActs\":[\"prologue\"]}"
+    },
+    {
+      "name": "替换IO模拟读取失败仍能到P002",
+      "state": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false"
+          },
+          {
+            "actor": "奶奶",
+            "asset": "char_grandmother_warm",
+            "position": "door",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false"
+          }
+        ],
+        "audio": [
+          {
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "paused": false,
+            "src": "/assets/audio/homecoming.wav",
+            "testid": "bgm-player"
+          }
+        ],
+        "body": "奶奶家·进门\n奶\n奶奶\n立绘占位\n序幕　 /　 次元战争\n\n门很\n\n点击补全文字\n返回主菜单\n\n无法读取浏览器存档。本次仍可游玩，进度暂不保存。\n\n仅验收 · 假存储 · read-failure\n成功写入 0 次\n原始值：空",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:2:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "",
+          "saveRequest": "2",
+          "saveStatus": "error",
+          "sceneId": "p002",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "3:5"
+        },
+        "stageCount": 1,
+        "text": "门很",
+        "units": []
+      },
+      "writes": "0"
+    },
+    {
+      "name": "替换IO模拟写入失败仍能到P002",
+      "state": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false"
+          },
+          {
+            "actor": "奶奶",
+            "asset": "char_grandmother_warm",
+            "position": "door",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false"
+          }
+        ],
+        "audio": [
+          {
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "paused": false,
+            "src": "/assets/audio/homecoming.wav",
+            "testid": "bgm-player"
+          }
+        ],
+        "body": "奶奶家·进门\n奶\n奶奶\n立绘占位\n序幕　 /　 次元战争\n\n门很快打\n\n点击补全文字\n返回主菜单\n\n保存失败，本次进度仍在当前页面；关闭或刷新可能丢失新进度。\n\n仅验收 · 假存储 · write-failure\n成功写入 0 次\n原始值：空",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:2:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "",
+          "saveRequest": "2",
+          "saveStatus": "error",
+          "sceneId": "p002",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "3:5"
+        },
+        "stageCount": 1,
+        "text": "门很快打",
+        "units": []
+      },
+      "writes": "0"
+    }
+  ],
+  "badLogs": [
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_grandmother_house_dusk] 背景 bg_grandmother_house_dusk 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T00:35:32.317Z",
+      "url": "http://127.0.0.1:5174/@vite/client"
+    }
+  ],
+  "faultLogs": [
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_grandmother_house_dusk] 背景 bg_grandmother_house_dusk 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T00:35:32.317Z",
+      "url": "http://127.0.0.1:5174/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_grandmother_house_dusk] 背景 bg_grandmother_house_dusk 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T00:35:54.389Z",
+      "url": "http://127.0.0.1:5174/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:sfx_door_knock] 音频 sfx_door_knock 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T00:35:54.799Z",
+      "url": "http://127.0.0.1:5174/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_grandmother_house_entrance] 背景 bg_grandmother_house_entrance 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T00:35:54.853Z",
+      "url": "http://127.0.0.1:5174/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:char_grandmother_warm] 立绘 char_grandmother_warm 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T00:35:54.853Z",
+      "url": "http://127.0.0.1:5174/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_grandmother_house_dusk] 背景 bg_grandmother_house_dusk 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T00:35:55.426Z",
+      "url": "http://127.0.0.1:5174/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:sfx_door_knock] 音频 sfx_door_knock 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T00:35:55.930Z",
+      "url": "http://127.0.0.1:5174/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_grandmother_house_entrance] 背景 bg_grandmother_house_entrance 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T00:35:56.035Z",
+      "url": "http://127.0.0.1:5174/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:char_grandmother_warm] 立绘 char_grandmother_warm 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T00:35:56.035Z",
+      "url": "http://127.0.0.1:5174/@vite/client"
+    }
+  ]
+}

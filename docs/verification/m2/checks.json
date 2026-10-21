@@ -1,0 +1,30 @@
+{
+  "commands": {
+    "typecheck": "passed",
+    "test": {
+      "status": "passed",
+      "files": 8,
+      "tests": 90,
+      "existingTests": 33,
+      "addedTests": 57
+    },
+    "build": "passed"
+  },
+  "protectedFiles": 25,
+  "allProtected": true,
+  "codeConstraints": {
+    "strict": true,
+    "anyOrImplicitRandom": [],
+    "filesOver400": []
+  },
+  "productionFiles": [
+    "dist/assets/audio/homecoming.wav",
+    "dist/assets/audio/liuxie.wav",
+    "dist/assets/index-BVWBLZhk.js",
+    "dist/assets/index-CYzC9fTx.css",
+    "dist/assets/portraits/hero.png",
+    "dist/assets/portraits/thief.png",
+    "dist/index.html"
+  ],
+  "dependenciesUnchanged": true
+}

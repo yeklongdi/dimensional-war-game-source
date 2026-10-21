@@ -1,0 +1,634 @@
+[
+  {
+    "file": "tsconfig.json",
+    "hash": "d6d4da3f351a3e88f86b05e7c134582cefbb562f161d3e48355e75b97e6f0462"
+  },
+  {
+    "file": "tools/story-syntax.mjs",
+    "hash": "a62951c391d9386bd97b8fb7afd569007a5290768a48d24b973caa681dbd5234"
+  },
+  {
+    "file": "tools/story-parser.mjs",
+    "hash": "e12373cbd7a745561d0fdade720efbf3e1cb0ea5a3755ba2af180eabbadea5c7"
+  },
+  {
+    "file": "tools/story-parser.d.mts",
+    "hash": "60e133d55bfb19dac9bc3f1903176baaaae12a0f0b0e68c5e5e9a54412bbed3f"
+  },
+  {
+    "file": "tools/story-normalize.mjs",
+    "hash": "edaa763b64b30b6bc7c164c86be0396bff4377665e805a242fffb133f77d93ae"
+  },
+  {
+    "file": "tools/story-diagnostics.mjs",
+    "hash": "95e1d27faab7010d52e05510822be67fb4124431fad1896ca3206be01483a3f0"
+  },
+  {
+    "file": "tools/story-bundle.mjs",
+    "hash": "e28f6692b51953400f78a6e5d60b876d310f44b8b85faa0c0bec159ff1dc0e02"
+  },
+  {
+    "file": "tools/story-bundle.d.mts",
+    "hash": "b4cec81681de27fffab59c27dc28ca195d1a43fad9669f8058e5f7063c9e1180"
+  },
+  {
+    "file": "tools/export-story.mjs",
+    "hash": "a6d5d3a31b8c68505beb69e61ae914a551bafa1f1aca2dd548fbd8ae4c597b2a"
+  },
+  {
+    "file": "docs/m2-data-sources.md",
+    "hash": "6c5c14d13a0f729c9929dd1287995427ecd114deeefef1af81578115a75d2792"
+  },
+  {
+    "file": "docs/m1-verification.md",
+    "hash": "66691de6d306bd2f842f3b98b91ed90b9258e1d57efba2b2c4e1ad2b96fd2ba9"
+  },
+  {
+    "file": "docs/m4-verification.md",
+    "hash": "21135aaee74b6b11dfe7b98fbe88e17c6d50741266fc4930f9816a317977257c"
+  },
+  {
+    "file": "docs/m3-verification.md",
+    "hash": "6334f0f2913cfe212fcb21df62bc216805d72f42abf25b7058e59e78a905c9e6"
+  },
+  {
+    "file": "docs/m3-data-sources.md",
+    "hash": "2b8dffc914ff7612d1e94937916739bf363d5521d76f310e7f05b6bf4e3b91e0"
+  },
+  {
+    "file": "docs/m2-verification.md",
+    "hash": "970cbdb7c35ca4d0f15f3bcc3cb7faf50427e0cb564bf287ce97754aa104a24a"
+  },
+  {
+    "file": "docs/map-selection-verification.md",
+    "hash": "238eddb36cd0c02d4a4fb54b685df251c57c77fd817675c59942e1121f1d5486"
+  },
+  {
+    "file": "docs/open-questions.md",
+    "hash": "0de1804cabc8c8f517d93e97cf6a1007437cf83592d9e3a012a695ea45046e87"
+  },
+  {
+    "file": "package-lock.json",
+    "hash": "1b2d322f1a4361a0f64ab9e4119e3da701907217fc4872ac5987961b04095193"
+  },
+  {
+    "file": "docs/verification/protected-hashes.json",
+    "hash": "fd18bf117c8511fbaee65215ef6b62d2cfd78b0aef3f54b7f26f7772643d0eb5"
+  },
+  {
+    "file": "docs/verification/prologue-battle.png",
+    "hash": "d4b46843d44c92e96367f76552df92e2a9795309cd3c1c87be8261e9547454f4"
+  },
+  {
+    "file": "docs/verification/p001-start.png",
+    "hash": "d8bd8755c3afeb9f1199510385b0e75e6dd451968a35c06ba8c924841819d737"
+  },
+  {
+    "file": "docs/verification/map-selection/storage-fault-browser.json",
+    "hash": "bbc05a289db1c789646b082c51adf76e35022ca66c575eed3756b15c3b6d2c4e"
+  },
+  {
+    "file": "docs/verification/map-selection/six-levels-complete.jpg",
+    "hash": "ef50ecbd722b7eb425ee235ef00e1d91f845fd9e0cbad923330e0520d72d2ecc"
+  },
+  {
+    "file": "docs/verification/map-selection/shadow-victory.jpg",
+    "hash": "10ab4defbf82e476b8dd849f3a39b0a9d15faff28f51dd44d64c2129e2fb0da0"
+  },
+  {
+    "file": "docs/verification/map-selection/shadow-failure.jpg",
+    "hash": "75acfa897cb1bd29ae9cee002ad88be8f80b2aca4d3059b55da449dbb69a4c2b"
+  },
+  {
+    "file": "docs/verification/map-selection/shadow-failure-browser.json",
+    "hash": "ef71c0a245fff307cadf200b7d57760ff50d5c7283e6b0176547ffea7525e245"
+  },
+  {
+    "file": "docs/verification/map-selection/retry-victory.json",
+    "hash": "fafb084c341f453604dd6da0cf657da6a9ec177b3ec945e144e262e4ab903d7d"
+  },
+  {
+    "file": "docs/verification/map-selection/recovery-browser.json",
+    "hash": "d77ef54dd9b896d897fbd694867482762354f098d25a6864160605da6ec867ba"
+  },
+  {
+    "file": "docs/verification/map-selection/recovery-before-interruption.json",
+    "hash": "0e3fc4c9c1b398a7008a2425bf51c108471ebcb44df924d227173081d41ec3b0"
+  },
+  {
+    "file": "docs/verification/map-selection/protected-sketch.json",
+    "hash": "026d6522c1c1cf31e58d44f683ec61158712b143b93e14a2d071e98349efc913"
+  },
+  {
+    "file": "docs/verification/map-selection/protected-before.json",
+    "hash": "aab282ec3597db4b90c4ee230d739869ca8a149d1c73cc031cb92a54c342b477"
+  },
+  {
+    "file": "docs/verification/map-selection/protected-after.json",
+    "hash": "3ed497fb713019cba9b34994c63419a658d2d3597b1708802e910a2dc9aaed2e"
+  },
+  {
+    "file": "docs/verification/map-selection/prologue-victory.jpg",
+    "hash": "0075c4ef3bce966a55a824a89e50d60286aee1b99ce315818bdc582974519951"
+  },
+  {
+    "file": "docs/verification/map-selection/prologue-failure.jpg",
+    "hash": "6e50441a2884a3cd5f766dabdc3c94d75dd091c0ba0b0283df21d4d460f755eb"
+  },
+  {
+    "file": "docs/verification/map-selection/prologue-complete-map.jpg",
+    "hash": "bd2769260c02438e89f88372ef1db1eddda1f76c1f578ebd57587c4957fb93e2"
+  },
+  {
+    "file": "docs/verification/map-selection/prologue-call-return.json",
+    "hash": "89966022b3de6b43cc8c464db181d32165e532cf5a005467c7a119464bcace13"
+  },
+  {
+    "file": "docs/verification/map-selection/multi-window-stale-completion.json",
+    "hash": "adf1f0c401b290eb06ab4b1dc8b9c2bedb0545bc69d9b2fd80b901f6f9c013bc"
+  },
+  {
+    "file": "docs/verification/map-selection/multi-window-browser.json",
+    "hash": "40d84931f132e1c70a6e0a037ac2928cdeabf5d0872f0094f6ceaf51c99c05c9"
+  },
+  {
+    "file": "docs/verification/map-selection/migration-browser.json",
+    "hash": "6ff8b1b9e988107631b59aab0a85cfadea55e5db92991ab3b981543c98e6844b"
+  },
+  {
+    "file": "docs/verification/map-selection/m2-seed42.jpg",
+    "hash": "9ac683dfa433ca406099859053a5d52a7c977694e29748d1202cc440b5d5b652"
+  },
+  {
+    "file": "docs/verification/map-selection/m2-browser.json",
+    "hash": "63dd2dec73dc8716a0a958f14f3c91cad3b101f73ceec41d08f7e93e4f9e2630"
+  },
+  {
+    "file": "docs/verification/map-selection/launch-origin.json",
+    "hash": "8e85a45b6cc300f41fcc765cef06e3d190f7538ec9bdc2a57360a3221e2c37ba"
+  },
+  {
+    "file": "docs/verification/map-selection/launch-menu.jpg",
+    "hash": "6852c26b9d3cae0ef72529724a4611725ea08d71772ad12af1f7854fc03930ed"
+  },
+  {
+    "file": "docs/verification/map-selection/interrupted-route.json",
+    "hash": "5dd6db681ef083eb3d65debc313a2f6fd9799ea59062b03837a7827471ba5ab3"
+  },
+  {
+    "file": "docs/verification/map-selection/initial-map.jpg",
+    "hash": "bddd0efa5491d3ec41db6979b9f928a6cce61633b2b905e20179efe4ad4f2766"
+  },
+  {
+    "file": "docs/verification/map-selection/image-prompt.txt",
+    "hash": "fff14257a07dfc0682d1a1e0a3f6d92a810350f9502e4da9978818132eb1d7a4"
+  },
+  {
+    "file": "docs/verification/map-selection/full-route-browser.json",
+    "hash": "e5f541efc97c96e4adee1373058d6e83d38335a51d529a0f29d351e1913e78ed"
+  },
+  {
+    "file": "docs/verification/map-selection/full-prologue-victory.jpg",
+    "hash": "023677064ebdd5c522e63b411161b15433a473a9dea617493bc38b340ae2b783"
+  },
+  {
+    "file": "docs/verification/map-selection/final-route-browser.json",
+    "hash": "76d10b760a2ce6e8475ebd9981a364d01e936978e6bc674f9fe686ea1443817f"
+  },
+  {
+    "file": "docs/verification/map-selection/final-map-interaction.json",
+    "hash": "3646e38a5d65b64426fe5eff692216aeb8bfb819b891e5773f953168f1cd30c0"
+  },
+  {
+    "file": "docs/verification/map-selection/final-keyboard-clip.json",
+    "hash": "d20293b619c76f1e448ba8e35b8469d12c61727f862ceb08bed81e20c8e2ae73"
+  },
+  {
+    "file": "docs/verification/map-selection/final-initial-map.jpg",
+    "hash": "618a4915ad2cd270fdd950d82089f47ffce49cd25112ced6efa882c8b69036f5"
+  },
+  {
+    "file": "docs/verification/map-selection/final-completed-map.jpg",
+    "hash": "13ab1aae1e9c458f2d078e8c22b36d31330d891052bc331734ff79cf0d1f8db3"
+  },
+  {
+    "file": "docs/verification/map-selection/file-changes.json",
+    "hash": "f89d18587444db30c10b1391988df8a5609a346f15e579af23b6f89da7cdf8f3"
+  },
+  {
+    "file": "docs/verification/map-selection/existing-5180-origin.json",
+    "hash": "28b9aa5fbf12af789635ebd92658544004c0ad3b725432e7b620085ad3c3f526"
+  },
+  {
+    "file": "docs/verification/map-selection/development-progress.json",
+    "hash": "f32a2ffffcefe62de67ca20bf583907a68fdcb8f082185b7e1c17748e59fbdb8"
+  },
+  {
+    "file": "docs/verification/map-selection/corrupt-save-browser.json",
+    "hash": "e6e1fa2c0c4ff699696bc76f32bb9fb484e94d5152aee892e7e04fafad58e452"
+  },
+  {
+    "file": "docs/verification/map-selection/corrupt-replaced-map.jpg",
+    "hash": "e7ff40baad5efc2cfe900a0accc287c5056e0b86c31dd97c83cf473ec89ab602"
+  },
+  {
+    "file": "docs/verification/map-selection/completed-map.jpg",
+    "hash": "ac22236af6465f29b9706ec6516471b2ed8ac325b672ba3161768d084b96dec2"
+  },
+  {
+    "file": "docs/verification/map-selection/commands.txt",
+    "hash": "bce3fd7c378ca5cd70f89415f26d51bd14a0cbb573a610b6317e5fe6c4842ee2"
+  },
+  {
+    "file": "docs/verification/map-selection/checks.json",
+    "hash": "5e95cb39f589035608f3879ac53151ee28465d7711963afe60de6a25d30c0412"
+  },
+  {
+    "file": "docs/verification/map-selection/before-files.json",
+    "hash": "6ded8c074c154c1650160895418fb96857cd7a0c9e58b274a623bc8ad5f233f8"
+  },
+  {
+    "file": "docs/verification/map-selection/a010-choice-return.jpg",
+    "hash": "f4910024c6d9bf4111c4d4cb7955c7594b4e676a15a8160a2f3a33b7ca58f15c"
+  },
+  {
+    "file": "docs/verification/act1-end.png",
+    "hash": "f726e10bec83d2e5d7fce0dbb84f5610c4be170b0669408f5600b6c649c19a5c"
+  },
+  {
+    "file": "docs/verification/act1-battle.png",
+    "hash": "5474b9429fd074541d65bae168f330460e8a5b4f68fe0c0c512335d3bde099e5"
+  },
+  {
+    "file": "docs/verification/a010-return.png",
+    "hash": "a93999f9cf4db0bf8ece424b421311fa3b8fb04b013af7ea60901d2e299f831e"
+  },
+  {
+    "file": "docs/verification/a007-choice.png",
+    "hash": "e17a92b41ad58a0b2f220dae5789e302eeabf10e55f264abc00d4da619f05001"
+  },
+  {
+    "file": "public/assets/portraits/thief.png",
+    "hash": "dd9cc178984660fee4eb49997d3242b8fdee35d5e92d577ffc45436f32e66f63"
+  },
+  {
+    "file": "public/assets/portraits/hero.png",
+    "hash": "4d0a2884c88a31808289400f30ecc38edaa2e38cf6f5bc2ad2a3167905aee8b3"
+  },
+  {
+    "file": "docs/verification/m2/victory-seed42.png",
+    "hash": "40867d0fd1c6d3e04f8849c5cd7c2fdf251a0d0fc4f622609cf4cde7378ddd45"
+  },
+  {
+    "file": "docs/verification/m2/unconscious-seed42.png",
+    "hash": "d685661b8dd2da1e85722b51228f46a378b903cd46fa0e26bd00654066ed5502"
+  },
+  {
+    "file": "docs/verification/m2/story-browser.json",
+    "hash": "ce3253d51f6ae3d0e3b1c1bd211954ae796e49509d307418c354c7ca2e2798a7"
+  },
+  {
+    "file": "docs/verification/m2/scaled-board.png",
+    "hash": "7c70a2bf1d6b8f4a59c6c64191fda9b73d2cbddc97aaf7297d54dbc571f8308a"
+  },
+  {
+    "file": "docs/verification/m2/rule-replays.json",
+    "hash": "722d9a7f2aeea960df26d4d588e6667b903cbf837ffe128b7cd9bb3b87fe57a5"
+  },
+  {
+    "file": "public/assets/maps/sun-city-painted-v1.png",
+    "hash": "56bc275af13fcc82c971ae2a074919a2380ee5404cf346053eae098a5ff1b57e"
+  },
+  {
+    "file": "docs/verification/m2/reaction-prompt.png",
+    "hash": "68c475c6481c63070db4037906df15a814ab5b3c041c488113a951994abcc4cb"
+  },
+  {
+    "file": "docs/verification/m2/reaction-browser.json",
+    "hash": "19f7a3369133f83bac7e66a141f23c8f23bb88025456712712361dd6d24d4f62"
+  },
+  {
+    "file": "docs/verification/m2/protected-hashes.json",
+    "hash": "3c0bbf7e5a0c777189b3b66f6c00fb2d0380de535abb836de03572c222b3b09e"
+  },
+  {
+    "file": "docs/verification/m2/opportunity-seed42.png",
+    "hash": "a4a3383b4e3e453f57dee2af962155eb60caa248454a2b991a12ff5eb479af9b"
+  },
+  {
+    "file": "docs/verification/m2/m1-act1-end.png",
+    "hash": "3fdc91c233b88c9f19483f26aa35f3c4c3ad4fdd620cd8af56d1e8367a068833"
+  },
+  {
+    "file": "docs/verification/m2/file-changes.json",
+    "hash": "0ee0cd796e37a1d4983ee0ae2e403277f7c0399275fc0a6df7fbee9cc7ed4d17"
+  },
+  {
+    "file": "docs/verification/m2/death-seed42.png",
+    "hash": "b6a5e56b1c6df75781b14ffc518b3de2696d879149dfa3dd889a039aa1a510bf"
+  },
+  {
+    "file": "docs/verification/m2/cover-seed42.png",
+    "hash": "979e36668f5317e2a22d5a6162241ff9e993ec1475e42b6ea2f557e3744ef0c0"
+  },
+  {
+    "file": "docs/verification/m2/checks.json",
+    "hash": "012f223cdfe185f195d90ec9caf0bec214672982172a77da278390e840718b66"
+  },
+  {
+    "file": "docs/verification/m2/battle-browser.json",
+    "hash": "f7ba31fd85225dab8bbbd34d912ccde861b7e169c880c037bb98eb7a323c5c3a"
+  },
+  {
+    "file": "docs/verification/browser-checks.json",
+    "hash": "e26e8bc58c3befc079ee567dea1d3c8c43432c5bf967f84724de1f33dec9f3a3"
+  },
+  {
+    "file": "docs/verification/m4/full-route-browser.json",
+    "hash": "7aed2df1a57a4461a4a4876de9a1a7d9dd88ff4255289c8c842a5573db9bd258"
+  },
+  {
+    "file": "docs/verification/m4/file-changes.json",
+    "hash": "8cf80e0f4aa60a22c72e6a94d1b613a5b1e30e1ebb84728c9ebe094a3537e2b7"
+  },
+  {
+    "file": "docs/verification/m4/corrupt-save-confirm.png",
+    "hash": "e5ba1404cf2eded4168c514dc09b159453aefeb10fdf823e9a73a167860fcd13"
+  },
+  {
+    "file": "docs/verification/m4/continue-menu.png",
+    "hash": "ed41d7c337fe3443e119ba95e9c360f4f00ec68794f4fae9b08ccbc1801457f6"
+  },
+  {
+    "file": "docs/verification/m4/commands.txt",
+    "hash": "5a21f75a5bb9568a9d18715504edda144f194289bca031086c428fd90213decc"
+  },
+  {
+    "file": "docs/verification/m4/checks.json",
+    "hash": "4b2644f10a199c0124a8e1678c78c8fc850bd807a924d9f1ae1e0469e6ce63c7"
+  },
+  {
+    "file": "docs/verification/m4/act1-unlocked.png",
+    "hash": "3e87d1141a9aa504abd392b73632f42ac183bf03e42928af5ccaf1b0b486dfad"
+  },
+  {
+    "file": "docs/verification/m4/act1-end.png",
+    "hash": "0db54aaca97b856a89e1b1f8a23a2e4451cb186d465bce73ca97f575f0ed4b6e"
+  },
+  {
+    "file": "docs/verification/m4/a010-return-note.png",
+    "hash": "0c1091616ec7ccb4de3f469264307e5477178e086b04124f444cc8753f85f285"
+  },
+  {
+    "file": "docs/verification/m4/a007-choice.png",
+    "hash": "48def2f8ade85756c3e12cd613acf4a606b8c032caba2feb7cd0a943712fccc3"
+  },
+  {
+    "file": "docs/verification/m4/storage-fault-browser.json",
+    "hash": "0fe1b25dae87e91dd1f8ee57b159e8b47e60821847337ebb69133482f6105ab9"
+  },
+  {
+    "file": "docs/verification/m4/slice-complete.png",
+    "hash": "11e56f30904c9706e36bbc3775737a41eadca33366f877f9b38c193707f35caf"
+  },
+  {
+    "file": "docs/verification/m4/shadow-victory.png",
+    "hash": "fe0ad63cb5b133e583eebfa0eb99602bfba328ac6423c8e4a0c8049b21ee7af5"
+  },
+  {
+    "file": "docs/verification/m4/shadow-failure.png",
+    "hash": "afe0ae132c9dc9e864d259f86e2b6f5cdad9cb209d2d8375f994dcd6906782d9"
+  },
+  {
+    "file": "docs/verification/m4/replay-browser.json",
+    "hash": "1dfee9a04a855a2fcf441ef8b79ecca35109103d2583c1de26bf2335b5744628"
+  },
+  {
+    "file": "docs/verification/m4/protected-hashes.json",
+    "hash": "b8798f45e316319afad7014baef6f5319d94548584fa6e32c0d5a1608960b439"
+  },
+  {
+    "file": "docs/verification/m4/prologue-victory.png",
+    "hash": "fc6b90113e36ebd436851faee6bd01f9c319a7abc90a49b1244c3a785ec2b823"
+  },
+  {
+    "file": "docs/verification/m4/prologue-failure.png",
+    "hash": "143b1f1dcb8eab23622a73bc20433660f88a0479583f75b3f5386d1d3355a577"
+  },
+  {
+    "file": "docs/verification/m4/progress-browser.json",
+    "hash": "292464785924fe2e4c93170dc37a0891395c16be79eb386ea2523faf18175261"
+  },
+  {
+    "file": "docs/verification/m4/multi-window-browser.json",
+    "hash": "85443450c8672ed75ba98b2a5f5eccec5f8e76734560171b1c1dfb55360f2b00"
+  },
+  {
+    "file": "docs/verification/m4/main-menu.png",
+    "hash": "9d62884f0774f3da89256de1dd609ba06c5179dc23604041b6864f05b1166b2a"
+  },
+  {
+    "file": "docs/verification/m4/m2-seed42.png",
+    "hash": "40867d0fd1c6d3e04f8849c5cd7c2fdf251a0d0fc4f622609cf4cde7378ddd45"
+  },
+  {
+    "file": "docs/verification/m4/m2-browser.json",
+    "hash": "01a07519d6d90ad146e2717fc2fceddf9ccb75b31a4ade00c5dc9f8b0f75bf63"
+  },
+  {
+    "file": "docs/verification/m4/initial-levels.png",
+    "hash": "8a6185895a0489f98af80524a8444008f8e76316e35a21c615cc314b7ee9c56d"
+  },
+  {
+    "file": "docs/verification/m4/handoff-menu.png",
+    "hash": "9d62884f0774f3da89256de1dd609ba06c5179dc23604041b6864f05b1166b2a"
+  },
+  {
+    "file": "docs/verification/m4/full-route-complete.png",
+    "hash": "4d8d112302c83003bc8e618b330bfa6f2f706973a0a60a9866013eb834d8a6a1"
+  },
+  {
+    "file": "package.json",
+    "hash": "96b8013b757fa126c8b424f500b1eb1ad5ef525ff98e62853881c5356c41dff9"
+  },
+  {
+    "file": "public/assets/audio/liuxie.wav",
+    "hash": "2eeedb6dc5ebc450adcf33f340a0d66b8fd8ed30f7872ac9155532c44bef5c05"
+  },
+  {
+    "file": "public/assets/audio/homecoming.wav",
+    "hash": "48791878ab477239c5301855cd8fcf9ce8d05eef75a1f3c07055527470a16701"
+  },
+  {
+    "file": "src/game/save-v2.ts",
+    "hash": "7bdf5da886a623fc4c512e388633068f8fb76cac35eee1f453fe6e68cb5aff42"
+  },
+  {
+    "file": "src/game/save-storage.ts",
+    "hash": "e2aa4af6f326477fcf899a4fc42082e403563a3e838d0c6212da6497853e6e73"
+  },
+  {
+    "file": "src/game/save-format.ts",
+    "hash": "71f758363e8ca98bbcfab1df1a872541215c21bbbd607473c1dd52691792dee3"
+  },
+  {
+    "file": "src/game/map-camera.ts",
+    "hash": "15d65b51f9cd6f17f1b6369055b00a44d2b73192e088353e7e077c050f6334e4"
+  },
+  {
+    "file": "docs/verification/m3/tutorial-move.png",
+    "hash": "62b08b7a1de0ff0c65baf6916dcc2d7a7881f4f0e90340de52dcce9a96b85948"
+  },
+  {
+    "file": "docs/verification/m3/shadow-victory.png",
+    "hash": "fe12d4fb9c594f71d23ce17180fbc698bc733204ed123452ab9cda851ec91222"
+  },
+  {
+    "file": "docs/verification/m3/shadow-opening.png",
+    "hash": "0a089608d42c3a8ea0448e58381c6f54f21cae79e91847df7611c23cf2e95b8f"
+  },
+  {
+    "file": "docs/verification/m3/shadow-failure.png",
+    "hash": "c66eb406403647c43d69c6ba04ce50a5c10ab064edbf58e870cdbb593edfcada"
+  },
+  {
+    "file": "docs/verification/m3/rule-replays.json",
+    "hash": "2c70947c960aa87386c6a02c9c7085cebbcf1126ba70c61183880dbecc27e96d"
+  },
+  {
+    "file": "docs/verification/m3/retry-browser.json",
+    "hash": "a2513c871445191020070f9a7716c7da7ef68867678ba5cbbb322daf919dbee2"
+  },
+  {
+    "file": "docs/verification/m3/protected-hashes.json",
+    "hash": "3eed793598f1375030eb7c2a4fff34b97cc47d1b81fee382b189e2866ef6abf8"
+  },
+  {
+    "file": "docs/verification/m3/prologue-victory.png",
+    "hash": "9d590ce81d4888516b4fc15b21087403ade019e46179c26419587d0d188ac622"
+  },
+  {
+    "file": "docs/verification/m3/prologue-failure.png",
+    "hash": "420dc5989bec5a45ac1b04ab5692e8bd495a4b9e9770e89dc1f5b9101e3e9f61"
+  },
+  {
+    "file": "docs/verification/m3/m2-browser.json",
+    "hash": "ce0ca516e8935d9cd29a621d97be978885c238b64428409a2feb1de63270d455"
+  },
+  {
+    "file": "docs/verification/m3/file-changes.json",
+    "hash": "90e0180d7ed7d2ea659b9a3f3517d5a1aa3619007e9c61382c4532979e8c41bc"
+  },
+  {
+    "file": "docs/verification/m3/direct-browser.json",
+    "hash": "028117664a54223c13901b55140231a995ae9f815dcb45acea3b33216e4674e3"
+  },
+  {
+    "file": "docs/verification/m3/checks.json",
+    "hash": "cd4ff02c901c21331125ff8282855222c9cf96a4a8181575ae50b1c89ee95af4"
+  },
+  {
+    "file": "docs/verification/m3/act1-end.png",
+    "hash": "d82e0816512ac75ff414f7cac45f19e1cfcf8469a5b4f21bf9217d61e8dcd599"
+  },
+  {
+    "file": "src/game/battle/turn.ts",
+    "hash": "88449189754f944d729d26180aa853667673739f48e8d1266b2823d1a2456dcb"
+  },
+  {
+    "file": "src/game/battle/state-helpers.ts",
+    "hash": "ea1d818f2a71e65032cfa88e4c8a7135956f690c06d0709f7bdf44ea89f1d0b4"
+  },
+  {
+    "file": "src/game/battle/rules.ts",
+    "hash": "d22a33d7faa4d0935c807060415718a523602d0e0fec31ab60a7f7cee7c1007e"
+  },
+  {
+    "file": "src/game/battle/movement.ts",
+    "hash": "c91927447c1cf727201c74fd8338e30f0c56c67c21a5765ea753619444b8d2ab"
+  },
+  {
+    "file": "src/game/battle/inspiration.ts",
+    "hash": "602211b122953cd5b8f9b3448f9b7ec94421719dd1e7ccc0036e58e1e1a8e8c6"
+  },
+  {
+    "file": "src/game/battle/dice.ts",
+    "hash": "3c4321081bb084adea4ae66d7fc12e9b32b888c5c032964ea427278e00575784"
+  },
+  {
+    "file": "src/game/battle/definitions.ts",
+    "hash": "e0e496fe6fd4398f924d509a2d6adedd0e80f45703786cbc91d7bf67bd8b1e72"
+  },
+  {
+    "file": "src/game/battle/combat.ts",
+    "hash": "917d4d1ecf3556131123e2b31003676f7b4876e29b3643cf0c8a77d3d9ab2e5a"
+  },
+  {
+    "file": "src/game/battle/ai.ts",
+    "hash": "cb33a6d36f913e13e645807d1703959d9427d810f368bb3d70465e24bb12ae33"
+  },
+  {
+    "file": "src/content/prologue.json",
+    "hash": "e270bee77596a9662445ce87c9bd09b4be4386780568ae368ff24184683be10a"
+  },
+  {
+    "file": "src/content/overrides.json",
+    "hash": "217aafe4802dcf42fe637676c6b2864d6434088405ce973d231f011973ae47f3"
+  },
+  {
+    "file": "src/content/index.json",
+    "hash": "a6ae3ad75097e31f89561601750275244829758bb5091b5f139cdad615eac532"
+  },
+  {
+    "file": "src/content/combatants.json",
+    "hash": "e150f761de74111d58649bd238cb267998867b19582235d07dafdbf9a1c26f40"
+  },
+  {
+    "file": "src/content/battles.json",
+    "hash": "40731538e3b182b697eceea0eb22554f936aa487648c11262bbe512337f2d5e0"
+  },
+  {
+    "file": "src/content/act1.json",
+    "hash": "b835a2ddd354a53bed9aa14489bfe90f1accf5821019b3c94388c35719992bcd"
+  },
+  {
+    "file": "source/story/prologue.md",
+    "hash": "aad4cc222e351fe389d9a0164138ec9168b6cf1f9032fa4bdd21479dbfe597dc"
+  },
+  {
+    "file": "source/story/act1.md",
+    "hash": "2d322c786a744cad4912f098523a9ad61955fc1b59040a0dc5ff08f08921a3bf"
+  },
+  {
+    "file": "source/data/org_grunt.md",
+    "hash": "6c2c331ae4f919aec3080c96eb1b970ebc2a9c166274b873a6fda58bfc1134f8"
+  },
+  {
+    "file": "source/data/hero.md",
+    "hash": "dfad52adf111217b4481a99828d346bb3d4dd6a3b2cdd513b0f3033bebda95cc"
+  },
+  {
+    "file": "E:\\笔记\\次元战争设定\\AGENTS.md",
+    "hash": "3305227a7ab9b3b3542ad6d11c81de0e60638210da0b12f149f4d851bb2b8e4f"
+  },
+  {
+    "file": "E:\\笔记\\次元战争设定\\游戏机制\\战棋移动规划.md",
+    "hash": "2dda6073813193b687979fcccd8d58a82bb0cb6128e521d68e30970c8fb739c5"
+  },
+  {
+    "file": "E:\\笔记\\次元战争设定\\游戏机制\\关卡选择.md",
+    "hash": "cc28f54af110e3ffba15d6528b1eba154c9403176c73598fdcd33171fe8f5961"
+  },
+  {
+    "file": "E:\\笔记\\次元战争设定\\背景故事\\太阳市地理.md",
+    "hash": "4c3c7ba46a9bacc34c1c4df01e9eb6fc31e79e6fa67595e55a8ab99bf07de837"
+  },
+  {
+    "file": "E:\\笔记\\次元战争设定\\背景故事\\太阳市第一高中设施.md",
+    "hash": "e587ebe71a735abc1b018eb7acdb850ee1bd9c90073785c7e87658f7166ba433"
+  },
+  {
+    "file": "E:\\笔记\\次元战争设定\\游戏机制\\大地图选关.md",
+    "hash": "57954cca49c9ff9ad82a9f76e06ce69e3e5e21284332391bd406fdea3a4cd3e2"
+  }
+]

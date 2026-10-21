@@ -1,0 +1,46 @@
+{
+  "typecheck": "passed",
+  "testFiles": 17,
+  "tests": 242,
+  "build": "passed",
+  "strict": true,
+  "anyOccurrences": 0,
+  "maxCodeLines": 218.0,
+  "protectedFiles": 106,
+  "protectedUnchanged": 106,
+  "m4OriginalProtected": 60,
+  "m4OriginalChanged": 0,
+  "sketchSupplementUnchanged": true,
+  "scenes": 25,
+  "texts": 161,
+  "scenesEqual": true,
+  "textsEqual": true,
+  "battles": [
+    {
+      "id": "battle_prologue_tutorial",
+      "logsEqual": true,
+      "round": "3",
+      "draws": "20",
+      "hp": "1"
+    },
+    {
+      "id": "battle_black_humanoid",
+      "logsEqual": true,
+      "round": "3",
+      "draws": "16",
+      "hp": "5"
+    }
+  ],
+  "warnings": 51,
+  "distinctWarnings": 51,
+  "consoleErrors": 0,
+  "nodes": 5,
+  "edges": 4,
+  "keyboardVisible": 5,
+  "keyboardExtraScroll": 0,
+  "migrationCases": 14,
+  "migrationV1Unchanged": 14,
+  "badSaveCases": 3,
+  "newGameUrl": "http://localhost:43627/?seed=0",
+  "completeMapUrl": "http://127.0.0.1:43627/?seed=0"
+}

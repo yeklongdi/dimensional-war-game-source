@@ -1,0 +1,1646 @@
+{
+  "id": "act1",
+  "title": "第一幕",
+  "scenes": [
+    {
+      "id": "a001",
+      "title": "清晨睡过头",
+      "time": "高二开学第一天清晨",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_grandmother_house_bedroom_morning",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_school_morning",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "center",
+          "placeholder": true,
+          "pose": "躺在床上、刚醒",
+          "expression": "困倦、慌张"
+        },
+        {
+          "kind": "show",
+          "actor": "奶奶",
+          "asset": "char_grandmother_warm",
+          "position": "door",
+          "placeholder": true,
+          "pose": "端着早饭、站在门口",
+          "expression": "催促、关心"
+        },
+        {
+          "kind": "stage",
+          "text": "闹钟响了几遍，男高仍然没有醒来。\n奶奶端着早饭上楼，把男高叫醒。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "快起来！第一天上学就要迟到，像什么话！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "知道了知道了……"
+        },
+        {
+          "kind": "stage",
+          "text": "男高匆忙洗漱，抓起书包和外套冲下楼。\n奶奶追到门口，把装着水煮蛋和面包的袋子塞给他，又替他正了正外套领子。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "路上慢点跑！别又摔了！"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "expression": "自信、急着出门"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "放心，我体力好着呢！"
+        },
+        {
+          "kind": "stage",
+          "text": "男高从门口冲出去。"
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "奶奶"
+        },
+        {
+          "kind": "show",
+          "actor": "虚拟主播",
+          "asset": "char_virtual_streamer_shy",
+          "position": "right",
+          "placeholder": true,
+          "pose": "背着书包、站在隔壁门口",
+          "expression": "疑惑"
+        },
+        {
+          "kind": "stage",
+          "text": "隔壁房子的门也正好打开。\n虚拟主播只看见一个陌生少年从邻居家冲出来，朝学校方向跑去。"
+        },
+        {
+          "kind": "inner",
+          "speaker": "虚拟主播",
+          "text": "没见过的人……。"
+        },
+        {
+          "kind": "stage",
+          "text": "虚拟主播沿着街道朝学校走去。"
+        },
+        {
+          "kind": "hide",
+          "actor": "虚拟主播"
+        },
+        {
+          "kind": "jump",
+          "target": "a002"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 167
+      },
+      "background": "bg_grandmother_house_bedroom_morning",
+      "bgm": "bgm_school_morning"
+    },
+    {
+      "id": "a002",
+      "title": "上学途中·路口相撞",
+      "time": "清晨",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_sun_city_school_road_morning",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_school_morning",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "飞奔、手里攥着水煮蛋",
+          "expression": "着急"
+        },
+        {
+          "kind": "stage",
+          "text": "男高一路飞奔，晨风灌进领口，书包在背后一跳一跳。\n学校大门已经出现在街道尽头。"
+        },
+        {
+          "kind": "show",
+          "actor": "怪盗",
+          "asset": "char_thief_smile",
+          "position": "right",
+          "placeholder": true,
+          "pose": "从路口拐出",
+          "expression": "意外"
+        },
+        {
+          "kind": "stage",
+          "text": "路口拐角突然闪出一道身影。\n男高和对方来不及停下，结结实实地撞在一起。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "抱歉！真的很抱歉啦！"
+        },
+        {
+          "kind": "stage",
+          "text": "男高扶住差点滑落的书包，头也不回地继续向学校跑去。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "不要跑那么快啊！"
+        },
+        {
+          "kind": "inner",
+          "speaker": "怪盗",
+          "text": "【原文未提供更多心声，此处不补写。】",
+          "meta": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "怪盗"
+        },
+        {
+          "kind": "jump",
+          "target": "a003"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 230
+      },
+      "background": "bg_sun_city_school_road_morning",
+      "bgm": "bgm_school_morning"
+    },
+    {
+      "id": "a003",
+      "title": "学校门口",
+      "time": "清晨",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_school_gate_morning",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_school_morning",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "center",
+          "placeholder": true,
+          "pose": "叼着面包、跑进校门",
+          "expression": "匆忙"
+        },
+        {
+          "kind": "stage",
+          "text": "晨光中的校牌泛着旧金属的颜色。\n校园包含高楼、操场、旧教学楼和远处被围栏封住的施工区域。\n男高叼着半片面包冲进校门，书包拉链没有完全拉上。"
+        },
+        {
+          "kind": "show",
+          "actor": "老师",
+          "asset": "char_teacher_placeholder",
+          "position": "left",
+          "placeholder": true,
+          "pose": "追着男高喊话",
+          "expression": "严肃、无奈"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老师",
+          "text": "那个学生！站住！\n学校里面不许跑！第一天报到就横冲直撞，像什么样子！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "抱歉啦！老师！下次我会注意的！"
+        },
+        {
+          "kind": "stage",
+          "text": "男高没有停下，反而加速跑向教学楼。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老师",
+          "text": "喂！让你站住！"
+        },
+        {
+          "kind": "meta",
+          "directive": "CAMERA",
+          "raw": "CAMERA: 镜头切换到教学楼二楼走廊。",
+          "meta": true
+        },
+        {
+          "kind": "show",
+          "actor": "反派",
+          "asset": "char_villain_calm",
+          "position": "left",
+          "placeholder": true,
+          "pose": "靠在栏杆边、拿着饮料",
+          "expression": "玩味"
+        },
+        {
+          "kind": "show",
+          "actor": "偶像",
+          "asset": "char_idol_neutral",
+          "position": "right",
+          "placeholder": true,
+          "pose": "站在反派身旁",
+          "expression": "疑惑、不安"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "反派",
+          "text": "转学生？第一天报到就撞了人，又挨老师训……\n这个人，还挺有趣的。"
+        },
+        {
+          "kind": "inner",
+          "speaker": "偶像",
+          "text": "那个人……为什么他会注意到这种普通的学生？"
+        },
+        {
+          "kind": "stage",
+          "text": "偶像迅速收回视线，但不安没有消失。\n镜头短暂掠过学校地下。"
+        },
+        {
+          "kind": "show",
+          "actor": "黑色结晶",
+          "asset": "prop_dark_god_crystal_placeholder",
+          "position": "center",
+          "placeholder": true
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_low_heartbeat",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "黑色结晶在地下深处极轻微地跳动了一下。"
+        },
+        {
+          "kind": "hide",
+          "actor": "黑色结晶"
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "老师"
+        },
+        {
+          "kind": "hide",
+          "actor": "反派"
+        },
+        {
+          "kind": "hide",
+          "actor": "偶像"
+        },
+        {
+          "kind": "jump",
+          "target": "a004"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 273
+      },
+      "background": "bg_school_gate_morning",
+      "bgm": "bgm_school_morning"
+    },
+    {
+      "id": "a004",
+      "title": "教室·自我介绍",
+      "time": "上午上课铃响后",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_school_classroom_morning",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_school_classroom_daily",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "center",
+          "placeholder": true,
+          "pose": "站在讲台前、拿着白板笔",
+          "expression": "自信、兴奋"
+        },
+        {
+          "kind": "show",
+          "actor": "老师",
+          "asset": "char_teacher_placeholder",
+          "position": "left",
+          "placeholder": true,
+          "pose": "站在教室门口",
+          "expression": "平静"
+        },
+        {
+          "kind": "stage",
+          "text": "上课铃响起时，男高正好赶到教室门口。\n他走到讲台前，从讲台上拿起笔，在白板上写下自己的名字。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "大家好！我叫——！\n今天开始转入这个班，请大家多多关照！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "还有，如果有人遇到困难，也可以来找我！"
+        },
+        {
+          "kind": "stage",
+          "text": "教室安静几秒，随后响起压低的笑声和窃窃私语。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "同学甲",
+          "text": "这自我介绍也太像动画主角了吧……"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "同学乙",
+          "text": "还说什么遇到困难来找他……"
+        },
+        {
+          "kind": "stage",
+          "text": "男高没有在意同学的反应，反而拍了拍胸脯。\n靠窗位置上的怪盗认出了男高。"
+        },
+        {
+          "kind": "show",
+          "actor": "怪盗",
+          "asset": "char_thief_smile",
+          "position": "left",
+          "placeholder": true,
+          "pose": "托腮看向男高",
+          "expression": "有趣、微笑"
+        },
+        {
+          "kind": "inner",
+          "speaker": "怪盗",
+          "text": "原来就是你啊，转学生。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高也认出怪盗，朝他挥手。\n怪盗对男高做出“加油”的口型。"
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "老师"
+        },
+        {
+          "kind": "hide",
+          "actor": "怪盗"
+        },
+        {
+          "kind": "jump",
+          "target": "a005"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 343
+      },
+      "background": "bg_school_classroom_morning",
+      "bgm": "bgm_school_classroom_daily"
+    },
+    {
+      "id": "a005",
+      "title": "教室·座位安排",
+      "time": "上午",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_school_classroom_morning",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_school_classroom_daily",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "老师",
+          "asset": "char_teacher_placeholder",
+          "position": "left",
+          "placeholder": true,
+          "pose": "指向空座位"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "center",
+          "placeholder": true,
+          "pose": "拎着书包准备落座",
+          "expression": "期待"
+        },
+        {
+          "kind": "show",
+          "actor": "怪盗",
+          "asset": "char_thief_smile",
+          "position": "back_left",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "虚拟主播",
+          "asset": "char_virtual_streamer_shy",
+          "position": "back_right",
+          "placeholder": true,
+          "expression": "紧张"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老师",
+          "text": "好了，大家安静。新同学先别急着坐。\n你就坐那边——怪盗后面，虚拟主播左边那个空位。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "好嘞！"
+        },
+        {
+          "kind": "stage",
+          "text": "男高拎着书包走向座位，坐到怪盗后面、虚拟主播左边。\n他转头朝虚拟主播笑了一下。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "你好！以后请多关照！"
+        },
+        {
+          "kind": "show",
+          "actor": "虚拟主播",
+          "update": true,
+          "expression": "紧张、躲避视线"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "……嗯。"
+        },
+        {
+          "kind": "stage",
+          "text": "怪盗从前排回过头。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "欢迎入座，新生~。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高用力点头。"
+        },
+        {
+          "kind": "hide",
+          "actor": "老师"
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "怪盗"
+        },
+        {
+          "kind": "hide",
+          "actor": "虚拟主播"
+        },
+        {
+          "kind": "jump",
+          "target": "a006"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 403
+      },
+      "background": "bg_school_classroom_morning",
+      "bgm": "bgm_school_classroom_daily"
+    },
+    {
+      "id": "a006",
+      "title": "课间·带路的人选",
+      "time": "上午最后一节课结束后的课间",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_school_classroom_day",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_school_classroom_daily",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "center",
+          "placeholder": true,
+          "pose": "准备伸懒腰",
+          "expression": "疑惑"
+        },
+        {
+          "kind": "show",
+          "actor": "老师",
+          "asset": "char_teacher_placeholder",
+          "position": "front",
+          "placeholder": true,
+          "pose": "朝男高招手",
+          "expression": "平常"
+        },
+        {
+          "kind": "show",
+          "actor": "怪盗",
+          "asset": "char_thief_smile",
+          "position": "window",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "虚拟主播",
+          "asset": "char_virtual_streamer_shy",
+          "position": "right",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "反派",
+          "asset": "char_villain_calm",
+          "position": "back",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "课间铃声响起，教室热闹起来。\n老师把男高叫到讲台附近。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老师",
+          "text": "转学生，你过来一下。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老师",
+          "text": "你刚转来，对学校还不熟吧。\n这样，我找一名同学带你逛逛校园，认认路。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "老师",
+          "text": "你自己看看，想跟谁一起去？"
+        },
+        {
+          "kind": "stage",
+          "text": "镜头依次给到怪盗、虚拟主播和反派。\n怪盗转笔并挑眉，虚拟主播低头整理书本，反派靠着椅背微笑。"
+        },
+        {
+          "kind": "jump",
+          "target": "a007"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 458
+      },
+      "background": "bg_school_classroom_day",
+      "bgm": "bgm_school_classroom_daily"
+    },
+    {
+      "id": "a007",
+      "title": "课间·选择校园向导",
+      "time": "课间",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_school_classroom_day",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_school_choice",
+          "placeholder": true
+        },
+        {
+          "kind": "choice",
+          "prompt": "男高选择由谁带他参观校园。",
+          "options": [
+            {
+              "index": 1,
+              "text": "怪盗。",
+              "enabled": false,
+              "nodes": [
+                {
+                  "kind": "stage",
+                  "text": "【不可执行】原文只有选项名称，没有怪盗带路正文。",
+                  "meta": true
+                },
+                {
+                  "kind": "jump",
+                  "target": "a007_todo_thief"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "虚拟主播。",
+              "enabled": true,
+              "nodes": [
+                {
+                  "kind": "set",
+                  "flag": "flag_act1_a007_01",
+                  "note": "SET: [变量名待定] 记录玩家选择虚拟主播带路",
+                  "meta": true
+                },
+                {
+                  "kind": "jump",
+                  "target": "a008"
+                }
+              ]
+            },
+            {
+              "index": 3,
+              "text": "反派。",
+              "enabled": false,
+              "nodes": [
+                {
+                  "kind": "stage",
+                  "text": "【不可执行】原文只有选项名称，没有反派带路正文。",
+                  "meta": true
+                },
+                {
+                  "kind": "jump",
+                  "target": "a007_todo_villain"
+                }
+              ]
+            },
+            {
+              "index": 4,
+              "text": "让老师选择。",
+              "enabled": false,
+              "nodes": [
+                {
+                  "kind": "stage",
+                  "text": "这是系统随机，不是玩家直接选择。",
+                  "meta": true
+                },
+                {
+                  "kind": "call",
+                  "name": "random_rd3"
+                },
+                {
+                  "kind": "check",
+                  "raw": "CHECK: [系统随机结果 = 1] -> JUMP: A007_RANDOM_UNAVAILABLE",
+                  "meta": true
+                },
+                {
+                  "kind": "check",
+                  "raw": "CHECK: [系统随机结果 = 2] -> SET: [变量名待定] 记录随机进入虚拟主播路线；JUMP: A008",
+                  "meta": true
+                },
+                {
+                  "kind": "check",
+                  "raw": "CHECK: [系统随机结果 = 3] -> JUMP: A007_RANDOM_UNAVAILABLE",
+                  "meta": true
+                },
+                {
+                  "kind": "narration",
+                  "text": "【待确认】是否可以通过读取存档重新生成 `rd3` 结果。",
+                  "meta": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 498
+      },
+      "background": "bg_school_classroom_day",
+      "bgm": "bgm_school_choice"
+    },
+    {
+      "id": "a007_todo_thief",
+      "title": "怪盗带路·未完成",
+      "time": "课间",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_school_classroom_day",
+          "placeholder": true
+        },
+        {
+          "kind": "narration",
+          "text": "【不可执行】原文没有提供怪盗带男高参观校园的正文。\n本场景不补写内容，不增加新的路线结果。",
+          "meta": true
+        },
+        {
+          "kind": "end"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 538
+      },
+      "background": "bg_school_classroom_day"
+    },
+    {
+      "id": "a007_todo_villain",
+      "title": "反派带路·未完成",
+      "time": "课间",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_school_classroom_day",
+          "placeholder": true
+        },
+        {
+          "kind": "narration",
+          "text": "【不可执行】原文没有提供反派带男高参观校园的正文。\n本场景不补写内容，不增加新的路线结果。",
+          "meta": true
+        },
+        {
+          "kind": "end"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 551
+      },
+      "background": "bg_school_classroom_day"
+    },
+    {
+      "id": "a007_random_unavailable",
+      "title": "随机结果对应未完成路线",
+      "time": "课间",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_school_classroom_day",
+          "placeholder": true
+        },
+        {
+          "kind": "narration",
+          "text": "【不可执行】`rd3` 随机结果对应怪盗或反派路线，但该路线当前没有原文正文。",
+          "meta": true
+        },
+        {
+          "kind": "narration",
+          "text": "【待确认】此处应返回选项、暂停流程，还是等待路线正文补充。",
+          "meta": true
+        },
+        {
+          "kind": "end"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 564
+      },
+      "background": "bg_school_classroom_day"
+    },
+    {
+      "id": "a008",
+      "title": "虚拟主播带路参观校园",
+      "time": "白天、课间",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_school_library_day",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_school_daily",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "自然跟随",
+          "expression": "好奇、友善"
+        },
+        {
+          "kind": "show",
+          "actor": "虚拟主播",
+          "asset": "char_virtual_streamer_shy",
+          "position": "right",
+          "placeholder": true,
+          "pose": "低头带路、与男高保持距离",
+          "expression": "紧张"
+        },
+        {
+          "kind": "stage",
+          "text": "老师的话音落下后，虚拟主播发现所有人都看向她。\n她放下手里的东西，走到男高身边，离男高半米远停下。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "那……那跟我来吧。"
+        },
+        {
+          "kind": "stage",
+          "text": "虚拟主播带男高进入主教学楼一层东侧的图书馆。\n镜头表现书架、靠窗自习区和安静的馆内环境。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "这、这里是图书馆……藏书有八万多册……"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "靠窗那边是自习区，平时很安静……\n校史和地方志也在这里。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "好厉害！比我以前学校的图书馆大多了！"
+        },
+        {
+          "kind": "show",
+          "actor": "虚拟主播",
+          "update": true,
+          "expression": "害羞、耳朵发红"
+        },
+        {
+          "kind": "stage",
+          "text": "虚拟主播轻轻点头。"
+        },
+        {
+          "kind": "background",
+          "name": "bg_school_cafeteria_day",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "两人从图书馆出来，绕到主教学楼后方。\n隔着操场可以看到食堂。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "那是食堂……一楼是打饭窗口，二楼是座位区……"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "中午人会很多，靠窗的位置……大家都很喜欢坐。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "那边那个呢？"
+        },
+        {
+          "kind": "background",
+          "name": "bg_school_gym_day",
+          "placeholder": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "那是体育馆……一楼是篮球场和羽毛球场，二楼是观众席……"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "下雨天的体育课都在那边上。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高一边听一边点头，时不时夸她一句。\n虚拟主播的耳朵再次发红。"
+        },
+        {
+          "kind": "jump",
+          "target": "a009"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 579
+      },
+      "background": "bg_school_library_day",
+      "bgm": "bgm_school_daily"
+    },
+    {
+      "id": "a009",
+      "title": "废弃施工区外围",
+      "time": "白天",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_school_construction_zone_day",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_school_mystery",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "停步观察围栏",
+          "expression": "好奇"
+        },
+        {
+          "kind": "show",
+          "actor": "虚拟主播",
+          "asset": "char_virtual_streamer_shy",
+          "position": "right",
+          "placeholder": true,
+          "pose": "紧张、放慢脚步",
+          "expression": "不安"
+        },
+        {
+          "kind": "stage",
+          "text": "两人沿操场边小路往回走，来到操场与围墙之间的东北角。\n镜头表现铁皮围栏、褪色的“施工中”牌子、塌陷大坑和生锈塔吊。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "这里是什么地方？怎么围了这么大一块？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "听说……很久以前这里就要建新楼，但一直没动静。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "学校不让靠近，说是施工危险……\n也有人说是地下挖出了什么东西。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "反正……老师说过，不要靠近那里。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高望着围栏后的大坑。\n镜头在围栏深处短暂停留，表现似乎有什么东西正在注视男高。"
+        },
+        {
+          "kind": "jump",
+          "target": "a010"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 656
+      },
+      "background": "bg_school_construction_zone_day",
+      "bgm": "bgm_school_mystery"
+    },
+    {
+      "id": "a010",
+      "title": "是否进入施工区域",
+      "time": "白天",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_school_construction_zone_day",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_school_mystery",
+          "placeholder": true
+        },
+        {
+          "kind": "choice",
+          "prompt": "男高是否进入废弃施工现场。",
+          "options": [
+            {
+              "index": 1,
+              "text": "去废弃施工现场看看。",
+              "enabled": true,
+              "nodes": [
+                {
+                  "kind": "set",
+                  "flag": "flag_act1_a010_01",
+                  "note": "SET: [变量名待定] 记录男高选择进入施工区域",
+                  "meta": true
+                },
+                {
+                  "kind": "set",
+                  "flag": "flag_act1_a010_02",
+                  "note": "SET: [变量名待定] 增加男高对学校地下异常的调查进度",
+                  "meta": true
+                },
+                {
+                  "kind": "jump",
+                  "target": "a011"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "回班上。",
+              "enabled": true,
+              "nodes": [
+                {
+                  "kind": "set",
+                  "flag": "flag_act1_a010_03",
+                  "note": "SET: [变量名待定] 记录男高选择返回班级",
+                  "meta": true
+                },
+                {
+                  "kind": "narration",
+                  "text": "【暂无线性后果】原文仅说明男高收回目光，决定先回班上，后续支线暂不展开。",
+                  "meta": true
+                },
+                {
+                  "kind": "jump",
+                  "target": "a016"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 699
+      },
+      "background": "bg_school_construction_zone_day",
+      "bgm": "bgm_school_mystery"
+    },
+    {
+      "id": "a011",
+      "title": "施工区域·坑底与腐蚀之剑",
+      "time": "白天",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_school_construction_zone_day",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_school_mystery",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "推开铁皮小门、准备进入",
+          "expression": "兴奋、好奇"
+        },
+        {
+          "kind": "show",
+          "actor": "虚拟主播",
+          "asset": "char_virtual_streamer_shy",
+          "position": "right",
+          "placeholder": true,
+          "pose": "慌张跟随",
+          "expression": "害怕、焦虑"
+        },
+        {
+          "kind": "stage",
+          "text": "男高沿围栏走了几步，发现东侧有一扇锈迹斑斑的铁皮小门。\n门闩只是虚挂着，没有上锁。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "有门不走，翻什么墙！"
+        },
+        {
+          "kind": "stage",
+          "text": "男高推开小门走进去。\n虚拟主播飞快地观察四周，随后咬牙跟上。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "等、等一下……这里真的不能进……"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "老师说过不能靠近这里的……\n被发现了会被叫家长的……"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "而且这里很危险……听说有人晚上路过，听见里面传出奇怪的声音……"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "喂……你有没有在听我说话……"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "听着呢听着呢！你看，这不就是个大坑嘛，哪有那么吓人——嗯？"
+        },
+        {
+          "kind": "stage",
+          "text": "男高停下脚步。\n坑底传来极轻、极轻的心跳声。"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_low_heartbeat",
+          "placeholder": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "……我们还是，回去吧。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高顺着防尘布的破口朝坑底看去。\n坑底泥土发黑，中央悬着一把剑，剑尖朝下，离地半尺，微微颤动。"
+        },
+        {
+          "kind": "show",
+          "actor": "大师之剑",
+          "asset": "prop_master_sword_corrupted_placeholder",
+          "position": "bottom_center",
+          "placeholder": true,
+          "pose": "悬浮、下半段被黑绿色污秽覆盖"
+        },
+        {
+          "kind": "show",
+          "actor": "虚拟主播",
+          "update": true,
+          "expression": "恐惧"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "这是……什么？"
+        },
+        {
+          "kind": "stage",
+          "text": "男高观察剑身。\n剑柄顶端是紫蓝色菱形剑首，握柄缠着青绿色绳纹，翼状护手中央嵌着暗淡的金色三角宝石。\n剑身上半段泛着象牙白的冷光，下半段被黑绿色污秽腐蚀，剑尖扭曲发黑。"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "expression": "被吸引、犹豫"
+        },
+        {
+          "kind": "stage",
+          "text": "男高不由自主地伸手靠近剑柄。\n剑身极轻微地颤动，金色三角宝石比刚才亮了一点。"
+        },
+        {
+          "kind": "narration",
+          "text": "【原文只有“选择 1：男高伸手触碰剑柄”，没有替代选项；本处转换为强制事件，不新增玩家分支。】",
+          "meta": true
+        },
+        {
+          "kind": "jump",
+          "target": "a012"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 720
+      },
+      "background": "bg_school_construction_zone_day",
+      "bgm": "bgm_school_mystery"
+    },
+    {
+      "id": "a012",
+      "title": "大师之剑·触碰与幻象",
+      "time": "白天与幻象时间混合",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_school_construction_pit",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_master_sword_vision",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "男高的手指触碰到剑柄。\n整座大坑忽然安静下来，连风声都像被截断。"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_master_sword_resonance",
+          "placeholder": true
+        },
+        {
+          "kind": "unknown",
+          "raw": "CG: cg_master_sword_vision_placeholder [占位符]",
+          "meta": true,
+          "placeholder": true
+        },
+        {
+          "kind": "meta",
+          "directive": "CAMERA",
+          "raw": "CAMERA: 镜头从剑柄金色三角宝石推进至幻象。",
+          "meta": true
+        },
+        {
+          "kind": "call",
+          "name": "event_master_sword_vision"
+        },
+        {
+          "kind": "narration",
+          "text": "【待确认】该特殊事件只负责幻象、音效和画面演出，不在本脚本中补写林克的完整角色卡背景。",
+          "meta": true
+        },
+        {
+          "kind": "narration",
+          "text": "男高看见一座漂浮在云海之上的岛屿。"
+        },
+        {
+          "kind": "narration",
+          "text": "他看见一名右臂被异样力量侵蚀的青年从空中坠落。"
+        },
+        {
+          "kind": "narration",
+          "text": "他看见一座升上天空的城堡，漆黑瘴气从地底涌出，将白色剑刃一点点染成黑绿色。"
+        },
+        {
+          "kind": "narration",
+          "text": "画面再次变换。\n一条发出金色光芒的巨龙在云层间盘旋，巨龙头顶插着一把残破的剑。"
+        },
+        {
+          "kind": "narration",
+          "text": "那个青年站在巨龙头顶，伸手重新握住剑柄。"
+        },
+        {
+          "kind": "narration",
+          "text": "光芒、龙鳞、坠落的城堡和远去的身影交错闪过。\n这些不是男高的记忆，但他能感受到其中的失去、恐惧和决心。"
+        },
+        {
+          "kind": "narration",
+          "text": "幻象最后停留在一片安静的草地上。\n青年拔出剑，剑刃发出清澈的鸣响。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高猛地回过神来。\n他双手握住剑柄，用力向上拔。"
+        },
+        {
+          "kind": "stage",
+          "text": "大师之剑被一点点拔出。\n覆盖在下半截剑刃上的黑绿色污秽蠕动起来，脱离剑身并落到泥土上。\n剑身重新露出象牙白的光泽，但仍残留腐蚀裂纹。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "我是不是睡糊涂了？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "一把剑而已，怎么会让我看到这么奇怪的东西……"
+        },
+        {
+          "kind": "stage",
+          "text": "男高抱着大师之剑，转身走向坑边。\n污秽在他身后的泥土中缓慢聚拢。"
+        },
+        {
+          "kind": "jump",
+          "target": "a013"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 805
+      },
+      "background": "bg_school_construction_pit",
+      "bgm": "bgm_master_sword_vision"
+    },
+    {
+      "id": "a013",
+      "title": "施工区域·黑色人形",
+      "time": "白天",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_school_construction_pit",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_black_humanoid_appearance",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "bottom_center",
+          "placeholder": true,
+          "pose": "持剑、准备保护虚拟主播",
+          "expression": "震惊、警戒"
+        },
+        {
+          "kind": "show",
+          "actor": "虚拟主播",
+          "asset": "char_virtual_streamer_shy",
+          "position": "top_right",
+          "placeholder": true,
+          "pose": "趴在坑边、即将失去意识",
+          "expression": "恐惧"
+        },
+        {
+          "kind": "show",
+          "actor": "黑色人形",
+          "asset": "char_black_humanoid_placeholder",
+          "position": "bottom_left",
+          "placeholder": true,
+          "pose": "由污秽聚合、站起"
+        },
+        {
+          "kind": "stage",
+          "text": "黑绿色污秽沿坑底向中央爬行，聚成一团扭曲阴影。\n阴影逐渐长出双腿、躯干、手臂和头颅。\n它的脸上没有五官，只有两点暗红色光芒。"
+        },
+        {
+          "kind": "stage",
+          "text": "虚拟主播看见黑色人形，身体软软倒在坑边。"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_fainting",
+          "placeholder": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "这、这是什么东西？！"
+        },
+        {
+          "kind": "stage",
+          "text": "男高低头看向昏迷的虚拟主播，又看向坑底的黑色人形。\n他握紧大师之剑，挡在虚拟主播前面。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "没办法了……\n只能先把你打倒，再带她离开！"
+        },
+        {
+          "kind": "stage",
+          "text": "黑色人形抬起由污渍凝成的手臂，黑色能量在掌心聚集。"
+        },
+        {
+          "kind": "jump",
+          "target": "a014"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 872
+      },
+      "background": "bg_school_construction_pit",
+      "bgm": "bgm_black_humanoid_appearance"
+    },
+    {
+      "id": "a014",
+      "title": "黑色人形战斗",
+      "time": "白天",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_school_construction_pit",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_black_humanoid_battle",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "战斗界面切入。"
+        },
+        {
+          "kind": "call",
+          "name": "battle_black_humanoid"
+        },
+        {
+          "kind": "narration",
+          "text": "【待确认】黑色人形的战斗数据、胜利条件、失败处理和战斗奖励。",
+          "meta": true
+        },
+        {
+          "kind": "stage",
+          "text": "战斗结束后，大坑重新安静下来。\n黑色人形消失，只剩零散的黑色污渍留在泥土上。\n大师之剑的光芒慢慢收敛，只剩剑刃中央一条极细的金色纹路。"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "center",
+          "placeholder": true,
+          "pose": "战斗后疲惫、扶住虚拟主播",
+          "expression": "麻烦、担心"
+        },
+        {
+          "kind": "show",
+          "actor": "虚拟主播",
+          "asset": "char_virtual_streamer_shy",
+          "position": "right",
+          "placeholder": true,
+          "pose": "昏迷"
+        },
+        {
+          "kind": "stage",
+          "text": "男高把大师之剑插回坑底旁边的泥土，随后冲向坑边扶住虚拟主播。\n他抱起虚拟主播，沿着坑壁向上爬。"
+        },
+        {
+          "kind": "stage",
+          "text": "虚拟主播的书包掉在铁皮围栏旁边。\n男高先把她抱出施工区，再折返回去捡起书包，并把铁皮小门重新关上。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高回头看向坑底。\n大师之剑静静插在泥土中，金色纹路一闪而过。\n更深的泥土里，一缕极细的黑气朝学校地下延伸。"
+        },
+        {
+          "kind": "set",
+          "flag": "flag_act1_a014_01",
+          "note": "SET: [变量名待定] 记录虚拟主播目击黑色人形",
+          "meta": true
+        },
+        {
+          "kind": "set",
+          "flag": "flag_act1_a014_02",
+          "note": "SET: [变量名待定] 增加男高对学校地下异常的调查进度",
+          "meta": true
+        },
+        {
+          "kind": "jump",
+          "target": "a015"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 916
+      },
+      "background": "bg_school_construction_pit",
+      "bgm": "bgm_black_humanoid_battle"
+    },
+    {
+      "id": "a015",
+      "title": "回到学校",
+      "time": "白天、课间铃响",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_school_hallway_day",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_school_mystery",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "center",
+          "placeholder": true,
+          "pose": "抱着虚拟主播、疲惫",
+          "expression": "尴尬、担心"
+        },
+        {
+          "kind": "show",
+          "actor": "虚拟主播",
+          "asset": "char_virtual_streamer_shy",
+          "position": "center_front",
+          "placeholder": true,
+          "pose": "昏迷"
+        },
+        {
+          "kind": "stage",
+          "text": "男高抱着昏迷的虚拟主播回到教学楼。\n课间铃声刚好响起，走廊上的学生纷纷停下脚步看向他们。"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_school_bell",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "男高没有察觉，自己手上的剑形灼痕正在袖口下缓缓发光。"
+        },
+        {
+          "kind": "set",
+          "flag": "flag_act1_a015_01",
+          "note": "SET: [变量名待定] 记录男高带虚拟主播返回学校",
+          "meta": true
+        },
+        {
+          "kind": "jump",
+          "target": "a016"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 960
+      },
+      "background": "bg_school_hallway_day",
+      "bgm": "bgm_school_mystery"
+    },
+    {
+      "id": "a016",
+      "title": "第一幕结束",
+      "time": "未明确",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_school_hallway_day",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_scene_transition",
+          "placeholder": true
+        },
+        {
+          "kind": "narration",
+          "text": "第一幕结束。"
+        },
+        {
+          "kind": "narration",
+          "text": "【待确认】第一幕结束后是否直接进入下一幕，或先返回教室、保健室或其他校园场景。",
+          "meta": true
+        },
+        {
+          "kind": "set",
+          "flag": "flag_act1_a016_01",
+          "note": "SET: [变量名待定] 记录第一幕结束",
+          "meta": true
+        },
+        {
+          "kind": "end"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/act1.md",
+        "line": 986
+      },
+      "background": "bg_school_hallway_day",
+      "bgm": "bgm_scene_transition"
+    }
+  ]
+}

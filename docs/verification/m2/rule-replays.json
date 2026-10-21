@@ -1,0 +1,4543 @@
+{
+  "attack42": {
+    "seed": 42,
+    "commands": [
+      {
+        "kind": "move",
+        "actor": "hero",
+        "to": {
+          "col": 4,
+          "row": 3
+        }
+      },
+      {
+        "kind": "attack",
+        "actor": "hero",
+        "target": "black_a",
+        "attackId": "unarmed",
+        "resource": "action"
+      },
+      {
+        "kind": "attack",
+        "actor": "hero",
+        "target": "black_a",
+        "attackId": "unarmed",
+        "resource": "bonus"
+      },
+      {
+        "kind": "end",
+        "actor": "hero"
+      },
+      {
+        "kind": "move",
+        "actor": "hero",
+        "to": {
+          "col": 5,
+          "row": 3
+        }
+      },
+      {
+        "kind": "attack",
+        "actor": "hero",
+        "target": "black_b",
+        "attackId": "unarmed",
+        "resource": "action"
+      },
+      {
+        "kind": "attack",
+        "actor": "hero",
+        "target": "black_b",
+        "attackId": "unarmed",
+        "resource": "bonus"
+      },
+      {
+        "kind": "end",
+        "actor": "hero"
+      },
+      {
+        "kind": "attack",
+        "actor": "hero",
+        "target": "black_b",
+        "attackId": "unarmed",
+        "resource": "action"
+      },
+      {
+        "kind": "attack",
+        "actor": "hero",
+        "target": "black_b",
+        "attackId": "unarmed",
+        "resource": "bonus"
+      }
+    ],
+    "result": {
+      "outcome": "win",
+      "reason": "eliminated"
+    },
+    "rngDraws": 17,
+    "units": [
+      {
+        "id": "hero",
+        "hp": 10,
+        "status": "active",
+        "saves": {
+          "successes": 0,
+          "failures": 0
+        }
+      },
+      {
+        "id": "black_a",
+        "hp": 0,
+        "status": "defeated",
+        "saves": {
+          "successes": 0,
+          "failures": 0
+        }
+      },
+      {
+        "id": "black_b",
+        "hp": 0,
+        "status": "defeated",
+        "saves": {
+          "successes": 0,
+          "failures": 0
+        }
+      }
+    ],
+    "log": [
+      {
+        "kind": "initiative",
+        "actor": "black_b",
+        "roll": {
+          "dice": [
+            18
+          ],
+          "chosen": 18,
+          "mode": "normal"
+        },
+        "bonus": 1,
+        "total": 19,
+        "rank": 1,
+        "seq": 0,
+        "round": 1
+      },
+      {
+        "kind": "initiative",
+        "actor": "hero",
+        "roll": {
+          "dice": [
+            13
+          ],
+          "chosen": 13,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 15,
+        "rank": 2,
+        "seq": 1,
+        "round": 1
+      },
+      {
+        "kind": "initiative",
+        "actor": "black_a",
+        "roll": {
+          "dice": [
+            9
+          ],
+          "chosen": 9,
+          "mode": "normal"
+        },
+        "bonus": 1,
+        "total": 10,
+        "rank": 3,
+        "seq": 2,
+        "round": 1
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 3,
+        "round": 1
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 4,
+        "round": 1
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            14,
+            4
+          ],
+          "chosen": 4,
+          "mode": "disadvantage"
+        },
+        "bonus": 2,
+        "total": 6,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 5,
+        "round": 1
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 6,
+        "round": 1
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 7,
+        "round": 1
+      },
+      {
+        "kind": "move",
+        "actor": "hero",
+        "from": {
+          "col": 0,
+          "row": 2
+        },
+        "to": {
+          "col": 1,
+          "row": 2
+        },
+        "remaining": 25,
+        "seq": 8,
+        "round": 1
+      },
+      {
+        "kind": "move",
+        "actor": "hero",
+        "from": {
+          "col": 1,
+          "row": 2
+        },
+        "to": {
+          "col": 2,
+          "row": 2
+        },
+        "remaining": 20,
+        "seq": 9,
+        "round": 1
+      },
+      {
+        "kind": "move",
+        "actor": "hero",
+        "from": {
+          "col": 2,
+          "row": 2
+        },
+        "to": {
+          "col": 3,
+          "row": 3
+        },
+        "remaining": 15,
+        "seq": 10,
+        "round": 1
+      },
+      {
+        "kind": "move",
+        "actor": "hero",
+        "from": {
+          "col": 3,
+          "row": 3
+        },
+        "to": {
+          "col": 4,
+          "row": 3
+        },
+        "remaining": 10,
+        "seq": 11,
+        "round": 1
+      },
+      {
+        "kind": "attack",
+        "actor": "hero",
+        "target": "black_a",
+        "attack": "徒手",
+        "source": "action",
+        "roll": {
+          "dice": [
+            11
+          ],
+          "chosen": 11,
+          "mode": "normal"
+        },
+        "bonus": 4,
+        "total": 15,
+        "ac": 12,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": true,
+        "critical": false,
+        "seq": 12,
+        "round": 1
+      },
+      {
+        "kind": "damage",
+        "actor": "hero",
+        "target": "black_a",
+        "roll": {
+          "expression": "1d4+2",
+          "dice": [
+            2
+          ],
+          "sides": 4,
+          "modifier": 2,
+          "total": 4,
+          "critical": false
+        },
+        "damageType": "bludgeoning",
+        "report": {
+          "raw": 4,
+          "adjusted": 4,
+          "modifiers": [],
+          "hpBefore": 6,
+          "hpAfter": 2,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 0
+        },
+        "seq": 13,
+        "round": 1
+      },
+      {
+        "kind": "attack",
+        "actor": "hero",
+        "target": "black_a",
+        "attack": "徒手",
+        "source": "bonus",
+        "roll": {
+          "dice": [
+            13
+          ],
+          "chosen": 13,
+          "mode": "normal"
+        },
+        "bonus": 4,
+        "total": 17,
+        "ac": 12,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": true,
+        "critical": false,
+        "seq": 14,
+        "round": 1
+      },
+      {
+        "kind": "damage",
+        "actor": "hero",
+        "target": "black_a",
+        "roll": {
+          "expression": "1d4+2",
+          "dice": [
+            4
+          ],
+          "sides": 4,
+          "modifier": 2,
+          "total": 6,
+          "critical": false
+        },
+        "damageType": "bludgeoning",
+        "report": {
+          "raw": 6,
+          "adjusted": 6,
+          "modifiers": [],
+          "hpBefore": 2,
+          "hpAfter": 0,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 0
+        },
+        "seq": 15,
+        "round": 1
+      },
+      {
+        "kind": "condition",
+        "actor": "black_a",
+        "status": "defeated",
+        "seq": 16,
+        "round": 1
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 17,
+        "round": 2
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 18,
+        "round": 2
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            10
+          ],
+          "chosen": 10,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 12,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": false,
+        "critical": false,
+        "seq": 19,
+        "round": 2
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 20,
+        "round": 2
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 21,
+        "round": 2
+      },
+      {
+        "kind": "move",
+        "actor": "hero",
+        "from": {
+          "col": 4,
+          "row": 3
+        },
+        "to": {
+          "col": 5,
+          "row": 3
+        },
+        "remaining": 25,
+        "seq": 22,
+        "round": 2
+      },
+      {
+        "kind": "attack",
+        "actor": "hero",
+        "target": "black_b",
+        "attack": "徒手",
+        "source": "action",
+        "roll": {
+          "dice": [
+            5
+          ],
+          "chosen": 5,
+          "mode": "normal"
+        },
+        "bonus": 4,
+        "total": 9,
+        "ac": 12,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": false,
+        "critical": false,
+        "seq": 23,
+        "round": 2
+      },
+      {
+        "kind": "attack",
+        "actor": "hero",
+        "target": "black_b",
+        "attack": "徒手",
+        "source": "bonus",
+        "roll": {
+          "dice": [
+            18
+          ],
+          "chosen": 18,
+          "mode": "normal"
+        },
+        "bonus": 4,
+        "total": 22,
+        "ac": 12,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": true,
+        "critical": false,
+        "seq": 24,
+        "round": 2
+      },
+      {
+        "kind": "damage",
+        "actor": "hero",
+        "target": "black_b",
+        "roll": {
+          "expression": "1d4+2",
+          "dice": [
+            3
+          ],
+          "sides": 4,
+          "modifier": 2,
+          "total": 5,
+          "critical": false
+        },
+        "damageType": "bludgeoning",
+        "report": {
+          "raw": 5,
+          "adjusted": 5,
+          "modifiers": [],
+          "hpBefore": 6,
+          "hpAfter": 1,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 0
+        },
+        "seq": 25,
+        "round": 2
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 26,
+        "round": 3
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 27,
+        "round": 3
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            7
+          ],
+          "chosen": 7,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 9,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": false,
+        "critical": false,
+        "seq": 28,
+        "round": 3
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 29,
+        "round": 3
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 30,
+        "round": 3
+      },
+      {
+        "kind": "attack",
+        "actor": "hero",
+        "target": "black_b",
+        "attack": "徒手",
+        "source": "action",
+        "roll": {
+          "dice": [
+            4
+          ],
+          "chosen": 4,
+          "mode": "normal"
+        },
+        "bonus": 4,
+        "total": 8,
+        "ac": 12,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": false,
+        "critical": false,
+        "seq": 31,
+        "round": 3
+      },
+      {
+        "kind": "attack",
+        "actor": "hero",
+        "target": "black_b",
+        "attack": "徒手",
+        "source": "bonus",
+        "roll": {
+          "dice": [
+            11
+          ],
+          "chosen": 11,
+          "mode": "normal"
+        },
+        "bonus": 4,
+        "total": 15,
+        "ac": 12,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": true,
+        "critical": false,
+        "seq": 32,
+        "round": 3
+      },
+      {
+        "kind": "damage",
+        "actor": "hero",
+        "target": "black_b",
+        "roll": {
+          "expression": "1d4+2",
+          "dice": [
+            3
+          ],
+          "sides": 4,
+          "modifier": 2,
+          "total": 5,
+          "critical": false
+        },
+        "damageType": "bludgeoning",
+        "report": {
+          "raw": 5,
+          "adjusted": 5,
+          "modifiers": [],
+          "hpBefore": 1,
+          "hpAfter": 0,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 0
+        },
+        "seq": 33,
+        "round": 3
+      },
+      {
+        "kind": "condition",
+        "actor": "black_b",
+        "status": "defeated",
+        "seq": 34,
+        "round": 3
+      },
+      {
+        "kind": "result",
+        "outcome": "win",
+        "reason": "eliminated",
+        "seq": 35,
+        "round": 3
+      }
+    ],
+    "displayLog": [
+      "先攻第1位 黑衣人乙：d20(18) [普通]+1=19",
+      "先攻第2位 男高：d20(13) [普通]+2=15",
+      "先攻第3位 黑衣人甲：d20(9) [普通]+1=10",
+      "第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程",
+      "AI 黑衣人乙：结束回合",
+      "第 1 轮 · 男高回合开始，刷新回合资源及反应",
+      "男高 (0,2)→(1,2)，消耗5尺，剩余25尺",
+      "男高 (1,2)→(2,2)，消耗5尺，剩余20尺",
+      "男高 (2,2)→(3,3)，消耗5尺，剩余15尺",
+      "男高 (3,3)→(4,3)，消耗5尺，剩余10尺",
+      "男高→黑衣人甲 动作·徒手：d20(11) [普通]+4=15 vs AC12，命中",
+      "伤害 1d4+2：d4(2)+2=4 钝击；无伤害减免→4；临时HP 0→0；黑衣人甲 HP 6→2",
+      "男高→黑衣人甲 附赠·徒手：d20(13) [普通]+4=17 vs AC12，命中",
+      "伤害 1d4+2：d4(4)+2=6 钝击；无伤害减免→6；临时HP 0→0；黑衣人甲 HP 2→0",
+      "黑衣人甲：被击败",
+      "第 2 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(10) [普通]+2=12 vs AC14，失误",
+      "AI 黑衣人乙：结束回合",
+      "第 2 轮 · 男高回合开始，刷新回合资源及反应",
+      "男高 (4,3)→(5,3)，消耗5尺，剩余25尺",
+      "男高→黑衣人乙 动作·徒手：d20(5) [普通]+4=9 vs AC12，失误",
+      "男高→黑衣人乙 附赠·徒手：d20(18) [普通]+4=22 vs AC12，命中",
+      "伤害 1d4+2：d4(3)+2=5 钝击；无伤害减免→5；临时HP 0→0；黑衣人乙 HP 6→1",
+      "第 3 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·挥砍：d20(7) [普通]+2=9 vs AC14，失误",
+      "AI 黑衣人乙：结束回合",
+      "第 3 轮 · 男高回合开始，刷新回合资源及反应",
+      "男高→黑衣人乙 动作·徒手：d20(4) [普通]+4=8 vs AC12，失误",
+      "男高→黑衣人乙 附赠·徒手：d20(11) [普通]+4=15 vs AC12，命中",
+      "伤害 1d4+2：d4(3)+2=5 钝击；无伤害减免→5；临时HP 0→0；黑衣人乙 HP 1→0",
+      "黑衣人乙：被击败",
+      "胜利：敌人全部被击败"
+    ]
+  },
+  "wait42": {
+    "seed": 42,
+    "commands": [
+      {
+        "kind": "end",
+        "actor": "hero"
+      },
+      {
+        "kind": "end",
+        "actor": "hero"
+      },
+      {
+        "kind": "end",
+        "actor": "hero"
+      },
+      {
+        "kind": "end",
+        "actor": "hero"
+      },
+      {
+        "kind": "end",
+        "actor": "hero"
+      }
+    ],
+    "result": {
+      "outcome": "lose",
+      "reason": "dead"
+    },
+    "rngDraws": 29,
+    "units": [
+      {
+        "id": "hero",
+        "hp": 0,
+        "status": "dead",
+        "saves": {
+          "successes": 0,
+          "failures": 3
+        }
+      },
+      {
+        "id": "black_a",
+        "hp": 6,
+        "status": "active",
+        "saves": {
+          "successes": 0,
+          "failures": 0
+        }
+      },
+      {
+        "id": "black_b",
+        "hp": 6,
+        "status": "active",
+        "saves": {
+          "successes": 0,
+          "failures": 0
+        }
+      }
+    ],
+    "log": [
+      {
+        "kind": "initiative",
+        "actor": "black_b",
+        "roll": {
+          "dice": [
+            18
+          ],
+          "chosen": 18,
+          "mode": "normal"
+        },
+        "bonus": 1,
+        "total": 19,
+        "rank": 1,
+        "seq": 0,
+        "round": 1
+      },
+      {
+        "kind": "initiative",
+        "actor": "hero",
+        "roll": {
+          "dice": [
+            13
+          ],
+          "chosen": 13,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 15,
+        "rank": 2,
+        "seq": 1,
+        "round": 1
+      },
+      {
+        "kind": "initiative",
+        "actor": "black_a",
+        "roll": {
+          "dice": [
+            9
+          ],
+          "chosen": 9,
+          "mode": "normal"
+        },
+        "bonus": 1,
+        "total": 10,
+        "rank": 3,
+        "seq": 2,
+        "round": 1
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 3,
+        "round": 1
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 4,
+        "round": 1
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            14,
+            4
+          ],
+          "chosen": 4,
+          "mode": "disadvantage"
+        },
+        "bonus": 2,
+        "total": 6,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 5,
+        "round": 1
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 6,
+        "round": 1
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 7,
+        "round": 1
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 8,
+        "round": 1
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "move",
+        "destination": {
+          "col": 1,
+          "row": 3
+        },
+        "seq": 9,
+        "round": 1
+      },
+      {
+        "kind": "move",
+        "actor": "black_a",
+        "from": {
+          "col": 5,
+          "row": 3
+        },
+        "to": {
+          "col": 4,
+          "row": 4
+        },
+        "remaining": 25,
+        "seq": 10,
+        "round": 1
+      },
+      {
+        "kind": "move",
+        "actor": "black_a",
+        "from": {
+          "col": 4,
+          "row": 4
+        },
+        "to": {
+          "col": 3,
+          "row": 4
+        },
+        "remaining": 20,
+        "seq": 11,
+        "round": 1
+      },
+      {
+        "kind": "move",
+        "actor": "black_a",
+        "from": {
+          "col": 3,
+          "row": 4
+        },
+        "to": {
+          "col": 2,
+          "row": 4
+        },
+        "remaining": 15,
+        "seq": 12,
+        "round": 1
+      },
+      {
+        "kind": "move",
+        "actor": "black_a",
+        "from": {
+          "col": 2,
+          "row": 4
+        },
+        "to": {
+          "col": 1,
+          "row": 3
+        },
+        "remaining": 10,
+        "seq": 13,
+        "round": 1
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 14,
+        "round": 1
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            11
+          ],
+          "chosen": 11,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 13,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": false,
+        "critical": false,
+        "seq": 15,
+        "round": 1
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 16,
+        "round": 1
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 17,
+        "round": 2
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 18,
+        "round": 2
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            6,
+            13
+          ],
+          "chosen": 6,
+          "mode": "disadvantage"
+        },
+        "bonus": 2,
+        "total": 8,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 19,
+        "round": 2
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 20,
+        "round": 2
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 21,
+        "round": 2
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 22,
+        "round": 2
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 23,
+        "round": 2
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            18
+          ],
+          "chosen": 18,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 20,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": true,
+        "critical": false,
+        "seq": 24,
+        "round": 2
+      },
+      {
+        "kind": "damage",
+        "actor": "black_a",
+        "target": "hero",
+        "roll": {
+          "expression": "1d6",
+          "dice": [
+            3
+          ],
+          "sides": 6,
+          "modifier": 0,
+          "total": 3,
+          "critical": false
+        },
+        "damageType": "slashing",
+        "report": {
+          "raw": 3,
+          "adjusted": 3,
+          "modifiers": [],
+          "hpBefore": 10,
+          "hpAfter": 7,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 0
+        },
+        "seq": 25,
+        "round": 2
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 26,
+        "round": 2
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 27,
+        "round": 3
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 28,
+        "round": 3
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            5,
+            18
+          ],
+          "chosen": 5,
+          "mode": "disadvantage"
+        },
+        "bonus": 2,
+        "total": 7,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 29,
+        "round": 3
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 30,
+        "round": 3
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 31,
+        "round": 3
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 32,
+        "round": 3
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 33,
+        "round": 3
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            15
+          ],
+          "chosen": 15,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 17,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": true,
+        "critical": false,
+        "seq": 34,
+        "round": 3
+      },
+      {
+        "kind": "damage",
+        "actor": "black_a",
+        "target": "hero",
+        "roll": {
+          "expression": "1d6",
+          "dice": [
+            2
+          ],
+          "sides": 6,
+          "modifier": 0,
+          "total": 2,
+          "critical": false
+        },
+        "damageType": "slashing",
+        "report": {
+          "raw": 2,
+          "adjusted": 2,
+          "modifiers": [],
+          "hpBefore": 7,
+          "hpAfter": 5,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 0
+        },
+        "seq": 35,
+        "round": 3
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 36,
+        "round": 3
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 37,
+        "round": 4
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 38,
+        "round": 4
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            4,
+            11
+          ],
+          "chosen": 4,
+          "mode": "disadvantage"
+        },
+        "bonus": 2,
+        "total": 6,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 39,
+        "round": 4
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 40,
+        "round": 4
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 41,
+        "round": 4
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 42,
+        "round": 4
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 43,
+        "round": 4
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            14
+          ],
+          "chosen": 14,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 16,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": true,
+        "critical": false,
+        "seq": 44,
+        "round": 4
+      },
+      {
+        "kind": "damage",
+        "actor": "black_a",
+        "target": "hero",
+        "roll": {
+          "expression": "1d6",
+          "dice": [
+            4
+          ],
+          "sides": 6,
+          "modifier": 0,
+          "total": 4,
+          "critical": false
+        },
+        "damageType": "slashing",
+        "report": {
+          "raw": 4,
+          "adjusted": 4,
+          "modifiers": [],
+          "hpBefore": 5,
+          "hpAfter": 1,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 0
+        },
+        "seq": 45,
+        "round": 4
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 46,
+        "round": 4
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 47,
+        "round": 5
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 48,
+        "round": 5
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            1,
+            10
+          ],
+          "chosen": 1,
+          "mode": "disadvantage"
+        },
+        "bonus": 2,
+        "total": 3,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 49,
+        "round": 5
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 50,
+        "round": 5
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 51,
+        "round": 5
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 52,
+        "round": 5
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 53,
+        "round": 5
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            17
+          ],
+          "chosen": 17,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 19,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": true,
+        "critical": false,
+        "seq": 54,
+        "round": 5
+      },
+      {
+        "kind": "damage",
+        "actor": "black_a",
+        "target": "hero",
+        "roll": {
+          "expression": "1d6",
+          "dice": [
+            1
+          ],
+          "sides": 6,
+          "modifier": 0,
+          "total": 1,
+          "critical": false
+        },
+        "damageType": "slashing",
+        "report": {
+          "raw": 1,
+          "adjusted": 1,
+          "modifiers": [],
+          "hpBefore": 1,
+          "hpAfter": 0,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 0
+        },
+        "seq": 55,
+        "round": 5
+      },
+      {
+        "kind": "condition",
+        "actor": "hero",
+        "status": "unconscious",
+        "seq": 56,
+        "round": 5
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 57,
+        "round": 5
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 58,
+        "round": 6
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 59,
+        "round": 6
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            12
+          ],
+          "chosen": 12,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 14,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [
+          "目标昏迷"
+        ],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": true,
+        "critical": false,
+        "seq": 60,
+        "round": 6
+      },
+      {
+        "kind": "damage",
+        "actor": "black_b",
+        "target": "hero",
+        "roll": {
+          "expression": "1d6",
+          "dice": [
+            1
+          ],
+          "sides": 6,
+          "modifier": 0,
+          "total": 1,
+          "critical": false
+        },
+        "damageType": "piercing",
+        "report": {
+          "raw": 1,
+          "adjusted": 1,
+          "modifiers": [],
+          "hpBefore": 0,
+          "hpAfter": 0,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 1
+        },
+        "seq": 61,
+        "round": 6
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 62,
+        "round": 6
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 63,
+        "round": 6
+      },
+      {
+        "kind": "death-save",
+        "actor": "hero",
+        "roll": {
+          "dice": [
+            6
+          ],
+          "chosen": 6,
+          "mode": "normal"
+        },
+        "successes": 0,
+        "failures": 2,
+        "outcome": "failure",
+        "seq": 64,
+        "round": 6
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 65,
+        "round": 6
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 66,
+        "round": 6
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            2,
+            4
+          ],
+          "chosen": 4,
+          "mode": "advantage"
+        },
+        "bonus": 2,
+        "total": 6,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [
+          "目标昏迷"
+        ],
+        "disadvantages": [],
+        "hit": false,
+        "critical": false,
+        "seq": 67,
+        "round": 6
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 68,
+        "round": 6
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 69,
+        "round": 7
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 70,
+        "round": 7
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            16
+          ],
+          "chosen": 16,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 18,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [
+          "目标昏迷"
+        ],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": true,
+        "critical": false,
+        "seq": 71,
+        "round": 7
+      },
+      {
+        "kind": "damage",
+        "actor": "black_b",
+        "target": "hero",
+        "roll": {
+          "expression": "1d6",
+          "dice": [
+            4
+          ],
+          "sides": 6,
+          "modifier": 0,
+          "total": 4,
+          "critical": false
+        },
+        "damageType": "piercing",
+        "report": {
+          "raw": 4,
+          "adjusted": 4,
+          "modifiers": [],
+          "hpBefore": 0,
+          "hpAfter": 0,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 1
+        },
+        "seq": 72,
+        "round": 7
+      },
+      {
+        "kind": "condition",
+        "actor": "hero",
+        "status": "dead",
+        "seq": 73,
+        "round": 7
+      },
+      {
+        "kind": "result",
+        "outcome": "lose",
+        "reason": "dead",
+        "seq": 74,
+        "round": 7
+      }
+    ],
+    "displayLog": [
+      "先攻第1位 黑衣人乙：d20(18) [普通]+1=19",
+      "先攻第2位 男高：d20(13) [普通]+2=15",
+      "先攻第3位 黑衣人甲：d20(9) [普通]+1=10",
+      "第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程",
+      "AI 黑衣人乙：结束回合",
+      "第 1 轮 · 男高回合开始，刷新回合资源及反应",
+      "第 1 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：移动至(1,3)",
+      "黑衣人甲 (5,3)→(4,4)，消耗5尺，剩余25尺",
+      "黑衣人甲 (4,4)→(3,4)，消耗5尺，剩余20尺",
+      "黑衣人甲 (3,4)→(2,4)，消耗5尺，剩余15尺",
+      "黑衣人甲 (2,4)→(1,3)，消耗5尺，剩余10尺",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(11) [普通]+2=13 vs AC14，失误",
+      "AI 黑衣人甲：结束回合",
+      "第 2 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(6,13)取6 [劣势]+2=8 vs AC14，失误；劣势：超过常规射程",
+      "AI 黑衣人乙：结束回合",
+      "第 2 轮 · 男高回合开始，刷新回合资源及反应",
+      "第 2 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(18) [普通]+2=20 vs AC14，命中",
+      "伤害 1d6：d6(3)+0=3 挥砍；无伤害减免→3；临时HP 0→0；男高 HP 10→7",
+      "AI 黑衣人甲：结束回合",
+      "第 3 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(5,18)取5 [劣势]+2=7 vs AC14，失误；劣势：超过常规射程",
+      "AI 黑衣人乙：结束回合",
+      "第 3 轮 · 男高回合开始，刷新回合资源及反应",
+      "第 3 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(15) [普通]+2=17 vs AC14，命中",
+      "伤害 1d6：d6(2)+0=2 挥砍；无伤害减免→2；临时HP 0→0；男高 HP 7→5",
+      "AI 黑衣人甲：结束回合",
+      "第 4 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(4,11)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程",
+      "AI 黑衣人乙：结束回合",
+      "第 4 轮 · 男高回合开始，刷新回合资源及反应",
+      "第 4 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(14) [普通]+2=16 vs AC14，命中",
+      "伤害 1d6：d6(4)+0=4 挥砍；无伤害减免→4；临时HP 0→0；男高 HP 5→1",
+      "AI 黑衣人甲：结束回合",
+      "第 5 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(1,10)取1 [劣势]+2=3 vs AC14，失误；劣势：超过常规射程",
+      "AI 黑衣人乙：结束回合",
+      "第 5 轮 · 男高回合开始，刷新回合资源及反应",
+      "第 5 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(17) [普通]+2=19 vs AC14，命中",
+      "伤害 1d6：d6(1)+0=1 挥砍；无伤害减免→1；临时HP 0→0；男高 HP 1→0",
+      "男高：昏迷、倒地、失能",
+      "AI 黑衣人甲：结束回合",
+      "第 6 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(12) [普通]+2=14 vs AC14，命中；优势：目标昏迷；劣势：超过常规射程",
+      "伤害 1d6：d6(1)+0=1 穿刺；无伤害减免→1；临时HP 0→0；男高 HP 0→0；死亡失败 +1",
+      "AI 黑衣人乙：结束回合",
+      "第 6 轮 · 男高回合开始，刷新回合资源及反应",
+      "男高 死亡豁免 d20(6) [普通] vs DC10，成功0/失败2；失败",
+      "第 6 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(2,4)取4 [优势]+2=6 vs AC14，失误；优势：目标昏迷",
+      "AI 黑衣人甲：结束回合",
+      "第 7 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(16) [普通]+2=18 vs AC14，命中；优势：目标昏迷；劣势：超过常规射程",
+      "伤害 1d6：d6(4)+0=4 穿刺；无伤害减免→4；临时HP 0→0；男高 HP 0→0；死亡失败 +1",
+      "男高：死亡",
+      "失败：男高死亡"
+    ]
+  },
+  "cover42": {
+    "seed": 42,
+    "commands": [
+      {
+        "kind": "move",
+        "actor": "hero",
+        "to": {
+          "col": 1,
+          "row": 1
+        }
+      },
+      {
+        "kind": "end",
+        "actor": "hero"
+      },
+      {
+        "kind": "end",
+        "actor": "hero"
+      },
+      {
+        "kind": "end",
+        "actor": "hero"
+      },
+      {
+        "kind": "end",
+        "actor": "hero"
+      },
+      {
+        "kind": "end",
+        "actor": "hero"
+      }
+    ],
+    "result": {
+      "outcome": "lose",
+      "reason": "dead"
+    },
+    "rngDraws": 36,
+    "units": [
+      {
+        "id": "hero",
+        "hp": 0,
+        "status": "dead",
+        "saves": {
+          "successes": 2,
+          "failures": 3
+        }
+      },
+      {
+        "id": "black_a",
+        "hp": 6,
+        "status": "active",
+        "saves": {
+          "successes": 0,
+          "failures": 0
+        }
+      },
+      {
+        "id": "black_b",
+        "hp": 6,
+        "status": "active",
+        "saves": {
+          "successes": 0,
+          "failures": 0
+        }
+      }
+    ],
+    "log": [
+      {
+        "kind": "initiative",
+        "actor": "black_b",
+        "roll": {
+          "dice": [
+            18
+          ],
+          "chosen": 18,
+          "mode": "normal"
+        },
+        "bonus": 1,
+        "total": 19,
+        "rank": 1,
+        "seq": 0,
+        "round": 1
+      },
+      {
+        "kind": "initiative",
+        "actor": "hero",
+        "roll": {
+          "dice": [
+            13
+          ],
+          "chosen": 13,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 15,
+        "rank": 2,
+        "seq": 1,
+        "round": 1
+      },
+      {
+        "kind": "initiative",
+        "actor": "black_a",
+        "roll": {
+          "dice": [
+            9
+          ],
+          "chosen": 9,
+          "mode": "normal"
+        },
+        "bonus": 1,
+        "total": 10,
+        "rank": 3,
+        "seq": 2,
+        "round": 1
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 3,
+        "round": 1
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 4,
+        "round": 1
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            14,
+            4
+          ],
+          "chosen": 4,
+          "mode": "disadvantage"
+        },
+        "bonus": 2,
+        "total": 6,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 5,
+        "round": 1
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 6,
+        "round": 1
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 7,
+        "round": 1
+      },
+      {
+        "kind": "move",
+        "actor": "hero",
+        "from": {
+          "col": 0,
+          "row": 2
+        },
+        "to": {
+          "col": 1,
+          "row": 1
+        },
+        "remaining": 25,
+        "seq": 8,
+        "round": 1
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 9,
+        "round": 1
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "move",
+        "destination": {
+          "col": 2,
+          "row": 2
+        },
+        "seq": 10,
+        "round": 1
+      },
+      {
+        "kind": "move",
+        "actor": "black_a",
+        "from": {
+          "col": 5,
+          "row": 3
+        },
+        "to": {
+          "col": 4,
+          "row": 4
+        },
+        "remaining": 25,
+        "seq": 11,
+        "round": 1
+      },
+      {
+        "kind": "move",
+        "actor": "black_a",
+        "from": {
+          "col": 4,
+          "row": 4
+        },
+        "to": {
+          "col": 3,
+          "row": 3
+        },
+        "remaining": 20,
+        "seq": 12,
+        "round": 1
+      },
+      {
+        "kind": "move",
+        "actor": "black_a",
+        "from": {
+          "col": 3,
+          "row": 3
+        },
+        "to": {
+          "col": 2,
+          "row": 2
+        },
+        "remaining": 15,
+        "seq": 13,
+        "round": 1
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 14,
+        "round": 1
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            11
+          ],
+          "chosen": 11,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 13,
+        "ac": 16,
+        "cover": 2,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": false,
+        "critical": false,
+        "seq": 15,
+        "round": 1
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 16,
+        "round": 1
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 17,
+        "round": 2
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 18,
+        "round": 2
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            6,
+            13
+          ],
+          "chosen": 6,
+          "mode": "disadvantage"
+        },
+        "bonus": 2,
+        "total": 8,
+        "ac": 16,
+        "cover": 2,
+        "advantages": [],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 19,
+        "round": 2
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 20,
+        "round": 2
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 21,
+        "round": 2
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 22,
+        "round": 2
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 23,
+        "round": 2
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            18
+          ],
+          "chosen": 18,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 20,
+        "ac": 16,
+        "cover": 2,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": true,
+        "critical": false,
+        "seq": 24,
+        "round": 2
+      },
+      {
+        "kind": "damage",
+        "actor": "black_a",
+        "target": "hero",
+        "roll": {
+          "expression": "1d6",
+          "dice": [
+            3
+          ],
+          "sides": 6,
+          "modifier": 0,
+          "total": 3,
+          "critical": false
+        },
+        "damageType": "slashing",
+        "report": {
+          "raw": 3,
+          "adjusted": 3,
+          "modifiers": [],
+          "hpBefore": 10,
+          "hpAfter": 7,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 0
+        },
+        "seq": 25,
+        "round": 2
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 26,
+        "round": 2
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 27,
+        "round": 3
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 28,
+        "round": 3
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            5,
+            18
+          ],
+          "chosen": 5,
+          "mode": "disadvantage"
+        },
+        "bonus": 2,
+        "total": 7,
+        "ac": 16,
+        "cover": 2,
+        "advantages": [],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 29,
+        "round": 3
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 30,
+        "round": 3
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 31,
+        "round": 3
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 32,
+        "round": 3
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 33,
+        "round": 3
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            15
+          ],
+          "chosen": 15,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 17,
+        "ac": 16,
+        "cover": 2,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": true,
+        "critical": false,
+        "seq": 34,
+        "round": 3
+      },
+      {
+        "kind": "damage",
+        "actor": "black_a",
+        "target": "hero",
+        "roll": {
+          "expression": "1d6",
+          "dice": [
+            2
+          ],
+          "sides": 6,
+          "modifier": 0,
+          "total": 2,
+          "critical": false
+        },
+        "damageType": "slashing",
+        "report": {
+          "raw": 2,
+          "adjusted": 2,
+          "modifiers": [],
+          "hpBefore": 7,
+          "hpAfter": 5,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 0
+        },
+        "seq": 35,
+        "round": 3
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 36,
+        "round": 3
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 37,
+        "round": 4
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 38,
+        "round": 4
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            4,
+            11
+          ],
+          "chosen": 4,
+          "mode": "disadvantage"
+        },
+        "bonus": 2,
+        "total": 6,
+        "ac": 16,
+        "cover": 2,
+        "advantages": [],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 39,
+        "round": 4
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 40,
+        "round": 4
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 41,
+        "round": 4
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 42,
+        "round": 4
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 43,
+        "round": 4
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            14
+          ],
+          "chosen": 14,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 16,
+        "ac": 16,
+        "cover": 2,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": true,
+        "critical": false,
+        "seq": 44,
+        "round": 4
+      },
+      {
+        "kind": "damage",
+        "actor": "black_a",
+        "target": "hero",
+        "roll": {
+          "expression": "1d6",
+          "dice": [
+            4
+          ],
+          "sides": 6,
+          "modifier": 0,
+          "total": 4,
+          "critical": false
+        },
+        "damageType": "slashing",
+        "report": {
+          "raw": 4,
+          "adjusted": 4,
+          "modifiers": [],
+          "hpBefore": 5,
+          "hpAfter": 1,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 0
+        },
+        "seq": 45,
+        "round": 4
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 46,
+        "round": 4
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 47,
+        "round": 5
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 48,
+        "round": 5
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            1,
+            10
+          ],
+          "chosen": 1,
+          "mode": "disadvantage"
+        },
+        "bonus": 2,
+        "total": 3,
+        "ac": 16,
+        "cover": 2,
+        "advantages": [],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 49,
+        "round": 5
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 50,
+        "round": 5
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 51,
+        "round": 5
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 52,
+        "round": 5
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 53,
+        "round": 5
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            17
+          ],
+          "chosen": 17,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 19,
+        "ac": 16,
+        "cover": 2,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": true,
+        "critical": false,
+        "seq": 54,
+        "round": 5
+      },
+      {
+        "kind": "damage",
+        "actor": "black_a",
+        "target": "hero",
+        "roll": {
+          "expression": "1d6",
+          "dice": [
+            1
+          ],
+          "sides": 6,
+          "modifier": 0,
+          "total": 1,
+          "critical": false
+        },
+        "damageType": "slashing",
+        "report": {
+          "raw": 1,
+          "adjusted": 1,
+          "modifiers": [],
+          "hpBefore": 1,
+          "hpAfter": 0,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 0
+        },
+        "seq": 55,
+        "round": 5
+      },
+      {
+        "kind": "condition",
+        "actor": "hero",
+        "status": "unconscious",
+        "seq": 56,
+        "round": 5
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 57,
+        "round": 5
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 58,
+        "round": 6
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 59,
+        "round": 6
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            12
+          ],
+          "chosen": 12,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 14,
+        "ac": 16,
+        "cover": 2,
+        "advantages": [
+          "目标昏迷"
+        ],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 60,
+        "round": 6
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 61,
+        "round": 6
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 62,
+        "round": 6
+      },
+      {
+        "kind": "death-save",
+        "actor": "hero",
+        "roll": {
+          "dice": [
+            1
+          ],
+          "chosen": 1,
+          "mode": "normal"
+        },
+        "successes": 0,
+        "failures": 2,
+        "outcome": "failure",
+        "seq": 63,
+        "round": 6
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 64,
+        "round": 6
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 65,
+        "round": 6
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            6,
+            2
+          ],
+          "chosen": 6,
+          "mode": "advantage"
+        },
+        "bonus": 2,
+        "total": 8,
+        "ac": 16,
+        "cover": 2,
+        "advantages": [
+          "目标昏迷"
+        ],
+        "disadvantages": [],
+        "hit": false,
+        "critical": false,
+        "seq": 66,
+        "round": 6
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 67,
+        "round": 6
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 68,
+        "round": 7
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 69,
+        "round": 7
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            4
+          ],
+          "chosen": 4,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 6,
+        "ac": 16,
+        "cover": 2,
+        "advantages": [
+          "目标昏迷"
+        ],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 70,
+        "round": 7
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 71,
+        "round": 7
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 72,
+        "round": 7
+      },
+      {
+        "kind": "death-save",
+        "actor": "hero",
+        "roll": {
+          "dice": [
+            16
+          ],
+          "chosen": 16,
+          "mode": "normal"
+        },
+        "successes": 1,
+        "failures": 2,
+        "outcome": "success",
+        "seq": 73,
+        "round": 7
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 74,
+        "round": 7
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 75,
+        "round": 7
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            11,
+            1
+          ],
+          "chosen": 11,
+          "mode": "advantage"
+        },
+        "bonus": 2,
+        "total": 13,
+        "ac": 16,
+        "cover": 2,
+        "advantages": [
+          "目标昏迷"
+        ],
+        "disadvantages": [],
+        "hit": false,
+        "critical": false,
+        "seq": 76,
+        "round": 7
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 77,
+        "round": 7
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 78,
+        "round": 8
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 79,
+        "round": 8
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            4
+          ],
+          "chosen": 4,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 6,
+        "ac": 16,
+        "cover": 2,
+        "advantages": [
+          "目标昏迷"
+        ],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 80,
+        "round": 8
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 81,
+        "round": 8
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 82,
+        "round": 8
+      },
+      {
+        "kind": "death-save",
+        "actor": "hero",
+        "roll": {
+          "dice": [
+            17
+          ],
+          "chosen": 17,
+          "mode": "normal"
+        },
+        "successes": 2,
+        "failures": 2,
+        "outcome": "success",
+        "seq": 83,
+        "round": 8
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 84,
+        "round": 8
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 85,
+        "round": 8
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            10,
+            17
+          ],
+          "chosen": 17,
+          "mode": "advantage"
+        },
+        "bonus": 2,
+        "total": 19,
+        "ac": 16,
+        "cover": 2,
+        "advantages": [
+          "目标昏迷"
+        ],
+        "disadvantages": [],
+        "hit": true,
+        "critical": true,
+        "seq": 86,
+        "round": 8
+      },
+      {
+        "kind": "damage",
+        "actor": "black_a",
+        "target": "hero",
+        "roll": {
+          "expression": "1d6",
+          "dice": [
+            2,
+            3
+          ],
+          "sides": 6,
+          "modifier": 0,
+          "total": 5,
+          "critical": true
+        },
+        "damageType": "slashing",
+        "report": {
+          "raw": 5,
+          "adjusted": 5,
+          "modifiers": [],
+          "hpBefore": 0,
+          "hpAfter": 0,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 2
+        },
+        "seq": 87,
+        "round": 8
+      },
+      {
+        "kind": "condition",
+        "actor": "hero",
+        "status": "dead",
+        "seq": 88,
+        "round": 8
+      },
+      {
+        "kind": "result",
+        "outcome": "lose",
+        "reason": "dead",
+        "seq": 89,
+        "round": 8
+      }
+    ],
+    "displayLog": [
+      "先攻第1位 黑衣人乙：d20(18) [普通]+1=19",
+      "先攻第2位 男高：d20(13) [普通]+2=15",
+      "先攻第3位 黑衣人甲：d20(9) [普通]+1=10",
+      "第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程",
+      "AI 黑衣人乙：结束回合",
+      "第 1 轮 · 男高回合开始，刷新回合资源及反应",
+      "男高 (0,2)→(1,1)，消耗5尺，剩余25尺",
+      "第 1 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：移动至(2,2)",
+      "黑衣人甲 (5,3)→(4,4)，消耗5尺，剩余25尺",
+      "黑衣人甲 (4,4)→(3,3)，消耗5尺，剩余20尺",
+      "黑衣人甲 (3,3)→(2,2)，消耗5尺，剩余15尺",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(11) [普通]+2=13 vs AC16，失误；方向性半身掩护 +2 AC",
+      "AI 黑衣人甲：结束回合",
+      "第 2 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(6,13)取6 [劣势]+2=8 vs AC16，失误；劣势：超过常规射程；方向性半身掩护 +2 AC",
+      "AI 黑衣人乙：结束回合",
+      "第 2 轮 · 男高回合开始，刷新回合资源及反应",
+      "第 2 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(18) [普通]+2=20 vs AC16，命中；方向性半身掩护 +2 AC",
+      "伤害 1d6：d6(3)+0=3 挥砍；无伤害减免→3；临时HP 0→0；男高 HP 10→7",
+      "AI 黑衣人甲：结束回合",
+      "第 3 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(5,18)取5 [劣势]+2=7 vs AC16，失误；劣势：超过常规射程；方向性半身掩护 +2 AC",
+      "AI 黑衣人乙：结束回合",
+      "第 3 轮 · 男高回合开始，刷新回合资源及反应",
+      "第 3 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(15) [普通]+2=17 vs AC16，命中；方向性半身掩护 +2 AC",
+      "伤害 1d6：d6(2)+0=2 挥砍；无伤害减免→2；临时HP 0→0；男高 HP 7→5",
+      "AI 黑衣人甲：结束回合",
+      "第 4 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(4,11)取4 [劣势]+2=6 vs AC16，失误；劣势：超过常规射程；方向性半身掩护 +2 AC",
+      "AI 黑衣人乙：结束回合",
+      "第 4 轮 · 男高回合开始，刷新回合资源及反应",
+      "第 4 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(14) [普通]+2=16 vs AC16，命中；方向性半身掩护 +2 AC",
+      "伤害 1d6：d6(4)+0=4 挥砍；无伤害减免→4；临时HP 0→0；男高 HP 5→1",
+      "AI 黑衣人甲：结束回合",
+      "第 5 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(1,10)取1 [劣势]+2=3 vs AC16，失误；劣势：超过常规射程；方向性半身掩护 +2 AC",
+      "AI 黑衣人乙：结束回合",
+      "第 5 轮 · 男高回合开始，刷新回合资源及反应",
+      "第 5 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(17) [普通]+2=19 vs AC16，命中；方向性半身掩护 +2 AC",
+      "伤害 1d6：d6(1)+0=1 挥砍；无伤害减免→1；临时HP 0→0；男高 HP 1→0",
+      "男高：昏迷、倒地、失能",
+      "AI 黑衣人甲：结束回合",
+      "第 6 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(12) [普通]+2=14 vs AC16，失误；优势：目标昏迷；劣势：超过常规射程；方向性半身掩护 +2 AC",
+      "AI 黑衣人乙：结束回合",
+      "第 6 轮 · 男高回合开始，刷新回合资源及反应",
+      "男高 死亡豁免 d20(1) [普通] vs DC10，成功0/失败2；失败",
+      "第 6 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(6,2)取6 [优势]+2=8 vs AC16，失误；优势：目标昏迷；方向性半身掩护 +2 AC",
+      "AI 黑衣人甲：结束回合",
+      "第 7 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(4) [普通]+2=6 vs AC16，失误；优势：目标昏迷；劣势：超过常规射程；方向性半身掩护 +2 AC",
+      "AI 黑衣人乙：结束回合",
+      "第 7 轮 · 男高回合开始，刷新回合资源及反应",
+      "男高 死亡豁免 d20(16) [普通] vs DC10，成功1/失败2；成功",
+      "第 7 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(11,1)取11 [优势]+2=13 vs AC16，失误；优势：目标昏迷；方向性半身掩护 +2 AC",
+      "AI 黑衣人甲：结束回合",
+      "第 8 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(4) [普通]+2=6 vs AC16，失误；优势：目标昏迷；劣势：超过常规射程；方向性半身掩护 +2 AC",
+      "AI 黑衣人乙：结束回合",
+      "第 8 轮 · 男高回合开始，刷新回合资源及反应",
+      "男高 死亡豁免 d20(17) [普通] vs DC10，成功2/失败2；成功",
+      "第 8 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(10,17)取17 [优势]+2=19 vs AC16，命中·重击；优势：目标昏迷；方向性半身掩护 +2 AC",
+      "伤害 1d6（重击加倍骰子）：d6(2,3)+0=5 挥砍；无伤害减免→5；临时HP 0→0；男高 HP 0→0；死亡失败 +2",
+      "男高：死亡",
+      "失败：男高死亡"
+    ]
+  },
+  "provoke42": {
+    "seed": 42,
+    "commands": [
+      {
+        "kind": "move",
+        "actor": "hero",
+        "to": {
+          "col": 0,
+          "row": 4
+        }
+      },
+      {
+        "kind": "end",
+        "actor": "hero"
+      },
+      {
+        "kind": "move",
+        "actor": "hero",
+        "to": {
+          "col": 0,
+          "row": 0
+        }
+      },
+      {
+        "kind": "end",
+        "actor": "hero"
+      },
+      {
+        "kind": "end",
+        "actor": "hero"
+      },
+      {
+        "kind": "end",
+        "actor": "hero"
+      },
+      {
+        "kind": "end",
+        "actor": "hero"
+      },
+      {
+        "kind": "end",
+        "actor": "hero"
+      },
+      {
+        "kind": "end",
+        "actor": "hero"
+      }
+    ],
+    "result": {
+      "outcome": "lose",
+      "reason": "dead"
+    },
+    "rngDraws": 35,
+    "units": [
+      {
+        "id": "hero",
+        "hp": 0,
+        "status": "dead",
+        "saves": {
+          "successes": 0,
+          "failures": 3
+        }
+      },
+      {
+        "id": "black_a",
+        "hp": 6,
+        "status": "active",
+        "saves": {
+          "successes": 0,
+          "failures": 0
+        }
+      },
+      {
+        "id": "black_b",
+        "hp": 6,
+        "status": "active",
+        "saves": {
+          "successes": 0,
+          "failures": 0
+        }
+      }
+    ],
+    "log": [
+      {
+        "kind": "initiative",
+        "actor": "black_b",
+        "roll": {
+          "dice": [
+            18
+          ],
+          "chosen": 18,
+          "mode": "normal"
+        },
+        "bonus": 1,
+        "total": 19,
+        "rank": 1,
+        "seq": 0,
+        "round": 1
+      },
+      {
+        "kind": "initiative",
+        "actor": "hero",
+        "roll": {
+          "dice": [
+            13
+          ],
+          "chosen": 13,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 15,
+        "rank": 2,
+        "seq": 1,
+        "round": 1
+      },
+      {
+        "kind": "initiative",
+        "actor": "black_a",
+        "roll": {
+          "dice": [
+            9
+          ],
+          "chosen": 9,
+          "mode": "normal"
+        },
+        "bonus": 1,
+        "total": 10,
+        "rank": 3,
+        "seq": 2,
+        "round": 1
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 3,
+        "round": 1
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 4,
+        "round": 1
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            14,
+            4
+          ],
+          "chosen": 4,
+          "mode": "disadvantage"
+        },
+        "bonus": 2,
+        "total": 6,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 5,
+        "round": 1
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 6,
+        "round": 1
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 7,
+        "round": 1
+      },
+      {
+        "kind": "move",
+        "actor": "hero",
+        "from": {
+          "col": 0,
+          "row": 2
+        },
+        "to": {
+          "col": 1,
+          "row": 3
+        },
+        "remaining": 25,
+        "seq": 8,
+        "round": 1
+      },
+      {
+        "kind": "move",
+        "actor": "hero",
+        "from": {
+          "col": 1,
+          "row": 3
+        },
+        "to": {
+          "col": 0,
+          "row": 4
+        },
+        "remaining": 20,
+        "seq": 9,
+        "round": 1
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 10,
+        "round": 1
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "move",
+        "destination": {
+          "col": 1,
+          "row": 4
+        },
+        "seq": 11,
+        "round": 1
+      },
+      {
+        "kind": "move",
+        "actor": "black_a",
+        "from": {
+          "col": 5,
+          "row": 3
+        },
+        "to": {
+          "col": 4,
+          "row": 4
+        },
+        "remaining": 25,
+        "seq": 12,
+        "round": 1
+      },
+      {
+        "kind": "move",
+        "actor": "black_a",
+        "from": {
+          "col": 4,
+          "row": 4
+        },
+        "to": {
+          "col": 3,
+          "row": 4
+        },
+        "remaining": 20,
+        "seq": 13,
+        "round": 1
+      },
+      {
+        "kind": "move",
+        "actor": "black_a",
+        "from": {
+          "col": 3,
+          "row": 4
+        },
+        "to": {
+          "col": 2,
+          "row": 4
+        },
+        "remaining": 15,
+        "seq": 14,
+        "round": 1
+      },
+      {
+        "kind": "move",
+        "actor": "black_a",
+        "from": {
+          "col": 2,
+          "row": 4
+        },
+        "to": {
+          "col": 1,
+          "row": 4
+        },
+        "remaining": 10,
+        "seq": 15,
+        "round": 1
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 16,
+        "round": 1
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            11
+          ],
+          "chosen": 11,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 13,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": false,
+        "critical": false,
+        "seq": 17,
+        "round": 1
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 18,
+        "round": 1
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 19,
+        "round": 2
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 20,
+        "round": 2
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            6,
+            13
+          ],
+          "chosen": 6,
+          "mode": "disadvantage"
+        },
+        "bonus": 2,
+        "total": 8,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 21,
+        "round": 2
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 22,
+        "round": 2
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 23,
+        "round": 2
+      },
+      {
+        "kind": "move",
+        "actor": "hero",
+        "from": {
+          "col": 0,
+          "row": 4
+        },
+        "to": {
+          "col": 0,
+          "row": 3
+        },
+        "remaining": 25,
+        "seq": 24,
+        "round": 2
+      },
+      {
+        "kind": "reaction",
+        "actor": "black_a",
+        "target": "hero",
+        "decision": "attack",
+        "seq": 25,
+        "round": 2
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "reaction",
+        "roll": {
+          "dice": [
+            18
+          ],
+          "chosen": 18,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 20,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": true,
+        "critical": false,
+        "seq": 26,
+        "round": 2
+      },
+      {
+        "kind": "damage",
+        "actor": "black_a",
+        "target": "hero",
+        "roll": {
+          "expression": "1d6",
+          "dice": [
+            3
+          ],
+          "sides": 6,
+          "modifier": 0,
+          "total": 3,
+          "critical": false
+        },
+        "damageType": "slashing",
+        "report": {
+          "raw": 3,
+          "adjusted": 3,
+          "modifiers": [],
+          "hpBefore": 10,
+          "hpAfter": 7,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 0
+        },
+        "seq": 27,
+        "round": 2
+      },
+      {
+        "kind": "move",
+        "actor": "hero",
+        "from": {
+          "col": 0,
+          "row": 3
+        },
+        "to": {
+          "col": 0,
+          "row": 2
+        },
+        "remaining": 20,
+        "seq": 28,
+        "round": 2
+      },
+      {
+        "kind": "move",
+        "actor": "hero",
+        "from": {
+          "col": 0,
+          "row": 2
+        },
+        "to": {
+          "col": 0,
+          "row": 1
+        },
+        "remaining": 15,
+        "seq": 29,
+        "round": 2
+      },
+      {
+        "kind": "move",
+        "actor": "hero",
+        "from": {
+          "col": 0,
+          "row": 1
+        },
+        "to": {
+          "col": 0,
+          "row": 0
+        },
+        "remaining": 10,
+        "seq": 30,
+        "round": 2
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 31,
+        "round": 2
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "move",
+        "destination": {
+          "col": 1,
+          "row": 1
+        },
+        "seq": 32,
+        "round": 2
+      },
+      {
+        "kind": "move",
+        "actor": "black_a",
+        "from": {
+          "col": 1,
+          "row": 4
+        },
+        "to": {
+          "col": 1,
+          "row": 3
+        },
+        "remaining": 25,
+        "seq": 33,
+        "round": 2
+      },
+      {
+        "kind": "move",
+        "actor": "black_a",
+        "from": {
+          "col": 1,
+          "row": 3
+        },
+        "to": {
+          "col": 1,
+          "row": 2
+        },
+        "remaining": 20,
+        "seq": 34,
+        "round": 2
+      },
+      {
+        "kind": "move",
+        "actor": "black_a",
+        "from": {
+          "col": 1,
+          "row": 2
+        },
+        "to": {
+          "col": 1,
+          "row": 1
+        },
+        "remaining": 15,
+        "seq": 35,
+        "round": 2
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 36,
+        "round": 2
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            5
+          ],
+          "chosen": 5,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 7,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": false,
+        "critical": false,
+        "seq": 37,
+        "round": 2
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 38,
+        "round": 2
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 39,
+        "round": 3
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 40,
+        "round": 3
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            18,
+            15
+          ],
+          "chosen": 15,
+          "mode": "disadvantage"
+        },
+        "bonus": 2,
+        "total": 17,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": true,
+        "critical": false,
+        "seq": 41,
+        "round": 3
+      },
+      {
+        "kind": "damage",
+        "actor": "black_b",
+        "target": "hero",
+        "roll": {
+          "expression": "1d6",
+          "dice": [
+            2
+          ],
+          "sides": 6,
+          "modifier": 0,
+          "total": 2,
+          "critical": false
+        },
+        "damageType": "piercing",
+        "report": {
+          "raw": 2,
+          "adjusted": 2,
+          "modifiers": [],
+          "hpBefore": 7,
+          "hpAfter": 5,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 0
+        },
+        "seq": 42,
+        "round": 3
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 43,
+        "round": 3
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 44,
+        "round": 3
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 45,
+        "round": 3
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 46,
+        "round": 3
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            4
+          ],
+          "chosen": 4,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 6,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": false,
+        "critical": false,
+        "seq": 47,
+        "round": 3
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 48,
+        "round": 3
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 49,
+        "round": 4
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 50,
+        "round": 4
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            11,
+            14
+          ],
+          "chosen": 11,
+          "mode": "disadvantage"
+        },
+        "bonus": 2,
+        "total": 13,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 51,
+        "round": 4
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 52,
+        "round": 4
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 53,
+        "round": 4
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 54,
+        "round": 4
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 55,
+        "round": 4
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            13
+          ],
+          "chosen": 13,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 15,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": true,
+        "critical": false,
+        "seq": 56,
+        "round": 4
+      },
+      {
+        "kind": "damage",
+        "actor": "black_a",
+        "target": "hero",
+        "roll": {
+          "expression": "1d6",
+          "dice": [
+            1
+          ],
+          "sides": 6,
+          "modifier": 0,
+          "total": 1,
+          "critical": false
+        },
+        "damageType": "slashing",
+        "report": {
+          "raw": 1,
+          "adjusted": 1,
+          "modifiers": [],
+          "hpBefore": 5,
+          "hpAfter": 4,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 0
+        },
+        "seq": 57,
+        "round": 4
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 58,
+        "round": 4
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 59,
+        "round": 5
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 60,
+        "round": 5
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            10,
+            17
+          ],
+          "chosen": 10,
+          "mode": "disadvantage"
+        },
+        "bonus": 2,
+        "total": 12,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 61,
+        "round": 5
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 62,
+        "round": 5
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 63,
+        "round": 5
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 64,
+        "round": 5
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 65,
+        "round": 5
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            2
+          ],
+          "chosen": 2,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 4,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": false,
+        "critical": false,
+        "seq": 66,
+        "round": 5
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 67,
+        "round": 5
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 68,
+        "round": 6
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 69,
+        "round": 6
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            12,
+            1
+          ],
+          "chosen": 1,
+          "mode": "disadvantage"
+        },
+        "bonus": 2,
+        "total": 3,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 70,
+        "round": 6
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 71,
+        "round": 6
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 72,
+        "round": 6
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 73,
+        "round": 6
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 74,
+        "round": 6
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            6
+          ],
+          "chosen": 6,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 8,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": false,
+        "critical": false,
+        "seq": 75,
+        "round": 6
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 76,
+        "round": 6
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 77,
+        "round": 7
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 78,
+        "round": 7
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            2,
+            4
+          ],
+          "chosen": 2,
+          "mode": "disadvantage"
+        },
+        "bonus": 2,
+        "total": 4,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 79,
+        "round": 7
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 80,
+        "round": 7
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 81,
+        "round": 7
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 82,
+        "round": 7
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 83,
+        "round": 7
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            16
+          ],
+          "chosen": 16,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 18,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [],
+        "disadvantages": [],
+        "hit": true,
+        "critical": false,
+        "seq": 84,
+        "round": 7
+      },
+      {
+        "kind": "damage",
+        "actor": "black_a",
+        "target": "hero",
+        "roll": {
+          "expression": "1d6",
+          "dice": [
+            4
+          ],
+          "sides": 6,
+          "modifier": 0,
+          "total": 4,
+          "critical": false
+        },
+        "damageType": "slashing",
+        "report": {
+          "raw": 4,
+          "adjusted": 4,
+          "modifiers": [],
+          "hpBefore": 4,
+          "hpAfter": 0,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 0
+        },
+        "seq": 85,
+        "round": 7
+      },
+      {
+        "kind": "condition",
+        "actor": "hero",
+        "status": "unconscious",
+        "seq": 86,
+        "round": 7
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "end",
+        "seq": 87,
+        "round": 7
+      },
+      {
+        "kind": "turn",
+        "actor": "black_b",
+        "seq": 88,
+        "round": 8
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 89,
+        "round": 8
+      },
+      {
+        "kind": "attack",
+        "actor": "black_b",
+        "target": "hero",
+        "attack": "金属装置",
+        "source": "action",
+        "roll": {
+          "dice": [
+            1
+          ],
+          "chosen": 1,
+          "mode": "normal"
+        },
+        "bonus": 2,
+        "total": 3,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [
+          "目标昏迷"
+        ],
+        "disadvantages": [
+          "超过常规射程"
+        ],
+        "hit": false,
+        "critical": false,
+        "seq": 90,
+        "round": 8
+      },
+      {
+        "kind": "ai",
+        "actor": "black_b",
+        "decision": "end",
+        "seq": 91,
+        "round": 8
+      },
+      {
+        "kind": "turn",
+        "actor": "hero",
+        "seq": 92,
+        "round": 8
+      },
+      {
+        "kind": "death-save",
+        "actor": "hero",
+        "roll": {
+          "dice": [
+            4
+          ],
+          "chosen": 4,
+          "mode": "normal"
+        },
+        "successes": 0,
+        "failures": 1,
+        "outcome": "failure",
+        "seq": 93,
+        "round": 8
+      },
+      {
+        "kind": "turn",
+        "actor": "black_a",
+        "seq": 94,
+        "round": 8
+      },
+      {
+        "kind": "ai",
+        "actor": "black_a",
+        "decision": "attack",
+        "target": "hero",
+        "seq": 95,
+        "round": 8
+      },
+      {
+        "kind": "attack",
+        "actor": "black_a",
+        "target": "hero",
+        "attack": "挥砍",
+        "source": "action",
+        "roll": {
+          "dice": [
+            17,
+            10
+          ],
+          "chosen": 17,
+          "mode": "advantage"
+        },
+        "bonus": 2,
+        "total": 19,
+        "ac": 14,
+        "cover": 0,
+        "advantages": [
+          "目标昏迷"
+        ],
+        "disadvantages": [],
+        "hit": true,
+        "critical": true,
+        "seq": 96,
+        "round": 8
+      },
+      {
+        "kind": "damage",
+        "actor": "black_a",
+        "target": "hero",
+        "roll": {
+          "expression": "1d6",
+          "dice": [
+            5,
+            2
+          ],
+          "sides": 6,
+          "modifier": 0,
+          "total": 7,
+          "critical": true
+        },
+        "damageType": "slashing",
+        "report": {
+          "raw": 7,
+          "adjusted": 7,
+          "modifiers": [],
+          "hpBefore": 0,
+          "hpAfter": 0,
+          "tempBefore": 0,
+          "tempAfter": 0,
+          "failureAdded": 2
+        },
+        "seq": 97,
+        "round": 8
+      },
+      {
+        "kind": "condition",
+        "actor": "hero",
+        "status": "dead",
+        "seq": 98,
+        "round": 8
+      },
+      {
+        "kind": "result",
+        "outcome": "lose",
+        "reason": "dead",
+        "seq": 99,
+        "round": 8
+      }
+    ],
+    "displayLog": [
+      "先攻第1位 黑衣人乙：d20(18) [普通]+1=19",
+      "先攻第2位 男高：d20(13) [普通]+2=15",
+      "先攻第3位 黑衣人甲：d20(9) [普通]+1=10",
+      "第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程",
+      "AI 黑衣人乙：结束回合",
+      "第 1 轮 · 男高回合开始，刷新回合资源及反应",
+      "男高 (0,2)→(1,3)，消耗5尺，剩余25尺",
+      "男高 (1,3)→(0,4)，消耗5尺，剩余20尺",
+      "第 1 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：移动至(1,4)",
+      "黑衣人甲 (5,3)→(4,4)，消耗5尺，剩余25尺",
+      "黑衣人甲 (4,4)→(3,4)，消耗5尺，剩余20尺",
+      "黑衣人甲 (3,4)→(2,4)，消耗5尺，剩余15尺",
+      "黑衣人甲 (2,4)→(1,4)，消耗5尺，剩余10尺",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(11) [普通]+2=13 vs AC14，失误",
+      "AI 黑衣人甲：结束回合",
+      "第 2 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(6,13)取6 [劣势]+2=8 vs AC14，失误；劣势：超过常规射程",
+      "AI 黑衣人乙：结束回合",
+      "第 2 轮 · 男高回合开始，刷新回合资源及反应",
+      "男高 (0,4)→(0,3)，消耗5尺，剩余25尺",
+      "黑衣人甲对男高：借机攻击，消耗反应 ",
+      "黑衣人甲→男高 借机·挥砍：d20(18) [普通]+2=20 vs AC14，命中",
+      "伤害 1d6：d6(3)+0=3 挥砍；无伤害减免→3；临时HP 0→0；男高 HP 10→7",
+      "男高 (0,3)→(0,2)，消耗5尺，剩余20尺",
+      "男高 (0,2)→(0,1)，消耗5尺，剩余15尺",
+      "男高 (0,1)→(0,0)，消耗5尺，剩余10尺",
+      "第 2 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：移动至(1,1)",
+      "黑衣人甲 (1,4)→(1,3)，消耗5尺，剩余25尺",
+      "黑衣人甲 (1,3)→(1,2)，消耗5尺，剩余20尺",
+      "黑衣人甲 (1,2)→(1,1)，消耗5尺，剩余15尺",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(5) [普通]+2=7 vs AC14，失误",
+      "AI 黑衣人甲：结束回合",
+      "第 3 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(18,15)取15 [劣势]+2=17 vs AC14，命中；劣势：超过常规射程",
+      "伤害 1d6：d6(2)+0=2 穿刺；无伤害减免→2；临时HP 0→0；男高 HP 7→5",
+      "AI 黑衣人乙：结束回合",
+      "第 3 轮 · 男高回合开始，刷新回合资源及反应",
+      "第 3 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(4) [普通]+2=6 vs AC14，失误",
+      "AI 黑衣人甲：结束回合",
+      "第 4 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(11,14)取11 [劣势]+2=13 vs AC14，失误；劣势：超过常规射程",
+      "AI 黑衣人乙：结束回合",
+      "第 4 轮 · 男高回合开始，刷新回合资源及反应",
+      "第 4 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(13) [普通]+2=15 vs AC14，命中",
+      "伤害 1d6：d6(1)+0=1 挥砍；无伤害减免→1；临时HP 0→0；男高 HP 5→4",
+      "AI 黑衣人甲：结束回合",
+      "第 5 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(10,17)取10 [劣势]+2=12 vs AC14，失误；劣势：超过常规射程",
+      "AI 黑衣人乙：结束回合",
+      "第 5 轮 · 男高回合开始，刷新回合资源及反应",
+      "第 5 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(2) [普通]+2=4 vs AC14，失误",
+      "AI 黑衣人甲：结束回合",
+      "第 6 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(12,1)取1 [劣势]+2=3 vs AC14，失误；劣势：超过常规射程",
+      "AI 黑衣人乙：结束回合",
+      "第 6 轮 · 男高回合开始，刷新回合资源及反应",
+      "第 6 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(6) [普通]+2=8 vs AC14，失误",
+      "AI 黑衣人甲：结束回合",
+      "第 7 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(2,4)取2 [劣势]+2=4 vs AC14，失误；劣势：超过常规射程",
+      "AI 黑衣人乙：结束回合",
+      "第 7 轮 · 男高回合开始，刷新回合资源及反应",
+      "第 7 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(16) [普通]+2=18 vs AC14，命中",
+      "伤害 1d6：d6(4)+0=4 挥砍；无伤害减免→4；临时HP 0→0；男高 HP 4→0",
+      "男高：昏迷、倒地、失能",
+      "AI 黑衣人甲：结束回合",
+      "第 8 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+      "AI 黑衣人乙：攻击男高",
+      "黑衣人乙→男高 动作·金属装置：d20(1) [普通]+2=3 vs AC14，失误；优势：目标昏迷；劣势：超过常规射程",
+      "AI 黑衣人乙：结束回合",
+      "第 8 轮 · 男高回合开始，刷新回合资源及反应",
+      "男高 死亡豁免 d20(4) [普通] vs DC10，成功0/失败1；失败",
+      "第 8 轮 · 黑衣人甲回合开始，刷新回合资源及反应",
+      "AI 黑衣人甲：攻击男高",
+      "黑衣人甲→男高 动作·挥砍：d20(17,10)取17 [优势]+2=19 vs AC14，命中·重击；优势：目标昏迷",
+      "伤害 1d6（重击加倍骰子）：d6(5,2)+0=7 挥砍；无伤害减免→7；临时HP 0→0；男高 HP 0→0；死亡失败 +2",
+      "男高：死亡",
+      "失败：男高死亡"
+    ]
+  }
+}

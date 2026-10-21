@@ -1,0 +1,20 @@
+.menu-stage { cursor: default; background: radial-gradient(ellipse at 50% 35%, #27323e 0, #111722 50%, #0b0e14 85%); }
+.menu-stage::before { content: ""; position: absolute; inset: 24px; border: 1px solid #d8b45a24; pointer-events: none; }
+.menu-content { position: absolute; left: 50%; transform: translateX(-50%); text-align: center; }
+.main-menu-content { top: 154px; width: 340px; }
+.game-title { font-size: 64px; font-weight: 400; letter-spacing: .16em; white-space: nowrap; margin: 10px -60px 54px; }
+.main-menu-content .action-button { justify-content: center; margin-top: 18px; }
+.game-version { position: absolute; bottom: 32px; right: 44px; font-size: 13px; color: #aab1bf; }
+.app-chrome { position: absolute; inset: 0; pointer-events: none; z-index: 45; cursor: default; }
+.app-chrome .action-button { pointer-events: auto; }
+.app-chrome > .action-button { position: absolute; top: 20px; right: 22px; width: 152px; min-height: 38px; font-size: 14px; justify-content: center; padding: 4px 12px; }
+.save-feedback { position: absolute; bottom: 34px; left: 50%; transform: translateX(-50%); width: 820px; font-size: 13px; color: #aab4c3; text-align: center; }
+.save-feedback p { margin: 0; }
+.save-feedback.in-game { top: 64px; bottom: auto; left: auto; right: 20px; transform: none; width: 215px; text-align: right; font-size: 11px; line-height: 1.5; }
+.save-warning { color: #edc477; background: #111722e8; border-radius: 6px; padding: 6px 9px; }
+.save-feedback .action-button { margin: 8px auto 0; width: auto; min-height: 32px; padding: 3px 10px; font-size: 13px; justify-content: center; }
+.save-confirm-mask { position: absolute; inset: 0; display: grid; place-items: center; background: #080b12d9; pointer-events: auto; }
+.save-confirm { width: 560px; background: #161a23; border: 1px solid #d8b45a; border-radius: 14px; padding: 30px 36px; }
+.save-confirm h2 { margin: 0; font-size: 26px; }
+.save-confirm p { font-size: 17px; color: #c7ced7; }
+.save-confirm .action-button { margin-top: 16px; justify-content: center; }

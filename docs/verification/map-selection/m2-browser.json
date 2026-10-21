@@ -1,0 +1,683 @@
+{
+  "page": {
+    "audioCount": 0,
+    "body": "M2 · 战棋调试场\n\nseed 42 · 骰子 17 次 · 第 3 轮\n\n黑衣人乙\n先攻 19 · HP 0/6\n男高\n先攻 15 · HP 10/10\n黑衣人甲\n先攻 10 · HP 0/6\n重新开始\n男高的回合\n\n移动 30尺　动作 0\n\n附赠 0　反应 1\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人甲\n\nHP 0/6 · 临时 0\n\n被击败 · (5,3)\n\n黑衣人乙\n\nHP 0/6 · 临时 0\n\n被击败 · (6,4)\n\n战斗记录\n\n先攻第1位 黑衣人乙：d20(18) [普通]+1=19\n\n先攻第2位 男高：d20(13) [普通]+2=15\n\n先攻第3位 黑衣人甲：d20(9) [普通]+1=10\n\n第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程\n\nAI 黑衣人乙：结束回合\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n男高 (0,2)→(1,2)，消耗5尺，剩余25尺\n\n男高 (1,2)→(2,2)，消耗5尺，剩余20尺\n\n男高 (2,2)→(3,3)，消耗5尺，剩余15尺\n\n男高 (3,3)→(4,3)，消耗5尺，剩余10尺\n\n男高→黑衣人甲 动作·徒手：d20(11) [普通]+4=15 vs AC12，命中\n\n伤害 1d4+2：d4(2)+2=4 钝击；无伤害减免→4；临时HP 0→0；黑衣人甲 HP 6→2\n\n男高→黑衣人甲 附赠·徒手：d20(13) [普通]+4=17 vs AC12，命中\n\n伤害 1d4+2：d4(4)+2=6 钝击；无伤害减免→6；临时HP 0→0；黑衣人甲 HP 2→0\n\n黑衣人甲：被击败\n\n第 2 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(10) [普通]+2=12 vs AC14，失误\n\nAI 黑衣人乙：结束回合\n\n第 2 轮 · 男高回合开始，刷新回合资源及反应\n\n男高 (4,3)→(5,3)，消耗5尺，剩余25尺\n\n男高→黑衣人乙 动作·徒手：d20(5) [普通]+4=9 vs AC12，失误\n\n男高→黑衣人乙 附赠·徒手：d20(18) [普通]+4=22 vs AC12，命中\n\n伤害 1d4+2：d4(3)+2=5 钝击；无伤害减免→5；临时HP 0→0；黑衣人乙 HP 6→1\n\n第 3 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·挥砍：d20(7) [普通]+2=9 vs AC14，失误\n\nAI 黑衣人乙：结束回合\n\n第 3 轮 · 男高回合开始，刷新回合资源及反应\n\n男高→黑衣人乙 动作·徒手：d20(4) [普通]+4=8 vs AC12，失误\n\n男高→黑衣人乙 附赠·徒手：d20(11) [普通]+4=15 vs AC12，命中\n\n伤害 1d4+2：d4(3)+2=5 钝击；无伤害减免→5；临时HP 0→0；黑衣人乙 HP 1→0\n\n黑衣人乙：被击败\n\n胜利：敌人全部被击败\n\n本轮为独立调试场，结算不会进入剧情。\n\n战斗胜利\n\n两个黑衣人均已被击败。\n\n重新开始",
+    "buttons": [
+      {
+        "disabled": false,
+        "id": "battle-restart",
+        "text": "重新开始"
+      },
+      {
+        "disabled": false,
+        "id": "cell-0-0",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-1-0",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-2-0",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-3-0",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-4-0",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-5-0",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-6-0",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-0-1",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-1-1",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-2-1",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-3-1",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-4-1",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-5-1",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-6-1",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-0-2",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-1-2",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-2-2",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-3-2",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-4-2",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-5-2",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-6-2",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-0-3",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-1-3",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-2-3",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-3-3",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-4-3",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-5-3",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-6-3",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-0-4",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-1-4",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-2-4",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-3-4",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-4-4",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-5-4",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "cell-6-4",
+        "text": ""
+      },
+      {
+        "disabled": false,
+        "id": "battle-result-restart",
+        "text": "重新开始"
+      }
+    ],
+    "stage": {
+      "battleId": "battle_debug_core",
+      "fixtureDone": "false",
+      "mode": "idle",
+      "result": "eliminated",
+      "rngDraws": "17",
+      "round": "3",
+      "screen": "battle-debug",
+      "seed": "42",
+      "testid": "battle-stage",
+      "token": "1:21",
+      "turnId": "hero",
+      "turnTeam": "player",
+      "waiting": "result"
+    },
+    "stageCount": 1,
+    "text": "",
+    "units": [
+      {
+        "action": "false",
+        "bonus": "false",
+        "col": "5",
+        "hp": "10",
+        "primaryAttack": "unarmed",
+        "reaction": "true",
+        "row": "3",
+        "savesFailure": "0",
+        "savesSuccess": "0",
+        "status": "active",
+        "tempHp": "0",
+        "testid": "unit-hero"
+      },
+      {
+        "action": "false",
+        "bonus": "false",
+        "col": "5",
+        "hp": "0",
+        "primaryAttack": "slash",
+        "reaction": "true",
+        "row": "3",
+        "savesFailure": "0",
+        "savesSuccess": "0",
+        "status": "defeated",
+        "tempHp": "0",
+        "testid": "unit-black_a"
+      },
+      {
+        "action": "false",
+        "bonus": "false",
+        "col": "6",
+        "hp": "0",
+        "primaryAttack": "slash",
+        "reaction": "true",
+        "row": "4",
+        "savesFailure": "0",
+        "savesSuccess": "0",
+        "status": "defeated",
+        "tempHp": "0",
+        "testid": "unit-black_b"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "command": {
+        "kind": "move",
+        "actor": "hero",
+        "to": {
+          "col": 4,
+          "row": 3
+        }
+      },
+      "before": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "5",
+        "round": "1",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:2",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "after": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "5",
+        "round": "1",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:4",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "moving"
+      }
+    },
+    {
+      "command": {
+        "kind": "attack",
+        "actor": "hero",
+        "target": "black_a",
+        "attackId": "unarmed",
+        "resource": "action"
+      },
+      "before": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "5",
+        "round": "1",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:7",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "after": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "7",
+        "round": "1",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:8",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      }
+    },
+    {
+      "command": {
+        "kind": "attack",
+        "actor": "hero",
+        "target": "black_a",
+        "attackId": "unarmed",
+        "resource": "bonus"
+      },
+      "before": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "7",
+        "round": "1",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:8",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "after": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "9",
+        "round": "1",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:9",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      }
+    },
+    {
+      "command": {
+        "kind": "end",
+        "actor": "hero"
+      },
+      "before": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "9",
+        "round": "1",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:9",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "after": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "9",
+        "round": "2",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:10",
+        "turnId": "black_b",
+        "turnTeam": "enemy",
+        "waiting": "enemy"
+      }
+    },
+    {
+      "command": {
+        "kind": "move",
+        "actor": "hero",
+        "to": {
+          "col": 5,
+          "row": 3
+        }
+      },
+      "before": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "10",
+        "round": "2",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:12",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "after": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "10",
+        "round": "2",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:14",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      }
+    },
+    {
+      "command": {
+        "kind": "attack",
+        "actor": "hero",
+        "target": "black_b",
+        "attackId": "unarmed",
+        "resource": "action"
+      },
+      "before": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "10",
+        "round": "2",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:14",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "after": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "11",
+        "round": "2",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:15",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      }
+    },
+    {
+      "command": {
+        "kind": "attack",
+        "actor": "hero",
+        "target": "black_b",
+        "attackId": "unarmed",
+        "resource": "bonus"
+      },
+      "before": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "11",
+        "round": "2",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:15",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "after": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "13",
+        "round": "2",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:16",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      }
+    },
+    {
+      "command": {
+        "kind": "end",
+        "actor": "hero"
+      },
+      "before": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "13",
+        "round": "2",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:16",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "after": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "13",
+        "round": "3",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:17",
+        "turnId": "black_b",
+        "turnTeam": "enemy",
+        "waiting": "enemy"
+      }
+    },
+    {
+      "command": {
+        "kind": "attack",
+        "actor": "hero",
+        "target": "black_b",
+        "attackId": "unarmed",
+        "resource": "action"
+      },
+      "before": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "14",
+        "round": "3",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:19",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "after": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "15",
+        "round": "3",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:20",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      }
+    },
+    {
+      "command": {
+        "kind": "attack",
+        "actor": "hero",
+        "target": "black_b",
+        "attackId": "unarmed",
+        "resource": "bonus"
+      },
+      "before": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "",
+        "rngDraws": "15",
+        "round": "3",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:20",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "after": {
+        "battleId": "battle_debug_core",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "result": "eliminated",
+        "rngDraws": "17",
+        "round": "3",
+        "screen": "battle-debug",
+        "seed": "42",
+        "testid": "battle-stage",
+        "token": "1:21",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "result"
+      }
+    }
+  ],
+  "logs": [
+    "先攻第1位 黑衣人乙：d20(18) [普通]+1=19",
+    "先攻第2位 男高：d20(13) [普通]+2=15",
+    "先攻第3位 黑衣人甲：d20(9) [普通]+1=10",
+    "第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+    "AI 黑衣人乙：攻击男高",
+    "黑衣人乙→男高 动作·金属装置：d20(14,4)取4 [劣势]+2=6 vs AC14，失误；劣势：超过常规射程",
+    "AI 黑衣人乙：结束回合",
+    "第 1 轮 · 男高回合开始，刷新回合资源及反应",
+    "男高 (0,2)→(1,2)，消耗5尺，剩余25尺",
+    "男高 (1,2)→(2,2)，消耗5尺，剩余20尺",
+    "男高 (2,2)→(3,3)，消耗5尺，剩余15尺",
+    "男高 (3,3)→(4,3)，消耗5尺，剩余10尺",
+    "男高→黑衣人甲 动作·徒手：d20(11) [普通]+4=15 vs AC12，命中",
+    "伤害 1d4+2：d4(2)+2=4 钝击；无伤害减免→4；临时HP 0→0；黑衣人甲 HP 6→2",
+    "男高→黑衣人甲 附赠·徒手：d20(13) [普通]+4=17 vs AC12，命中",
+    "伤害 1d4+2：d4(4)+2=6 钝击；无伤害减免→6；临时HP 0→0；黑衣人甲 HP 2→0",
+    "黑衣人甲：被击败",
+    "第 2 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+    "AI 黑衣人乙：攻击男高",
+    "黑衣人乙→男高 动作·金属装置：d20(10) [普通]+2=12 vs AC14，失误",
+    "AI 黑衣人乙：结束回合",
+    "第 2 轮 · 男高回合开始，刷新回合资源及反应",
+    "男高 (4,3)→(5,3)，消耗5尺，剩余25尺",
+    "男高→黑衣人乙 动作·徒手：d20(5) [普通]+4=9 vs AC12，失误",
+    "男高→黑衣人乙 附赠·徒手：d20(18) [普通]+4=22 vs AC12，命中",
+    "伤害 1d4+2：d4(3)+2=5 钝击；无伤害减免→5；临时HP 0→0；黑衣人乙 HP 6→1",
+    "第 3 轮 · 黑衣人乙回合开始，刷新回合资源及反应",
+    "AI 黑衣人乙：攻击男高",
+    "黑衣人乙→男高 动作·挥砍：d20(7) [普通]+2=9 vs AC14，失误",
+    "AI 黑衣人乙：结束回合",
+    "第 3 轮 · 男高回合开始，刷新回合资源及反应",
+    "男高→黑衣人乙 动作·徒手：d20(4) [普通]+4=8 vs AC12，失误",
+    "男高→黑衣人乙 附赠·徒手：d20(11) [普通]+4=15 vs AC12，命中",
+    "伤害 1d4+2：d4(3)+2=5 钝击；无伤害减免→5；临时HP 0→0；黑衣人乙 HP 1→0",
+    "黑衣人乙：被击败",
+    "胜利：敌人全部被击败"
+  ],
+  "console": [],
+  "logsEqual": true,
+  "formalSaveUnchanged": true
+}

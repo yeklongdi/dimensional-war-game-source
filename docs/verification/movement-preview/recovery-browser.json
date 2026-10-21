@@ -1,0 +1,3429 @@
+{
+  "scenes": [
+    "p001",
+    "p002",
+    "p003",
+    "p004",
+    "p005",
+    "p006",
+    "p007",
+    "p008",
+    "p009",
+    "a001",
+    "a002",
+    "a003",
+    "a004",
+    "a005",
+    "a006",
+    "a007",
+    "a008",
+    "a009",
+    "a010",
+    "a011",
+    "a012",
+    "a013",
+    "a014",
+    "a015",
+    "a016"
+  ],
+  "texts": [
+    {
+      "scene": "p001",
+      "node": "3",
+      "token": "3:1",
+      "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。"
+    },
+    {
+      "scene": "p001",
+      "node": "5",
+      "token": "3:3",
+      "text": "（以后，就由我来陪奶奶。）"
+    },
+    {
+      "scene": "p001",
+      "node": "7",
+      "token": "3:4",
+      "text": "男高伸手敲门。"
+    },
+    {
+      "scene": "p002",
+      "node": "3",
+      "token": "3:5",
+      "text": "门很快打开。\n奶奶站在门里，手里攥着一块抹布。\n她看到男高后停顿数秒，随后快步迎上来。"
+    },
+    {
+      "scene": "p002",
+      "node": "4",
+      "token": "3:6",
+      "text": "孩子……是你回来了？"
+    },
+    {
+      "scene": "p002",
+      "node": "6",
+      "token": "3:7",
+      "text": "奶奶，我回来了。"
+    },
+    {
+      "scene": "p002",
+      "node": "7",
+      "token": "3:8",
+      "text": "奶奶仰头打量男高，又伸手拍了拍他的肩膀。"
+    },
+    {
+      "scene": "p002",
+      "node": "8",
+      "token": "3:9",
+      "text": "好，好……回来就好。\n快进来，饭马上就好。"
+    },
+    {
+      "scene": "p002",
+      "node": "9",
+      "token": "3:10",
+      "text": "奶奶让开门口，男高拎着行李进屋。"
+    },
+    {
+      "scene": "p003",
+      "node": "4",
+      "token": "3:11",
+      "text": "客厅保留旧木柜、茶壶和墙上的老照片。\n奶奶拉着男高坐下，不时查看他的脸和手臂。"
+    },
+    {
+      "scene": "p003",
+      "node": "5",
+      "token": "3:12",
+      "text": "长这么高了。\n瘦是瘦了点，可是结实了。"
+    },
+    {
+      "scene": "p003",
+      "node": "6",
+      "token": "3:13",
+      "text": "你这样子，倒像你爷爷年轻的时候。"
+    },
+    {
+      "scene": "p003",
+      "node": "8",
+      "token": "3:14",
+      "text": "奶奶，我长大了。\n以后换我照顾您，您就放心吧！"
+    },
+    {
+      "scene": "p003",
+      "node": "9",
+      "token": "3:15",
+      "text": "奶奶先是一愣，随后笑了出来，但眼角泛起泪光。"
+    },
+    {
+      "scene": "p003",
+      "node": "10",
+      "token": "3:16",
+      "text": "好，好。我们家孩子，长大了。"
+    },
+    {
+      "scene": "p003",
+      "node": "11",
+      "token": "3:17",
+      "text": "画面停留在祖孙二人的笑容上，随后淡出至晚饭后。"
+    },
+    {
+      "scene": "p004",
+      "node": "3",
+      "token": "3:18",
+      "text": "男高把行李搬进自己的房间。"
+    },
+    {
+      "scene": "p004",
+      "node": "4",
+      "token": "3:19",
+      "text": "房间不大，但收拾得很干净。"
+    },
+    {
+      "scene": "p004",
+      "node": "5",
+      "token": "3:20",
+      "text": "男高把衣服叠进衣柜，把明天报到要用的书本和文具装进书包。\n他把自己带来的游戏卡带摆在书桌上。\n窗外的路灯逐渐亮起。"
+    },
+    {
+      "scene": "p004",
+      "node": "8",
+      "token": "3:21",
+      "text": "奶奶，我想出去走走，认认路。"
+    },
+    {
+      "scene": "p004",
+      "node": "9",
+      "token": "3:22",
+      "text": "都这个点了，还出去？\n别走太远，早点回来，我给你留门。"
+    },
+    {
+      "scene": "p004",
+      "node": "11",
+      "token": "3:23",
+      "text": "知道啦！我就在附近转转，一会儿就回来。"
+    },
+    {
+      "scene": "p004",
+      "node": "12",
+      "token": "3:24",
+      "text": "男高换上外套，走出家门。"
+    },
+    {
+      "scene": "p005",
+      "node": "3",
+      "token": "5:1",
+      "text": "商业街的霓虹灯还亮着，但行人已经不多。\n男高沿街认路，不知不觉走进旧街区。\n背景切换为昏暗路灯、关闭的店铺和高墙围住的仓库区。"
+    },
+    {
+      "scene": "p005",
+      "node": "4",
+      "token": "5:2",
+      "text": "（这里……是什么地方？）"
+    },
+    {
+      "scene": "p005",
+      "node": "5",
+      "token": "5:3",
+      "text": "墙上没有公司名称，只有一块被雨水侵蚀得难以辨认的警示牌。\n高墙附近传来金属碰撞声和挣扎声。"
+    },
+    {
+      "scene": "p005",
+      "node": "11",
+      "token": "5:4",
+      "text": "怪盗穿着黑衣，面部被遮住，正被黑衣组织行动人员逼到墙角。\n黑衣组织行动人员封锁退路，怪盗试图从包围中脱身。\n男高躲到墙角阴影里，观察高墙另一侧的情况。"
+    },
+    {
+      "scene": "p005",
+      "node": "12",
+      "token": "5:5",
+      "text": "（那些人……在围什么人？\n那个人的脸被遮住了。）"
+    },
+    {
+      "scene": "p005",
+      "node": "13",
+      "token": "5:6",
+      "text": "怪盗试图冲出包围，黑衣组织行动人员继续逼近。\n男高从阴影里走出。"
+    },
+    {
+      "scene": "p005",
+      "node": "15",
+      "token": "5:7",
+      "text": "喂！你们在干什么！"
+    },
+    {
+      "scene": "p005",
+      "node": "16",
+      "token": "5:8",
+      "text": "黑衣人回头，看见男高后短暂愣住。"
+    },
+    {
+      "scene": "p005",
+      "node": "17",
+      "token": "5:9",
+      "text": "不管你们在抓什么，这么多人欺负一个，我看不过去！"
+    },
+    {
+      "scene": "p006",
+      "node": "2",
+      "token": "5:10",
+      "text": "黑衣人将注意力转向男高。\n战斗界面切入。"
+    },
+    {
+      "scene": "p006",
+      "node": "2",
+      "token": "7:1",
+      "text": "黑衣人将注意力转向男高。\n战斗界面切入。"
+    },
+    {
+      "scene": "p006",
+      "node": "2",
+      "token": "2:1",
+      "text": "黑衣人将注意力转向男高。\n战斗界面切入。"
+    },
+    {
+      "scene": "p007",
+      "node": "3",
+      "token": "4:1",
+      "text": "几个黑衣人倒在地上，另一些黑衣人退回仓库区阴影。\n男高转头看向墙角。"
+    },
+    {
+      "scene": "p007",
+      "node": "5",
+      "token": "4:2",
+      "text": "（……那个人是谁？\n那些人又是谁？）"
+    },
+    {
+      "scene": "p007",
+      "node": "6",
+      "token": "4:3",
+      "text": "怪盗的脸仍被遮住。他看了男高一会儿，随后转身钻进夜色。\n远处仓库区重新亮起灯光，隐约传来人声。"
+    },
+    {
+      "scene": "p007",
+      "node": "8",
+      "token": "4:4",
+      "text": "（糟了，得赶紧回家。）"
+    },
+    {
+      "scene": "p008",
+      "node": "4",
+      "token": "6:1",
+      "text": "男高一路小跑回到老房子。\n客厅的灯还亮着，奶奶从藤椅上站起。"
+    },
+    {
+      "scene": "p008",
+      "node": "5",
+      "token": "6:2",
+      "text": "回来啦？怎么去了这么久？\n外面冷不冷？"
+    },
+    {
+      "scene": "p008",
+      "node": "6",
+      "token": "6:3",
+      "text": "不冷。我就是……多逛了一会儿，差点迷路。"
+    },
+    {
+      "scene": "p008",
+      "node": "7",
+      "token": "6:4",
+      "text": "奶奶没有继续追问，只是点点头。"
+    },
+    {
+      "scene": "p008",
+      "node": "8",
+      "token": "6:5",
+      "text": "快去洗漱吧。明天一早，还要去学校报到呢。"
+    },
+    {
+      "scene": "p008",
+      "node": "9",
+      "token": "6:6",
+      "text": "知道了。"
+    },
+    {
+      "scene": "p008",
+      "node": "10",
+      "token": "6:7",
+      "text": "男高走进浴室。"
+    },
+    {
+      "scene": "p008",
+      "node": "11",
+      "token": "6:8",
+      "text": "（也许只是自己多管闲事。\n那些人说不定是在抓一只逃出来的动物。）"
+    },
+    {
+      "scene": "p008",
+      "node": "12",
+      "token": "6:9",
+      "text": "（可是……事情真的有那么简单吗？）"
+    },
+    {
+      "scene": "p009",
+      "node": "3",
+      "token": "6:10",
+      "text": "枕边放着明天报到要用的书包。"
+    },
+    {
+      "scene": "p009",
+      "node": "4",
+      "token": "6:11",
+      "text": "（明天开始，我就是太阳市第一高中的学生了。）"
+    },
+    {
+      "scene": "p009",
+      "node": "5",
+      "token": "6:12",
+      "text": "（先好好上学，陪奶奶生活……）"
+    },
+    {
+      "scene": "p009",
+      "node": "6",
+      "token": "6:13",
+      "text": "（要是再遇到今晚那种事，也得像勇者一样站出来。）"
+    },
+    {
+      "scene": "p009",
+      "node": "7",
+      "token": "6:14",
+      "text": "男高闭上眼睛。"
+    },
+    {
+      "scene": "p009",
+      "node": "12",
+      "token": "6:15",
+      "text": "黑色结晶像心脏一样，极轻微地跳动了一下。"
+    },
+    {
+      "scene": "a001",
+      "node": "4",
+      "token": "8:1",
+      "text": "闹钟响了几遍，男高仍然没有醒来。\n奶奶端着早饭上楼，把男高叫醒。"
+    },
+    {
+      "scene": "a001",
+      "node": "5",
+      "token": "8:2",
+      "text": "快起来！第一天上学就要迟到，像什么话！"
+    },
+    {
+      "scene": "a001",
+      "node": "6",
+      "token": "8:3",
+      "text": "知道了知道了……"
+    },
+    {
+      "scene": "a001",
+      "node": "7",
+      "token": "8:4",
+      "text": "男高匆忙洗漱，抓起书包和外套冲下楼。\n奶奶追到门口，把装着水煮蛋和面包的袋子塞给他，又替他正了正外套领子。"
+    },
+    {
+      "scene": "a001",
+      "node": "8",
+      "token": "8:5",
+      "text": "路上慢点跑！别又摔了！"
+    },
+    {
+      "scene": "a001",
+      "node": "10",
+      "token": "8:6",
+      "text": "放心，我体力好着呢！"
+    },
+    {
+      "scene": "a001",
+      "node": "11",
+      "token": "8:7",
+      "text": "男高从门口冲出去。"
+    },
+    {
+      "scene": "a001",
+      "node": "15",
+      "token": "8:8",
+      "text": "隔壁房子的门也正好打开。\n虚拟主播只看见一个陌生少年从邻居家冲出来，朝学校方向跑去。"
+    },
+    {
+      "scene": "a001",
+      "node": "16",
+      "token": "8:9",
+      "text": "（没见过的人……。）"
+    },
+    {
+      "scene": "a001",
+      "node": "17",
+      "token": "8:10",
+      "text": "虚拟主播沿着街道朝学校走去。"
+    },
+    {
+      "scene": "a002",
+      "node": "3",
+      "token": "8:11",
+      "text": "男高一路飞奔，晨风灌进领口，书包在背后一跳一跳。\n学校大门已经出现在街道尽头。"
+    },
+    {
+      "scene": "a002",
+      "node": "5",
+      "token": "8:12",
+      "text": "路口拐角突然闪出一道身影。\n男高和对方来不及停下，结结实实地撞在一起。"
+    },
+    {
+      "scene": "a002",
+      "node": "6",
+      "token": "8:13",
+      "text": "抱歉！真的很抱歉啦！"
+    },
+    {
+      "scene": "a002",
+      "node": "7",
+      "token": "8:14",
+      "text": "男高扶住差点滑落的书包，头也不回地继续向学校跑去。"
+    },
+    {
+      "scene": "a002",
+      "node": "8",
+      "token": "8:15",
+      "text": "不要跑那么快啊！"
+    },
+    {
+      "scene": "a003",
+      "node": "3",
+      "token": "8:16",
+      "text": "晨光中的校牌泛着旧金属的颜色。\n校园包含高楼、操场、旧教学楼和远处被围栏封住的施工区域。\n男高叼着半片面包冲进校门，书包拉链没有完全拉上。"
+    },
+    {
+      "scene": "a003",
+      "node": "5",
+      "token": "8:17",
+      "text": "那个学生！站住！\n学校里面不许跑！第一天报到就横冲直撞，像什么样子！"
+    },
+    {
+      "scene": "a003",
+      "node": "6",
+      "token": "8:18",
+      "text": "抱歉啦！老师！下次我会注意的！"
+    },
+    {
+      "scene": "a003",
+      "node": "7",
+      "token": "8:19",
+      "text": "男高没有停下，反而加速跑向教学楼。"
+    },
+    {
+      "scene": "a003",
+      "node": "8",
+      "token": "8:20",
+      "text": "喂！让你站住！"
+    },
+    {
+      "scene": "a003",
+      "node": "12",
+      "token": "8:21",
+      "text": "转学生？第一天报到就撞了人，又挨老师训……\n这个人，还挺有趣的。"
+    },
+    {
+      "scene": "a003",
+      "node": "13",
+      "token": "8:22",
+      "text": "（那个人……为什么他会注意到这种普通的学生？）"
+    },
+    {
+      "scene": "a003",
+      "node": "14",
+      "token": "8:23",
+      "text": "偶像迅速收回视线，但不安没有消失。"
+    },
+    {
+      "scene": "a003",
+      "node": "17",
+      "token": "8:24",
+      "text": "黑色结晶在地下深处极轻微地跳动了一下。"
+    },
+    {
+      "scene": "a004",
+      "node": "4",
+      "token": "10:1",
+      "text": "上课铃响起时，男高正好赶到教室门口。\n他走到讲台前，从讲台上拿起笔，在白板上写下自己的名字。"
+    },
+    {
+      "scene": "a004",
+      "node": "5",
+      "token": "10:2",
+      "text": "大家好！我叫——！\n今天开始转入这个班，请大家多多关照！"
+    },
+    {
+      "scene": "a004",
+      "node": "6",
+      "token": "10:3",
+      "text": "还有，如果有人遇到困难，也可以来找我！"
+    },
+    {
+      "scene": "a004",
+      "node": "7",
+      "token": "10:4",
+      "text": "教室安静几秒，随后响起压低的笑声和窃窃私语。"
+    },
+    {
+      "scene": "a004",
+      "node": "8",
+      "token": "10:5",
+      "text": "这自我介绍也太像动画主角了吧……"
+    },
+    {
+      "scene": "a004",
+      "node": "9",
+      "token": "10:6",
+      "text": "还说什么遇到困难来找他……"
+    },
+    {
+      "scene": "a004",
+      "node": "10",
+      "token": "10:7",
+      "text": "男高没有在意同学的反应，反而拍了拍胸脯。\n靠窗位置上的怪盗认出了男高。"
+    },
+    {
+      "scene": "a004",
+      "node": "12",
+      "token": "10:8",
+      "text": "（原来就是你啊，转学生。）"
+    },
+    {
+      "scene": "a004",
+      "node": "13",
+      "token": "10:9",
+      "text": "男高也认出怪盗，朝他挥手。\n怪盗对男高做出“加油”的口型。"
+    },
+    {
+      "scene": "a005",
+      "node": "6",
+      "token": "10:10",
+      "text": "好了，大家安静。新同学先别急着坐。\n你就坐那边——怪盗后面，虚拟主播左边那个空位。"
+    },
+    {
+      "scene": "a005",
+      "node": "7",
+      "token": "10:11",
+      "text": "好嘞！"
+    },
+    {
+      "scene": "a005",
+      "node": "8",
+      "token": "10:12",
+      "text": "男高拎着书包走向座位，坐到怪盗后面、虚拟主播左边。\n他转头朝虚拟主播笑了一下。"
+    },
+    {
+      "scene": "a005",
+      "node": "9",
+      "token": "10:13",
+      "text": "你好！以后请多关照！"
+    },
+    {
+      "scene": "a005",
+      "node": "11",
+      "token": "10:14",
+      "text": "……嗯。"
+    },
+    {
+      "scene": "a005",
+      "node": "12",
+      "token": "10:15",
+      "text": "怪盗从前排回过头。"
+    },
+    {
+      "scene": "a005",
+      "node": "13",
+      "token": "10:16",
+      "text": "欢迎入座，新生~。"
+    },
+    {
+      "scene": "a005",
+      "node": "14",
+      "token": "10:17",
+      "text": "男高用力点头。"
+    },
+    {
+      "scene": "a006",
+      "node": "7",
+      "token": "10:18",
+      "text": "课间铃声响起，教室热闹起来。\n老师把男高叫到讲台附近。"
+    },
+    {
+      "scene": "a006",
+      "node": "8",
+      "token": "10:19",
+      "text": "转学生，你过来一下。"
+    },
+    {
+      "scene": "a006",
+      "node": "9",
+      "token": "10:20",
+      "text": "你刚转来，对学校还不熟吧。\n这样，我找一名同学带你逛逛校园，认认路。"
+    },
+    {
+      "scene": "a006",
+      "node": "10",
+      "token": "10:21",
+      "text": "你自己看看，想跟谁一起去？"
+    },
+    {
+      "scene": "a006",
+      "node": "11",
+      "token": "10:22",
+      "text": "怪盗转笔并挑眉，虚拟主播低头整理书本，反派靠着椅背微笑。"
+    },
+    {
+      "scene": "a008",
+      "node": "4",
+      "token": "10:24",
+      "text": "老师的话音落下后，虚拟主播发现所有人都看向她。\n她放下手里的东西，走到男高身边，离男高半米远停下。"
+    },
+    {
+      "scene": "a008",
+      "node": "5",
+      "token": "10:25",
+      "text": "那……那跟我来吧。"
+    },
+    {
+      "scene": "a008",
+      "node": "6",
+      "token": "10:26",
+      "text": "虚拟主播带男高进入主教学楼一层东侧的图书馆。"
+    },
+    {
+      "scene": "a008",
+      "node": "7",
+      "token": "10:27",
+      "text": "这、这里是图书馆……藏书有八万多册……"
+    },
+    {
+      "scene": "a008",
+      "node": "8",
+      "token": "10:28",
+      "text": "靠窗那边是自习区，平时很安静……\n校史和地方志也在这里。"
+    },
+    {
+      "scene": "a008",
+      "node": "9",
+      "token": "10:29",
+      "text": "好厉害！比我以前学校的图书馆大多了！"
+    },
+    {
+      "scene": "a008",
+      "node": "11",
+      "token": "10:30",
+      "text": "虚拟主播轻轻点头。"
+    },
+    {
+      "scene": "a008",
+      "node": "13",
+      "token": "10:31",
+      "text": "两人从图书馆出来，绕到主教学楼后方。\n隔着操场可以看到食堂。"
+    },
+    {
+      "scene": "a008",
+      "node": "14",
+      "token": "10:32",
+      "text": "那是食堂……一楼是打饭窗口，二楼是座位区……"
+    },
+    {
+      "scene": "a008",
+      "node": "15",
+      "token": "10:33",
+      "text": "中午人会很多，靠窗的位置……大家都很喜欢坐。"
+    },
+    {
+      "scene": "a008",
+      "node": "16",
+      "token": "10:34",
+      "text": "那边那个呢？"
+    },
+    {
+      "scene": "a008",
+      "node": "18",
+      "token": "10:35",
+      "text": "那是体育馆……一楼是篮球场和羽毛球场，二楼是观众席……"
+    },
+    {
+      "scene": "a008",
+      "node": "19",
+      "token": "10:36",
+      "text": "下雨天的体育课都在那边上。"
+    },
+    {
+      "scene": "a008",
+      "node": "20",
+      "token": "10:37",
+      "text": "男高一边听一边点头，时不时夸她一句。\n虚拟主播的耳朵再次发红。"
+    },
+    {
+      "scene": "a009",
+      "node": "4",
+      "token": "12:1",
+      "text": "两人沿操场边小路往回走，来到操场与围墙之间的东北角。"
+    },
+    {
+      "scene": "a009",
+      "node": "5",
+      "token": "12:2",
+      "text": "这里是什么地方？怎么围了这么大一块？"
+    },
+    {
+      "scene": "a009",
+      "node": "6",
+      "token": "12:3",
+      "text": "听说……很久以前这里就要建新楼，但一直没动静。"
+    },
+    {
+      "scene": "a009",
+      "node": "7",
+      "token": "12:4",
+      "text": "学校不让靠近，说是施工危险……\n也有人说是地下挖出了什么东西。"
+    },
+    {
+      "scene": "a009",
+      "node": "8",
+      "token": "12:5",
+      "text": "反正……老师说过，不要靠近那里。"
+    },
+    {
+      "scene": "a009",
+      "node": "9",
+      "token": "12:6",
+      "text": "男高望着围栏后的大坑。"
+    },
+    {
+      "scene": "a011",
+      "node": "4",
+      "token": "12:8",
+      "text": "男高沿围栏走了几步，发现东侧有一扇锈迹斑斑的铁皮小门。\n门闩只是虚挂着，没有上锁。"
+    },
+    {
+      "scene": "a011",
+      "node": "5",
+      "token": "12:9",
+      "text": "有门不走，翻什么墙！"
+    },
+    {
+      "scene": "a011",
+      "node": "6",
+      "token": "12:10",
+      "text": "男高推开小门走进去。\n虚拟主播飞快地观察四周，随后咬牙跟上。"
+    },
+    {
+      "scene": "a011",
+      "node": "7",
+      "token": "12:11",
+      "text": "等、等一下……这里真的不能进……"
+    },
+    {
+      "scene": "a011",
+      "node": "8",
+      "token": "12:12",
+      "text": "老师说过不能靠近这里的……\n被发现了会被叫家长的……"
+    },
+    {
+      "scene": "a011",
+      "node": "9",
+      "token": "12:13",
+      "text": "而且这里很危险……听说有人晚上路过，听见里面传出奇怪的声音……"
+    },
+    {
+      "scene": "a011",
+      "node": "10",
+      "token": "12:14",
+      "text": "喂……你有没有在听我说话……"
+    },
+    {
+      "scene": "a011",
+      "node": "11",
+      "token": "12:15",
+      "text": "听着呢听着呢！你看，这不就是个大坑嘛，哪有那么吓人——嗯？"
+    },
+    {
+      "scene": "a011",
+      "node": "12",
+      "token": "12:16",
+      "text": "男高停下脚步。\n坑底传来极轻、极轻的心跳声。"
+    },
+    {
+      "scene": "a011",
+      "node": "14",
+      "token": "12:17",
+      "text": "……我们还是，回去吧。"
+    },
+    {
+      "scene": "a011",
+      "node": "15",
+      "token": "12:18",
+      "text": "男高顺着防尘布的破口朝坑底看去。\n坑底泥土发黑，中央悬着一把剑，剑尖朝下，离地半尺，微微颤动。"
+    },
+    {
+      "scene": "a011",
+      "node": "18",
+      "token": "12:19",
+      "text": "（这是……什么？）"
+    },
+    {
+      "scene": "a011",
+      "node": "19",
+      "token": "12:20",
+      "text": "男高观察剑身。\n剑柄顶端是紫蓝色菱形剑首，握柄缠着青绿色绳纹，翼状护手中央嵌着暗淡的金色三角宝石。\n剑身上半段泛着象牙白的冷光，下半段被黑绿色污秽腐蚀，剑尖扭曲发黑。"
+    },
+    {
+      "scene": "a011",
+      "node": "21",
+      "token": "12:21",
+      "text": "男高不由自主地伸手靠近剑柄。\n剑身极轻微地颤动，金色三角宝石比刚才亮了一点。"
+    },
+    {
+      "scene": "a012",
+      "node": "2",
+      "token": "12:22",
+      "text": "男高的手指触碰到剑柄。\n整座大坑忽然安静下来，连风声都像被截断。"
+    },
+    {
+      "scene": "a012",
+      "node": "8",
+      "token": "12:23",
+      "text": "男高看见一座漂浮在云海之上的岛屿。"
+    },
+    {
+      "scene": "a012",
+      "node": "9",
+      "token": "12:24",
+      "text": "他看见一名右臂被异样力量侵蚀的青年从空中坠落。"
+    },
+    {
+      "scene": "a012",
+      "node": "10",
+      "token": "12:25",
+      "text": "他看见一座升上天空的城堡，漆黑瘴气从地底涌出，将白色剑刃一点点染成黑绿色。"
+    },
+    {
+      "scene": "a012",
+      "node": "11",
+      "token": "12:26",
+      "text": "画面再次变换。\n一条发出金色光芒的巨龙在云层间盘旋，巨龙头顶插着一把残破的剑。"
+    },
+    {
+      "scene": "a012",
+      "node": "12",
+      "token": "12:27",
+      "text": "那个青年站在巨龙头顶，伸手重新握住剑柄。"
+    },
+    {
+      "scene": "a012",
+      "node": "13",
+      "token": "12:28",
+      "text": "光芒、龙鳞、坠落的城堡和远去的身影交错闪过。\n这些不是男高的记忆，但他能感受到其中的失去、恐惧和决心。"
+    },
+    {
+      "scene": "a012",
+      "node": "14",
+      "token": "12:29",
+      "text": "幻象最后停留在一片安静的草地上。\n青年拔出剑，剑刃发出清澈的鸣响。"
+    },
+    {
+      "scene": "a012",
+      "node": "15",
+      "token": "12:30",
+      "text": "男高猛地回过神来。\n他双手握住剑柄，用力向上拔。"
+    },
+    {
+      "scene": "a012",
+      "node": "16",
+      "token": "12:31",
+      "text": "大师之剑被一点点拔出。\n覆盖在下半截剑刃上的黑绿色污秽蠕动起来，脱离剑身并落到泥土上。\n剑身重新露出象牙白的光泽，但仍残留腐蚀裂纹。"
+    },
+    {
+      "scene": "a012",
+      "node": "17",
+      "token": "12:32",
+      "text": "我是不是睡糊涂了？"
+    },
+    {
+      "scene": "a012",
+      "node": "18",
+      "token": "12:33",
+      "text": "一把剑而已，怎么会让我看到这么奇怪的东西……"
+    },
+    {
+      "scene": "a012",
+      "node": "19",
+      "token": "12:34",
+      "text": "男高抱着大师之剑，转身走向坑边。\n污秽在他身后的泥土中缓慢聚拢。"
+    },
+    {
+      "scene": "a013",
+      "node": "5",
+      "token": "12:35",
+      "text": "黑绿色污秽沿坑底向中央爬行，聚成一团扭曲阴影。\n阴影逐渐长出双腿、躯干、手臂和头颅。\n它的脸上没有五官，只有两点暗红色光芒。"
+    },
+    {
+      "scene": "a013",
+      "node": "6",
+      "token": "12:36",
+      "text": "虚拟主播看见黑色人形，身体软软倒在坑边。"
+    },
+    {
+      "scene": "a013",
+      "node": "8",
+      "token": "12:37",
+      "text": "这、这是什么东西？！"
+    },
+    {
+      "scene": "a013",
+      "node": "9",
+      "token": "12:38",
+      "text": "男高低头看向昏迷的虚拟主播，又看向坑底的黑色人形。\n他握紧大师之剑，挡在虚拟主播前面。"
+    },
+    {
+      "scene": "a013",
+      "node": "10",
+      "token": "12:39",
+      "text": "没办法了……\n只能先把你打倒，再带她离开！"
+    },
+    {
+      "scene": "a013",
+      "node": "11",
+      "token": "12:40",
+      "text": "黑色人形抬起由污渍凝成的手臂，黑色能量在掌心聚集。"
+    },
+    {
+      "scene": "a014",
+      "node": "2",
+      "token": "12:41",
+      "text": "战斗界面切入。"
+    },
+    {
+      "scene": "a014",
+      "node": "5",
+      "token": "2:3",
+      "text": "战斗结束后，大坑重新安静下来。\n黑色人形消失，只剩零散的黑色污渍留在泥土上。\n大师之剑的光芒慢慢收敛，只剩剑刃中央一条极细的金色纹路。"
+    },
+    {
+      "scene": "a014",
+      "node": "8",
+      "token": "2:4",
+      "text": "男高把大师之剑插回坑底旁边的泥土，随后冲向坑边扶住虚拟主播。\n他抱起虚拟主播，沿着坑壁向上爬。"
+    },
+    {
+      "scene": "a014",
+      "node": "9",
+      "token": "2:5",
+      "text": "虚拟主播的书包掉在铁皮围栏旁边。\n男高先把她抱出施工区，再折返回去捡起书包，并把铁皮小门重新关上。"
+    },
+    {
+      "scene": "a014",
+      "node": "10",
+      "token": "2:6",
+      "text": "男高回头看向坑底。\n大师之剑静静插在泥土中，金色纹路一闪而过。\n更深的泥土里，一缕极细的黑气朝学校地下延伸。"
+    }
+  ],
+  "checks": [
+    {
+      "name": "draft-return-map-and-continue",
+      "before": {
+        "audioCount": 1,
+        "body": "序幕 · 仓库区冲突\n\n第 1 轮\n\n男高\n先攻 8 · HP 10/10\n黑衣人乙\n先攻 6 · HP 6/6\n黑衣人甲\n先攻 2 · HP 6/6\n男高的回合\n\n移动 30尺　动作 1\n\n附赠 1　反应 1\n\n男高英雄激励 1点\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (0,2)\n\n主手：徒手 1d4+2\n\n附赠：徒手 1d4+2\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n战斗记录\n\n男高 英雄激励·先攻：原骰(6)；保留，不掷新骰；最终骰(6)，采用值6；剩余1点\n\n先攻第1位 男高：d20(6) [普通]+2=8\n\n先攻第2位 黑衣人乙：d20(5) [普通]+1=6\n\n先攻第3位 黑衣人甲：d20(1) [普通]+1=2\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n教学：点击蓝色格规划，再确认移动\n\n已选 1 步 · 5 尺　可再规划 25 尺　悬停仅预览\n\n确认移动\n撤回一点\n清空路线\n取消移动\n\n点击蓝色格规划，再确认移动\n\n返回地图\n返回主菜单\n\n最近存档：仓库区事件 · 仓库区外围·第一次战斗 · 2026/10/21 19:50:41",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "cell-0-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "move-confirm",
+            "text": "确认移动"
+          },
+          {
+            "disabled": false,
+            "id": "move-undo",
+            "text": "撤回一点"
+          },
+          {
+            "disabled": false,
+            "id": "move-clear",
+            "text": "清空路线"
+          },
+          {
+            "disabled": false,
+            "id": "move-cancel",
+            "text": "取消移动"
+          },
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "battleId": "battle_prologue_tutorial",
+          "bgmId": "bgm_first_battle",
+          "fixtureDone": "false",
+          "mode": "move",
+          "navToken": "5:4:battle",
+          "remainingSteps": "5",
+          "result": "",
+          "returnNodeIndex": "4",
+          "rngDraws": "3",
+          "round": "1",
+          "routeKind": "planning",
+          "routePath": "[{\"col\":1,\"row\":2}]",
+          "routeRisks": "[]",
+          "routeWaypoints": "[{\"col\":1,\"row\":2}]",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p006\"},\"savedAt\":1792583441376}",
+          "saveRequest": "8",
+          "saveStatus": "saved",
+          "sceneId": "p006",
+          "screen": "battle",
+          "seed": "0",
+          "selectedSteps": "1",
+          "session": "5",
+          "storyWaitToken": "5:11",
+          "testid": "battle-stage",
+          "token": "1:1",
+          "turnId": "hero",
+          "turnTeam": "player",
+          "waiting": "player"
+        },
+        "stageCount": 1,
+        "text": "",
+        "units": [
+          {
+            "action": "true",
+            "bonus": "true",
+            "col": "0",
+            "hp": "10",
+            "primaryAttack": "unarmed",
+            "reaction": "true",
+            "row": "2",
+            "savesFailure": "0",
+            "savesSuccess": "0",
+            "status": "active",
+            "tempHp": "0",
+            "testid": "unit-hero"
+          },
+          {
+            "action": "false",
+            "bonus": "false",
+            "col": "5",
+            "hp": "6",
+            "primaryAttack": "slash",
+            "reaction": "true",
+            "row": "3",
+            "savesFailure": "0",
+            "savesSuccess": "0",
+            "status": "active",
+            "tempHp": "0",
+            "testid": "unit-black_a"
+          },
+          {
+            "action": "false",
+            "bonus": "false",
+            "col": "6",
+            "hp": "6",
+            "primaryAttack": "slash",
+            "reaction": "true",
+            "row": "4",
+            "savesFailure": "0",
+            "savesSuccess": "0",
+            "status": "active",
+            "tempHp": "0",
+            "testid": "unit-black_b"
+          }
+        ]
+      },
+      "map": {
+        "audioCount": 1,
+        "body": "次元战争 · 主线地图\n\n太阳市\n\n主线进度 1 / 7 · 仓库区事件\n\n奶\n奶奶家\n旧\n旧街区仓库\n\n地点 / 关卡\n\n旧街区仓库\n\n第 2 关 · 序幕\n\n仓库区事件\n\n已保留最近场景检查点\n\n继续关卡\n\n完成本关后自动返回地图。已完成关卡仅供查看。\n\n＋\n−\n定位当前关卡\n返回主菜单\n\n最近存档：仓库区事件 · 仓库区外围·第一次战斗 · 2026/10/21 19:50:41",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "location-grandma_home",
+            "text": "奶奶奶家"
+          },
+          {
+            "disabled": false,
+            "id": "location-old_warehouse",
+            "text": "旧旧街区仓库"
+          },
+          {
+            "disabled": false,
+            "id": "enter-prologue_02",
+            "text": "继续关卡"
+          },
+          {
+            "disabled": false,
+            "id": "map-zoom-in",
+            "text": "＋"
+          },
+          {
+            "disabled": false,
+            "id": "map-zoom-out",
+            "text": "−"
+          },
+          {
+            "disabled": false,
+            "id": "map-focus",
+            "text": "定位当前关卡"
+          },
+          {
+            "disabled": false,
+            "id": "map-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":-114.21199999999999,\"y\":-220.79999999999995}",
+          "completedLevels": "prologue_01",
+          "currentLevel": "prologue_02",
+          "navToken": "6:5:map",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p006\"},\"savedAt\":1792583441376}",
+          "saveRequest": "8",
+          "saveStatus": "ready",
+          "screen": "map",
+          "selectedLocation": "old_warehouse",
+          "session": "6",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "visibleNodes": "2"
+        },
+        "stageCount": 1,
+        "text": "",
+        "units": []
+      },
+      "after": {
+        "audioCount": 1,
+        "body": "序幕 · 仓库区冲突\n\n第 1 轮 · 先攻待确认\n\n男高\n先攻 8 · HP 10/10\n黑衣人乙\n先攻 6 · HP 6/6\n黑衣人甲\n先攻 2 · HP 6/6\n先攻等待确认\n\n移动 0尺　动作 0\n\n附赠 0　反应 1\n\n男高英雄激励 1点\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (0,2)\n\n主手：徒手 1d4+2\n\n附赠：徒手 1d4+2\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n战斗记录\n\n等待英雄激励决定，当前结果尚未生效\n\n英雄激励 · 先攻\n\n原骰 d20：6。可重掷其中一颗，必须采用新骰；当前判定尚未生效。\n\n重掷第1颗（6）\n保留激励，采用原骰\n返回地图\n返回主菜单\n\n最近存档：仓库区事件 · 仓库区外围·第一次战斗 · 2026/10/21 19:50:43",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "cell-0-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "move-confirm",
+            "text": "确认移动"
+          },
+          {
+            "disabled": false,
+            "id": "move-undo",
+            "text": "撤回一点"
+          },
+          {
+            "disabled": false,
+            "id": "move-clear",
+            "text": "清空路线"
+          },
+          {
+            "disabled": false,
+            "id": "move-cancel",
+            "text": "取消移动"
+          },
+          {
+            "disabled": false,
+            "id": "inspiration-die-0",
+            "text": "重掷第1颗（6）"
+          },
+          {
+            "disabled": false,
+            "id": "inspiration-decline",
+            "text": "保留激励，采用原骰"
+          },
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "battleId": "battle_prologue_tutorial",
+          "bgmId": "bgm_first_battle",
+          "fixtureDone": "false",
+          "mode": "idle",
+          "navToken": "7:6:battle",
+          "remainingSteps": "0",
+          "result": "",
+          "returnNodeIndex": "4",
+          "rngDraws": "3",
+          "round": "1",
+          "routeKind": "",
+          "routePath": "[]",
+          "routeRisks": "[]",
+          "routeWaypoints": "[]",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p006\"},\"savedAt\":1792583443167}",
+          "saveRequest": "9",
+          "saveStatus": "saved",
+          "sceneId": "p006",
+          "screen": "battle",
+          "seed": "0",
+          "selectedSteps": "0",
+          "session": "7",
+          "storyWaitToken": "7:2",
+          "testid": "battle-stage",
+          "token": "2:0",
+          "turnId": "hero",
+          "turnTeam": "player",
+          "waiting": "inspiration"
+        },
+        "stageCount": 1,
+        "text": "",
+        "units": [
+          {
+            "action": "false",
+            "bonus": "false",
+            "col": "0",
+            "hp": "10",
+            "primaryAttack": "unarmed",
+            "reaction": "true",
+            "row": "2",
+            "savesFailure": "0",
+            "savesSuccess": "0",
+            "status": "active",
+            "tempHp": "0",
+            "testid": "unit-hero"
+          },
+          {
+            "action": "false",
+            "bonus": "false",
+            "col": "5",
+            "hp": "6",
+            "primaryAttack": "slash",
+            "reaction": "true",
+            "row": "3",
+            "savesFailure": "0",
+            "savesSuccess": "0",
+            "status": "active",
+            "tempHp": "0",
+            "testid": "unit-black_a"
+          },
+          {
+            "action": "false",
+            "bonus": "false",
+            "col": "6",
+            "hp": "6",
+            "primaryAttack": "slash",
+            "reaction": "true",
+            "row": "4",
+            "savesFailure": "0",
+            "savesSuccess": "0",
+            "status": "active",
+            "tempHp": "0",
+            "testid": "unit-black_b"
+          }
+        ]
+      }
+    },
+    {
+      "name": "prologue-draft-refresh-real-v2",
+      "before": {
+        "audioCount": 1,
+        "body": "序幕 · 仓库区冲突\n\n第 1 轮\n\n男高\n先攻 8 · HP 10/10\n黑衣人乙\n先攻 6 · HP 6/6\n黑衣人甲\n先攻 2 · HP 6/6\n男高的回合\n\n移动 30尺　动作 1\n\n附赠 1　反应 1\n\n男高英雄激励 1点\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (0,2)\n\n主手：徒手 1d4+2\n\n附赠：徒手 1d4+2\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n战斗记录\n\n男高 英雄激励·先攻：原骰(6)；保留，不掷新骰；最终骰(6)，采用值6；剩余1点\n\n先攻第1位 男高：d20(6) [普通]+2=8\n\n先攻第2位 黑衣人乙：d20(5) [普通]+1=6\n\n先攻第3位 黑衣人甲：d20(1) [普通]+1=2\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n教学：点击蓝色格规划，再确认移动\n\n已选 1 步 · 5 尺　可再规划 25 尺　悬停仅预览\n\n确认移动\n撤回一点\n清空路线\n取消移动\n\n点击蓝色格规划，再确认移动\n\n返回地图\n返回主菜单\n\n最近存档：仓库区事件 · 仓库区外围·第一次战斗 · 2026/10/21 19:50:43",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "cell-0-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "move-confirm",
+            "text": "确认移动"
+          },
+          {
+            "disabled": false,
+            "id": "move-undo",
+            "text": "撤回一点"
+          },
+          {
+            "disabled": false,
+            "id": "move-clear",
+            "text": "清空路线"
+          },
+          {
+            "disabled": false,
+            "id": "move-cancel",
+            "text": "取消移动"
+          },
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "battleId": "battle_prologue_tutorial",
+          "bgmId": "bgm_first_battle",
+          "fixtureDone": "false",
+          "mode": "move",
+          "navToken": "7:6:battle",
+          "remainingSteps": "5",
+          "result": "",
+          "returnNodeIndex": "4",
+          "rngDraws": "3",
+          "round": "1",
+          "routeKind": "planning",
+          "routePath": "[{\"col\":1,\"row\":2}]",
+          "routeRisks": "[]",
+          "routeWaypoints": "[{\"col\":1,\"row\":2}]",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p006\"},\"savedAt\":1792583443167}",
+          "saveRequest": "9",
+          "saveStatus": "saved",
+          "sceneId": "p006",
+          "screen": "battle",
+          "seed": "0",
+          "selectedSteps": "1",
+          "session": "7",
+          "storyWaitToken": "7:2",
+          "testid": "battle-stage",
+          "token": "2:1",
+          "turnId": "hero",
+          "turnTeam": "player",
+          "waiting": "player"
+        },
+        "stageCount": 1,
+        "text": "",
+        "units": [
+          {
+            "action": "true",
+            "bonus": "true",
+            "col": "0",
+            "hp": "10",
+            "primaryAttack": "unarmed",
+            "reaction": "true",
+            "row": "2",
+            "savesFailure": "0",
+            "savesSuccess": "0",
+            "status": "active",
+            "tempHp": "0",
+            "testid": "unit-hero"
+          },
+          {
+            "action": "false",
+            "bonus": "false",
+            "col": "5",
+            "hp": "6",
+            "primaryAttack": "slash",
+            "reaction": "true",
+            "row": "3",
+            "savesFailure": "0",
+            "savesSuccess": "0",
+            "status": "active",
+            "tempHp": "0",
+            "testid": "unit-black_a"
+          },
+          {
+            "action": "false",
+            "bonus": "false",
+            "col": "6",
+            "hp": "6",
+            "primaryAttack": "slash",
+            "reaction": "true",
+            "row": "4",
+            "savesFailure": "0",
+            "savesSuccess": "0",
+            "status": "active",
+            "tempHp": "0",
+            "testid": "unit-black_b"
+          }
+        ]
+      },
+      "menu": {
+        "audioCount": 1,
+        "body": "垂直切片\n\n次元战争\n开始游戏\n继续\nv0.0.0\n\n最近存档：仓库区事件 · 仓库区外围·第一次战斗 · 2026/10/21 19:50:43",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "start-game",
+            "text": "开始游戏"
+          },
+          {
+            "disabled": false,
+            "id": "continue-game",
+            "text": "继续"
+          }
+        ],
+        "stage": {
+          "bgmId": "",
+          "navToken": "1:0:menu",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p006\"},\"savedAt\":1792583443167}",
+          "saveRequest": "0",
+          "saveStatus": "ready",
+          "screen": "menu",
+          "session": "1",
+          "testid": "main-menu"
+        },
+        "stageCount": 1,
+        "text": "",
+        "units": []
+      },
+      "after": {
+        "audioCount": 1,
+        "body": "序幕 · 仓库区冲突\n\n第 1 轮 · 先攻待确认\n\n男高\n先攻 8 · HP 10/10\n黑衣人乙\n先攻 6 · HP 6/6\n黑衣人甲\n先攻 2 · HP 6/6\n先攻等待确认\n\n移动 0尺　动作 0\n\n附赠 0　反应 1\n\n男高英雄激励 1点\n\n男高\n\nHP 10/10 · 临时 0\n\n可行动 · (0,2)\n\n主手：徒手 1d4+2\n\n附赠：徒手 1d4+2\n\n黑衣人甲\n\nHP 6/6 · 临时 0\n\n可行动 · (5,3)\n\n黑衣人乙\n\nHP 6/6 · 临时 0\n\n可行动 · (6,4)\n\n战斗记录\n\n等待英雄激励决定，当前结果尚未生效\n\n英雄激励 · 先攻\n\n原骰 d20：6。可重掷其中一颗，必须采用新骰；当前判定尚未生效。\n\n重掷第1颗（6）\n保留激励，采用原骰\n返回地图\n返回主菜单\n\n最近存档：仓库区事件 · 仓库区外围·第一次战斗 · 2026/10/21 19:50:44",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "cell-0-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "move-confirm",
+            "text": "确认移动"
+          },
+          {
+            "disabled": false,
+            "id": "move-undo",
+            "text": "撤回一点"
+          },
+          {
+            "disabled": false,
+            "id": "move-clear",
+            "text": "清空路线"
+          },
+          {
+            "disabled": false,
+            "id": "move-cancel",
+            "text": "取消移动"
+          },
+          {
+            "disabled": false,
+            "id": "inspiration-die-0",
+            "text": "重掷第1颗（6）"
+          },
+          {
+            "disabled": false,
+            "id": "inspiration-decline",
+            "text": "保留激励，采用原骰"
+          },
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "battleId": "battle_prologue_tutorial",
+          "bgmId": "bgm_first_battle",
+          "fixtureDone": "false",
+          "mode": "idle",
+          "navToken": "2:1:battle",
+          "remainingSteps": "0",
+          "result": "",
+          "returnNodeIndex": "4",
+          "rngDraws": "3",
+          "round": "1",
+          "routeKind": "",
+          "routePath": "[]",
+          "routeRisks": "[]",
+          "routeWaypoints": "[]",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p006\"},\"savedAt\":1792583444655}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "sceneId": "p006",
+          "screen": "battle",
+          "seed": "0",
+          "selectedSteps": "0",
+          "session": "2",
+          "storyWaitToken": "2:2",
+          "testid": "battle-stage",
+          "token": "1:0",
+          "turnId": "hero",
+          "turnTeam": "player",
+          "waiting": "inspiration"
+        },
+        "stageCount": 1,
+        "text": "",
+        "units": [
+          {
+            "action": "false",
+            "bonus": "false",
+            "col": "0",
+            "hp": "10",
+            "primaryAttack": "unarmed",
+            "reaction": "true",
+            "row": "2",
+            "savesFailure": "0",
+            "savesSuccess": "0",
+            "status": "active",
+            "tempHp": "0",
+            "testid": "unit-hero"
+          },
+          {
+            "action": "false",
+            "bonus": "false",
+            "col": "5",
+            "hp": "6",
+            "primaryAttack": "slash",
+            "reaction": "true",
+            "row": "3",
+            "savesFailure": "0",
+            "savesSuccess": "0",
+            "status": "active",
+            "tempHp": "0",
+            "testid": "unit-black_a"
+          },
+          {
+            "action": "false",
+            "bonus": "false",
+            "col": "6",
+            "hp": "6",
+            "primaryAttack": "slash",
+            "reaction": "true",
+            "row": "4",
+            "savesFailure": "0",
+            "savesSuccess": "0",
+            "status": "active",
+            "tempHp": "0",
+            "testid": "unit-black_b"
+          }
+        ]
+      }
+    },
+    {
+      "name": "post-battle-menu-continue-p007",
+      "before": {
+        "audioCount": 1,
+        "body": "仓库区外围·怪盗离开\n蒙\n蒙面人\n立绘占位\n序幕　 /　 次元战争\n\n几个黑衣人倒在\n\n点击补全文字\n返回地图\n返回主菜单\n\n最近存档：仓库区事件 · 仓库区外围·怪盗离开 · 2026/10/21 19:51:47",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_first_battle_after",
+          "navToken": "2:1:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p007\"},\"savedAt\":1792583507034}",
+          "saveRequest": "3",
+          "saveStatus": "saved",
+          "sceneId": "p007",
+          "session": "2",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "2:3"
+        },
+        "stageCount": 1,
+        "text": "几个黑衣人倒在",
+        "units": []
+      },
+      "after": {
+        "audioCount": 1,
+        "body": "仓库区外围·怪盗离开\n蒙\n蒙面人\n立绘占位\n序幕　 /　 次元战争\n\n几个黑衣人倒在\n\n点击补全文字\n返回地图\n返回主菜单\n\n最近存档：仓库区事件 · 仓库区外围·怪盗离开 · 2026/10/21 19:51:47",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_first_battle_after",
+          "navToken": "4:3:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p007\"},\"savedAt\":1792583507632}",
+          "saveRequest": "4",
+          "saveStatus": "saved",
+          "sceneId": "p007",
+          "session": "4",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "4:1"
+        },
+        "stageCount": 1,
+        "text": "几个黑衣人倒在",
+        "units": []
+      }
+    },
+    {
+      "name": "shadow-battle-refresh-real-v2",
+      "before": {
+        "audioCount": 1,
+        "body": "第一幕 · 黑色人形战斗\n\n第 1 轮\n\n男高\n先攻 8 · HP 10/10\n黑色人形\n先攻 3 · HP 16/16\n男高的回合\n\n移动 25尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 5\n\n可行动 · (1,1)\n\n主手：大师之剑 1d8+2\n\n附赠：徒手 1d4+2\n\n黑色人形\n\nHP 16/16 · 临时 0\n\n可行动 · (3,3)\n\n战斗记录\n\n剑形灼痕共鸣：获得5点临时生命值\n\n先攻第1位 男高：d20(6) [普通]+2=8\n\n先攻第2位 黑色人形：d20(1) [普通]+2=3\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n男高 (0,2)→(1,1)，消耗5尺，剩余25尺\n\n正在逐格移动并检查借机攻击\n\n返回地图\n返回主菜单\n\n最近存档：施工区事件 · 黑色人形战斗 · 2026/10/21 19:52:02",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "cell-0-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "move-confirm",
+            "text": "确认移动"
+          },
+          {
+            "disabled": false,
+            "id": "move-undo",
+            "text": "撤回一点"
+          },
+          {
+            "disabled": false,
+            "id": "move-clear",
+            "text": "清空路线"
+          },
+          {
+            "disabled": false,
+            "id": "move-cancel",
+            "text": "取消移动"
+          },
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "act1",
+          "battleId": "battle_black_humanoid",
+          "bgmId": "bgm_black_humanoid_battle",
+          "fixtureDone": "false",
+          "mode": "idle",
+          "navToken": "12:11:battle",
+          "remainingSteps": "5",
+          "result": "",
+          "returnNodeIndex": "4",
+          "rngDraws": "2",
+          "round": "1",
+          "routeKind": "executing",
+          "routePath": "[{\"col\":2,\"row\":2}]",
+          "routeRisks": "[]",
+          "routeWaypoints": "[]",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a014\"},\"savedAt\":1792583522061}",
+          "saveRequest": "24",
+          "saveStatus": "saved",
+          "sceneId": "a014",
+          "screen": "battle",
+          "seed": "0",
+          "selectedSteps": "1",
+          "session": "12",
+          "storyWaitToken": "12:42",
+          "testid": "battle-stage",
+          "token": "2:3",
+          "turnId": "hero",
+          "turnTeam": "player",
+          "waiting": "moving"
+        },
+        "stageCount": 1,
+        "text": "",
+        "units": [
+          {
+            "action": "true",
+            "bonus": "true",
+            "col": "1",
+            "hp": "10",
+            "primaryAttack": "master_sword",
+            "reaction": "true",
+            "row": "1",
+            "savesFailure": "0",
+            "savesSuccess": "0",
+            "status": "active",
+            "tempHp": "5",
+            "testid": "unit-hero"
+          },
+          {
+            "action": "false",
+            "bonus": "false",
+            "col": "3",
+            "hp": "16",
+            "primaryAttack": "claw",
+            "reaction": "true",
+            "row": "3",
+            "savesFailure": "0",
+            "savesSuccess": "0",
+            "status": "active",
+            "tempHp": "0",
+            "testid": "unit-black_humanoid"
+          }
+        ]
+      },
+      "after": {
+        "audioCount": 1,
+        "body": "第一幕 · 黑色人形战斗\n\n第 1 轮\n\n男高\n先攻 8 · HP 10/10\n黑色人形\n先攻 3 · HP 16/16\n男高的回合\n\n移动 30尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 5\n\n可行动 · (0,2)\n\n主手：大师之剑 1d8+2\n\n附赠：徒手 1d4+2\n\n黑色人形\n\nHP 16/16 · 临时 0\n\n可行动 · (3,3)\n\n攻击\n移动\n技能\n战斗记录\n\n剑形灼痕共鸣：获得5点临时生命值\n\n先攻第1位 男高：d20(6) [普通]+2=8\n\n先攻第2位 黑色人形：d20(1) [普通]+2=3\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n选择操作；技能中可结束回合\n\n返回地图\n返回主菜单\n\n最近存档：施工区事件 · 黑色人形战斗 · 2026/10/21 19:52:03",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "cell-0-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-0",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-1",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-2",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-3",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-0-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-1-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-2-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-3-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-4-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-5-4",
+            "text": ""
+          },
+          {
+            "disabled": false,
+            "id": "cell-6-4",
+            "text": ""
+          },
+          {
+            "disabled": true,
+            "id": "mode-attack",
+            "text": "攻击"
+          },
+          {
+            "disabled": false,
+            "id": "mode-move",
+            "text": "移动"
+          },
+          {
+            "disabled": false,
+            "id": "mode-skills",
+            "text": "技能"
+          },
+          {
+            "disabled": false,
+            "id": "move-confirm",
+            "text": "确认移动"
+          },
+          {
+            "disabled": false,
+            "id": "move-undo",
+            "text": "撤回一点"
+          },
+          {
+            "disabled": false,
+            "id": "move-clear",
+            "text": "清空路线"
+          },
+          {
+            "disabled": false,
+            "id": "move-cancel",
+            "text": "取消移动"
+          },
+          {
+            "disabled": false,
+            "id": "return-map",
+            "text": "返回地图"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "actId": "act1",
+          "battleId": "battle_black_humanoid",
+          "bgmId": "bgm_black_humanoid_battle",
+          "fixtureDone": "false",
+          "mode": "idle",
+          "navToken": "2:1:battle",
+          "remainingSteps": "0",
+          "result": "",
+          "returnNodeIndex": "4",
+          "rngDraws": "2",
+          "round": "1",
+          "routeKind": "",
+          "routePath": "[]",
+          "routeRisks": "[]",
+          "routeWaypoints": "[]",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a014\"},\"savedAt\":1792583523514}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "sceneId": "a014",
+          "screen": "battle",
+          "seed": "0",
+          "selectedSteps": "0",
+          "session": "2",
+          "storyWaitToken": "2:2",
+          "testid": "battle-stage",
+          "token": "1:1",
+          "turnId": "hero",
+          "turnTeam": "player",
+          "waiting": "player"
+        },
+        "stageCount": 1,
+        "text": "",
+        "units": [
+          {
+            "action": "true",
+            "bonus": "true",
+            "col": "0",
+            "hp": "10",
+            "primaryAttack": "master_sword",
+            "reaction": "true",
+            "row": "2",
+            "savesFailure": "0",
+            "savesSuccess": "0",
+            "status": "active",
+            "tempHp": "5",
+            "testid": "unit-hero"
+          },
+          {
+            "action": "false",
+            "bonus": "false",
+            "col": "3",
+            "hp": "16",
+            "primaryAttack": "claw",
+            "reaction": "true",
+            "row": "3",
+            "savesFailure": "0",
+            "savesSuccess": "0",
+            "status": "active",
+            "tempHp": "0",
+            "testid": "unit-black_humanoid"
+          }
+        ]
+      }
+    },
+    {
+      "name": "completed-levels-have-no-replay-entry",
+      "page": {
+        "audioCount": 1,
+        "body": "次元战争 · 主线地图\n\n太阳市\n\n垂直切片已完成 · 7 / 7\n\n奶\n奶奶家\n旧\n旧街区仓库\n上\n上学路口\n太\n太阳市第一高中\n施\n施工区域\n\n地点 / 关卡\n\n奶奶家\n\n垂直切片已完成\n\n第 1 关 · 序幕\n\n搬入奶奶家\n\n已完成 · 不可重玩\n\n已完成\n\n第 3 关 · 序幕\n\n回家与睡前\n\n已完成 · 不可重玩\n\n已完成\n\n完成本关后自动返回地图。已完成关卡仅供查看。\n\n＋\n−\n定位当前关卡\n返回主菜单\n\n最近存档：太阳市地图 · 垂直切片已完成 · 2026/10/21 19:53:13",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "location-grandma_home",
+            "text": "奶奶奶家"
+          },
+          {
+            "disabled": false,
+            "id": "location-old_warehouse",
+            "text": "旧旧街区仓库"
+          },
+          {
+            "disabled": false,
+            "id": "location-school_road",
+            "text": "上上学路口"
+          },
+          {
+            "disabled": false,
+            "id": "location-high_school",
+            "text": "太太阳市第一高中"
+          },
+          {
+            "disabled": false,
+            "id": "location-construction_site",
+            "text": "施施工区域"
+          },
+          {
+            "disabled": true,
+            "id": "enter-prologue_01",
+            "text": "已完成"
+          },
+          {
+            "disabled": true,
+            "id": "enter-prologue_03",
+            "text": "已完成"
+          },
+          {
+            "disabled": false,
+            "id": "map-zoom-in",
+            "text": "＋"
+          },
+          {
+            "disabled": false,
+            "id": "map-zoom-out",
+            "text": "−"
+          },
+          {
+            "disabled": false,
+            "id": "map-focus",
+            "text": "定位当前关卡"
+          },
+          {
+            "disabled": false,
+            "id": "map-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-25.39199999999994}",
+          "completedLevels": "prologue_01,prologue_02,prologue_03,act1_01,act1_02,act1_03,act1_04",
+          "currentLevel": "",
+          "navToken": "5:4:map",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true,\"flag_battle_black_humanoid_won\":true,\"flag_act1_a014_01\":true,\"flag_act1_a014_02\":true,\"flag_act1_a015_01\":true,\"flag_act1_a016_01\":true,\"flag_act1_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\",\"act1_03\",\"act1_04\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792583593772}",
+          "saveRequest": "7",
+          "saveStatus": "saved",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "5",
+          "sliceComplete": "true",
+          "testid": "city-map",
+          "visibleNodes": "5"
+        },
+        "stageCount": 1,
+        "text": "",
+        "units": []
+      }
+    },
+    {
+      "name": "completed-save-continues-to-map",
+      "page": {
+        "audioCount": 1,
+        "body": "次元战争 · 主线地图\n\n太阳市\n\n垂直切片已完成 · 7 / 7\n\n奶\n奶奶家\n旧\n旧街区仓库\n上\n上学路口\n太\n太阳市第一高中\n施\n施工区域\n\n地点 / 关卡\n\n太阳市第一高中\n\n垂直切片已完成\n\n第 5 关 · 第一幕\n\n教室与校园导览\n\n已完成 · 不可重玩\n\n已完成\n\n第 7 关 · 第一幕\n\n返回学校与幕结束\n\n已完成 · 不可重玩\n\n已完成\n\n完成本关后自动返回地图。已完成关卡仅供查看。\n\n＋\n−\n定位当前关卡\n返回主菜单\n\n最近存档：太阳市地图 · 垂直切片已完成 · 2026/10/21 19:53:13",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "location-grandma_home",
+            "text": "奶奶奶家"
+          },
+          {
+            "disabled": false,
+            "id": "location-old_warehouse",
+            "text": "旧旧街区仓库"
+          },
+          {
+            "disabled": false,
+            "id": "location-school_road",
+            "text": "上上学路口"
+          },
+          {
+            "disabled": false,
+            "id": "location-high_school",
+            "text": "太太阳市第一高中"
+          },
+          {
+            "disabled": false,
+            "id": "location-construction_site",
+            "text": "施施工区域"
+          },
+          {
+            "disabled": true,
+            "id": "enter-act1_02",
+            "text": "已完成"
+          },
+          {
+            "disabled": true,
+            "id": "enter-act1_04",
+            "text": "已完成"
+          },
+          {
+            "disabled": false,
+            "id": "map-zoom-in",
+            "text": "＋"
+          },
+          {
+            "disabled": false,
+            "id": "map-zoom-out",
+            "text": "−"
+          },
+          {
+            "disabled": false,
+            "id": "map-focus",
+            "text": "定位当前关卡"
+          },
+          {
+            "disabled": false,
+            "id": "map-menu",
+            "text": "返回主菜单"
+          }
+        ],
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":-263.1999999999998,\"y\":0}",
+          "completedLevels": "prologue_01,prologue_02,prologue_03,act1_01,act1_02,act1_03,act1_04",
+          "currentLevel": "",
+          "navToken": "2:1:map",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true,\"flag_battle_black_humanoid_won\":true,\"flag_act1_a014_01\":true,\"flag_act1_a014_02\":true,\"flag_act1_a015_01\":true,\"flag_act1_a016_01\":true,\"flag_act1_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\",\"act1_03\",\"act1_04\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792583593772}",
+          "saveRequest": "0",
+          "saveStatus": "ready",
+          "screen": "map",
+          "selectedLocation": "high_school",
+          "session": "2",
+          "sliceComplete": "true",
+          "testid": "city-map",
+          "visibleNodes": "5"
+        },
+        "stageCount": 1,
+        "text": "",
+        "units": []
+      }
+    }
+  ],
+  "console": [
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_grandmother_house_dusk] 背景 bg_grandmother_house_dusk 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:50:30.639Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:sfx_door_knock] 音频 sfx_door_knock 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:50:34.477Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_grandmother_house_entrance] 背景 bg_grandmother_house_entrance 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:50:34.780Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:char_grandmother_warm] 立绘 char_grandmother_warm 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T11:50:34.786Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_grandmother_house_living_room] 背景 bg_grandmother_house_living_room 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:50:37.079Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_grandmother_house_bedroom] 背景 bg_grandmother_house_bedroom 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:50:38.331Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_grandmother_house_kitchen_night] 背景 bg_grandmother_house_kitchen_night 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:50:38.777Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_sun_city_old_street_night] 背景 bg_sun_city_old_street_night 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:50:39.556Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:sfx_metal_collision] 音频 sfx_metal_collision 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:50:40.339Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:char_organization_member_placeholder] 立绘 char_organization_member_placeholder 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T11:50:40.341Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:char_thief_masked_black_placeholder] 立绘 char_thief_masked_black_placeholder 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T11:50:40.341Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_warehouse_area_night] 背景 bg_warehouse_area_night 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:50:41.378Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bgm_first_battle] 音频 bgm_first_battle 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:50:41.379Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_warehouse_area_night] 背景 bg_warehouse_area_night 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:50:44.660Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bgm_first_battle] 音频 bgm_first_battle 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:50:44.660Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:char_organization_member_placeholder] 立绘 char_organization_member_placeholder 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T11:50:44.660Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:char_thief_masked_black_placeholder] 立绘 char_thief_masked_black_placeholder 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T11:50:44.660Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bgm_first_battle_after] 音频 bgm_first_battle_after 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:51:47.038Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:sfx_distant_warehouse_noise] 音频 sfx_distant_warehouse_noise 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:51:48.141Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_grandmother_house_living_room_night] 背景 bg_grandmother_house_living_room_night 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:51:48.375Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:char_grandmother_warm] 立绘 char_grandmother_warm 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T11:51:48.375Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_grandmother_house_bedroom_night] 背景 bg_grandmother_house_bedroom_night 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:51:49.575Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bgm_night_before_school] 音频 bgm_night_before_school 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:51:49.575Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_school_underground_dark] 背景 bg_school_underground_dark 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:51:50.040Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:prop_dark_god_crystal_placeholder] 立绘 prop_dark_god_crystal_placeholder 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T11:51:50.040Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:sfx_low_heartbeat] 音频 sfx_low_heartbeat 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:51:50.040Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_grandmother_house_bedroom_morning] 背景 bg_grandmother_house_bedroom_morning 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:51:50.262Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bgm_school_morning] 音频 bgm_school_morning 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:51:50.263Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:char_virtual_streamer_shy] 立绘 char_virtual_streamer_shy 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T11:51:51.198Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_sun_city_school_road_morning] 背景 bg_sun_city_school_road_morning 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:51:51.540Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_school_gate_morning] 背景 bg_school_gate_morning 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:51:52.105Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:char_teacher_placeholder] 立绘 char_teacher_placeholder 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T11:51:52.264Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:char_villain_calm] 立绘 char_villain_calm 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T11:51:52.680Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:char_idol_neutral] 立绘 char_idol_neutral 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T11:51:52.681Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_school_classroom_morning] 背景 bg_school_classroom_morning 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:51:53.337Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bgm_school_classroom_daily] 音频 bgm_school_classroom_daily 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:51:53.339Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_school_classroom_day] 背景 bg_school_classroom_day 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:51:55.384Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bgm_school_choice] 音频 bgm_school_choice 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:51:55.895Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_school_library_day] 背景 bg_school_library_day 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:51:55.984Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bgm_school_daily] 音频 bgm_school_daily 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:51:55.985Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_school_cafeteria_day] 背景 bg_school_cafeteria_day 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:51:56.870Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_school_gym_day] 背景 bg_school_gym_day 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:51:57.259Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_school_construction_zone_day] 背景 bg_school_construction_zone_day 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:51:57.653Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bgm_school_mystery] 音频 bgm_school_mystery 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:51:57.654Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:prop_master_sword_corrupted_placeholder] 立绘 prop_master_sword_corrupted_placeholder 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T11:51:59.872Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_school_construction_pit] 背景 bg_school_construction_pit 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:52:00.190Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bgm_master_sword_vision] 音频 bgm_master_sword_vision 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:52:00.191Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:sfx_master_sword_resonance] 音频 sfx_master_sword_resonance 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:52:00.306Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:call:event_master_sword_vision] 调用 event_master_sword_vision 暂用占位处理，继续原文已有内容。",
+      "timestamp": "2026-10-21T11:52:00.306Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bgm_black_humanoid_appearance] 音频 bgm_black_humanoid_appearance 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:52:01.474Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:char_black_humanoid_placeholder] 立绘 char_black_humanoid_placeholder 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T11:52:01.474Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:sfx_fainting] 音频 sfx_fainting 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:52:01.677Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bgm_black_humanoid_battle] 音频 bgm_black_humanoid_battle 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:52:02.061Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_school_construction_pit] 背景 bg_school_construction_pit 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:52:03.518Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bgm_black_humanoid_battle] 音频 bgm_black_humanoid_battle 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:52:03.520Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:char_virtual_streamer_shy] 立绘 char_virtual_streamer_shy 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T11:52:03.520Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:prop_master_sword_corrupted_placeholder] 立绘 prop_master_sword_corrupted_placeholder 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T11:52:03.520Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:char_black_humanoid_placeholder] 立绘 char_black_humanoid_placeholder 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-21T11:52:03.520Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bg_school_hallway_day] 背景 bg_school_hallway_day 尚未绑定，使用场景渐变占位。",
+      "timestamp": "2026-10-21T11:53:13.300Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bgm_school_mystery] 音频 bgm_school_mystery 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:53:13.300Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:sfx_school_bell] 音频 sfx_school_bell 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:53:13.600Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bgm_scene_transition] 音频 bgm_scene_transition 尚未绑定，静默处理。",
+      "timestamp": "2026-10-21T11:53:13.688Z",
+      "url": "http://127.0.0.1:43842/assets/index-NGcg1r9H.js"
+    }
+  ]
+}

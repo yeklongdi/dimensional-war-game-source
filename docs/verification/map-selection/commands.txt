@@ -1,0 +1,40 @@
+npm run typecheck
+
+> dimensional-war-web@0.0.0 typecheck
+> tsc --noEmit
+
+
+npm test
+
+> dimensional-war-web@0.0.0 test
+> vitest run
+
+
+ RUN  v5.0.5 E:/笔记/次元战争设定/游戏文件
+
+
+ Test Files  17 passed (17)
+      Tests  242 passed (242)
+   Start at  17:58:02
+   Duration  2.32s (import 57%, tests 23%, transform 18%, worker 2%)
+
+    Isolate  17 workers spawned · ~229ms startup each (spawn + environment, per file)
+             at least ~327ms faster with isolate: false — reuses workers across files instead of one per file
+
+
+npm run build
+
+> dimensional-war-web@0.0.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 58 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.43 kB │ gzip:  0.30 kB
+dist/assets/index-EByUvI7l.css   15.46 kB │ gzip:  4.29 kB
+dist/assets/index-17J6JdKi.js   135.53 kB │ gzip: 44.81 kB
+
+✓ built in 226ms
+

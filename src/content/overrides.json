@@ -1,0 +1,30 @@
+{
+  "displayNames": { "prologue": { "怪盗": "蒙面人" } },
+  "portraits": {
+    "char_male_high_normal": "/assets/portraits/hero.png",
+    "char_thief_smile": "/assets/portraits/thief.png"
+  },
+  "sceneHides": {
+    "act1": { "a008": ["老师", "怪盗", "反派"], "a015": ["大师之剑"] }
+  },
+  "battleHides": {
+    "battle_prologue_tutorial": ["黑衣人甲", "黑衣人乙"],
+    "battle_black_humanoid": ["黑色人形"]
+  },
+  "stageNotes": {
+    "prologue": {
+      "p001": ["镜头从房屋和桂花树缓慢推进到男高。"],
+      "p008": ["热水落下，镜头给到他握紧的、指节发红的手。"],
+      "p009": ["镜头从房间拉远，切换至学校地下深处。"]
+    },
+    "act1": {
+      "a003": ["镜头短暂掠过学校地下。"],
+      "a006": ["镜头依次给到怪盗、虚拟主播和反派。"],
+      "a008": ["镜头表现书架、靠窗自习区和安静的馆内环境。"],
+      "a009": ["镜头表现铁皮围栏、褪色的“施工中”牌子、塌陷大坑和生锈塔吊。", "镜头在围栏深处短暂停留，表现似乎有什么东西正在注视男高。"]
+    }
+  },
+  "choiceReturns": [
+    { "actId": "act1", "sceneId": "a010", "optionIndex": 2, "metaNodeIndex": 1 }
+  ]
+}

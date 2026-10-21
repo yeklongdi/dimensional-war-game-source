@@ -1,0 +1,70 @@
+{
+  "commands": {
+    "typecheck": "passed",
+    "test": "passed",
+    "build": "passed",
+    "exitCode": 0
+  },
+  "node": "24.18.0",
+  "npm": "11.16.0",
+  "testFiles": 15,
+  "tests": 170,
+  "existingTests": 116,
+  "newTests": 54,
+  "fullRouteScenes": 25,
+  "replayScenes": 25,
+  "expectedTexts": 161,
+  "fullTexts": 161,
+  "replayTexts": 161,
+  "fullTextsMatch": true,
+  "replayTextsMatch": true,
+  "playerNotesHidden": true,
+  "allBattleLogsMatch": true,
+  "fullConsole": {
+    "errors": 0,
+    "warnings": 51,
+    "uniqueWarnings": 51
+  },
+  "replayConsole": {
+    "errors": 0,
+    "warnings": 51,
+    "uniqueWarnings": 51
+  },
+  "m2": {
+    "round": "3",
+    "hp": "10",
+    "draws": "17",
+    "exactLog": true,
+    "formalSaveUnchanged": true,
+    "audioCount": 0,
+    "consoleEntries": 0
+  },
+  "failureChecks": [
+    {
+      "battle": "battle_prologue_tutorial",
+      "noNewVictory": true,
+      "noPrematureCompletion": true
+    },
+    {
+      "battle": "battle_black_humanoid",
+      "noNewVictory": true,
+      "noPrematureCompletion": true
+    }
+  ],
+  "protectedFiles": 60,
+  "allProtectedUnchanged": true,
+  "largestCodeFile": {
+    "file": "src/tests/player.test.ts",
+    "lines": 218
+  },
+  "over400Lines": [],
+  "anyTypes": [],
+  "productionTestPages": [],
+  "preview": "http://127.0.0.1:5173/",
+  "previewInitialSaveRequest": 0,
+  "temporaryVerificationServers": "stopped",
+  "buildAssets": [
+    "index-CDtA3F3g.js",
+    "index-plUyBU3W.css"
+  ]
+}

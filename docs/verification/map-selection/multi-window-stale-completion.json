@@ -1,0 +1,269 @@
+{
+  "raceBefore": {
+    "audioCount": 1,
+    "body": "仓库区外围·怪盗离开\n蒙\n蒙面人\n立绘占位\n序幕　 /　 次元战争\n\n几个黑衣人倒在地\n\n点击补全文字\n返回地图\n返回主菜单\n\n最近存档：仓库区事件 · 仓库区外围·怪盗离开 · 2026/10/21 18:00:12",
+    "buttons": [
+      {
+        "disabled": false,
+        "id": "return-map",
+        "text": "返回地图"
+      },
+      {
+        "disabled": false,
+        "id": "return-menu",
+        "text": "返回主菜单"
+      }
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_first_battle_after",
+      "navToken": "2:1:story",
+      "nodeIndex": "3",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p007\"},\"savedAt\":1792576812267}",
+      "saveRequest": "1",
+      "saveStatus": "saved",
+      "sceneId": "p007",
+      "session": "2",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "2:1"
+    },
+    "stageCount": 1,
+    "text": "几个黑衣人倒在地",
+    "units": []
+  },
+  "raceAdvanced": {
+    "audioCount": 1,
+    "body": "次元战争 · 主线地图\n\n太阳市\n\n主线进度 3 / 7 · 上学途中与校门\n\n奶\n奶奶家\n旧\n旧街区仓库\n上\n上学路口\n\n地点 / 关卡\n\n上学路口\n\n第 4 关 · 第一幕\n\n上学途中与校门\n\n当前可进入\n\n开始关卡\n\n完成本关后自动返回地图。已完成关卡仅供查看。\n\n＋\n−\n定位当前关卡\n返回主菜单\n\n最近存档：太阳市地图 · 上学途中与校门 · 2026/10/21 18:00:15",
+    "buttons": [
+      {
+        "disabled": false,
+        "id": "location-grandma_home",
+        "text": "奶奶奶家"
+      },
+      {
+        "disabled": false,
+        "id": "location-old_warehouse",
+        "text": "旧旧街区仓库"
+      },
+      {
+        "disabled": false,
+        "id": "location-school_road",
+        "text": "上上学路口"
+      },
+      {
+        "disabled": false,
+        "id": "enter-act1_01",
+        "text": "开始关卡"
+      },
+      {
+        "disabled": false,
+        "id": "map-zoom-in",
+        "text": "＋"
+      },
+      {
+        "disabled": false,
+        "id": "map-zoom-out",
+        "text": "−"
+      },
+      {
+        "disabled": false,
+        "id": "map-focus",
+        "text": "定位当前关卡"
+      },
+      {
+        "disabled": false,
+        "id": "map-menu",
+        "text": "返回主菜单"
+      }
+    ],
+    "stage": {
+      "bgmId": "",
+      "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-114.26399999999995}",
+      "completedLevels": "prologue_01,prologue_02,prologue_03",
+      "currentLevel": "act1_01",
+      "navToken": "5:4:map",
+      "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792576815313}",
+      "saveRequest": "5",
+      "saveStatus": "saved",
+      "screen": "map",
+      "selectedLocation": "school_road",
+      "session": "5",
+      "sliceComplete": "false",
+      "testid": "city-map",
+      "visibleNodes": "3"
+    },
+    "stageCount": 1,
+    "text": "",
+    "units": []
+  },
+  "oldStillPlaying": {
+    "audioCount": 1,
+    "body": "仓库区外围·怪盗离开\n蒙\n蒙面人\n立绘占位\n序幕　 /　 次元战争\n\n几个黑衣人倒在地上，另一些黑衣人退回仓库区阴影。\n男高转头看向墙角。\n\n点击 / 空格 / 回车　继续 ▸\n返回地图\n返回主菜单\n\n最近存档：太阳市地图 · 上学途中与校门 · 2026/10/21 18:00:15",
+    "buttons": [
+      {
+        "disabled": false,
+        "id": "return-map",
+        "text": "返回地图"
+      },
+      {
+        "disabled": false,
+        "id": "return-menu",
+        "text": "返回主菜单"
+      }
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_first_battle_after",
+      "navToken": "2:1:story",
+      "nodeIndex": "3",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792576815313}",
+      "saveRequest": "1",
+      "saveStatus": "ready",
+      "sceneId": "p007",
+      "session": "2",
+      "testid": "story-stage",
+      "typingComplete": "true",
+      "waitKind": "text",
+      "waitToken": "2:1"
+    },
+    "stageCount": 1,
+    "text": "几个黑衣人倒在地上，另一些黑衣人退回仓库区阴影。\n男高转头看向墙角。",
+    "units": []
+  },
+  "oldFinished": {
+    "audioCount": 1,
+    "body": "次元战争 · 主线地图\n\n太阳市\n\n主线进度 3 / 7 · 上学途中与校门\n\n奶\n奶奶家\n旧\n旧街区仓库\n上\n上学路口\n\n地点 / 关卡\n\n上学路口\n\n第 4 关 · 第一幕\n\n上学途中与校门\n\n当前可进入\n\n开始关卡\n\n完成本关后自动返回地图。已完成关卡仅供查看。\n\n＋\n−\n定位当前关卡\n返回主菜单\n\n最近存档：太阳市地图 · 上学途中与校门 · 2026/10/21 18:00:15",
+    "buttons": [
+      {
+        "disabled": false,
+        "id": "location-grandma_home",
+        "text": "奶奶奶家"
+      },
+      {
+        "disabled": false,
+        "id": "location-old_warehouse",
+        "text": "旧旧街区仓库"
+      },
+      {
+        "disabled": false,
+        "id": "location-school_road",
+        "text": "上上学路口"
+      },
+      {
+        "disabled": false,
+        "id": "enter-act1_01",
+        "text": "开始关卡"
+      },
+      {
+        "disabled": false,
+        "id": "map-zoom-in",
+        "text": "＋"
+      },
+      {
+        "disabled": false,
+        "id": "map-zoom-out",
+        "text": "−"
+      },
+      {
+        "disabled": false,
+        "id": "map-focus",
+        "text": "定位当前关卡"
+      },
+      {
+        "disabled": false,
+        "id": "map-menu",
+        "text": "返回主菜单"
+      }
+    ],
+    "stage": {
+      "bgmId": "",
+      "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-114.26399999999995}",
+      "completedLevels": "prologue_01,prologue_02,prologue_03",
+      "currentLevel": "act1_01",
+      "navToken": "3:2:map",
+      "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792576815705}",
+      "saveRequest": "2",
+      "saveStatus": "saved",
+      "screen": "map",
+      "selectedLocation": "school_road",
+      "session": "3",
+      "sliceComplete": "false",
+      "testid": "city-map",
+      "visibleNodes": "3"
+    },
+    "stageCount": 1,
+    "text": "",
+    "units": []
+  },
+  "raceAfter": {
+    "audioCount": 1,
+    "body": "次元战争 · 主线地图\n\n太阳市\n\n主线进度 3 / 7 · 上学途中与校门\n\n奶\n奶奶家\n旧\n旧街区仓库\n上\n上学路口\n\n地点 / 关卡\n\n上学路口\n\n第 4 关 · 第一幕\n\n上学途中与校门\n\n当前可进入\n\n开始关卡\n\n完成本关后自动返回地图。已完成关卡仅供查看。\n\n＋\n−\n定位当前关卡\n返回主菜单\n\n最近存档：太阳市地图 · 上学途中与校门 · 2026/10/21 18:00:15",
+    "buttons": [
+      {
+        "disabled": false,
+        "id": "location-grandma_home",
+        "text": "奶奶奶家"
+      },
+      {
+        "disabled": false,
+        "id": "location-old_warehouse",
+        "text": "旧旧街区仓库"
+      },
+      {
+        "disabled": false,
+        "id": "location-school_road",
+        "text": "上上学路口"
+      },
+      {
+        "disabled": false,
+        "id": "enter-act1_01",
+        "text": "开始关卡"
+      },
+      {
+        "disabled": false,
+        "id": "map-zoom-in",
+        "text": "＋"
+      },
+      {
+        "disabled": false,
+        "id": "map-zoom-out",
+        "text": "−"
+      },
+      {
+        "disabled": false,
+        "id": "map-focus",
+        "text": "定位当前关卡"
+      },
+      {
+        "disabled": false,
+        "id": "map-menu",
+        "text": "返回主菜单"
+      }
+    ],
+    "stage": {
+      "bgmId": "",
+      "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-114.26399999999995}",
+      "completedLevels": "prologue_01,prologue_02,prologue_03",
+      "currentLevel": "act1_01",
+      "navToken": "5:4:map",
+      "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792576815705}",
+      "saveRequest": "5",
+      "saveStatus": "ready",
+      "screen": "map",
+      "selectedLocation": "school_road",
+      "session": "5",
+      "sliceComplete": "false",
+      "testid": "city-map",
+      "visibleNodes": "3"
+    },
+    "stageCount": 1,
+    "text": "",
+    "units": []
+  }
+}

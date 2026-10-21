@@ -1,0 +1,1067 @@
+[
+  {
+    "case": "A007刷新/继续回本场景选择",
+    "page": {
+      "audioCount": 1,
+      "body": "课间·选择校园向导\n虚\n虚拟主播\n立绘占位\n老\n老师\n立绘占位\n反\n反派\n立绘占位\n第一幕　 /　 次元战争\n男高选择由谁带他参观校园。\n怪盗。\n暂未开放\n虚拟主播。\n反派。\n暂未开放\n让老师选择。\n暂未开放\n返回地图\n返回主菜单\n\n最近存档：教室与校园导览 · 课间·选择校园向导 · 2026/10/21 17:26:37",
+      "buttons": [
+        {
+          "disabled": true,
+          "id": "option-1",
+          "text": "怪盗。暂未开放"
+        },
+        {
+          "disabled": false,
+          "id": "option-2",
+          "text": "虚拟主播。"
+        },
+        {
+          "disabled": true,
+          "id": "option-3",
+          "text": "反派。暂未开放"
+        },
+        {
+          "disabled": true,
+          "id": "option-4",
+          "text": "让老师选择。暂未开放"
+        },
+        {
+          "disabled": false,
+          "id": "return-map",
+          "text": "返回地图"
+        },
+        {
+          "disabled": false,
+          "id": "return-menu",
+          "text": "返回主菜单"
+        }
+      ],
+      "stage": {
+        "actId": "act1",
+        "bgmId": "bgm_school_choice",
+        "navToken": "2:1:story",
+        "nodeIndex": "2",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a007\"},\"savedAt\":1792574797411}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "a007",
+        "session": "2",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "choice",
+        "waitToken": "2:1"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": []
+    }
+  },
+  {
+    "case": "A007第二项进入a008",
+    "page": {
+      "audioCount": 1,
+      "body": "虚拟主播带路参观校园\n虚\n虚拟主播\n立绘占位\n第一幕　 /　 次元战争\n\n老师的话音落下\n\n点击补全文字\n返回地图\n返回主菜单\n\n最近存档：教室与校园导览 · 虚拟主播带路参观校园 · 2026/10/21 17:26:37",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "return-map",
+          "text": "返回地图"
+        },
+        {
+          "disabled": false,
+          "id": "return-menu",
+          "text": "返回主菜单"
+        }
+      ],
+      "stage": {
+        "actId": "act1",
+        "bgmId": "bgm_school_daily",
+        "navToken": "2:1:story",
+        "nodeIndex": "4",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a008\"},\"savedAt\":1792574797710}",
+        "saveRequest": "2",
+        "saveStatus": "saved",
+        "sceneId": "a008",
+        "session": "2",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "waitKind": "text",
+        "waitToken": "2:2"
+      },
+      "stageCount": 1,
+      "text": "老师的话音落下",
+      "units": []
+    },
+    "portraits": "<div class=\"portrait\" data-actor=\"男高\" data-asset=\"char_male_high_normal\" data-position=\"left\" data-slot=\"left\" data-speaking=\"false\" data-rear=\"false\" style=\"left: 410px; --actor-color: hsl(17 32% 27%);\"><img class=\"portrait-image\" src=\"/assets/portraits/hero.png\" alt=\"男高\" draggable=\"false\"></div><div class=\"portrait portrait-placeholder\" data-actor=\"虚拟主播\" data-asset=\"char_virtual_streamer_shy\" data-position=\"right\" data-slot=\"right\" data-speaking=\"false\" data-rear=\"false\" style=\"left: 870px; --actor-color: hsl(175 32% 27%);\"><span class=\"portrait-initial\">虚</span><span class=\"portrait-name\">虚拟主播</span><span class=\"placeholder-label\">立绘占位</span></div>"
+  },
+  {
+    "case": "选择后刷新恢复a008首句及继承立绘",
+    "page": {
+      "audioCount": 1,
+      "body": "虚拟主播带路参观校园\n虚\n虚拟主播\n立绘占位\n第一幕　 /　 次元战争\n\n老师的话音落下后\n\n点击补全文字\n返回地图\n返回主菜单\n\n最近存档：教室与校园导览 · 虚拟主播带路参观校园 · 2026/10/21 17:26:38",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "return-map",
+          "text": "返回地图"
+        },
+        {
+          "disabled": false,
+          "id": "return-menu",
+          "text": "返回主菜单"
+        }
+      ],
+      "stage": {
+        "actId": "act1",
+        "bgmId": "bgm_school_daily",
+        "navToken": "2:1:story",
+        "nodeIndex": "4",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a008\"},\"savedAt\":1792574798109}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "a008",
+        "session": "2",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "waitKind": "text",
+        "waitToken": "2:1"
+      },
+      "stageCount": 1,
+      "text": "老师的话音落下后",
+      "units": []
+    },
+    "portraits": "<div class=\"portrait\" data-actor=\"男高\" data-asset=\"char_male_high_normal\" data-position=\"left\" data-slot=\"left\" data-speaking=\"false\" data-rear=\"false\" style=\"left: 410px; --actor-color: hsl(17 32% 27%);\"><img class=\"portrait-image\" src=\"/assets/portraits/hero.png\" alt=\"男高\" draggable=\"false\"></div><div class=\"portrait portrait-placeholder\" data-actor=\"虚拟主播\" data-asset=\"char_virtual_streamer_shy\" data-position=\"right\" data-slot=\"right\" data-speaking=\"false\" data-rear=\"false\" style=\"left: 870px; --actor-color: hsl(175 32% 27%);\"><span class=\"portrait-initial\">虚</span><span class=\"portrait-name\">虚拟主播</span><span class=\"placeholder-label\">立绘占位</span></div>"
+  },
+  {
+    "case": "A010说明中退出前",
+    "page": {
+      "audioCount": 1,
+      "body": "是否进入施工区域\n虚\n虚拟主播\n立绘占位\n第一幕　 /　 次元战争\n\n点击补全文字\n返回地图\n返回主菜单\n\n正在保存…",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "return-map",
+          "text": "返回地图"
+        },
+        {
+          "disabled": false,
+          "id": "return-menu",
+          "text": "返回主菜单"
+        }
+      ],
+      "stage": {
+        "actId": "act1",
+        "bgmId": "bgm_school_mystery",
+        "navToken": "4:3:story",
+        "nodeIndex": "2",
+        "optionIndex": "2",
+        "optionNodeIndex": "1",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a010\"},\"savedAt\":1792574827152}",
+        "saveRequest": "3",
+        "saveStatus": "saving",
+        "sceneId": "a010",
+        "session": "4",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "waitKind": "text",
+        "waitToken": "4:2"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": []
+    }
+  },
+  {
+    "case": "A010说明中刷新返回同一选择，SET保留",
+    "page": {
+      "audioCount": 1,
+      "body": "是否进入施工区域\n虚\n虚拟主播\n立绘占位\n第一幕　 /　 次元战争\n男高是否进入废弃施工现场。\n去废弃施工现场看看。\n回班上。\n返回地图\n返回主菜单\n\n最近存档：施工区事件 · 是否进入施工区域 · 2026/10/21 17:27:08",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "option-1",
+          "text": "去废弃施工现场看看。"
+        },
+        {
+          "disabled": false,
+          "id": "option-2",
+          "text": "回班上。"
+        },
+        {
+          "disabled": false,
+          "id": "return-map",
+          "text": "返回地图"
+        },
+        {
+          "disabled": false,
+          "id": "return-menu",
+          "text": "返回主菜单"
+        }
+      ],
+      "stage": {
+        "actId": "act1",
+        "bgmId": "bgm_school_mystery",
+        "navToken": "2:1:story",
+        "nodeIndex": "2",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a010\"},\"savedAt\":1792574828284}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "a010",
+        "session": "2",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "choice",
+        "waitToken": "2:1"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": []
+    },
+    "portraits": "<div class=\"portrait\" data-actor=\"男高\" data-asset=\"char_male_high_normal\" data-position=\"left\" data-slot=\"left\" data-speaking=\"false\" data-rear=\"false\" style=\"left: 410px; --actor-color: hsl(17 32% 27%);\"><img class=\"portrait-image\" src=\"/assets/portraits/hero.png\" alt=\"男高\" draggable=\"false\"></div><div class=\"portrait portrait-placeholder\" data-actor=\"虚拟主播\" data-asset=\"char_virtual_streamer_shy\" data-position=\"right\" data-slot=\"right\" data-speaking=\"false\" data-rear=\"false\" style=\"left: 870px; --actor-color: hsl(175 32% 27%);\"><span class=\"portrait-initial\">虚</span><span class=\"portrait-name\">虚拟主播</span><span class=\"placeholder-label\">立绘占位</span></div>"
+  },
+  {
+    "case": "a014战斗移动后退出前",
+    "page": {
+      "audioCount": 1,
+      "body": "第一幕 · 黑色人形战斗\n\n第 1 轮\n\n男高\n先攻 8 · HP 10/10\n黑色人形\n先攻 3 · HP 16/16\n男高的回合\n\n移动 20尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 5\n\n可行动 · (2,2)\n\n主手：大师之剑 1d8+2\n\n附赠：徒手 1d4+2\n\n黑色人形\n\nHP 16/16 · 临时 0\n\n可行动 · (3,3)\n\n攻击\n移动\n技能\n战斗记录\n\n剑形灼痕共鸣：获得5点临时生命值\n\n先攻第1位 男高：d20(6) [普通]+2=8\n\n先攻第2位 黑色人形：d20(1) [普通]+2=3\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n男高 (0,2)→(1,1)，消耗5尺，剩余25尺\n\n男高 (1,1)→(2,2)，消耗5尺，剩余20尺\n\n选择操作；技能中可结束回合\n\n返回地图\n返回主菜单\n\n最近存档：施工区事件 · 黑色人形战斗 · 2026/10/21 17:27:47",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "mode-attack",
+          "text": "攻击"
+        },
+        {
+          "disabled": false,
+          "id": "mode-move",
+          "text": "移动"
+        },
+        {
+          "disabled": false,
+          "id": "mode-skills",
+          "text": "技能"
+        },
+        {
+          "disabled": false,
+          "id": "return-map",
+          "text": "返回地图"
+        },
+        {
+          "disabled": false,
+          "id": "return-menu",
+          "text": "返回主菜单"
+        }
+      ],
+      "stage": {
+        "actId": "act1",
+        "battleId": "battle_black_humanoid",
+        "bgmId": "bgm_black_humanoid_battle",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "navToken": "4:3:battle",
+        "result": "",
+        "returnNodeIndex": "4",
+        "rngDraws": "2",
+        "round": "1",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a014\"},\"savedAt\":1792574867476}",
+        "saveRequest": "2",
+        "saveStatus": "saved",
+        "sceneId": "a014",
+        "screen": "battle",
+        "seed": "0",
+        "session": "4",
+        "storyWaitToken": "4:2",
+        "testid": "battle-stage",
+        "token": "1:4",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "2",
+          "hp": "10",
+          "primaryAttack": "master_sword",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "5",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "3",
+          "hp": "16",
+          "primaryAttack": "claw",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_humanoid"
+        }
+      ]
+    }
+  },
+  {
+    "case": "a014刷新先重播首句",
+    "page": {
+      "audioCount": 1,
+      "body": "黑色人形战斗\n虚\n虚拟主播\n立绘占位\n大\n大师之剑\n立绘占位\n黑\n黑色人形\n立绘占位\n第一幕　 /　 次元战争\n\n战斗界面切入。\n\n点击 / 空格 / 回车　继续 ▸\n返回地图\n返回主菜单\n\n最近存档：施工区事件 · 黑色人形战斗 · 2026/10/21 17:27:49",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "return-map",
+          "text": "返回地图"
+        },
+        {
+          "disabled": false,
+          "id": "return-menu",
+          "text": "返回主菜单"
+        }
+      ],
+      "stage": {
+        "actId": "act1",
+        "bgmId": "bgm_black_humanoid_battle",
+        "navToken": "2:1:story",
+        "nodeIndex": "2",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a014\"},\"savedAt\":1792574869044}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "a014",
+        "session": "2",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "text",
+        "waitToken": "2:1"
+      },
+      "stageCount": 1,
+      "text": "战斗界面切入。",
+      "units": []
+    }
+  },
+  {
+    "case": "a014重新开战：大师之剑、HP10及临时HP5",
+    "page": {
+      "audioCount": 1,
+      "body": "第一幕 · 黑色人形战斗\n\n第 1 轮\n\n男高\n先攻 8 · HP 10/10\n黑色人形\n先攻 3 · HP 16/16\n男高的回合\n\n移动 30尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 5\n\n可行动 · (0,2)\n\n主手：大师之剑 1d8+2\n\n附赠：徒手 1d4+2\n\n黑色人形\n\nHP 16/16 · 临时 0\n\n可行动 · (3,3)\n\n攻击\n移动\n技能\n战斗记录\n\n剑形灼痕共鸣：获得5点临时生命值\n\n先攻第1位 男高：d20(6) [普通]+2=8\n\n先攻第2位 黑色人形：d20(1) [普通]+2=3\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n选择操作；技能中可结束回合\n\n返回地图\n返回主菜单\n\n最近存档：施工区事件 · 黑色人形战斗 · 2026/10/21 17:27:49",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": true,
+          "id": "mode-attack",
+          "text": "攻击"
+        },
+        {
+          "disabled": false,
+          "id": "mode-move",
+          "text": "移动"
+        },
+        {
+          "disabled": false,
+          "id": "mode-skills",
+          "text": "技能"
+        },
+        {
+          "disabled": false,
+          "id": "return-map",
+          "text": "返回地图"
+        },
+        {
+          "disabled": false,
+          "id": "return-menu",
+          "text": "返回主菜单"
+        }
+      ],
+      "stage": {
+        "actId": "act1",
+        "battleId": "battle_black_humanoid",
+        "bgmId": "bgm_black_humanoid_battle",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "navToken": "2:1:battle",
+        "result": "",
+        "returnNodeIndex": "4",
+        "rngDraws": "2",
+        "round": "1",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a014\"},\"savedAt\":1792574869044}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "a014",
+        "screen": "battle",
+        "seed": "0",
+        "session": "2",
+        "storyWaitToken": "2:2",
+        "testid": "battle-stage",
+        "token": "1:1",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "0",
+          "hp": "10",
+          "primaryAttack": "master_sword",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "5",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "3",
+          "hp": "16",
+          "primaryAttack": "claw",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_humanoid"
+        }
+      ]
+    }
+  },
+  {
+    "case": "黑色人形失败后重试恢复本战初值",
+    "page": {
+      "audioCount": 1,
+      "body": "第一幕 · 黑色人形战斗\n\n第 1 轮\n\n男高\n先攻 8 · HP 10/10\n黑色人形\n先攻 3 · HP 16/16\n男高的回合\n\n移动 30尺　动作 1\n\n附赠 1　反应 1\n\n男高\n\nHP 10/10 · 临时 5\n\n可行动 · (0,2)\n\n主手：大师之剑 1d8+2\n\n附赠：徒手 1d4+2\n\n黑色人形\n\nHP 16/16 · 临时 0\n\n可行动 · (3,3)\n\n攻击\n移动\n技能\n战斗记录\n\n剑形灼痕共鸣：获得5点临时生命值\n\n先攻第1位 男高：d20(6) [普通]+2=8\n\n先攻第2位 黑色人形：d20(1) [普通]+2=3\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n选择操作；技能中可结束回合\n\n返回地图\n返回主菜单\n\n最近存档：施工区事件 · 黑色人形战斗 · 2026/10/21 17:28:13",
+      "buttons": [
+        {
+          "disabled": false,
+          "id": "cell-0-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-0",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-1",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-2",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-3",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-0-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-1-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-2-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-3-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-4-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-5-4",
+          "text": ""
+        },
+        {
+          "disabled": false,
+          "id": "cell-6-4",
+          "text": ""
+        },
+        {
+          "disabled": true,
+          "id": "mode-attack",
+          "text": "攻击"
+        },
+        {
+          "disabled": false,
+          "id": "mode-move",
+          "text": "移动"
+        },
+        {
+          "disabled": false,
+          "id": "mode-skills",
+          "text": "技能"
+        },
+        {
+          "disabled": false,
+          "id": "return-map",
+          "text": "返回地图"
+        },
+        {
+          "disabled": false,
+          "id": "return-menu",
+          "text": "返回主菜单"
+        }
+      ],
+      "stage": {
+        "actId": "act1",
+        "battleId": "battle_black_humanoid",
+        "bgmId": "bgm_black_humanoid_battle",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "navToken": "2:1:battle",
+        "result": "",
+        "returnNodeIndex": "4",
+        "rngDraws": "2",
+        "round": "1",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a014\"},\"savedAt\":1792574893348}",
+        "saveRequest": "2",
+        "saveStatus": "saved",
+        "sceneId": "a014",
+        "screen": "battle",
+        "seed": "0",
+        "session": "2",
+        "storyWaitToken": "2:2",
+        "testid": "battle-stage",
+        "token": "2:1",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "stageCount": 1,
+      "text": "",
+      "units": [
+        {
+          "action": "true",
+          "bonus": "true",
+          "col": "0",
+          "hp": "10",
+          "primaryAttack": "master_sword",
+          "reaction": "true",
+          "row": "2",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "5",
+          "testid": "unit-hero"
+        },
+        {
+          "action": "false",
+          "bonus": "false",
+          "col": "3",
+          "hp": "16",
+          "primaryAttack": "claw",
+          "reaction": "true",
+          "row": "3",
+          "savesFailure": "0",
+          "savesSuccess": "0",
+          "status": "active",
+          "tempHp": "0",
+          "testid": "unit-black_humanoid"
+        }
+      ]
+    }
+  }
+]

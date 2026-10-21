@@ -1,0 +1,362 @@
+[
+  {
+    "file": "docs/open-questions.md",
+    "before": "0de1804cabc8c8f517d93e97cf6a1007437cf83592d9e3a012a695ea45046e87",
+    "after": "0de1804cabc8c8f517d93e97cf6a1007437cf83592d9e3a012a695ea45046e87",
+    "unchanged": true
+  },
+  {
+    "file": "package-lock.json",
+    "before": "1b2d322f1a4361a0f64ab9e4119e3da701907217fc4872ac5987961b04095193",
+    "after": "1b2d322f1a4361a0f64ab9e4119e3da701907217fc4872ac5987961b04095193",
+    "unchanged": true
+  },
+  {
+    "file": "package.json",
+    "before": "96b8013b757fa126c8b424f500b1eb1ad5ef525ff98e62853881c5356c41dff9",
+    "after": "96b8013b757fa126c8b424f500b1eb1ad5ef525ff98e62853881c5356c41dff9",
+    "unchanged": true
+  },
+  {
+    "file": "source/data/hero.md",
+    "before": "dfad52adf111217b4481a99828d346bb3d4dd6a3b2cdd513b0f3033bebda95cc",
+    "after": "dfad52adf111217b4481a99828d346bb3d4dd6a3b2cdd513b0f3033bebda95cc",
+    "unchanged": true
+  },
+  {
+    "file": "source/data/org_grunt.md",
+    "before": "6c2c331ae4f919aec3080c96eb1b970ebc2a9c166274b873a6fda58bfc1134f8",
+    "after": "6c2c331ae4f919aec3080c96eb1b970ebc2a9c166274b873a6fda58bfc1134f8",
+    "unchanged": true
+  },
+  {
+    "file": "source/story/act1.md",
+    "before": "2d322c786a744cad4912f098523a9ad61955fc1b59040a0dc5ff08f08921a3bf",
+    "after": "2d322c786a744cad4912f098523a9ad61955fc1b59040a0dc5ff08f08921a3bf",
+    "unchanged": true
+  },
+  {
+    "file": "source/story/prologue.md",
+    "before": "aad4cc222e351fe389d9a0164138ec9168b6cf1f9032fa4bdd21479dbfe597dc",
+    "after": "aad4cc222e351fe389d9a0164138ec9168b6cf1f9032fa4bdd21479dbfe597dc",
+    "unchanged": true
+  },
+  {
+    "file": "src/content/act1.json",
+    "before": "b835a2ddd354a53bed9aa14489bfe90f1accf5821019b3c94388c35719992bcd",
+    "after": "b835a2ddd354a53bed9aa14489bfe90f1accf5821019b3c94388c35719992bcd",
+    "unchanged": true
+  },
+  {
+    "file": "src/content/audio-map.json",
+    "before": "9cd5b5c6a8d7896acb0eb6fd42a29044ef281f5cbd311fcfd0472e95903c2840",
+    "after": "9cd5b5c6a8d7896acb0eb6fd42a29044ef281f5cbd311fcfd0472e95903c2840",
+    "unchanged": true
+  },
+  {
+    "file": "src/content/battles.json",
+    "before": "40731538e3b182b697eceea0eb22554f936aa487648c11262bbe512337f2d5e0",
+    "after": "40731538e3b182b697eceea0eb22554f936aa487648c11262bbe512337f2d5e0",
+    "unchanged": true
+  },
+  {
+    "file": "src/content/combatants.json",
+    "before": "e150f761de74111d58649bd238cb267998867b19582235d07dafdbf9a1c26f40",
+    "after": "e150f761de74111d58649bd238cb267998867b19582235d07dafdbf9a1c26f40",
+    "unchanged": true
+  },
+  {
+    "file": "src/content/index.json",
+    "before": "a6ae3ad75097e31f89561601750275244829758bb5091b5f139cdad615eac532",
+    "after": "a6ae3ad75097e31f89561601750275244829758bb5091b5f139cdad615eac532",
+    "unchanged": true
+  },
+  {
+    "file": "src/content/overrides.json",
+    "before": "217aafe4802dcf42fe637676c6b2864d6434088405ce973d231f011973ae47f3",
+    "after": "217aafe4802dcf42fe637676c6b2864d6434088405ce973d231f011973ae47f3",
+    "unchanged": true
+  },
+  {
+    "file": "src/content/prologue.json",
+    "before": "e270bee77596a9662445ce87c9bd09b4be4386780568ae368ff24184683be10a",
+    "after": "e270bee77596a9662445ce87c9bd09b4be4386780568ae368ff24184683be10a",
+    "unchanged": true
+  },
+  {
+    "file": "src/content/types.ts",
+    "before": "63ad78f5bea78f8a3e984526de9c7391f70814951b34a7c9da3126e18d66113d",
+    "after": "63ad78f5bea78f8a3e984526de9c7391f70814951b34a7c9da3126e18d66113d",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/actions.ts",
+    "before": "fccf65fb8ba9de3f4c0e2fff53ab6e773e4392f227e74074c68ba212b2db6d04",
+    "after": "fccf65fb8ba9de3f4c0e2fff53ab6e773e4392f227e74074c68ba212b2db6d04",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/ai.ts",
+    "before": "cb33a6d36f913e13e645807d1703959d9427d810f368bb3d70465e24bb12ae33",
+    "after": "cb33a6d36f913e13e645807d1703959d9427d810f368bb3d70465e24bb12ae33",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/battle.ts",
+    "before": "4460d72743d026e8f34e35327d501ac717a36ce11ff977be1479619d544b59cb",
+    "after": "4460d72743d026e8f34e35327d501ac717a36ce11ff977be1479619d544b59cb",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/combat.ts",
+    "before": "917d4d1ecf3556131123e2b31003676f7b4876e29b3643cf0c8a77d3d9ab2e5a",
+    "after": "917d4d1ecf3556131123e2b31003676f7b4876e29b3643cf0c8a77d3d9ab2e5a",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/controller.ts",
+    "before": "ff0889e3ad911c234509414a7c0eaafb4f9ce26edf61749a0e1d79a73c131916",
+    "after": "ff0889e3ad911c234509414a7c0eaafb4f9ce26edf61749a0e1d79a73c131916",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/debug-state.ts",
+    "before": "0cb72399467ce7e431a1831ad2a0ddc68fc6281db0ac9c8ccd4f35e6422b597b",
+    "after": "0cb72399467ce7e431a1831ad2a0ddc68fc6281db0ac9c8ccd4f35e6422b597b",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/definitions.ts",
+    "before": "e0e496fe6fd4398f924d509a2d6adedd0e80f45703786cbc91d7bf67bd8b1e72",
+    "after": "e0e496fe6fd4398f924d509a2d6adedd0e80f45703786cbc91d7bf67bd8b1e72",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/dice.ts",
+    "before": "3c4321081bb084adea4ae66d7fc12e9b32b888c5c032964ea427278e00575784",
+    "after": "3c4321081bb084adea4ae66d7fc12e9b32b888c5c032964ea427278e00575784",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/format-log.ts",
+    "before": "055c97862e191e09a769ef9e49db695ca438608ead6fd5e9d829711735ec1421",
+    "after": "055c97862e191e09a769ef9e49db695ca438608ead6fd5e9d829711735ec1421",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/grid.ts",
+    "before": "b938669436772846d1b7c0495736c6ea32eedf3a6fda6a0ddf3c8e4247f92e99",
+    "after": "b938669436772846d1b7c0495736c6ea32eedf3a6fda6a0ddf3c8e4247f92e99",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/initiative.ts",
+    "before": "6da232e51088275a55e7fe0af3b751ef0444797927baa4b9ea0a9f92f52ac77c",
+    "after": "6da232e51088275a55e7fe0af3b751ef0444797927baa4b9ea0a9f92f52ac77c",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/inspiration.ts",
+    "before": "602211b122953cd5b8f9b3448f9b7ec94421719dd1e7ccc0036e58e1e1a8e8c6",
+    "after": "602211b122953cd5b8f9b3448f9b7ec94421719dd1e7ccc0036e58e1e1a8e8c6",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/movement.ts",
+    "before": "c91927447c1cf727201c74fd8338e30f0c56c67c21a5765ea753619444b8d2ab",
+    "after": "c91927447c1cf727201c74fd8338e30f0c56c67c21a5765ea753619444b8d2ab",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/render.ts",
+    "before": "336cb637b31e3aef2ebdcafa4d3f077424589e449690bab4ccc34861a5d32f22",
+    "after": "336cb637b31e3aef2ebdcafa4d3f077424589e449690bab4ccc34861a5d32f22",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/rules.ts",
+    "before": "d22a33d7faa4d0935c807060415718a523602d0e0fec31ab60a7f7cee7c1007e",
+    "after": "d22a33d7faa4d0935c807060415718a523602d0e0fec31ab60a7f7cee7c1007e",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/state-helpers.ts",
+    "before": "ea1d818f2a71e65032cfa88e4c8a7135956f690c06d0709f7bdf44ea89f1d0b4",
+    "after": "ea1d818f2a71e65032cfa88e4c8a7135956f690c06d0709f7bdf44ea89f1d0b4",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/turn.ts",
+    "before": "88449189754f944d729d26180aa853667673739f48e8d1266b2823d1a2456dcb",
+    "after": "88449189754f944d729d26180aa853667673739f48e8d1266b2823d1a2456dcb",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/tutorial.ts",
+    "before": "c717f5adb6bab37a633f1c2d252aebfbcb80a48c72343519af2d24d2820b095d",
+    "after": "c717f5adb6bab37a633f1c2d252aebfbcb80a48c72343519af2d24d2820b095d",
+    "unchanged": true
+  },
+  {
+    "file": "src/game/battle/types.ts",
+    "before": "0d2447dc83b1eac9c7bcf72a333197dba49b3975cf8cd91997170225f9345a09",
+    "after": "0d2447dc83b1eac9c7bcf72a333197dba49b3975cf8cd91997170225f9345a09",
+    "unchanged": true
+  },
+  {
+    "file": "src/tests/battle-ai.test.ts",
+    "before": "a7ca039cde614a31ca80edf59d26c0d239c41d2e7614e63bbf1ce2b7a96b3fd2",
+    "after": "a7ca039cde614a31ca80edf59d26c0d239c41d2e7614e63bbf1ce2b7a96b3fd2",
+    "unchanged": true
+  },
+  {
+    "file": "src/tests/battle-flow.test.ts",
+    "before": "4f173f15b87b822b51d67e80ee5bb26b881daa3e2b4bf4d292197c6dfc365627",
+    "after": "4f173f15b87b822b51d67e80ee5bb26b881daa3e2b4bf4d292197c6dfc365627",
+    "unchanged": true
+  },
+  {
+    "file": "src/tests/battle-grid.test.ts",
+    "before": "6fe4932afd34f53b409d9e66fa947668f2722680d1d7eb5615183637b6f01785",
+    "after": "6fe4932afd34f53b409d9e66fa947668f2722680d1d7eb5615183637b6f01785",
+    "unchanged": true
+  },
+  {
+    "file": "src/tests/battle-helpers.ts",
+    "before": "8dc82234ce7bae8224d0a2b364d109165c58c087cb9b0f19da993e63b5c5b195",
+    "after": "8dc82234ce7bae8224d0a2b364d109165c58c087cb9b0f19da993e63b5c5b195",
+    "unchanged": true
+  },
+  {
+    "file": "src/tests/battle-m3.test.ts",
+    "before": "5d0f692bc1be11f181a63cb169f939552b5d381782325f4ace1c78d93e38c834",
+    "after": "5d0f692bc1be11f181a63cb169f939552b5d381782325f4ace1c78d93e38c834",
+    "unchanged": true
+  },
+  {
+    "file": "src/tests/battle-rules.test.ts",
+    "before": "f2c36d36e4edd24e5088f7089786a479994aee005304b0f76e1ad80ee909d6b8",
+    "after": "f2c36d36e4edd24e5088f7089786a479994aee005304b0f76e1ad80ee909d6b8",
+    "unchanged": true
+  },
+  {
+    "file": "src/tests/battle-seed.test.ts",
+    "before": "089fb84f999f91bc39c10b250f9a885bb608c97cabe8941aa2e8d0cb1933d87b",
+    "after": "089fb84f999f91bc39c10b250f9a885bb608c97cabe8941aa2e8d0cb1933d87b",
+    "unchanged": true
+  },
+  {
+    "file": "src/tests/battle-simulation.ts",
+    "before": "aa01670575400ddd0452f7a4dfe56c449294382e1dc70e8936f548f33bb27368",
+    "after": "aa01670575400ddd0452f7a4dfe56c449294382e1dc70e8936f548f33bb27368",
+    "unchanged": true
+  },
+  {
+    "file": "src/tests/campaign-helpers.ts",
+    "before": "5044ec370a203db18410acb151bc7f8843dea107285363ecc8078cb4ac808e36",
+    "after": "5044ec370a203db18410acb151bc7f8843dea107285363ecc8078cb4ac808e36",
+    "unchanged": true
+  },
+  {
+    "file": "src/tests/campaign.test.ts",
+    "before": "4584d4623ae016e39e69f6d1bc8315e2c7c574f8cf0bd2f1ed35ea9930e56b1a",
+    "after": "4584d4623ae016e39e69f6d1bc8315e2c7c574f8cf0bd2f1ed35ea9930e56b1a",
+    "unchanged": true
+  },
+  {
+    "file": "src/tests/export-helpers.ts",
+    "before": "afee24c7a6c65ebc743f6856d34918785e2341c2b46837869ad5c8b2d0f2ca3a",
+    "after": "afee24c7a6c65ebc743f6856d34918785e2341c2b46837869ad5c8b2d0f2ca3a",
+    "unchanged": true
+  },
+  {
+    "file": "src/tests/export.test.ts",
+    "before": "6d38cbf9e5eafcb33b536cdfcad117e83fbb6de5fcc10ce5a65e8aa60d7398fb",
+    "after": "6d38cbf9e5eafcb33b536cdfcad117e83fbb6de5fcc10ce5a65e8aa60d7398fb",
+    "unchanged": true
+  },
+  {
+    "file": "src/tests/fixtures/reaction-browser.ts",
+    "before": "64e00692b58e932bd4fd75a55d2432505d2410b5ccf962056a81bfca73bf8443",
+    "after": "64e00692b58e932bd4fd75a55d2432505d2410b5ccf962056a81bfca73bf8443",
+    "unchanged": true
+  },
+  {
+    "file": "src/tests/inspiration.test.ts",
+    "before": "ce2f11b27a1cd43ca6e813570f04db089f831c8904a3144d1f84565c9dd82461",
+    "after": "ce2f11b27a1cd43ca6e813570f04db089f831c8904a3144d1f84565c9dd82461",
+    "unchanged": true
+  },
+  {
+    "file": "src/tests/parser.test.ts",
+    "before": "f81e976fd783bcef32eb46d32add6fc4f8e3ed033e47e4a73273ad0b46c6901e",
+    "after": "f81e976fd783bcef32eb46d32add6fc4f8e3ed033e47e4a73273ad0b46c6901e",
+    "unchanged": true
+  },
+  {
+    "file": "src/tests/player-helpers.ts",
+    "before": "5c47bc055a79132222827c3ce1cd4ae1ad4b48c2ff320116988dc342c9f200ba",
+    "after": "5c47bc055a79132222827c3ce1cd4ae1ad4b48c2ff320116988dc342c9f200ba",
+    "unchanged": true
+  },
+  {
+    "file": "src/tests/player.test.ts",
+    "before": "2b52e684551a015f21c753ace0926fab9b64baacfdf5a76f3da575e98f390ca3",
+    "after": "2b52e684551a015f21c753ace0926fab9b64baacfdf5a76f3da575e98f390ca3",
+    "unchanged": true
+  },
+  {
+    "file": "tools/export-story.mjs",
+    "before": "a6d5d3a31b8c68505beb69e61ae914a551bafa1f1aca2dd548fbd8ae4c597b2a",
+    "after": "a6d5d3a31b8c68505beb69e61ae914a551bafa1f1aca2dd548fbd8ae4c597b2a",
+    "unchanged": true
+  },
+  {
+    "file": "tools/story-bundle.d.mts",
+    "before": "b4cec81681de27fffab59c27dc28ca195d1a43fad9669f8058e5f7063c9e1180",
+    "after": "b4cec81681de27fffab59c27dc28ca195d1a43fad9669f8058e5f7063c9e1180",
+    "unchanged": true
+  },
+  {
+    "file": "tools/story-bundle.mjs",
+    "before": "e28f6692b51953400f78a6e5d60b876d310f44b8b85faa0c0bec159ff1dc0e02",
+    "after": "e28f6692b51953400f78a6e5d60b876d310f44b8b85faa0c0bec159ff1dc0e02",
+    "unchanged": true
+  },
+  {
+    "file": "tools/story-diagnostics.mjs",
+    "before": "95e1d27faab7010d52e05510822be67fb4124431fad1896ca3206be01483a3f0",
+    "after": "95e1d27faab7010d52e05510822be67fb4124431fad1896ca3206be01483a3f0",
+    "unchanged": true
+  },
+  {
+    "file": "tools/story-normalize.mjs",
+    "before": "edaa763b64b30b6bc7c164c86be0396bff4377665e805a242fffb133f77d93ae",
+    "after": "edaa763b64b30b6bc7c164c86be0396bff4377665e805a242fffb133f77d93ae",
+    "unchanged": true
+  },
+  {
+    "file": "tools/story-parser.d.mts",
+    "before": "60e133d55bfb19dac9bc3f1903176baaaae12a0f0b0e68c5e5e9a54412bbed3f",
+    "after": "60e133d55bfb19dac9bc3f1903176baaaae12a0f0b0e68c5e5e9a54412bbed3f",
+    "unchanged": true
+  },
+  {
+    "file": "tools/story-parser.mjs",
+    "before": "e12373cbd7a745561d0fdade720efbf3e1cb0ea5a3755ba2af180eabbadea5c7",
+    "after": "e12373cbd7a745561d0fdade720efbf3e1cb0ea5a3755ba2af180eabbadea5c7",
+    "unchanged": true
+  },
+  {
+    "file": "tools/story-syntax.mjs",
+    "before": "a62951c391d9386bd97b8fb7afd569007a5290768a48d24b973caa681dbd5234",
+    "after": "a62951c391d9386bd97b8fb7afd569007a5290768a48d24b973caa681dbd5234",
+    "unchanged": true
+  },
+  {
+    "file": "tsconfig.json",
+    "before": "d6d4da3f351a3e88f86b05e7c134582cefbb562f161d3e48355e75b97e6f0462",
+    "after": "d6d4da3f351a3e88f86b05e7c134582cefbb562f161d3e48355e75b97e6f0462",
+    "unchanged": true
+  }
+]

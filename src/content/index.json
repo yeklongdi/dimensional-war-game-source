@@ -1,0 +1,2337 @@
+{
+  "acts": [
+    {
+      "id": "prologue",
+      "title": "序幕",
+      "file": "prologue.json",
+      "sceneCount": 9
+    },
+    {
+      "id": "act1",
+      "title": "第一幕",
+      "file": "act1.json",
+      "sceneCount": 19
+    }
+  ],
+  "warningCount": 158,
+  "warnings": [
+    {
+      "actId": "prologue",
+      "sceneId": "p001",
+      "sourceFile": "source/story/prologue.md",
+      "line": 117,
+      "raw": "BACKGROUND: bg_grandmother_house_dusk [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p001",
+      "sourceFile": "source/story/prologue.md",
+      "line": 118,
+      "raw": "BGM: bgm_homecoming_warm [占位符，待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p001",
+      "sourceFile": "source/story/prologue.md",
+      "line": 120,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p001",
+      "sourceFile": "source/story/prologue.md",
+      "line": 137,
+      "raw": "SFX: sfx_door_knock [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p002",
+      "sourceFile": "source/story/prologue.md",
+      "line": 148,
+      "raw": "BACKGROUND: bg_grandmother_house_entrance [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p002",
+      "sourceFile": "source/story/prologue.md",
+      "line": 149,
+      "raw": "BGM: bgm_homecoming_warm [占位符，延续]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p002",
+      "sourceFile": "source/story/prologue.md",
+      "line": 151,
+      "raw": "SHOW: 奶奶 asset=char_grandmother_warm [占位符] position=door",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p003",
+      "sourceFile": "source/story/prologue.md",
+      "line": 189,
+      "raw": "BACKGROUND: bg_grandmother_house_living_room [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p003",
+      "sourceFile": "source/story/prologue.md",
+      "line": 190,
+      "raw": "BGM: bgm_homecoming_warm [占位符，延续]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p003",
+      "sourceFile": "source/story/prologue.md",
+      "line": 192,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=left",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p003",
+      "sourceFile": "source/story/prologue.md",
+      "line": 193,
+      "raw": "SHOW: 奶奶 asset=char_grandmother_warm [占位符] position=right",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p004",
+      "sourceFile": "source/story/prologue.md",
+      "line": 237,
+      "raw": "BACKGROUND: bg_grandmother_house_bedroom [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p004",
+      "sourceFile": "source/story/prologue.md",
+      "line": 238,
+      "raw": "BGM: bgm_homecoming_warm [占位符，渐弱]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p004",
+      "sourceFile": "source/story/prologue.md",
+      "line": 240,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p004",
+      "sourceFile": "source/story/prologue.md",
+      "line": 255,
+      "raw": "BACKGROUND: bg_grandmother_house_kitchen_night [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p004",
+      "sourceFile": "source/story/prologue.md",
+      "line": 256,
+      "raw": "SHOW: 奶奶 asset=char_grandmother_warm [占位符] position=kitchen",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p005",
+      "sourceFile": "source/story/prologue.md",
+      "line": 285,
+      "raw": "BACKGROUND: bg_sun_city_old_street_night [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p005",
+      "sourceFile": "source/story/prologue.md",
+      "line": 286,
+      "raw": "BGM: bgm_old_street_mystery [占位符，待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p005",
+      "sourceFile": "source/story/prologue.md",
+      "line": 288,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=left",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p005",
+      "sourceFile": "source/story/prologue.md",
+      "line": 305,
+      "raw": "SFX: sfx_metal_collision [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p005",
+      "sourceFile": "source/story/prologue.md",
+      "line": 307,
+      "raw": "CAMERA: 镜头切换至高墙另一侧的月光下。",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": [
+        "任务书 §3.3：镜头说明只供制作查看。"
+      ]
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p005",
+      "sourceFile": "source/story/prologue.md",
+      "line": 308,
+      "raw": "SHOW: 黑衣人甲 asset=char_organization_member_placeholder [占位符] position=left",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p005",
+      "sourceFile": "source/story/prologue.md",
+      "line": 309,
+      "raw": "SHOW: 黑衣人乙 asset=char_organization_member_placeholder [占位符] position=right",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p005",
+      "sourceFile": "source/story/prologue.md",
+      "line": 310,
+      "raw": "SHOW: 怪盗 asset=char_thief_masked_black_placeholder [占位符] position=center",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p005",
+      "sourceFile": "source/story/prologue.md",
+      "line": 341,
+      "raw": "SET: [变量名待定] 记录男高介入仓库区冲突",
+      "categories": [
+        "meta",
+        "variable"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。"
+      ],
+      "resolutions": [
+        "任务书 §3.6 / M0 决策：先生成场景序号 flag，仅记录布尔事件；正式命名尚待确认。"
+      ]
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p006",
+      "sourceFile": "source/story/prologue.md",
+      "line": 349,
+      "raw": "BACKGROUND: bg_warehouse_area_night [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p006",
+      "sourceFile": "source/story/prologue.md",
+      "line": 350,
+      "raw": "BGM: bgm_first_battle [占位符，待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p006",
+      "sourceFile": "source/story/prologue.md",
+      "line": 358,
+      "raw": "SET: [变量名待定] 记录序幕战斗教学完成",
+      "categories": [
+        "meta",
+        "variable"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。"
+      ],
+      "resolutions": [
+        "任务书 §3.6 / M0 决策：先生成场景序号 flag，仅记录布尔事件；正式命名尚待确认。"
+      ]
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p006",
+      "sourceFile": "source/story/prologue.md",
+      "line": 360,
+      "raw": "CHECK: [战斗失败处理待确认]",
+      "categories": [
+        "meta",
+        "check"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "CHECK 中的条件与嵌套 SET / JUMP 均不解释、不执行。"
+      ],
+      "resolutions": [
+        "任务书 §4.5：失败后重试本场且保留剧情进度；M0 只保留 CHECK 原文。"
+      ]
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p006",
+      "sourceFile": "source/story/prologue.md",
+      "line": 362,
+      "raw": "NARRATION:\n战斗结果返回后，继续进入战斗结束场景。",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": [
+        "2026-10-18 用户确认：本句按制作备注隐藏。"
+      ]
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p007",
+      "sourceFile": "source/story/prologue.md",
+      "line": 371,
+      "raw": "BACKGROUND: bg_warehouse_area_night [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p007",
+      "sourceFile": "source/story/prologue.md",
+      "line": 372,
+      "raw": "BGM: bgm_first_battle_after [占位符，待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p007",
+      "sourceFile": "source/story/prologue.md",
+      "line": 374,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p007",
+      "sourceFile": "source/story/prologue.md",
+      "line": 382,
+      "raw": "SHOW: 怪盗 asset=char_thief_masked_black_placeholder [占位符] position=far",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p007",
+      "sourceFile": "source/story/prologue.md",
+      "line": 394,
+      "raw": "SFX: sfx_distant_warehouse_noise [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p007",
+      "sourceFile": "source/story/prologue.md",
+      "line": 400,
+      "raw": "SET: [变量名待定] 记录怪盗在男高面前离开",
+      "categories": [
+        "meta",
+        "variable"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。"
+      ],
+      "resolutions": [
+        "任务书 §3.6 / M0 决策：先生成场景序号 flag，仅记录布尔事件；正式命名尚待确认。"
+      ]
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p008",
+      "sourceFile": "source/story/prologue.md",
+      "line": 409,
+      "raw": "BACKGROUND: bg_grandmother_house_living_room_night [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p008",
+      "sourceFile": "source/story/prologue.md",
+      "line": 410,
+      "raw": "BGM: bgm_homecoming_warm [占位符，低音量]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p008",
+      "sourceFile": "source/story/prologue.md",
+      "line": 412,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=left",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p008",
+      "sourceFile": "source/story/prologue.md",
+      "line": 413,
+      "raw": "SHOW: 奶奶 asset=char_grandmother_warm [占位符] position=right",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p009",
+      "sourceFile": "source/story/prologue.md",
+      "line": 465,
+      "raw": "BACKGROUND: bg_grandmother_house_bedroom_night [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p009",
+      "sourceFile": "source/story/prologue.md",
+      "line": 466,
+      "raw": "BGM: bgm_night_before_school [占位符，待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p009",
+      "sourceFile": "source/story/prologue.md",
+      "line": 468,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=bed",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p009",
+      "sourceFile": "source/story/prologue.md",
+      "line": 491,
+      "raw": "BACKGROUND: bg_school_underground_dark [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p009",
+      "sourceFile": "source/story/prologue.md",
+      "line": 492,
+      "raw": "CAMERA: 镜头缓慢推进黑暗中的漆黑结晶。",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": [
+        "任务书 §3.3：镜头说明只供制作查看。"
+      ]
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p009",
+      "sourceFile": "source/story/prologue.md",
+      "line": 493,
+      "raw": "SHOW: 黑色结晶 asset=prop_dark_god_crystal_placeholder [占位符] position=center",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p009",
+      "sourceFile": "source/story/prologue.md",
+      "line": 495,
+      "raw": "SFX: sfx_low_heartbeat [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p009",
+      "sourceFile": "source/story/prologue.md",
+      "line": 500,
+      "raw": "SET: [变量名待定] 记录序幕结束",
+      "categories": [
+        "meta",
+        "variable"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。"
+      ],
+      "resolutions": [
+        "任务书 §3.6 / M0 决策：先生成场景序号 flag，仅记录布尔事件；正式命名尚待确认。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a001",
+      "sourceFile": "source/story/act1.md",
+      "line": 170,
+      "raw": "BACKGROUND: bg_grandmother_house_bedroom_morning [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a001",
+      "sourceFile": "source/story/act1.md",
+      "line": 171,
+      "raw": "BGM: bgm_school_morning [占位符，待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a001",
+      "sourceFile": "source/story/act1.md",
+      "line": 173,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a001",
+      "sourceFile": "source/story/act1.md",
+      "line": 174,
+      "raw": "SHOW: 奶奶 asset=char_grandmother_warm [占位符] position=door",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a001",
+      "sourceFile": "source/story/act1.md",
+      "line": 211,
+      "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a002",
+      "sourceFile": "source/story/act1.md",
+      "line": 233,
+      "raw": "BACKGROUND: bg_sun_city_school_road_morning [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a002",
+      "sourceFile": "source/story/act1.md",
+      "line": 234,
+      "raw": "BGM: bgm_school_morning [占位符，延续]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a002",
+      "sourceFile": "source/story/act1.md",
+      "line": 236,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=left",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a002",
+      "sourceFile": "source/story/act1.md",
+      "line": 244,
+      "raw": "SHOW: 怪盗 asset=char_thief_smile [已有候选素材，尚未绑定] position=right",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a002",
+      "sourceFile": "source/story/act1.md",
+      "line": 263,
+      "raw": "INNER:\n怪盗：\n【原文未提供更多心声，此处不补写。】",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a003",
+      "sourceFile": "source/story/act1.md",
+      "line": 276,
+      "raw": "BACKGROUND: bg_school_gate_morning [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a003",
+      "sourceFile": "source/story/act1.md",
+      "line": 277,
+      "raw": "BGM: bgm_school_morning [占位符，延续]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a003",
+      "sourceFile": "source/story/act1.md",
+      "line": 279,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a003",
+      "sourceFile": "source/story/act1.md",
+      "line": 288,
+      "raw": "SHOW: 老师 asset=char_teacher_placeholder [占位符] position=left",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a003",
+      "sourceFile": "source/story/act1.md",
+      "line": 308,
+      "raw": "CAMERA: 镜头切换到教学楼二楼走廊。",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": [
+        "任务书 §3.3：镜头说明只供制作查看。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a003",
+      "sourceFile": "source/story/act1.md",
+      "line": 309,
+      "raw": "SHOW: 反派 asset=char_villain_calm [占位符] position=left",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a003",
+      "sourceFile": "source/story/act1.md",
+      "line": 310,
+      "raw": "SHOW: 偶像 asset=char_idol_neutral [占位符] position=right",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a003",
+      "sourceFile": "source/story/act1.md",
+      "line": 329,
+      "raw": "SHOW: 黑色结晶 asset=prop_dark_god_crystal_placeholder [占位符] position=center",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a003",
+      "sourceFile": "source/story/act1.md",
+      "line": 330,
+      "raw": "SFX: sfx_low_heartbeat [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a004",
+      "sourceFile": "source/story/act1.md",
+      "line": 346,
+      "raw": "BACKGROUND: bg_school_classroom_morning [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a004",
+      "sourceFile": "source/story/act1.md",
+      "line": 347,
+      "raw": "BGM: bgm_school_classroom_daily [占位符，待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a004",
+      "sourceFile": "source/story/act1.md",
+      "line": 349,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a004",
+      "sourceFile": "source/story/act1.md",
+      "line": 352,
+      "raw": "SHOW: 老师 asset=char_teacher_placeholder [占位符] position=left",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a004",
+      "sourceFile": "source/story/act1.md",
+      "line": 372,
+      "raw": "DIALOGUE:\n同学甲：\n这自我介绍也太像动画主角了吧……",
+      "categories": [
+        "missing_asset"
+      ],
+      "details": [
+        "说话人“同学甲”没有任何含 asset 的 SHOW 声明。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a004",
+      "sourceFile": "source/story/act1.md",
+      "line": 376,
+      "raw": "DIALOGUE:\n同学乙：\n还说什么遇到困难来找他……",
+      "categories": [
+        "missing_asset"
+      ],
+      "details": [
+        "说话人“同学乙”没有任何含 asset 的 SHOW 声明。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a004",
+      "sourceFile": "source/story/act1.md",
+      "line": 384,
+      "raw": "SHOW: 怪盗 asset=char_thief_smile [已有候选素材，尚未绑定] position=left",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a005",
+      "sourceFile": "source/story/act1.md",
+      "line": 406,
+      "raw": "BACKGROUND: bg_school_classroom_morning [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a005",
+      "sourceFile": "source/story/act1.md",
+      "line": 407,
+      "raw": "BGM: bgm_school_classroom_daily [占位符，延续]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a005",
+      "sourceFile": "source/story/act1.md",
+      "line": 409,
+      "raw": "SHOW: 老师 asset=char_teacher_placeholder [占位符] position=left",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a005",
+      "sourceFile": "source/story/act1.md",
+      "line": 410,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a005",
+      "sourceFile": "source/story/act1.md",
+      "line": 411,
+      "raw": "SHOW: 怪盗 asset=char_thief_smile [已有候选素材，尚未绑定] position=back_left",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a005",
+      "sourceFile": "source/story/act1.md",
+      "line": 412,
+      "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=back_right",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a006",
+      "sourceFile": "source/story/act1.md",
+      "line": 461,
+      "raw": "BACKGROUND: bg_school_classroom_day [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a006",
+      "sourceFile": "source/story/act1.md",
+      "line": 462,
+      "raw": "BGM: bgm_school_classroom_daily [占位符，延续]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a006",
+      "sourceFile": "source/story/act1.md",
+      "line": 464,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a006",
+      "sourceFile": "source/story/act1.md",
+      "line": 465,
+      "raw": "SHOW: 老师 asset=char_teacher_placeholder [占位符] position=front",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a006",
+      "sourceFile": "source/story/act1.md",
+      "line": 466,
+      "raw": "SHOW: 怪盗 asset=char_thief_smile [已有候选素材，尚未绑定] position=window",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a006",
+      "sourceFile": "source/story/act1.md",
+      "line": 467,
+      "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a006",
+      "sourceFile": "source/story/act1.md",
+      "line": 468,
+      "raw": "SHOW: 反派 asset=char_villain_calm [占位符] position=back",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007",
+      "sourceFile": "source/story/act1.md",
+      "line": 501,
+      "raw": "BACKGROUND: bg_school_classroom_day [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007",
+      "sourceFile": "source/story/act1.md",
+      "line": 502,
+      "raw": "BGM: bgm_school_choice [占位符，待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007",
+      "sourceFile": "source/story/act1.md",
+      "line": 508,
+      "raw": "STAGE:\n【不可执行】原文只有选项名称，没有怪盗带路正文。",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": [
+        "任务书 §4.5：本切片仅启用选项 2；其他路线及 random_rd3 不执行。用户确认三个未完成场景完整保留并计入 19 场。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007",
+      "sourceFile": "source/story/act1.md",
+      "line": 514,
+      "raw": "SET: [变量名待定] 记录玩家选择虚拟主播带路",
+      "categories": [
+        "meta",
+        "variable"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。"
+      ],
+      "resolutions": [
+        "任务书 §3.6 / M0 决策：先生成场景序号 flag，仅记录布尔事件；正式命名尚待确认。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007",
+      "sourceFile": "source/story/act1.md",
+      "line": 519,
+      "raw": "STAGE:\n【不可执行】原文只有选项名称，没有反派带路正文。",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": [
+        "任务书 §4.5：本切片仅启用选项 2；其他路线及 random_rd3 不执行。用户确认三个未完成场景完整保留并计入 19 场。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007",
+      "sourceFile": "source/story/act1.md",
+      "line": 525,
+      "raw": "STAGE:\n这是系统随机，不是玩家直接选择。",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": [
+        "任务书 §4.5：本切片仅启用选项 2；其他路线及 random_rd3 不执行。用户确认三个未完成场景完整保留并计入 19 场。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007",
+      "sourceFile": "source/story/act1.md",
+      "line": 527,
+      "raw": "CALL: random_rd3",
+      "categories": [
+        "pending_call"
+      ],
+      "details": [
+        "调用 random_rd3 尚未接入；M0 只保留数据。"
+      ],
+      "resolutions": [
+        "任务书 §4.5：本切片仅启用选项 2；其他路线及 random_rd3 不执行。用户确认三个未完成场景完整保留并计入 19 场。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007",
+      "sourceFile": "source/story/act1.md",
+      "line": 529,
+      "raw": "CHECK: [系统随机结果 = 1] -> JUMP: A007_RANDOM_UNAVAILABLE",
+      "categories": [
+        "meta",
+        "check"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "CHECK 中的条件与嵌套 SET / JUMP 均不解释、不执行。"
+      ],
+      "resolutions": [
+        "任务书 §4.5：本切片仅启用选项 2；其他路线及 random_rd3 不执行。用户确认三个未完成场景完整保留并计入 19 场。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007",
+      "sourceFile": "source/story/act1.md",
+      "line": 530,
+      "raw": "CHECK: [系统随机结果 = 2] -> SET: [变量名待定] 记录随机进入虚拟主播路线；JUMP: A008",
+      "categories": [
+        "meta",
+        "variable",
+        "check"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。",
+        "CHECK 中的条件与嵌套 SET / JUMP 均不解释、不执行。"
+      ],
+      "resolutions": [
+        "任务书 §3.6 / M0 决策：先生成场景序号 flag，仅记录布尔事件；正式命名尚待确认。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007",
+      "sourceFile": "source/story/act1.md",
+      "line": 531,
+      "raw": "CHECK: [系统随机结果 = 3] -> JUMP: A007_RANDOM_UNAVAILABLE",
+      "categories": [
+        "meta",
+        "check"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "CHECK 中的条件与嵌套 SET / JUMP 均不解释、不执行。"
+      ],
+      "resolutions": [
+        "任务书 §4.5：本切片仅启用选项 2；其他路线及 random_rd3 不执行。用户确认三个未完成场景完整保留并计入 19 场。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007",
+      "sourceFile": "source/story/act1.md",
+      "line": 533,
+      "raw": "NARRATION:\n【待确认】是否可以通过读取存档重新生成 `rd3` 结果。",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": [
+        "任务书 §4.5：本切片仅启用选项 2；其他路线及 random_rd3 不执行。用户确认三个未完成场景完整保留并计入 19 场。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007_todo_thief",
+      "sourceFile": "source/story/act1.md",
+      "line": 541,
+      "raw": "BACKGROUND: bg_school_classroom_day [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007_todo_thief",
+      "sourceFile": "source/story/act1.md",
+      "line": 543,
+      "raw": "NARRATION:\n【不可执行】原文没有提供怪盗带男高参观校园的正文。\n本场景不补写内容，不增加新的路线结果。",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": [
+        "任务书 §4.5：本切片仅启用选项 2；其他路线及 random_rd3 不执行。用户确认三个未完成场景完整保留并计入 19 场。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007_todo_villain",
+      "sourceFile": "source/story/act1.md",
+      "line": 554,
+      "raw": "BACKGROUND: bg_school_classroom_day [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007_todo_villain",
+      "sourceFile": "source/story/act1.md",
+      "line": 556,
+      "raw": "NARRATION:\n【不可执行】原文没有提供反派带男高参观校园的正文。\n本场景不补写内容，不增加新的路线结果。",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": [
+        "任务书 §4.5：本切片仅启用选项 2；其他路线及 random_rd3 不执行。用户确认三个未完成场景完整保留并计入 19 场。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007_random_unavailable",
+      "sourceFile": "source/story/act1.md",
+      "line": 567,
+      "raw": "BACKGROUND: bg_school_classroom_day [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007_random_unavailable",
+      "sourceFile": "source/story/act1.md",
+      "line": 569,
+      "raw": "NARRATION:\n【不可执行】`rd3` 随机结果对应怪盗或反派路线，但该路线当前没有原文正文。",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": [
+        "任务书 §4.5：本切片仅启用选项 2；其他路线及 random_rd3 不执行。用户确认三个未完成场景完整保留并计入 19 场。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007_random_unavailable",
+      "sourceFile": "source/story/act1.md",
+      "line": 572,
+      "raw": "NARRATION:\n【待确认】此处应返回选项、暂停流程，还是等待路线正文补充。",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": [
+        "任务书 §4.5：本切片仅启用选项 2；其他路线及 random_rd3 不执行。用户确认三个未完成场景完整保留并计入 19 场。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a008",
+      "sourceFile": "source/story/act1.md",
+      "line": 582,
+      "raw": "BACKGROUND: bg_school_library_day [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a008",
+      "sourceFile": "source/story/act1.md",
+      "line": 583,
+      "raw": "BGM: bgm_school_daily [占位符，待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a008",
+      "sourceFile": "source/story/act1.md",
+      "line": 585,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=left",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a008",
+      "sourceFile": "source/story/act1.md",
+      "line": 586,
+      "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a008",
+      "sourceFile": "source/story/act1.md",
+      "line": 621,
+      "raw": "BACKGROUND: bg_school_cafeteria_day [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a008",
+      "sourceFile": "source/story/act1.md",
+      "line": 639,
+      "raw": "BACKGROUND: bg_school_gym_day [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a009",
+      "sourceFile": "source/story/act1.md",
+      "line": 659,
+      "raw": "BACKGROUND: bg_school_construction_zone_day [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a009",
+      "sourceFile": "source/story/act1.md",
+      "line": 660,
+      "raw": "BGM: bgm_school_mystery [占位符，待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a009",
+      "sourceFile": "source/story/act1.md",
+      "line": 662,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=left",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a009",
+      "sourceFile": "source/story/act1.md",
+      "line": 663,
+      "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a010",
+      "sourceFile": "source/story/act1.md",
+      "line": 702,
+      "raw": "BACKGROUND: bg_school_construction_zone_day [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a010",
+      "sourceFile": "source/story/act1.md",
+      "line": 703,
+      "raw": "BGM: bgm_school_mystery [占位符，延续]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a010",
+      "sourceFile": "source/story/act1.md",
+      "line": 707,
+      "raw": "SET: [变量名待定] 记录男高选择进入施工区域",
+      "categories": [
+        "meta",
+        "variable"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。"
+      ],
+      "resolutions": [
+        "任务书 §3.6 / M0 决策：先生成场景序号 flag，仅记录布尔事件；正式命名尚待确认。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a010",
+      "sourceFile": "source/story/act1.md",
+      "line": 708,
+      "raw": "SET: [变量名待定] 增加男高对学校地下异常的调查进度",
+      "categories": [
+        "meta",
+        "variable"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。"
+      ],
+      "resolutions": [
+        "任务书 §3.6 / M0 决策：先生成场景序号 flag，仅记录布尔事件；正式命名尚待确认。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a010",
+      "sourceFile": "source/story/act1.md",
+      "line": 713,
+      "raw": "SET: [变量名待定] 记录男高选择返回班级",
+      "categories": [
+        "meta",
+        "variable"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。"
+      ],
+      "resolutions": [
+        "任务书 §3.6 / M0 决策：先生成场景序号 flag，仅记录布尔事件；正式命名尚待确认。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a010",
+      "sourceFile": "source/story/act1.md",
+      "line": 714,
+      "raw": "NARRATION:\n【暂无线性后果】原文仅说明男高收回目光，决定先回班上，后续支线暂不展开。",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": [
+        "任务书 §4.5：M1 在选择“回班上”后单独显示此原文，再返回选项；导出仍保留 meta 和原始 JUMP。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a011",
+      "sourceFile": "source/story/act1.md",
+      "line": 723,
+      "raw": "BACKGROUND: bg_school_construction_zone_day [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a011",
+      "sourceFile": "source/story/act1.md",
+      "line": 724,
+      "raw": "BGM: bgm_school_mystery [占位符，低音量]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a011",
+      "sourceFile": "source/story/act1.md",
+      "line": 726,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=left",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a011",
+      "sourceFile": "source/story/act1.md",
+      "line": 727,
+      "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a011",
+      "sourceFile": "source/story/act1.md",
+      "line": 770,
+      "raw": "SFX: sfx_low_heartbeat [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a011",
+      "sourceFile": "source/story/act1.md",
+      "line": 780,
+      "raw": "SHOW: 大师之剑 asset=prop_master_sword_corrupted_placeholder [占位符] position=bottom_center",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a011",
+      "sourceFile": "source/story/act1.md",
+      "line": 798,
+      "raw": "NARRATION:\n【原文只有“选择 1：男高伸手触碰剑柄”，没有替代选项；本处转换为强制事件，不新增玩家分支。】",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": [
+        "原文已有单线强制事件；保留制作备注，不增加分支。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a012",
+      "sourceFile": "source/story/act1.md",
+      "line": 808,
+      "raw": "BACKGROUND: bg_school_construction_pit [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a012",
+      "sourceFile": "source/story/act1.md",
+      "line": 809,
+      "raw": "BGM: bgm_master_sword_vision [占位符，待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a012",
+      "sourceFile": "source/story/act1.md",
+      "line": 815,
+      "raw": "SFX: sfx_master_sword_resonance [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a012",
+      "sourceFile": "source/story/act1.md",
+      "line": 816,
+      "raw": "CG: cg_master_sword_vision_placeholder [占位符]",
+      "categories": [
+        "placeholder",
+        "meta",
+        "unknown"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。",
+        "制作备注完整保留；默认不向玩家展示。",
+        "未定义的指令 CG；保留原文并隐藏，不中断导出。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a012",
+      "sourceFile": "source/story/act1.md",
+      "line": 817,
+      "raw": "CAMERA: 镜头从剑柄金色三角宝石推进至幻象。",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": [
+        "任务书 §3.3：镜头说明只供制作查看。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a012",
+      "sourceFile": "source/story/act1.md",
+      "line": 819,
+      "raw": "CALL: event_master_sword_vision",
+      "categories": [
+        "pending_call"
+      ],
+      "details": [
+        "调用 event_master_sword_vision 尚未接入；M0 只保留数据。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a012",
+      "sourceFile": "source/story/act1.md",
+      "line": 821,
+      "raw": "NARRATION:\n【待确认】该特殊事件只负责幻象、音效和画面演出，不在本脚本中补写林克的完整角色卡背景。",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a013",
+      "sourceFile": "source/story/act1.md",
+      "line": 875,
+      "raw": "BACKGROUND: bg_school_construction_pit [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a013",
+      "sourceFile": "source/story/act1.md",
+      "line": 876,
+      "raw": "BGM: bgm_black_humanoid_appearance [占位符，待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a013",
+      "sourceFile": "source/story/act1.md",
+      "line": 878,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=bottom_center",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a013",
+      "sourceFile": "source/story/act1.md",
+      "line": 879,
+      "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=top_right",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a013",
+      "sourceFile": "source/story/act1.md",
+      "line": 880,
+      "raw": "SHOW: 黑色人形 asset=char_black_humanoid_placeholder [占位符] position=bottom_left",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a013",
+      "sourceFile": "source/story/act1.md",
+      "line": 895,
+      "raw": "SFX: sfx_fainting [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a014",
+      "sourceFile": "source/story/act1.md",
+      "line": 919,
+      "raw": "BACKGROUND: bg_school_construction_pit [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a014",
+      "sourceFile": "source/story/act1.md",
+      "line": 920,
+      "raw": "BGM: bgm_black_humanoid_battle [占位符，待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a014",
+      "sourceFile": "source/story/act1.md",
+      "line": 927,
+      "raw": "NARRATION:\n【待确认】黑色人形的战斗数据、胜利条件、失败处理和战斗奖励。",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": [
+        "任务书 §5.6 / §5.9 已规定战斗数值、胜负和重试；战斗奖励尚未规定，M0 不补写。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a014",
+      "sourceFile": "source/story/act1.md",
+      "line": 935,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a014",
+      "sourceFile": "source/story/act1.md",
+      "line": 936,
+      "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a014",
+      "sourceFile": "source/story/act1.md",
+      "line": 954,
+      "raw": "SET: [变量名待定] 记录虚拟主播目击黑色人形",
+      "categories": [
+        "meta",
+        "variable"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。"
+      ],
+      "resolutions": [
+        "任务书 §3.6 / M0 决策：先生成场景序号 flag，仅记录布尔事件；正式命名尚待确认。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a014",
+      "sourceFile": "source/story/act1.md",
+      "line": 955,
+      "raw": "SET: [变量名待定] 增加男高对学校地下异常的调查进度",
+      "categories": [
+        "meta",
+        "variable"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。"
+      ],
+      "resolutions": [
+        "任务书 §3.6 / M0 决策：先生成场景序号 flag，仅记录布尔事件；正式命名尚待确认。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a015",
+      "sourceFile": "source/story/act1.md",
+      "line": 963,
+      "raw": "BACKGROUND: bg_school_hallway_day [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a015",
+      "sourceFile": "source/story/act1.md",
+      "line": 964,
+      "raw": "BGM: bgm_school_mystery [占位符，低音量]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a015",
+      "sourceFile": "source/story/act1.md",
+      "line": 966,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a015",
+      "sourceFile": "source/story/act1.md",
+      "line": 967,
+      "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=center_front",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a015",
+      "sourceFile": "source/story/act1.md",
+      "line": 976,
+      "raw": "SFX: sfx_school_bell [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a015",
+      "sourceFile": "source/story/act1.md",
+      "line": 981,
+      "raw": "SET: [变量名待定] 记录男高带虚拟主播返回学校",
+      "categories": [
+        "meta",
+        "variable"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。"
+      ],
+      "resolutions": [
+        "任务书 §3.6 / M0 决策：先生成场景序号 flag，仅记录布尔事件；正式命名尚待确认。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a016",
+      "sourceFile": "source/story/act1.md",
+      "line": 989,
+      "raw": "BACKGROUND: bg_school_hallway_day [占位符]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a016",
+      "sourceFile": "source/story/act1.md",
+      "line": 990,
+      "raw": "BGM: bgm_scene_transition [占位符，待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a016",
+      "sourceFile": "source/story/act1.md",
+      "line": 995,
+      "raw": "NARRATION:\n【待确认】第一幕结束后是否直接进入下一幕，或先返回教室、保健室或其他校园场景。",
+      "categories": [
+        "meta"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。"
+      ],
+      "resolutions": [
+        "任务书 §1.1：第一幕结束后返回关卡选择，本切片到此结束。"
+      ]
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a016",
+      "sourceFile": "source/story/act1.md",
+      "line": 998,
+      "raw": "SET: [变量名待定] 记录第一幕结束",
+      "categories": [
+        "meta",
+        "variable"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。"
+      ],
+      "resolutions": [
+        "任务书 §3.6 / M0 决策：先生成场景序号 flag，仅记录布尔事件；正式命名尚待确认。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "audioCount": 1,
+  "body": "垂直切片\n\n次元战争\n开始游戏\n继续\nv0.0.0\n\n尚无存档 · 开始游戏后自动保存",
+  "buttons": [
+    {
+      "disabled": false,
+      "id": "start-game",
+      "text": "开始游戏"
+    },
+    {
+      "disabled": true,
+      "id": "continue-game",
+      "text": "继续"
+    }
+  ],
+  "stage": {
+    "bgmId": "",
+    "navToken": "1:0:menu",
+    "saveJson": "",
+    "saveRequest": "0",
+    "saveStatus": "empty",
+    "screen": "menu",
+    "session": "1",
+    "testid": "main-menu"
+  },
+  "stageCount": 1,
+  "text": "",
+  "units": []
+}
