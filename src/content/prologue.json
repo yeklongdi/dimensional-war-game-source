@@ -1,0 +1,39 @@
+{
+  "id": "prologue",
+  "title": "Sample act one",
+  "scenes": [
+    {
+      "id": "p001",
+      "title": "Example stage one",
+      "time": "Day",
+      "nodes": [
+        {
+          "kind": "show",
+          "actor": "Sample",
+          "asset": "demo_actor",
+          "position": "center"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "",
+          "text": "Sample narrator: This synthetic line demonstrates a dialogue node. It is not official game text."
+        },
+        {
+          "kind": "call",
+          "name": "battle_demo_training"
+        },
+        {
+          "kind": "narration",
+          "text": "The sample resumes after the battle call."
+        },
+        {
+          "kind": "end"
+        }
+      ],
+      "meta": {
+        "sourceFile": "samples/story/prologue.md",
+        "line": 6
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "act1",
+  "title": "Sample act two",
+  "scenes": [
+    {
+      "id": "a001",
+      "title": "Example stage two",
+      "time": "Day",
+      "nodes": [
+        {
+          "kind": "show",
+          "actor": "Sample",
+          "asset": "demo_actor",
+          "position": "center"
+        },
+        {
+          "kind": "choice",
+          "prompt": "Choose a sample action.",
+          "options": [
+            {
+              "index": 1,
+              "text": "Continue the demonstration.",
+              "enabled": true,
+              "nodes": []
+            },
+            {
+              "index": 2,
+              "text": "Return to the example screen.",
+              "enabled": true,
+              "nodes": [
+                {
+                  "kind": "end"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "meta": {
+        "sourceFile": "samples/story/act1.md",
+        "line": 6
+      }
+    }
+  ]
+}

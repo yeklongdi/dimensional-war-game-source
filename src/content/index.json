@@ -1,0 +1,18 @@
+{
+  "acts": [
+    {
+      "id": "prologue",
+      "title": "Sample act one",
+      "file": "prologue.json",
+      "sceneCount": 1
+    },
+    {
+      "id": "act1",
+      "title": "Sample act two",
+      "file": "act1.json",
+      "sceneCount": 1
+    }
+  ],
+  "warningCount": 0,
+  "warnings": []
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" role="img" aria-label="abstract sample map">
+  <defs>
+    <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#dfe8dc"/><stop offset="1" stop-color="#b8c9bc"/></linearGradient>
+    <pattern id="grid" width="104" height="104" patternUnits="userSpaceOnUse"><path d="M104 0H0V104" fill="none" stroke="#edf2e9" stroke-width="8"/></pattern>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#ground)"/>
+  <path d="M0 684C380 560 760 730 1536 460v270C850 920 450 770 0 958Z" fill="#b1c7d1"/>
+  <path d="M0 248 1536 500M210 0 770 1024M1210 0 660 1024" fill="none" stroke="#f3efe0" stroke-width="54"/>
+  <path d="M0 248 1536 500M210 0 770 1024M1210 0 660 1024" fill="none" stroke="#d8d3c4" stroke-width="4"/>
+  <g fill="#d7c8a7" stroke="#f7f2e4" stroke-width="9">
+    <rect x="90" y="80" width="230" height="150" rx="24"/><rect x="400" y="120" width="170" height="220" rx="24"/>
+    <rect x="790" y="90" width="270" height="190" rx="24"/><rect x="1190" y="100" width="240" height="170" rx="24"/>
+    <rect x="130" y="390" width="200" height="150" rx="24"/><rect x="500" y="500" width="250" height="155" rx="24"/>
+    <rect x="920" y="620" width="205" height="170" rx="24"/><rect x="1230" y="740" width="210" height="175" rx="24"/>
+  </g>
+  <g fill="#8da98c"><circle cx="367" cy="770" r="54"/><circle cx="1120" cy="370" r="68"/><circle cx="740" cy="400" r="43"/><circle cx="340" cy="300" r="38"/><circle cx="1460" cy="390" r="48"/></g>
+  <rect width="1536" height="1024" fill="url(#grid)" opacity=".23"/>
+</svg>

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "hero", "name": "Player unit", "team": "player",
+    "abilities": { "str": 12, "dex": 14, "con": 12, "int": 10, "wis": 12, "cha": 10 },
+    "ac": 14, "maxHp": 20, "speed": 30,
+    "attacks": [{ "id": "unarmed", "name": "Sample melee attack", "kind": "melee", "bonus": 5, "damage": "1d6+3", "damageType": "bludgeoning", "reach": 1, "martial": true }],
+    "features": ["martial_arts", "death_saves"], "resistances": [], "immunities": [], "vulnerabilities": []
+  },
+  {
+    "id": "black_a", "name": "Sample target A", "team": "enemy",
+    "abilities": { "str": 10, "dex": 12, "con": 12, "int": 10, "wis": 10, "cha": 10 },
+    "ac": 12, "maxHp": 8, "speed": 25,
+    "attacks": [{ "id": "sample_strike", "name": "Sample strike", "kind": "melee", "bonus": 3, "damage": "1d4+1", "damageType": "bludgeoning", "reach": 1 }],
+    "features": [], "resistances": [], "immunities": [], "vulnerabilities": []
+  },
+  {
+    "id": "black_b", "name": "Sample target B", "team": "enemy",
+    "abilities": { "str": 10, "dex": 12, "con": 12, "int": 10, "wis": 10, "cha": 10 },
+    "ac": 12, "maxHp": 8, "speed": 25,
+    "attacks": [{ "id": "sample_strike", "name": "Sample strike", "kind": "melee", "bonus": 3, "damage": "1d4+1", "damageType": "bludgeoning", "reach": 1 }],
+    "features": [], "resistances": [], "immunities": [], "vulnerabilities": []
+  }
+]

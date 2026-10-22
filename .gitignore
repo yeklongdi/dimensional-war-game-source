@@ -1,0 +1,24 @@
+node_modules/
+dist/
+.vitest/
+coverage/
+*.log
+*.local
+
+# Local snapshot material is excluded; the public release uses an explicit file list.
+/AGENTS.md
+/[0-9][0-9]-*.md
+/prompts/
+/docs/
+/source/
+/public/
+/tests/
+/src/tests/
+/.github-pages-deploy/
+/.sites-deploy/
+/.github/workflows/build-game.yml
+/.codex/
+.env
+.env.*
+*.pem
+*.key
