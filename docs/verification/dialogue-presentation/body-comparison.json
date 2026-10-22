@@ -1,0 +1,1182 @@
+{
+  "expected": 161,
+  "mainRun": 160,
+  "supplemental": 1,
+  "matched": 161,
+  "extraMainRecords": 0,
+  "scenes": [
+    "p001",
+    "p002",
+    "p003",
+    "p004",
+    "p005",
+    "p006",
+    "p007",
+    "p008",
+    "p009",
+    "a001",
+    "a002",
+    "a003",
+    "a004",
+    "a005",
+    "a006",
+    "a008",
+    "a009",
+    "a010",
+    "a011",
+    "a012",
+    "a013",
+    "a014",
+    "a015",
+    "a016",
+    "a007"
+  ],
+  "sceneCount": 25,
+  "forbidden": [],
+  "combatComparison": [
+    {
+      "battle": "prologue",
+      "round": 3,
+      "rngDraws": 20,
+      "equalCombatLog": true,
+      "note": "仅排除已由移动规划改过文案的教学行，未排除骰子、AI、伤害或移动日志。"
+    },
+    {
+      "battle": "shadow",
+      "round": 3,
+      "rngDraws": 16,
+      "equalCombatLog": true,
+      "note": "仅排除已由移动规划改过文案的教学行，未排除骰子、AI、伤害或移动日志。"
+    }
+  ],
+  "records": [
+    {
+      "index": 0,
+      "scene": "p001",
+      "node": "3",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 1,
+      "scene": "p001",
+      "node": "4",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 2,
+      "scene": "p001",
+      "node": "5",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 3,
+      "scene": "p001",
+      "node": "7",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 4,
+      "scene": "p002",
+      "node": "3",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 5,
+      "scene": "p002",
+      "node": "4",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 6,
+      "scene": "p002",
+      "node": "6",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 7,
+      "scene": "p002",
+      "node": "7",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 8,
+      "scene": "p002",
+      "node": "8",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 9,
+      "scene": "p002",
+      "node": "9",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 10,
+      "scene": "p003",
+      "node": "4",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 11,
+      "scene": "p003",
+      "node": "5",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 12,
+      "scene": "p003",
+      "node": "6",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 13,
+      "scene": "p003",
+      "node": "8",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 14,
+      "scene": "p003",
+      "node": "9",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 15,
+      "scene": "p003",
+      "node": "10",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 16,
+      "scene": "p003",
+      "node": "11",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 17,
+      "scene": "p004",
+      "node": "3",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 18,
+      "scene": "p004",
+      "node": "4",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 19,
+      "scene": "p004",
+      "node": "5",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 20,
+      "scene": "p004",
+      "node": "8",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 21,
+      "scene": "p004",
+      "node": "9",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 22,
+      "scene": "p004",
+      "node": "11",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 23,
+      "scene": "p004",
+      "node": "12",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 24,
+      "scene": "p005",
+      "node": "3",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 25,
+      "scene": "p005",
+      "node": "4",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 26,
+      "scene": "p005",
+      "node": "5",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 27,
+      "scene": "p005",
+      "node": "11",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 28,
+      "scene": "p005",
+      "node": "12",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 29,
+      "scene": "p005",
+      "node": "13",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 30,
+      "scene": "p005",
+      "node": "15",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 31,
+      "scene": "p005",
+      "node": "16",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 32,
+      "scene": "p005",
+      "node": "17",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 33,
+      "scene": "p006",
+      "node": "2",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 34,
+      "scene": "p007",
+      "node": "3",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 35,
+      "scene": "p007",
+      "node": "5",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 36,
+      "scene": "p007",
+      "node": "6",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 37,
+      "scene": "p007",
+      "node": "8",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 38,
+      "scene": "p008",
+      "node": "4",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 39,
+      "scene": "p008",
+      "node": "5",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 40,
+      "scene": "p008",
+      "node": "6",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 41,
+      "scene": "p008",
+      "node": "7",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 42,
+      "scene": "p008",
+      "node": "8",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 43,
+      "scene": "p008",
+      "node": "9",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 44,
+      "scene": "p008",
+      "node": "10",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 45,
+      "scene": "p008",
+      "node": "11",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 46,
+      "scene": "p008",
+      "node": "12",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 47,
+      "scene": "p009",
+      "node": "3",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 48,
+      "scene": "p009",
+      "node": "4",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 49,
+      "scene": "p009",
+      "node": "5",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 50,
+      "scene": "p009",
+      "node": "6",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 51,
+      "scene": "p009",
+      "node": "7",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 52,
+      "scene": "p009",
+      "node": "12",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 53,
+      "scene": "a001",
+      "node": "4",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 54,
+      "scene": "a001",
+      "node": "5",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 55,
+      "scene": "a001",
+      "node": "6",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 56,
+      "scene": "a001",
+      "node": "7",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 57,
+      "scene": "a001",
+      "node": "8",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 58,
+      "scene": "a001",
+      "node": "10",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 59,
+      "scene": "a001",
+      "node": "11",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 60,
+      "scene": "a001",
+      "node": "15",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 61,
+      "scene": "a001",
+      "node": "16",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 62,
+      "scene": "a001",
+      "node": "17",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 63,
+      "scene": "a002",
+      "node": "3",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 64,
+      "scene": "a002",
+      "node": "5",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 65,
+      "scene": "a002",
+      "node": "6",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 66,
+      "scene": "a002",
+      "node": "7",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 67,
+      "scene": "a002",
+      "node": "8",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 68,
+      "scene": "a003",
+      "node": "3",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 69,
+      "scene": "a003",
+      "node": "5",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 70,
+      "scene": "a003",
+      "node": "6",
+      "match": true,
+      "source": "browser-a003-supplement.json"
+    },
+    {
+      "index": 71,
+      "scene": "a003",
+      "node": "7",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 72,
+      "scene": "a003",
+      "node": "8",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 73,
+      "scene": "a003",
+      "node": "12",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 74,
+      "scene": "a003",
+      "node": "13",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 75,
+      "scene": "a003",
+      "node": "14",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 76,
+      "scene": "a003",
+      "node": "17",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 77,
+      "scene": "a004",
+      "node": "4",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 78,
+      "scene": "a004",
+      "node": "5",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 79,
+      "scene": "a004",
+      "node": "6",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 80,
+      "scene": "a004",
+      "node": "7",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 81,
+      "scene": "a004",
+      "node": "8",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 82,
+      "scene": "a004",
+      "node": "9",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 83,
+      "scene": "a004",
+      "node": "10",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 84,
+      "scene": "a004",
+      "node": "12",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 85,
+      "scene": "a004",
+      "node": "13",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 86,
+      "scene": "a005",
+      "node": "6",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 87,
+      "scene": "a005",
+      "node": "7",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 88,
+      "scene": "a005",
+      "node": "8",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 89,
+      "scene": "a005",
+      "node": "9",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 90,
+      "scene": "a005",
+      "node": "11",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 91,
+      "scene": "a005",
+      "node": "12",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 92,
+      "scene": "a005",
+      "node": "13",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 93,
+      "scene": "a005",
+      "node": "14",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 94,
+      "scene": "a006",
+      "node": "7",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 95,
+      "scene": "a006",
+      "node": "8",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 96,
+      "scene": "a006",
+      "node": "9",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 97,
+      "scene": "a006",
+      "node": "10",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 98,
+      "scene": "a006",
+      "node": "11",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 99,
+      "scene": "a008",
+      "node": "4",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 100,
+      "scene": "a008",
+      "node": "5",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 101,
+      "scene": "a008",
+      "node": "6",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 102,
+      "scene": "a008",
+      "node": "7",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 103,
+      "scene": "a008",
+      "node": "8",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 104,
+      "scene": "a008",
+      "node": "9",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 105,
+      "scene": "a008",
+      "node": "11",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 106,
+      "scene": "a008",
+      "node": "13",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 107,
+      "scene": "a008",
+      "node": "14",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 108,
+      "scene": "a008",
+      "node": "15",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 109,
+      "scene": "a008",
+      "node": "16",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 110,
+      "scene": "a008",
+      "node": "18",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 111,
+      "scene": "a008",
+      "node": "19",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 112,
+      "scene": "a008",
+      "node": "20",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 113,
+      "scene": "a009",
+      "node": "4",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 114,
+      "scene": "a009",
+      "node": "5",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 115,
+      "scene": "a009",
+      "node": "6",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 116,
+      "scene": "a009",
+      "node": "7",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 117,
+      "scene": "a009",
+      "node": "8",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 118,
+      "scene": "a009",
+      "node": "9",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 119,
+      "scene": "a010",
+      "node": "2",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 120,
+      "scene": "a011",
+      "node": "4",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 121,
+      "scene": "a011",
+      "node": "5",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 122,
+      "scene": "a011",
+      "node": "6",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 123,
+      "scene": "a011",
+      "node": "7",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 124,
+      "scene": "a011",
+      "node": "8",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 125,
+      "scene": "a011",
+      "node": "9",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 126,
+      "scene": "a011",
+      "node": "10",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 127,
+      "scene": "a011",
+      "node": "11",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 128,
+      "scene": "a011",
+      "node": "12",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 129,
+      "scene": "a011",
+      "node": "14",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 130,
+      "scene": "a011",
+      "node": "15",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 131,
+      "scene": "a011",
+      "node": "18",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 132,
+      "scene": "a011",
+      "node": "19",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 133,
+      "scene": "a011",
+      "node": "21",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 134,
+      "scene": "a012",
+      "node": "2",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 135,
+      "scene": "a012",
+      "node": "8",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 136,
+      "scene": "a012",
+      "node": "9",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 137,
+      "scene": "a012",
+      "node": "10",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 138,
+      "scene": "a012",
+      "node": "11",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 139,
+      "scene": "a012",
+      "node": "12",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 140,
+      "scene": "a012",
+      "node": "13",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 141,
+      "scene": "a012",
+      "node": "14",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 142,
+      "scene": "a012",
+      "node": "15",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 143,
+      "scene": "a012",
+      "node": "16",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 144,
+      "scene": "a012",
+      "node": "17",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 145,
+      "scene": "a012",
+      "node": "18",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 146,
+      "scene": "a012",
+      "node": "19",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 147,
+      "scene": "a013",
+      "node": "5",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 148,
+      "scene": "a013",
+      "node": "6",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 149,
+      "scene": "a013",
+      "node": "8",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 150,
+      "scene": "a013",
+      "node": "9",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 151,
+      "scene": "a013",
+      "node": "10",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 152,
+      "scene": "a013",
+      "node": "11",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 153,
+      "scene": "a014",
+      "node": "2",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 154,
+      "scene": "a014",
+      "node": "5",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 155,
+      "scene": "a014",
+      "node": "8",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 156,
+      "scene": "a014",
+      "node": "9",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 157,
+      "scene": "a014",
+      "node": "10",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 158,
+      "scene": "a015",
+      "node": "4",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 159,
+      "scene": "a015",
+      "node": "6",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    },
+    {
+      "index": 160,
+      "scene": "a016",
+      "node": "2",
+      "match": true,
+      "source": "browser-mainline-final.json"
+    }
+  ],
+  "recordingGap": "主线160条自动留痕少记a003:6；另起隔离新档，正常通关前三关并进入第四关，停在该节点等待逐字完成后补录。没有用原文填充浏览器记录。"
+}

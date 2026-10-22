@@ -1,0 +1,1437 @@
+{
+  "texts": [
+    {
+      "key": "p007:3::",
+      "scene": "p007",
+      "kind": "text",
+      "node": "3",
+      "text": "几个黑衣人倒在地上，另一些黑衣人退回仓库区阴影。\n男高转头看向墙角。"
+    },
+    {
+      "key": "p007:5::",
+      "scene": "p007",
+      "kind": "text",
+      "node": "5",
+      "text": "（……那个人是谁？\n那些人又是谁？）"
+    },
+    {
+      "key": "p007:6::",
+      "scene": "p007",
+      "kind": "text",
+      "node": "6",
+      "text": "怪盗的脸仍被遮住。他看了男高一会儿，随后转身钻进夜色。\n远处仓库区重新亮起灯光，隐约传来人声。"
+    },
+    {
+      "key": "p007:8::",
+      "scene": "p007",
+      "kind": "text",
+      "node": "8",
+      "text": "（糟了，得赶紧回家。）"
+    },
+    {
+      "key": "p008:4::",
+      "scene": "p008",
+      "kind": "text",
+      "node": "4",
+      "text": "男高一路小跑回到老房子。\n客厅的灯还亮着，奶奶从藤椅上站起。"
+    },
+    {
+      "key": "p008:5::",
+      "scene": "p008",
+      "kind": "text",
+      "node": "5",
+      "text": "回来啦？怎么去了这么久？\n外面冷不冷？"
+    },
+    {
+      "key": "p008:6::",
+      "scene": "p008",
+      "kind": "text",
+      "node": "6",
+      "text": "不冷。我就是……多逛了一会儿，差点迷路。"
+    },
+    {
+      "key": "p008:7::",
+      "scene": "p008",
+      "kind": "text",
+      "node": "7",
+      "text": "奶奶没有继续追问，只是点点头。"
+    },
+    {
+      "key": "p008:8::",
+      "scene": "p008",
+      "kind": "text",
+      "node": "8",
+      "text": "快去洗漱吧。明天一早，还要去学校报到呢。"
+    },
+    {
+      "key": "p008:9::",
+      "scene": "p008",
+      "kind": "text",
+      "node": "9",
+      "text": "知道了。"
+    },
+    {
+      "key": "p008:10::",
+      "scene": "p008",
+      "kind": "text",
+      "node": "10",
+      "text": "男高走进浴室。"
+    },
+    {
+      "key": "p008:11::",
+      "scene": "p008",
+      "kind": "text",
+      "node": "11",
+      "text": "（也许只是自己多管闲事。\n那些人说不定是在抓一只逃出来的动物。）"
+    },
+    {
+      "key": "p008:12::",
+      "scene": "p008",
+      "kind": "text",
+      "node": "12",
+      "text": "（可是……事情真的有那么简单吗？）"
+    },
+    {
+      "key": "p009:3::",
+      "scene": "p009",
+      "kind": "text",
+      "node": "3",
+      "text": "枕边放着明天报到要用的书包。"
+    },
+    {
+      "key": "p009:4::",
+      "scene": "p009",
+      "kind": "text",
+      "node": "4",
+      "text": "（明天开始，我就是太阳市第一高中的学生了。）"
+    },
+    {
+      "key": "p009:5::",
+      "scene": "p009",
+      "kind": "text",
+      "node": "5",
+      "text": "（先好好上学，陪奶奶生活……）"
+    },
+    {
+      "key": "p009:6::",
+      "scene": "p009",
+      "kind": "text",
+      "node": "6",
+      "text": "（要是再遇到今晚那种事，也得像勇者一样站出来。）"
+    },
+    {
+      "key": "p009:7::",
+      "scene": "p009",
+      "kind": "text",
+      "node": "7",
+      "text": "男高闭上眼睛。"
+    },
+    {
+      "key": "p009:12::",
+      "scene": "p009",
+      "kind": "text",
+      "node": "12",
+      "text": "黑色结晶像心脏一样，极轻微地跳动了一下。"
+    },
+    {
+      "key": "a001:4::",
+      "scene": "a001",
+      "kind": "text",
+      "node": "4",
+      "text": "闹钟响了几遍，男高仍然没有醒来。\n奶奶端着早饭上楼，把男高叫醒。"
+    },
+    {
+      "key": "a001:5::",
+      "scene": "a001",
+      "kind": "text",
+      "node": "5",
+      "text": "快起来！第一天上学就要迟到，像什么话！"
+    },
+    {
+      "key": "a001:6::",
+      "scene": "a001",
+      "kind": "text",
+      "node": "6",
+      "text": "知道了知道了……"
+    },
+    {
+      "key": "a001:7::",
+      "scene": "a001",
+      "kind": "text",
+      "node": "7",
+      "text": "男高匆忙洗漱，抓起书包和外套冲下楼。\n奶奶追到门口，把装着水煮蛋和面包的袋子塞给他，又替他正了正外套领子。"
+    },
+    {
+      "key": "a001:8::",
+      "scene": "a001",
+      "kind": "text",
+      "node": "8",
+      "text": "路上慢点跑！别又摔了！"
+    },
+    {
+      "key": "a001:10::",
+      "scene": "a001",
+      "kind": "text",
+      "node": "10",
+      "text": "放心，我体力好着呢！"
+    },
+    {
+      "key": "a001:11::",
+      "scene": "a001",
+      "kind": "text",
+      "node": "11",
+      "text": "男高从门口冲出去。"
+    },
+    {
+      "key": "a001:15::",
+      "scene": "a001",
+      "kind": "text",
+      "node": "15",
+      "text": "隔壁房子的门也正好打开。\n虚拟主播只看见一个陌生少年从邻居家冲出来，朝学校方向跑去。"
+    },
+    {
+      "key": "a001:16::",
+      "scene": "a001",
+      "kind": "text",
+      "node": "16",
+      "text": "（没见过的人……。）"
+    },
+    {
+      "key": "a001:17::",
+      "scene": "a001",
+      "kind": "text",
+      "node": "17",
+      "text": "虚拟主播沿着街道朝学校走去。"
+    },
+    {
+      "key": "a002:3::",
+      "scene": "a002",
+      "kind": "text",
+      "node": "3",
+      "text": "男高一路飞奔，晨风灌进领口，书包在背后一跳一跳。\n学校大门已经出现在街道尽头。"
+    },
+    {
+      "key": "a002:5::",
+      "scene": "a002",
+      "kind": "text",
+      "node": "5",
+      "text": "路口拐角突然闪出一道身影。\n男高和对方来不及停下，结结实实地撞在一起。"
+    },
+    {
+      "key": "a002:6::",
+      "scene": "a002",
+      "kind": "text",
+      "node": "6",
+      "text": "抱歉！真的很抱歉啦！"
+    },
+    {
+      "key": "a002:7::",
+      "scene": "a002",
+      "kind": "text",
+      "node": "7",
+      "text": "男高扶住差点滑落的书包，头也不回地继续向学校跑去。"
+    },
+    {
+      "key": "a002:8::",
+      "scene": "a002",
+      "kind": "text",
+      "node": "8",
+      "text": "不要跑那么快啊！"
+    },
+    {
+      "key": "a003:3::",
+      "scene": "a003",
+      "kind": "text",
+      "node": "3",
+      "text": "晨光中的校牌泛着旧金属的颜色。\n校园包含高楼、操场、旧教学楼和远处被围栏封住的施工区域。\n男高叼着半片面包冲进校门，书包拉链没有完全拉上。"
+    },
+    {
+      "key": "a003:5::",
+      "scene": "a003",
+      "kind": "text",
+      "node": "5",
+      "text": "那个学生！站住！\n学校里面不许跑！第一天报到就横冲直撞，像什么样子！"
+    },
+    {
+      "key": "a003:6::",
+      "scene": "a003",
+      "kind": "text",
+      "node": "6",
+      "text": "抱歉啦！老师！下次我会注意的！"
+    },
+    {
+      "key": "a003:7::",
+      "scene": "a003",
+      "kind": "text",
+      "node": "7",
+      "text": "男高没有停下，反而加速跑向教学楼。"
+    },
+    {
+      "key": "a003:8::",
+      "scene": "a003",
+      "kind": "text",
+      "node": "8",
+      "text": "喂！让你站住！"
+    },
+    {
+      "key": "a003:12::",
+      "scene": "a003",
+      "kind": "text",
+      "node": "12",
+      "text": "转学生？第一天报到就撞了人，又挨老师训……\n这个人，还挺有趣的。"
+    },
+    {
+      "key": "a003:13::",
+      "scene": "a003",
+      "kind": "text",
+      "node": "13",
+      "text": "（那个人……为什么他会注意到这种普通的学生？）"
+    },
+    {
+      "key": "a003:14::",
+      "scene": "a003",
+      "kind": "text",
+      "node": "14",
+      "text": "偶像迅速收回视线，但不安没有消失。"
+    },
+    {
+      "key": "a003:17::",
+      "scene": "a003",
+      "kind": "text",
+      "node": "17",
+      "text": "黑色结晶在地下深处极轻微地跳动了一下。"
+    },
+    {
+      "key": "a004:4::",
+      "scene": "a004",
+      "kind": "text",
+      "node": "4",
+      "text": "上课铃响起时，男高正好赶到教室门口。\n他走到讲台前，从讲台上拿起笔，在白板上写下自己的名字。"
+    },
+    {
+      "key": "a004:5::",
+      "scene": "a004",
+      "kind": "text",
+      "node": "5",
+      "text": "大家好！我叫——！\n今天开始转入这个班，请大家多多关照！"
+    },
+    {
+      "key": "a004:7::",
+      "scene": "a004",
+      "kind": "text",
+      "node": "7",
+      "text": "教室安静几秒，随后响起压低"
+    },
+    {
+      "key": "a004:8::",
+      "scene": "a004",
+      "kind": "text",
+      "node": "8",
+      "text": "这自我介绍也太像动画主角了吧……"
+    },
+    {
+      "key": "a004:9::",
+      "scene": "a004",
+      "kind": "text",
+      "node": "9",
+      "text": "还说什么遇到困难来找他……"
+    },
+    {
+      "key": "a004:10::",
+      "scene": "a004",
+      "kind": "text",
+      "node": "10",
+      "text": "男高没有在意同学的反应，反而拍了拍胸脯。\n靠窗位置上的怪盗认出了男高。"
+    },
+    {
+      "key": "a004:12::",
+      "scene": "a004",
+      "kind": "text",
+      "node": "12",
+      "text": "（原来就是你啊，转学生。）"
+    },
+    {
+      "key": "a004:13::",
+      "scene": "a004",
+      "kind": "text",
+      "node": "13",
+      "text": "男高也认出怪盗，朝他挥手。\n怪盗对男高做出“加油”的口型。"
+    },
+    {
+      "key": "a005:6::",
+      "scene": "a005",
+      "kind": "text",
+      "node": "6",
+      "text": "好了，大家安静。新同学先别急着坐。\n你就坐那边——怪盗后面，虚拟主播左边那个空位。"
+    },
+    {
+      "key": "a005:7::",
+      "scene": "a005",
+      "kind": "text",
+      "node": "7",
+      "text": "好嘞！"
+    },
+    {
+      "key": "a005:8::",
+      "scene": "a005",
+      "kind": "text",
+      "node": "8",
+      "text": "男高拎着书包走向座位，坐到怪盗后面、虚拟主播左边。\n他转头朝虚拟主播笑了一下。"
+    },
+    {
+      "key": "a005:9::",
+      "scene": "a005",
+      "kind": "text",
+      "node": "9",
+      "text": "你好！以后请多关照！"
+    },
+    {
+      "key": "a005:11::",
+      "scene": "a005",
+      "kind": "text",
+      "node": "11",
+      "text": "……嗯。"
+    },
+    {
+      "key": "a005:12::",
+      "scene": "a005",
+      "kind": "text",
+      "node": "12",
+      "text": "怪盗从前排回过头。"
+    },
+    {
+      "key": "a005:13::",
+      "scene": "a005",
+      "kind": "text",
+      "node": "13",
+      "text": "欢迎入座，新生~。"
+    },
+    {
+      "key": "a005:14::",
+      "scene": "a005",
+      "kind": "text",
+      "node": "14",
+      "text": "男高用力点头。"
+    },
+    {
+      "key": "a006:7::",
+      "scene": "a006",
+      "kind": "text",
+      "node": "7",
+      "text": "课间铃声响起，教室热闹起来。\n老师把男高叫到讲台附近。"
+    },
+    {
+      "key": "a006:8::",
+      "scene": "a006",
+      "kind": "text",
+      "node": "8",
+      "text": "转学生，你过来一下。"
+    },
+    {
+      "key": "a006:9::",
+      "scene": "a006",
+      "kind": "text",
+      "node": "9",
+      "text": "你刚转来，对学校还不熟吧。\n这样，我找一名同学带你逛逛校园，认认路。"
+    },
+    {
+      "key": "a006:10::",
+      "scene": "a006",
+      "kind": "text",
+      "node": "10",
+      "text": "你自己看看，想跟谁一起去？"
+    },
+    {
+      "key": "a006:11::",
+      "scene": "a006",
+      "kind": "text",
+      "node": "11",
+      "text": "怪盗转笔并挑眉，虚拟主播低头整理书本，反派靠着椅背微笑。"
+    },
+    {
+      "key": "a008:4::",
+      "scene": "a008",
+      "kind": "text",
+      "node": "4",
+      "text": "老师的话音落下后，虚拟主播发现所有人都看向她。\n她放下手里的东西，走到男高身边，离男高半米远停下。"
+    },
+    {
+      "key": "a008:5::",
+      "scene": "a008",
+      "kind": "text",
+      "node": "5",
+      "text": "那……那跟我来吧。"
+    },
+    {
+      "key": "a008:6::",
+      "scene": "a008",
+      "kind": "text",
+      "node": "6",
+      "text": "虚拟主播带男高进入主教学楼一层东侧的图书馆。"
+    },
+    {
+      "key": "a008:7::",
+      "scene": "a008",
+      "kind": "text",
+      "node": "7",
+      "text": "这、这里是图书馆……藏书有八万多册……"
+    },
+    {
+      "key": "a008:8::",
+      "scene": "a008",
+      "kind": "text",
+      "node": "8",
+      "text": "靠窗那边是自习区，平时很安静……\n校史和地方志也在这里。"
+    },
+    {
+      "key": "a008:9::",
+      "scene": "a008",
+      "kind": "text",
+      "node": "9",
+      "text": "好厉害！比我以前学校的图书馆大多了！"
+    },
+    {
+      "key": "a008:11::",
+      "scene": "a008",
+      "kind": "text",
+      "node": "11",
+      "text": "虚拟主播轻轻点头。"
+    },
+    {
+      "key": "a008:13::",
+      "scene": "a008",
+      "kind": "text",
+      "node": "13",
+      "text": "两人从图书馆出来，绕到主教学楼后方。\n隔着操场可以看到食堂。"
+    },
+    {
+      "key": "a008:14::",
+      "scene": "a008",
+      "kind": "text",
+      "node": "14",
+      "text": "那是食堂……一楼是打饭窗口，二楼是座位区……"
+    },
+    {
+      "key": "a008:15::",
+      "scene": "a008",
+      "kind": "text",
+      "node": "15",
+      "text": "中午人会很多，靠窗的位置……大家都很喜欢坐。"
+    },
+    {
+      "key": "a008:16::",
+      "scene": "a008",
+      "kind": "text",
+      "node": "16",
+      "text": "那边那个呢？"
+    },
+    {
+      "key": "a008:18::",
+      "scene": "a008",
+      "kind": "text",
+      "node": "18",
+      "text": "那是体育馆……一楼是篮球场和羽毛球场，二楼是观众席……"
+    },
+    {
+      "key": "a008:19::",
+      "scene": "a008",
+      "kind": "text",
+      "node": "19",
+      "text": "下雨天的体育课都在那边上。"
+    },
+    {
+      "key": "a008:20::",
+      "scene": "a008",
+      "kind": "text",
+      "node": "20",
+      "text": "男高一边听一边点头，时不时夸她一句。\n虚拟主播的耳朵再次发红。"
+    },
+    {
+      "key": "a009:5::",
+      "scene": "a009",
+      "kind": "text",
+      "node": "5",
+      "text": "这里是"
+    },
+    {
+      "key": "a009:6::",
+      "scene": "a009",
+      "kind": "text",
+      "node": "6",
+      "text": "听说……很久以前这里就要建新楼，但一直没动静。"
+    },
+    {
+      "key": "a009:7::",
+      "scene": "a009",
+      "kind": "text",
+      "node": "7",
+      "text": "学校不让靠近，说是施工危险……\n也有人说是地下挖出了什么东西。"
+    },
+    {
+      "key": "a009:8::",
+      "scene": "a009",
+      "kind": "text",
+      "node": "8",
+      "text": "反正……老师说过，不要靠近那里。"
+    },
+    {
+      "key": "a009:9::",
+      "scene": "a009",
+      "kind": "text",
+      "node": "9",
+      "text": "男高望着围栏后的大坑。"
+    },
+    {
+      "key": "a010:2:2:1",
+      "scene": "a010",
+      "kind": "text",
+      "node": "2",
+      "text": "【暂无线性后果】原文仅说明男高收回目光，决定先回班上，后续支线暂不展开。"
+    },
+    {
+      "key": "a011:4::",
+      "scene": "a011",
+      "kind": "text",
+      "node": "4",
+      "text": "男高沿围栏走了几步，发现东侧有一扇锈迹斑斑的铁皮小门。\n门闩只是虚挂着，没有上锁。"
+    },
+    {
+      "key": "a011:5::",
+      "scene": "a011",
+      "kind": "text",
+      "node": "5",
+      "text": "有门不走，翻什么墙！"
+    },
+    {
+      "key": "a011:6::",
+      "scene": "a011",
+      "kind": "text",
+      "node": "6",
+      "text": "男高推开小门走进去。\n虚拟主播飞快地观察四周，随后咬牙跟上。"
+    },
+    {
+      "key": "a011:7::",
+      "scene": "a011",
+      "kind": "text",
+      "node": "7",
+      "text": "等、等一下……这里真的不能进……"
+    },
+    {
+      "key": "a011:8::",
+      "scene": "a011",
+      "kind": "text",
+      "node": "8",
+      "text": "老师说过不能靠近这里的……\n被发现了会被叫家长的……"
+    },
+    {
+      "key": "a011:9::",
+      "scene": "a011",
+      "kind": "text",
+      "node": "9",
+      "text": "而且这里很危险……听说有人晚上路过，听见里面传出奇怪的声音……"
+    },
+    {
+      "key": "a011:10::",
+      "scene": "a011",
+      "kind": "text",
+      "node": "10",
+      "text": "喂……你有没有在听我说话……"
+    },
+    {
+      "key": "a011:11::",
+      "scene": "a011",
+      "kind": "text",
+      "node": "11",
+      "text": "听着呢听着呢！你看，这不就是个大坑嘛，哪有那么吓人——嗯？"
+    },
+    {
+      "key": "a011:12::",
+      "scene": "a011",
+      "kind": "text",
+      "node": "12",
+      "text": "男高停下脚步。\n坑底传来极轻、极轻的心跳声。"
+    },
+    {
+      "key": "a011:14::",
+      "scene": "a011",
+      "kind": "text",
+      "node": "14",
+      "text": "……我们还是，回去吧。"
+    },
+    {
+      "key": "a011:15::",
+      "scene": "a011",
+      "kind": "text",
+      "node": "15",
+      "text": "男高顺着防尘布的破口朝坑底看去。\n坑底泥土发黑，中央悬着一把剑，剑尖朝下，离地半尺，微微颤动。"
+    },
+    {
+      "key": "a011:18::",
+      "scene": "a011",
+      "kind": "text",
+      "node": "18",
+      "text": "（这是……什么？）"
+    },
+    {
+      "key": "a011:19::",
+      "scene": "a011",
+      "kind": "text",
+      "node": "19",
+      "text": "男高观察剑身。\n剑柄顶端是紫蓝色菱形剑首，握柄缠着青绿色绳纹，翼状护手中央嵌着暗淡的金色三角宝石。\n剑身上半段泛着象牙白的冷光，下半段被黑绿色污秽腐蚀，剑尖扭曲发黑。"
+    },
+    {
+      "key": "a011:21::",
+      "scene": "a011",
+      "kind": "text",
+      "node": "21",
+      "text": "男高不由自主地伸手靠近剑柄。\n剑身极轻微地颤动，金色三角宝石比刚才亮了一点。"
+    },
+    {
+      "key": "a012:2::",
+      "scene": "a012",
+      "kind": "text",
+      "node": "2",
+      "text": "男高的手指触碰到剑柄。\n整座大坑忽然安静下来，连风声都像被截断。"
+    },
+    {
+      "key": "a012:8::",
+      "scene": "a012",
+      "kind": "text",
+      "node": "8",
+      "text": "男高看见一座漂浮在云海之上的岛屿。"
+    },
+    {
+      "key": "a012:9::",
+      "scene": "a012",
+      "kind": "text",
+      "node": "9",
+      "text": "他看见一名右臂被异样力量侵蚀的青年从空中坠落。"
+    },
+    {
+      "key": "a012:10::",
+      "scene": "a012",
+      "kind": "text",
+      "node": "10",
+      "text": "他看见一座升上天空的城堡，漆黑瘴气从地底涌出，将白色剑刃一点点染成黑绿色。"
+    },
+    {
+      "key": "a012:11::",
+      "scene": "a012",
+      "kind": "text",
+      "node": "11",
+      "text": "画面再次变换。\n一条发出金色光芒的巨龙在云层间盘旋，巨龙头顶插着一把残破的剑。"
+    },
+    {
+      "key": "a012:12::",
+      "scene": "a012",
+      "kind": "text",
+      "node": "12",
+      "text": "那个青年站在巨龙头顶，伸手重新握住剑柄。"
+    },
+    {
+      "key": "a012:13::",
+      "scene": "a012",
+      "kind": "text",
+      "node": "13",
+      "text": "光芒、龙鳞、坠落的城堡和远去的身影交错闪过。\n这些不是男高的记忆，但他能感受到其中的失去、恐惧和决心。"
+    },
+    {
+      "key": "a012:14::",
+      "scene": "a012",
+      "kind": "text",
+      "node": "14",
+      "text": "幻象最后停留在一片安静的草地上。\n青年拔出剑，剑刃发出清澈的鸣响。"
+    },
+    {
+      "key": "a012:15::",
+      "scene": "a012",
+      "kind": "text",
+      "node": "15",
+      "text": "男高猛地回过神来。\n他双手握住剑柄，用力向上拔。"
+    },
+    {
+      "key": "a012:16::",
+      "scene": "a012",
+      "kind": "text",
+      "node": "16",
+      "text": "大师之剑被一点点拔出。\n覆盖在下半截剑刃上的黑绿色污秽蠕动起来，脱离剑身并落到泥土上。\n剑身重新露出象牙白的光泽，但仍残留腐蚀裂纹。"
+    },
+    {
+      "key": "a012:17::",
+      "scene": "a012",
+      "kind": "text",
+      "node": "17",
+      "text": "我是不是睡糊涂了？"
+    },
+    {
+      "key": "a012:18::",
+      "scene": "a012",
+      "kind": "text",
+      "node": "18",
+      "text": "一把剑而已，怎么会让我看到这么奇怪的东西……"
+    },
+    {
+      "key": "a012:19::",
+      "scene": "a012",
+      "kind": "text",
+      "node": "19",
+      "text": "男高抱着大师之剑，转身走向坑边。\n污秽在他身后的泥土中缓慢聚拢。"
+    },
+    {
+      "key": "a013:5::",
+      "scene": "a013",
+      "kind": "text",
+      "node": "5",
+      "text": "黑绿色污秽沿坑底向中央爬行，聚成一团扭曲阴影。\n阴影逐渐长出双腿、躯干、手臂和头颅。\n它的脸上没有五官，只有两点暗红色光芒。"
+    },
+    {
+      "key": "a013:6::",
+      "scene": "a013",
+      "kind": "text",
+      "node": "6",
+      "text": "虚拟主播看见黑色人形，身体软软倒在坑边。"
+    },
+    {
+      "key": "a013:8::",
+      "scene": "a013",
+      "kind": "text",
+      "node": "8",
+      "text": "这、这是什么东西？！"
+    },
+    {
+      "key": "a013:9::",
+      "scene": "a013",
+      "kind": "text",
+      "node": "9",
+      "text": "男高低头看向昏迷的虚拟主播，又看向坑底的黑色人形。\n他握紧大师之剑，挡在虚拟主播前面。"
+    },
+    {
+      "key": "a013:10::",
+      "scene": "a013",
+      "kind": "text",
+      "node": "10",
+      "text": "没办法了……\n只能先把你打倒，再带她离开！"
+    },
+    {
+      "key": "a013:11::",
+      "scene": "a013",
+      "kind": "text",
+      "node": "11",
+      "text": "黑色人形抬起由污渍凝成的手臂，黑色能量在掌心聚集。"
+    },
+    {
+      "key": "a014:2::",
+      "scene": "a014",
+      "kind": "text",
+      "node": "2",
+      "text": "战斗界面切入。"
+    },
+    {
+      "key": "a014:5::",
+      "scene": "a014",
+      "kind": "text",
+      "node": "5",
+      "text": "战斗结束后，大坑重新安静下来。\n黑色人形消失，只剩零散的黑色污渍留在泥土上。\n大师之剑的光芒慢慢收敛，只剩剑刃中央一条极细的金色纹路。"
+    },
+    {
+      "key": "a014:8::",
+      "scene": "a014",
+      "kind": "text",
+      "node": "8",
+      "text": "男高把大师之剑插回坑底旁边的泥土，随后冲向坑边扶住虚拟主播。\n他抱起虚拟主播，沿着坑壁向上爬。"
+    },
+    {
+      "key": "a014:9::",
+      "scene": "a014",
+      "kind": "text",
+      "node": "9",
+      "text": "虚拟主播的书包掉在铁皮围栏旁边。\n男高先把她抱出施工区，再折返回去捡起书包，并把铁皮小门重新关上。"
+    },
+    {
+      "key": "a014:10::",
+      "scene": "a014",
+      "kind": "text",
+      "node": "10",
+      "text": "男高回头看向坑底。\n大师之剑静静插在泥土中，金色纹路一闪而过。\n更深的泥土里，一缕极细的黑气朝学校地下延伸。"
+    },
+    {
+      "key": "a015:4::",
+      "scene": "a015",
+      "kind": "text",
+      "node": "4",
+      "text": "男高抱着昏迷的虚拟主播回到教学楼。\n课间铃声刚好响起，走廊上的学生纷纷停下脚步看向他们。"
+    },
+    {
+      "key": "a015:6::",
+      "scene": "a015",
+      "kind": "text",
+      "node": "6",
+      "text": "男高没有察觉，自己手上的剑形灼痕正在袖口下缓缓发光。"
+    },
+    {
+      "key": "a016:2::",
+      "scene": "a016",
+      "kind": "text",
+      "node": "2",
+      "text": "第一幕结束。"
+    }
+  ],
+  "checks": [
+    {
+      "test": "序幕CALL回流",
+      "stage": {
+        "actId": "prologue",
+        "bgmId": "bgm_first_battle_after",
+        "navToken": "2:1:story",
+        "nodeIndex": "3",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p007\"},\"savedAt\":1792629931197}",
+        "saveRequest": "4",
+        "saveStatus": "saved",
+        "sceneId": "p007",
+        "session": "2",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "waitKind": "text",
+        "waitToken": "2:3"
+      }
+    },
+    {
+      "test": "A007四个选项与五槽继承",
+      "data": {
+        "body": "课间·选择校园向导\n虚\n虚拟主播\n立绘占位\n老\n老师\n立绘占位\n反\n反派\n立绘占位\n第一幕　 /　 次元战争\n男高选择由谁带他参观校园。\n怪盗。\n暂未开放\n虚拟主播。\n反派。\n暂未开放\n让老师选择。\n暂未开放\n返回地图\n返回主菜单\n\n最近存档：教室与校园导览 · 课间·选择校园向导 · 2026/10/22 08:46:06",
+        "buttons": [
+          {
+            "disabled": true,
+            "id": "option-1"
+          },
+          {
+            "disabled": false,
+            "id": "option-2"
+          },
+          {
+            "disabled": true,
+            "id": "option-3"
+          },
+          {
+            "disabled": true,
+            "id": "option-4"
+          },
+          {
+            "disabled": false,
+            "id": "return-map"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu"
+          }
+        ],
+        "portraits": [
+          {
+            "data": {
+              "actor": "男高",
+              "asset": "char_male_high_normal",
+              "position": "center",
+              "rear": "false",
+              "slot": "center",
+              "speaking": "false",
+              "visual": "static"
+            },
+            "left": "572px"
+          },
+          {
+            "data": {
+              "actor": "虚拟主播",
+              "asset": "char_virtual_streamer_shy",
+              "position": "right",
+              "rear": "false",
+              "slot": "right",
+              "speaking": "false",
+              "visual": "placeholder"
+            },
+            "left": "870px"
+          },
+          {
+            "data": {
+              "actor": "怪盗",
+              "asset": "char_thief_smile",
+              "position": "window",
+              "rear": "false",
+              "slot": "far-left",
+              "speaking": "false",
+              "visual": "static"
+            },
+            "left": "180px"
+          },
+          {
+            "data": {
+              "actor": "老师",
+              "asset": "char_teacher_placeholder",
+              "position": "front",
+              "rear": "false",
+              "slot": "center",
+              "speaking": "false",
+              "visual": "placeholder"
+            },
+            "left": "708px"
+          },
+          {
+            "data": {
+              "actor": "反派",
+              "asset": "char_villain_calm",
+              "position": "back",
+              "rear": "true",
+              "slot": "far-right",
+              "speaking": "false",
+              "visual": "placeholder"
+            },
+            "left": "1100px"
+          }
+        ],
+        "stage": {
+          "actId": "act1",
+          "bgmId": "bgm_school_choice",
+          "navToken": "8:7:story",
+          "nodeIndex": "2",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a007\"},\"savedAt\":1792629966707}",
+          "saveRequest": "16",
+          "saveStatus": "saved",
+          "sceneId": "a007",
+          "session": "8",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "choice",
+          "waitToken": "8:23"
+        },
+        "text": ""
+      }
+    },
+    {
+      "test": "地图返回恢复A007选择头",
+      "data": {
+        "body": "课间·选择校园向导\n男\n男高\n立绘占位\n虚\n虚拟主播\n立绘占位\n怪\n怪盗\n立绘占位\n老\n老师\n立绘占位\n反\n反派\n立绘占位\n第一幕　 /　 次元战争\n男高选择由谁带他参观校园。\n怪盗。\n暂未开放\n虚拟主播。\n反派。\n暂未开放\n让老师选择。\n暂未开放\n返回地图\n返回主菜单\n\n最近存档：教室与校园导览 · 课间·选择校园向导 · 2026/10/22 08:46:08",
+        "buttons": [
+          {
+            "disabled": true,
+            "id": "option-1"
+          },
+          {
+            "disabled": false,
+            "id": "option-2"
+          },
+          {
+            "disabled": true,
+            "id": "option-3"
+          },
+          {
+            "disabled": true,
+            "id": "option-4"
+          },
+          {
+            "disabled": false,
+            "id": "return-map"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu"
+          }
+        ],
+        "portraits": [
+          {
+            "data": {
+              "actor": "男高",
+              "asset": "char_male_high_normal",
+              "position": "center",
+              "rear": "false",
+              "slot": "center",
+              "speaking": "false",
+              "visual": "placeholder"
+            },
+            "left": "572px"
+          },
+          {
+            "data": {
+              "actor": "虚拟主播",
+              "asset": "char_virtual_streamer_shy",
+              "position": "right",
+              "rear": "false",
+              "slot": "right",
+              "speaking": "false",
+              "visual": "placeholder"
+            },
+            "left": "870px"
+          },
+          {
+            "data": {
+              "actor": "怪盗",
+              "asset": "char_thief_smile",
+              "position": "window",
+              "rear": "false",
+              "slot": "far-left",
+              "speaking": "false",
+              "visual": "placeholder"
+            },
+            "left": "180px"
+          },
+          {
+            "data": {
+              "actor": "老师",
+              "asset": "char_teacher_placeholder",
+              "position": "front",
+              "rear": "false",
+              "slot": "center",
+              "speaking": "false",
+              "visual": "placeholder"
+            },
+            "left": "708px"
+          },
+          {
+            "data": {
+              "actor": "反派",
+              "asset": "char_villain_calm",
+              "position": "back",
+              "rear": "true",
+              "slot": "far-right",
+              "speaking": "false",
+              "visual": "placeholder"
+            },
+            "left": "1100px"
+          }
+        ],
+        "stage": {
+          "actId": "act1",
+          "bgmId": "bgm_school_choice",
+          "navToken": "10:9:story",
+          "nodeIndex": "2",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a007\"},\"savedAt\":1792629968930}",
+          "saveRequest": "17",
+          "saveStatus": "saved",
+          "sceneId": "a007",
+          "session": "10",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "choice",
+          "waitToken": "10:1"
+        },
+        "text": ""
+      }
+    },
+    {
+      "test": "A010回班说明使用底部窗口",
+      "data": {
+        "body": "是否进入施工区域\n虚\n虚拟主播\n立绘占位\n第一幕　 /　 次元战争\n\n【暂无线性后果】原文仅说明男高收回目光，决定先回班上，后续支线暂不展开。\n\n点击 / 空格 / 回车　继续 ▸\n返回地图\n返回主菜单\n\n最近存档：施工区事件 · 是否进入施工区域 · 2026/10/22 08:47:13",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-map"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu"
+          }
+        ],
+        "portraits": [
+          {
+            "data": {
+              "actor": "男高",
+              "asset": "char_male_high_normal",
+              "position": "left",
+              "rear": "false",
+              "slot": "left",
+              "speaking": "false",
+              "visual": "static"
+            },
+            "left": "410px"
+          },
+          {
+            "data": {
+              "actor": "虚拟主播",
+              "asset": "char_virtual_streamer_shy",
+              "position": "right",
+              "rear": "false",
+              "slot": "right",
+              "speaking": "false",
+              "visual": "placeholder"
+            },
+            "left": "870px"
+          }
+        ],
+        "stage": {
+          "actId": "act1",
+          "bgmId": "bgm_school_mystery",
+          "navToken": "12:11:story",
+          "nodeIndex": "2",
+          "optionIndex": "2",
+          "optionNodeIndex": "1",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a010\"},\"savedAt\":1792630033380}",
+          "saveRequest": "22",
+          "saveStatus": "saved",
+          "sceneId": "a010",
+          "session": "12",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "12:8"
+        },
+        "text": "【暂无线性后果】原文仅说明男高收回目光，决定先回班上，后续支线暂不展开。"
+      },
+      "bounds": {
+        "class": "text-box text-narration",
+        "height": 180,
+        "width": 1232,
+        "x": 24,
+        "y": 540
+      }
+    },
+    {
+      "test": "黑色人形战中刷新重播a014并重开",
+      "before": {
+        "actId": "act1",
+        "battleId": "battle_black_humanoid",
+        "bgmId": "bgm_black_humanoid_battle",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "navToken": "12:11:battle",
+        "remainingSteps": "0",
+        "result": "",
+        "returnNodeIndex": "4",
+        "rngDraws": "2",
+        "round": "1",
+        "routeKind": "",
+        "routePath": "[]",
+        "routeRisks": "[]",
+        "routeWaypoints": "[]",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a014\"},\"savedAt\":1792630039320}",
+        "saveRequest": "26",
+        "saveStatus": "saved",
+        "sceneId": "a014",
+        "screen": "battle",
+        "seed": "0",
+        "selectedSteps": "0",
+        "session": "12",
+        "storyWaitToken": "12:44",
+        "testid": "battle-stage",
+        "token": "3:1",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "player"
+      },
+      "after": {
+        "actId": "act1",
+        "battleId": "battle_black_humanoid",
+        "bgmId": "bgm_black_humanoid_battle",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "navToken": "2:1:battle",
+        "remainingSteps": "0",
+        "result": "",
+        "returnNodeIndex": "4",
+        "rngDraws": "2",
+        "round": "1",
+        "routeKind": "",
+        "routePath": "[]",
+        "routeRisks": "[]",
+        "routeWaypoints": "[]",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a014\"},\"savedAt\":1792630066224}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "a014",
+        "screen": "battle",
+        "seed": "0",
+        "selectedSteps": "0",
+        "session": "2",
+        "storyWaitToken": "2:2",
+        "testid": "battle-stage",
+        "token": "1:0",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "opening"
+      }
+    },
+    {
+      "test": "a014回流停在四段战后正文之前",
+      "data": {
+        "body": "黑色人形战斗\n男\n男高\n立绘占位\n虚\n虚拟主播\n立绘占位\n大\n大师之剑\n立绘占位\n第一幕　 /　 次元战争\n\n点击补全文字\n返回地图\n返回主菜单\n\n正在保存…",
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "return-map"
+          },
+          {
+            "disabled": false,
+            "id": "return-menu"
+          }
+        ],
+        "portraits": [
+          {
+            "data": {
+              "actor": "男高",
+              "asset": "char_male_high_normal",
+              "position": "bottom_center",
+              "rear": "false",
+              "slot": "center",
+              "speaking": "false",
+              "visual": "placeholder"
+            },
+            "left": "572px"
+          },
+          {
+            "data": {
+              "actor": "虚拟主播",
+              "asset": "char_virtual_streamer_shy",
+              "position": "top_right",
+              "rear": "false",
+              "slot": "right",
+              "speaking": "false",
+              "visual": "placeholder"
+            },
+            "left": "870px"
+          },
+          {
+            "data": {
+              "actor": "大师之剑",
+              "asset": "prop_master_sword_corrupted_placeholder",
+              "position": "bottom_center",
+              "rear": "false",
+              "slot": "center",
+              "speaking": "false",
+              "visual": "placeholder"
+            },
+            "left": "708px"
+          }
+        ],
+        "stage": {
+          "actId": "act1",
+          "bgmId": "bgm_black_humanoid_battle",
+          "navToken": "2:1:story",
+          "nodeIndex": "5",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a014\"},\"savedAt\":1792630109496}",
+          "saveRequest": "4",
+          "saveStatus": "saving",
+          "sceneId": "a014",
+          "session": "2",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "2:3"
+        },
+        "text": ""
+      }
+    }
+  ],
+  "battle": [
+    {
+      "test": "序幕胜利",
+      "stage": {
+        "actId": "prologue",
+        "battleId": "battle_prologue_tutorial",
+        "bgmId": "bgm_first_battle",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "navToken": "2:1:battle",
+        "remainingSteps": "0",
+        "result": "eliminated",
+        "returnNodeIndex": "4",
+        "rngDraws": "20",
+        "round": "3",
+        "routeKind": "",
+        "routePath": "[]",
+        "routeRisks": "[]",
+        "routeWaypoints": "[]",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p006\"},\"savedAt\":1792629922356}",
+        "saveRequest": "3",
+        "saveStatus": "saved",
+        "sceneId": "p006",
+        "screen": "battle",
+        "seed": "0",
+        "selectedSteps": "0",
+        "session": "2",
+        "storyWaitToken": "2:2",
+        "testid": "battle-stage",
+        "token": "2:25",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "result"
+      },
+      "log": "男高 英雄激励·先攻：原骰(6)；保留，不掷新骰；最终骰(6)，采用值6；剩余1点\n\n先攻第1位 男高：d20(6) [普通]+2=8\n\n先攻第2位 黑衣人乙：d20(5) [普通]+1=6\n\n先攻第3位 黑衣人甲：d20(1) [普通]+1=2\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n教学：点击蓝色格规划，再确认移动\n\n男高 (0,2)→(1,2)，消耗5尺，剩余25尺\n\n男高 (1,2)→(2,2)，消耗5尺，剩余20尺\n\n男高 (2,2)→(3,3)，消耗5尺，剩余15尺\n\n男高 (3,3)→(4,3)，消耗5尺，剩余10尺\n\n教学：点敌人攻击\n\n男高 英雄激励·攻击：原骰(3)；保留，不掷新骰；最终骰(3)，采用值3；剩余1点\n\n男高→黑衣人甲 动作·徒手：d20(3) [普通]+4=7 vs AC12，失误\n\n教学：还能用附赠动作再打一拳\n\n男高 英雄激励·攻击：原骰(10)；保留，不掷新骰；最终骰(10)，采用值10；剩余1点\n\n男高→黑衣人甲 附赠·徒手：d20(10) [普通]+4=14 vs AC12，命中\n\n男高 英雄激励·伤害：原骰(3)；替换第1颗→3，必须采用新骰；最终骰(3)，采用值5；剩余0点\n\n伤害 1d4+2：d4(3)+2=5 钝击；无伤害减免→5；临时HP 0→0；黑衣人甲 HP 6→1\n\n第 1 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(13) [普通]+2=15 vs AC14，命中\n\n伤害 1d6：d6(3)+0=3 穿刺；无伤害减免→3；临时HP 0→0；男高 HP 10→7\n\nAI 黑衣人乙：结束回合\n\n第 1 轮 · 黑衣人甲回合开始，刷新回合资源及反应\n\nAI 黑衣人甲：攻击男高\n\n黑衣人甲→男高 动作·挥砍：d20(12) [普通]+2=14 vs AC14，命中\n\n伤害 1d6：d6(2)+0=2 挥砍；无伤害减免→2；临时HP 0→0；男高 HP 7→5\n\nAI 黑衣人甲：结束回合\n\n第 2 轮 · 男高回合开始，刷新回合资源及反应\n\n男高→黑衣人甲 动作·徒手：d20(2) [普通]+4=6 vs AC12，失误\n\n男高→黑衣人甲 附赠·徒手：d20(19) [普通]+4=23 vs AC12，命中\n\n伤害 1d4+2：d4(2)+2=4 钝击；无伤害减免→4；临时HP 0→0；黑衣人甲 HP 1→0\n\n黑衣人甲：被击败\n\n第 2 轮 · 黑衣人乙回合开始，刷新回合资源及反应\n\nAI 黑衣人乙：攻击男高\n\n黑衣人乙→男高 动作·金属装置：d20(15) [普通]+2=17 vs AC14，命中\n\n伤害 1d6：d6(4)+0=4 穿刺；无伤害减免→4；临时HP 0→0；男高 HP 5→1\n\nAI 黑衣人乙：结束回合\n\n第 3 轮 · 男高回合开始，刷新回合资源及反应\n\n男高 (4,3)→(5,3)，消耗5尺，剩余25尺\n\n男高→黑衣人乙 动作·徒手：d20(17) [普通]+4=21 vs AC12，命中\n\n伤害 1d4+2：d4(3)+2=5 钝击；无伤害减免→5；临时HP 0→0；黑衣人乙 HP 6→1\n\n男高→黑衣人乙 附赠·徒手：d20(12) [普通]+4=16 vs AC12，命中\n\n伤害 1d4+2：d4(1)+2=3 钝击；无伤害减免→3；临时HP 0→0；黑衣人乙 HP 1→0\n\n黑衣人乙：被击败\n\n胜利：敌人全部被击败"
+    },
+    {
+      "test": "黑色人形失败",
+      "stage": {
+        "actId": "act1",
+        "battleId": "battle_black_humanoid",
+        "bgmId": "bgm_black_humanoid_battle",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "navToken": "2:1:battle",
+        "remainingSteps": "0",
+        "result": "dead",
+        "returnNodeIndex": "4",
+        "rngDraws": "17",
+        "round": "5",
+        "routeKind": "",
+        "routePath": "[]",
+        "routeRisks": "[]",
+        "routeWaypoints": "[]",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a014\"},\"savedAt\":1792630076823}",
+        "saveRequest": "2",
+        "saveStatus": "saved",
+        "sceneId": "a014",
+        "screen": "battle",
+        "seed": "0",
+        "selectedSteps": "0",
+        "session": "2",
+        "storyWaitToken": "2:2",
+        "testid": "battle-stage",
+        "token": "1:18",
+        "turnId": "black_humanoid",
+        "turnTeam": "enemy",
+        "waiting": "result"
+      },
+      "log": "剑形灼痕共鸣：获得5点临时生命值\n\n先攻第1位 男高：d20(6) [普通]+2=8\n\n先攻第2位 黑色人形：d20(1) [普通]+2=3\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n第 1 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：移动至(1,3)\n\n黑色人形 (3,3)→(2,4)，消耗5尺，剩余35尺\n\n黑色人形 (2,4)→(1,3)，消耗5尺，剩余30尺\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(5) [普通]+4=9 vs AC14，失误\n\nAI 黑色人形：结束回合\n\n第 2 轮 · 男高回合开始，刷新回合资源及反应\n\n第 2 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(3) [普通]+4=7 vs AC14，失误\n\nAI 黑色人形：结束回合\n\n第 3 轮 · 男高回合开始，刷新回合资源及反应\n\n第 3 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(10) [普通]+4=14 vs AC14，命中\n\n伤害 2d6+2：d6(4,4)+2=10 暗蚀；无伤害减免→10；临时HP 5→0；男高 HP 10→5\n\nAI 黑色人形：结束回合\n\n第 4 轮 · 男高回合开始，刷新回合资源及反应\n\n第 4 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(13) [普通]+4=17 vs AC14，命中\n\n伤害 2d6+2：d6(3,4)+2=9 暗蚀；无伤害减免→9；临时HP 0→0；男高 HP 5→0\n\n男高：昏迷、倒地、失能\n\nAI 黑色人形：结束回合\n\n第 5 轮 · 男高回合开始，刷新回合资源及反应\n\n男高 死亡豁免 d20(5) [普通] vs DC10，成功0/失败1；失败\n\n第 5 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(2,19)取19 [优势]+4=23 vs AC14，命中·重击；优势：目标昏迷\n\n伤害 2d6+2（重击加倍骰子）：d6(3,5,4,5)+2=19 暗蚀；无伤害减免→19；临时HP 0→0；男高 HP 0→0；死亡失败 +2\n\n男高：死亡\n\n失败：男高死亡"
+    },
+    {
+      "test": "黑色人形胜利",
+      "stage": {
+        "actId": "act1",
+        "battleId": "battle_black_humanoid",
+        "bgmId": "bgm_black_humanoid_battle",
+        "fixtureDone": "false",
+        "mode": "idle",
+        "navToken": "2:1:battle",
+        "remainingSteps": "0",
+        "result": "eliminated",
+        "returnNodeIndex": "4",
+        "rngDraws": "16",
+        "round": "3",
+        "routeKind": "",
+        "routePath": "[]",
+        "routeRisks": "[]",
+        "routeWaypoints": "[]",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true,\"flag_act1_a010_03\":true,\"flag_act1_a010_01\":true,\"flag_act1_a010_02\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a014\"},\"savedAt\":1792630109496}",
+        "saveRequest": "3",
+        "saveStatus": "saved",
+        "sceneId": "a014",
+        "screen": "battle",
+        "seed": "0",
+        "selectedSteps": "0",
+        "session": "2",
+        "storyWaitToken": "2:2",
+        "testid": "battle-stage",
+        "token": "2:16",
+        "turnId": "hero",
+        "turnTeam": "player",
+        "waiting": "result"
+      },
+      "log": "剑形灼痕共鸣：获得5点临时生命值\n\n先攻第1位 男高：d20(6) [普通]+2=8\n\n先攻第2位 黑色人形：d20(1) [普通]+2=3\n\n第 1 轮 · 男高回合开始，刷新回合资源及反应\n\n男高 (0,2)→(1,1)，消耗5尺，剩余25尺\n\n男高 (1,1)→(2,2)，消耗5尺，剩余20尺\n\n男高→黑色人形 动作·大师之剑：d20(5) [普通]+4=9 vs AC12，失误\n\n男高→黑色人形 附赠·徒手：d20(3) [普通]+4=7 vs AC12，失误\n\n第 1 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(10) [普通]+4=14 vs AC14，命中\n\n伤害 2d6+2：d6(4,4)+2=10 暗蚀；无伤害减免→10；临时HP 5→0；男高 HP 10→5\n\nAI 黑色人形：结束回合\n\n第 2 轮 · 男高回合开始，刷新回合资源及反应\n\n男高→黑色人形 动作·大师之剑：d20(13) [普通]+4=17 vs AC12，命中\n\n伤害 1d8+2：d8(4)+2=6 挥砍；无伤害减免→6；临时HP 0→0；黑色人形 HP 16→10\n\n男高→黑色人形 附赠·徒手：d20(12) [普通]+4=16 vs AC12，命中\n\n伤害 1d4+2：d4(1)+2=3 钝击；无伤害减免→3；临时HP 0→0；黑色人形 HP 10→7\n\n第 2 轮 · 黑色人形回合开始，刷新回合资源及反应\n\nAI 黑色人形：攻击男高\n\n黑色人形→男高 动作·爪击：d20(2) [普通]+4=6 vs AC14，失误\n\nAI 黑色人形：结束回合\n\n第 3 轮 · 男高回合开始，刷新回合资源及反应\n\n男高→黑色人形 动作·大师之剑：d20(19) [普通]+4=23 vs AC12，命中\n\n伤害 1d8+2：d8(4)+2=6 挥砍；无伤害减免→6；临时HP 0→0；黑色人形 HP 7→1\n\n男高→黑色人形 附赠·徒手：d20(15) [普通]+4=19 vs AC12，命中\n\n伤害 1d4+2：d4(3)+2=5 钝击；无伤害减免→5；临时HP 0→0；黑色人形 HP 1→0\n\n黑色人形：被击败\n\n胜利：敌人全部被击败"
+    }
+  ],
+  "note": "浏览器工具在序幕胜利操作末尾超时，前半段内存记录丢失；此前实测结果在验收报告单独列出，不用历史正文代替新记录。"
+}

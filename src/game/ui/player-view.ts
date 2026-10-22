@@ -2,7 +2,8 @@ import type { Action, GameState } from '../state.js';
 import { backgroundBindings, displayName, timeGradient } from '../story/config.js';
 import { button, element } from './elements.js';
 import { renderDebug } from './dev-overlay.js';
-import { renderPortraits } from './portraits.js';
+import { PortraitsView } from './portraits.js';
+import type { PortraitPorts } from './portraits.js';
 
 export class PlayerView {
   readonly stage = element('main', 'stage');
@@ -15,17 +16,18 @@ export class PlayerView {
   private text: HTMLElement | undefined;
   private hint: HTMLElement | undefined;
   private waitToken = '';
-  private portraitKey = '';
+  private readonly portraits: PortraitsView;
   private debugKey = '';
   private readonly dispatch: (action: Action) => void;
   private readonly gesture: () => void;
   private readonly resizeObserver: ResizeObserver;
   private readonly endNavigation?: () => void;
 
-  constructor(root: HTMLElement, dispatch: (action: Action) => void, gesture: () => void, endNavigation?: () => void) {
+  constructor(root: HTMLElement, dispatch: (action: Action) => void, gesture: () => void, endNavigation?: () => void, portraitPorts?: PortraitPorts) {
     this.dispatch = dispatch;
     this.gesture = gesture;
     this.endNavigation = endNavigation;
+    this.portraits = new PortraitsView(this.actors, dispatch, portraitPorts);
     this.stage.id = 'stage';
     this.stage.tabIndex = 0;
     this.stage.setAttribute('aria-label', '剧情播放器');
@@ -50,7 +52,7 @@ export class PlayerView {
     resize();
   }
 
-  dispose() { this.resizeObserver.disconnect(); this.stage.remove(); }
+  dispose() { this.portraits.dispose(); this.resizeObserver.disconnect(); this.stage.remove(); }
 
   render(state: GameState) {
     const waiting = state.waiting;
@@ -65,12 +67,7 @@ export class PlayerView {
     this.backdrop.style.background = background ? `url("${background}") center / cover` : timeGradient(state.time);
     this.title.textContent = background ? '' : state.sceneTitle;
     this.hud.textContent = `${state.actId === 'prologue' ? '序幕' : '第一幕'}　 /　 次元战争`;
-    const speaker = waiting?.kind === 'text' ? waiting.speaker : '';
-    const portraitKey = JSON.stringify([state.actId, state.actors, state.failedAssets, speaker]);
-    if (this.portraitKey !== portraitKey) {
-      renderPortraits(this.actors, state, this.dispatch);
-      this.portraitKey = portraitKey;
-    }
+    this.portraits.render(state);
     if (this.waitToken !== waiting?.token) {
       this.waitToken = waiting?.token ?? '';
       this.content.replaceChildren();

@@ -1,0 +1,107 @@
+{
+  "reference": "public/assets/portraits/hero.png",
+  "canvas": [
+    1024,
+    1536
+  ],
+  "art": [
+    {
+      "id": "master-reference",
+      "file": "public/assets/portraits/hero-layered-v1/master-reference.png",
+      "prompt": "Use case: stylized-concept.\nAsset type: original pixel-art visual novel character master reference, NOT final separated layers.\nReference image: use only the attached original project's young male hero for identity, costume and pixel art style. Redraw him standing naturally, three-quarter front view facing camera, both arms relaxed beside torso, entire body including shoes. Tall exaggerated black pompadour hairstyle, thick dark eyebrows, young male face, black open school uniform jacket with gold buttons, red undershirt, silver chain and rectangular silver pendant, black trousers and black-white sneakers. Calm neutral expression, closed mouth. Keep crisp visible pixel clusters and limited shaded pixel-art, not smooth anime painting.\nTransparent background. EXACT canvas 1024x1536, no text, no sheet border. Character centered at x=512. Hair top y=80, chin y=390, shoulders at y=430, waist at y=850, feet at y=1480. Keep arms and legs naturally separated enough to see silhouette. No props. This reference will be used for individually registered body/head/hair/eye/mouth/arm layers, so anatomy should be complete and clear. No background pixels, no floor, no cast shadow. Do not copy the fighting pose of the reference.",
+      "mode": "内置 image_gen",
+      "status": "参考母版，非分层交付"
+    },
+    {
+      "id": "body",
+      "file": "public/assets/portraits/hero-layered-v1/body.png",
+      "prompt": "Use case: precise-object-edit. Edit target is the attached original game's pixel-art male standing master. Deliver exactly ONE registered animation layer, transparent PNG 1024x1536. Preserve original pixel-art, exact registration, proportions and coordinates. NEVER enlarge or recenter the remaining fragment to fill canvas. All removed regions must be fully transparent, no glow, no shadow, no checkerboard, no labels. Keep image pieces at original location on full canvas. Keep ONLY torso, jacket torso, red shirt, necklace, trousers and shoes. Remove ALL head/hair/face/ears, remove both arms entirely from shoulder outward including sleeves and hands. Fill the shoulder sockets under sleeves with complete black jacket fabric for rotation overlap. Keep neck skin up to original jaw lower edge so head can overlap. This is an armless headless body base, not a whole character.",
+      "mode": "内置 image_gen",
+      "status": "候选，未通过视觉验收"
+    },
+    {
+      "id": "head",
+      "file": "public/assets/portraits/hero-layered-v1/head.png",
+      "prompt": "Use case: precise-object-edit. Edit target is the attached original game's pixel-art male standing master. Deliver exactly ONE registered animation layer, transparent PNG 1024x1536. Preserve original pixel-art, exact registration, proportions and coordinates. NEVER enlarge or recenter the remaining fragment to fill canvas. All removed regions must be fully transparent, no glow, no shadow, no checkerboard, no labels. Keep image pieces at original location on full canvas. Keep ONLY the original head skin and ears and neck, at the exact original coordinates near x400..580 y200..410. Remove ALL hair, eyebrows, eyes, mouth and nose marks; fill underneath with complete skin shading so facial overlays can be added later. Smooth scalp fully filled where hair was. Remove entire body/arms/clothes. Head remains original size/location, not portrait closeup.",
+      "mode": "内置 image_gen",
+      "status": "候选，未通过视觉验收"
+    },
+    {
+      "id": "hair-back",
+      "file": "public/assets/portraits/hero-layered-v1/hair-back.png",
+      "prompt": "Use case: precise-object-edit. Edit target is the attached original game's pixel-art male standing master. Deliver exactly ONE registered animation layer, transparent PNG 1024x1536. Preserve original pixel-art, exact registration, proportions and coordinates. NEVER enlarge or recenter the remaining fragment to fill canvas. All removed regions must be fully transparent, no glow, no shadow, no checkerboard, no labels. Keep image pieces at original location on full canvas. Keep ONLY the rear hair silhouette on original head: dark rear scalp/back hair behind ears and short hair at nape. Remove front pompadour mass/bangs, face, ears, skin, body and clothing. This is the back hair layer behind head. No scalp skin. Keep original location/size.",
+      "mode": "内置 image_gen",
+      "status": "候选，未通过视觉验收"
+    },
+    {
+      "id": "hair-front",
+      "file": "public/assets/portraits/hero-layered-v1/hair-front.png",
+      "prompt": "Use case: precise-object-edit. Edit target is the attached original game's pixel-art male standing master. Deliver exactly ONE registered animation layer, transparent PNG 1024x1536. Preserve original pixel-art, exact registration, proportions and coordinates. NEVER enlarge or recenter the remaining fragment to fill canvas. All removed regions must be fully transparent, no glow, no shadow, no checkerboard, no labels. Keep image pieces at original location on full canvas. Keep ONLY the high black pompadour/front bangs hair mass above and over the forehead. Remove head skin, ears, all facial features, body and clothing, rear nape hair. Preserve whole front hair silhouette exactly in original registration. This is foreground hair overlay.",
+      "mode": "内置 image_gen",
+      "status": "候选，未通过视觉验收"
+    },
+    {
+      "id": "upper-left",
+      "file": "public/assets/portraits/hero-layered-v1/upper-left.png",
+      "prompt": "Use case: precise-object-edit. Input is the original project's male pixel-art character master. Produce ONE separate animation layer on the same exact 1024x1536 transparent canvas, registered to master, do NOT recenter, resize, or zoom the piece. Preserve crisp pixel-art colors, dimensions and position. No glow, background, shadow, text or checker pattern. Outside the isolated painted part must be alpha=0. Do not include any other anatomy or clothing. Keep ONLY the upper arm/sleeve on viewer LEFT from shoulder at (350,420) to elbow (300,640). Upper sleeve black school uniform, extend hidden shoulder socket slightly underneath jacket for overlap. Remove lower forearm, hand and everything else.",
+      "mode": "内置 image_gen",
+      "status": "候选，未通过视觉验收"
+    },
+    {
+      "id": "lower-left",
+      "file": "public/assets/portraits/hero-layered-v1/lower-left.png",
+      "prompt": "Use case: precise-object-edit. Input is the original project's male pixel-art character master. Produce ONE separate animation layer on the same exact 1024x1536 transparent canvas, registered to master, do NOT recenter, resize, or zoom the piece. Preserve crisp pixel-art colors, dimensions and position. No glow, background, shadow, text or checker pattern. Outside the isolated painted part must be alpha=0. Do not include any other anatomy or clothing. Keep ONLY the lower forearm/sleeve and hand on viewer LEFT from elbow at (300,640) to hand (280,880). Include black sleeve and original relaxed hand. Complete the elbow hidden fabric for overlap. Remove upper arm and everything else.",
+      "mode": "内置 image_gen",
+      "status": "候选，未通过视觉验收"
+    },
+    {
+      "id": "upper-right",
+      "file": "public/assets/portraits/hero-layered-v1/upper-right.png",
+      "prompt": "Use case: precise-object-edit. Input is the original project's male pixel-art character master. Produce ONE separate animation layer on the same exact 1024x1536 transparent canvas, registered to master, do NOT recenter, resize, or zoom the piece. Preserve crisp pixel-art colors, dimensions and position. No glow, background, shadow, text or checker pattern. Outside the isolated painted part must be alpha=0. Do not include any other anatomy or clothing. Keep ONLY the upper arm/sleeve on viewer RIGHT from shoulder at (630,420) to elbow at (700,640). Black uniform sleeve. Complete hidden shoulder fabric for overlap. Remove forearm, hand and everything else.",
+      "mode": "内置 image_gen",
+      "status": "候选，未通过视觉验收"
+    },
+    {
+      "id": "lower-right",
+      "file": "public/assets/portraits/hero-layered-v1/lower-right.png",
+      "prompt": "Use case: precise-object-edit. Input is the original project's male pixel-art character master. Produce ONE separate animation layer on the same exact 1024x1536 transparent canvas, registered to master, do NOT recenter, resize, or zoom the piece. Preserve crisp pixel-art colors, dimensions and position. No glow, background, shadow, text or checker pattern. Outside the isolated painted part must be alpha=0. Do not include any other anatomy or clothing. Keep ONLY the lower forearm/sleeve and hand on viewer RIGHT from elbow at (700,640) to hand (700,900). Black sleeve and relaxed hand. Complete hidden elbow fabric. Remove upper arm and everything else.",
+      "mode": "内置 image_gen",
+      "status": "候选，未通过视觉验收"
+    },
+    {
+      "id": "eyes-calm",
+      "file": "public/assets/portraits/hero-layered-v1/eyes-calm.png",
+      "prompt": "Use case: precise-object-edit. Input is the original project's male pixel-art character master. Produce ONE separate animation layer on the same exact 1024x1536 transparent canvas, registered to master, do NOT recenter, resize, or zoom the piece. Preserve crisp pixel-art colors, dimensions and position. No glow, background, shadow, text or checker pattern. Outside the isolated painted part must be alpha=0. Do not include any other anatomy or clothing. Keep ONLY original two thick black eyebrows, two open eyes, and nose marks at exactly their original coordinates on face: roughly x450..580 y225..305. This thin facial-detail layer has NO skin, NO face silhouette, NO hair and NO mouth. Calm neutral gaze. Everything outside those small feature marks fully transparent. Preserve original registration, no enlarged face.",
+      "mode": "内置 image_gen",
+      "status": "候选，未通过视觉验收"
+    },
+    {
+      "id": "eyes-half",
+      "file": "public/assets/portraits/hero-layered-v1/eyes-half.png",
+      "prompt": "Use case: precise-object-edit. Input is the male character master, deliver ONE registered pixel-art facial overlay on a fully transparent 1024x1536 canvas. NEVER enlarge/recenter the fragment. Everything except the specified tiny feature is alpha=0; no skin patch, no glow, no shadow or black background. The feature must stay at EXACT position of original face. Keep ONLY two thick eyebrows, HALF-CLOSED eyes and nose marks aligned to original master (eyebrows y230, eyes y255, nose y290). Same eye width and location as reference. No skin, face silhouette, hair, mouth, body. Fully transparent around these tiny marks.",
+      "mode": "内置 image_gen",
+      "status": "候选，未通过视觉验收"
+    },
+    {
+      "id": "eyes-closed",
+      "file": "public/assets/portraits/hero-layered-v1/eyes-closed.png",
+      "prompt": "Use case: precise-object-edit. Input is the male character master, deliver ONE registered pixel-art facial overlay on a fully transparent 1024x1536 canvas. NEVER enlarge/recenter the fragment. Everything except the specified tiny feature is alpha=0; no skin patch, no glow, no shadow or black background. The feature must stay at EXACT position of original face. Keep ONLY two thick eyebrows, fully CLOSED eyes and nose marks aligned to original master (eyebrows y230, closed eyelids y255, nose y290). Same eye width/location as reference. No skin, face silhouette, hair, mouth or body. Fully transparent around these tiny marks.",
+      "mode": "内置 image_gen",
+      "status": "候选，未通过视觉验收"
+    },
+    {
+      "id": "mouth-calm",
+      "file": "public/assets/portraits/hero-layered-v1/mouth-calm.png",
+      "prompt": "Use case: precise-object-edit. Input is the male character master, deliver ONE registered pixel-art facial overlay on a fully transparent 1024x1536 canvas. NEVER enlarge/recenter the fragment. Everything except the specified tiny feature is alpha=0; no skin patch, no glow, no shadow or black background. The feature must stay at EXACT position of original face. Keep ONLY original small CLOSED calm mouth mark around x480..530 y308..323, original 50-pixel width maximum. No nose, teeth, eyebrows, head, skin, hair or body. Preserve original mouth line size and exact location.",
+      "mode": "内置 image_gen",
+      "status": "候选，未通过视觉验收"
+    },
+    {
+      "id": "mouth-open",
+      "file": "public/assets/portraits/hero-layered-v1/mouth-open.png",
+      "prompt": "Use case: precise-object-edit. Input is the male character master, deliver ONE registered pixel-art facial overlay on a fully transparent 1024x1536 canvas. NEVER enlarge/recenter the fragment. Everything except the specified tiny feature is alpha=0; no skin patch, no glow, no shadow or black background. The feature must stay at EXACT position of original face. Keep ONLY a small open speaking mouth at x480..530 y308..333, slight open jaw shape with dark inside and small light teeth, matching original male's pixel style. No lips outside this tiny area, no face, skin or other features. Must fit original face registration.",
+      "mode": "内置 image_gen",
+      "status": "候选，未通过视觉验收"
+    }
+  ]
+}

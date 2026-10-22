@@ -1,0 +1,20 @@
+{
+  "before": {
+    "frames": "25",
+    "visual": "layered"
+  },
+  "inner": {
+    "frames": "49",
+    "mouth": "0",
+    "talking": "false"
+  },
+  "disposed": {
+    "frames": "51",
+    "stages": 0
+  },
+  "lateInput": {
+    "frames": "51",
+    "stages": 0
+  },
+  "errors": []
+}

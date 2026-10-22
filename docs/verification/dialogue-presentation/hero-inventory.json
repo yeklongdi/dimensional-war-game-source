@@ -1,0 +1,2136 @@
+{
+  "counts": {
+    "poses": 19,
+    "expressions": 24,
+    "showUpdates": 25
+  },
+  "poses": [
+    {
+      "description": "携带行李、站立",
+      "occurrences": [
+        {
+          "actId": "prologue",
+          "sceneId": "p001",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "p001",
+              "type": "POSE",
+              "description": "携带行李、站立",
+              "file": "source/story/prologue.md",
+              "line": 121,
+              "raw": "POSE: 男高=携带行李、站立"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "坐在沙发上",
+      "occurrences": [
+        {
+          "actId": "prologue",
+          "sceneId": "p003",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "p003",
+              "type": "POSE",
+              "description": "坐在沙发上",
+              "file": "source/story/prologue.md",
+              "line": 194,
+              "raw": "POSE: 男高=坐在沙发上"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "整理行李",
+      "occurrences": [
+        {
+          "actId": "prologue",
+          "sceneId": "p004",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "p004",
+              "type": "POSE",
+              "description": "整理行李",
+              "file": "source/story/prologue.md",
+              "line": 241,
+              "raw": "POSE: 男高=整理行李"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "散步、观察四周",
+      "occurrences": [
+        {
+          "actId": "prologue",
+          "sceneId": "p005",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "p005",
+              "type": "POSE",
+              "description": "散步、观察四周",
+              "file": "source/story/prologue.md",
+              "line": 289,
+              "raw": "POSE: 男高=散步、观察四周"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "战斗后喘息",
+      "occurrences": [
+        {
+          "actId": "prologue",
+          "sceneId": "p007",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "p007",
+              "type": "POSE",
+              "description": "战斗后喘息",
+              "file": "source/story/prologue.md",
+              "line": 375,
+              "raw": "POSE: 男高=战斗后喘息"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "刚跑回家、呼吸急促",
+      "occurrences": [
+        {
+          "actId": "prologue",
+          "sceneId": "p008",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "p008",
+              "type": "POSE",
+              "description": "刚跑回家、呼吸急促",
+              "file": "source/story/prologue.md",
+              "line": 414,
+              "raw": "POSE: 男高=刚跑回家、呼吸急促"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "躺在床上、望向天花板",
+      "occurrences": [
+        {
+          "actId": "prologue",
+          "sceneId": "p009",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "p009",
+              "type": "POSE",
+              "description": "躺在床上、望向天花板",
+              "file": "source/story/prologue.md",
+              "line": 469,
+              "raw": "POSE: 男高=躺在床上、望向天花板"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "躺在床上、刚醒",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a001",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a001",
+              "type": "POSE",
+              "description": "躺在床上、刚醒",
+              "file": "source/story/act1.md",
+              "line": 175,
+              "raw": "POSE: 男高=躺在床上、刚醒"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "飞奔、手里攥着水煮蛋",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a002",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a002",
+              "type": "POSE",
+              "description": "飞奔、手里攥着水煮蛋",
+              "file": "source/story/act1.md",
+              "line": 237,
+              "raw": "POSE: 男高=飞奔、手里攥着水煮蛋"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "叼着面包、跑进校门",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a003",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a003",
+              "type": "POSE",
+              "description": "叼着面包、跑进校门",
+              "file": "source/story/act1.md",
+              "line": 280,
+              "raw": "POSE: 男高=叼着面包、跑进校门"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "站在讲台前、拿着白板笔",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a004",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a004",
+              "type": "POSE",
+              "description": "站在讲台前、拿着白板笔",
+              "file": "source/story/act1.md",
+              "line": 350,
+              "raw": "POSE: 男高=站在讲台前、拿着白板笔"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "拎着书包准备落座",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a005",
+          "nodeIndex": 3,
+          "refs": [
+            {
+              "sceneId": "a005",
+              "type": "POSE",
+              "description": "拎着书包准备落座",
+              "file": "source/story/act1.md",
+              "line": 414,
+              "raw": "POSE: 男高=拎着书包准备落座"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "准备伸懒腰",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a006",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a006",
+              "type": "POSE",
+              "description": "准备伸懒腰",
+              "file": "source/story/act1.md",
+              "line": 469,
+              "raw": "POSE: 男高=准备伸懒腰"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "自然跟随",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a008",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a008",
+              "type": "POSE",
+              "description": "自然跟随",
+              "file": "source/story/act1.md",
+              "line": 587,
+              "raw": "POSE: 男高=自然跟随"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "停步观察围栏",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a009",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a009",
+              "type": "POSE",
+              "description": "停步观察围栏",
+              "file": "source/story/act1.md",
+              "line": 664,
+              "raw": "POSE: 男高=停步观察围栏"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "推开铁皮小门、准备进入",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a011",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a011",
+              "type": "POSE",
+              "description": "推开铁皮小门、准备进入",
+              "file": "source/story/act1.md",
+              "line": 728,
+              "raw": "POSE: 男高=推开铁皮小门、准备进入"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "持剑、准备保护虚拟主播",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a013",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a013",
+              "type": "POSE",
+              "description": "持剑、准备保护虚拟主播",
+              "file": "source/story/act1.md",
+              "line": 881,
+              "raw": "POSE: 男高=持剑、准备保护虚拟主播"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "战斗后疲惫、扶住虚拟主播",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a014",
+          "nodeIndex": 6,
+          "refs": [
+            {
+              "sceneId": "a014",
+              "type": "POSE",
+              "description": "战斗后疲惫、扶住虚拟主播",
+              "file": "source/story/act1.md",
+              "line": 937,
+              "raw": "POSE: 男高=战斗后疲惫、扶住虚拟主播"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "抱着虚拟主播、疲惫",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a015",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a015",
+              "type": "POSE",
+              "description": "抱着虚拟主播、疲惫",
+              "file": "source/story/act1.md",
+              "line": 968,
+              "raw": "POSE: 男高=抱着虚拟主播、疲惫"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    }
+  ],
+  "expressions": [
+    {
+      "description": "紧张、期待",
+      "occurrences": [
+        {
+          "actId": "prologue",
+          "sceneId": "p001",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "p001",
+              "type": "EXPRESSION",
+              "description": "紧张、期待",
+              "file": "source/story/prologue.md",
+              "line": 122,
+              "raw": "EXPRESSION: 男高=紧张、期待"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "放松、微笑",
+      "occurrences": [
+        {
+          "actId": "prologue",
+          "sceneId": "p002",
+          "nodeIndex": 5,
+          "refs": [
+            {
+              "sceneId": "p002",
+              "type": "EXPRESSION",
+              "description": "放松、微笑",
+              "file": "source/story/prologue.md",
+              "line": 164,
+              "raw": "EXPRESSION: 男高=放松、微笑"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "得意",
+      "occurrences": [
+        {
+          "actId": "prologue",
+          "sceneId": "p003",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "p003",
+              "type": "EXPRESSION",
+              "description": "得意",
+              "file": "source/story/prologue.md",
+              "line": 196,
+              "raw": "EXPRESSION: 男高=得意"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "热血、得意",
+      "occurrences": [
+        {
+          "actId": "prologue",
+          "sceneId": "p003",
+          "nodeIndex": 7,
+          "refs": [
+            {
+              "sceneId": "p003",
+              "type": "EXPRESSION",
+              "description": "热血、得意",
+              "file": "source/story/prologue.md",
+              "line": 212,
+              "raw": "EXPRESSION: 男高=热血、得意"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "怀念、轻松",
+      "occurrences": [
+        {
+          "actId": "prologue",
+          "sceneId": "p004",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "p004",
+              "type": "EXPRESSION",
+              "description": "怀念、轻松",
+              "file": "source/story/prologue.md",
+              "line": 242,
+              "raw": "EXPRESSION: 男高=怀念、轻松"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "轻松、准备出门",
+      "occurrences": [
+        {
+          "actId": "prologue",
+          "sceneId": "p004",
+          "nodeIndex": 10,
+          "refs": [
+            {
+              "sceneId": "p004",
+              "type": "EXPRESSION",
+              "description": "轻松、准备出门",
+              "file": "source/story/prologue.md",
+              "line": 268,
+              "raw": "EXPRESSION: 男高=轻松、准备出门"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "好奇",
+      "occurrences": [
+        {
+          "actId": "prologue",
+          "sceneId": "p005",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "p005",
+              "type": "EXPRESSION",
+              "description": "好奇",
+              "file": "source/story/prologue.md",
+              "line": 290,
+              "raw": "EXPRESSION: 男高=好奇"
+            }
+          ]
+        },
+        {
+          "actId": "act1",
+          "sceneId": "a009",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a009",
+              "type": "EXPRESSION",
+              "description": "好奇",
+              "file": "source/story/act1.md",
+              "line": 666,
+              "raw": "EXPRESSION: 男高=好奇"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "认真、出头",
+      "occurrences": [
+        {
+          "actId": "prologue",
+          "sceneId": "p005",
+          "nodeIndex": 14,
+          "refs": [
+            {
+              "sceneId": "p005",
+              "type": "EXPRESSION",
+              "description": "认真、出头",
+              "file": "source/story/prologue.md",
+              "line": 328,
+              "raw": "SHOW: 男高 expression=认真、出头"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "疑惑、警惕",
+      "occurrences": [
+        {
+          "actId": "prologue",
+          "sceneId": "p007",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "p007",
+              "type": "EXPRESSION",
+              "description": "疑惑、警惕",
+              "file": "source/story/prologue.md",
+              "line": 376,
+              "raw": "EXPRESSION: 男高=疑惑、警惕"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "装作平静",
+      "occurrences": [
+        {
+          "actId": "prologue",
+          "sceneId": "p008",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "p008",
+              "type": "EXPRESSION",
+              "description": "装作平静",
+              "file": "source/story/prologue.md",
+              "line": 416,
+              "raw": "EXPRESSION: 男高=装作平静"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "期待、认真",
+      "occurrences": [
+        {
+          "actId": "prologue",
+          "sceneId": "p009",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "p009",
+              "type": "EXPRESSION",
+              "description": "期待、认真",
+              "file": "source/story/prologue.md",
+              "line": 470,
+              "raw": "EXPRESSION: 男高=期待、认真"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "困倦、慌张",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a001",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a001",
+              "type": "EXPRESSION",
+              "description": "困倦、慌张",
+              "file": "source/story/act1.md",
+              "line": 177,
+              "raw": "EXPRESSION: 男高=困倦、慌张"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "自信、急着出门",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a001",
+          "nodeIndex": 9,
+          "refs": [
+            {
+              "sceneId": "a001",
+              "type": "EXPRESSION",
+              "description": "自信、急着出门",
+              "file": "source/story/act1.md",
+              "line": 200,
+              "raw": "EXPRESSION: 男高=自信、急着出门"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "着急",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a002",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a002",
+              "type": "EXPRESSION",
+              "description": "着急",
+              "file": "source/story/act1.md",
+              "line": 238,
+              "raw": "EXPRESSION: 男高=着急"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "匆忙",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a003",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a003",
+              "type": "EXPRESSION",
+              "description": "匆忙",
+              "file": "source/story/act1.md",
+              "line": 281,
+              "raw": "EXPRESSION: 男高=匆忙"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "自信、兴奋",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a004",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a004",
+              "type": "EXPRESSION",
+              "description": "自信、兴奋",
+              "file": "source/story/act1.md",
+              "line": 351,
+              "raw": "EXPRESSION: 男高=自信、兴奋"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "期待",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a005",
+          "nodeIndex": 3,
+          "refs": [
+            {
+              "sceneId": "a005",
+              "type": "EXPRESSION",
+              "description": "期待",
+              "file": "source/story/act1.md",
+              "line": 415,
+              "raw": "EXPRESSION: 男高=期待"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "疑惑",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a006",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a006",
+              "type": "EXPRESSION",
+              "description": "疑惑",
+              "file": "source/story/act1.md",
+              "line": 471,
+              "raw": "EXPRESSION: 男高=疑惑"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "好奇、友善",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a008",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a008",
+              "type": "EXPRESSION",
+              "description": "好奇、友善",
+              "file": "source/story/act1.md",
+              "line": 589,
+              "raw": "EXPRESSION: 男高=好奇、友善"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "兴奋、好奇",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a011",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a011",
+              "type": "EXPRESSION",
+              "description": "兴奋、好奇",
+              "file": "source/story/act1.md",
+              "line": 730,
+              "raw": "EXPRESSION: 男高=兴奋、好奇"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "被吸引、犹豫",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a011",
+          "nodeIndex": 20,
+          "refs": [
+            {
+              "sceneId": "a011",
+              "type": "EXPRESSION",
+              "description": "被吸引、犹豫",
+              "file": "source/story/act1.md",
+              "line": 793,
+              "raw": "EXPRESSION: 男高=被吸引、犹豫"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "震惊、警戒",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a013",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a013",
+              "type": "EXPRESSION",
+              "description": "震惊、警戒",
+              "file": "source/story/act1.md",
+              "line": 884,
+              "raw": "EXPRESSION: 男高=震惊、警戒"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "麻烦、担心",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a014",
+          "nodeIndex": 6,
+          "refs": [
+            {
+              "sceneId": "a014",
+              "type": "EXPRESSION",
+              "description": "麻烦、担心",
+              "file": "source/story/act1.md",
+              "line": 939,
+              "raw": "EXPRESSION: 男高=麻烦、担心"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    },
+    {
+      "description": "尴尬、担心",
+      "occurrences": [
+        {
+          "actId": "act1",
+          "sceneId": "a015",
+          "nodeIndex": 2,
+          "refs": [
+            {
+              "sceneId": "a015",
+              "type": "EXPRESSION",
+              "description": "尴尬、担心",
+              "file": "source/story/act1.md",
+              "line": 970,
+              "raw": "EXPRESSION: 男高=尴尬、担心"
+            }
+          ]
+        }
+      ],
+      "status": "未通过视觉交付"
+    }
+  ],
+  "samples": [
+    {
+      "pose": "普通站姿",
+      "expression": "默认平静",
+      "recipe": "hero_stand_calm",
+      "status": "候选已生成，视觉未通过",
+      "visualApproved": false
+    },
+    {
+      "pose": "普通站姿",
+      "expression": "得意",
+      "recipe": "hero_stand_proud",
+      "status": "待制作",
+      "visualApproved": false
+    },
+    {
+      "pose": "携带行李、站立",
+      "expression": "紧张、期待",
+      "recipe": "hero_luggage_nervous",
+      "status": "待制作",
+      "visualApproved": false
+    },
+    {
+      "pose": "携带行李、站立",
+      "expression": "放松、微笑",
+      "recipe": "hero_luggage_relaxed",
+      "status": "待制作",
+      "visualApproved": false
+    },
+    {
+      "pose": "准备伸懒腰",
+      "expression": "疑惑",
+      "recipe": "hero_prepare_puzzled",
+      "status": "待制作",
+      "visualApproved": false
+    }
+  ],
+  "updates": [
+    {
+      "actId": "prologue",
+      "sceneId": "p001",
+      "nodeIndex": 2,
+      "update": false,
+      "original": {
+        "pose": "携带行李、站立",
+        "expression": "紧张、期待"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "携带行李、站立",
+        "expression": "紧张、期待"
+      },
+      "refs": [
+        {
+          "sceneId": "p001",
+          "type": "POSE",
+          "description": "携带行李、站立",
+          "file": "source/story/prologue.md",
+          "line": 121,
+          "raw": "POSE: 男高=携带行李、站立"
+        },
+        {
+          "sceneId": "p001",
+          "type": "EXPRESSION",
+          "description": "紧张、期待",
+          "file": "source/story/prologue.md",
+          "line": 122,
+          "raw": "EXPRESSION: 男高=紧张、期待"
+        }
+      ],
+      "recipe": "hero_luggage_nervous",
+      "status": "待制作",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p002",
+      "nodeIndex": 5,
+      "update": true,
+      "original": {
+        "expression": "放松、微笑"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "携带行李、站立",
+        "expression": "放松、微笑"
+      },
+      "refs": [
+        {
+          "sceneId": "p002",
+          "type": "EXPRESSION",
+          "description": "放松、微笑",
+          "file": "source/story/prologue.md",
+          "line": 164,
+          "raw": "EXPRESSION: 男高=放松、微笑"
+        }
+      ],
+      "recipe": "hero_luggage_relaxed",
+      "status": "待制作",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p003",
+      "nodeIndex": 2,
+      "update": false,
+      "original": {
+        "pose": "坐在沙发上",
+        "expression": "得意"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "坐在沙发上",
+        "expression": "得意"
+      },
+      "refs": [
+        {
+          "sceneId": "p003",
+          "type": "POSE",
+          "description": "坐在沙发上",
+          "file": "source/story/prologue.md",
+          "line": 194,
+          "raw": "POSE: 男高=坐在沙发上"
+        },
+        {
+          "sceneId": "p003",
+          "type": "EXPRESSION",
+          "description": "得意",
+          "file": "source/story/prologue.md",
+          "line": 196,
+          "raw": "EXPRESSION: 男高=得意"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p003",
+      "nodeIndex": 7,
+      "update": true,
+      "original": {
+        "expression": "热血、得意"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "坐在沙发上",
+        "expression": "热血、得意"
+      },
+      "refs": [
+        {
+          "sceneId": "p003",
+          "type": "EXPRESSION",
+          "description": "热血、得意",
+          "file": "source/story/prologue.md",
+          "line": 212,
+          "raw": "EXPRESSION: 男高=热血、得意"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p004",
+      "nodeIndex": 2,
+      "update": false,
+      "original": {
+        "pose": "整理行李",
+        "expression": "怀念、轻松"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "整理行李",
+        "expression": "怀念、轻松"
+      },
+      "refs": [
+        {
+          "sceneId": "p004",
+          "type": "POSE",
+          "description": "整理行李",
+          "file": "source/story/prologue.md",
+          "line": 241,
+          "raw": "POSE: 男高=整理行李"
+        },
+        {
+          "sceneId": "p004",
+          "type": "EXPRESSION",
+          "description": "怀念、轻松",
+          "file": "source/story/prologue.md",
+          "line": 242,
+          "raw": "EXPRESSION: 男高=怀念、轻松"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p004",
+      "nodeIndex": 10,
+      "update": true,
+      "original": {
+        "expression": "轻松、准备出门"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "整理行李",
+        "expression": "轻松、准备出门"
+      },
+      "refs": [
+        {
+          "sceneId": "p004",
+          "type": "EXPRESSION",
+          "description": "轻松、准备出门",
+          "file": "source/story/prologue.md",
+          "line": 268,
+          "raw": "EXPRESSION: 男高=轻松、准备出门"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p005",
+      "nodeIndex": 2,
+      "update": false,
+      "original": {
+        "pose": "散步、观察四周",
+        "expression": "好奇"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "散步、观察四周",
+        "expression": "好奇"
+      },
+      "refs": [
+        {
+          "sceneId": "p005",
+          "type": "POSE",
+          "description": "散步、观察四周",
+          "file": "source/story/prologue.md",
+          "line": 289,
+          "raw": "POSE: 男高=散步、观察四周"
+        },
+        {
+          "sceneId": "p005",
+          "type": "EXPRESSION",
+          "description": "好奇",
+          "file": "source/story/prologue.md",
+          "line": 290,
+          "raw": "EXPRESSION: 男高=好奇"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p005",
+      "nodeIndex": 14,
+      "update": true,
+      "original": {
+        "expression": "认真、出头"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "散步、观察四周",
+        "expression": "认真、出头"
+      },
+      "refs": [
+        {
+          "sceneId": "p005",
+          "type": "EXPRESSION",
+          "description": "认真、出头",
+          "file": "source/story/prologue.md",
+          "line": 328,
+          "raw": "SHOW: 男高 expression=认真、出头"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p007",
+      "nodeIndex": 2,
+      "update": false,
+      "original": {
+        "pose": "战斗后喘息",
+        "expression": "疑惑、警惕"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "战斗后喘息",
+        "expression": "疑惑、警惕"
+      },
+      "refs": [
+        {
+          "sceneId": "p007",
+          "type": "POSE",
+          "description": "战斗后喘息",
+          "file": "source/story/prologue.md",
+          "line": 375,
+          "raw": "POSE: 男高=战斗后喘息"
+        },
+        {
+          "sceneId": "p007",
+          "type": "EXPRESSION",
+          "description": "疑惑、警惕",
+          "file": "source/story/prologue.md",
+          "line": 376,
+          "raw": "EXPRESSION: 男高=疑惑、警惕"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p008",
+      "nodeIndex": 2,
+      "update": false,
+      "original": {
+        "pose": "刚跑回家、呼吸急促",
+        "expression": "装作平静"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "刚跑回家、呼吸急促",
+        "expression": "装作平静"
+      },
+      "refs": [
+        {
+          "sceneId": "p008",
+          "type": "POSE",
+          "description": "刚跑回家、呼吸急促",
+          "file": "source/story/prologue.md",
+          "line": 414,
+          "raw": "POSE: 男高=刚跑回家、呼吸急促"
+        },
+        {
+          "sceneId": "p008",
+          "type": "EXPRESSION",
+          "description": "装作平静",
+          "file": "source/story/prologue.md",
+          "line": 416,
+          "raw": "EXPRESSION: 男高=装作平静"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p009",
+      "nodeIndex": 2,
+      "update": false,
+      "original": {
+        "pose": "躺在床上、望向天花板",
+        "expression": "期待、认真"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "bed",
+        "pose": "躺在床上、望向天花板",
+        "expression": "期待、认真"
+      },
+      "refs": [
+        {
+          "sceneId": "p009",
+          "type": "POSE",
+          "description": "躺在床上、望向天花板",
+          "file": "source/story/prologue.md",
+          "line": 469,
+          "raw": "POSE: 男高=躺在床上、望向天花板"
+        },
+        {
+          "sceneId": "p009",
+          "type": "EXPRESSION",
+          "description": "期待、认真",
+          "file": "source/story/prologue.md",
+          "line": 470,
+          "raw": "EXPRESSION: 男高=期待、认真"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a001",
+      "nodeIndex": 2,
+      "update": false,
+      "original": {
+        "pose": "躺在床上、刚醒",
+        "expression": "困倦、慌张"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "躺在床上、刚醒",
+        "expression": "困倦、慌张"
+      },
+      "refs": [
+        {
+          "sceneId": "a001",
+          "type": "POSE",
+          "description": "躺在床上、刚醒",
+          "file": "source/story/act1.md",
+          "line": 175,
+          "raw": "POSE: 男高=躺在床上、刚醒"
+        },
+        {
+          "sceneId": "a001",
+          "type": "EXPRESSION",
+          "description": "困倦、慌张",
+          "file": "source/story/act1.md",
+          "line": 177,
+          "raw": "EXPRESSION: 男高=困倦、慌张"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a001",
+      "nodeIndex": 9,
+      "update": true,
+      "original": {
+        "expression": "自信、急着出门"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "躺在床上、刚醒",
+        "expression": "自信、急着出门"
+      },
+      "refs": [
+        {
+          "sceneId": "a001",
+          "type": "EXPRESSION",
+          "description": "自信、急着出门",
+          "file": "source/story/act1.md",
+          "line": 200,
+          "raw": "EXPRESSION: 男高=自信、急着出门"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a002",
+      "nodeIndex": 2,
+      "update": false,
+      "original": {
+        "pose": "飞奔、手里攥着水煮蛋",
+        "expression": "着急"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "飞奔、手里攥着水煮蛋",
+        "expression": "着急"
+      },
+      "refs": [
+        {
+          "sceneId": "a002",
+          "type": "POSE",
+          "description": "飞奔、手里攥着水煮蛋",
+          "file": "source/story/act1.md",
+          "line": 237,
+          "raw": "POSE: 男高=飞奔、手里攥着水煮蛋"
+        },
+        {
+          "sceneId": "a002",
+          "type": "EXPRESSION",
+          "description": "着急",
+          "file": "source/story/act1.md",
+          "line": 238,
+          "raw": "EXPRESSION: 男高=着急"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a003",
+      "nodeIndex": 2,
+      "update": false,
+      "original": {
+        "pose": "叼着面包、跑进校门",
+        "expression": "匆忙"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "叼着面包、跑进校门",
+        "expression": "匆忙"
+      },
+      "refs": [
+        {
+          "sceneId": "a003",
+          "type": "POSE",
+          "description": "叼着面包、跑进校门",
+          "file": "source/story/act1.md",
+          "line": 280,
+          "raw": "POSE: 男高=叼着面包、跑进校门"
+        },
+        {
+          "sceneId": "a003",
+          "type": "EXPRESSION",
+          "description": "匆忙",
+          "file": "source/story/act1.md",
+          "line": 281,
+          "raw": "EXPRESSION: 男高=匆忙"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a004",
+      "nodeIndex": 2,
+      "update": false,
+      "original": {
+        "pose": "站在讲台前、拿着白板笔",
+        "expression": "自信、兴奋"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "站在讲台前、拿着白板笔",
+        "expression": "自信、兴奋"
+      },
+      "refs": [
+        {
+          "sceneId": "a004",
+          "type": "POSE",
+          "description": "站在讲台前、拿着白板笔",
+          "file": "source/story/act1.md",
+          "line": 350,
+          "raw": "POSE: 男高=站在讲台前、拿着白板笔"
+        },
+        {
+          "sceneId": "a004",
+          "type": "EXPRESSION",
+          "description": "自信、兴奋",
+          "file": "source/story/act1.md",
+          "line": 351,
+          "raw": "EXPRESSION: 男高=自信、兴奋"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a005",
+      "nodeIndex": 3,
+      "update": false,
+      "original": {
+        "pose": "拎着书包准备落座",
+        "expression": "期待"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "拎着书包准备落座",
+        "expression": "期待"
+      },
+      "refs": [
+        {
+          "sceneId": "a005",
+          "type": "POSE",
+          "description": "拎着书包准备落座",
+          "file": "source/story/act1.md",
+          "line": 414,
+          "raw": "POSE: 男高=拎着书包准备落座"
+        },
+        {
+          "sceneId": "a005",
+          "type": "EXPRESSION",
+          "description": "期待",
+          "file": "source/story/act1.md",
+          "line": 415,
+          "raw": "EXPRESSION: 男高=期待"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a006",
+      "nodeIndex": 2,
+      "update": false,
+      "original": {
+        "pose": "准备伸懒腰",
+        "expression": "疑惑"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "准备伸懒腰",
+        "expression": "疑惑"
+      },
+      "refs": [
+        {
+          "sceneId": "a006",
+          "type": "POSE",
+          "description": "准备伸懒腰",
+          "file": "source/story/act1.md",
+          "line": 469,
+          "raw": "POSE: 男高=准备伸懒腰"
+        },
+        {
+          "sceneId": "a006",
+          "type": "EXPRESSION",
+          "description": "疑惑",
+          "file": "source/story/act1.md",
+          "line": 471,
+          "raw": "EXPRESSION: 男高=疑惑"
+        }
+      ],
+      "recipe": "hero_prepare_puzzled",
+      "status": "待制作",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a008",
+      "nodeIndex": 2,
+      "update": false,
+      "original": {
+        "pose": "自然跟随",
+        "expression": "好奇、友善"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "自然跟随",
+        "expression": "好奇、友善"
+      },
+      "refs": [
+        {
+          "sceneId": "a008",
+          "type": "POSE",
+          "description": "自然跟随",
+          "file": "source/story/act1.md",
+          "line": 587,
+          "raw": "POSE: 男高=自然跟随"
+        },
+        {
+          "sceneId": "a008",
+          "type": "EXPRESSION",
+          "description": "好奇、友善",
+          "file": "source/story/act1.md",
+          "line": 589,
+          "raw": "EXPRESSION: 男高=好奇、友善"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a009",
+      "nodeIndex": 2,
+      "update": false,
+      "original": {
+        "pose": "停步观察围栏",
+        "expression": "好奇"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "停步观察围栏",
+        "expression": "好奇"
+      },
+      "refs": [
+        {
+          "sceneId": "a009",
+          "type": "POSE",
+          "description": "停步观察围栏",
+          "file": "source/story/act1.md",
+          "line": 664,
+          "raw": "POSE: 男高=停步观察围栏"
+        },
+        {
+          "sceneId": "a009",
+          "type": "EXPRESSION",
+          "description": "好奇",
+          "file": "source/story/act1.md",
+          "line": 666,
+          "raw": "EXPRESSION: 男高=好奇"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a011",
+      "nodeIndex": 2,
+      "update": false,
+      "original": {
+        "pose": "推开铁皮小门、准备进入",
+        "expression": "兴奋、好奇"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "推开铁皮小门、准备进入",
+        "expression": "兴奋、好奇"
+      },
+      "refs": [
+        {
+          "sceneId": "a011",
+          "type": "POSE",
+          "description": "推开铁皮小门、准备进入",
+          "file": "source/story/act1.md",
+          "line": 728,
+          "raw": "POSE: 男高=推开铁皮小门、准备进入"
+        },
+        {
+          "sceneId": "a011",
+          "type": "EXPRESSION",
+          "description": "兴奋、好奇",
+          "file": "source/story/act1.md",
+          "line": 730,
+          "raw": "EXPRESSION: 男高=兴奋、好奇"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a011",
+      "nodeIndex": 20,
+      "update": true,
+      "original": {
+        "expression": "被吸引、犹豫"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "推开铁皮小门、准备进入",
+        "expression": "被吸引、犹豫"
+      },
+      "refs": [
+        {
+          "sceneId": "a011",
+          "type": "EXPRESSION",
+          "description": "被吸引、犹豫",
+          "file": "source/story/act1.md",
+          "line": 793,
+          "raw": "EXPRESSION: 男高=被吸引、犹豫"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a013",
+      "nodeIndex": 2,
+      "update": false,
+      "original": {
+        "pose": "持剑、准备保护虚拟主播",
+        "expression": "震惊、警戒"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "bottom_center",
+        "pose": "持剑、准备保护虚拟主播",
+        "expression": "震惊、警戒"
+      },
+      "refs": [
+        {
+          "sceneId": "a013",
+          "type": "POSE",
+          "description": "持剑、准备保护虚拟主播",
+          "file": "source/story/act1.md",
+          "line": 881,
+          "raw": "POSE: 男高=持剑、准备保护虚拟主播"
+        },
+        {
+          "sceneId": "a013",
+          "type": "EXPRESSION",
+          "description": "震惊、警戒",
+          "file": "source/story/act1.md",
+          "line": 884,
+          "raw": "EXPRESSION: 男高=震惊、警戒"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a014",
+      "nodeIndex": 6,
+      "update": false,
+      "original": {
+        "pose": "战斗后疲惫、扶住虚拟主播",
+        "expression": "麻烦、担心"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "战斗后疲惫、扶住虚拟主播",
+        "expression": "麻烦、担心"
+      },
+      "refs": [
+        {
+          "sceneId": "a014",
+          "type": "POSE",
+          "description": "战斗后疲惫、扶住虚拟主播",
+          "file": "source/story/act1.md",
+          "line": 937,
+          "raw": "POSE: 男高=战斗后疲惫、扶住虚拟主播"
+        },
+        {
+          "sceneId": "a014",
+          "type": "EXPRESSION",
+          "description": "麻烦、担心",
+          "file": "source/story/act1.md",
+          "line": 939,
+          "raw": "EXPRESSION: 男高=麻烦、担心"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a015",
+      "nodeIndex": 2,
+      "update": false,
+      "original": {
+        "pose": "抱着虚拟主播、疲惫",
+        "expression": "尴尬、担心"
+      },
+      "inheritedCombination": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "抱着虚拟主播、疲惫",
+        "expression": "尴尬、担心"
+      },
+      "refs": [
+        {
+          "sceneId": "a015",
+          "type": "POSE",
+          "description": "抱着虚拟主播、疲惫",
+          "file": "source/story/act1.md",
+          "line": 968,
+          "raw": "POSE: 男高=抱着虚拟主播、疲惫"
+        },
+        {
+          "sceneId": "a015",
+          "type": "EXPRESSION",
+          "description": "尴尬、担心",
+          "file": "source/story/act1.md",
+          "line": 970,
+          "raw": "EXPRESSION: 男高=尴尬、担心"
+        }
+      ],
+      "recipe": null,
+      "status": "本轮范围外，静态回退",
+      "visualApproved": false,
+      "fallback": "public/assets/portraits/hero.png（通用原立绘，非该姿态完成）"
+    }
+  ],
+  "sceneEntries": [
+    {
+      "actId": "prologue",
+      "sceneId": "p001",
+      "inherited": {}
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p002",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "携带行李、站立",
+        "expression": "紧张、期待"
+      }
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p003",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "携带行李、站立",
+        "expression": "放松、微笑"
+      }
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p004",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "坐在沙发上",
+        "expression": "热血、得意"
+      }
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p005",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "整理行李",
+        "expression": "轻松、准备出门"
+      }
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p006",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "散步、观察四周",
+        "expression": "认真、出头"
+      }
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p007",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "散步、观察四周",
+        "expression": "认真、出头"
+      }
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p008",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "战斗后喘息",
+        "expression": "疑惑、警惕"
+      }
+    },
+    {
+      "actId": "prologue",
+      "sceneId": "p009",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "刚跑回家、呼吸急促",
+        "expression": "装作平静"
+      }
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a001",
+      "inherited": {}
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a002",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "躺在床上、刚醒",
+        "expression": "自信、急着出门"
+      }
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a003",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "飞奔、手里攥着水煮蛋",
+        "expression": "着急"
+      }
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a004",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "叼着面包、跑进校门",
+        "expression": "匆忙"
+      }
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a005",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "站在讲台前、拿着白板笔",
+        "expression": "自信、兴奋"
+      }
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a006",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "拎着书包准备落座",
+        "expression": "期待"
+      }
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "准备伸懒腰",
+        "expression": "疑惑"
+      }
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007_todo_thief",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "准备伸懒腰",
+        "expression": "疑惑"
+      }
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007_todo_villain",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "准备伸懒腰",
+        "expression": "疑惑"
+      }
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a007_random_unavailable",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "准备伸懒腰",
+        "expression": "疑惑"
+      }
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a008",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "准备伸懒腰",
+        "expression": "疑惑"
+      }
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a009",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "自然跟随",
+        "expression": "好奇、友善"
+      }
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a010",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "停步观察围栏",
+        "expression": "好奇"
+      }
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a011",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "停步观察围栏",
+        "expression": "好奇"
+      }
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a012",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "推开铁皮小门、准备进入",
+        "expression": "被吸引、犹豫"
+      }
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a013",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "left",
+        "pose": "推开铁皮小门、准备进入",
+        "expression": "被吸引、犹豫"
+      }
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a014",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "bottom_center",
+        "pose": "持剑、准备保护虚拟主播",
+        "expression": "震惊、警戒"
+      }
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a015",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "战斗后疲惫、扶住虚拟主播",
+        "expression": "麻烦、担心"
+      }
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a016",
+      "inherited": {
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "pose": "抱着虚拟主播、疲惫",
+        "expression": "尴尬、担心"
+      }
+    }
+  ]
+}

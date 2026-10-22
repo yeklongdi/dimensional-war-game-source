@@ -1,0 +1,123 @@
+{
+  "base": {
+    "images": [
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-pages/assets/portraits/hero-layered-v1/hair-back.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-pages/assets/portraits/hero-layered-v1/body.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-pages/assets/portraits/hero-layered-v1/upper-left.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-pages/assets/portraits/hero-layered-v1/lower-left.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-pages/assets/portraits/hero-layered-v1/upper-right.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-pages/assets/portraits/hero-layered-v1/lower-right.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-pages/assets/portraits/hero-layered-v1/head.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-pages/assets/portraits/hero-layered-v1/eyes-calm.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-pages/assets/portraits/hero-layered-v1/eyes-half-v2.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-pages/assets/portraits/hero-layered-v1/eyes-closed-v2.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-pages/assets/portraits/hero-layered-v1/mouth-calm.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-pages/assets/portraits/hero-layered-v1/mouth-open.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-pages/assets/portraits/hero-layered-v1/hair-front.png",
+        "width": 1024
+      }
+    ],
+    "layers": 10,
+    "portraits": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "layered"
+      }
+    ]
+  },
+  "dialogue": {
+    "mouth": "1",
+    "talking": "true"
+  },
+  "inner": {
+    "mouth": "0",
+    "talking": "false"
+  },
+  "failure": {
+    "images": [
+      {
+        "loaded": true,
+        "src": "/dimensional-war-game-pages/assets/portraits/hero.png"
+      }
+    ],
+    "notes": "visual:男高:mapping:普通站姿:默认平静: 男高分层 hero_stand_calm 仍为待验收候选，正式剧情保留静态回退。\nvisual:男高:mapping:普通站姿:默认平静: 男高分层 hero_stand_calm 仍为待验收候选，正式剧情保留静态回退。\nvisual:男高:layer-load:hero_stand_calm: hero_stand_calm 分层加载失败，保留旧画面并尝试静态回退。Error: 受控单层失败，不标坏原静态 asset\n",
+    "visual": "static"
+  },
+  "duringDelay": {
+    "recipe": "hero_stand_calm",
+    "visual": "layered"
+  },
+  "delayedFinal": {
+    "visual": "layered",
+    "recipe": "hero_stand_calm"
+  },
+  "lifecycle": {
+    "before": {
+      "frames": "85",
+      "stages": 1
+    },
+    "afterDispose": {
+      "frames": "85",
+      "stages": 1
+    },
+    "afterLateInput": {
+      "frames": "85",
+      "stages": 1
+    }
+  }
+}

@@ -1,0 +1,33 @@
+本轮实际命令结果摘要（不是终端逐字转录）
+
+工作目录：E:\笔记\次元战争设定\游戏文件
+最终代码检查：2026-10-22
+
+npm run typecheck
+退出码：0。TypeScript strict 检查通过。
+
+npm test
+退出码：0。
+Test Files 22 passed (22)
+Tests 330 passed (330)
+保留开工原20文件292项测试；新增2文件38项。
+最后一次运行开始时间：09:03:27，Duration 17.84s。
+
+npm run build
+退出码：0。
+70 modules transformed.
+dist/index.html 0.43 kB
+dist/assets/index-4VFJ2cHJ.css 16.10 kB
+dist/assets/index-LFrfNzcP.js 153.59 kB
+built in 2.80s
+
+node tools/audit-hero-presentation.mjs
+退出码：0。19姿态／24表情／25次更新；只写独立视觉盘点，不运行剧情导出。
+
+node tools/verify-presentation.mjs
+退出码：0。274个保护文件一致；4份source、3份剧情JSON、原20个测试文件包含在内。
+25个主场景；主线160条自动记录及1条独立正常重走补录，与历史161段正文一致。
+两战除已在移动规划阶段改变过的教学文案外，完整战斗日志与M3记录一致。
+
+源码与工具单文件均不超过400行；依赖配置未修改，无新增运行时依赖。
+没有运行export-story，没有提交、推送或部署。

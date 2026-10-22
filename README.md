@@ -1,16 +1,28 @@
 # 次元战争 · Web 垂直切片
 
+## 当前版本：对话窗口与原生分层立绘
+
+2026-10-22已接入统一底部180px半透明窗口、稳定演员实例、显式视觉映射、整套图片预解码、过期请求保护和独立眨眼／呼吸／口型／动作通道。四类正文均在底部，取消中心人物放大与金色描边；原剧情、战斗、大地图与存档保持原行为。
+
+**程序接入通过；男高视觉样板尚未通过。** 已用内置imagegen制作普通站姿母版、分层候选和眨眼修订，但手臂注册／接缝、衣摆及其余四个组合仍未交付合格素材。正式剧情的五个配方均未启用，使用原静态回退；不把旧整张PNG或样板占位称作动态样板完成。19种姿态、24种表情、25次更新已完整[盘点并记录原文行号](docs/verification/dialogue-presentation/hero-inventory.md)。
+
+本轮程序新增38项针对性测试，当前22个测试文件、330项通过，原292项断言保留，类型检查和构建通过。2026-10-22按维护者要求，将这一版本的本地正式工程、原始剧本副本、正式数据、素材、测试和文档统一到公开仓库 `yeklongdi/dimensional-war-game-source`，由同仓库工作流构建并部署。详细程序验收、视觉缺口及截图见[独立验收记录](docs/dialogue-presentation-verification.md)，接口见[实施规格](docs/dialogue-presentation-spec.md)，参考证据边界见[研究说明](docs/senrenbanka-presentation-study.md)。历史验收中“仅本地、未部署”的表述保留当时事实，仓库和部署的当前安排见[仓库合并说明](docs/repository-consolidation.md)。
+
+本地运行`npm run dev`后可打开`/tests/portrait-presentation.html`检查候选、固定眨眼／口型时刻、延迟、受控失败及释放。该页只供开发服务器使用，不是正式剧情节点，也不读写正式存档。普通游戏入口及七关顺序不变。
+
+本轮保留的生产预览：[新档入口127.0.0.1:43849](http://127.0.0.1:43849/?seed=0)。开发样板：[分层候选页](http://127.0.0.1:43847/tests/portrait-presentation.html)。端口只在对应服务器运行期间有效；生产预览可用`npm run preview -- --host 127.0.0.1 --port 43849 --strictPort`重启。验收档与这个新入口是不同origin，没有清理用户原存档。
+
 ## GitHub Pages 正式体验
 
-正式网站：[直接游玩次元战争](https://yeklongdi.github.io/dimensional-war-game-pages/)，无需 GitHub 登录。
+正式网站：[直接游玩次元战争](https://yeklongdi.github.io/dimensional-war-game-source/)，无需 GitHub 登录。
 
-工程与原始文档保存在私有仓库 `yeklongdi/dimensional-war-game`；公开仓库 `yeklongdi/dimensional-war-game-pages` 仅保存 8 个静态运行文件、部署工作流与简短说明。私有仓库 Actions 使用 `npm ci` 和现有脚本构建检查；通过已登录的 GitHub CLI 同步成品后，公开仓库的 main push 自动部署，不向 Actions 添加跨仓库凭据。
+源码、正式内容和部署统一在[本仓库](https://github.com/yeklongdi/dimensional-war-game-source)。推送 `main` 后，GitHub Actions 自动执行 `npm ci`、类型检查、全部测试与项目路径构建，再发布 `dist/` 到 GitHub Pages；Pull Request 只做检查与构建。无需跨仓库同步或跨仓库凭据。此前的私有工程仓库和单独网页仓库在迁移验证后删除，旧网页地址不再作为正式入口。
 
-本次部署检查为20个测试文件、292项通过（保留原285项，新增7项素材路径检查）。已在线验证菜单、地图、p001–p006、序幕战斗移动规划、独立调试入口及刷新继续；没有在线完整通关七关或打完两战。具体版本、验收证据与更新步骤见 [GitHub Pages 部署记录](docs/github-pages-deployment.md)。
+2026-10-21旧站部署检查为20个测试文件、292项通过；其版本与验收证据保留在[历史部署记录](docs/github-pages-deployment.md)，其中旧仓库地址和跨仓库更新步骤已由本次[单仓库部署流程](docs/repository-consolidation.md)替代。当前完整工程为22个测试文件、330项；分层男高美术仍未通过，不因本次发布而启用。
 
 localhost 与正式网站的存档相互独立，不会自动迁移或跨设备同步。两首 WAV 保留原音质，较大的音乐文件可能使首次加载变慢。
 
-当前已完成 M0–M4、「太阳市大地图分关选关」及「战棋移动路线、终点虚影与拐点规划」。正常流程为：主菜单 → 太阳市彩绘地图 → 地点及右侧关卡面板 → 开始／继续本关 → 本关完成直接返回地图。七关顺序覆盖序幕与第一幕的 25 个主场景，两场真实战斗保留。
+当前已完成M0–M4、太阳市大地图分关、移动路线规划及本轮对话窗口／分层程序接入；动态男高美术验收尚未完成。正常流程为：主菜单 → 太阳市彩绘地图 → 地点及右侧关卡面板 → 开始／继续本关 → 本关完成直接返回地图。七关顺序覆盖序幕与第一幕的25个主场景，两场真实战斗保留。
 
 工程目录：`E:\笔记\次元战争设定\游戏文件`。任务依据为 `docs/01-任务书.md` §12 与 `docs/map-selection-spec.md`；M4 三卡、整幕重玩和 v1 唯一格式已被替代，历史验收不改写。
 
@@ -21,6 +33,7 @@ localhost 与正式网站的存档相互独立，不会自动迁移或跨设备�
 提供撤回一点、清空路线和取消移动。Enter／空格在格子上只选点，Backspace撤回，Esc取消；离开棋盘只清悬停段。确认后显示真实剩余路线，等待时保留，到达或失能时清除。敌人移动表现不变。
 
 - 玩法说明：[战棋移动规划](../游戏机制/战棋移动规划.md)。
+- 上述玩法说明是本地笔记库链接；仓库内可独立阅读的实施规格为 [movement-preview-spec.md](docs/movement-preview-spec.md)。
 - 实施依据：[任务书 §13](docs/01-任务书.md#13-已确认待实现战棋移动路线与拐点规划)、[movement-preview-spec.md](docs/movement-preview-spec.md)。
 - 最终决定与理由：[decisions-movement-preview.md](docs/decisions-movement-preview.md)。
 
@@ -37,7 +50,7 @@ npm run dev
 
 打开终端输出的地址；默认通常为 `http://localhost:5173/`。正式流程可附加 `?seed=0` 复现战斗。点击、空格、回车推进；文字未显示完时首次操作只补全，下一次才推进。按 `~` 查看开发记录。
 
-本轮生产预览的新档体验入口：[localhost:43842](http://localhost:43842/?seed=0)；直接试移动规划：[独立调试场](http://localhost:43842/?debug=battle&seed=42)。正式验收使用`127.0.0.1:43842`，已全部完成；`localhost:43842`是另一origin，交付时保留在未开始的新档菜单。端口仅在预览服务器运行时有效，可用`npm run preview -- --host 127.0.0.1 --port 43842 --strictPort`重启。
+移动规划阶段曾使用`localhost:43842`作为体验入口，`127.0.0.1:43842`作为已通关验收origin；这是历史交付地址，只有重启该端口后才有效。本轮对话改造的当前预览见本页顶部43849入口，不覆盖或清除旧origin进度。
 
 ```powershell
 npm run typecheck
@@ -46,7 +59,7 @@ npm run build
 npm run preview
 ```
 
-当前验收通过19个测试文件、285项测试及生产构建。移动规划证据见`docs/movement-preview-verification.md`；先前地图版本17文件242项的历史验收保留在`docs/map-selection-verification.md`。仅三个固定开发依赖：Vite 8.3.4、TypeScript 5.9.3、Vitest 5.0.5；无运行时依赖。
+移动规划阶段为19个测试文件、285项通过；部署阶段为20文件292项；当前本地版本为22文件330项及生产构建通过。各阶段验收分别保留，不用历史数字替代本轮结果。仅三个固定开发依赖：Vite 8.3.4、TypeScript 5.9.3、Vitest 5.0.5；无运行时依赖。
 
 ## 地图与七关
 
@@ -100,3 +113,7 @@ npm run preview
 source 全部原文、三份剧情 JSON、导出器、自动问题清单、战斗规则／数值／地图／AI、依赖配置及工程外正式设定保持原样。没有运行剧情导出，也没有补写对白或开放其他路线。原剧情数据仍为序幕9场、第一幕19场，其中3个未完成路线场景保留但不开放。
 
 现有两张立绘、两首 BGM 保留原绑定。其余角色、场景、音频、表情差分、幻象动画及 CG 沿用原缺口和去重警告；本轮新增的彩绘地图不替代剧情背景。M0 的158条内容诊断不清零。当前没有第二幕、设置页、多档、手机适配、自动战斗或剧情跳过。
+
+## 许可范围
+
+程序源码、构建配置、测试和技术文档沿用 [MIT](LICENSE)。正式剧本、角色与关卡内容、图片、音乐、参考截图和其他游戏资源不自动适用程序的 MIT 许可；原有权利和来源说明继续保留，详见[资源与第三方说明](THIRD_PARTY_NOTICES.md)。公开阅读与游玩不代表新增了这些内容的再授权。

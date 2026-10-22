@@ -1,0 +1,322 @@
+[
+  {
+    "file": "body.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "solidBounds": [
+      233,
+      301,
+      823,
+      1483
+    ],
+    "transparentCorner": true,
+    "sha256": "2f40311d2843f73407f8e18e8c704c589b24d913a8413e355dd80c73702c38c0"
+  },
+  {
+    "file": "eyes-calm.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "solidBounds": [
+      407,
+      251,
+      611,
+      378
+    ],
+    "transparentCorner": true,
+    "sha256": "a3df3467a891a986ceb7fe93fbf4f98498390a15c4836b404fc0ed8d3409b23f"
+  },
+  {
+    "file": "eyes-closed-v2.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "solidBounds": [
+      408,
+      251,
+      610,
+      375
+    ],
+    "transparentCorner": true,
+    "sha256": "510bc67b5bf9a03becb0ae1c1cd9b0f9cfd19385081ced666a8720e2f9591e8f"
+  },
+  {
+    "file": "eyes-closed.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "solidBounds": [
+      395,
+      386,
+      631,
+      522
+    ],
+    "transparentCorner": true,
+    "sha256": "bc3371e148e12d24f63b41a810a7135d28a3587bf653f10384c9cd780ee50e05"
+  },
+  {
+    "file": "eyes-half-v2.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "solidBounds": [
+      404,
+      251,
+      611,
+      375
+    ],
+    "transparentCorner": false,
+    "sha256": "c3ee5fa93a70d6a49a4a8a2ad66058bdc24e1cdd470108587f045889d2c0aa5a"
+  },
+  {
+    "file": "eyes-half.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "solidBounds": [
+      390,
+      277,
+      639,
+      428
+    ],
+    "transparentCorner": true,
+    "sha256": "0939ebf9ac1444b9a277958b3f685ebe80419b3385b76ee492886b9c80fa41eb"
+  },
+  {
+    "file": "hair-back.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "solidBounds": [
+      394,
+      65,
+      604,
+      314
+    ],
+    "transparentCorner": true,
+    "sha256": "b6452abdf66eb702c8f415e0d7a171b94a4a906db1343335436d312f34f92a6d"
+  },
+  {
+    "file": "hair-front.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "solidBounds": [
+      396,
+      66,
+      624,
+      288
+    ],
+    "transparentCorner": true,
+    "sha256": "3a2a332c27aa918381c278be8dd899a227c2390c081d2befe21c5060de1c491c"
+  },
+  {
+    "file": "head.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "solidBounds": [
+      399,
+      172,
+      585,
+      424
+    ],
+    "transparentCorner": true,
+    "sha256": "e78beede9d5c5a84f37b334996a056dde750d8fe00fa2fe077c4045a1beffc32"
+  },
+  {
+    "file": "lower-left.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "solidBounds": [
+      241,
+      635,
+      389,
+      1089
+    ],
+    "transparentCorner": true,
+    "sha256": "8e2516c687c0f037009a289cea0bb32a4ca7656cc713330782117c25bce312a5"
+  },
+  {
+    "file": "lower-right.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "solidBounds": [
+      588,
+      490,
+      802,
+      1094
+    ],
+    "transparentCorner": true,
+    "sha256": "f3e0500d8a66cff6f0fc9bbe6f7222c6991858e87570af4dc57168c93caf6d60"
+  },
+  {
+    "file": "master-reference.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "solidBounds": [
+      233,
+      64,
+      820,
+      1510
+    ],
+    "transparentCorner": true,
+    "sha256": "4a83585139ce20763c310681cf4f663776ab55ec9e486df4e4f9525a3d5111e7"
+  },
+  {
+    "file": "mouth-calm.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      252
+    ],
+    "solidBounds": [
+      491,
+      323,
+      549,
+      336
+    ],
+    "transparentCorner": true,
+    "sha256": "194668a5847c7bea573c7185d828c1fdf7bbc6793232f5f3ffd4f2111bf0d25e"
+  },
+  {
+    "file": "mouth-open.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "solidBounds": [
+      472,
+      318,
+      537,
+      356
+    ],
+    "transparentCorner": true,
+    "sha256": "6e8e72fb0b9f681c7436d385142278142b58775b55e570df059b2c378189f996"
+  },
+  {
+    "file": "upper-left.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "solidBounds": [
+      224,
+      365,
+      456,
+      839
+    ],
+    "transparentCorner": true,
+    "sha256": "d245f28e0efaba7bde06ff49fd5268e4787ec12a2c1b24808e0ce723b42abe54"
+  },
+  {
+    "file": "upper-right.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha": [
+      0,
+      254
+    ],
+    "solidBounds": [
+      551,
+      526,
+      759,
+      934
+    ],
+    "transparentCorner": true,
+    "sha256": "4ffd09adb5df66fe5cd863b72d049bde6fe6bf5aba9222e47652c0acbd1ec125"
+  }
+]

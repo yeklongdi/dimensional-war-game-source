@@ -1,0 +1,15 @@
+{
+  "url": "http://127.0.0.1:43849/?seed=0",
+  "state": {
+    "bgmId": "",
+    "navToken": "1:0:menu",
+    "saveJson": "",
+    "saveRequest": "0",
+    "saveStatus": "empty",
+    "screen": "menu",
+    "session": "1",
+    "testid": "main-menu"
+  },
+  "errors": [],
+  "note": "最终生产构建，本origin为新档菜单；本轮未部署网站。"
+}

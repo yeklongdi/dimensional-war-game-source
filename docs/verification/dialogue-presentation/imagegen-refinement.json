@@ -1,0 +1,16 @@
+[
+  {
+    "id": "eyes-half-v2",
+    "file": "public/assets/portraits/hero-layered-v1/eyes-half-v2.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the tiny transparent eyes/nose feature overlay of our pixel-art male character. This is already a 1024x1536 animation layer. Keep the canvas EXACTLY the same and preserve ALL original features' positions, dimensions and transparent empty space. Do NOT zoom, recenter, move, enlarge or change nose/eyebrows. Change ONLY the eyelids. No skin, head, hair or other body parts. No glow. Transparent alpha outside original feature marks. Partially lower upper eyelids to cover half the pupils for a HALF-CLOSED blink frame, not an angry open-eye expression. Keep eye width and placement exactly unchanged.",
+    "mode": "内置 image_gen",
+    "status": "眨眼修订候选，未通过整组视觉验收"
+  },
+  {
+    "id": "eyes-closed-v2",
+    "file": "public/assets/portraits/hero-layered-v1/eyes-closed-v2.png",
+    "prompt": "Use case: precise-object-edit. Edit target is the tiny transparent eyes/nose feature overlay of our pixel-art male character. This is already a 1024x1536 animation layer. Keep the canvas EXACTLY the same and preserve ALL original features' positions, dimensions and transparent empty space. Do NOT zoom, recenter, move, enlarge or change nose/eyebrows. Change ONLY the eyelids. No skin, head, hair or other body parts. No glow. Transparent alpha outside original feature marks. Completely close BOTH eyes: replace open white eye/pupils with CLOSED thin eyelid lines at their existing y location. No visible whites or pupils. Keep original thick eyebrows and nose completely unchanged.",
+    "mode": "内置 image_gen",
+    "status": "眨眼修订候选，未通过整组视觉验收"
+  }
+]

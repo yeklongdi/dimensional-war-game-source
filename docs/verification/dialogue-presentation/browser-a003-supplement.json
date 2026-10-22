@@ -1,0 +1,23 @@
+{
+  "origin": "http://localhost:43847/?seed=0",
+  "method": "新档正常按钮、键盘和棋格，通关前三关后停在a003节点6，等待逐字完成；未注入状态。",
+  "stage": {
+    "actId": "act1",
+    "bgmId": "bgm_school_morning",
+    "navToken": "9:8:story",
+    "nodeIndex": "6",
+    "optionIndex": "",
+    "optionNodeIndex": "",
+    "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_prologue_p006_01\":true,\"flag_prologue_p007_01\":true,\"flag_prologue_p009_01\":true,\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_01\",\"sceneId\":\"a003\"},\"savedAt\":1792631393884}",
+    "saveRequest": "17",
+    "saveStatus": "saved",
+    "sceneId": "a003",
+    "session": "9",
+    "testid": "story-stage",
+    "typingComplete": "true",
+    "waitKind": "text",
+    "waitToken": "9:18"
+  },
+  "text": "抱歉啦！老师！下次我会注意的！",
+  "textClass": "text-box text-dialogue"
+}
