@@ -83,7 +83,7 @@ export class BattleView {
       mode, rngDraws: String(state.rng.draws), fixtureDone: String(fixtureDone) });
     this.stage.dataset.battleId = state.id;
     if (formal) Object.assign(this.stage.dataset, { actId: game.actId, sceneId: game.sceneId, returnNodeIndex: String(game.nodeIndex), storyWaitToken: game.waiting?.token ?? '' });
-    const title = element('div', 'battle-title'); title.append(element('h1', '', formal ? state.title : fixture ? '内部测试 · 借机反应' : 'M2 · 战棋调试场'), element('p', '', formal ? `第 ${state.round} 轮${state.pendingRoll?.kind === 'initiative' ? ' · 先攻待确认' : ''}` : `${fixture ? '固定测试骰序' : `seed ${state.seed}`} · 骰子 ${state.rng.draws} 次 · 第 ${state.round} 轮`));
+    const title = element('div', 'battle-title'); title.append(element('h1', '', formal ? state.title : fixture ? '借机反应演示' : '战棋规则演示'), element('p', '', formal ? `第 ${state.round} 轮${state.pendingRoll?.kind === 'initiative' ? ' · 先攻待确认' : ''}` : `${fixture ? '固定测试骰序' : `seed ${state.seed}`} · 骰子 ${state.rng.draws} 次 · 第 ${state.round} 轮`));
     const order = element('div', 'initiative-strip');
     for (const entry of state.order) {
       const unit = state.units.find(item => item.id === entry.actor)!;

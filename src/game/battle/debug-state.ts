@@ -11,7 +11,7 @@ export function startDebugGame(seed: number, run = 1, fixture = false): GameStat
   const state = emptyState(run);
   return { ...state, screen: 'battle-debug', battleMode: 'idle', battle: createBattle(debugBattle, combatants,
     fixture ? sequence([1, 20, 1, 13, 2]) : seeded(seed), run,
-    fixture ? { hero: { col: 1, row: 2 }, black_a: { col: 2, row: 2 }, black_b: { col: 6, row: 4 } } : undefined) };
+    fixture ? { hero: { col: 1, row: 2 }, sample_target_a: { col: 2, row: 2 }, sample_target_b: { col: 6, row: 4 } } : undefined) };
 }
 export type DebugAction = BattleAction;
 export function reduceDebugGame(state: GameState, action: DebugAction, fixture = false): { state: GameState; rejectedReason?: string } {

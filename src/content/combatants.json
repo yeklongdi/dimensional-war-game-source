@@ -7,14 +7,14 @@
     "features": ["martial_arts", "death_saves"], "resistances": [], "immunities": [], "vulnerabilities": []
   },
   {
-    "id": "black_a", "name": "Sample target A", "team": "enemy",
+    "id": "sample_target_a", "name": "Sample target A", "team": "enemy",
     "abilities": { "str": 10, "dex": 12, "con": 12, "int": 10, "wis": 10, "cha": 10 },
     "ac": 12, "maxHp": 8, "speed": 25,
     "attacks": [{ "id": "sample_strike", "name": "Sample strike", "kind": "melee", "bonus": 3, "damage": "1d4+1", "damageType": "bludgeoning", "reach": 1 }],
     "features": [], "resistances": [], "immunities": [], "vulnerabilities": []
   },
   {
-    "id": "black_b", "name": "Sample target B", "team": "enemy",
+    "id": "sample_target_b", "name": "Sample target B", "team": "enemy",
     "abilities": { "str": 10, "dex": 12, "con": 12, "int": 10, "wis": 10, "cha": 10 },
     "ac": 12, "maxHp": 8, "speed": 25,
     "attacks": [{ "id": "sample_strike", "name": "Sample strike", "kind": "melee", "bonus": 3, "damage": "1d4+1", "damageType": "bludgeoning", "reach": 1 }],

@@ -33,7 +33,7 @@ export function mountBattleDebug(root: HTMLElement, search: URLSearchParams, fix
     if (battle.pendingMove) command = { kind: 'step' };
     else if (battle.awaitingEnd) command = { kind: 'advance-turn' };
     else if (fixture) {
-      if (!fixtureStarted) { command = { kind: 'move', actor: 'black_a', to: { col: 4, row: 3 } }; origin = 'ai'; startsFixture = true; }
+      if (!fixtureStarted) { command = { kind: 'move', actor: 'sample_target_a', to: { col: 4, row: 3 } }; origin = 'ai'; startsFixture = true; }
     } else { command = chooseAi(battle); origin = 'ai'; }
     if (!command) return;
     const token = battleToken(battle), planned = command;

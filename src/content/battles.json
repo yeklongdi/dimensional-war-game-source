@@ -1,11 +1,11 @@
 [
   { "id": "battle_debug_core", "title": "Movement and battle rules demo",
     "map": ["H......", ".......", "...X...", "....E..", "......E"],
-    "spawnOrder": ["hero", "black_a", "black_b"] },
+    "spawnOrder": ["hero", "sample_target_a", "sample_target_b"] },
   { "id": "battle_demo_training", "title": "Sample battle one",
     "map": ["H......", ".......", "...X...", "....E..", "......E"],
-    "spawnOrder": ["hero", "black_a", "black_b"], "tutorial": true },
+    "spawnOrder": ["hero", "sample_target_a", "sample_target_b"], "tutorial": true },
   { "id": "battle_demo_skirmish", "title": "Sample battle two",
     "map": ["H......", ".......", "...X...", "....E..", "......E"],
-    "spawnOrder": ["hero", "black_a", "black_b"] }
+    "spawnOrder": ["hero", "sample_target_a", "sample_target_b"] }
 ]
