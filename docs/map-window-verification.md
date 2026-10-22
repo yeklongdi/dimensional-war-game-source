@@ -50,7 +50,22 @@
 
 正式仓库：[yeklongdi/dimensional-war-game-source](https://github.com/yeklongdi/dimensional-war-game-source)，main，公开。沿用现有Actions工作流，不改部署配置、不创建或更新Sites。
 
-正式网址：[次元战争](https://yeklongdi.github.io/dimensional-war-game-source/)。本节将在本轮实际部署成功及线上检查后补充版本与结果；当前本地验收不能替代线上结果。
+正式网址：[次元战争](https://yeklongdi.github.io/dimensional-war-game-source/)。
+
+本轮提交 `1120611`「地图页铺满窗口并改为地点关卡浮窗选关」，推送main后工作流 `39779493564` 的build与deploy两段均成功，未改任何工作流或Pages设置。线上首页引用 `assets/index-D0U3i-j7.js`（159,331字节）与 `assets/index-Bpyc_DaU.css`；CSS哈希与本地构建一致，JS仅因Pages子路径base不同而哈希不同，产物含地点浮窗文案与 `map-location-popup` 标识，确认线上为本次构建。
+
+线上实测（同一套真实点击，非单测）：
+
+| 项目 | 实际结果 |
+|---|---|
+| 1920×900 | 地图视口 0,0,1920×900，与窗口等大；进入地图浮窗关闭 |
+| 900×620 | 地图视口 0,0,900×620，仍铺满；标题、控制与存档提示不重叠 |
+| 地点浮窗 | 两种尺寸均出现在地点右侧360×279，未遮住地点标签；卡片显示「继续关卡」 |
+| 进入与返回 | 点卡片进入序幕p001并写出v2检查点；返回地图后浮窗自动关闭、仍停在第1关 |
+| 存档 | 刷新后菜单「继续」可用，回到p001场景头；检查点为 `prologue_01/p001` |
+| 控制台 | 0条error、0条warning |
+
+线上证据：[1920×900浮窗](verification/map-window/live-1920-popup.jpg)、[900×620浮窗](verification/map-window/live-900-popup.jpg)、[进入p001](verification/map-window/live-900-story.jpg)、[返回地图](verification/map-window/live-back-to-map.jpg)、[原始测量](verification/map-window/live.json)。线上只验证了两种窗口尺寸与首关往返，七关全程和两场战斗仍以本地与自动回归为准。
 
 ## 保护、文件与限制
 

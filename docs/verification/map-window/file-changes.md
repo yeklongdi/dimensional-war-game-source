@@ -1,6 +1,6 @@
 # 本轮文件变更
 
-## 新增（24）
+## 新增（29）
 
 - docs/map-window-verification.md
 - docs/verification/map-window/after.json
@@ -15,6 +15,11 @@
 - docs/verification/map-window/file-changes.json
 - docs/verification/map-window/file-changes.md
 - docs/verification/map-window/first-level-complete.jpg
+- docs/verification/map-window/live-1920-popup.jpg
+- docs/verification/map-window/live-900-popup.jpg
+- docs/verification/map-window/live-900-story.jpg
+- docs/verification/map-window/live-back-to-map.jpg
+- docs/verification/map-window/live.json
 - docs/verification/map-window/location-popup.jpg
 - docs/verification/map-window/map-full-window.jpg
 - docs/verification/map-window/small-popup.jpg

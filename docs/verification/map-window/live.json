@@ -1,0 +1,104 @@
+{
+  "url": "https://yeklongdi.github.io/dimensional-war-game-source/",
+  "measuredAt": "2026-10-22T12:43:33.111Z",
+  "wideClosed": {
+    "win": [
+      1920,
+      900
+    ],
+    "map": [
+      0,
+      0,
+      1920,
+      900
+    ],
+    "popup": null,
+    "side": null,
+    "popupOpen": "false",
+    "card": null,
+    "story": null
+  },
+  "wideOpen": {
+    "win": [
+      1920,
+      900
+    ],
+    "map": [
+      0,
+      0,
+      1920,
+      900
+    ],
+    "popup": [
+      549,
+      384,
+      360,
+      279
+    ],
+    "side": "right",
+    "popupOpen": "true",
+    "card": "第 1 关 · 序幕搬入奶奶家继续关卡",
+    "story": null
+  },
+  "smallOpen": {
+    "win": [
+      900,
+      620
+    ],
+    "map": [
+      0,
+      0,
+      900,
+      620
+    ],
+    "popup": [
+      270,
+      244,
+      360,
+      279
+    ],
+    "side": "right",
+    "popupOpen": "true",
+    "card": "第 1 关 · 序幕搬入奶奶家继续关卡",
+    "story": null
+  },
+  "story": {
+    "sceneId": "p001",
+    "saveStatus": "saved",
+    "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。"
+  },
+  "backNote": "第一次返回使用了不存在的测试标识，未触发点击；随后用实际标识复测，结果见 backToMap。",
+  "back": {
+    "win": [
+      900,
+      620
+    ],
+    "map": null,
+    "popup": null,
+    "side": null,
+    "popupOpen": null,
+    "card": null,
+    "story": "p001"
+  },
+  "backToMap": {
+    "map": {
+      "open": "false",
+      "current": "prologue_01",
+      "visible": "1"
+    },
+    "popupShown": false,
+    "expanded": "false",
+    "save": "最近存档：搬入奶奶家 · 奶奶家门前 · 2026/10/22 20:43:30",
+    "checkpoint": {
+      "version": 2,
+      "completedLevelIds": [],
+      "checkpoint": {
+        "kind": "level",
+        "levelId": "prologue_01",
+        "sceneId": "p001"
+      }
+    }
+  },
+  "consoleErrors": 0,
+  "consoleWarnings": []
+}

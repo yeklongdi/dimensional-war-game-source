@@ -26,7 +26,7 @@
 
 源码、正式内容和部署统一在[本仓库](https://github.com/yeklongdi/dimensional-war-game-source)。推送 `main` 后，GitHub Actions 自动执行 `npm ci`、类型检查、全部测试与项目路径构建，再发布 `dist/` 到 GitHub Pages；Pull Request 只做检查与构建。无需跨仓库同步或跨仓库凭据。此前的私有工程仓库和单独网页仓库在迁移验证后删除，旧网页地址不再作为正式入口。
 
-2026-10-21旧站部署检查为20个测试文件、292项通过；其版本与验收证据保留在[历史部署记录](docs/github-pages-deployment.md)，其中旧仓库地址和跨仓库更新步骤已由本次[单仓库部署流程](docs/repository-consolidation.md)替代。当前完整工程为22个测试文件、330项；分层男高美术仍未通过，不因本次发布而启用。
+2026-10-21旧站部署检查为20个测试文件、292项通过；其版本与验收证据保留在[历史部署记录](docs/github-pages-deployment.md)，其中旧仓库地址和跨仓库更新步骤已由本次[单仓库部署流程](docs/repository-consolidation.md)替代。2026-10-22本轮推送后工作流build与deploy均成功，已在正式地址复核1920×900与900×620下的铺满、地点浮窗、进入首关与返回地图，见[本轮线上验收](docs/map-window-verification.md#发布与线上验收)。当前完整工程为24个测试文件、356项；分层男高美术仍未通过，不因本次发布而启用。
 
 localhost 与正式网站的存档相互独立，不会自动迁移或跨设备同步。两首 WAV 保留原音质，较大的音乐文件可能使首次加载变慢。
 
