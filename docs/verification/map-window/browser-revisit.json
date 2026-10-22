@@ -1,0 +1,63 @@
+{
+  "url": "http://127.0.0.1:43852/tests/save-storage.html?case=v1-p009",
+  "data": {
+    "app": {
+      "height": 720,
+      "width": 1280,
+      "x": 0,
+      "y": 0
+    },
+    "buttons": [
+      {
+        "disabled": true,
+        "id": "enter-prologue_01",
+        "text": "第 1 关 · 序幕搬入奶奶家已完成 · 不可重玩"
+      },
+      {
+        "disabled": false,
+        "id": "enter-prologue_03",
+        "text": "第 3 关 · 序幕回家与睡前继续关卡"
+      }
+    ],
+    "focus": "location-grandma_home",
+    "imageLoaded": 1536,
+    "pin": {
+      "height": 91.4000473022461,
+      "width": 69.5999755859375,
+      "x": 305.6800231933594,
+      "y": 314.29998779296875
+    },
+    "popup": {
+      "height": 412.3999938964844,
+      "width": 360,
+      "x": 378.4750061035156,
+      "y": 294
+    },
+    "popupHidden": false,
+    "stage": {
+      "bgmId": "",
+      "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-105.91999999999996}",
+      "completedLevels": "prologue_01,prologue_02",
+      "currentLevel": "prologue_03",
+      "navToken": "2:1:map",
+      "popupOpen": "true",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_03\",\"sceneId\":\"p009\"},\"savedAt\":1792540800000}",
+      "saveRequest": "1",
+      "saveStatus": "ready",
+      "screen": "map",
+      "selectedLocation": "grandma_home",
+      "session": "2",
+      "sliceComplete": "false",
+      "testid": "city-map",
+      "viewport": "{\"width\":1280,\"height\":720}",
+      "visibleNodes": "2"
+    },
+    "viewport": {
+      "height": 720,
+      "width": 1280,
+      "x": 0,
+      "y": 0
+    }
+  },
+  "storage": "true"
+}

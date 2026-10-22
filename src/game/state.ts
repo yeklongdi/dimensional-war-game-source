@@ -3,7 +3,7 @@ import type { BattleDefinition, BattleMode, BattleState, Combatant, RngState } f
 import type { ProgressState } from './save-format.js';
 import type { LevelId } from '../content/levels.js';
 import type { LocationId } from '../content/map-locations.js';
-import type { MapCamera } from './map-camera.js';
+import type { MapCamera, MapViewport } from './map-camera.js';
 import type { MovementDraft } from './battle/movement-preview.js';
 
 export type StoryLibrary = Readonly<Record<string, Act>>;
@@ -41,7 +41,7 @@ export type GameState = {
   movementDraft?: MovementDraft;
   progress?: ProgressState;
   activeLevelId?: LevelId;
-  map?: { selected: LocationId; camera: MapCamera; unlock: boolean };
+  map?: { selected: LocationId; camera: MapCamera; viewport: MapViewport; popupOpen: boolean; unlock: boolean };
   battleReturn?: BattleReturn; battleSerial?: number; campaignSeed?: number;
   run: number; sequence: number; actId: string; sceneId: string; nodeIndex: number;
   branch?: Branch; waiting: Waiting | null; flags: Record<string, boolean>;

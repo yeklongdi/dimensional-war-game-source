@@ -8,16 +8,16 @@ import type { SaveOutcome, SaveRequest } from './save-storage.js';
 import { mergeV2, normalizedCheckpoint } from './save-v2.js';
 import type { Checkpoint, SaveReadV2, SaveV2 } from './save-v2.js';
 import { resumeScene } from './story/restore.js';
-import { currentLevel, levelById, levelIds, levels, visibleLevels } from '../content/levels.js';
+import { currentLevel, levelById, levelIds, levels } from '../content/levels.js';
 import { locationById } from '../content/map-locations.js';
-import type { LocationId } from '../content/map-locations.js';
-import { clampCamera, focusCamera, mapViewport, zoomCamera } from './map-camera.js';
+import { focusCamera, mapViewport } from './map-camera.js';
+import { reduceMapNavigation } from './map-navigation.js';
+import type { MapAction } from './map-navigation.js';
 
-export type NavigationAction = { type: 'open-map' | 'main-menu' | 'resume' | 'ask-replace' | 'cancel-replace' | 'confirm-replace' | 'focus-map'; token: string }
+type SimpleNavigation = 'open-map' | 'main-menu' | 'resume' | 'ask-replace' | 'cancel-replace' | 'confirm-replace';
+export type NavigationAction = { [T in SimpleNavigation]: { type: T; token: string } }[SimpleNavigation]
   | { type: 'enter-level'; token: string; levelId: string }
-  | { type: 'select-location' | 'focus-location'; token: string; locationId: LocationId }
-  | { type: 'pan-map'; token: string; dx: number; dy: number }
-  | { type: 'zoom-map'; token: string; factor: number; anchor?: { x: number; y: number } };
+  | MapAction;
 export type AppAction = NavigationAction | { type: 'play'; run: number; action: CampaignAction }
   | { type: 'save-result'; run: number; revision: number; outcome: SaveOutcome }
   | { type: 'external-save'; read: SaveReadV2 };
@@ -67,7 +67,7 @@ function destination(previous: GameState, screen: 'menu' | 'map', unlock = false
   const p = previous.progress!, target = currentLevel(p.completedLevelIds) ?? levels[levels.length - 1]!;
   return { ...previous, screen, run: previous.run + 1, activeLevelId: undefined, waiting: null, branch: undefined,
     battle: undefined, battleReturn: undefined, battleMode: undefined, movementDraft: undefined, actors: {}, backgroundId: '', bgmId: '',
-    map: { selected: target.locationId, camera: focusCamera(locationById(target.locationId).position), unlock },
+    map: { selected: target.locationId, camera: focusCamera(locationById(target.locationId).position), viewport: { ...mapViewport }, popupOpen: false, unlock },
     progress: { ...p, navigation: p.navigation + 1 } };
 }
 function handoff(previous: GameState, next: GameState): AppTransition {
@@ -169,22 +169,5 @@ export function reduceApp(previous: GameState, action: AppAction, library: Story
     }
     return handoff(previous, next);
   }
-  if (previous.screen !== 'map' || !previous.map) return same();
-  const map = { ...previous.map, unlock: false };
-  if (action.type === 'select-location' || action.type === 'focus-location') {
-    if (!visibleLevels(p.completedLevelIds).some(level => level.locationId === action.locationId)) return same();
-    if (action.type === 'focus-location') map.camera = focusCamera(locationById(action.locationId).position, map.camera.zoom);
-    else { if (map.selected === action.locationId) return same(); map.selected = action.locationId; }
-  } else if (action.type === 'pan-map') {
-    if (!Number.isFinite(action.dx) || !Number.isFinite(action.dy)) return same();
-    map.camera = clampCamera({ ...map.camera, x: map.camera.x + action.dx, y: map.camera.y + action.dy });
-  } else if (action.type === 'zoom-map') {
-    const anchor = action.anchor ?? { x: mapViewport.width / 2, y: mapViewport.height / 2 };
-    if (!Number.isFinite(action.factor) || action.factor <= 0 || !Number.isFinite(anchor.x) || !Number.isFinite(anchor.y)) return same();
-    map.camera = zoomCamera(map.camera, action.factor, anchor);
-  } else if (action.type === 'focus-map') {
-    const target = currentLevel(p.completedLevelIds) ?? levels[levels.length - 1]!;
-    map.selected = target.locationId; map.camera = focusCamera(locationById(target.locationId).position, map.camera.zoom);
-  } else return same();
-  return { state: { ...previous, map }, effects: [] };
+  return { state: reduceMapNavigation(previous, action), effects: [] };
 }

@@ -26,7 +26,7 @@ export function appAction(state: GameState, action: AppAction): GameState {
   return request && data ? reduceApp(transition.state, { type: 'save-result', run: request.run, revision: request.revision,
     outcome: { kind: 'saved', data } }, storyLibrary, data.savedAt).state : transition.state;
 }
-export function navigate(state: GameState, type: Exclude<NavigationAction['type'], 'enter-level' | 'select-location' | 'focus-location' | 'pan-map' | 'zoom-map'>): GameState {
+export function navigate(state: GameState, type: Exclude<NavigationAction['type'], 'enter-level' | 'select-location' | 'focus-location' | 'pan-map' | 'zoom-map' | 'resize-map'>): GameState {
   return appAction(state, { type, token: navigationToken(state) });
 }
 export function enterLevel(state: GameState, levelId: string): GameState {

@@ -1,0 +1,298 @@
+{
+  "url": "http://127.0.0.1:43852/tests/save-storage.html?case=v1-all-complete",
+  "steps": [
+    {
+      "name": "完成地图初始不弹窗",
+      "data": {
+        "app": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [],
+        "focus": null,
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000473022461,
+          "width": 69.5999755859375,
+          "x": -206.3199920654297,
+          "y": 395.5373229980469
+        },
+        "popup": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "popupHidden": true,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":-511.9999999999998,\"y\":-24.68266666666665}",
+          "completedLevels": "prologue_01,prologue_02,prologue_03,act1_01,act1_02,act1_03,act1_04",
+          "currentLevel": "",
+          "navToken": "2:1:map",
+          "popupOpen": "false",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\",\"act1_03\",\"act1_04\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792540800000}",
+          "saveRequest": "1",
+          "saveStatus": "ready",
+          "screen": "map",
+          "selectedLocation": "high_school",
+          "session": "2",
+          "sliceComplete": "true",
+          "testid": "city-map",
+          "viewport": "{\"width\":1280,\"height\":720}",
+          "visibleNodes": "5"
+        },
+        "viewport": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "学校复用两关且均不可重玩",
+      "data": {
+        "app": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [
+          {
+            "disabled": true,
+            "id": "enter-act1_02",
+            "text": "第 5 关 · 第一幕教室与校园导览已完成 · 不可重玩"
+          },
+          {
+            "disabled": true,
+            "id": "enter-act1_04",
+            "text": "第 7 关 · 第一幕返回学校与幕结束已完成 · 不可重玩"
+          }
+        ],
+        "focus": "map-popup-close",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000473022461,
+          "width": 69.5999755859375,
+          "x": -206.3199920654297,
+          "y": 395.5373229980469
+        },
+        "popup": {
+          "height": 464.8000183105469,
+          "width": 360,
+          "x": 699.75,
+          "y": 243
+        },
+        "popupHidden": false,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":-511.9999999999998,\"y\":-24.68266666666665}",
+          "completedLevels": "prologue_01,prologue_02,prologue_03,act1_01,act1_02,act1_03,act1_04",
+          "currentLevel": "",
+          "navToken": "2:1:map",
+          "popupOpen": "true",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\",\"act1_03\",\"act1_04\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792540800000}",
+          "saveRequest": "1",
+          "saveStatus": "ready",
+          "screen": "map",
+          "selectedLocation": "high_school",
+          "session": "2",
+          "sliceComplete": "true",
+          "testid": "city-map",
+          "viewport": "{\"width\":1280,\"height\":720}",
+          "visibleNodes": "5"
+        },
+        "viewport": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "小窗口学校双关列表限制高度",
+      "data": {
+        "app": {
+          "height": 600,
+          "width": 800,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [
+          {
+            "disabled": true,
+            "id": "enter-act1_02",
+            "text": "第 5 关 · 第一幕教室与校园导览已完成 · 不可重玩"
+          },
+          {
+            "disabled": true,
+            "id": "enter-act1_04",
+            "text": "第 7 关 · 第一幕返回学校与幕结束已完成 · 不可重玩"
+          }
+        ],
+        "focus": "map-popup-close",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000015258789,
+          "width": 69.5999755859375,
+          "x": -205.40000915527344,
+          "y": 281.8999938964844
+        },
+        "popup": {
+          "height": 440,
+          "width": 360,
+          "x": 17.30000114440918,
+          "y": 148
+        },
+        "popupHidden": false,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":-409.9999999999999,\"y\":0}",
+          "completedLevels": "prologue_01,prologue_02,prologue_03,act1_01,act1_02,act1_03,act1_04",
+          "currentLevel": "",
+          "navToken": "2:1:map",
+          "popupOpen": "true",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\",\"act1_03\",\"act1_04\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792540800000}",
+          "saveRequest": "1",
+          "saveStatus": "ready",
+          "screen": "map",
+          "selectedLocation": "high_school",
+          "session": "2",
+          "sliceComplete": "true",
+          "testid": "city-map",
+          "viewport": "{\"width\":800,\"height\":600}",
+          "visibleNodes": "5"
+        },
+        "viewport": {
+          "height": 600,
+          "width": 800,
+          "x": 0,
+          "y": 0
+        }
+      },
+      "scroll": {
+        "clientHeight": 438,
+        "scrollHeight": 463,
+        "scrollTop": 0
+      }
+    },
+    {
+      "name": "边缘施工区浮窗在窗口内",
+      "data": {
+        "app": {
+          "height": 600,
+          "width": 800,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [
+          {
+            "disabled": true,
+            "id": "enter-act1_03",
+            "text": "第 6 关 · 第一幕施工区事件已完成 · 不可重玩"
+          }
+        ],
+        "focus": "map-popup-close",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000015258789,
+          "width": 69.5999755859375,
+          "x": -205.40000915527344,
+          "y": 281.8999938964844
+        },
+        "popup": {
+          "height": 330.3999938964844,
+          "width": 360,
+          "x": 341.1125183105469,
+          "y": 22.200000762939453
+        },
+        "popupHidden": false,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":-409.9999999999999,\"y\":0}",
+          "completedLevels": "prologue_01,prologue_02,prologue_03,act1_01,act1_02,act1_03,act1_04",
+          "currentLevel": "",
+          "navToken": "2:1:map",
+          "popupOpen": "true",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\",\"act1_03\",\"act1_04\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792540800000}",
+          "saveRequest": "1",
+          "saveStatus": "ready",
+          "screen": "map",
+          "selectedLocation": "construction_site",
+          "session": "2",
+          "sliceComplete": "true",
+          "testid": "city-map",
+          "viewport": "{\"width\":800,\"height\":600}",
+          "visibleNodes": "5"
+        },
+        "viewport": {
+          "height": 600,
+          "width": 800,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "修复后小窗口双关浮窗不遮地点及控制、内部可滚动",
+      "data": {
+        "clientHeight": 398,
+        "controls": {
+          "height": 57.60000228881836,
+          "width": 342.8000183105469,
+          "x": 20,
+          "y": 522.4000244140625
+        },
+        "heading": {
+          "height": 81.5999984741211,
+          "width": 403.4125061035156,
+          "x": 20,
+          "y": 18
+        },
+        "pin": {
+          "height": 91.4000015258789,
+          "width": 133.6000518798828,
+          "x": 348.4999694824219,
+          "y": 224.7800140380859
+        },
+        "popup": {
+          "height": 400,
+          "width": 360,
+          "x": 17.30000114440918,
+          "y": 111.5999984741211
+        },
+        "scrollHeight": 463,
+        "scrollTop": 0
+      },
+      "afterScroll": {
+        "scrollTop": 64.80000305175781,
+        "storage": {
+          "originalV1": " \n{\"actId\":\"prologue\",\"sceneId\":\"p006\",\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_completed\":true},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\",\"act1\"]}\n ",
+          "raw": "{\"version\":2,\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\",\"act1_03\",\"act1_04\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792540800000}",
+          "scenario": "v1-all-complete",
+          "testid": "fixture-storage",
+          "v1": " \n{\"actId\":\"prologue\",\"sceneId\":\"p006\",\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_completed\":true},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\",\"act1\"]}\n ",
+          "v1Unchanged": "true",
+          "writeKeys": "dw.save.v2",
+          "writes": "1"
+        }
+      }
+    }
+  ],
+  "storage": {
+    "originalV1": " \n{\"actId\":\"prologue\",\"sceneId\":\"p006\",\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_completed\":true},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\",\"act1\"]}\n ",
+    "raw": "{\"version\":2,\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\",\"act1_03\",\"act1_04\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792540800000}",
+    "scenario": "v1-all-complete",
+    "testid": "fixture-storage",
+    "v1": " \n{\"actId\":\"prologue\",\"sceneId\":\"p006\",\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_completed\":true},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\",\"act1\"]}\n ",
+    "v1Unchanged": "true",
+    "writeKeys": "dw.save.v2",
+    "writes": "1"
+  },
+  "errors": []
+}

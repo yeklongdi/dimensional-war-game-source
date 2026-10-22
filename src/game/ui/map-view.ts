@@ -1,61 +1,76 @@
-import { currentLevel, levels, progressEdges, visibleLevels } from '../../content/levels.js';
+import { currentLevel, progressEdges, visibleLevels } from '../../content/levels.js';
 import { locationById, mapLocations } from '../../content/map-locations.js';
-import { fitScale, mapSize, mapViewport } from '../map-camera.js';
+import { coverScale, mapSize, projectLocation } from '../map-camera.js';
+import type { LocationId } from '../../content/map-locations.js';
+import { placeMapPopup } from '../map-popup-layout.js';
 import { assetUrl } from '../asset-url.js';
 import { navigationToken } from '../router.js';
 import type { NavigationAction } from '../router.js';
 import type { GameState } from '../state.js';
 import { button, element } from './elements.js';
+import { MapPopup } from './map-popup.js';
 
 export class MapView {
   readonly stage = element('main', 'stage map-stage');
   private readonly viewport = element('section', 'city-map-viewport');
   private readonly world = element('div', 'city-map-world');
   private readonly pins = element('div', 'city-map-pins');
-  private readonly panel = element('section', 'map-panel');
+  private readonly heading = element('header', 'map-heading');
+  private readonly controls = element('nav', 'map-controls');
+  private readonly popup: MapPopup;
   private readonly lines = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   private readonly subtitle = element('p', 'map-subtitle');
   private readonly resizeObserver: ResizeObserver;
   private readonly dispatch: (action: NavigationAction) => void;
-  private token = ''; private nodesKey = ''; private panelKey = '';
+  private token = ''; private nodesKey = ''; private selected: LocationId = 'grandma_home';
+  private popupOpen = false; private focusPopup = false; private disposed = false;
+  private measured?: { width: number; height: number };
   private drag?: { id: number; startX: number; startY: number; lastX: number; lastY: number; active: boolean };
   private suppressClick = false;
   constructor(root: HTMLElement, dispatch: (action: NavigationAction) => void) {
     this.dispatch = dispatch; this.stage.id = 'stage'; this.stage.dataset.testid = 'city-map';
-    const header = element('header', 'map-heading');
-    header.append(element('p', 'eyebrow', '次元战争 · 主线地图'), element('h1', '', '太阳市'), this.subtitle);
-    this.viewport.dataset.testid = 'map-viewport'; this.viewport.setAttribute('aria-label', '太阳市地图，可拖动和缩放');
+    this.popup = new MapPopup(dispatch, () => this.closePopup(true));
+    this.heading.append(element('p', 'eyebrow', '次元战争 · 主线地图'), element('h1', '', '太阳市'), this.subtitle);
+    this.viewport.dataset.testid = 'map-viewport'; this.viewport.tabIndex = -1;
+    this.viewport.setAttribute('aria-label', '太阳市地图，可拖动和缩放，点击地点查看关卡');
     const image = element('img', 'city-map-image'); image.src = assetUrl('/assets/maps/sun-city-painted-v1.png'); image.alt = '北朝上的太阳市彩绘俯视地图'; image.draggable = false;
     image.addEventListener('error', () => {
+      if (this.disposed) return;
       this.viewport.append(element('p', 'map-image-error', '地图素材读取失败，请检查本地素材文件。'));
       console.warn('[次元战争:map-asset] 太阳市彩绘底图读取失败。');
     }, { once: true });
     this.lines.setAttribute('viewBox', `0 0 ${mapSize.width} ${mapSize.height}`); this.lines.classList.add('map-progress-lines');
     this.lines.setAttribute('aria-hidden', 'true');
     this.world.append(image, this.lines, this.pins); this.viewport.append(this.world);
-    const controls = element('nav', 'map-controls'); controls.setAttribute('aria-label', '地图控制');
-    controls.append(button('＋', 'map-zoom-in', () => this.send({ type: 'zoom-map', token: this.token, factor: 1.25 })),
+    this.controls.setAttribute('aria-label', '地图控制');
+    this.controls.append(button('＋', 'map-zoom-in', () => this.send({ type: 'zoom-map', token: this.token, factor: 1.25 })),
       button('−', 'map-zoom-out', () => this.send({ type: 'zoom-map', token: this.token, factor: .8 })),
       button('定位当前关卡', 'map-focus', () => this.send({ type: 'focus-map', token: this.token })),
       button('返回主菜单', 'map-menu', () => this.send({ type: 'main-menu', token: this.token })));
-    this.panel.dataset.testid = 'map-panel'; this.panel.setAttribute('aria-live', 'polite');
-    this.stage.append(header, this.viewport, this.panel, controls); root.append(this.stage);
+    this.stage.append(this.viewport, this.heading, this.controls, this.popup.root); root.append(this.stage);
     this.viewport.addEventListener('pointerdown', this.pointerDown);
     this.viewport.addEventListener('pointermove', this.pointerMove);
     this.viewport.addEventListener('pointercancel', this.pointerCancel);
     window.addEventListener('pointerup', this.pointerUp);
     this.viewport.addEventListener('wheel', this.wheel, { passive: false });
-    const resize = () => { this.stage.style.transform = `translate(-50%, -50%) scale(${Math.min(root.clientWidth / 1280, root.clientHeight / 720)})`; };
-    this.resizeObserver = new ResizeObserver(resize); this.resizeObserver.observe(root); resize();
+    this.stage.addEventListener('click', this.outsideClick);
+    this.stage.addEventListener('keydown', this.keydown, true);
+    this.resizeObserver = new ResizeObserver(() => {
+      if (!this.disposed && this.token && this.viewport.clientWidth > 0 && this.viewport.clientHeight > 0) {
+        this.measured = { width: this.viewport.clientWidth, height: this.viewport.clientHeight };
+        this.send({ type: 'resize-map', token: this.token, viewport: this.measured });
+      }
+    });
+    this.resizeObserver.observe(this.viewport);
   }
   dispose() {
-    this.pointerCancel(); window.removeEventListener('pointerup', this.pointerUp);
+    this.disposed = true; this.pointerCancel(); window.removeEventListener('pointerup', this.pointerUp);
     this.resizeObserver.disconnect(); this.stage.remove();
   }
-  private send(action: NavigationAction) { this.dispatch(action); }
+  private send(action: NavigationAction) { if (!this.disposed) this.dispatch(action); }
   private point(event: { clientX: number; clientY: number }) {
     const rect = this.viewport.getBoundingClientRect();
-    return { x: (event.clientX - rect.left) / rect.width * mapViewport.width, y: (event.clientY - rect.top) / rect.height * mapViewport.height };
+    return { x: event.clientX - rect.left, y: event.clientY - rect.top };
   }
   private pointerDown = (event: PointerEvent) => {
     if (event.button !== 0 || !event.isPrimary) return;
@@ -85,14 +100,31 @@ export class MapView {
     event.preventDefault();
     this.send({ type: 'zoom-map', token: this.token, factor: Math.exp(-Math.max(-200, Math.min(200, event.deltaY)) * .002), anchor: this.point(event) });
   };
+  private outsideClick = (event: MouseEvent) => {
+    if (this.popupOpen && !this.suppressClick && event.target instanceof Element && !event.target.closest('.map-location-popup, .map-pin, .map-controls, .app-chrome')) this.closePopup(false);
+    this.suppressClick = false;
+  };
+  private keydown = (event: KeyboardEvent) => {
+    if (event.target instanceof Element && event.target.closest('.app-chrome')) return;
+    if ((event.key === 'Enter' || event.code === 'Space') && event.repeat) { event.preventDefault(); return; }
+    if (event.key === 'Escape' && this.popupOpen) { event.preventDefault(); event.stopPropagation(); this.closePopup(true); }
+  };
+  private closePopup(restoreFocus: boolean) {
+    if (!this.popupOpen) return;
+    const returnFocus = restoreFocus || this.popup.root.contains(document.activeElement);
+    this.send({ type: 'close-location', token: this.token });
+    if (returnFocus) this.pins.querySelector<HTMLButtonElement>(`[data-location-id="${this.selected}"]`)?.focus({ preventScroll: true });
+  }
   render(state: GameState) {
     const map = state.map!, p = state.progress!, current = currentLevel(p.completedLevelIds);
-    this.token = navigationToken(state);
+    const wasOpen = this.popupOpen; this.popupOpen = map.popupOpen; this.selected = map.selected; this.token = navigationToken(state);
     const visible = visibleLevels(p.completedLevelIds), locations = new Set(visible.map(level => level.locationId));
-    const camera = map.camera, scale = fitScale * camera.zoom;
+    const camera = map.camera, scale = coverScale(map.viewport) * camera.zoom;
     this.world.style.transform = `translate(${camera.x}px, ${camera.y}px) scale(${scale})`;
+    this.world.style.setProperty('--pin-scale', String(1 / scale));
     Object.assign(this.stage.dataset, { screen: 'map', completedLevels: p.completedLevelIds.join(','), currentLevel: current?.id ?? '',
-      selectedLocation: map.selected, camera: JSON.stringify(camera), visibleNodes: String(locations.size), sliceComplete: String(!current) });
+      selectedLocation: map.selected, popupOpen: String(map.popupOpen), camera: JSON.stringify(camera), viewport: JSON.stringify(map.viewport),
+      visibleNodes: String(locations.size), sliceComplete: String(!current) });
     this.subtitle.textContent = current ? `主线进度 ${p.completedLevelIds.length} / 7 · ${current.name}` : '垂直切片已完成 · 7 / 7';
     const nodesKey = `${p.completedLevelIds.join(',')}:${state.run}`;
     if (this.nodesKey !== nodesKey) {
@@ -100,7 +132,7 @@ export class MapView {
       for (const location of mapLocations) if (locations.has(location.id)) {
         const pin = element('button', 'map-pin'); pin.type = 'button'; pin.dataset.testid = `location-${location.id}`; pin.dataset.locationId = location.id;
         pin.style.left = `${location.position.x * mapSize.width}px`; pin.style.top = `${location.position.y * mapSize.height}px`;
-        pin.setAttribute('aria-label', `查看${location.name}`);
+        pin.setAttribute('aria-label', `查看${location.name}的关卡`); pin.setAttribute('aria-controls', this.popup.root.id); pin.setAttribute('aria-haspopup', 'dialog');
         pin.append(element('span', 'pin-dot', location.name[0]), element('span', 'pin-label', location.name));
         pin.addEventListener('focus', () => {
           const rect = pin.getBoundingClientRect(), viewport = this.viewport.getBoundingClientRect();
@@ -110,7 +142,9 @@ export class MapView {
         });
         pin.addEventListener('click', event => {
           event.stopPropagation(); if (event.detail > 1 || (event.detail > 0 && this.suppressClick)) return;
+          this.focusPopup = event.detail === 0;
           this.send({ type: 'select-location', token: this.token, locationId: location.id });
+          if (this.focusPopup && this.popupOpen) { this.popup.focusFirst(); this.focusPopup = false; }
         });
         if (map.unlock && current?.locationId === location.id) pin.classList.add('new-target');
         this.pins.append(pin);
@@ -119,23 +153,28 @@ export class MapView {
     for (const pin of Array.from(this.pins.querySelectorAll<HTMLButtonElement>('.map-pin'))) {
       pin.classList.toggle('selected', pin.dataset.locationId === map.selected);
       pin.classList.toggle('current', pin.dataset.locationId === current?.locationId);
-      pin.setAttribute('aria-pressed', String(pin.dataset.locationId === map.selected));
+      pin.setAttribute('aria-expanded', String(map.popupOpen && pin.dataset.locationId === map.selected));
     }
-    const point = (p.status === 'blocked' || p.status === 'error' || p.status === 'saving' ? p.draft : undefined)?.checkpoint ?? p.checkpoint?.checkpoint;
-    const panelKey = JSON.stringify([this.token, p.completedLevelIds, map.selected, point, p.status]);
-    if (this.panelKey === panelKey) return;
-    this.panelKey = panelKey; this.panel.replaceChildren(element('p', 'eyebrow', '地点 / 关卡'), element('h2', '', locationById(map.selected).name));
-    if (!current) this.panel.append(element('p', 'map-complete', '垂直切片已完成'));
-    for (const level of visible.filter(item => item.locationId === map.selected)) {
-      const completed = p.completedLevelIds.includes(level.id), continuing = !completed && point?.kind === 'level' && point.levelId === level.id;
-      const card = element('article', `map-level${completed ? ' completed' : ''}`); card.dataset.levelId = level.id;
-      card.append(element('p', 'map-level-number', `第 ${levels.indexOf(level) + 1} 关 · ${level.actId === 'prologue' ? '序幕' : '第一幕'}`),
-        element('h3', '', level.name), element('p', 'map-level-status', completed ? '已完成 · 不可重玩' : continuing ? '已保留最近场景检查点' : '当前可进入'));
-      const enter = button(completed ? '已完成' : continuing ? '继续关卡' : '开始关卡', `enter-${level.id}`, () => this.send({ type: 'enter-level', token: this.token, levelId: level.id }));
-      enter.disabled = completed || level.id !== current?.id || p.status === 'migrating' || p.status === 'saving';
-      card.append(enter); this.panel.append(card);
+    const containedFocus = this.popup.root.contains(document.activeElement);
+    this.popup.render(state);
+    if (map.popupOpen) {
+      this.positionPopup(state);
+      if (this.focusPopup) { this.popup.focusFirst(); this.focusPopup = false; }
+    } else if (wasOpen && containedFocus) this.viewport.focus({ preventScroll: true });
+    if (this.measured && !p.confirming && (map.viewport.width !== this.measured.width || map.viewport.height !== this.measured.height)) {
+      this.send({ type: 'resize-map', token: this.token, viewport: this.measured });
     }
-    this.panel.append(element('p', 'map-panel-note', '完成本关后自动返回地图。已完成关卡仅供查看。'));
+  }
+  private positionPopup(state: GameState) {
+    const map = state.map!, rect = this.viewport.getBoundingClientRect();
+    const obstacles = [this.heading, this.controls, this.stage.querySelector<HTMLElement>('.save-feedback')].flatMap(node => {
+      if (!node) return [];
+      const box = node.getBoundingClientRect(); return [{ x: box.left - rect.left, y: box.top - rect.top, width: box.width, height: box.height }];
+    });
+    const anchor = projectLocation(map.camera, locationById(map.selected).position, map.viewport);
+    const layout = placeMapPopup(anchor, { width: this.popup.root.offsetWidth, height: this.popup.root.offsetHeight }, map.viewport, obstacles);
+    this.popup.root.style.left = `${layout.x}px`; this.popup.root.style.top = `${layout.y}px`;
+    this.popup.root.dataset.side = layout.side; this.popup.root.style.setProperty('--popup-pointer', `${layout.pointer}px`);
   }
   private drawLines(state: GameState) {
     const ns = 'http://www.w3.org/2000/svg'; this.lines.replaceChildren();

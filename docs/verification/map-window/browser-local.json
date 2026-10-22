@@ -1,0 +1,1243 @@
+{
+  "url": "http://127.0.0.1:43852/?seed=0",
+  "steps": [
+    {
+      "name": "首次地图",
+      "data": {
+        "app": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [],
+        "focus": null,
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000473022461,
+          "width": 69.5999755859375,
+          "x": 305.6800231933594,
+          "y": 314.29998779296875
+        },
+        "popup": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "popupHidden": true,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-105.91999999999996}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "navToken": "2:1:map",
+          "popupOpen": "false",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792667922178}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "2",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":1280,\"height\":720}",
+          "visibleNodes": "1"
+        },
+        "viewport": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "点击地点打开浮窗",
+      "data": {
+        "app": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "enter-prologue_01",
+            "text": "第 1 关 · 序幕搬入奶奶家开始关卡"
+          }
+        ],
+        "focus": "location-grandma_home",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000473022461,
+          "width": 69.5999755859375,
+          "x": 305.6800231933594,
+          "y": 314.29998779296875
+        },
+        "popup": {
+          "height": 278,
+          "width": 360,
+          "x": 378.4750061035156,
+          "y": 294
+        },
+        "popupHidden": false,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-105.91999999999996}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "navToken": "2:1:map",
+          "popupOpen": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792667922178}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "2",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":1280,\"height\":720}",
+          "visibleNodes": "1"
+        },
+        "viewport": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "关闭并恢复焦点",
+      "data": {
+        "app": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "enter-prologue_01",
+            "text": "第 1 关 · 序幕搬入奶奶家开始关卡"
+          }
+        ],
+        "focus": "location-grandma_home",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000473022461,
+          "width": 69.5999755859375,
+          "x": 305.6800231933594,
+          "y": 314.29998779296875
+        },
+        "popup": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "popupHidden": true,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-105.91999999999996}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "navToken": "2:1:map",
+          "popupOpen": "false",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792667922178}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "2",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":1280,\"height\":720}",
+          "visibleNodes": "1"
+        },
+        "viewport": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "回车打开并进入卡片焦点",
+      "data": {
+        "app": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "enter-prologue_01",
+            "text": "第 1 关 · 序幕搬入奶奶家开始关卡"
+          }
+        ],
+        "focus": "enter-prologue_01",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000473022461,
+          "width": 69.5999755859375,
+          "x": 305.6800231933594,
+          "y": 314.29998779296875
+        },
+        "popup": {
+          "height": 278,
+          "width": 360,
+          "x": 378.4750061035156,
+          "y": 294
+        },
+        "popupHidden": false,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-105.91999999999996}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "navToken": "2:1:map",
+          "popupOpen": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792667922178}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "2",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":1280,\"height\":720}",
+          "visibleNodes": "1"
+        },
+        "viewport": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "Esc关闭并恢复地点焦点",
+      "data": {
+        "app": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "enter-prologue_01",
+            "text": "第 1 关 · 序幕搬入奶奶家开始关卡"
+          }
+        ],
+        "focus": "location-grandma_home",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000473022461,
+          "width": 69.5999755859375,
+          "x": 305.6800231933594,
+          "y": 314.29998779296875
+        },
+        "popup": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "popupHidden": true,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-105.91999999999996}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "navToken": "2:1:map",
+          "popupOpen": "false",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792667922178}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "2",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":1280,\"height\":720}",
+          "visibleNodes": "1"
+        },
+        "viewport": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "拖动时浮窗跟随",
+      "data": {
+        "app": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "enter-prologue_01",
+            "text": "第 1 关 · 序幕搬入奶奶家开始关卡"
+          }
+        ],
+        "focus": "map-viewport",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000473022461,
+          "width": 69.5999755859375,
+          "x": 205.6800079345703,
+          "y": 314.29998779296875
+        },
+        "popup": {
+          "height": 278,
+          "width": 360,
+          "x": 278.4750061035156,
+          "y": 294
+        },
+        "popupHidden": false,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":-100,\"y\":-105.91999999999996}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "navToken": "2:1:map",
+          "popupOpen": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792667922178}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "2",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":1280,\"height\":720}",
+          "visibleNodes": "1"
+        },
+        "viewport": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "滚轮缩放后浮窗状态",
+      "data": {
+        "app": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "enter-prologue_01",
+            "text": "第 1 关 · 序幕搬入奶奶家开始关卡"
+          }
+        ],
+        "focus": "map-viewport",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000015258789,
+          "width": 69.5999984741211,
+          "x": -69.5057601928711,
+          "y": 270.0357666015625
+        },
+        "popup": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "popupHidden": true,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":2.088554576697778,\"x\":-542.6422278771433,\"y\":-379.3351859127349}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "navToken": "2:1:map",
+          "popupOpen": "false",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792667922178}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "2",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":1280,\"height\":720}",
+          "visibleNodes": "1"
+        },
+        "viewport": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "1920×900铺满",
+      "data": {
+        "app": {
+          "height": 900,
+          "width": 1920,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "enter-prologue_01",
+            "text": "第 1 关 · 序幕搬入奶奶家开始关卡"
+          }
+        ],
+        "focus": "map-focus",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000015258789,
+          "width": 69.5999984741211,
+          "x": 727.1047973632812,
+          "y": 404.3000183105469
+        },
+        "popup": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "popupHidden": true,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":2.088554576697778,\"x\":0,\"y\":-592.6064446875309}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "navToken": "2:1:map",
+          "popupOpen": "false",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792667922178}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "2",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":1920,\"height\":900}",
+          "visibleNodes": "1"
+        },
+        "viewport": {
+          "height": 900,
+          "width": 1920,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "1920×900地点浮窗",
+      "data": {
+        "app": {
+          "height": 900,
+          "width": 1920,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "enter-prologue_01",
+            "text": "第 1 关 · 序幕搬入奶奶家开始关卡"
+          }
+        ],
+        "focus": "location-grandma_home",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000015258789,
+          "width": 69.5999984741211,
+          "x": 727.1047973632812,
+          "y": 404.3000183105469
+        },
+        "popup": {
+          "height": 278,
+          "width": 360,
+          "x": 799.9000244140625,
+          "y": 384
+        },
+        "popupHidden": false,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":2.088554576697778,\"x\":0,\"y\":-592.6064446875309}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "navToken": "2:1:map",
+          "popupOpen": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792667922178}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "2",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":1920,\"height\":900}",
+          "visibleNodes": "1"
+        },
+        "viewport": {
+          "height": 900,
+          "width": 1920,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "800×600铺满和浮窗边界",
+      "data": {
+        "app": {
+          "height": 600,
+          "width": 800,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "enter-prologue_01",
+            "text": "第 1 关 · 序幕搬入奶奶家开始关卡"
+          }
+        ],
+        "focus": "location-grandma_home",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000015258789,
+          "width": 69.5999984741211,
+          "x": 272.3428649902344,
+          "y": 254.3000030517578
+        },
+        "popup": {
+          "height": 278,
+          "width": 360,
+          "x": 345.13751220703125,
+          "y": 234
+        },
+        "popupHidden": false,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":2.088554576697778,\"x\":-50,\"y\":-188.7217709472801}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "navToken": "2:1:map",
+          "popupOpen": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792667922178}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "2",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":800,\"height\":600}",
+          "visibleNodes": "1"
+        },
+        "viewport": {
+          "height": 600,
+          "width": 800,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "点击空白关闭",
+      "data": {
+        "app": {
+          "height": 600,
+          "width": 800,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "enter-prologue_01",
+            "text": "第 1 关 · 序幕搬入奶奶家开始关卡"
+          }
+        ],
+        "focus": "map-viewport",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000015258789,
+          "width": 69.5999984741211,
+          "x": 272.3428649902344,
+          "y": 254.3000030517578
+        },
+        "popup": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "popupHidden": true,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":2.088554576697778,\"x\":-50,\"y\":-188.7217709472801}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "navToken": "2:1:map",
+          "popupOpen": "false",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792667922178}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "2",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":800,\"height\":600}",
+          "visibleNodes": "1"
+        },
+        "viewport": {
+          "height": 600,
+          "width": 800,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "空格打开与焦点",
+      "data": {
+        "app": {
+          "height": 600,
+          "width": 800,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "enter-prologue_01",
+            "text": "第 1 关 · 序幕搬入奶奶家开始关卡"
+          }
+        ],
+        "focus": "enter-prologue_01",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000015258789,
+          "width": 69.5999984741211,
+          "x": 322.3428649902344,
+          "y": 254.3000030517578
+        },
+        "popup": {
+          "height": 278,
+          "width": 360,
+          "x": 12,
+          "y": 234
+        },
+        "popupHidden": false,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":2.088554576697778,\"x\":0,\"y\":-188.72177094728016}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "navToken": "2:1:map",
+          "popupOpen": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792667922178}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "2",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":800,\"height\":600}",
+          "visibleNodes": "1"
+        },
+        "viewport": {
+          "height": 600,
+          "width": 800,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "点击整张关卡卡片进入p001",
+      "data": {
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:2:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792668091892}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "sceneId": "p001",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "text": "男高拎着行李箱"
+      }
+    },
+    {
+      "name": "中途返回地图不弹窗且保留检查点",
+      "data": {
+        "app": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [],
+        "focus": null,
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000473022461,
+          "width": 69.5999755859375,
+          "x": 305.6800231933594,
+          "y": 314.29998779296875
+        },
+        "popup": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "popupHidden": true,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-105.91999999999996}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "navToken": "4:3:map",
+          "popupOpen": "false",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792668091892}",
+          "saveRequest": "1",
+          "saveStatus": "ready",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "4",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":1280,\"height\":720}",
+          "visibleNodes": "1"
+        },
+        "viewport": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "刷新后地点浮窗显示继续关卡",
+      "data": {
+        "app": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "enter-prologue_01",
+            "text": "第 1 关 · 序幕搬入奶奶家继续关卡"
+          }
+        ],
+        "focus": "enter-prologue_01",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000473022461,
+          "width": 69.5999755859375,
+          "x": 305.6800231933594,
+          "y": 314.29998779296875
+        },
+        "popup": {
+          "height": 278,
+          "width": 360,
+          "x": 378.4750061035156,
+          "y": 294
+        },
+        "popupHidden": false,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-105.91999999999996}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "navToken": "2:1:map",
+          "popupOpen": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792668091892}",
+          "saveRequest": "0",
+          "saveStatus": "ready",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "2",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":1280,\"height\":720}",
+          "visibleNodes": "1"
+        },
+        "viewport": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "正常完成p001–p004后返回地图且浮窗关闭",
+      "data": {
+        "app": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [],
+        "focus": null,
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000473022461,
+          "width": 69.5999755859375,
+          "x": 76.56001281738281,
+          "y": -54.44668197631836
+        },
+        "popup": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "popupHidden": true,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":-229.1199999999999,\"y\":-474.6666666666665}",
+          "completedLevels": "prologue_01",
+          "currentLevel": "prologue_02",
+          "navToken": "4:3:map",
+          "popupOpen": "false",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792668118320}",
+          "saveRequest": "5",
+          "saveStatus": "saved",
+          "screen": "map",
+          "selectedLocation": "old_warehouse",
+          "session": "4",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":1280,\"height\":720}",
+          "visibleNodes": "2"
+        },
+        "viewport": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "修复前：边缘历史地点只选中但未打开浮窗",
+      "data": {
+        "app": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [],
+        "focus": "location-grandma_home",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000473022461,
+          "width": 69.5999755859375,
+          "x": 76.56001281738281,
+          "y": -54.44668197631836
+        },
+        "popup": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "popupHidden": true,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":-229.1199999999999,\"y\":-474.6666666666665}",
+          "completedLevels": "prologue_01",
+          "currentLevel": "prologue_02",
+          "navToken": "4:3:map",
+          "popupOpen": "false",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792668118320}",
+          "saveRequest": "5",
+          "saveStatus": "saved",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "4",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":1280,\"height\":720}",
+          "visibleNodes": "2"
+        },
+        "viewport": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "修复后：点击边缘历史地点打开禁用完成卡",
+      "data": {
+        "app": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [
+          {
+            "disabled": true,
+            "id": "enter-prologue_01",
+            "text": "第 1 关 · 序幕搬入奶奶家已完成 · 不可重玩"
+          }
+        ],
+        "focus": "location-grandma_home",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000473022461,
+          "width": 69.5999755859375,
+          "x": 305.6800231933594,
+          "y": 314.29998779296875
+        },
+        "popup": {
+          "height": 278,
+          "width": 360,
+          "x": 378.4750061035156,
+          "y": 294
+        },
+        "popupHidden": false,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-105.91999999999996}",
+          "completedLevels": "prologue_01",
+          "currentLevel": "prologue_02",
+          "navToken": "2:1:map",
+          "popupOpen": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792668118320}",
+          "saveRequest": "0",
+          "saveStatus": "ready",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "2",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":1280,\"height\":720}",
+          "visibleNodes": "2"
+        },
+        "viewport": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "从地点拖动松手不打开浮窗",
+      "data": {
+        "app": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [
+          {
+            "disabled": true,
+            "id": "enter-prologue_01",
+            "text": "第 1 关 · 序幕搬入奶奶家已完成 · 不可重玩"
+          }
+        ],
+        "focus": "location-grandma_home",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000244140625,
+          "width": 69.5999755859375,
+          "x": 305.6800231933594,
+          "y": 374.2999877929687
+        },
+        "popup": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "popupHidden": true,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-45.91999999999996}",
+          "completedLevels": "prologue_01",
+          "currentLevel": "prologue_02",
+          "navToken": "2:1:map",
+          "popupOpen": "false",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792668118320}",
+          "saveRequest": "0",
+          "saveStatus": "ready",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "2",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":1280,\"height\":720}",
+          "visibleNodes": "2"
+        },
+        "viewport": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "name": "键盘聚焦离屏当前地点后打开正确关卡",
+      "data": {
+        "app": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        },
+        "buttons": [
+          {
+            "disabled": false,
+            "id": "enter-prologue_02",
+            "text": "第 2 关 · 序幕仓库区事件开始关卡"
+          }
+        ],
+        "focus": "enter-prologue_02",
+        "imageLoaded": 1536,
+        "pin": {
+          "height": 91.4000473022461,
+          "width": 69.5999755859375,
+          "x": 76.56001281738281,
+          "y": -54.44668197631836
+        },
+        "popup": {
+          "height": 278,
+          "width": 360,
+          "x": 678,
+          "y": 295.6000061035156
+        },
+        "popupHidden": false,
+        "stage": {
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":-229.1199999999999,\"y\":-474.6666666666665}",
+          "completedLevels": "prologue_01",
+          "currentLevel": "prologue_02",
+          "navToken": "2:1:map",
+          "popupOpen": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792668118320}",
+          "saveRequest": "0",
+          "saveStatus": "ready",
+          "screen": "map",
+          "selectedLocation": "old_warehouse",
+          "session": "2",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "viewport": "{\"width\":1280,\"height\":720}",
+          "visibleNodes": "2"
+        },
+        "viewport": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "firstLevelRun": {
+    "scenes": [
+      "p001",
+      "p002",
+      "p003",
+      "p004"
+    ],
+    "texts": [
+      {
+        "scene": "p001",
+        "node": "3",
+        "token": "3:1",
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。"
+      },
+      {
+        "scene": "p001",
+        "node": "4",
+        "token": "3:2",
+        "text": "（六年了……终于回来了。）"
+      },
+      {
+        "scene": "p001",
+        "node": "5",
+        "token": "3:3",
+        "text": "（以后，就由我来陪奶奶。）"
+      },
+      {
+        "scene": "p001",
+        "node": "7",
+        "token": "3:4",
+        "text": "男高伸手敲门。"
+      },
+      {
+        "scene": "p002",
+        "node": "3",
+        "token": "3:5",
+        "text": "门很快打开。\n奶奶站在门里，手里攥着一块抹布。\n她看到男高后停顿数秒，随后快步迎上来。"
+      },
+      {
+        "scene": "p002",
+        "node": "4",
+        "token": "3:6",
+        "text": "孩子……是你回来了？"
+      },
+      {
+        "scene": "p002",
+        "node": "6",
+        "token": "3:7",
+        "text": "奶奶，我回来了。"
+      },
+      {
+        "scene": "p002",
+        "node": "7",
+        "token": "3:8",
+        "text": "奶奶仰头打量男高，又伸手拍了拍他的肩膀。"
+      },
+      {
+        "scene": "p002",
+        "node": "8",
+        "token": "3:9",
+        "text": "好，好……回来就好。\n快进来，饭马上就好。"
+      },
+      {
+        "scene": "p002",
+        "node": "9",
+        "token": "3:10",
+        "text": "奶奶让开门口，男高拎着行李进屋。"
+      },
+      {
+        "scene": "p003",
+        "node": "4",
+        "token": "3:11",
+        "text": "客厅保留旧木柜、茶壶和墙上的老照片。\n奶奶拉着男高坐下，不时查看他的脸和手臂。"
+      },
+      {
+        "scene": "p003",
+        "node": "5",
+        "token": "3:12",
+        "text": "长这么高了。\n瘦是瘦了点，可是结实了。"
+      },
+      {
+        "scene": "p003",
+        "node": "6",
+        "token": "3:13",
+        "text": "你这样子，倒像你爷爷年轻的时候。"
+      },
+      {
+        "scene": "p003",
+        "node": "8",
+        "token": "3:14",
+        "text": "奶奶，我长大了。\n以后换我照顾您，您就放心吧！"
+      },
+      {
+        "scene": "p003",
+        "node": "9",
+        "token": "3:15",
+        "text": "奶奶先是一愣，随后笑了出来，但眼角泛起泪光。"
+      },
+      {
+        "scene": "p003",
+        "node": "10",
+        "token": "3:16",
+        "text": "好，好。我们家孩子，长大了。"
+      },
+      {
+        "scene": "p003",
+        "node": "11",
+        "token": "3:17",
+        "text": "画面停留在祖孙二人的笑容上，随后淡出至晚饭后。"
+      },
+      {
+        "scene": "p004",
+        "node": "3",
+        "token": "3:18",
+        "text": "男高把行李搬进自己的房间。"
+      },
+      {
+        "scene": "p004",
+        "node": "4",
+        "token": "3:19",
+        "text": "房间不大，但收拾得很干净。"
+      },
+      {
+        "scene": "p004",
+        "node": "5",
+        "token": "3:20",
+        "text": "男高把衣服叠进衣柜，把明天报到要用的书本和文具装进书包。\n他把自己带来的游戏卡带摆在书桌上。\n窗外的路灯逐渐亮起。"
+      },
+      {
+        "scene": "p004",
+        "node": "8",
+        "token": "3:21",
+        "text": "奶奶，我想出去走走，认认路。"
+      },
+      {
+        "scene": "p004",
+        "node": "9",
+        "token": "3:22",
+        "text": "都这个点了，还出去？\n别走太远，早点回来，我给你留门。"
+      },
+      {
+        "scene": "p004",
+        "node": "11",
+        "token": "3:23",
+        "text": "知道啦！我就在附近转转，一会儿就回来。"
+      },
+      {
+        "scene": "p004",
+        "node": "12",
+        "token": "3:24",
+        "text": "男高换上外套，走出家门。"
+      }
+    ],
+    "actions": 47
+  },
+  "errors": []
+}

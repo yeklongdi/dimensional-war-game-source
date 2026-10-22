@@ -1,0 +1,42 @@
+{
+  "added": [
+    "docs/map-window-verification.md",
+    "docs/verification/map-window/after.json",
+    "docs/verification/map-window/before.json",
+    "docs/verification/map-window/browser-completed.json",
+    "docs/verification/map-window/browser-local.json",
+    "docs/verification/map-window/browser-revisit.json",
+    "docs/verification/map-window/completed-level-popup.jpg",
+    "docs/verification/map-window/completed-school-small-final.jpg",
+    "docs/verification/map-window/completed-school-small.jpg",
+    "docs/verification/map-window/edge-location-popup.jpg",
+    "docs/verification/map-window/file-changes.json",
+    "docs/verification/map-window/file-changes.md",
+    "docs/verification/map-window/first-level-complete.jpg",
+    "docs/verification/map-window/location-popup.jpg",
+    "docs/verification/map-window/map-full-window.jpg",
+    "docs/verification/map-window/small-popup.jpg",
+    "docs/verification/map-window/two-level-location.jpg",
+    "docs/verification/map-window/wide-popup.jpg",
+    "src/game/map-navigation.ts",
+    "src/game/map-popup-layout.ts",
+    "src/game/ui/map-popup.ts",
+    "src/tests/map-popup-layout.test.ts",
+    "src/tests/map-window.test.ts",
+    "tools/check-map-window.mjs"
+  ],
+  "modified": [
+    "README.md",
+    "docs/01-任务书.md",
+    "docs/decisions-map-selection.md",
+    "docs/decisions.md",
+    "docs/map-selection-spec.md",
+    "src/game/map-camera.ts",
+    "src/game/router.ts",
+    "src/game/state.ts",
+    "src/game/ui/map-view.ts",
+    "src/styles/map.css",
+    "src/tests/m4-helpers.ts"
+  ],
+  "deleted": []
+}
