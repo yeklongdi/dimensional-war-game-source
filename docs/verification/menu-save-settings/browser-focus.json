@@ -1,0 +1,98 @@
+[
+  {
+    "case": "settings-escape-to-opener",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "0"
+        }
+      ],
+      "focus": "open-settings",
+      "panel": "settings",
+      "stage": {
+        "activeRunId": "cffc86fb-f581-4b2e-ae65-69b06102b8b1",
+        "bgmId": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792741294344}",
+        "saveRequest": "0",
+        "saveStatus": "ready",
+        "screen": "menu",
+        "session": "1",
+        "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+        "testid": "main-menu",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"cffc86fb-f581-4b2e-ae65-69b06102b8b1\",\"revision\":36,\"auto\":{\"revision\":36,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792741294344}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":33,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741279747}},{\"revision\":32,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741280614}},{\"revision\":35,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741291176}}]}",
+        "vaultStatus": "valid"
+      },
+      "units": []
+    }
+  },
+  {
+    "case": "load-tab-wrap",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "0"
+        }
+      ],
+      "focus": "slot-0",
+      "panel": "load",
+      "stage": {
+        "activeRunId": "cffc86fb-f581-4b2e-ae65-69b06102b8b1",
+        "bgmId": "",
+        "paused": "true",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792741294344}",
+        "saveRequest": "0",
+        "saveStatus": "ready",
+        "screen": "menu",
+        "session": "1",
+        "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+        "testid": "main-menu",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"cffc86fb-f581-4b2e-ae65-69b06102b8b1\",\"revision\":36,\"auto\":{\"revision\":36,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792741294344}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":33,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741279747}},{\"revision\":32,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741280614}},{\"revision\":35,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741291176}}]}",
+        "vaultStatus": "valid"
+      },
+      "units": []
+    }
+  },
+  {
+    "case": "load-escape-to-opener",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "0"
+        }
+      ],
+      "focus": "load-game",
+      "panel": "load",
+      "stage": {
+        "activeRunId": "cffc86fb-f581-4b2e-ae65-69b06102b8b1",
+        "bgmId": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792741294344}",
+        "saveRequest": "0",
+        "saveStatus": "ready",
+        "screen": "menu",
+        "session": "1",
+        "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+        "testid": "main-menu",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"cffc86fb-f581-4b2e-ae65-69b06102b8b1\",\"revision\":36,\"auto\":{\"revision\":36,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792741294344}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":33,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741279747}},{\"revision\":32,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741280614}},{\"revision\":35,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741291176}}]}",
+        "vaultStatus": "valid"
+      },
+      "units": []
+    }
+  }
+]

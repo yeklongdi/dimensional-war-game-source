@@ -1,0 +1,23 @@
+.system-layer { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; background: #070c14d9; backdrop-filter: blur(5px); cursor: default; padding: 20px; }
+.system-dialog { width: min(920px, 100%); max-height: calc(100dvh - 40px); overflow: auto; padding: 28px 34px; background: linear-gradient(145deg, #242e3a, #131b28); border: 1px solid #bca05b; border-radius: 14px; box-shadow: 0 22px 80px #0008; font-size: 17px; line-height: 1.6; }
+.system-dialog h1 { margin: 0 0 16px; font-size: 30px; font-weight: 400; color: #f0deb0; }
+.system-dialog p { margin: 8px 0 18px; color: #c6d1df; }
+.system-dialog .action-button { width: 100%; margin: 10px 0; justify-content: center; }
+.system-dialog[data-panel="system"] { width: min(480px,100%); }
+.system-dialog[data-panel="confirm"] { width: min(620px,100%); }
+.system-notice { white-space: pre-wrap; color: #f4cc7b !important; margin-bottom: 0 !important; }
+.system-notice:empty { display: none; }
+.save-slot-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; }
+.system-dialog .save-slot { margin: 0; min-height: 126px; display: flex; flex-direction: column; align-items: start; justify-content: start; text-align: left; padding: 14px; font-size: 16px; }
+.save-slot span, .save-slot small { display: block; white-space: normal; overflow-wrap: anywhere; }
+.save-slot strong { color: #efd994; }
+.save-slot small { color: #afbdcd; font-size: 12px; margin-top: auto; }
+.auto-slot { grid-column: 1 / -1; min-height: 100px !important; }
+.save-granularity { font-size: 14px; }
+.setting-row { display: grid; grid-template-columns: 120px minmax(80px,1fr) 60px; align-items: center; gap: 16px; margin: 22px 0; }
+.setting-row input { width: 100%; accent-color: #d9b965; }
+.setting-row select { grid-column: 2/4; font: inherit; padding: 10px; background: #111925; color: #e4eaf0; border: 1px solid #d8b45a77; }
+.snapshot-preview { padding: 14px; background: #0c1422; border-left: 2px solid #b89c5e; }
+.main-menu-content { top: 118px; }
+.main-menu-content .game-title { margin-bottom: 36px; }
+@media (max-height: 680px) { .system-layer { padding: 12px; } .system-dialog { padding: 18px 22px; max-height: calc(100dvh - 24px); font-size: 15px; } .system-dialog h1 { font-size: 25px; margin-bottom: 10px; } .system-dialog .save-slot { min-height: 106px; font-size: 14px; padding: 10px; } .save-slot-grid { gap: 8px; } .system-dialog .action-button { min-height: 40px; } }

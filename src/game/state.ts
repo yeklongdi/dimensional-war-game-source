@@ -5,6 +5,8 @@ import type { LevelId } from '../content/levels.js';
 import type { LocationId } from '../content/map-locations.js';
 import type { MapCamera, MapViewport } from './map-camera.js';
 import type { MovementDraft } from './battle/movement-preview.js';
+import type { SystemState } from './system-types.js';
+import type { Settings } from './settings.js';
 
 export type StoryLibrary = Readonly<Record<string, Act>>;
 export type TextKind = 'stage' | 'dialogue' | 'inner' | 'narration';
@@ -37,6 +39,7 @@ export type BattleReturn = {
   attempt: number; definition: BattleDefinition; combatants: Combatant[]; initialRng: RngState;
 };
 export type GameState = {
+  system?: SystemState; settings?: Settings;
   screen: 'menu' | 'map' | 'story' | 'battle' | 'battle-debug'; battle?: BattleState; battleMode?: BattleMode;
   movementDraft?: MovementDraft;
   progress?: ProgressState;

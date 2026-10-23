@@ -102,7 +102,7 @@ class ActorPortrait {
     const plan = this.plan;
     const talking = isTalking({ ...this.actor, supported: !!this.figure,
       mouthAllowed: plan?.kind === 'layered' && plan.recipe.limits.mouth, prop: this.actor.actor === '大师之剑' },
-    this.state.waiting?.kind === 'text' && !this.state.progress?.confirming ? this.state.waiting : null);
+    this.state.waiting?.kind === 'text' && !this.state.progress?.confirming && !this.state.system?.panel && !this.state.system?.stale ? this.state.waiting : null);
     this.figure?.sync(talking, this.actor.visible, this.ports.fixedTime?.());
   }
   dispose(): void { this.lease.dispose(); this.figure?.dispose(); this.root.remove(); }

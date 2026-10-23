@@ -1,0 +1,303 @@
+[
+  {
+    "case": "production-new-map",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": null,
+      "panel": "busy",
+      "stage": {
+        "activeRunId": "c544500d-f0c6-4029-bcf9-b2599526312a",
+        "bgmId": "",
+        "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-105.91999999999996}",
+        "completedLevels": "",
+        "currentLevel": "prologue_01",
+        "paused": "false",
+        "popupOpen": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792741783058}",
+        "saveRequest": "0",
+        "saveStatus": "ready",
+        "screen": "map",
+        "selectedLocation": "grandma_home",
+        "session": "3",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "sliceComplete": "false",
+        "testid": "city-map",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"c544500d-f0c6-4029-bcf9-b2599526312a\",\"revision\":1,\"auto\":{\"revision\":1,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792741783058}},\"manual\":[null,null,null,null,null,null]}",
+        "vaultStatus": "valid",
+        "viewport": "{\"width\":1280,\"height\":720}",
+        "visibleNodes": "1"
+      },
+      "units": []
+    }
+  },
+  {
+    "case": "production-story-and-save",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0.65",
+          "assetId": "bgm_homecoming_warm",
+          "audioState": "playing",
+          "envelope": "1",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": "slot-1",
+      "panel": "save",
+      "stage": {
+        "actId": "prologue",
+        "activeRunId": "c544500d-f0c6-4029-bcf9-b2599526312a",
+        "bgmId": "bgm_homecoming_warm",
+        "nodeIndex": "3",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "true",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741821443}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "p001",
+        "session": "4",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"c544500d-f0c6-4029-bcf9-b2599526312a\",\"revision\":3,\"auto\":{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741821443}},\"manual\":[{\"revision\":3,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741822560}},null,null,null,null,null]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "4:1"
+      },
+      "text": "男高拎着行李箱和行李袋",
+      "units": []
+    },
+    "images": [
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/body-luggage.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/luggage-grip.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/head.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous-half.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous-closed.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-nervous.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-nervous-speech.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/hair-front.png",
+        "width": 1024
+      }
+    ]
+  },
+  {
+    "case": "production-refresh-load",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "bgm_homecoming_warm",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": "story-stage",
+      "panel": "confirm",
+      "stage": {
+        "actId": "prologue",
+        "activeRunId": "afbb685e-0045-4e1b-ae60-dd6beb1b70fb",
+        "bgmId": "bgm_homecoming_warm",
+        "nodeIndex": "3",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741824423}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "p001",
+        "session": "3",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"afbb685e-0045-4e1b-ae60-dd6beb1b70fb\",\"revision\":5,\"auto\":{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741824423}},\"manual\":[{\"revision\":3,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741822560}},null,null,null,null,null]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "3:1"
+      },
+      "text": "男高拎着行李箱和行李袋",
+      "units": []
+    },
+    "images": [
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/body-luggage.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/luggage-grip.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/head.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous-half.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous-closed.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-nervous.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-nervous-speech.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/hair-front.png",
+        "width": 1024
+      }
+    ]
+  },
+  {
+    "case": "production-resources-settled",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0.65",
+          "assetId": "bgm_homecoming_warm",
+          "audioState": "playing",
+          "envelope": "1",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": "story-stage",
+      "panel": "confirm",
+      "stage": {
+        "actId": "prologue",
+        "activeRunId": "afbb685e-0045-4e1b-ae60-dd6beb1b70fb",
+        "bgmId": "bgm_homecoming_warm",
+        "nodeIndex": "3",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741824423}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "p001",
+        "session": "3",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"afbb685e-0045-4e1b-ae60-dd6beb1b70fb\",\"revision\":5,\"auto\":{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741824423}},\"manual\":[{\"revision\":3,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741822560}},null,null,null,null,null]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "3:1"
+      },
+      "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。",
+      "units": []
+    },
+    "images": [
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/body-luggage.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/luggage-grip.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/head.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous-half.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous-closed.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-nervous.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-nervous-speech.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/hair-front.png",
+        "width": 1024
+      }
+    ]
+  }
+]

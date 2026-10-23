@@ -1,0 +1,1099 @@
+{
+  "checks": [
+    {
+      "step": "refresh-six-slots-settings",
+      "actors": [],
+      "audio": [
+        {
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "paused": true,
+          "src": "",
+          "testid": "bgm-player",
+          "userVolume": "0"
+        }
+      ],
+      "battle": [],
+      "focus": null,
+      "stage": {
+        "activeRunId": "1208e28f-ce01-4e48-8aa1-ccde51706dc7",
+        "bgmId": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737632827}",
+        "saveRequest": "0",
+        "saveStatus": "ready",
+        "screen": "menu",
+        "session": "1",
+        "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":100}",
+        "testid": "main-menu",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"1208e28f-ce01-4e48-8aa1-ccde51706dc7\",\"revision\":7,\"auto\":{\"revision\":1,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737632827}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":3,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669143}},{\"revision\":4,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669519}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+        "vaultStatus": "valid"
+      }
+    },
+    {
+      "step": "story-paused-before",
+      "actors": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "expression": "紧张、期待",
+          "pose": "携带行李、站立",
+          "position": "center",
+          "rear": "false",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "layered"
+        }
+      ],
+      "audio": [
+        {
+          "assetId": "bgm_homecoming_warm",
+          "audioState": "playing",
+          "envelope": "1",
+          "paused": false,
+          "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+          "testid": "bgm-player",
+          "userVolume": "0"
+        }
+      ],
+      "battle": [],
+      "focus": "system-save",
+      "panel": "system",
+      "stage": {
+        "actId": "prologue",
+        "activeRunId": "02cb98d8-a6d9-4d85-9e48-8b93a5ed0222",
+        "bgmId": "bgm_homecoming_warm",
+        "nodeIndex": "3",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "true",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738237617}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "p001",
+        "session": "4",
+        "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":100}",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"02cb98d8-a6d9-4d85-9e48-8b93a5ed0222\",\"revision\":9,\"auto\":{\"revision\":9,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738237617}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":3,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669143}},{\"revision\":4,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669519}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "4:1"
+      },
+      "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。"
+    },
+    {
+      "step": "typing-pause",
+      "before": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "紧张、期待",
+            "pose": "携带行李、站立",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "true",
+            "visual": "layered"
+          }
+        ],
+        "audio": [
+          {
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "envelope": "1",
+            "paused": false,
+            "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+            "testid": "bgm-player",
+            "userVolume": "0"
+          }
+        ],
+        "battle": [],
+        "focus": "system-save",
+        "panel": "system",
+        "stage": {
+          "actId": "prologue",
+          "activeRunId": "02cb98d8-a6d9-4d85-9e48-8b93a5ed0222",
+          "bgmId": "bgm_homecoming_warm",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "paused": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738237617}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "sceneId": "p001",
+          "session": "4",
+          "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":100}",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "vaultJson": "{\"version\":3,\"activeRunId\":\"02cb98d8-a6d9-4d85-9e48-8b93a5ed0222\",\"revision\":9,\"auto\":{\"revision\":9,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738237617}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":3,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669143}},{\"revision\":4,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669519}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+          "vaultStatus": "valid",
+          "waitKind": "text",
+          "waitToken": "4:2"
+        },
+        "text": "（六）"
+      },
+      "after": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "紧张、期待",
+            "pose": "携带行李、站立",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "true",
+            "visual": "layered"
+          }
+        ],
+        "audio": [
+          {
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "envelope": "1",
+            "paused": false,
+            "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+            "testid": "bgm-player",
+            "userVolume": "0"
+          }
+        ],
+        "battle": [],
+        "focus": "setting-bgm",
+        "panel": "settings",
+        "stage": {
+          "actId": "prologue",
+          "activeRunId": "02cb98d8-a6d9-4d85-9e48-8b93a5ed0222",
+          "bgmId": "bgm_homecoming_warm",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "paused": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738237617}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "sceneId": "p001",
+          "session": "4",
+          "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":100}",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "vaultJson": "{\"version\":3,\"activeRunId\":\"02cb98d8-a6d9-4d85-9e48-8b93a5ed0222\",\"revision\":9,\"auto\":{\"revision\":9,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738237617}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":3,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669143}},{\"revision\":4,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669519}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+          "vaultStatus": "valid",
+          "waitKind": "text",
+          "waitToken": "4:2"
+        },
+        "text": "（六）"
+      }
+    },
+    {
+      "step": "live-volume-and-text-speed",
+      "before": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "紧张、期待",
+            "pose": "携带行李、站立",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "true",
+            "visual": "layered"
+          }
+        ],
+        "audio": [
+          {
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "envelope": "1",
+            "paused": false,
+            "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+            "testid": "bgm-player",
+            "userVolume": "0"
+          }
+        ],
+        "battle": [],
+        "focus": "setting-bgm",
+        "panel": "settings",
+        "stage": {
+          "actId": "prologue",
+          "activeRunId": "02cb98d8-a6d9-4d85-9e48-8b93a5ed0222",
+          "bgmId": "bgm_homecoming_warm",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "paused": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738237617}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "sceneId": "p001",
+          "session": "4",
+          "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":100}",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "vaultJson": "{\"version\":3,\"activeRunId\":\"02cb98d8-a6d9-4d85-9e48-8b93a5ed0222\",\"revision\":9,\"auto\":{\"revision\":9,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738237617}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":3,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669143}},{\"revision\":4,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669519}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+          "vaultStatus": "valid",
+          "waitKind": "text",
+          "waitToken": "4:2"
+        },
+        "text": "（六）"
+      },
+      "full": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "紧张、期待",
+            "pose": "携带行李、站立",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "true",
+            "visual": "layered"
+          }
+        ],
+        "audio": [
+          {
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "envelope": "1",
+            "paused": false,
+            "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+            "testid": "bgm-player",
+            "userVolume": "100"
+          }
+        ],
+        "battle": [],
+        "focus": "setting-bgm",
+        "panel": "settings",
+        "stage": {
+          "actId": "prologue",
+          "activeRunId": "02cb98d8-a6d9-4d85-9e48-8b93a5ed0222",
+          "bgmId": "bgm_homecoming_warm",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "paused": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738237617}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "sceneId": "p001",
+          "session": "4",
+          "settingsJson": "{\"version\":1,\"bgm\":100,\"sfx\":100,\"textMs\":100}",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "vaultJson": "{\"version\":3,\"activeRunId\":\"02cb98d8-a6d9-4d85-9e48-8b93a5ed0222\",\"revision\":9,\"auto\":{\"revision\":9,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738237617}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":3,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669143}},{\"revision\":4,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669519}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+          "vaultStatus": "valid",
+          "waitKind": "text",
+          "waitToken": "4:2"
+        },
+        "text": "（六）"
+      },
+      "after": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "紧张、期待",
+            "pose": "携带行李、站立",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "true",
+            "visual": "layered"
+          }
+        ],
+        "audio": [
+          {
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "envelope": "1",
+            "paused": false,
+            "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+            "testid": "bgm-player",
+            "userVolume": "0"
+          }
+        ],
+        "battle": [],
+        "focus": "setting-bgm",
+        "panel": "settings",
+        "stage": {
+          "actId": "prologue",
+          "activeRunId": "02cb98d8-a6d9-4d85-9e48-8b93a5ed0222",
+          "bgmId": "bgm_homecoming_warm",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "paused": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738237617}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "sceneId": "p001",
+          "session": "4",
+          "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "vaultJson": "{\"version\":3,\"activeRunId\":\"02cb98d8-a6d9-4d85-9e48-8b93a5ed0222\",\"revision\":9,\"auto\":{\"revision\":9,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738237617}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":3,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669143}},{\"revision\":4,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669519}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+          "vaultStatus": "valid",
+          "waitKind": "text",
+          "waitToken": "4:2"
+        },
+        "text": "（六）"
+      }
+    },
+    {
+      "step": "overwrite-cancel",
+      "before": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "紧张、期待",
+            "pose": "携带行李、站立",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "layered"
+          }
+        ],
+        "audio": [
+          {
+            "actualVolume": "0",
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "envelope": "1",
+            "paused": false,
+            "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+            "testid": "bgm-player",
+            "userVolume": "0"
+          }
+        ],
+        "battle": [],
+        "focus": "system-confirm",
+        "panel": "confirm",
+        "stage": {
+          "actId": "prologue",
+          "activeRunId": "4bf0728e-4c7a-4c30-a4a5-67af9ac50dc9",
+          "bgmId": "bgm_homecoming_warm",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "paused": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738415063}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "sceneId": "p001",
+          "session": "3",
+          "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "vaultJson": "{\"version\":3,\"activeRunId\":\"4bf0728e-4c7a-4c30-a4a5-67af9ac50dc9\",\"revision\":11,\"auto\":{\"revision\":11,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738415063}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":3,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669143}},{\"revision\":4,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669519}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+          "vaultStatus": "valid",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。"
+      },
+      "after": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "紧张、期待",
+            "pose": "携带行李、站立",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "layered"
+          }
+        ],
+        "audio": [
+          {
+            "actualVolume": "0",
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "envelope": "1",
+            "paused": false,
+            "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+            "testid": "bgm-player",
+            "userVolume": "0"
+          }
+        ],
+        "battle": [],
+        "focus": "slot-1",
+        "panel": "save",
+        "stage": {
+          "actId": "prologue",
+          "activeRunId": "4bf0728e-4c7a-4c30-a4a5-67af9ac50dc9",
+          "bgmId": "bgm_homecoming_warm",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "paused": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738415063}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "sceneId": "p001",
+          "session": "3",
+          "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "vaultJson": "{\"version\":3,\"activeRunId\":\"4bf0728e-4c7a-4c30-a4a5-67af9ac50dc9\",\"revision\":11,\"auto\":{\"revision\":11,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738415063}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":3,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669143}},{\"revision\":4,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669519}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+          "vaultStatus": "valid",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。"
+      }
+    },
+    {
+      "step": "story-manual-save-and-return",
+      "actors": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "expression": "紧张、期待",
+          "pose": "携带行李、站立",
+          "position": "center",
+          "rear": "false",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "layered"
+        }
+      ],
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "bgm_homecoming_warm",
+          "audioState": "playing",
+          "envelope": "1",
+          "paused": false,
+          "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+          "testid": "bgm-player",
+          "userVolume": "0"
+        }
+      ],
+      "battle": [],
+      "focus": null,
+      "panel": "system",
+      "stage": {
+        "actId": "prologue",
+        "activeRunId": "4bf0728e-4c7a-4c30-a4a5-67af9ac50dc9",
+        "bgmId": "bgm_homecoming_warm",
+        "nodeIndex": "3",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738415063}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "p001",
+        "session": "3",
+        "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"4bf0728e-4c7a-4c30-a4a5-67af9ac50dc9\",\"revision\":12,\"auto\":{\"revision\":11,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738415063}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":4,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669519}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "3:1"
+      },
+      "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。"
+    },
+    {
+      "step": "first-level-completed",
+      "actors": [],
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "paused": true,
+          "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+          "testid": "bgm-player",
+          "userVolume": "0"
+        }
+      ],
+      "battle": [],
+      "focus": null,
+      "panel": "system",
+      "stage": {
+        "activeRunId": "4bf0728e-4c7a-4c30-a4a5-67af9ac50dc9",
+        "bgmId": "",
+        "camera": "{\"zoom\":1.4,\"x\":-229.1199999999999,\"y\":-474.6666666666665}",
+        "completedLevels": "prologue_01",
+        "currentLevel": "prologue_02",
+        "paused": "false",
+        "popupOpen": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792738470594}",
+        "saveRequest": "5",
+        "saveStatus": "saved",
+        "screen": "map",
+        "selectedLocation": "old_warehouse",
+        "session": "4",
+        "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+        "sliceComplete": "false",
+        "testid": "city-map",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"4bf0728e-4c7a-4c30-a4a5-67af9ac50dc9\",\"revision\":16,\"auto\":{\"revision\":16,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792738470594}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":4,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669519}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+        "vaultStatus": "valid",
+        "viewport": "{\"width\":1280,\"height\":720}",
+        "visibleNodes": "2"
+      }
+    },
+    {
+      "step": "completed-level-locked",
+      "buttons": [
+        {
+          "disabled": false,
+          "text": "×"
+        },
+        {
+          "disabled": true,
+          "text": "第 1 关 · 序幕搬入奶奶家已完成 · 不可重玩"
+        }
+      ]
+    },
+    {
+      "step": "next-level-muted-bgm",
+      "actors": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "expression": "好奇",
+          "pose": "散步、观察四周",
+          "position": "left",
+          "rear": "false",
+          "slot": "left",
+          "speaking": "false",
+          "visual": "static"
+        }
+      ],
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "bgm_old_street_mystery",
+          "audioState": "playing",
+          "envelope": "0",
+          "paused": false,
+          "src": "http://127.0.0.1:43910/assets/audio/liuxie.wav",
+          "testid": "bgm-player",
+          "userVolume": "0"
+        }
+      ],
+      "battle": [],
+      "focus": null,
+      "panel": "system",
+      "stage": {
+        "actId": "prologue",
+        "activeRunId": "4bf0728e-4c7a-4c30-a4a5-67af9ac50dc9",
+        "bgmId": "bgm_old_street_mystery",
+        "nodeIndex": "3",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738528500}",
+        "saveRequest": "6",
+        "saveStatus": "saved",
+        "sceneId": "p005",
+        "session": "5",
+        "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"4bf0728e-4c7a-4c30-a4a5-67af9ac50dc9\",\"revision\":17,\"auto\":{\"revision\":17,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738528500}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":4,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669519}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "5:1"
+      },
+      "text": "商业街的霓虹灯还亮着，但行人已经不多。\n男高沿街认路，不"
+    },
+    {
+      "step": "explicit-old-map-rollback",
+      "actors": [],
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "paused": true,
+          "src": "http://127.0.0.1:43910/assets/audio/liuxie.wav",
+          "testid": "bgm-player",
+          "userVolume": "0"
+        }
+      ],
+      "battle": [],
+      "focus": null,
+      "panel": "confirm",
+      "stage": {
+        "activeRunId": "e5a94878-e8f9-4d27-bd01-59682c6b7090",
+        "bgmId": "",
+        "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-105.91999999999996}",
+        "completedLevels": "",
+        "currentLevel": "prologue_01",
+        "paused": "false",
+        "popupOpen": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}",
+        "saveRequest": "0",
+        "saveStatus": "ready",
+        "screen": "map",
+        "selectedLocation": "grandma_home",
+        "session": "7",
+        "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+        "sliceComplete": "false",
+        "testid": "city-map",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"e5a94878-e8f9-4d27-bd01-59682c6b7090\",\"revision\":19,\"auto\":{\"revision\":19,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+        "vaultStatus": "valid",
+        "viewport": "{\"width\":1280,\"height\":720}",
+        "visibleNodes": "1"
+      }
+    },
+    {
+      "step": "new-game-cancel",
+      "before": {
+        "actors": [],
+        "audio": [
+          {
+            "actualVolume": "0",
+            "assetId": "",
+            "audioState": "silent",
+            "envelope": "0",
+            "paused": true,
+            "src": "http://127.0.0.1:43910/assets/audio/liuxie.wav",
+            "testid": "bgm-player",
+            "userVolume": "0"
+          }
+        ],
+        "battle": [],
+        "focus": null,
+        "panel": "confirm",
+        "stage": {
+          "activeRunId": "e5a94878-e8f9-4d27-bd01-59682c6b7090",
+          "bgmId": "",
+          "paused": "false",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}",
+          "saveRequest": "0",
+          "saveStatus": "ready",
+          "screen": "menu",
+          "session": "8",
+          "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+          "testid": "main-menu",
+          "vaultJson": "{\"version\":3,\"activeRunId\":\"e5a94878-e8f9-4d27-bd01-59682c6b7090\",\"revision\":19,\"auto\":{\"revision\":19,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+          "vaultStatus": "valid"
+        }
+      },
+      "after": {
+        "actors": [],
+        "audio": [
+          {
+            "actualVolume": "0",
+            "assetId": "",
+            "audioState": "silent",
+            "envelope": "0",
+            "paused": true,
+            "src": "http://127.0.0.1:43910/assets/audio/liuxie.wav",
+            "testid": "bgm-player",
+            "userVolume": "0"
+          }
+        ],
+        "battle": [],
+        "focus": null,
+        "panel": "confirm",
+        "stage": {
+          "activeRunId": "e5a94878-e8f9-4d27-bd01-59682c6b7090",
+          "bgmId": "",
+          "paused": "false",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}",
+          "saveRequest": "0",
+          "saveStatus": "ready",
+          "screen": "menu",
+          "session": "8",
+          "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+          "testid": "main-menu",
+          "vaultJson": "{\"version\":3,\"activeRunId\":\"e5a94878-e8f9-4d27-bd01-59682c6b7090\",\"revision\":19,\"auto\":{\"revision\":19,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+          "vaultStatus": "valid"
+        }
+      }
+    },
+    {
+      "step": "new-game-confirm-keeps-manual-settings",
+      "before": {
+        "actors": [],
+        "audio": [
+          {
+            "actualVolume": "0",
+            "assetId": "",
+            "audioState": "silent",
+            "envelope": "0",
+            "paused": true,
+            "src": "http://127.0.0.1:43910/assets/audio/liuxie.wav",
+            "testid": "bgm-player",
+            "userVolume": "0"
+          }
+        ],
+        "battle": [],
+        "focus": null,
+        "panel": "confirm",
+        "stage": {
+          "activeRunId": "e5a94878-e8f9-4d27-bd01-59682c6b7090",
+          "bgmId": "",
+          "paused": "false",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}",
+          "saveRequest": "0",
+          "saveStatus": "ready",
+          "screen": "menu",
+          "session": "8",
+          "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+          "testid": "main-menu",
+          "vaultJson": "{\"version\":3,\"activeRunId\":\"e5a94878-e8f9-4d27-bd01-59682c6b7090\",\"revision\":19,\"auto\":{\"revision\":19,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+          "vaultStatus": "valid"
+        }
+      },
+      "after": {
+        "actors": [],
+        "audio": [
+          {
+            "actualVolume": "0",
+            "assetId": "",
+            "audioState": "silent",
+            "envelope": "0",
+            "paused": true,
+            "src": "http://127.0.0.1:43910/assets/audio/liuxie.wav",
+            "testid": "bgm-player",
+            "userVolume": "0"
+          }
+        ],
+        "battle": [],
+        "focus": null,
+        "panel": "confirm",
+        "stage": {
+          "activeRunId": "3ec50ee6-9a45-4bc2-be9f-dab022941e81",
+          "bgmId": "",
+          "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-105.91999999999996}",
+          "completedLevels": "",
+          "currentLevel": "prologue_01",
+          "paused": "false",
+          "popupOpen": "false",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792738617775}",
+          "saveRequest": "0",
+          "saveStatus": "ready",
+          "screen": "map",
+          "selectedLocation": "grandma_home",
+          "session": "10",
+          "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+          "sliceComplete": "false",
+          "testid": "city-map",
+          "vaultJson": "{\"version\":3,\"activeRunId\":\"3ec50ee6-9a45-4bc2-be9f-dab022941e81\",\"revision\":20,\"auto\":{\"revision\":20,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792738617775}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+          "vaultStatus": "valid",
+          "viewport": "{\"width\":1280,\"height\":720}",
+          "visibleNodes": "1"
+        }
+      }
+    },
+    {
+      "step": "refresh-read-manual-scene-head",
+      "actors": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "expression": "紧张、期待",
+          "pose": "携带行李、站立",
+          "position": "center",
+          "rear": "false",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "layered"
+        }
+      ],
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "bgm_homecoming_warm",
+          "audioState": "playing",
+          "envelope": "0.26279999999776466",
+          "paused": false,
+          "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+          "testid": "bgm-player",
+          "userVolume": "0"
+        }
+      ],
+      "battle": [],
+      "focus": null,
+      "panel": "confirm",
+      "stage": {
+        "actId": "prologue",
+        "activeRunId": "e602f846-0251-487f-941a-3f33c3e35018",
+        "bgmId": "bgm_homecoming_warm",
+        "nodeIndex": "3",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738619454}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "p001",
+        "session": "3",
+        "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"e602f846-0251-487f-941a-3f33c3e35018\",\"revision\":22,\"auto\":{\"revision\":22,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738619454}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "3:1"
+      },
+      "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪"
+    }
+  ],
+  "normalFirstLevel": [
+    {
+      "scene": "p001",
+      "node": "3",
+      "token": "3:1",
+      "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。"
+    },
+    {
+      "scene": "p001",
+      "node": "4",
+      "token": "3:2",
+      "text": "（六年了……终）"
+    },
+    {
+      "scene": "p001",
+      "node": "5",
+      "token": "3:3",
+      "text": "（以后，）"
+    },
+    {
+      "scene": "p001",
+      "node": "7",
+      "token": "3:4",
+      "text": "男高伸手敲门。"
+    },
+    {
+      "scene": "p002",
+      "node": "3",
+      "token": "3:5",
+      "text": "门很快打"
+    },
+    {
+      "scene": "p002",
+      "node": "3",
+      "token": "3:5",
+      "text": "门很快打开。\n奶奶站在门里，手里攥着一块抹布。\n她看到男高后停顿数秒，随后快步迎上来。"
+    },
+    {
+      "scene": "p002",
+      "node": "4",
+      "token": "3:6",
+      "text": "孩子……"
+    },
+    {
+      "scene": "p002",
+      "node": "6",
+      "token": "3:7",
+      "text": "奶奶，我回来了。"
+    },
+    {
+      "scene": "p002",
+      "node": "7",
+      "token": "3:8",
+      "text": "奶奶仰头打"
+    },
+    {
+      "scene": "p002",
+      "node": "7",
+      "token": "3:8",
+      "text": "奶奶仰头打量男高，又伸手拍了拍他的肩膀。"
+    },
+    {
+      "scene": "p002",
+      "node": "8",
+      "token": "3:9",
+      "text": "好，好……回来就好。\n快"
+    },
+    {
+      "scene": "p002",
+      "node": "9",
+      "token": "3:10",
+      "text": "奶奶让开门"
+    },
+    {
+      "scene": "p002",
+      "node": "9",
+      "token": "3:10",
+      "text": "奶奶让开门口，男高拎着行李进屋。"
+    },
+    {
+      "scene": "p003",
+      "node": "4",
+      "token": "3:11",
+      "text": "客厅保留旧木柜"
+    },
+    {
+      "scene": "p003",
+      "node": "4",
+      "token": "3:11",
+      "text": "客厅保留旧木柜、茶壶和墙上的老照片。\n奶奶拉着男高坐下，不时查看他的脸和手臂。"
+    },
+    {
+      "scene": "p003",
+      "node": "5",
+      "token": "3:12",
+      "text": "长这么"
+    },
+    {
+      "scene": "p003",
+      "node": "5",
+      "token": "3:12",
+      "text": "长这么高了。\n瘦是瘦了点，可是结实了。"
+    },
+    {
+      "scene": "p003",
+      "node": "6",
+      "token": "3:13",
+      "text": "你这样"
+    },
+    {
+      "scene": "p003",
+      "node": "6",
+      "token": "3:13",
+      "text": "你这样子，倒像你爷爷年轻的时候。"
+    },
+    {
+      "scene": "p003",
+      "node": "8",
+      "token": "3:14",
+      "text": "奶奶，"
+    },
+    {
+      "scene": "p003",
+      "node": "8",
+      "token": "3:14",
+      "text": "奶奶，我长大了。\n以后换我照顾您，您就放心吧！"
+    },
+    {
+      "scene": "p003",
+      "node": "9",
+      "token": "3:15",
+      "text": "奶奶先是"
+    },
+    {
+      "scene": "p003",
+      "node": "9",
+      "token": "3:15",
+      "text": "奶奶先是一愣，随后笑了出来，但眼角泛起泪光。"
+    },
+    {
+      "scene": "p003",
+      "node": "10",
+      "token": "3:16",
+      "text": "好，"
+    },
+    {
+      "scene": "p003",
+      "node": "10",
+      "token": "3:16",
+      "text": "好，好。我们家孩子，长大了。"
+    },
+    {
+      "scene": "p003",
+      "node": "11",
+      "token": "3:17",
+      "text": "画面停留在"
+    },
+    {
+      "scene": "p003",
+      "node": "11",
+      "token": "3:17",
+      "text": "画面停留在祖孙二人的笑容上，随后淡出至晚饭后。"
+    },
+    {
+      "scene": "p004",
+      "node": "3",
+      "token": "3:18",
+      "text": "男高"
+    },
+    {
+      "scene": "p004",
+      "node": "3",
+      "token": "3:18",
+      "text": "男高把行李搬进自己的房间。"
+    },
+    {
+      "scene": "p004",
+      "node": "4",
+      "token": "3:19",
+      "text": "房间"
+    },
+    {
+      "scene": "p004",
+      "node": "4",
+      "token": "3:19",
+      "text": "房间不大，但收拾得很干净。"
+    },
+    {
+      "scene": "p004",
+      "node": "5",
+      "token": "3:20",
+      "text": "男高把"
+    },
+    {
+      "scene": "p004",
+      "node": "5",
+      "token": "3:20",
+      "text": "男高把衣服叠进衣柜，把明天报到要用的书本和文具装进书包。\n他把自己带来的游戏卡带摆在书桌上。\n窗外的路灯逐渐亮起。"
+    },
+    {
+      "scene": "p004",
+      "node": "8",
+      "token": "3:21",
+      "text": "奶奶"
+    },
+    {
+      "scene": "p004",
+      "node": "8",
+      "token": "3:21",
+      "text": "奶奶，我想出去走走，认认路。"
+    },
+    {
+      "scene": "p004",
+      "node": "9",
+      "token": "3:22",
+      "text": "都这"
+    },
+    {
+      "scene": "p004",
+      "node": "9",
+      "token": "3:22",
+      "text": "都这个点了，还出去？\n别走太远，早点回来，我给你留门。"
+    },
+    {
+      "scene": "p004",
+      "node": "11",
+      "token": "3:23",
+      "text": "知道啦"
+    },
+    {
+      "scene": "p004",
+      "node": "11",
+      "token": "3:23",
+      "text": "知道啦！我就在附近转转，一会儿就回来。"
+    },
+    {
+      "scene": "p004",
+      "node": "12",
+      "token": "3:24",
+      "text": "男高换"
+    },
+    {
+      "scene": "p004",
+      "node": "12",
+      "token": "3:24",
+      "text": "男高换上外套，走出家门。"
+    }
+  ]
+}

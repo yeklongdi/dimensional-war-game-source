@@ -1,0 +1,13 @@
+{
+  "stage": {
+    "bgmId": "",
+    "navToken": "1:0:menu",
+    "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p006\"},\"savedAt\":1792665979553}",
+    "saveRequest": "0",
+    "saveStatus": "ready",
+    "screen": "menu",
+    "session": "1",
+    "testid": "main-menu"
+  },
+  "text": "最近存档：仓库区事件 · 仓库区外围·第一次战斗 · 2026/10/22 18:46:19"
+}

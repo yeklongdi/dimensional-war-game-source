@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><title>系统菜单 · 实际视口验收</title>
+<style>body{margin:12px;background:#0b0e14;color:#ebdfc6;font:15px/1.5 system-ui}button{margin:0 12px 12px 0}iframe{border:0;display:block;transform-origin:top left}</style></head>
+<body><p>仅开发验收：嵌入同源真实游戏。iframe内部采用指定CSS视口，外层仅缩小展示，不注入游玩状态。</p>
+<button data-testid="size-large">1920 × 900</button><button data-testid="size-small">900 × 620</button>
+<iframe title="系统菜单真实视口" src="/?seed=0"></iframe>
+<script type="module">
+const frame = document.querySelector('iframe'); let width = 1920, height = 900;
+const render = () => { frame.width = String(width); frame.height = String(height);
+  frame.style.width = `${width}px`; frame.style.height = `${height}px`;
+  frame.style.transform = `scale(${Math.min(1,(innerWidth-24)/width,(innerHeight-110)/height)})`; };
+document.querySelector('[data-testid="size-large"]').onclick = () => { width=1920; height=900; render(); };
+document.querySelector('[data-testid="size-small"]').onclick = () => { width=900; height=620; render(); };
+window.addEventListener('resize', render); render();
+</script></body></html>

@@ -1,0 +1,258 @@
+[
+  {
+    "tab": "root-A",
+    "entries": [
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bg_grandmother_house_dusk] 背景 bg_grandmother_house_dusk 尚未绑定，使用场景渐变占位。",
+        "timestamp": "2026-10-23T07:41:07.954Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      }
+    ]
+  },
+  {
+    "tab": "root-B",
+    "entries": [
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bg_grandmother_house_dusk] 背景 bg_grandmother_house_dusk 尚未绑定，使用场景渐变占位。",
+        "timestamp": "2026-10-23T07:41:18.163Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bg_grandmother_house_dusk] 背景 bg_grandmother_house_dusk 尚未绑定，使用场景渐变占位。",
+        "timestamp": "2026-10-23T07:45:56.086Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      }
+    ]
+  },
+  {
+    "tab": "p006",
+    "entries": [
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bg_warehouse_area_night] 背景 bg_warehouse_area_night 尚未绑定，使用场景渐变占位。",
+        "timestamp": "2026-10-23T07:42:24.864Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bgm_first_battle] 音频 bgm_first_battle 尚未绑定，静默处理。",
+        "timestamp": "2026-10-23T07:42:24.865Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:char_organization_member_placeholder] 立绘 char_organization_member_placeholder 尚未绑定，使用色块占位。",
+        "timestamp": "2026-10-23T07:42:24.865Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:char_thief_masked_black_placeholder] 立绘 char_thief_masked_black_placeholder 尚未绑定，使用色块占位。",
+        "timestamp": "2026-10-23T07:42:24.865Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:visual:男高:mapping:散步、观察四周:认真、出头] 男高「散步、观察四周／认真、出头」尚无合格分层，使用明确静态回退。",
+        "timestamp": "2026-10-23T07:42:24.868Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bg_warehouse_area_night] 背景 bg_warehouse_area_night 尚未绑定，使用场景渐变占位。",
+        "timestamp": "2026-10-23T07:43:10.159Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bgm_first_battle] 音频 bgm_first_battle 尚未绑定，静默处理。",
+        "timestamp": "2026-10-23T07:43:10.160Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:char_organization_member_placeholder] 立绘 char_organization_member_placeholder 尚未绑定，使用色块占位。",
+        "timestamp": "2026-10-23T07:43:10.160Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:char_thief_masked_black_placeholder] 立绘 char_thief_masked_black_placeholder 尚未绑定，使用色块占位。",
+        "timestamp": "2026-10-23T07:43:10.160Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:visual:男高:mapping:散步、观察四周:认真、出头] 男高「散步、观察四周／认真、出头」尚无合格分层，使用明确静态回退。",
+        "timestamp": "2026-10-23T07:43:10.161Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      }
+    ]
+  },
+  {
+    "tab": "a014",
+    "entries": [
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bg_school_construction_pit] 背景 bg_school_construction_pit 尚未绑定，使用场景渐变占位。",
+        "timestamp": "2026-10-23T07:43:39.658Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bgm_black_humanoid_battle] 音频 bgm_black_humanoid_battle 尚未绑定，静默处理。",
+        "timestamp": "2026-10-23T07:43:39.658Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:char_virtual_streamer_shy] 立绘 char_virtual_streamer_shy 尚未绑定，使用色块占位。",
+        "timestamp": "2026-10-23T07:43:39.658Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:prop_master_sword_corrupted_placeholder] 立绘 prop_master_sword_corrupted_placeholder 尚未绑定，使用色块占位。",
+        "timestamp": "2026-10-23T07:43:39.658Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:char_black_humanoid_placeholder] 立绘 char_black_humanoid_placeholder 尚未绑定，使用色块占位。",
+        "timestamp": "2026-10-23T07:43:39.658Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:visual:男高:mapping:持剑、准备保护虚拟主播:震惊、警戒] 男高「持剑、准备保护虚拟主播／震惊、警戒」尚无合格分层，使用明确静态回退。",
+        "timestamp": "2026-10-23T07:43:39.660Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      }
+    ]
+  },
+  {
+    "tab": "faults-and-choices",
+    "entries": [
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bg_school_construction_zone_day] 背景 bg_school_construction_zone_day 尚未绑定，使用场景渐变占位。",
+        "timestamp": "2026-10-23T07:44:31.370Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bgm_school_mystery] 音频 bgm_school_mystery 尚未绑定，静默处理。",
+        "timestamp": "2026-10-23T07:44:31.371Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:char_virtual_streamer_shy] 立绘 char_virtual_streamer_shy 尚未绑定，使用色块占位。",
+        "timestamp": "2026-10-23T07:44:31.371Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:visual:男高:mapping:停步观察围栏:好奇] 男高「停步观察围栏／好奇」尚无合格分层，使用明确静态回退。",
+        "timestamp": "2026-10-23T07:44:31.373Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bg_school_classroom_day] 背景 bg_school_classroom_day 尚未绑定，使用场景渐变占位。",
+        "timestamp": "2026-10-23T07:45:25.304Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bgm_school_choice] 音频 bgm_school_choice 尚未绑定，静默处理。",
+        "timestamp": "2026-10-23T07:45:25.306Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:char_virtual_streamer_shy] 立绘 char_virtual_streamer_shy 尚未绑定，使用色块占位。",
+        "timestamp": "2026-10-23T07:45:25.306Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:char_teacher_placeholder] 立绘 char_teacher_placeholder 尚未绑定，使用色块占位。",
+        "timestamp": "2026-10-23T07:45:25.306Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:char_villain_calm] 立绘 char_villain_calm 尚未绑定，使用色块占位。",
+        "timestamp": "2026-10-23T07:45:25.306Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bg_school_library_day] 背景 bg_school_library_day 尚未绑定，使用场景渐变占位。",
+        "timestamp": "2026-10-23T07:45:40.485Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bgm_school_daily] 音频 bgm_school_daily 尚未绑定，静默处理。",
+        "timestamp": "2026-10-23T07:45:40.486Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:visual:男高:mapping:自然跟随:好奇、友善] 男高「自然跟随／好奇、友善」尚无合格分层，使用明确静态回退。",
+        "timestamp": "2026-10-23T07:45:40.486Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bg_school_construction_zone_day] 背景 bg_school_construction_zone_day 尚未绑定，使用场景渐变占位。",
+        "timestamp": "2026-10-23T07:45:41.883Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bgm_school_mystery] 音频 bgm_school_mystery 尚未绑定，静默处理。",
+        "timestamp": "2026-10-23T07:45:41.884Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:char_virtual_streamer_shy] 立绘 char_virtual_streamer_shy 尚未绑定，使用色块占位。",
+        "timestamp": "2026-10-23T07:45:41.884Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:visual:男高:mapping:停步观察围栏:好奇] 男高「停步观察围栏／好奇」尚无合格分层，使用明确静态回退。",
+        "timestamp": "2026-10-23T07:45:41.884Z",
+        "url": "http://127.0.0.1:43910/@vite/client"
+      }
+    ]
+  },
+  {
+    "tab": "production",
+    "entries": [
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bg_grandmother_house_dusk] 背景 bg_grandmother_house_dusk 尚未绑定，使用场景渐变占位。",
+        "timestamp": "2026-10-23T07:50:21.452Z",
+        "url": "http://127.0.0.1:43911/dimensional-war-game-source/assets/index-CzWEFOMr.js"
+      },
+      {
+        "level": "warn",
+        "message": "[次元战争:asset:bg_grandmother_house_dusk] 背景 bg_grandmother_house_dusk 尚未绑定，使用场景渐变占位。",
+        "timestamp": "2026-10-23T07:50:24.443Z",
+        "url": "http://127.0.0.1:43911/dimensional-war-game-source/assets/index-CzWEFOMr.js"
+      }
+    ]
+  },
+  {
+    "tab": "layout",
+    "entries": []
+  }
+]

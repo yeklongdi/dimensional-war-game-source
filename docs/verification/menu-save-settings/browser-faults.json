@@ -1,0 +1,735 @@
+[
+  {
+    "case": "bad-slot-isolated",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": "slot-0",
+      "panel": "load",
+      "stage": {
+        "activeRunId": "fixture-existing-run",
+        "bgmId": "",
+        "paused": "true",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792540800000}",
+        "saveRequest": "0",
+        "saveStatus": "ready",
+        "screen": "menu",
+        "session": "1",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "main-menu",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"fixture-existing-run\",\"revision\":1,\"auto\":{\"revision\":1,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"savedAt\":1792540800000,\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"}}},\"manual\":[{\"broken\":\"保留原始坏槽\"},{\"revision\":1,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"savedAt\":1792540800000,\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a010\"}}},null,null,null,null]}",
+        "vaultStatus": "valid"
+      },
+      "units": []
+    },
+    "storage": {
+      "originalV1": "",
+      "originalV2": "",
+      "raw": "{\"version\":3,\"activeRunId\":\"fixture-existing-run\",\"revision\":1,\"auto\":{\"revision\":1,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"savedAt\":1792540800000,\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"}}},\"manual\":[{\"broken\":\"保留原始坏槽\"},{\"revision\":1,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"savedAt\":1792540800000,\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a010\"}}},null,null,null,null]}",
+      "scenario": "v3-bad-slot",
+      "settings": "",
+      "testid": "fixture-storage",
+      "v1": "",
+      "v1Unchanged": "true",
+      "v2": "",
+      "v2Unchanged": "true",
+      "writeKeys": "",
+      "writes": "0"
+    },
+    "badDisabled": true,
+    "goodEnabled": true
+  },
+  {
+    "case": "good-slot-load-retains-bad-slot",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "bgm_school_mystery",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": "story-stage",
+      "panel": "confirm",
+      "stage": {
+        "actId": "act1",
+        "activeRunId": "7851da46-eba9-4be5-bd61-a9d442699ed0",
+        "bgmId": "bgm_school_mystery",
+        "nodeIndex": "2",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a010\"},\"savedAt\":1792741471317}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "a010",
+        "session": "3",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"7851da46-eba9-4be5-bd61-a9d442699ed0\",\"revision\":3,\"auto\":{\"revision\":3,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a010\"},\"savedAt\":1792741471317}},\"manual\":[{\"broken\":\"保留原始坏槽\"},{\"revision\":1,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"savedAt\":1792540800000,\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a010\"}}},null,null,null,null]}",
+        "vaultStatus": "valid",
+        "waitKind": "choice",
+        "waitToken": "3:1"
+      },
+      "units": []
+    },
+    "storage": {
+      "originalV1": "",
+      "originalV2": "",
+      "raw": "{\"version\":3,\"activeRunId\":\"7851da46-eba9-4be5-bd61-a9d442699ed0\",\"revision\":3,\"auto\":{\"revision\":3,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a010\"},\"savedAt\":1792741471317}},\"manual\":[{\"broken\":\"保留原始坏槽\"},{\"revision\":1,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"savedAt\":1792540800000,\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a010\"}}},null,null,null,null]}",
+      "scenario": "v3-bad-slot",
+      "settings": "",
+      "testid": "fixture-storage",
+      "v1": "",
+      "v1Unchanged": "true",
+      "v2": "",
+      "v2Unchanged": "true",
+      "writeKeys": "dw.save.v3,dw.save.v3",
+      "writes": "2"
+    }
+  },
+  {
+    "case": "bad-container-before",
+    "storage": {
+      "originalV1": "",
+      "originalV2": "",
+      "raw": "{\"version\":999}",
+      "scenario": "v3-bad",
+      "settings": "",
+      "testid": "fixture-storage",
+      "v1": "",
+      "v1Unchanged": "true",
+      "v2": "",
+      "v2Unchanged": "true",
+      "writeKeys": "",
+      "writes": "0"
+    }
+  },
+  {
+    "case": "bad-container-cancel",
+    "storage": {
+      "originalV1": "",
+      "originalV2": "",
+      "raw": "{\"version\":999}",
+      "scenario": "v3-bad",
+      "settings": "",
+      "testid": "fixture-storage",
+      "v1": "",
+      "v1Unchanged": "true",
+      "v2": "",
+      "v2Unchanged": "true",
+      "writeKeys": "",
+      "writes": "0"
+    }
+  },
+  {
+    "case": "bad-container-explicit-new",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": null,
+      "panel": "confirm",
+      "stage": {
+        "activeRunId": "9889f9db-5a1e-48a2-b37a-b0c5ebbd6291",
+        "bgmId": "",
+        "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-105.91999999999996}",
+        "completedLevels": "",
+        "currentLevel": "prologue_01",
+        "paused": "false",
+        "popupOpen": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792741472464}",
+        "saveRequest": "0",
+        "saveStatus": "ready",
+        "screen": "map",
+        "selectedLocation": "grandma_home",
+        "session": "3",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "sliceComplete": "false",
+        "testid": "city-map",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"9889f9db-5a1e-48a2-b37a-b0c5ebbd6291\",\"revision\":1,\"auto\":{\"revision\":1,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792741472464}},\"manual\":[null,null,null,null,null,null]}",
+        "vaultStatus": "valid",
+        "viewport": "{\"width\":1280,\"height\":720}",
+        "visibleNodes": "1"
+      },
+      "units": []
+    },
+    "storage": {
+      "originalV1": "",
+      "originalV2": "",
+      "raw": "{\"version\":3,\"activeRunId\":\"9889f9db-5a1e-48a2-b37a-b0c5ebbd6291\",\"revision\":1,\"auto\":{\"revision\":1,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792741472464}},\"manual\":[null,null,null,null,null,null]}",
+      "scenario": "v3-bad",
+      "settings": "",
+      "testid": "fixture-storage",
+      "v1": "",
+      "v1Unchanged": "true",
+      "v2": "",
+      "v2Unchanged": "true",
+      "writeKeys": "dw.save.v3",
+      "writes": "1"
+    }
+  },
+  {
+    "case": "write-failure-no-activation",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": null,
+      "panel": "busy",
+      "stage": {
+        "activeRunId": "",
+        "bgmId": "",
+        "paused": "false",
+        "saveJson": "",
+        "saveRequest": "0",
+        "saveStatus": "empty",
+        "screen": "menu",
+        "session": "1",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "main-menu",
+        "vaultJson": "",
+        "vaultStatus": "empty"
+      },
+      "units": []
+    },
+    "storage": {
+      "originalV1": "",
+      "originalV2": "",
+      "raw": "",
+      "scenario": "write-failure",
+      "settings": "",
+      "testid": "fixture-storage",
+      "v1": "",
+      "v1Unchanged": "true",
+      "v2": "",
+      "v2Unchanged": "true",
+      "writeKeys": "",
+      "writes": "0"
+    }
+  },
+  {
+    "case": "write-recovery",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": null,
+      "panel": "busy",
+      "stage": {
+        "activeRunId": "1351e615-22e2-4d5f-ba3d-36eff8c936b0",
+        "bgmId": "",
+        "camera": "{\"zoom\":1.4,\"x\":0,\"y\":-105.91999999999996}",
+        "completedLevels": "",
+        "currentLevel": "prologue_01",
+        "paused": "false",
+        "popupOpen": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792741487224}",
+        "saveRequest": "0",
+        "saveStatus": "ready",
+        "screen": "map",
+        "selectedLocation": "grandma_home",
+        "session": "3",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "sliceComplete": "false",
+        "testid": "city-map",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"1351e615-22e2-4d5f-ba3d-36eff8c936b0\",\"revision\":1,\"auto\":{\"revision\":1,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792741487224}},\"manual\":[null,null,null,null,null,null]}",
+        "vaultStatus": "valid",
+        "viewport": "{\"width\":1280,\"height\":720}",
+        "visibleNodes": "1"
+      },
+      "units": []
+    },
+    "storage": {
+      "originalV1": "",
+      "originalV2": "",
+      "raw": "{\"version\":3,\"activeRunId\":\"1351e615-22e2-4d5f-ba3d-36eff8c936b0\",\"revision\":1,\"auto\":{\"revision\":1,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792741487224}},\"manual\":[null,null,null,null,null,null]}",
+      "scenario": "write-failure",
+      "settings": "",
+      "testid": "fixture-storage",
+      "v1": "",
+      "v1Unchanged": "true",
+      "v2": "",
+      "v2Unchanged": "true",
+      "writeKeys": "dw.save.v3",
+      "writes": "1"
+    }
+  },
+  {
+    "case": "migration-write-failure",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": null,
+      "panel": "busy",
+      "stage": {
+        "activeRunId": "",
+        "bgmId": "",
+        "paused": "false",
+        "saveJson": "",
+        "saveRequest": "0",
+        "saveStatus": "empty",
+        "screen": "menu",
+        "session": "1",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "main-menu",
+        "vaultJson": "",
+        "vaultStatus": "migration"
+      },
+      "units": []
+    },
+    "storage": {
+      "originalV1": " \n{\"actId\":\"prologue\",\"sceneId\":\"p006\",\"flags\":{},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\"]}\n ",
+      "originalV2": "",
+      "raw": "",
+      "scenario": "migration-write-failure",
+      "settings": "",
+      "testid": "fixture-storage",
+      "v1": " \n{\"actId\":\"prologue\",\"sceneId\":\"p006\",\"flags\":{},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\"]}\n ",
+      "v1Unchanged": "true",
+      "v2": "",
+      "v2Unchanged": "true",
+      "writeKeys": "",
+      "writes": "0"
+    }
+  },
+  {
+    "case": "migration-recovery",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": null,
+      "panel": "busy",
+      "stage": {
+        "activeRunId": "bda94dcb-2b5d-405a-97c3-e186a4be9fb8:migration",
+        "bgmId": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p006\"},\"savedAt\":1792540800000}",
+        "saveRequest": "0",
+        "saveStatus": "ready",
+        "screen": "menu",
+        "session": "3",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "main-menu",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"bda94dcb-2b5d-405a-97c3-e186a4be9fb8:migration\",\"revision\":1,\"auto\":{\"revision\":1,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"savedAt\":1792540800000,\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p006\"}}},\"manual\":[null,null,null,null,null,null]}",
+        "vaultStatus": "valid"
+      },
+      "units": []
+    },
+    "storage": {
+      "originalV1": " \n{\"actId\":\"prologue\",\"sceneId\":\"p006\",\"flags\":{},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\"]}\n ",
+      "originalV2": "",
+      "raw": "{\"version\":3,\"activeRunId\":\"bda94dcb-2b5d-405a-97c3-e186a4be9fb8:migration\",\"revision\":1,\"auto\":{\"revision\":1,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"savedAt\":1792540800000,\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p006\"}}},\"manual\":[null,null,null,null,null,null]}",
+      "scenario": "migration-write-failure",
+      "settings": "",
+      "testid": "fixture-storage",
+      "v1": " \n{\"actId\":\"prologue\",\"sceneId\":\"p006\",\"flags\":{},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\"]}\n ",
+      "v1Unchanged": "true",
+      "v2": "",
+      "v2Unchanged": "true",
+      "writeKeys": "dw.save.v3",
+      "writes": "1"
+    }
+  },
+  {
+    "case": "read-failure",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": null,
+      "stage": {
+        "activeRunId": "",
+        "bgmId": "",
+        "paused": "false",
+        "saveJson": "",
+        "saveRequest": "0",
+        "saveStatus": "empty",
+        "screen": "menu",
+        "session": "1",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "main-menu",
+        "vaultJson": "",
+        "vaultStatus": "unavailable"
+      },
+      "units": []
+    },
+    "storage": {
+      "originalV1": "",
+      "originalV2": "",
+      "raw": "",
+      "scenario": "read-failure",
+      "settings": "",
+      "testid": "fixture-storage",
+      "v1": "",
+      "v1Unchanged": "true",
+      "v2": "",
+      "v2Unchanged": "true",
+      "writeKeys": "",
+      "writes": "0"
+    }
+  },
+  {
+    "case": "read-recovery",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": null,
+      "stage": {
+        "activeRunId": "",
+        "bgmId": "",
+        "paused": "false",
+        "saveJson": "",
+        "saveRequest": "0",
+        "saveStatus": "empty",
+        "screen": "menu",
+        "session": "2",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "main-menu",
+        "vaultJson": "",
+        "vaultStatus": "empty"
+      },
+      "units": []
+    }
+  },
+  {
+    "case": "settings-bad-defaults",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": "setting-bgm",
+      "panel": "settings",
+      "stage": {
+        "activeRunId": "",
+        "bgmId": "",
+        "paused": "true",
+        "saveJson": "",
+        "saveRequest": "0",
+        "saveStatus": "empty",
+        "screen": "menu",
+        "session": "1",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "main-menu",
+        "vaultJson": "",
+        "vaultStatus": "empty"
+      },
+      "units": []
+    },
+    "storage": {
+      "originalV1": "",
+      "originalV2": "",
+      "raw": "",
+      "scenario": "settings-bad",
+      "settings": "{\"version\":999}",
+      "testid": "fixture-storage",
+      "v1": "",
+      "v1Unchanged": "true",
+      "v2": "",
+      "v2Unchanged": "true",
+      "writeKeys": "",
+      "writes": "0"
+    }
+  },
+  {
+    "case": "settings-repair",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": "settings-defaults",
+      "panel": "settings",
+      "stage": {
+        "activeRunId": "",
+        "bgmId": "",
+        "paused": "true",
+        "saveJson": "",
+        "saveRequest": "0",
+        "saveStatus": "empty",
+        "screen": "menu",
+        "session": "1",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "main-menu",
+        "vaultJson": "",
+        "vaultStatus": "empty"
+      },
+      "units": []
+    },
+    "storage": {
+      "originalV1": "",
+      "originalV2": "",
+      "raw": "",
+      "scenario": "settings-bad",
+      "settings": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+      "testid": "fixture-storage",
+      "v1": "",
+      "v1Unchanged": "true",
+      "v2": "",
+      "v2Unchanged": "true",
+      "writeKeys": "dw.settings.v1",
+      "writes": "1"
+    }
+  },
+  {
+    "case": "settings-write-failure",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "0"
+        }
+      ],
+      "focus": "setting-bgm",
+      "panel": "settings",
+      "stage": {
+        "activeRunId": "",
+        "bgmId": "",
+        "paused": "true",
+        "saveJson": "",
+        "saveRequest": "0",
+        "saveStatus": "empty",
+        "screen": "menu",
+        "session": "1",
+        "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":30}",
+        "testid": "main-menu",
+        "vaultJson": "",
+        "vaultStatus": "empty"
+      },
+      "units": []
+    },
+    "storage": {
+      "originalV1": "",
+      "originalV2": "",
+      "raw": "",
+      "scenario": "write-failure",
+      "settings": "",
+      "testid": "fixture-storage",
+      "v1": "",
+      "v1Unchanged": "true",
+      "v2": "",
+      "v2Unchanged": "true",
+      "writeKeys": "",
+      "writes": "0"
+    }
+  },
+  {
+    "case": "v2-valid",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": null,
+      "panel": "busy",
+      "stage": {
+        "activeRunId": "2128e593-26e5-414c-a686-b5e08bf11f5d:migration",
+        "bgmId": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a007\"},\"savedAt\":1792540800000}",
+        "saveRequest": "0",
+        "saveStatus": "ready",
+        "screen": "menu",
+        "session": "2",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "main-menu",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"2128e593-26e5-414c-a686-b5e08bf11f5d:migration\",\"revision\":1,\"auto\":{\"revision\":1,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a007\"},\"savedAt\":1792540800000}},\"manual\":[null,null,null,null,null,null]}",
+        "vaultStatus": "valid"
+      },
+      "units": []
+    },
+    "storage": {
+      "originalV1": "",
+      "originalV2": " \n{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a007\"},\"savedAt\":1792540800000}\n ",
+      "raw": "{\"version\":3,\"activeRunId\":\"2128e593-26e5-414c-a686-b5e08bf11f5d:migration\",\"revision\":1,\"auto\":{\"revision\":1,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a007\"},\"savedAt\":1792540800000}},\"manual\":[null,null,null,null,null,null]}",
+      "scenario": "v2-valid",
+      "settings": "",
+      "testid": "fixture-storage",
+      "v1": "",
+      "v1Unchanged": "true",
+      "v2": " \n{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a007\"},\"savedAt\":1792540800000}\n ",
+      "v2Unchanged": "true",
+      "writeKeys": "dw.save.v3",
+      "writes": "1"
+    }
+  },
+  {
+    "case": "migration-race",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": null,
+      "panel": "busy",
+      "stage": {
+        "activeRunId": "other-window-run",
+        "bgmId": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\",\"act1_03\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_04\",\"sceneId\":\"a016\"},\"savedAt\":1792540800000}",
+        "saveRequest": "0",
+        "saveStatus": "ready",
+        "screen": "menu",
+        "session": "2",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "main-menu",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"other-window-run\",\"revision\":1,\"auto\":{\"revision\":1,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\",\"act1_03\"],\"savedAt\":1792540800000,\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_04\",\"sceneId\":\"a016\"}}},\"manual\":[null,null,null,null,null,null]}",
+        "vaultStatus": "valid"
+      },
+      "units": []
+    },
+    "storage": {
+      "originalV1": " \n{\"actId\":\"prologue\",\"sceneId\":\"p006\",\"flags\":{},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\"]}\n ",
+      "originalV2": "",
+      "raw": "{\"version\":3,\"activeRunId\":\"other-window-run\",\"revision\":1,\"auto\":{\"revision\":1,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\",\"act1_03\"],\"savedAt\":1792540800000,\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_04\",\"sceneId\":\"a016\"}}},\"manual\":[null,null,null,null,null,null]}",
+      "scenario": "migration-race",
+      "settings": "",
+      "testid": "fixture-storage",
+      "v1": " \n{\"actId\":\"prologue\",\"sceneId\":\"p006\",\"flags\":{},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\"]}\n ",
+      "v1Unchanged": "true",
+      "v2": "",
+      "v2Unchanged": "true",
+      "writeKeys": "",
+      "writes": "0"
+    }
+  },
+  {
+    "case": "migration-race-bad",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": null,
+      "panel": "busy",
+      "stage": {
+        "activeRunId": "",
+        "bgmId": "",
+        "paused": "false",
+        "saveJson": "",
+        "saveRequest": "0",
+        "saveStatus": "empty",
+        "screen": "menu",
+        "session": "1",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "main-menu",
+        "vaultJson": "",
+        "vaultStatus": "invalid"
+      },
+      "units": []
+    },
+    "storage": {
+      "originalV1": " \n{\"actId\":\"prologue\",\"sceneId\":\"p006\",\"flags\":{},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\"]}\n ",
+      "originalV2": "",
+      "raw": "另一窗口刚写的坏档",
+      "scenario": "migration-race-bad",
+      "settings": "",
+      "testid": "fixture-storage",
+      "v1": " \n{\"actId\":\"prologue\",\"sceneId\":\"p006\",\"flags\":{},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\"]}\n ",
+      "v1Unchanged": "true",
+      "v2": "",
+      "v2Unchanged": "true",
+      "writeKeys": "",
+      "writes": "0"
+    }
+  }
+]

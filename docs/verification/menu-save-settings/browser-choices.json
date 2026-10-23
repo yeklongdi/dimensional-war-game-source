@@ -1,0 +1,206 @@
+[
+  {
+    "case": "a007-four-options",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "bgm_school_choice",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": "story-stage",
+      "panel": "confirm",
+      "stage": {
+        "actId": "act1",
+        "activeRunId": "fb07dad0-305e-45e7-89c1-1e72b1052f11",
+        "bgmId": "bgm_school_choice",
+        "nodeIndex": "2",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a007\"},\"savedAt\":1792741525287}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "a007",
+        "session": "4",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"fb07dad0-305e-45e7-89c1-1e72b1052f11\",\"revision\":3,\"auto\":{\"revision\":3,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a007\"},\"savedAt\":1792741525287}},\"manual\":[null,null,null,null,null,null]}",
+        "vaultStatus": "valid",
+        "waitKind": "choice",
+        "waitToken": "4:1"
+      },
+      "units": []
+    },
+    "enabled": [
+      {
+        "disabled": true,
+        "text": "怪盗。暂未开放"
+      },
+      {
+        "disabled": false,
+        "text": "虚拟主播。"
+      },
+      {
+        "disabled": true,
+        "text": "反派。暂未开放"
+      },
+      {
+        "disabled": true,
+        "text": "让老师选择。暂未开放"
+      }
+    ]
+  },
+  {
+    "case": "a007-restore-then-select",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "bgm_school_daily",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": null,
+      "panel": "confirm",
+      "stage": {
+        "actId": "act1",
+        "activeRunId": "150c1e7e-a7c2-42b8-a952-fa21d8e6ae96",
+        "bgmId": "bgm_school_daily",
+        "nodeIndex": "4",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a008\"},\"savedAt\":1792741540482}",
+        "saveRequest": "2",
+        "saveStatus": "saved",
+        "sceneId": "a008",
+        "session": "6",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"150c1e7e-a7c2-42b8-a952-fa21d8e6ae96\",\"revision\":7,\"auto\":{\"revision\":7,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a008\"},\"savedAt\":1792741540482}},\"manual\":[{\"revision\":4,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a007\"},\"savedAt\":1792741526429}},null,null,null,null,null]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "6:2"
+      },
+      "text": "老师的话音落下后，",
+      "units": []
+    },
+    "storage": {
+      "originalV1": " \n{\"actId\":\"act1\",\"sceneId\":\"a007\",\"flags\":{\"flag_prologue_completed\":true},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\",\"act1\"]}\n ",
+      "originalV2": "",
+      "raw": "{\"version\":3,\"activeRunId\":\"150c1e7e-a7c2-42b8-a952-fa21d8e6ae96\",\"revision\":7,\"auto\":{\"revision\":7,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a008\"},\"savedAt\":1792741540482}},\"manual\":[{\"revision\":4,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a007\"},\"savedAt\":1792741526429}},null,null,null,null,null]}",
+      "scenario": "v1-a007",
+      "settings": "",
+      "testid": "fixture-storage",
+      "v1": " \n{\"actId\":\"act1\",\"sceneId\":\"a007\",\"flags\":{\"flag_prologue_completed\":true},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\",\"act1\"]}\n ",
+      "v1Unchanged": "true",
+      "v2": "",
+      "v2Unchanged": "true",
+      "writeKeys": "dw.save.v3,dw.save.v3,dw.save.v3,dw.save.v3,dw.save.v3,dw.save.v3,dw.save.v3",
+      "writes": "7"
+    }
+  },
+  {
+    "case": "a010-return-note",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "bgm_school_mystery",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": null,
+      "panel": "confirm",
+      "stage": {
+        "actId": "act1",
+        "activeRunId": "21c475ed-a8e6-4dbf-9348-8f5714b18525",
+        "bgmId": "bgm_school_mystery",
+        "nodeIndex": "2",
+        "optionIndex": "2",
+        "optionNodeIndex": "1",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_a010_03\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a010\"},\"savedAt\":1792741542230}",
+        "saveRequest": "2",
+        "saveStatus": "saved",
+        "sceneId": "a010",
+        "session": "4",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"21c475ed-a8e6-4dbf-9348-8f5714b18525\",\"revision\":4,\"auto\":{\"revision\":4,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_a010_03\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a010\"},\"savedAt\":1792741542230}},\"manual\":[null,null,null,null,null,null]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "4:2"
+      },
+      "text": "【暂无线性后果】原",
+      "units": []
+    }
+  },
+  {
+    "case": "a010-returns-choice",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "bgm_school_mystery",
+          "audioState": "silent",
+          "envelope": "0",
+          "testid": "bgm-player",
+          "userVolume": "65"
+        }
+      ],
+      "focus": "story-stage",
+      "panel": "confirm",
+      "stage": {
+        "actId": "act1",
+        "activeRunId": "21c475ed-a8e6-4dbf-9348-8f5714b18525",
+        "bgmId": "bgm_school_mystery",
+        "nodeIndex": "2",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_a010_03\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a010\"},\"savedAt\":1792741542230}",
+        "saveRequest": "2",
+        "saveStatus": "saved",
+        "sceneId": "a010",
+        "session": "4",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"21c475ed-a8e6-4dbf-9348-8f5714b18525\",\"revision\":4,\"auto\":{\"revision\":4,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_a010_03\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a010\"},\"savedAt\":1792741542230}},\"manual\":[null,null,null,null,null,null]}",
+        "vaultStatus": "valid",
+        "waitKind": "choice",
+        "waitToken": "4:3"
+      },
+      "units": []
+    },
+    "storage": {
+      "originalV1": " \n{\"actId\":\"act1\",\"sceneId\":\"a010\",\"flags\":{\"flag_prologue_completed\":true},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\",\"act1\"]}\n ",
+      "originalV2": "",
+      "raw": "{\"version\":3,\"activeRunId\":\"21c475ed-a8e6-4dbf-9348-8f5714b18525\",\"revision\":4,\"auto\":{\"revision\":4,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_a010_03\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a010\"},\"savedAt\":1792741542230}},\"manual\":[null,null,null,null,null,null]}",
+      "scenario": "v1-a010",
+      "settings": "",
+      "testid": "fixture-storage",
+      "v1": " \n{\"actId\":\"act1\",\"sceneId\":\"a010\",\"flags\":{\"flag_prologue_completed\":true},\"savedAt\":1792540800000,\"unlockedActs\":[\"prologue\",\"act1\"]}\n ",
+      "v1Unchanged": "true",
+      "v2": "",
+      "v2Unchanged": "true",
+      "writeKeys": "dw.save.v3,dw.save.v3,dw.save.v3,dw.save.v3",
+      "writes": "4"
+    }
+  }
+]

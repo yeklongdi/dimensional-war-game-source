@@ -34,6 +34,8 @@ export function startCampaign(library: StoryLibrary, seed: number): CampaignTran
 
 export function reduceCampaign(previous: GameState, action: CampaignAction, library: StoryLibrary): CampaignTransition {
   const reject = (rejectedReason: string): CampaignTransition => ({ state: previous, effects: [], rejectedReason });
+  if (previous.system && (previous.system.panel || previous.system.stale || previous.system.pending)
+    && action.type !== 'warning' && action.type !== 'asset-failed') return reject('系统菜单已暂停底层操作');
   if (previous.screen === 'story') {
     if (['command', 'mode', 'plan', 'continue-story', 'complete-battle'].includes(action.type)) return reject('当前没有可接收的正式战斗操作');
     const transition = reduceGame(previous, action as Action, library);

@@ -1,0 +1,159 @@
+[
+  {
+    "case": "volume-100",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "1",
+          "assetId": "bgm_homecoming_warm",
+          "audioState": "playing",
+          "envelope": "1",
+          "testid": "bgm-player",
+          "userVolume": "100"
+        }
+      ],
+      "focus": "setting-bgm",
+      "panel": "settings",
+      "stage": {
+        "actId": "prologue",
+        "activeRunId": "113a7223-22d8-4990-9af3-733bb64cc93c",
+        "bgmId": "bgm_homecoming_warm",
+        "nodeIndex": "3",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "true",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741556061}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "p001",
+        "session": "3",
+        "settingsJson": "{\"version\":1,\"bgm\":100,\"sfx\":100,\"textMs\":10}",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"113a7223-22d8-4990-9af3-733bb64cc93c\",\"revision\":38,\"auto\":{\"revision\":38,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741556061}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":33,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741279747}},{\"revision\":32,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741280614}},{\"revision\":35,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741291176}}]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "3:1"
+      },
+      "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪",
+      "units": []
+    }
+  },
+  {
+    "case": "volume-zero",
+    "data": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "bgm_homecoming_warm",
+          "audioState": "playing",
+          "envelope": "1",
+          "testid": "bgm-player",
+          "userVolume": "0"
+        }
+      ],
+      "focus": "setting-bgm",
+      "panel": "settings",
+      "stage": {
+        "actId": "prologue",
+        "activeRunId": "113a7223-22d8-4990-9af3-733bb64cc93c",
+        "bgmId": "bgm_homecoming_warm",
+        "nodeIndex": "3",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "true",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741556061}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "p001",
+        "session": "3",
+        "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"113a7223-22d8-4990-9af3-733bb64cc93c\",\"revision\":38,\"auto\":{\"revision\":38,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741556061}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":33,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741279747}},{\"revision\":32,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741280614}},{\"revision\":35,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741291176}}]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "3:1"
+      },
+      "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪",
+      "units": []
+    }
+  },
+  {
+    "case": "speed-change-preserves-partial",
+    "before": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "bgm_homecoming_warm",
+          "audioState": "playing",
+          "envelope": "1",
+          "testid": "bgm-player",
+          "userVolume": "0"
+        }
+      ],
+      "focus": "system-save",
+      "panel": "system",
+      "stage": {
+        "actId": "prologue",
+        "activeRunId": "113a7223-22d8-4990-9af3-733bb64cc93c",
+        "bgmId": "bgm_homecoming_warm",
+        "nodeIndex": "4",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "true",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741556061}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "p001",
+        "session": "3",
+        "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":100}",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"113a7223-22d8-4990-9af3-733bb64cc93c\",\"revision\":38,\"auto\":{\"revision\":38,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741556061}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":33,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741279747}},{\"revision\":32,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741280614}},{\"revision\":35,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741291176}}]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "3:2"
+      },
+      "text": "（六）",
+      "units": []
+    },
+    "after": {
+      "audio": [
+        {
+          "actualVolume": "0",
+          "assetId": "bgm_homecoming_warm",
+          "audioState": "playing",
+          "envelope": "1",
+          "testid": "bgm-player",
+          "userVolume": "0"
+        }
+      ],
+      "focus": "setting-bgm",
+      "panel": "settings",
+      "stage": {
+        "actId": "prologue",
+        "activeRunId": "113a7223-22d8-4990-9af3-733bb64cc93c",
+        "bgmId": "bgm_homecoming_warm",
+        "nodeIndex": "4",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "true",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741556061}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "p001",
+        "session": "3",
+        "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"113a7223-22d8-4990-9af3-733bb64cc93c\",\"revision\":38,\"auto\":{\"revision\":38,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741556061}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":33,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741279747}},{\"revision\":32,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741280614}},{\"revision\":35,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792741291176}}]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "3:2"
+      },
+      "text": "（六）",
+      "units": []
+    }
+  }
+]

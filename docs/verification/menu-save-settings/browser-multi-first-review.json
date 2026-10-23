@@ -1,0 +1,430 @@
+{
+  "checks": [
+    {
+      "step": "other-window-load-freezes-A",
+      "A": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "紧张、期待",
+            "pose": "携带行李、站立",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "layered"
+          }
+        ],
+        "audio": [
+          {
+            "actualVolume": "0",
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "envelope": "1",
+            "paused": false,
+            "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+            "testid": "bgm-player",
+            "userVolume": "0"
+          }
+        ],
+        "battle": [],
+        "focus": "system-reload",
+        "panel": "stale",
+        "stage": {
+          "actId": "prologue",
+          "activeRunId": "e602f846-0251-487f-941a-3f33c3e35018",
+          "bgmId": "bgm_homecoming_warm",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "paused": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738619454}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "sceneId": "p001",
+          "session": "3",
+          "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "vaultJson": "{\"version\":3,\"activeRunId\":\"6b4d7ccc-ede4-4656-8b16-2a67fee78811\",\"revision\":24,\"auto\":{\"revision\":24,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738655031}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+          "vaultStatus": "valid",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。"
+      },
+      "B": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "紧张、期待",
+            "pose": "携带行李、站立",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "placeholder"
+          }
+        ],
+        "audio": [
+          {
+            "actualVolume": "0",
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "envelope": "0.09580000000223662",
+            "paused": false,
+            "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+            "testid": "bgm-player",
+            "userVolume": "0"
+          }
+        ],
+        "battle": [],
+        "focus": null,
+        "panel": "confirm",
+        "stage": {
+          "actId": "prologue",
+          "activeRunId": "6b4d7ccc-ede4-4656-8b16-2a67fee78811",
+          "bgmId": "bgm_homecoming_warm",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "paused": "false",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738655031}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "sceneId": "p001",
+          "session": "3",
+          "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "vaultJson": "{\"version\":3,\"activeRunId\":\"6b4d7ccc-ede4-4656-8b16-2a67fee78811\",\"revision\":24,\"auto\":{\"revision\":24,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738655031}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+          "vaultStatus": "valid",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树"
+      }
+    },
+    {
+      "step": "A-accepts-active-run-without-stealing-identity",
+      "A": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "紧张、期待",
+            "pose": "携带行李、站立",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "layered"
+          }
+        ],
+        "audio": [
+          {
+            "actualVolume": "0",
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "envelope": "0.751",
+            "paused": false,
+            "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+            "testid": "bgm-player",
+            "userVolume": "0"
+          }
+        ],
+        "battle": [],
+        "focus": null,
+        "panel": "stale",
+        "stage": {
+          "actId": "prologue",
+          "activeRunId": "6b4d7ccc-ede4-4656-8b16-2a67fee78811",
+          "bgmId": "bgm_homecoming_warm",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "paused": "false",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738656532}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "sceneId": "p001",
+          "session": "5",
+          "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "vaultJson": "{\"version\":3,\"activeRunId\":\"6b4d7ccc-ede4-4656-8b16-2a67fee78811\",\"revision\":25,\"auto\":{\"revision\":25,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738656532}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+          "vaultStatus": "valid",
+          "waitKind": "text",
+          "waitToken": "5:1"
+        },
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花"
+      },
+      "B": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "紧张、期待",
+            "pose": "携带行李、站立",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "layered"
+          }
+        ],
+        "audio": [
+          {
+            "actualVolume": "0",
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "envelope": "1",
+            "paused": false,
+            "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+            "testid": "bgm-player",
+            "userVolume": "0"
+          }
+        ],
+        "battle": [],
+        "focus": null,
+        "panel": "confirm",
+        "stage": {
+          "actId": "prologue",
+          "activeRunId": "6b4d7ccc-ede4-4656-8b16-2a67fee78811",
+          "bgmId": "bgm_homecoming_warm",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "paused": "false",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738656532}",
+          "saveRequest": "1",
+          "saveStatus": "ready",
+          "sceneId": "p001",
+          "session": "3",
+          "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "vaultJson": "{\"version\":3,\"activeRunId\":\"6b4d7ccc-ede4-4656-8b16-2a67fee78811\",\"revision\":25,\"auto\":{\"revision\":25,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738656532}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":6,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670138}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+          "vaultStatus": "valid",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。"
+      }
+    },
+    {
+      "step": "different-slots-both-retained",
+      "A": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "紧张、期待",
+            "pose": "携带行李、站立",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "layered"
+          }
+        ],
+        "audio": [
+          {
+            "actualVolume": "0",
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "envelope": "1",
+            "paused": false,
+            "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+            "testid": "bgm-player",
+            "userVolume": "0"
+          }
+        ],
+        "battle": [],
+        "focus": "system-cancel",
+        "panel": "confirm",
+        "stage": {
+          "actId": "prologue",
+          "activeRunId": "6b4d7ccc-ede4-4656-8b16-2a67fee78811",
+          "bgmId": "bgm_homecoming_warm",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "paused": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738656532}",
+          "saveRequest": "1",
+          "saveStatus": "ready",
+          "sceneId": "p001",
+          "session": "5",
+          "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "vaultJson": "{\"version\":3,\"activeRunId\":\"6b4d7ccc-ede4-4656-8b16-2a67fee78811\",\"revision\":26,\"auto\":{\"revision\":25,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738656532}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":26,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738705147}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+          "vaultStatus": "valid",
+          "waitKind": "text",
+          "waitToken": "5:1"
+        },
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。"
+      },
+      "B": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "紧张、期待",
+            "pose": "携带行李、站立",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "layered"
+          }
+        ],
+        "audio": [
+          {
+            "actualVolume": "0",
+            "assetId": "bgm_homecoming_warm",
+            "audioState": "playing",
+            "envelope": "1",
+            "paused": false,
+            "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+            "testid": "bgm-player",
+            "userVolume": "0"
+          }
+        ],
+        "battle": [],
+        "focus": "slot-1",
+        "panel": "save",
+        "stage": {
+          "actId": "prologue",
+          "activeRunId": "6b4d7ccc-ede4-4656-8b16-2a67fee78811",
+          "bgmId": "bgm_homecoming_warm",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "paused": "true",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738656532}",
+          "saveRequest": "1",
+          "saveStatus": "ready",
+          "sceneId": "p001",
+          "session": "3",
+          "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "vaultJson": "{\"version\":3,\"activeRunId\":\"6b4d7ccc-ede4-4656-8b16-2a67fee78811\",\"revision\":26,\"auto\":{\"revision\":25,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738656532}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":26,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738705147}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+          "vaultStatus": "valid",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。"
+      }
+    }
+  ],
+  "A": {
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "紧张、期待",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "layered"
+      }
+    ],
+    "audio": [
+      {
+        "actualVolume": "0",
+        "assetId": "bgm_homecoming_warm",
+        "audioState": "playing",
+        "envelope": "1",
+        "paused": false,
+        "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+        "testid": "bgm-player",
+        "userVolume": "0"
+      }
+    ],
+    "battle": [],
+    "focus": "system-cancel",
+    "panel": "confirm",
+    "stage": {
+      "actId": "prologue",
+      "activeRunId": "6b4d7ccc-ede4-4656-8b16-2a67fee78811",
+      "bgmId": "bgm_homecoming_warm",
+      "nodeIndex": "3",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "paused": "true",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738656532}",
+      "saveRequest": "1",
+      "saveStatus": "ready",
+      "sceneId": "p001",
+      "session": "5",
+      "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+      "testid": "story-stage",
+      "typingComplete": "true",
+      "vaultJson": "{\"version\":3,\"activeRunId\":\"6b4d7ccc-ede4-4656-8b16-2a67fee78811\",\"revision\":26,\"auto\":{\"revision\":25,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738656532}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":26,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738705147}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+      "vaultStatus": "valid",
+      "waitKind": "text",
+      "waitToken": "5:1"
+    },
+    "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。"
+  },
+  "B": {
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "紧张、期待",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "layered"
+      }
+    ],
+    "audio": [
+      {
+        "actualVolume": "0",
+        "assetId": "bgm_homecoming_warm",
+        "audioState": "playing",
+        "envelope": "1",
+        "paused": false,
+        "src": "http://127.0.0.1:43910/assets/audio/homecoming.wav",
+        "testid": "bgm-player",
+        "userVolume": "0"
+      }
+    ],
+    "battle": [],
+    "focus": "slot-1",
+    "panel": "save",
+    "stage": {
+      "actId": "prologue",
+      "activeRunId": "6b4d7ccc-ede4-4656-8b16-2a67fee78811",
+      "bgmId": "bgm_homecoming_warm",
+      "nodeIndex": "3",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "paused": "true",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738656532}",
+      "saveRequest": "1",
+      "saveStatus": "ready",
+      "sceneId": "p001",
+      "session": "3",
+      "settingsJson": "{\"version\":1,\"bgm\":0,\"sfx\":100,\"textMs\":10}",
+      "testid": "story-stage",
+      "typingComplete": "true",
+      "vaultJson": "{\"version\":3,\"activeRunId\":\"6b4d7ccc-ede4-4656-8b16-2a67fee78811\",\"revision\":26,\"auto\":{\"revision\":25,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738656532}},\"manual\":[{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737668714}},{\"revision\":12,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738445104}},{\"revision\":18,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792738529520}},{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737669795}},{\"revision\":26,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792738705147}},{\"revision\":7,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"map\"},\"savedAt\":1792737670456}}]}",
+      "vaultStatus": "valid",
+      "waitKind": "text",
+      "waitToken": "3:1"
+    },
+    "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。"
+  },
+  "issue": "重载复用clientId但操作修订归零，命中IO去重后未清pending；保留失败证据，修复后重新验收"
+}
