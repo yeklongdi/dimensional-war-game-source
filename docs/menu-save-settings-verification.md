@@ -85,4 +85,17 @@
 
 维护者正式站发布前记录为P006，flag_prologue_p005_01=true、完成prologue_01，savedAt=1792665979553（online-before.json）。正式验收不会开始新游戏或清理该档。新旧域名、localhost及端口的存档相互独立，不会跨设备同步。
 
-待实际部署回执补充。此处不预先声称线上新版本已成功。
+### 正式发布回执
+
+- 功能提交`69212d022bddfaa2228aedbd4ea8451c56a9a0ae`已正常推送main。[Actions 39921309077](https://github.com/yeklongdi/dimensional-war-game-source/actions/runs/39921309077)明确completed／success：build29秒，deploy9秒；远端重新执行npm ci、typecheck、465项测试及正式子路径构建。actions-feature.json保留原结果。只有Ubuntu运行镜像迁移通知，无失败。
+- Pages API返回正式https网址、build_type=workflow、https_enforced=true。无需GitHub登录即可加载游戏；此次没有登录流程或账号系统。
+- 正式站初次加载完成v2→v3，旧auto快照字符串与发布前saveJson**完全相同**（包括原savedAt）。online-migrated.json记录对照；此比较是正式UI可见的合法快照，不冒称已从浏览器直接读取并哈希旧localStorage原串。旧原始串只读保护由代码、自动测试及受控逐字对照证明。
+- 真实线上操作：读取面板一自动六空手动槽→确认原auto→P006原文→教学战；先攻激励等待内打开系统设置、返回后保留原骰；正常选(3,3)移动路线、显示确认及终点虚影，再确认执行；系统返回地图仍保留P006检查点，仓库浮窗显示“继续关卡”；刷新回主菜单仍能读取原P006。未触碰新游戏、未写线上手动槽、未改维护者设置。
+- 正式站三按钮、设置、地图、剧情、战棋和移动规划均有截图／DOM证据（online-browser.json、online-main-menu.jpg、online-settings.jpg、online-movement.jpg）；控制台无error。沿用既有缺素材warn。未在线完整通关七关、未在线打赢两战，本轮不作此声明。
+- 静态产物60文件全部HTTP200且SHA256与本地dist逐项一致，结果见online-http.json；不将网络资源校验等同于游玩所有分支。
+
+![正式站三按钮与旧进度升级](verification/menu-save-settings/online-main-menu.jpg)
+
+![正式站移动规划](verification/menu-save-settings/online-movement.jpg)
+
+发布证据与本验收说明随后以文档提交同步同一main，不改运行代码或产物；本页和release.json登记实际已成功的功能发布，文档同步提交的最终Actions与远端一致性在交付消息中报告，避免记录文件自身提交哈希的循环依赖。

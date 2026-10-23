@@ -1,0 +1,27 @@
+{
+  "url": "https://yeklongdi.github.io/dimensional-war-game-source/",
+  "branch": "main",
+  "repository": "yeklongdi/dimensional-war-game-source",
+  "visibility": "PUBLIC",
+  "featureCommit": "69212d022bddfaa2228aedbd4ea8451c56a9a0ae",
+  "featureActions": {
+    "url": "https://github.com/yeklongdi/dimensional-war-game-source/actions/runs/39921309077",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "localChecks": {
+    "typecheck": "pass",
+    "testFiles": 30,
+    "tests": 465,
+    "build": "pass",
+    "projectPathBuild": "pass"
+  },
+  "online": {
+    "httpFiles": 60,
+    "failedFiles": 0,
+    "initialMigrationSnapshotEqual": true,
+    "consoleErrors": [],
+    "completeSevenLevelPlaythrough": false
+  },
+  "note": "发布证据文档随后正常提交同一main；最终文档提交及Actions在交付消息中报告。"
+}

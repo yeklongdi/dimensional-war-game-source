@@ -1,0 +1,45 @@
+{
+  "before": {
+    "stage": {
+      "bgmId": "",
+      "navToken": "1:0:menu",
+      "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p006\"},\"savedAt\":1792665979553}",
+      "saveRequest": "0",
+      "saveStatus": "ready",
+      "screen": "menu",
+      "session": "1",
+      "testid": "main-menu"
+    },
+    "text": "最近存档：仓库区事件 · 仓库区外围·第一次战斗 · 2026/10/22 18:46:19"
+  },
+  "after": {
+    "audio": [
+      {
+        "actualVolume": "0",
+        "assetId": "",
+        "audioState": "silent",
+        "envelope": "0",
+        "testid": "bgm-player",
+        "userVolume": "65"
+      }
+    ],
+    "focus": null,
+    "panel": "busy",
+    "stage": {
+      "activeRunId": "e3f1e87c-652b-4ca6-b15e-104a800a3991:migration",
+      "bgmId": "",
+      "paused": "false",
+      "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p006\"},\"savedAt\":1792665979553}",
+      "saveRequest": "0",
+      "saveStatus": "ready",
+      "screen": "menu",
+      "session": "2",
+      "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+      "testid": "main-menu",
+      "vaultJson": "{\"version\":3,\"activeRunId\":\"e3f1e87c-652b-4ca6-b15e-104a800a3991:migration\",\"revision\":1,\"auto\":{\"revision\":1,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p006\"},\"savedAt\":1792665979553}},\"manual\":[null,null,null,null,null,null]}",
+      "vaultStatus": "valid"
+    },
+    "units": []
+  },
+  "checkpointEqual": true
+}

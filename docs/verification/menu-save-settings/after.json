@@ -24,13 +24,13 @@
       "tools/check-menu-save-settings.mjs"
     ],
     "modified": [
-      "docs/decisions-menu-save-settings.md",
-      "docs/menu-save-settings-spec.md",
-      "prompts/主菜单-多存档-设置.md",
       "AGENTS.md",
       "README.md",
       "docs/01-任务书.md",
+      "docs/decisions-menu-save-settings.md",
       "docs/decisions.md",
+      "docs/menu-save-settings-spec.md",
+      "prompts/主菜单-多存档-设置.md",
       "src/game/audio.ts",
       "src/game/campaign.ts",
       "src/game/controller.ts",
@@ -291,74 +291,6 @@
   },
   "files": [
     {
-      "path": "docs/decisions-menu-save-settings.md",
-      "sha256": "545b1d70da2c38cf744d5632da23d37808ed3f2b03482aa71da74293cf80f3ed"
-    },
-    {
-      "path": "docs/menu-save-settings-spec.md",
-      "sha256": "058224013ed6ca316e9a4b833fda07fbfede088ef390f6bfcf6cec89b3822406"
-    },
-    {
-      "path": "docs/menu-save-settings-verification.md",
-      "sha256": "9391f12d7d1e8107d1e1e5f35b9a70a1b1aa711e7ca137b238c755894d09306e"
-    },
-    {
-      "path": "prompts/主菜单-多存档-设置.md",
-      "sha256": "774c8c833a7d6d35b34851d18d4203358eb2e8da44a0de71178d3f773e8a407b"
-    },
-    {
-      "path": "src/game/runtime.ts",
-      "sha256": "4307ac0bd8b3718ce9b778c893c92ec0c1aeb2256e519aaeec28537536a6debd"
-    },
-    {
-      "path": "src/game/save-v3.ts",
-      "sha256": "e175f69b25628a1bc33e3c631d9fa5990e4e3bd841b5b005438f9f2aecdc5602"
-    },
-    {
-      "path": "src/game/settings.ts",
-      "sha256": "7a3232276ceff58cc7002500572e1c4b871f3eb0c014b21d4f2ec1555849bced"
-    },
-    {
-      "path": "src/game/system-types.ts",
-      "sha256": "7b89603098c1299a7474b88c22624c80dd7fdbd7bc68f835689350ded8ba8391"
-    },
-    {
-      "path": "src/game/ui/system-view.ts",
-      "sha256": "baae637fc62743fbbbc03afd65bf9eff1fcb2e93e9a0c6a13e0ae86c6d6fc540"
-    },
-    {
-      "path": "src/game/vault-storage.ts",
-      "sha256": "3a50a827d4cccb6cfa28c141fae4ce605d55a0c567eacb376dc38c312d4f3fc3"
-    },
-    {
-      "path": "src/styles/system.css",
-      "sha256": "eec6f91ef0ba49b3eed7234693ec3d6dc939a797ff735a1f533a3886b8f90945"
-    },
-    {
-      "path": "src/tests/menu-helpers.ts",
-      "sha256": "6ba464372aeeaf3687f69a831660f4b685ee242826d4bda9c6392a6ee981b90d"
-    },
-    {
-      "path": "src/tests/settings-audio.test.ts",
-      "sha256": "3876fe5b67c1495b0601e566f0d41d8571ef60471bd83d12ab864bdc0611b9c1"
-    },
-    {
-      "path": "src/tests/system-runtime.test.ts",
-      "sha256": "9e03da35d0ebe35a2d2aa68ef7fc59ac484eec3100915a20f3a5f38aa83f40b6"
-    },
-    {
-      "path": "src/tests/vault-v3.test.ts",
-      "sha256": "c81f6c91e04d974c2dbc9b441cab74629ad64b48c463744a2876d6cf883d3b76"
-    },
-    {
-      "path": "tests/menu-layout.html",
-      "sha256": "39b39f74ba277d6b0e9bed7798de52bdeda4df53e8530cdb660c2fb5180c27c5"
-    },
-    {
-      "path": "tools/check-menu-save-settings.mjs",
-      "sha256": "715d02aff048fe0b76a4909a37ed279404797f3037cf087444a42f07694d9157"
-    },
-    {
       "path": ".github/workflows/build-game.yml",
       "sha256": "ab7ee400cb978dfe150786a2002e1c9b2fb3d1dd19d2e1e49de8533e81b24759"
     },
@@ -392,7 +324,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "9494a57808d4eb85c7f2c4d5720c21a9e8b4a4e7ec4c07e976fb6d750a385d08"
+      "sha256": "dacf23fcbc7a8bd0ff4f8ebefa1009938f94b7df829b20b111aee6f25edae9d1"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -515,6 +447,10 @@
       "sha256": "b8edf76484c2ec266b753927909f3ef2a66b428cf9658c652c576f6e86db7801"
     },
     {
+      "path": "docs/decisions-menu-save-settings.md",
+      "sha256": "545b1d70da2c38cf744d5632da23d37808ed3f2b03482aa71da74293cf80f3ed"
+    },
+    {
       "path": "docs/decisions-movement-preview.md",
       "sha256": "67359d45655bda286ef345a44fb3aff365528d3d82dbbf533d3fa0f07db6e23d"
     },
@@ -581,6 +517,14 @@
     {
       "path": "docs/map-window-verification.md",
       "sha256": "151a0644fe434c09392d0b0274771499e0829d6807702fe2e3500d8bafce5caf"
+    },
+    {
+      "path": "docs/menu-save-settings-spec.md",
+      "sha256": "058224013ed6ca316e9a4b833fda07fbfede088ef390f6bfcf6cec89b3822406"
+    },
+    {
+      "path": "docs/menu-save-settings-verification.md",
+      "sha256": "7089b593c32c597b6ca54166b3ec9f1de0668eb125a6b273676b6d481929d7f3"
     },
     {
       "path": "docs/movement-preview-spec.md",
@@ -1963,6 +1907,10 @@
       "sha256": "5b7b323a962aef6edb9bdf5e601512efff041e256ae7db81d38b00ce787695a4"
     },
     {
+      "path": "prompts/主菜单-多存档-设置.md",
+      "sha256": "774c8c833a7d6d35b34851d18d4203358eb2e8da44a0de71178d3f773e8a407b"
+    },
+    {
       "path": "public/assets/audio/homecoming.wav",
       "sha256": "48791878ab477239c5301855cd8fcf9ce8d05eef75a1f3c07055527470a16701"
     },
@@ -2371,6 +2319,10 @@
       "sha256": "21d91a2a02a2b25fb8e09e0f780e1b08784f7da9a90c6609ed6b91c09a051ade"
     },
     {
+      "path": "src/game/runtime.ts",
+      "sha256": "4307ac0bd8b3718ce9b778c893c92ec0c1aeb2256e519aaeec28537536a6debd"
+    },
+    {
       "path": "src/game/save-format.ts",
       "sha256": "71f758363e8ca98bbcfab1df1a872541215c21bbbd607473c1dd52691792dee3"
     },
@@ -2381,6 +2333,14 @@
     {
       "path": "src/game/save-v2.ts",
       "sha256": "7bdf5da886a623fc4c512e388633068f8fb76cac35eee1f453fe6e68cb5aff42"
+    },
+    {
+      "path": "src/game/save-v3.ts",
+      "sha256": "e175f69b25628a1bc33e3c631d9fa5990e4e3bd841b5b005438f9f2aecdc5602"
+    },
+    {
+      "path": "src/game/settings.ts",
+      "sha256": "7a3232276ceff58cc7002500572e1c4b871f3eb0c014b21d4f2ec1555849bced"
     },
     {
       "path": "src/game/state.ts",
@@ -2405,6 +2365,10 @@
     {
       "path": "src/game/story/restore.ts",
       "sha256": "e47bcbd897277edd5365e56c96822cafb239bac961aa260f47a8418a9ad673a7"
+    },
+    {
+      "path": "src/game/system-types.ts",
+      "sha256": "7b89603098c1299a7474b88c22624c80dd7fdbd7bc68f835689350ded8ba8391"
     },
     {
       "path": "src/game/ui/app-chrome.ts",
@@ -2459,6 +2423,14 @@
       "sha256": "592dd7f44c17a4c0d0207874ab39ec39ba3036d779298cae3b8f23e4cfe9deb0"
     },
     {
+      "path": "src/game/ui/system-view.ts",
+      "sha256": "baae637fc62743fbbbc03afd65bf9eff1fcb2e93e9a0c6a13e0ae86c6d6fc540"
+    },
+    {
+      "path": "src/game/vault-storage.ts",
+      "sha256": "3a50a827d4cccb6cfa28c141fae4ce605d55a0c567eacb376dc38c312d4f3fc3"
+    },
+    {
       "path": "src/game/visual/animation.ts",
       "sha256": "3fbb4a4e5d31bf47f9195715e1643d37d0c15b0da16e8ae8fd9a752b5c00b32f"
     },
@@ -2497,6 +2469,10 @@
     {
       "path": "src/styles/player.css",
       "sha256": "489d56e33ea2117790c0439e7ecb5d76f289921ac9e0e78dd8a712a522eae05e"
+    },
+    {
+      "path": "src/styles/system.css",
+      "sha256": "eec6f91ef0ba49b3eed7234693ec3d6dc939a797ff735a1f533a3886b8f90945"
     },
     {
       "path": "src/tests/asset-url.test.ts",
@@ -2607,6 +2583,10 @@
       "sha256": "1d6a75fe1208d8192dac27fbec2a6213b954cd90a1dc07aa8e65765e5c40a922"
     },
     {
+      "path": "src/tests/menu-helpers.ts",
+      "sha256": "6ba464372aeeaf3687f69a831660f4b685ee242826d4bda9c6392a6ee981b90d"
+    },
+    {
       "path": "src/tests/movement-helpers.ts",
       "sha256": "7acd6cb56746168c79d0b6fde692163bfc4027780cd54359f723d775b8cde48b"
     },
@@ -2647,6 +2627,18 @@
       "sha256": "529acab65417948290e49e46d13e4c5ecbfcfbd680fe155e2b31326b0ede06c0"
     },
     {
+      "path": "src/tests/settings-audio.test.ts",
+      "sha256": "3876fe5b67c1495b0601e566f0d41d8571ef60471bd83d12ab864bdc0611b9c1"
+    },
+    {
+      "path": "src/tests/system-runtime.test.ts",
+      "sha256": "9e03da35d0ebe35a2d2aa68ef7fc59ac484eec3100915a20f3a5f38aa83f40b6"
+    },
+    {
+      "path": "src/tests/vault-v3.test.ts",
+      "sha256": "c81f6c91e04d974c2dbc9b441cab74629ad64b48c463744a2876d6cf883d3b76"
+    },
+    {
       "path": "src/tests/visual-loading.test.ts",
       "sha256": "f4b4ea92d4359c27de279e6d9dafcd70fe6f3a6397ec684b7c157300b54a69b2"
     },
@@ -2665,6 +2657,10 @@
     {
       "path": "tests/battle-scale.html",
       "sha256": "806960c9124fc1ea1c7e6f7cee2ae08f9b20b23b03995f71916146759266683b"
+    },
+    {
+      "path": "tests/menu-layout.html",
+      "sha256": "39b39f74ba277d6b0e9bed7798de52bdeda4df53e8530cdb660c2fb5180c27c5"
     },
     {
       "path": "tests/portrait-presentation.html",
@@ -2689,6 +2685,10 @@
     {
       "path": "tools/check-map-window.mjs",
       "sha256": "9483ac65cf9aa3db3fe1df0c60751126ab585e001bc92c65b17abbc8e003d33f"
+    },
+    {
+      "path": "tools/check-menu-save-settings.mjs",
+      "sha256": "715d02aff048fe0b76a4909a37ed279404797f3037cf087444a42f07694d9157"
     },
     {
       "path": "tools/export-story.mjs",

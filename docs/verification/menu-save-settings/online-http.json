@@ -1,0 +1,487 @@
+{
+  "base": "https://yeklongdi.github.io/dimensional-war-game-source/",
+  "files": [
+    {
+      "path": "dist/assets/audio/homecoming.wav",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/audio/homecoming.wav",
+      "status": 200,
+      "bytes": 11369352,
+      "sha256": "48791878ab477239c5301855cd8fcf9ce8d05eef75a1f3c07055527470a16701",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/audio/liuxie.wav",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/audio/liuxie.wav",
+      "status": 200,
+      "bytes": 19737328,
+      "sha256": "2eeedb6dc5ebc450adcf33f340a0d66b8fd8ed30f7872ac9155532c44bef5c05",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/index-B6od4YuH.css",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/index-B6od4YuH.css",
+      "status": 200,
+      "bytes": 20249,
+      "sha256": "1063874abeb81ff439df46ad975b44eca311d2882235dfbef3cfc0d460007a39",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/index-CzWEFOMr.js",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/index-CzWEFOMr.js",
+      "status": 200,
+      "bytes": 180523,
+      "sha256": "de6dc3ab7532cbcc36dc170e493ea2d3e6bfcf5941f5c85817389bb3fd0ce93e",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/maps/sun-city-painted-v1.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/maps/sun-city-painted-v1.png",
+      "status": 200,
+      "bytes": 3836748,
+      "sha256": "56bc275af13fcc82c971ae2a074919a2380ee5404cf346053eae098a5ff1b57e",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v1/body.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v1/body.png",
+      "status": 200,
+      "bytes": 1089652,
+      "sha256": "2f40311d2843f73407f8e18e8c704c589b24d913a8413e355dd80c73702c38c0",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v1/eyes-calm.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v1/eyes-calm.png",
+      "status": 200,
+      "bytes": 595529,
+      "sha256": "a3df3467a891a986ceb7fe93fbf4f98498390a15c4836b404fc0ed8d3409b23f",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v1/eyes-closed-v2.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v1/eyes-closed-v2.png",
+      "status": 200,
+      "bytes": 571360,
+      "sha256": "510bc67b5bf9a03becb0ae1c1cd9b0f9cfd19385081ced666a8720e2f9591e8f",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v1/eyes-closed.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v1/eyes-closed.png",
+      "status": 200,
+      "bytes": 465649,
+      "sha256": "bc3371e148e12d24f63b41a810a7135d28a3587bf653f10384c9cd780ee50e05",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v1/eyes-half-v2.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v1/eyes-half-v2.png",
+      "status": 200,
+      "bytes": 665471,
+      "sha256": "c3ee5fa93a70d6a49a4a8a2ad66058bdc24e1cdd470108587f045889d2c0aa5a",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v1/eyes-half.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v1/eyes-half.png",
+      "status": 200,
+      "bytes": 483189,
+      "sha256": "0939ebf9ac1444b9a277958b3f685ebe80419b3385b76ee492886b9c80fa41eb",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v1/hair-back.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v1/hair-back.png",
+      "status": 200,
+      "bytes": 510183,
+      "sha256": "b6452abdf66eb702c8f415e0d7a171b94a4a906db1343335436d312f34f92a6d",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v1/hair-front.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v1/hair-front.png",
+      "status": 200,
+      "bytes": 489554,
+      "sha256": "3a2a332c27aa918381c278be8dd899a227c2390c081d2befe21c5060de1c491c",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v1/head.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v1/head.png",
+      "status": 200,
+      "bytes": 642225,
+      "sha256": "e78beede9d5c5a84f37b334996a056dde750d8fe00fa2fe077c4045a1beffc32",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v1/lower-left.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v1/lower-left.png",
+      "status": 200,
+      "bytes": 555562,
+      "sha256": "8e2516c687c0f037009a289cea0bb32a4ca7656cc713330782117c25bce312a5",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v1/lower-right.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v1/lower-right.png",
+      "status": 200,
+      "bytes": 701095,
+      "sha256": "f3e0500d8a66cff6f0fc9bbe6f7222c6991858e87570af4dc57168c93caf6d60",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v1/master-reference.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v1/master-reference.png",
+      "status": 200,
+      "bytes": 1273204,
+      "sha256": "4a83585139ce20763c310681cf4f663776ab55ec9e486df4e4f9525a3d5111e7",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v1/mouth-calm.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v1/mouth-calm.png",
+      "status": 200,
+      "bytes": 440173,
+      "sha256": "194668a5847c7bea573c7185d828c1fdf7bbc6793232f5f3ffd4f2111bf0d25e",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v1/mouth-open.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v1/mouth-open.png",
+      "status": 200,
+      "bytes": 456561,
+      "sha256": "6e8e72fb0b9f681c7436d385142278142b58775b55e570df059b2c378189f996",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v1/upper-left.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v1/upper-left.png",
+      "status": 200,
+      "bytes": 520618,
+      "sha256": "d245f28e0efaba7bde06ff49fd5268e4787ec12a2c1b24808e0ce723b42abe54",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v1/upper-right.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v1/upper-right.png",
+      "status": 200,
+      "bytes": 581186,
+      "sha256": "4ffd09adb5df66fe5cd863b72d049bde6fe6bf5aba9222e47652c0acbd1ec125",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v2/arms-alpha-review.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v2/arms-alpha-review.png",
+      "status": 200,
+      "bytes": 941666,
+      "sha256": "107679646e63dc9d2bfa00e263ca080575a08182212a50e2518ae5ce8d4a2920",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v2/arms-candidate.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v2/arms-candidate.png",
+      "status": 200,
+      "bytes": 954438,
+      "sha256": "157a79c51bfba86063f9f3b4cb1926f0e5d5f72367b1a20a65f18e9374d11eec",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/arm-left-prepare.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/arm-left-prepare.png",
+      "status": 200,
+      "bytes": 63602,
+      "sha256": "43dbfdb0e7cfb0cf75910d20875715113c30e44e6d8bd98bf2d0cbe26725f225",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/arm-right-prepare.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/arm-right-prepare.png",
+      "status": 200,
+      "bytes": 74910,
+      "sha256": "cc7ce843843c03f1fc28a89a865ad80b51565609b4396af90c4697ab47909c74",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/body-luggage.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/body-luggage.png",
+      "status": 200,
+      "bytes": 573102,
+      "sha256": "e4053b7e51bb0c44bae267500a768fb28b17c4bcb37fe07794cd17b55521f0f2",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/body-prepare.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/body-prepare.png",
+      "status": 200,
+      "bytes": 527887,
+      "sha256": "55806596d9bd67125a9cdbba35b679094f5b5d1523505ee41cbeff2a86db6bfe",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/body-stand.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/body-stand.png",
+      "status": 200,
+      "bytes": 560417,
+      "sha256": "71103e58cd5276c0f36ac1ad9cd687c6d6352225e95b0faa64a7918e52edd2fd",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/eyes-calm-closed.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-calm-closed.png",
+      "status": 200,
+      "bytes": 31179,
+      "sha256": "7358dd1a1c0dcb17ac82ce3f021a3a0c0318147502e1a41e62991380609c6404",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/eyes-calm-half.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-calm-half.png",
+      "status": 200,
+      "bytes": 31337,
+      "sha256": "ac267f07316c591f287ffcdcc1d421bad9fa638ff3947f9d317c2deb1ee7c4f1",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/eyes-calm.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-calm.png",
+      "status": 200,
+      "bytes": 31432,
+      "sha256": "0a157ccffa964873f721690e5de16e321aec069733c1ccf7f281517f4014a45f",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/eyes-nervous-closed.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous-closed.png",
+      "status": 200,
+      "bytes": 30605,
+      "sha256": "3c6d74bfb400eaa76e6589b432bb38a985dfad7ce0dcf92433127af52dcaf971",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/eyes-nervous-half.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous-half.png",
+      "status": 200,
+      "bytes": 30764,
+      "sha256": "014e0882b2b286c2c7b82fde01d145e351d5f8574d0e0163a463f8aba5059838",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/eyes-nervous.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous.png",
+      "status": 200,
+      "bytes": 31851,
+      "sha256": "af68cb9460271a7b8ccbe2094eeb9b0cecc4367357cb1493b7c94d7d42af3d4e",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/eyes-proud-closed.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-proud-closed.png",
+      "status": 200,
+      "bytes": 31456,
+      "sha256": "f3ba29cf993c7c176122bda85f46d3b9b4d082f2907f9ace64183159816a3fe5",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/eyes-proud-half.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-proud-half.png",
+      "status": 200,
+      "bytes": 31586,
+      "sha256": "604d687d4880bab8871ebd20769c5302e8361dbf6325f42a256fff86b0bac430",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/eyes-proud.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-proud.png",
+      "status": 200,
+      "bytes": 31988,
+      "sha256": "1488424e7dc19fa163525bd743f71c11d4336c0e097e660e162740a73b2e72fe",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/eyes-puzzled-closed.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-puzzled-closed.png",
+      "status": 200,
+      "bytes": 31107,
+      "sha256": "416884d1c993469eeadf23a25763867b4a65fc728dd86ebda70ffcfc847d866e",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/eyes-puzzled-half.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-puzzled-half.png",
+      "status": 200,
+      "bytes": 31231,
+      "sha256": "2803c9e8ef4015b516fdff728a978af1415a7eeb8a0dd46aa35fa3a483ec71e2",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/eyes-puzzled.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-puzzled.png",
+      "status": 200,
+      "bytes": 32110,
+      "sha256": "9823a2f4c93c37fb23227823f3bb15bd8928ae664098abc33502b60ee3b6c791",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/eyes-relaxed-closed.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-relaxed-closed.png",
+      "status": 200,
+      "bytes": 30790,
+      "sha256": "49db4b5aa06e4449019a3a669472126abef4eb14507f390775a7be0a50273888",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/eyes-relaxed-half.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-relaxed-half.png",
+      "status": 200,
+      "bytes": 30955,
+      "sha256": "24cb5219bf0d48474473a69f619cc9fbdb572454da322d5847448684ddd03521",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/eyes-relaxed.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-relaxed.png",
+      "status": 200,
+      "bytes": 31946,
+      "sha256": "e3d768c72e9edfc39568444524a1a77514a64f139363931d9c99cf9bf2cdbdda",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/hair-front.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/hair-front.png",
+      "status": 200,
+      "bytes": 51349,
+      "sha256": "3f507d6ae3a9903775042eb1d64489a18b06a91f599dd0c89bd641587187a0b5",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/head.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/head.png",
+      "status": 200,
+      "bytes": 56406,
+      "sha256": "32669d1c02ce13940767fbe127f9354a679acf1f98b9068336274075ddf411de",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/luggage-grip.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/luggage-grip.png",
+      "status": 200,
+      "bytes": 189383,
+      "sha256": "f47de864c9b612e7b50b5cb358d21754941724fd5e5d93fef5dcb076201ae9d9",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/mouth-calm-speech.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-calm-speech.png",
+      "status": 200,
+      "bytes": 13877,
+      "sha256": "105755fea08c05fa271c86c25f009ce3f344195bee8833b876a4a87fee3c7fe6",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/mouth-calm.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-calm.png",
+      "status": 200,
+      "bytes": 13347,
+      "sha256": "c7ebc8a132c93bf2318ac9737d7d3cafab8ca83f1b19cb924701ecee1ee2e94d",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/mouth-nervous-speech.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-nervous-speech.png",
+      "status": 200,
+      "bytes": 13910,
+      "sha256": "a89de7d06b24f33562c76b447bc5e3e78cd22d3d7dbc982db08787a9b9630678",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/mouth-nervous.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-nervous.png",
+      "status": 200,
+      "bytes": 13424,
+      "sha256": "52960ea3bfcc800c21253d6dff3cb3424fd3ae58b372c58980681b8cd2702208",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/mouth-proud-speech.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-proud-speech.png",
+      "status": 200,
+      "bytes": 15041,
+      "sha256": "7be89628d2957c7491fbe5e300b97b528924c85cff38afcaa5e63bc86ed3a432",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/mouth-proud.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-proud.png",
+      "status": 200,
+      "bytes": 14461,
+      "sha256": "baaf1898109df8178e053e7b1da3592c77f6a7e77a1bf79d5d7f770d812e60ba",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/mouth-puzzled-speech.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-puzzled-speech.png",
+      "status": 200,
+      "bytes": 14033,
+      "sha256": "2b887191aef75ded6c854dc272f161225e9a13facf5f1d279f3ed7126ae58fca",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/mouth-puzzled.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-puzzled.png",
+      "status": 200,
+      "bytes": 13719,
+      "sha256": "726ab48c41e8f0c1c97009821b9d9670c1607b9f14a787f67b8608aad3fe649a",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/mouth-relaxed-speech.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-relaxed-speech.png",
+      "status": 200,
+      "bytes": 14449,
+      "sha256": "d5872ded7acdd5ea1510b3758c2f05b56bd696cdb7c6525401418ea1d7c95b83",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/mouth-relaxed.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-relaxed.png",
+      "status": 200,
+      "bytes": 13514,
+      "sha256": "0f7b8da6daea330193dbb23d2c672bf5415663eae7c142e5f52ad82dcc739e4e",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero-layered-v3/registration.json",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/registration.json",
+      "status": 200,
+      "bytes": 31503,
+      "sha256": "43a01289fb97f8b5fbd14f9e36e1e6b69e7c0bc015307a9e0353c1a4f8871e93",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/hero.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero.png",
+      "status": 200,
+      "bytes": 2774655,
+      "sha256": "4d0a2884c88a31808289400f30ecc38edaa2e38cf6f5bc2ad2a3167905aee8b3",
+      "equal": true
+    },
+    {
+      "path": "dist/assets/portraits/thief.png",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/thief.png",
+      "status": 200,
+      "bytes": 1405360,
+      "sha256": "dd9cc178984660fee4eb49997d3242b8fdee35d5e92d577ffc45436f32e66f63",
+      "equal": true
+    },
+    {
+      "path": "dist/index.html",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/index.html",
+      "status": 200,
+      "bytes": 493,
+      "sha256": "6d04e6a1e1309fc2a1219277efcdbfbfe48f76229197caed0de14c8086908032",
+      "equal": true
+    }
+  ],
+  "checked": 60,
+  "failed": []
+}

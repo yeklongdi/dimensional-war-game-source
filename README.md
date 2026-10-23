@@ -10,6 +10,8 @@
 
 完整约定见[实施规格](docs/menu-save-settings-spec.md)、[决策及理由](docs/decisions-menu-save-settings.md)，实测与发布结果见[独立验收记录](docs/menu-save-settings-verification.md)。下方男高及各阶段记录保留其历史事实。主菜单可直接读取旧进度，**不要为了升级而开始新游戏**。
 
+新版本已推送main并通过[本轮Actions](https://github.com/yeklongdi/dimensional-war-game-source/actions/runs/39921309077)，build／deploy均成功；[正式网站](https://yeklongdi.github.io/dimensional-war-game-source/)已复核三按钮、七槽、旧P006升级恢复、系统菜单、移动规划和地图继续卡，未清除旧档。本轮不声称线上完整通关七关。
+
 ## 已完成：男高三姿态、五个动态组合
 
 2026-10-23完成五个独立验收的原创样板：普通站姿／默认平静、普通站姿／得意、行李站立／紧张期待、行李站立／放松微笑、准备伸懒腰／疑惑。五项均已通过本轮视觉复核并批准；待维护者查看最终画面。P001、P002、A006和A007按原asset／pose／expression实际启用，P003坐沙发等未覆盖组合继续明确静态回退，不改剧情数据。
@@ -52,7 +54,7 @@
 
 源码、正式内容和部署统一在[本仓库](https://github.com/yeklongdi/dimensional-war-game-source)。推送 `main` 后，GitHub Actions 自动执行 `npm ci`、类型检查、全部测试与项目路径构建，再发布 `dist/` 到 GitHub Pages；Pull Request 只做检查与构建。无需跨仓库同步或跨仓库凭据。此前的私有工程仓库和单独网页仓库在迁移验证后删除，旧网页地址不再作为正式入口。
 
-2026-10-21旧站部署检查为20个测试文件、292项通过；其版本与验收证据保留在[历史部署记录](docs/github-pages-deployment.md)，其中旧仓库地址和跨仓库更新步骤已由[单仓库部署流程](docs/repository-consolidation.md)替代。2026-10-22地图浮窗推送后工作流build与deploy均成功，已在正式地址复核1920×900与900×620下的铺满、地点浮窗、进入首关与返回地图，见[当时线上验收](docs/map-window-verification.md#发布与线上验收)。当时工程为24个测试文件356项，v1／v2男高美术未通过；2026-10-23最新v3五组合已批准并发布，当前为27个测试文件409项。
+2026-10-21旧站部署检查为20个测试文件、292项通过；其版本与验收证据保留在[历史部署记录](docs/github-pages-deployment.md)，其中旧仓库地址和跨仓库更新步骤已由[单仓库部署流程](docs/repository-consolidation.md)替代。2026-10-22地图浮窗推送后工作流build与deploy均成功，已在正式地址复核1920×900与900×620下的铺满、地点浮窗、进入首关与返回地图，见[当时线上验收](docs/map-window-verification.md#发布与线上验收)。当时工程为24个测试文件356项，v1／v2男高美术未通过；2026-10-23五组合美术阶段为27文件409项，本轮菜单／多档／设置实装后为30文件465项，当前结果见顶部链接。
 
 localhost 与正式网站的存档相互独立，不会自动迁移或跨设备同步。两首 WAV 保留原音质，较大的音乐文件可能使首次加载变慢。
 

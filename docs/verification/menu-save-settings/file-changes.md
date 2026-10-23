@@ -21,13 +21,13 @@
 
 ## modified
 
-- docs/decisions-menu-save-settings.md
-- docs/menu-save-settings-spec.md
-- prompts/主菜单-多存档-设置.md
 - AGENTS.md
 - README.md
 - docs/01-任务书.md
+- docs/decisions-menu-save-settings.md
 - docs/decisions.md
+- docs/menu-save-settings-spec.md
+- prompts/主菜单-多存档-设置.md
 - src/game/audio.ts
 - src/game/campaign.ts
 - src/game/controller.ts
@@ -42,6 +42,14 @@
 
 ## 新验收证据
 
+- docs/verification/menu-save-settings/actions-feature.json
+- docs/verification/menu-save-settings/online-browser.json
+- docs/verification/menu-save-settings/online-http.json
+- docs/verification/menu-save-settings/online-main-menu.jpg
+- docs/verification/menu-save-settings/online-migrated.json
+- docs/verification/menu-save-settings/online-movement.jpg
+- docs/verification/menu-save-settings/online-settings.jpg
+- docs/verification/menu-save-settings/release.json
 - docs/verification/menu-save-settings/after.json
 - docs/verification/menu-save-settings/battle-save.jpg
 - docs/verification/menu-save-settings/before.json
