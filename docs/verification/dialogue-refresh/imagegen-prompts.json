@@ -1,0 +1,20 @@
+{
+  "tool": "内置 imagegen，未使用备用CLI",
+  "approved": false,
+  "attempts": [
+    {
+      "output": "public/assets/portraits/hero-layered-v2/arms-candidate.png",
+      "referenceRoles": ["hero-layered-v1/master-reference.png：编辑目标，本项目原创男高", "hero-layered-v1/body.png：身体注册参考"],
+      "transparent_background": true,
+      "prompt": "Use case: precise-object-edit. Asset type: native layered pixel-art game character, arms registration repair. Image 1 is the edit target: our original male high-school hero standing, black pompadour, black school uniform, red shirt. Image 2 is only the body alignment reference, NOT an extra object. Produce ONE 1024x1536 RGBA full transparent canvas containing ONLY the two complete arms and hands from image 1, exactly in their original canvas positions, with the same pixel-art scale and clothing folds. Keep the screen-left arm from shoulder about (340,420) through elbow (300,630) to hand (280,860), and screen-right arm from shoulder about (645,430) through elbow (700,650) to hand (705,870). Preserve the original relaxed standing arm pose, anatomy, proportions, gold cuff buttons, original pixel edges and shading. Repaint small occluded caps at each shoulder and elbow to allow overlapping joint articulation, with no holes. Keep the two arms connected internally and in their original registration, do NOT center, enlarge, crop or rearrange them. Remove EVERYTHING else: no head, no hair, no face, no neck, no torso, no red shirt, no necklace, no pants, no shoes. The empty space and all pixels outside the arm silhouettes must have zero alpha, with NO glow, NO drop shadow, NO black or checkerboard matte, NO text and NO watermark. This is a technical layer for compositing over the existing image 2 body, so exact original positions and a clean transparent boundary matter more than presentation. Do not draw the rest of the character to fill the blank area.",
+      "result": "画布尺寸成立；轮廓外光晕和身体注册不合格，未接入正式配方。"
+    },
+    {
+      "output": "public/assets/portraits/hero-layered-v2/arms-alpha-review.png",
+      "referenceRoles": ["本轮arms-candidate.png：编辑目标，仅去除光晕"],
+      "transparent_background": true,
+      "prompt": "Use case: background-extraction, precise technical sprite cleanup. Edit this existing two-arms sprite. Make ONLY one change: remove all soft halos, glows, dark fog, drop shadows and brown light around the arms and hands, leaving hard-edged pixel-art arm silhouettes on genuine transparent alpha. Pixels outside the actual black outlines and skin/clothing silhouettes must be fully transparent, not blurred translucent pixels, not a checkerboard drawing. Keep BOTH arms' existing locations, size, pose, colors, black outlines, clothing folds, hands and gold cuff buttons exactly unchanged. Keep the 1024 by 1536 canvas and the large transparent spaces. Do not enlarge, move, crop or redraw the arms, do not add any text, torso, head, extra fingers or objects. This is for game sprite compositing: absolutely no light bloom, no environmental lighting and no vignette outside the opaque character shapes.",
+      "result": "仍有轮廓外柔光，注册也未达标；保持未批准状态。"
+    }
+  ]
+}

@@ -1,0 +1,1168 @@
+[
+  {
+    "step": "p001",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "紧张、期待",
+        "left": "640px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_luggage_nervous",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -0.27694px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -0.27694px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -0.447364px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -0.447364px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -0.447364px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -0.447364px) rotate(0.0504073deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_homecoming_warm",
+      "navToken": "3:2:story",
+      "nodeIndex": "3",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792728246038}",
+      "saveRequest": "2",
+      "saveStatus": "saved",
+      "sceneId": "p001",
+      "session": "3",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "3:1"
+    },
+    "talking": "false",
+    "text": "男高拎着行李箱和点击补全文字",
+    "assets": [
+      {
+        "complete": true,
+        "url": "http://127.0.0.1:43857/dimensional-war-game-source/assets/portraits/hero-layered-v3/body-luggage.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "url": "http://127.0.0.1:43857/dimensional-war-game-source/assets/portraits/hero-layered-v3/luggage-grip.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "url": "http://127.0.0.1:43857/dimensional-war-game-source/assets/portraits/hero-layered-v3/head.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "url": "http://127.0.0.1:43857/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "url": "http://127.0.0.1:43857/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous-half.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "url": "http://127.0.0.1:43857/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous-closed.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "url": "http://127.0.0.1:43857/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-nervous.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "url": "http://127.0.0.1:43857/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-nervous-speech.png",
+        "width": 1024
+      },
+      {
+        "complete": true,
+        "url": "http://127.0.0.1:43857/dimensional-war-game-source/assets/portraits/hero-layered-v3/hair-front.png",
+        "width": 1024
+      }
+    ]
+  },
+  {
+    "step": "normal-advance",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "紧张、期待",
+        "left": "640px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_luggage_nervous",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -0.0763864px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -0.0763864px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -0.123393px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "1",
+        "translate(0px, -0.123393px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -0.123393px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -0.123393px) rotate(0.313319deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_homecoming_warm",
+      "navToken": "3:2:story",
+      "nodeIndex": "3",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792728246038}",
+      "saveRequest": "2",
+      "saveStatus": "saved",
+      "sceneId": "p001",
+      "session": "3",
+      "testid": "story-stage",
+      "typingComplete": "true",
+      "waitKind": "text",
+      "waitToken": "3:1"
+    },
+    "talking": "false",
+    "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。点击 / 空格 / 回车　继续 ▸"
+  },
+  {
+    "step": "normal-advance",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "紧张、期待",
+        "left": "640px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_luggage_nervous",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -0.408744px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -0.408744px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -0.660279px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "1",
+        "translate(0px, -0.660279px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -0.660279px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -0.660279px) rotate(0.319976deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_homecoming_warm",
+      "navToken": "3:2:story",
+      "nodeIndex": "4",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792728246038}",
+      "saveRequest": "2",
+      "saveStatus": "saved",
+      "sceneId": "p001",
+      "session": "3",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "3:2"
+    },
+    "talking": "false",
+    "text": "男高（六年）点击补全文字"
+  },
+  {
+    "step": "normal-advance",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "紧张、期待",
+        "left": "640px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_luggage_nervous",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -0.56895px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -0.56895px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -0.919073px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -0.919073px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -0.919073px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -0.919073px) rotate(0.318824deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_homecoming_warm",
+      "navToken": "3:2:story",
+      "nodeIndex": "4",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792728246038}",
+      "saveRequest": "2",
+      "saveStatus": "saved",
+      "sceneId": "p001",
+      "session": "3",
+      "testid": "story-stage",
+      "typingComplete": "true",
+      "waitKind": "text",
+      "waitToken": "3:2"
+    },
+    "talking": "false",
+    "text": "男高（六年了……终于回来了。）点击 / 空格 / 回车　继续 ▸"
+  },
+  {
+    "step": "normal-advance",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "紧张、期待",
+        "left": "640px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_luggage_nervous",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -0.747348px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -0.747348px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -1.20725px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -1.20725px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -1.20725px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -1.20725px) rotate(0.313412deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_homecoming_warm",
+      "navToken": "3:2:story",
+      "nodeIndex": "5",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792728246038}",
+      "saveRequest": "2",
+      "saveStatus": "saved",
+      "sceneId": "p001",
+      "session": "3",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "3:3"
+    },
+    "talking": "false",
+    "text": "男高（以）点击补全文字"
+  },
+  {
+    "step": "normal-advance",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "紧张、期待",
+        "left": "640px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_luggage_nervous",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -0.885934px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -0.885934px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -1.43112px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -1.43112px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -1.43112px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -1.43112px) rotate(0.305283deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_homecoming_warm",
+      "navToken": "3:2:story",
+      "nodeIndex": "5",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792728246038}",
+      "saveRequest": "2",
+      "saveStatus": "saved",
+      "sceneId": "p001",
+      "session": "3",
+      "testid": "story-stage",
+      "typingComplete": "true",
+      "waitKind": "text",
+      "waitToken": "3:3"
+    },
+    "talking": "false",
+    "text": "男高（以后，就由我来陪奶奶。）点击 / 空格 / 回车　继续 ▸"
+  },
+  {
+    "step": "normal-advance",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "紧张、期待",
+        "left": "640px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_luggage_nervous",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -1.02589px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -1.02589px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -1.65721px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -1.65721px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -1.65721px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -1.65721px) rotate(0.291917deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_homecoming_warm",
+      "navToken": "3:2:story",
+      "nodeIndex": "7",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792728246038}",
+      "saveRequest": "2",
+      "saveStatus": "saved",
+      "sceneId": "p001",
+      "session": "3",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "3:4"
+    },
+    "talking": "false",
+    "text": "男点击补全文字"
+  },
+  {
+    "step": "normal-advance",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "紧张、期待",
+        "left": "640px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_luggage_nervous",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -1.10322px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -1.10322px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -1.78212px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -1.78212px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -1.78212px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -1.78212px) rotate(0.281028deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_homecoming_warm",
+      "navToken": "3:2:story",
+      "nodeIndex": "7",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792728246038}",
+      "saveRequest": "2",
+      "saveStatus": "saved",
+      "sceneId": "p001",
+      "session": "3",
+      "testid": "story-stage",
+      "typingComplete": "true",
+      "waitKind": "text",
+      "waitToken": "3:4"
+    },
+    "talking": "false",
+    "text": "男高伸手敲门。点击 / 空格 / 回车　继续 ▸"
+  },
+  {
+    "step": "normal-advance",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "紧张、期待",
+        "left": "572px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "layered"
+      },
+      {
+        "actor": "奶奶",
+        "asset": "char_grandmother_warm",
+        "expression": "惊喜、眼眶泛红",
+        "left": "708px",
+        "pose": "手持抹布、站在门内",
+        "position": "door",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "placeholder"
+      }
+    ],
+    "figure": "hero_luggage_nervous",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -1.21289px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -1.21289px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -1.95928px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -1.95928px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -1.95928px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -1.95928px) rotate(0.257028deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_homecoming_warm",
+      "navToken": "3:2:story",
+      "nodeIndex": "3",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p002\"},\"savedAt\":1792728259576}",
+      "saveRequest": "3",
+      "saveStatus": "saved",
+      "sceneId": "p002",
+      "session": "3",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "3:5"
+    },
+    "talking": "false",
+    "text": "门点击补全文字"
+  },
+  {
+    "step": "normal-advance",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "紧张、期待",
+        "left": "572px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "layered"
+      },
+      {
+        "actor": "奶奶",
+        "asset": "char_grandmother_warm",
+        "expression": "惊喜、眼眶泛红",
+        "left": "708px",
+        "pose": "手持抹布、站在门内",
+        "position": "door",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "placeholder"
+      }
+    ],
+    "figure": "hero_luggage_nervous",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -1.26556px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -1.26556px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -2.04437px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -2.04437px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -2.04437px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -2.04437px) rotate(0.236433deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_homecoming_warm",
+      "navToken": "3:2:story",
+      "nodeIndex": "3",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p002\"},\"savedAt\":1792728259576}",
+      "saveRequest": "3",
+      "saveStatus": "saved",
+      "sceneId": "p002",
+      "session": "3",
+      "testid": "story-stage",
+      "typingComplete": "true",
+      "waitKind": "text",
+      "waitToken": "3:5"
+    },
+    "talking": "false",
+    "text": "门很快打开。\n奶奶站在门里，手里攥着一块抹布。\n她看到男高后停顿数秒，随后快步迎上来。点击 / 空格 / 回车　继续 ▸"
+  },
+  {
+    "step": "normal-advance",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "紧张、期待",
+        "left": "572px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "layered"
+      },
+      {
+        "actor": "奶奶",
+        "asset": "char_grandmother_warm",
+        "expression": "惊喜、眼眶泛红",
+        "left": "708px",
+        "pose": "手持抹布、站在门内",
+        "position": "door",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "placeholder"
+      }
+    ],
+    "figure": "hero_luggage_nervous",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -1.29638px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -1.29638px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -2.09415px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -2.09415px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -2.09415px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -2.09415px) rotate(0.210134deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_homecoming_warm",
+      "navToken": "3:2:story",
+      "nodeIndex": "4",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p002\"},\"savedAt\":1792728259576}",
+      "saveRequest": "3",
+      "saveStatus": "saved",
+      "sceneId": "p002",
+      "session": "3",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "3:6"
+    },
+    "talking": "false",
+    "text": "奶奶孩点击补全文字"
+  },
+  {
+    "step": "normal-advance",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "紧张、期待",
+        "left": "572px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "layered"
+      },
+      {
+        "actor": "奶奶",
+        "asset": "char_grandmother_warm",
+        "expression": "惊喜、眼眶泛红",
+        "left": "708px",
+        "pose": "手持抹布、站在门内",
+        "position": "door",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "placeholder"
+      }
+    ],
+    "figure": "hero_luggage_nervous",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -1.29863px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -1.29863px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -2.09779px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -2.09779px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -2.09779px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -2.09779px) rotate(0.187891deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_homecoming_warm",
+      "navToken": "3:2:story",
+      "nodeIndex": "4",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p002\"},\"savedAt\":1792728259576}",
+      "saveRequest": "3",
+      "saveStatus": "saved",
+      "sceneId": "p002",
+      "session": "3",
+      "testid": "story-stage",
+      "typingComplete": "true",
+      "waitKind": "text",
+      "waitToken": "3:6"
+    },
+    "talking": "false",
+    "text": "奶奶孩子……是你回来了？点击 / 空格 / 回车　继续 ▸"
+  },
+  {
+    "step": "p002-relaxed",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "放松、微笑",
+        "left": "572px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "layered"
+      },
+      {
+        "actor": "奶奶",
+        "asset": "char_grandmother_warm",
+        "expression": "惊喜、眼眶泛红",
+        "left": "708px",
+        "pose": "手持抹布、站在门内",
+        "position": "door",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "placeholder"
+      }
+    ],
+    "figure": "hero_luggage_nervous",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -1.2697px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -1.2697px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -2.05106px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -2.05106px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -2.05106px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -2.05106px) rotate(0.153976deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_homecoming_warm",
+      "navToken": "3:2:story",
+      "nodeIndex": "6",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p002\"},\"savedAt\":1792728259576}",
+      "saveRequest": "3",
+      "saveStatus": "saved",
+      "sceneId": "p002",
+      "session": "3",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "3:7"
+    },
+    "talking": "true",
+    "text": "男高奶点击补全文字"
+  },
+  {
+    "step": "p002-before-map",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "放松、微笑",
+        "left": "572px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "layered"
+      },
+      {
+        "actor": "奶奶",
+        "asset": "char_grandmother_warm",
+        "expression": "惊喜、眼眶泛红",
+        "left": "708px",
+        "pose": "手持抹布、站在门内",
+        "position": "door",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "placeholder"
+      }
+    ],
+    "figure": "hero_luggage_relaxed",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, 1.22556px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, 1.22556px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, 1.97976px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, 1.97976px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, 1.97976px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, 1.97976px) rotate(0.302397deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_homecoming_warm",
+      "navToken": "3:2:story",
+      "nodeIndex": "6",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p002\"},\"savedAt\":1792728259576}",
+      "saveRequest": "3",
+      "saveStatus": "saved",
+      "sceneId": "p002",
+      "session": "3",
+      "testid": "story-stage",
+      "typingComplete": "true",
+      "waitKind": "text",
+      "waitToken": "3:7"
+    },
+    "talking": "false",
+    "text": "男高奶奶，我回来了。点击 / 空格 / 回车　继续 ▸"
+  },
+  {
+    "step": "p002-refresh-continue-scene-head",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "紧张、期待",
+        "left": "572px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "layered"
+      },
+      {
+        "actor": "奶奶",
+        "asset": "char_grandmother_warm",
+        "expression": "惊喜、眼眶泛红",
+        "left": "708px",
+        "pose": "手持抹布、站在门内",
+        "position": "door",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "placeholder"
+      }
+    ],
+    "figure": "hero_luggage_nervous",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -0.0521065px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -0.0521065px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -0.0841721px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -0.0841721px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -0.0841721px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -0.0841721px) rotate(0.009452deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_homecoming_warm",
+      "navToken": "2:1:story",
+      "nodeIndex": "3",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p002\"},\"savedAt\":1792728270664}",
+      "saveRequest": "1",
+      "saveStatus": "saved",
+      "sceneId": "p002",
+      "session": "2",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "2:1"
+    },
+    "talking": "false",
+    "text": "门很快打开。点击补全文字"
+  }
+]

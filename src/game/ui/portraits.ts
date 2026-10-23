@@ -33,6 +33,7 @@ class ActorPortrait {
     const name = displayName(state.actId, actor.actor);
     const { slot, rear } = placement(actor.position);
     Object.assign(this.root.dataset, { actor: actor.actor, asset: actor.asset ?? '', position: actor.position, slot,
+      pose: actor.pose ?? '', expression: actor.expression ?? '',
       speaking: String(state.waiting?.kind === 'text' && state.waiting.speaker === actor.actor), rear: String(rear) });
     this.root.hidden = !actor.visible;
     this.root.setAttribute('aria-label', name);
@@ -48,17 +49,19 @@ class ActorPortrait {
       const fallback = plan.kind === 'static' ? plan.url : plan.kind === 'layered' ? plan.fallback : undefined;
       return fallback ? { kind: 'static' as const, image: await this.image(fallback) } : { kind: 'placeholder' as const };
     }, loaded => {
-      this.figure?.dispose(); this.figure = undefined;
       this.root.classList.remove('portrait-placeholder');
       if (loaded.kind === 'layered' && plan.kind === 'layered') {
         const start = actionStart !== undefined && this.clock.now() - requestTime < 300 ? actionStart : undefined;
-        this.figure = new LayeredFigure(plan.recipe, loaded.images, this.clock, start);
-        this.root.replaceChildren(this.figure.root); this.root.dataset.visual = 'layered';
+        if (this.figure) this.figure.updateRecipe(plan.recipe, loaded.images, start);
+        else this.figure = new LayeredFigure(plan.recipe, loaded.images, this.clock, start);
+        if (this.root.firstElementChild !== this.figure.root) this.root.replaceChildren(this.figure.root);
+        this.root.dataset.visual = 'layered';
       } else if (loaded.kind === 'static') {
+        this.figure?.dispose(); this.figure = undefined;
         const image = loaded.image.cloneNode() as HTMLImageElement;
         image.className = 'portrait-image'; image.alt = name;
         this.root.replaceChildren(image); this.root.dataset.visual = 'static';
-      } else this.placeholder(name);
+      } else { this.figure?.dispose(); this.figure = undefined; this.placeholder(name); }
       this.syncSpeech();
     }, error => {
       if (plan.kind === 'layered' && !this.failed.has(plan.key)) {

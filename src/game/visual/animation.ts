@@ -14,8 +14,19 @@ export function sampleAnimation(recipe: LayerRecipe, layer: Layer, elapsed: numb
   const prepare = recipe.limits.prepare && actionElapsed !== undefined
     ? Math.sin(Math.min(Math.max(actionElapsed, 0) / 850, 1) * Math.PI) : 0;
   const arm = layer.motion.includes('left') ? -1 : 1;
-  const rotate = sway + (layer.motion.startsWith('upper') ? prepare * arm * 7
+  let rotate = sway + (layer.motion.startsWith('upper') ? prepare * arm * 7
     : layer.motion.startsWith('lower') ? prepare * arm * 11 : 0);
-  return { x: 0, y: layer.motion === 'prop' ? 0 : y, rotate,
+  let x = 0, jointY = 0;
+  if (layer.motion.startsWith('lower')) {
+    const parent = recipe.layers.find(candidate => candidate.motion === layer.motion.replace('lower', 'upper'));
+    if (parent) {
+      const degrees = prepare * arm * 7, angle = degrees * Math.PI / 180;
+      const dx = layer.pivot[0] - parent.pivot[0], dy = layer.pivot[1] - parent.pivot[1];
+      x = dx * Math.cos(angle) - dy * Math.sin(angle) - dx;
+      jointY = dx * Math.sin(angle) + dy * Math.cos(angle) - dy;
+      rotate += degrees;
+    }
+  }
+  return { x, y: layer.motion === 'prop' ? 0 : y + jointY, rotate,
     frame: layer.channel === 'eyes' ? blink : layer.channel === 'mouth' ? mouth : 0 };
 }

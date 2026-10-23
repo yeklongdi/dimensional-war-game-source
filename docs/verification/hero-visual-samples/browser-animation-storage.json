@@ -1,0 +1,68 @@
+{
+  "before": {
+    "footer": [
+      "最近存档：搬入奶奶家 · 奶奶家·进门 · 2026/10/23 11:46:54"
+    ],
+    "saveText": [
+      {
+        "testid": "save-feedback",
+        "text": "最近存档：搬入奶奶家 · 奶奶家·进门 · 2026/10/23 11:46:54"
+      },
+      {
+        "testid": "save-summary",
+        "text": "最近存档：搬入奶奶家 · 奶奶家·进门 · 2026/10/23 11:46:54"
+      }
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_homecoming_warm",
+      "navToken": "2:1:story",
+      "nodeIndex": "3",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p002\"},\"savedAt\":1792727214982}",
+      "saveRequest": "1",
+      "saveStatus": "saved",
+      "sceneId": "p002",
+      "session": "2",
+      "testid": "story-stage",
+      "typingComplete": "true",
+      "waitKind": "text",
+      "waitToken": "2:1"
+    }
+  },
+  "after": {
+    "footer": [
+      "最近存档：搬入奶奶家 · 奶奶家·进门 · 2026/10/23 11:46:54"
+    ],
+    "saveText": [
+      {
+        "testid": "save-feedback",
+        "text": "最近存档：搬入奶奶家 · 奶奶家·进门 · 2026/10/23 11:46:54"
+      },
+      {
+        "testid": "save-summary",
+        "text": "最近存档：搬入奶奶家 · 奶奶家·进门 · 2026/10/23 11:46:54"
+      }
+    ],
+    "stage": {
+      "actId": "prologue",
+      "bgmId": "bgm_homecoming_warm",
+      "navToken": "2:1:story",
+      "nodeIndex": "3",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p002\"},\"savedAt\":1792727214982}",
+      "saveRequest": "1",
+      "saveStatus": "saved",
+      "sceneId": "p002",
+      "session": "2",
+      "testid": "story-stage",
+      "typingComplete": "true",
+      "waitKind": "text",
+      "waitToken": "2:1"
+    }
+  },
+  "visibleSaveUnchanged": true,
+  "scope": "DOM保存反馈；纯函数无写盘副作用另由自动回归验证"
+}

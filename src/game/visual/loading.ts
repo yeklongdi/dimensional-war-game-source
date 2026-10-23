@@ -2,6 +2,8 @@ import type { LayerRecipe } from './types.js';
 
 export type ImagePort<T> = (url: string) => Promise<T>;
 export async function loadLayers<T>(recipe: LayerRecipe, port: ImagePort<T>): Promise<ReadonlyMap<string, T>> {
+  if (new Set(recipe.layers.map(layer => layer.id)).size !== recipe.layers.length) throw new Error(`分层配方 ${recipe.id} 存在重复图层`);
+  if (!recipe.layers.length || recipe.layers.some(layer => !layer.frames.length)) throw new Error(`分层配方 ${recipe.id} 缺少图层或差分帧`);
   const urls = [...new Set(recipe.layers.flatMap(layer => [...layer.frames]))];
   const loaded = await Promise.all(urls.map(async url => [url, await port(url)] as const));
   return new Map(loaded);

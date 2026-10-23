@@ -1,0 +1,1343 @@
+{
+  "steps": [
+    {
+      "name": "实际DOM只替换差分并保留身体头部实例",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "frames": [
+              {
+                "frame": "0",
+                "id": "hair-back",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "body",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-left",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-left",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-right",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-right",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "head",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "eyes",
+                "images": 3,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "mouth",
+                "images": 2,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "hair-front",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              }
+            ],
+            "hidden": false,
+            "position": "640px",
+            "recipe": "hero_stand_calm",
+            "speaking": "true",
+            "talking": "true",
+            "visual": "layered"
+          }
+        ],
+        "panel": "{\"rootSame\":true,\"bodySame\":true,\"headSame\":true,\"eyesSame\":true,\"unchangedFrameSame\":true,\"visibleFrames\":10}",
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "0",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "portrait_lab",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "lab:1"
+        },
+        "text": "开发验收文字"
+      }
+    },
+    {
+      "name": "台词逐字125ms口型开",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "frames": [
+              {
+                "frame": "0",
+                "id": "hair-back",
+                "images": 1,
+                "transform": "translate(0px, -0.390414px) rotate(0.0439531deg)"
+              },
+              {
+                "frame": "0",
+                "id": "body",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-left",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-left",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-right",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-right",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "head",
+                "images": 1,
+                "transform": "translate(0px, -0.390414px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "eyes",
+                "images": 3,
+                "transform": "translate(0px, -0.390414px) rotate(0deg)"
+              },
+              {
+                "frame": "1",
+                "id": "mouth",
+                "images": 2,
+                "transform": "translate(0px, -0.390414px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "hair-front",
+                "images": 1,
+                "transform": "translate(0px, -0.390414px) rotate(0.0439531deg)"
+              }
+            ],
+            "hidden": false,
+            "position": "640px",
+            "recipe": "hero_stand_calm",
+            "speaking": "true",
+            "talking": "true",
+            "visual": "layered"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "0",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "portrait_lab",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "lab:2"
+        },
+        "text": "开发验收文字"
+      }
+    },
+    {
+      "name": "补全文字立即闭嘴",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "frames": [
+              {
+                "frame": "0",
+                "id": "hair-back",
+                "images": 1,
+                "transform": "translate(0px, -0.390414px) rotate(0.0439531deg)"
+              },
+              {
+                "frame": "0",
+                "id": "body",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-left",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-left",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-right",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-right",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "head",
+                "images": 1,
+                "transform": "translate(0px, -0.390414px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "eyes",
+                "images": 3,
+                "transform": "translate(0px, -0.390414px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "mouth",
+                "images": 2,
+                "transform": "translate(0px, -0.390414px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "hair-front",
+                "images": 1,
+                "transform": "translate(0px, -0.390414px) rotate(0.0439531deg)"
+              }
+            ],
+            "hidden": false,
+            "position": "640px",
+            "recipe": "hero_stand_calm",
+            "speaking": "true",
+            "talking": "false",
+            "visual": "layered"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "0",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "portrait_lab",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "lab:3"
+        },
+        "text": "开发验收文字：此处只验证分层、窗口、口型与回退，不添加正式剧情。\n人物下部应延伸到半透明文字窗后。"
+      }
+    },
+    {
+      "name": "inner不说话",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "frames": [
+              {
+                "frame": "0",
+                "id": "hair-back",
+                "images": 1,
+                "transform": "translate(0px, -0.390414px) rotate(0.0439531deg)"
+              },
+              {
+                "frame": "0",
+                "id": "body",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-left",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-left",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-right",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-right",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "head",
+                "images": 1,
+                "transform": "translate(0px, -0.390414px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "eyes",
+                "images": 3,
+                "transform": "translate(0px, -0.390414px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "mouth",
+                "images": 2,
+                "transform": "translate(0px, -0.390414px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "hair-front",
+                "images": 1,
+                "transform": "translate(0px, -0.390414px) rotate(0.0439531deg)"
+              }
+            ],
+            "hidden": false,
+            "position": "640px",
+            "recipe": "hero_stand_calm",
+            "speaking": "true",
+            "talking": "false",
+            "visual": "layered"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "0",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "portrait_lab",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "lab:4"
+        },
+        "text": "（开发验收文字）"
+      }
+    },
+    {
+      "name": "narration不说话",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "frames": [
+              {
+                "frame": "0",
+                "id": "hair-back",
+                "images": 1,
+                "transform": "translate(0px, -0.390414px) rotate(0.0439531deg)"
+              },
+              {
+                "frame": "0",
+                "id": "body",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-left",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-left",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-right",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-right",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "head",
+                "images": 1,
+                "transform": "translate(0px, -0.390414px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "eyes",
+                "images": 3,
+                "transform": "translate(0px, -0.390414px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "mouth",
+                "images": 2,
+                "transform": "translate(0px, -0.390414px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "hair-front",
+                "images": 1,
+                "transform": "translate(0px, -0.390414px) rotate(0.0439531deg)"
+              }
+            ],
+            "hidden": false,
+            "position": "640px",
+            "recipe": "hero_stand_calm",
+            "speaking": "false",
+            "talking": "false",
+            "visual": "layered"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "0",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "portrait_lab",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "lab:5"
+        },
+        "text": "开发验收文字"
+      }
+    },
+    {
+      "name": "stage不说话",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "frames": [
+              {
+                "frame": "0",
+                "id": "hair-back",
+                "images": 1,
+                "transform": "translate(0px, -0.390414px) rotate(0.0439531deg)"
+              },
+              {
+                "frame": "0",
+                "id": "body",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-left",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-left",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-right",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-right",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "head",
+                "images": 1,
+                "transform": "translate(0px, -0.390414px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "eyes",
+                "images": 3,
+                "transform": "translate(0px, -0.390414px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "mouth",
+                "images": 2,
+                "transform": "translate(0px, -0.390414px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "hair-front",
+                "images": 1,
+                "transform": "translate(0px, -0.390414px) rotate(0.0439531deg)"
+              }
+            ],
+            "hidden": false,
+            "position": "640px",
+            "recipe": "hero_stand_calm",
+            "speaking": "false",
+            "talking": "false",
+            "visual": "layered"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "0",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "portrait_lab",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "lab:6"
+        },
+        "text": "开发验收文字"
+      }
+    },
+    {
+      "name": "场外说话不自动增演员且口型关闭",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "frames": [
+              {
+                "frame": "0",
+                "id": "hair-back",
+                "images": 1,
+                "transform": "translate(0px, -0.390414px) rotate(0.0439531deg)"
+              },
+              {
+                "frame": "0",
+                "id": "body",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-left",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-left",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-right",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-right",
+                "images": 1,
+                "transform": "translate(0px, -0.241685px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "head",
+                "images": 1,
+                "transform": "translate(0px, -0.390414px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "eyes",
+                "images": 3,
+                "transform": "translate(0px, -0.390414px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "mouth",
+                "images": 2,
+                "transform": "translate(0px, -0.390414px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "hair-front",
+                "images": 1,
+                "transform": "translate(0px, -0.390414px) rotate(0.0439531deg)"
+              }
+            ],
+            "hidden": false,
+            "position": "640px",
+            "recipe": "hero_stand_calm",
+            "speaking": "false",
+            "talking": "false",
+            "visual": "layered"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "0",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "portrait_lab",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "lab:7"
+        },
+        "text": "开发验收文字"
+      }
+    },
+    {
+      "name": "半闭差分",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "frames": [
+              {
+                "frame": "0",
+                "id": "hair-back",
+                "images": 1,
+                "transform": "translate(0px, 0.467294px) rotate(-0.310208deg)"
+              },
+              {
+                "frame": "0",
+                "id": "body",
+                "images": 1,
+                "transform": "translate(0px, 0.289277px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-left",
+                "images": 1,
+                "transform": "translate(0px, 0.289277px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-left",
+                "images": 1,
+                "transform": "translate(0px, 0.289277px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-right",
+                "images": 1,
+                "transform": "translate(0px, 0.289277px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-right",
+                "images": 1,
+                "transform": "translate(0px, 0.289277px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "head",
+                "images": 1,
+                "transform": "translate(0px, 0.467294px) rotate(0deg)"
+              },
+              {
+                "frame": "1",
+                "id": "eyes",
+                "images": 3,
+                "transform": "translate(0px, 0.467294px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "mouth",
+                "images": 2,
+                "transform": "translate(0px, 0.467294px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "hair-front",
+                "images": 1,
+                "transform": "translate(0px, 0.467294px) rotate(-0.310208deg)"
+              }
+            ],
+            "hidden": false,
+            "position": "640px",
+            "recipe": "hero_stand_calm",
+            "speaking": "true",
+            "talking": "true",
+            "visual": "layered"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "0",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "portrait_lab",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "lab:8"
+        },
+        "text": "开发验收文字"
+      }
+    },
+    {
+      "name": "闭眼差分",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "frames": [
+              {
+                "frame": "0",
+                "id": "hair-back",
+                "images": 1,
+                "transform": "translate(0px, 0.21951px) rotate(-0.315921deg)"
+              },
+              {
+                "frame": "0",
+                "id": "body",
+                "images": 1,
+                "transform": "translate(0px, 0.135887px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-left",
+                "images": 1,
+                "transform": "translate(0px, 0.135887px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-left",
+                "images": 1,
+                "transform": "translate(0px, 0.135887px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-right",
+                "images": 1,
+                "transform": "translate(0px, 0.135887px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-right",
+                "images": 1,
+                "transform": "translate(0px, 0.135887px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "head",
+                "images": 1,
+                "transform": "translate(0px, 0.21951px) rotate(0deg)"
+              },
+              {
+                "frame": "2",
+                "id": "eyes",
+                "images": 3,
+                "transform": "translate(0px, 0.21951px) rotate(0deg)"
+              },
+              {
+                "frame": "1",
+                "id": "mouth",
+                "images": 2,
+                "transform": "translate(0px, 0.21951px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "hair-front",
+                "images": 1,
+                "transform": "translate(0px, 0.21951px) rotate(-0.315921deg)"
+              }
+            ],
+            "hidden": false,
+            "position": "640px",
+            "recipe": "hero_stand_calm",
+            "speaking": "true",
+            "talking": "true",
+            "visual": "layered"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "0",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "portrait_lab",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "lab:8"
+        },
+        "text": "开发验收文字"
+      }
+    },
+    {
+      "name": "多人站位不因场外说话变化",
+      "before": {
+        "actors": [
+          {
+            "actor": "男高",
+            "frames": [
+              {
+                "frame": "0",
+                "id": "hair-back",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "body",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-left",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-left",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-right",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-right",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "head",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "eyes",
+                "images": 3,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "mouth",
+                "images": 2,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "hair-front",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              }
+            ],
+            "hidden": false,
+            "position": "572px",
+            "recipe": "hero_stand_calm",
+            "speaking": "true",
+            "talking": "true",
+            "visual": "layered"
+          },
+          {
+            "actor": "同学甲",
+            "frames": [],
+            "hidden": false,
+            "position": "708px",
+            "speaking": "false",
+            "visual": "placeholder"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "0",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "portrait_lab",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "lab:1"
+        },
+        "text": "开发验收文字"
+      },
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "frames": [
+              {
+                "frame": "0",
+                "id": "hair-back",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "body",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-left",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-left",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-right",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-right",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "head",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "eyes",
+                "images": 3,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "mouth",
+                "images": 2,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "hair-front",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              }
+            ],
+            "hidden": false,
+            "position": "572px",
+            "recipe": "hero_stand_calm",
+            "speaking": "false",
+            "talking": "false",
+            "visual": "layered"
+          },
+          {
+            "actor": "同学甲",
+            "frames": [],
+            "hidden": false,
+            "position": "708px",
+            "speaking": "false",
+            "visual": "placeholder"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "0",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "portrait_lab",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "lab:2"
+        },
+        "text": "开发验收文字"
+      }
+    },
+    {
+      "name": "延迟期间保留旧画面",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "frames": [
+              {
+                "frame": "0",
+                "id": "hair-back",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "body",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-left",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-left",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-right",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-right",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "head",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "eyes",
+                "images": 3,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "mouth",
+                "images": 2,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "hair-front",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              }
+            ],
+            "hidden": false,
+            "position": "640px",
+            "recipe": "hero_stand_calm",
+            "speaking": "true",
+            "talking": "true",
+            "visual": "layered"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "0",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "portrait_lab",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "lab:4"
+        },
+        "text": "开发验收文字"
+      }
+    },
+    {
+      "name": "旧请求完成后最新配方仍为普通平静",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "frames": [
+              {
+                "frame": "0",
+                "id": "hair-back",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "body",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-left",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-left",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-right",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-right",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "head",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "eyes",
+                "images": 3,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "mouth",
+                "images": 2,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "hair-front",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              }
+            ],
+            "hidden": false,
+            "position": "640px",
+            "recipe": "hero_stand_calm",
+            "speaking": "true",
+            "talking": "true",
+            "visual": "layered"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "0",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "portrait_lab",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "lab:4"
+        },
+        "text": "开发验收文字"
+      }
+    },
+    {
+      "name": "单层受控失败后静态回退",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "frames": [],
+            "hidden": false,
+            "position": "640px",
+            "speaking": "true",
+            "visual": "static"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "0",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "portrait_lab",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "lab:5"
+        },
+        "text": "开发验收文字"
+      }
+    },
+    {
+      "name": "不同未制作组合共用静态图不重复加载",
+      "beforeCount": "42",
+      "afterCount": "42",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "frames": [],
+            "hidden": false,
+            "position": "640px",
+            "speaking": "true",
+            "visual": "static"
+          }
+        ],
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "0",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "portrait_lab",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "lab:7"
+        },
+        "text": "开发验收文字"
+      }
+    },
+    {
+      "name": "最终版本图层DOM复用",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "frames": [
+              {
+                "frame": "0",
+                "id": "hair-back",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "body",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-left",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-left",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "upper-right",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "lower-right",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "head",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "eyes",
+                "images": 3,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "mouth",
+                "images": 2,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              },
+              {
+                "frame": "0",
+                "id": "hair-front",
+                "images": 1,
+                "transform": "translate(0px, 0px) rotate(0deg)"
+              }
+            ],
+            "hidden": false,
+            "position": "640px",
+            "recipe": "hero_stand_calm",
+            "speaking": "true",
+            "talking": "true",
+            "visual": "layered"
+          }
+        ],
+        "panel": "{\"rootSame\":true,\"bodySame\":true,\"headSame\":true,\"eyesSame\":true,\"unchangedFrameSame\":true,\"visibleFrames\":10}",
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "0",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "portrait_lab",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "lab:9"
+        },
+        "text": "开发验收文字"
+      }
+    }
+  ],
+  "lifecycle": {
+    "frameBefore": "38",
+    "frameAfter": "74",
+    "stoppedCount": "183",
+    "lateCount": "183",
+    "stages": 0
+  },
+  "errors": []
+}

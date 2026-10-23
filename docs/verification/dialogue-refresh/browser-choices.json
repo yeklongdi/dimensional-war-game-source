@@ -1,0 +1,521 @@
+{
+  "steps": [
+    {
+      "name": "受控v1-a007恢复后的继承与四选项",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "疑惑",
+            "left": "572px",
+            "pose": "准备伸懒腰",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "static"
+          },
+          {
+            "actor": "奶奶",
+            "asset": "char_grandmother_warm",
+            "expression": "催促、关心",
+            "left": "436px",
+            "pose": "端着早饭、站在门口",
+            "position": "door",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "虚拟主播",
+            "asset": "char_virtual_streamer_shy",
+            "expression": "紧张、躲避视线",
+            "left": "870px",
+            "pose": "背着书包、站在隔壁门口",
+            "position": "right",
+            "rear": "false",
+            "slot": "right",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "怪盗",
+            "asset": "char_thief_smile",
+            "expression": "有趣、微笑",
+            "left": "180px",
+            "pose": "托腮看向男高",
+            "position": "window",
+            "rear": "false",
+            "slot": "far-left",
+            "speaking": "false",
+            "visual": "static"
+          },
+          {
+            "actor": "老师",
+            "asset": "char_teacher_placeholder",
+            "expression": "平常",
+            "left": "708px",
+            "pose": "朝男高招手",
+            "position": "front",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "反派",
+            "asset": "char_villain_calm",
+            "expression": "玩味",
+            "left": "1100px",
+            "pose": "靠在栏杆边、拿着饮料",
+            "position": "back",
+            "rear": "true",
+            "slot": "far-right",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "偶像",
+            "asset": "char_idol_neutral",
+            "expression": "疑惑、不安",
+            "left": "734px",
+            "pose": "站在反派身旁",
+            "position": "right",
+            "rear": "false",
+            "slot": "right",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "黑色结晶",
+            "asset": "prop_dark_god_crystal_placeholder",
+            "expression": "",
+            "left": "436px",
+            "pose": "",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "placeholder"
+          }
+        ],
+        "box": null,
+        "stage": {
+          "actId": "act1",
+          "bgmId": "bgm_school_choice",
+          "navToken": "2:1:story",
+          "nodeIndex": "2",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_completed\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a007\"},\"savedAt\":1792679353249}",
+          "saveRequest": "2",
+          "saveStatus": "saved",
+          "sceneId": "a007",
+          "session": "2",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "choice",
+          "waitToken": "2:1"
+        }
+      },
+      "options": [
+        {
+          "disabled": true,
+          "index": "1",
+          "text": "怪盗。暂未开放"
+        },
+        {
+          "disabled": false,
+          "index": "2",
+          "text": "虚拟主播。"
+        },
+        {
+          "disabled": true,
+          "index": "3",
+          "text": "反派。暂未开放"
+        },
+        {
+          "disabled": true,
+          "index": "4",
+          "text": "让老师选择。暂未开放"
+        }
+      ]
+    },
+    {
+      "name": "主播选项进入a008，人物位置沿用",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "好奇、友善",
+            "left": "410px",
+            "pose": "自然跟随",
+            "position": "left",
+            "rear": "false",
+            "slot": "left",
+            "speaking": "false",
+            "visual": "static"
+          },
+          {
+            "actor": "奶奶",
+            "asset": "char_grandmother_warm",
+            "expression": "催促、关心",
+            "left": "572px",
+            "pose": "端着早饭、站在门口",
+            "position": "door",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "虚拟主播",
+            "asset": "char_virtual_streamer_shy",
+            "expression": "紧张",
+            "left": "870px",
+            "pose": "低头带路、与男高保持距离",
+            "position": "right",
+            "rear": "false",
+            "slot": "right",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "怪盗",
+            "asset": "char_thief_smile",
+            "expression": "有趣、微笑",
+            "left": "112px",
+            "pose": "托腮看向男高",
+            "position": "window",
+            "rear": "false",
+            "slot": "far-left",
+            "speaking": "false",
+            "visual": "static"
+          },
+          {
+            "actor": "老师",
+            "asset": "char_teacher_placeholder",
+            "expression": "平常",
+            "left": "572px",
+            "pose": "朝男高招手",
+            "position": "front",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "反派",
+            "asset": "char_villain_calm",
+            "expression": "玩味",
+            "left": "1032px",
+            "pose": "靠在栏杆边、拿着饮料",
+            "position": "back",
+            "rear": "true",
+            "slot": "far-right",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "偶像",
+            "asset": "char_idol_neutral",
+            "expression": "疑惑、不安",
+            "left": "734px",
+            "pose": "站在反派身旁",
+            "position": "right",
+            "rear": "false",
+            "slot": "right",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "黑色结晶",
+            "asset": "prop_dark_god_crystal_placeholder",
+            "expression": "",
+            "left": "572px",
+            "pose": "",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "placeholder"
+          }
+        ],
+        "box": {
+          "height": 180,
+          "width": 1232,
+          "y": 540
+        },
+        "stage": {
+          "actId": "act1",
+          "bgmId": "bgm_school_daily",
+          "navToken": "2:1:story",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_a007_01\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_02\",\"sceneId\":\"a008\"},\"savedAt\":1792679353663}",
+          "saveRequest": "3",
+          "saveStatus": "saved",
+          "sceneId": "a008",
+          "session": "2",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "2:2"
+        },
+        "text": "老师的话音落下后，"
+      }
+    },
+    {
+      "name": "A010唯一例外说明在底部180px、不跳a016",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "好奇",
+            "left": "410px",
+            "pose": "停步观察围栏",
+            "position": "left",
+            "rear": "false",
+            "slot": "left",
+            "speaking": "false",
+            "visual": "static"
+          },
+          {
+            "actor": "奶奶",
+            "asset": "char_grandmother_warm",
+            "expression": "催促、关心",
+            "left": "572px",
+            "pose": "端着早饭、站在门口",
+            "position": "door",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "虚拟主播",
+            "asset": "char_virtual_streamer_shy",
+            "expression": "不安",
+            "left": "870px",
+            "pose": "紧张、放慢脚步",
+            "position": "right",
+            "rear": "false",
+            "slot": "right",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "怪盗",
+            "asset": "char_thief_smile",
+            "expression": "有趣、微笑",
+            "left": "112px",
+            "pose": "托腮看向男高",
+            "position": "window",
+            "rear": "false",
+            "slot": "far-left",
+            "speaking": "false",
+            "visual": "static"
+          },
+          {
+            "actor": "老师",
+            "asset": "char_teacher_placeholder",
+            "expression": "平常",
+            "left": "572px",
+            "pose": "朝男高招手",
+            "position": "front",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "反派",
+            "asset": "char_villain_calm",
+            "expression": "玩味",
+            "left": "1032px",
+            "pose": "靠在栏杆边、拿着饮料",
+            "position": "back",
+            "rear": "true",
+            "slot": "far-right",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "偶像",
+            "asset": "char_idol_neutral",
+            "expression": "疑惑、不安",
+            "left": "734px",
+            "pose": "站在反派身旁",
+            "position": "right",
+            "rear": "false",
+            "slot": "right",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "黑色结晶",
+            "asset": "prop_dark_god_crystal_placeholder",
+            "expression": "",
+            "left": "572px",
+            "pose": "",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "placeholder"
+          }
+        ],
+        "box": {
+          "height": 180,
+          "width": 1232,
+          "y": 540
+        },
+        "stage": {
+          "actId": "act1",
+          "bgmId": "bgm_school_mystery",
+          "navToken": "2:1:story",
+          "nodeIndex": "2",
+          "optionIndex": "2",
+          "optionNodeIndex": "1",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_a010_03\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a010\"},\"savedAt\":1792679354756}",
+          "saveRequest": "3",
+          "saveStatus": "saved",
+          "sceneId": "a010",
+          "session": "2",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "2:2"
+        },
+        "text": "【暂无线性后果】原文仅说明男高收回目光，决定先回班上，后续支线暂不展开。"
+      }
+    },
+    {
+      "name": "A010说明后返回原选择",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "好奇",
+            "left": "410px",
+            "pose": "停步观察围栏",
+            "position": "left",
+            "rear": "false",
+            "slot": "left",
+            "speaking": "false",
+            "visual": "static"
+          },
+          {
+            "actor": "奶奶",
+            "asset": "char_grandmother_warm",
+            "expression": "催促、关心",
+            "left": "572px",
+            "pose": "端着早饭、站在门口",
+            "position": "door",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "虚拟主播",
+            "asset": "char_virtual_streamer_shy",
+            "expression": "不安",
+            "left": "870px",
+            "pose": "紧张、放慢脚步",
+            "position": "right",
+            "rear": "false",
+            "slot": "right",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "怪盗",
+            "asset": "char_thief_smile",
+            "expression": "有趣、微笑",
+            "left": "112px",
+            "pose": "托腮看向男高",
+            "position": "window",
+            "rear": "false",
+            "slot": "far-left",
+            "speaking": "false",
+            "visual": "static"
+          },
+          {
+            "actor": "老师",
+            "asset": "char_teacher_placeholder",
+            "expression": "平常",
+            "left": "572px",
+            "pose": "朝男高招手",
+            "position": "front",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "反派",
+            "asset": "char_villain_calm",
+            "expression": "玩味",
+            "left": "1032px",
+            "pose": "靠在栏杆边、拿着饮料",
+            "position": "back",
+            "rear": "true",
+            "slot": "far-right",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "偶像",
+            "asset": "char_idol_neutral",
+            "expression": "疑惑、不安",
+            "left": "734px",
+            "pose": "站在反派身旁",
+            "position": "right",
+            "rear": "false",
+            "slot": "right",
+            "speaking": "false",
+            "visual": "placeholder"
+          },
+          {
+            "actor": "黑色结晶",
+            "asset": "prop_dark_god_crystal_placeholder",
+            "expression": "",
+            "left": "572px",
+            "pose": "",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "placeholder"
+          }
+        ],
+        "box": null,
+        "stage": {
+          "actId": "act1",
+          "bgmId": "bgm_school_mystery",
+          "navToken": "2:1:story",
+          "nodeIndex": "2",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_completed\":true,\"flag_act1_a010_03\":true},\"completedLevelIds\":[\"prologue_01\",\"prologue_02\",\"prologue_03\",\"act1_01\",\"act1_02\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"act1_03\",\"sceneId\":\"a010\"},\"savedAt\":1792679354756}",
+          "saveRequest": "3",
+          "saveStatus": "saved",
+          "sceneId": "a010",
+          "session": "2",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "choice",
+          "waitToken": "2:3"
+        }
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,60 @@
+[
+  {
+    "file": "public/assets/portraits/hero-layered-v2/arms-alpha-review.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "transparentPixels": 1331446,
+    "semiTransparentPixels": 241418,
+    "opaquePixels": 0,
+    "opaqueBBox": [
+      129,
+      323,
+      932,
+      1178
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "visualApproved": false,
+    "issues": [
+      "双臂尺寸与既有躯干未注册",
+      "修订后仍有轮廓外光晕，不符合严格透明图层交付",
+      "整臂尚未分割为独立上臂和前臂，未接入正式配方"
+    ]
+  },
+  {
+    "file": "public/assets/portraits/hero-layered-v2/arms-candidate.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "transparentPixels": 1334278,
+    "semiTransparentPixels": 238586,
+    "opaquePixels": 0,
+    "opaqueBBox": [
+      130,
+      325,
+      930,
+      1177
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "visualApproved": false,
+    "issues": [
+      "双臂尺寸与既有躯干未注册",
+      "修订后仍有轮廓外光晕，不符合严格透明图层交付",
+      "整臂尚未分割为独立上臂和前臂，未接入正式配方"
+    ]
+  }
+]

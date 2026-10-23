@@ -1,0 +1,18 @@
+[
+  {
+    "url": "http://127.0.0.1:43855/dimensional-war-game-source/assets/portraits/hero-layered-v2/arms-candidate.png",
+    "status": 200,
+    "contentType": "image/png",
+    "size": 954438,
+    "matchesLocal": true,
+    "sha256": "157a79c51bfba86063f9f3b4cb1926f0e5d5f72367b1a20a65f18e9374d11eec"
+  },
+  {
+    "url": "http://127.0.0.1:43855/dimensional-war-game-source/assets/portraits/hero-layered-v2/arms-alpha-review.png",
+    "status": 200,
+    "contentType": "image/png",
+    "size": 941666,
+    "matchesLocal": true,
+    "sha256": "107679646e63dc9d2bfa00e263ca080575a08182212a50e2518ae5ce8d4a2920"
+  }
+]

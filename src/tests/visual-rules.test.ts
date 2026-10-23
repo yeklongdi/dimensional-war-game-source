@@ -15,20 +15,22 @@ const wait = (kind: TextKind = 'dialogue', revealed = 2): TextWait => ({ kind: '
   text: '一二三四', revealed, token: 'fixture', origin: { nodeIndex: 0 } });
 const speech = { ...actor, supported: true, mouthAllowed: true, prop: false };
 const recipe = heroRecipes[0]!;
+// 保留首轮“未批准／未齐备”目录的全部拒绝断言。正式v3批准状态另由hero-samples.test验收。
+const unapprovedRecipes = heroRecipes.map((item, index) => ({ ...item, approved: false, candidateReady: index === 0 }));
 
 describe('纯视觉映射，不改变剧情和继承', () => {
-  it.each(heroRecipes)('$id 显式登记，未通过美术验收时正式入口只静态回退', item => {
+  it.each(unapprovedRecipes)('$id 显式登记，未通过美术验收时正式入口只静态回退', item => {
     const original = Object.freeze({ ...actor, pose: item.pose, expression: item.expression });
-    const plan = resolveVisual(original);
+    const plan = resolveVisual(original, {}, false, unapprovedRecipes);
     expect(plan.kind).toBe('static');
     expect(plan.diagnostic).toContain('候选');
     expect(original.position).toBe('right');
     expect(plan).not.toHaveProperty('position');
   });
   it('开发页只能启用资源齐备的候选，不将待制作组合当已完成', () => {
-    expect(resolveVisual(actor, {}, true).kind).toBe('layered');
+    expect(resolveVisual(actor, {}, true, unapprovedRecipes).kind).toBe('layered');
     const luggage = heroRecipes[2]!;
-    expect(resolveVisual({ ...actor, pose: luggage.pose, expression: luggage.expression }, {}, true).kind).toBe('static');
+    expect(resolveVisual({ ...actor, pose: luggage.pose, expression: luggage.expression }, {}, true, unapprovedRecipes).kind).toBe('static');
   });
   it.each(['坐在沙发上', '躺在床上、刚醒', '持剑、准备保护虚拟主播', '不存在姿态'])('%s 不被偷偷替换为普通站姿', pose => {
     const plan = resolveVisual({ ...actor, pose }, {}, true);
@@ -36,7 +38,7 @@ describe('纯视觉映射，不改变剧情和继承', () => {
   });
   it('不同asset不误用同名男高分层，原静态失败才占位', () => {
     expect(resolveVisual({ ...actor, asset: '蒙面占位' }, {}, true).kind).toBe('placeholder');
-    expect(resolveVisual(actor, { char_male_high_normal: true }).kind).toBe('placeholder');
+    expect(resolveVisual(actor, { char_male_high_normal: true }, false, unapprovedRecipes).kind).toBe('placeholder');
   });
   it('其他人物／道具保留既有映射', () => {
     expect(resolveVisual({ ...actor, actor: '奶奶', asset: 'char_grandmother_warm' }).kind).toBe('placeholder');

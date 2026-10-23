@@ -1,0 +1,7 @@
+{
+  "files": 26,
+  "totalBytes": 51239796,
+  "testEntrypoints": [],
+  "fixtureCodePresent": false,
+  "html": "<!doctype html>\n<html lang=\"zh-CN\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"icon\" href=\"data:,\" />\n    <title>次元战争</title>\n    <script type=\"module\" crossorigin src=\"/assets/index-C-mWy0vf.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-Bpyc_DaU.css\">\n  </head>\n  <body>\n    <div id=\"app\"></div>\n  </body>\n</html>\n"
+}

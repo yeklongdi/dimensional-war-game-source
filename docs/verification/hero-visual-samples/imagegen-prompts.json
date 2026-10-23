@@ -1,0 +1,110 @@
+[
+  {
+    "id": "heroPromptMaster",
+    "prompt": "Use case: identity-preserve. Asset: production pixel-art character master for our original visual novel, transparent PNG, portrait 1024x1536.\nEDIT TARGET image 1: existing original boy standing master. Image 2: original costume reference only.\nKeep the exact boy, black tall pompadour with swept front bang, angular youthful face, black open Japanese school jacket with gold buttons, red crewneck shirt, silver dog-tag chain, baggy black trousers and sneakers. Keep the existing full-body placement, proportions, scale and relaxed standing arms as in image 1. Make the facial expression default calm, neutral closed mouth, not a grin.\nCritical cleanup: truly clean alpha background with HARD pixel silhouette. Absolutely no glow, no rim aura, no shadow cloud, no dark vignette, no background rectangle. Every pixel outside the character outline must be fully transparent. This is a game sprite, not a portrait on a black background.\nEnsure natural matching left/right shoulders and arms, continuous sleeve fabric from shoulder through elbow to hand, 5 fingers, no detached joints. Clean crisp 16-bit pixel clusters, not a smooth vector or semi-realistic painting.\nDo not change costume or hairstyle, do not add text, props, poses, border or labels. Single complete character only. Preserve sufficient trousers below waist.",
+    "tool": "内置 imagegen",
+    "transparent_background": true
+  },
+  {
+    "id": "heroPromptBlank",
+    "prompt": "Use case: precise-object-edit. Edit the attached original game sprite. Keep the entire image exactly the same coordinates, scale, pose, colors, hairstyle, clothing, hands and legs. This is a texture-plate edit, not a new illustration.\nOnly remove the eyebrows, eyeballs/eyelids and mouth line from the face, replacing those small areas with continuous matching skin. Keep the nose, chin, ears, face contour, forehead, neck and all hair exactly as before. The face is a featureless animation base onto which separate eyebrows/eyes/mouth will be layered. Do not cover the nose. No eyes, no eyebrows and no lips anywhere. Retain the 1024x1536 canvas, identical full-body composition, clean hard pixel edges, transparent background. Do not add a halo, a shadow, or a new background.",
+    "tool": "内置 imagegen",
+    "transparent_background": true
+  },
+  {
+    "id": "heroPromptClosed",
+    "prompt": "Use case: precise-object-edit. Animation eye difference for the attached original pixel game sprite. Edit ONLY the two eyeballs and eyelids: make both eyes completely gently CLOSED in a natural blink, thin dark closed eyelid lines. Keep the original calm eyebrows at exactly their positions, nose, mouth, hair, ears, chin, skin, body, costume, scale and placement completely unchanged. Do not close the eyebrows; replace the eye whites and pupils with skin and closed lids. Identical 1024x1536 full-body canvas and clean transparent background. No scene, no text, no new pose, no glow. All non-eye pixels must remain identical.",
+    "tool": "内置 imagegen",
+    "transparent_background": true
+  },
+  {
+    "id": "heroPromptHalf",
+    "prompt": "Use case: precise-object-edit. Make a HALF-BLINK eyelid difference of the attached original pixel-art boy. Edit ONLY the visible eyeballs/eyelids, not the eyebrows: lower the upper lids halfway across each pupil, retain a narrow visible sliver of white and iris beneath. This is the halfway frame between open eyes and completely closed eyes, not an expression change. Keep calm eyebrows, mouth, head/hair, nose, face outline, all clothes/body, coordinates and scale completely unchanged. Exactly same 1024x1536 full-body composition, transparent background. No background, no glow, no labels.",
+    "tool": "内置 imagegen",
+    "transparent_background": true
+  },
+  {
+    "id": "heroPromptCalmMouth",
+    "prompt": "Use case: precise-object-edit. Pixel-art speech-mouth difference. Edit ONLY the closed mouth on this original boy: open it slightly in a small natural speaking shape, visible dark mouth interior and a tiny pale lower tooth/lip highlight. Keep a calm neutral expression, do not grin or shout. Upper lip/corners anchored at exactly the original mouth position. Keep all eyes, brows, hair, face contour, nose, clothes, arms, legs, palette, pixel style and coordinates unchanged. Identical 1024x1536 full-body transparent sprite. No extra face, no labels, no background, no glow.",
+    "tool": "内置 imagegen",
+    "transparent_background": true
+  },
+  {
+    "id": "heroPromptProud",
+    "prompt": "Use case: precise-object-edit. Original game character FACIAL EXPRESSION difference. Edit ONLY the eyebrows, eyes and closed mouth of this boy to a visibly PROUD / self-satisfied expression: one eyebrow slightly raised, confident narrowed gaze, an asymmetric upward smirk showing a small strip of teeth. Keep youthful identity, do not make him older or evil. The new expression must be clearly distinct from calm.\nKeep forehead, nose, ears, jaw, hair, head position, neck, clothing, arms, legs and pixel palette exactly unchanged. All features retain their existing facial anchors; no head tilt or body pose change. Identical 1024x1536 full-body sprite, transparent background, hard pixel silhouette. No text, no props, no scene, no aura.",
+    "tool": "内置 imagegen",
+    "transparent_background": true
+  },
+  {
+    "id": "heroPromptProudMouth",
+    "prompt": "Use case: precise-object-edit. Facial-expression speech difference of the attached original pixel boy. Edit ONLY the mouth: open his confident asymmetrical toothy smirk into a small speaking grin, keeping the raised corner and proud self-satisfied emotion. Visible upper teeth and dark mouth inside, restrained speech opening rather than laughter. Keep both eyes and eyebrows EXACTLY the same as in the input, same nose, cheek, chin, hair and all body/clothes/pose. The mouth remains centered at the exact existing anchor. Identical 1024x1536 transparent full-body sprite. No text, no scene, no glow.",
+    "tool": "内置 imagegen",
+    "transparent_background": true
+  },
+  {
+    "id": "heroPromptLuggage",
+    "prompt": "Use case: identity-preserve. New luggage-standing POSE of the attached original pixel-art boy, using precisely the same identity, costume and proportions. Maintain the exact existing head, neck, face angle and top-of-hair location and body/legs scale on the 1024x1536 canvas. Black pompadour, open black school jacket/gold buttons, red shirt, silver dogtag, black trousers and sneakers unchanged.\nChange ONLY the viewer-left arm: bend the elbow to carry a real medium brown travel duffel / suitcase by two short handles, clearly gripped by the hand. Hand anchor around (315,620), bag body roughly x180..410 y680..1000. The hand wraps around both handles, fingers in front, handles extend into the top of the bag. Stable anatomically plausible carry relationship, bag hangs vertically. Right arm remains relaxed as before. This is carrying luggage while standing, not posing for a fight.\nKeep the calm face for now; facial expressions will be separate overlays. Draw the complete bag and all sleeves with clean overlaps and no detached pieces. Crisp pixel clusters and same black/red palette. Clean hard silhouette with transparent background, no shadow, no halo, no labels or environment. One complete full-body sprite only.",
+    "tool": "内置 imagegen",
+    "transparent_background": true
+  },
+  {
+    "id": "heroPromptLuggageRaised",
+    "prompt": "Use case: precise-object-edit. Fix ONLY the luggage carrying arm and bag height of the attached original pixel game sprite. The current bag is far too low for our waist-up game framing.\nBEND the viewer-left elbow strongly to about 90 degrees, forearm in front of lower chest, hand gripping the same brown bag's two handles at about canvas (320,550), beside the red-shirt stomach. Raise the complete bag together with its handles and gripping hand by about 220 pixels. Bag top should be near y630, bottom near y900, left edge near x100. The sleeve must be reposed naturally, the upper arm stays attached at the unchanged shoulder. Do not simply stretch the hand or detach the forearm. Clear fingers wrapped around the handles.\nKeep the entire head, face, neck, shoulders, torso, right arm, legs, scale, hairstyle, costume, colors and canvas exactly unchanged. Keep the same bag design and pixel style. 1024x1536 transparent sprite with no halo, no shadow, no background and no labels. Do not leave a second old arm or old bag behind.",
+    "tool": "内置 imagegen",
+    "transparent_background": true
+  },
+  {
+    "id": "heroPromptNervous",
+    "prompt": "Use case: precise-object-edit. Facial-expression texture difference for this original pixel-art boy. Change ONLY eyebrows, eyes and closed mouth to NERVOUS BUT EXPECTANT: inner eyebrows raised and angled slightly inward, eyes more open and attentive with a hopeful forward gaze, lips pressed in a small tentative uneven closed smile. Clearly show nervous anticipation rather than anger or a confident smirk. No sweat drops, symbols or new props.\nKeep the exact forehead/hair, ears, nose, jaw, chin, face angle, neck and all body/clothes/pose and coordinates unchanged. Facial anchors and identity remain fixed. Same 1024x1536 full-body transparent sprite, hard pixel outline, no background, no glow, no text.",
+    "tool": "内置 imagegen",
+    "transparent_background": true
+  },
+  {
+    "id": "heroPromptRelaxed",
+    "prompt": "Use case: precise-object-edit. Facial-expression texture difference of this original pixel-art boy. Change ONLY the eyebrows, eyes and mouth to RELAXED / WARM SMILE. Eyebrows softer and relaxed, gently softened open eyes with friendly gaze, lips in a clearly visible curved closed smile. Keep the eyes OPEN so that later blinking can be animated. Distinct from the original confident severe brow and straight mouth. Do not laugh, close the eyes, blush or change identity.\nKeep the exact face angle, nose/ears/jaw/chin, hair/head position, neck and entire body/costume/pose, pixel palette and coordinates unchanged. Same 1024x1536 full-body transparent sprite, no text, no background, no glow.",
+    "tool": "内置 imagegen",
+    "transparent_background": true
+  },
+  {
+    "id": "heroPromptPuzzled",
+    "prompt": "Use case: precise-object-edit. Facial-expression difference of the attached original pixel-art boy. Change ONLY eyebrows, eyes and closed mouth to PUZZLED / mildly confused: one eyebrow noticeably raised and curved, the other slightly knitted, eyes looking inquisitively forward, small asymmetric closed mouth with a hesitant downturned corner. Distinct from a smirk, fear, or a cheerful smile. No question mark, no sweat, no symbols.\nKeep forehead/hair, nose, ear, jaw, chin, exact head angle/location, neck, all clothing and entire full-body pose and coordinates unchanged. Same identity and pixel-art palette. Identical 1024x1536 transparent full-body sprite, hard pixel outline, no background, no glow and no labels.",
+    "tool": "内置 imagegen",
+    "transparent_background": true
+  },
+  {
+    "id": "heroPromptNervousMouth",
+    "prompt": "Use case: precise-object-edit. Speaking mouth difference ONLY for the attached original pixel-art boy. Preserve the nervous, hopeful face and raised inward eyebrows EXACTLY. Open only the mouth a little into a tentative, tense speaking shape, a small narrow opening with restrained corners, not a grin. Anchor the top lip at its existing position. No shouting or laughing. Keep all other pixels/features, face geometry, hair, body, costume, scale and pose unchanged. Same 1024x1536 transparent sprite, no background, no new marks or labels, no glow.",
+    "tool": "内置 imagegen",
+    "transparent_background": true
+  },
+  {
+    "id": "heroPromptPrepare",
+    "prompt": "Use case: identity-preserve. Create the BEGINNING / PREPARATION of a standing stretch for this original pixel-art boy. Same exact person, pompadour, black open school uniform with gold buttons, red shirt, silver dogtag, baggy black pants and sneakers. Keep the head and neck and torso anchored at their exact existing canvas coordinates, same scale and face angle.\nChange both arms into a restrained, clearly readable preparing-to-stretch pose: elbows bent out beside the body, loosely curled hands raised near shoulder / upper-chest height, shoulders just starting to loosen. Both hands must stay below the chin and outside the face silhouette; not fighting, not punching, no fist up against face, no full overhead stretch. Make the wrists, elbows and shoulders anatomically continuous, matching the established arm size. Keep all the original clothes, folds consistent.\nFace can remain calm for now. Do not add symbols, extra arms or props. One complete full body centered on identical 1024x1536 canvas, clean hard pixel transparency, no halo, no shadow cloud, no background, no labels.",
+    "tool": "内置 imagegen",
+    "transparent_background": true
+  },
+  {
+    "id": "heroPromptRelaxedMouth",
+    "prompt": "Use case: precise-object-edit. Speaking mouth difference ONLY. Keep the attached original boy's relaxed friendly eyebrows and open eyes EXACTLY. Open his curved warm smile slightly for gentle speech, rounded upturned corners, a little visible upper teeth and dark interior. Keep it a small smile, not big laughter or shouting. Mouth anchor unchanged, do not move nose/chin/cheeks. Preserve all other hair/body/clothing/pose, pixel palette and 1024x1536 canvas coordinates completely unchanged. Transparent game sprite, no scene, no labels and no glow.",
+    "tool": "内置 imagegen",
+    "transparent_background": true
+  },
+  {
+    "id": "heroPromptPuzzledMouth",
+    "prompt": "Use case: precise-object-edit. Speaking mouth difference ONLY for this original pixel boy. Keep the puzzled raised eyebrow, other knitted eyebrow and inquisitive eyes exactly unchanged. Open only his small asymmetric downturned mouth into a restrained questioning speech shape, one corner still slightly lower. Do not smile, grin, shout or change emotion. Keep lips at the original anchor and all face/hair/head/body/clothes/pose/scale/coordinates unchanged. Same 1024x1536 transparent full-body sprite, no background, no halo and no labels.",
+    "tool": "内置 imagegen",
+    "transparent_background": true
+  },
+  {
+    "id": "heroPromptPrepareTorso",
+    "prompt": "Use case: precise-object-edit. Hidden-area repair plate for a layered original pixel-art game character. Edit the attached preparation-pose sprite.\nREMOVE both raised arms and both hands completely, leaving ONLY the central torso, shoulders/short sleeve attachment caps, collar, red shirt/dogtag, jacket body/coat tails, legs and head. Reconstruct the black jacket fabric at the sides / underarms that was hidden behind the arms, so there is a continuous fully painted torso under future arm layers. The side contour should follow the ribcage, not the old arms. Make rounded black shoulder attachment surfaces under where the arms originally attached, no exposed wounds or anatomy.\nPreserve the exact head/hair, neck, collar, central jacket, gold buttons, necklace, red shirt, waist, legs and original coordinates/scale. Do not change the pose of the remaining body or redraw his proportions. Same 1024x1536 full-body transparent pixel sprite, clean hard outline, no background, no aura and no text. Do not include any floating removed arm fragments.",
+    "tool": "内置 imagegen",
+    "transparent_background": true
+  },
+  {
+    "id": "heroPromptLuggageComplete",
+    "prompt": "Use case: precise-object-edit. Complete the luggage props of this original pixel-art character. Our unchanged story explicitly mentions BOTH a travel bag and a suitcase.\nKeep the viewer-left brown travel bag and gripping hand EXACTLY unchanged. Keep the exact existing head/hair, face, neck, shoulders, torso, legs, identity, costume, pixel-art palette and 1024x1536 placement.\nChange ONLY the viewer-right forearm and hand to naturally grip the extended telescoping handle of a small upright dark charcoal wheeled suitcase beside his right leg. Bend the right elbow modestly so that his hand and the top handle are at about (760,630), the extended handle rails go down to the case at y830. Suitcase body roughly x750..965, y820..1250, two small wheels. The handle bar passes through his curled gripping fingers; fingers visibly wrap in front. The hand, handle and case are physically connected, not separate floating props.\nDo not add a second right hand or duplicate arm. Keep the brown bag unchanged and preserve all clothing design and body proportions. The new suitcase is simple modern luggage, no branding, no labels, no new story. Same clean transparent hard pixel silhouette; no glow, shadow cloud, floor or background.",
+    "tool": "鍐呯疆 imagegen",
+    "transparent_background": true
+  }
+]

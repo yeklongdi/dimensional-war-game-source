@@ -1,0 +1,158 @@
+[
+  {
+    "step": "playing",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "默认平静",
+        "left": "640px",
+        "pose": "普通站姿",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_stand_calm",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -0.592612px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -0.957297px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -0.957297px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -0.957297px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -0.957297px) rotate(-0.0057846deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "nodeIndex": "0",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "sceneId": "portrait_lab",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "lab:18"
+    },
+    "talking": "true",
+    "text": "男高开发验收文字点击补全文字",
+    "panel": {
+      "animationRequests": "1272",
+      "completedImages": "70",
+      "delay": "false",
+      "layerReuse": "{\"rootSame\":true,\"bodySame\":true,\"headSame\":true,\"eyesSame\":true,\"unchangedFrameSame\":true,\"visibleFrames\":5}",
+      "pendingImages": "0",
+      "testid": "portrait-lab-panel"
+    }
+  },
+  {
+    "step": "pending-before-dispose",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "得意",
+        "left": "640px",
+        "pose": "普通站姿",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_stand_calm",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -0.297803px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -0.481066px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -0.481066px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "1",
+        "translate(0px, -0.481066px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -0.481066px) rotate(0.0511039deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "nodeIndex": "0",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "sceneId": "portrait_lab",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "lab:19"
+    },
+    "talking": "true",
+    "text": "男高开发验收文字点击补全文字",
+    "panel": {
+      "animationRequests": "1281",
+      "completedImages": "70",
+      "delay": "true",
+      "layerReuse": "{\"rootSame\":true,\"bodySame\":true,\"headSame\":true,\"eyesSame\":true,\"unchangedFrameSame\":true,\"visibleFrames\":5}",
+      "pendingImages": "8",
+      "testid": "portrait-lab-panel"
+    }
+  },
+  {
+    "step": "disposed",
+    "panel": {
+      "animationRequests": "1283",
+      "completedImages": "70",
+      "delay": "true",
+      "layerReuse": "{\"rootSame\":true,\"bodySame\":true,\"headSame\":true,\"eyesSame\":true,\"unchangedFrameSame\":true,\"visibleFrames\":5}",
+      "pendingImages": "8",
+      "testid": "portrait-lab-panel"
+    },
+    "stages": 0
+  },
+  {
+    "step": "late-load-completed",
+    "panel": {
+      "animationRequests": "1283",
+      "completedImages": "78",
+      "delay": "true",
+      "layerReuse": "{\"rootSame\":true,\"bodySame\":true,\"headSame\":true,\"eyesSame\":true,\"unchangedFrameSame\":true,\"visibleFrames\":5}",
+      "pendingImages": "0",
+      "testid": "portrait-lab-panel"
+    },
+    "stages": 0
+  }
+]

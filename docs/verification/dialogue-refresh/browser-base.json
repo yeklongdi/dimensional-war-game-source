@@ -1,0 +1,172 @@
+{
+  "url": "http://127.0.0.1:43855/dimensional-war-game-source/tests/portrait-presentation.html",
+  "result": {
+    "actors": [
+      {
+        "actor": "男高",
+        "frames": [
+          {
+            "frame": "0",
+            "id": "hair-back",
+            "images": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)"
+          },
+          {
+            "frame": "0",
+            "id": "body",
+            "images": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)"
+          },
+          {
+            "frame": "0",
+            "id": "upper-left",
+            "images": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)"
+          },
+          {
+            "frame": "0",
+            "id": "lower-left",
+            "images": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)"
+          },
+          {
+            "frame": "0",
+            "id": "upper-right",
+            "images": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)"
+          },
+          {
+            "frame": "0",
+            "id": "lower-right",
+            "images": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)"
+          },
+          {
+            "frame": "0",
+            "id": "head",
+            "images": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)"
+          },
+          {
+            "frame": "0",
+            "id": "eyes",
+            "images": 3,
+            "transform": "translate(0px, 0px) rotate(0deg)"
+          },
+          {
+            "frame": "0",
+            "id": "mouth",
+            "images": 2,
+            "transform": "translate(0px, 0px) rotate(0deg)"
+          },
+          {
+            "frame": "0",
+            "id": "hair-front",
+            "images": 1,
+            "transform": "translate(0px, 0px) rotate(0deg)"
+          }
+        ],
+        "hidden": false,
+        "position": "640px",
+        "recipe": "hero_stand_calm",
+        "speaking": "true",
+        "talking": "true",
+        "visual": "layered"
+      }
+    ],
+    "panel": "{\"rootSame\":true,\"bodySame\":true,\"headSame\":true,\"eyesSame\":true,\"unchangedFrameSame\":true,\"visibleFrames\":10}",
+    "stage": {
+      "actId": "prologue",
+      "nodeIndex": "0",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "sceneId": "portrait_lab",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "lab:1"
+    },
+    "text": "开发验收文字"
+  },
+  "images": [
+    {
+      "complete": true,
+      "height": 1536,
+      "url": "/dimensional-war-game-source/assets/portraits/hero-layered-v1/hair-back.png",
+      "width": 1024
+    },
+    {
+      "complete": true,
+      "height": 1536,
+      "url": "/dimensional-war-game-source/assets/portraits/hero-layered-v1/body.png",
+      "width": 1024
+    },
+    {
+      "complete": true,
+      "height": 1536,
+      "url": "/dimensional-war-game-source/assets/portraits/hero-layered-v1/upper-left.png",
+      "width": 1024
+    },
+    {
+      "complete": true,
+      "height": 1536,
+      "url": "/dimensional-war-game-source/assets/portraits/hero-layered-v1/lower-left.png",
+      "width": 1024
+    },
+    {
+      "complete": true,
+      "height": 1536,
+      "url": "/dimensional-war-game-source/assets/portraits/hero-layered-v1/upper-right.png",
+      "width": 1024
+    },
+    {
+      "complete": true,
+      "height": 1536,
+      "url": "/dimensional-war-game-source/assets/portraits/hero-layered-v1/lower-right.png",
+      "width": 1024
+    },
+    {
+      "complete": true,
+      "height": 1536,
+      "url": "/dimensional-war-game-source/assets/portraits/hero-layered-v1/head.png",
+      "width": 1024
+    },
+    {
+      "complete": true,
+      "height": 1536,
+      "url": "/dimensional-war-game-source/assets/portraits/hero-layered-v1/eyes-calm.png",
+      "width": 1024
+    },
+    {
+      "complete": true,
+      "height": 1536,
+      "url": "/dimensional-war-game-source/assets/portraits/hero-layered-v1/eyes-half-v2.png",
+      "width": 1024
+    },
+    {
+      "complete": true,
+      "height": 1536,
+      "url": "/dimensional-war-game-source/assets/portraits/hero-layered-v1/eyes-closed-v2.png",
+      "width": 1024
+    },
+    {
+      "complete": true,
+      "height": 1536,
+      "url": "/dimensional-war-game-source/assets/portraits/hero-layered-v1/mouth-calm.png",
+      "width": 1024
+    },
+    {
+      "complete": true,
+      "height": 1536,
+      "url": "/dimensional-war-game-source/assets/portraits/hero-layered-v1/mouth-open.png",
+      "width": 1024
+    },
+    {
+      "complete": true,
+      "height": 1536,
+      "url": "/dimensional-war-game-source/assets/portraits/hero-layered-v1/hair-front.png",
+      "width": 1024
+    }
+  ],
+  "errors": []
+}

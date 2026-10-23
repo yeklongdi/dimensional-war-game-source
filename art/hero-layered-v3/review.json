@@ -1,0 +1,88 @@
+[
+  {
+    "id": "hero_stand_calm",
+    "pose": "普通站姿",
+    "expression": "默认平静",
+    "approved": true,
+    "reviewOrder": 1,
+    "reviewDate": "2026-10-23",
+    "reviewer": "本轮工具与浏览器视觉复核；待用户最终审阅",
+    "scope": "仅开发样板，原文没有该组合",
+    "evidence": [
+      "calm-final-light.jpg",
+      "calm-final-dark.jpg",
+      "calm-closed.jpg",
+      "calm-speech.jpg"
+    ],
+    "notes": "先通过普通平静统一比例与母版坐标，再扩展其他四项；完整透明画布、头颈衣领、浅深底色与实际底窗通过。顶发、眉眼和嘴独立差分；完整手臂留在站姿身体内。"
+  },
+  {
+    "id": "hero_stand_proud",
+    "pose": "普通站姿",
+    "expression": "得意",
+    "approved": true,
+    "reviewOrder": 2,
+    "reviewDate": "2026-10-23",
+    "reviewer": "本轮工具与浏览器视觉复核；待用户最终审阅",
+    "scope": "仅开发样板，不替代P003坐姿",
+    "evidence": [
+      "proud-final-light.jpg",
+      "proud-final-dark.jpg",
+      "proud-closed.jpg",
+      "proud-speech.jpg"
+    ],
+    "notes": "沿用已通过的站姿身体和头部基准；得意眉眼、嘴角及说话嘴型独立于平静，眨眼不切回平静眉形。仅开发页使用，不替代P003坐姿。"
+  },
+  {
+    "id": "hero_luggage_nervous",
+    "pose": "携带行李、站立",
+    "expression": "紧张、期待",
+    "approved": true,
+    "reviewOrder": 3,
+    "reviewDate": "2026-10-23",
+    "reviewer": "本轮工具与浏览器视觉复核；待用户最终审阅",
+    "scope": "P001；P002表情更新之前",
+    "evidence": [
+      "nervous-final-light.jpg",
+      "nervous-final-dark.jpg",
+      "nervous-closed.jpg",
+      "nervous-speech.jpg"
+    ],
+    "notes": "左手握行李袋，右手握拉杆箱，两件道具均在完整原画中；左握持组与身体同步呼吸，右手及箱体留在身体层。紧张期待差分、浅深底色及P001实际画面通过。"
+  },
+  {
+    "id": "hero_luggage_relaxed",
+    "pose": "携带行李、站立",
+    "expression": "放松、微笑",
+    "approved": true,
+    "reviewOrder": 4,
+    "reviewDate": "2026-10-23",
+    "reviewer": "本轮工具与浏览器视觉复核；待用户最终审阅",
+    "scope": "P002按原SHOW更新之后",
+    "evidence": [
+      "relaxed-final-light.jpg",
+      "relaxed-final-dark.jpg",
+      "relaxed-closed.jpg",
+      "relaxed-speech.jpg"
+    ],
+    "notes": "沿用同一双行李母版，不移动手或道具；原文SHOW更新后切放松微笑眉眼与嘴型，P002先继承紧张、后按原顺序换表情。"
+  },
+  {
+    "id": "hero_prepare_puzzled",
+    "pose": "准备伸懒腰",
+    "expression": "疑惑",
+    "approved": true,
+    "reviewOrder": 5,
+    "reviewDate": "2026-10-23",
+    "reviewer": "本轮工具与浏览器视觉复核；待用户最终审阅",
+    "scope": "A006及A007继承",
+    "evidence": [
+      "puzzled-final-light.jpg",
+      "puzzled-final-dark.jpg",
+      "puzzled-closed.jpg",
+      "puzzled-speech.jpg",
+      "prepare-motion-final-whole-arms.jpg"
+    ],
+    "notes": "同一准备动作母版裁出左右完整手臂，补绘衣物遮挡区；各绕肩部最大7度，850ms结束。分肘旧候选被否决，最终0/425/850ms无脱节或重复手臂；A006触发，A007继承及恢复定格通过。"
+  }
+]

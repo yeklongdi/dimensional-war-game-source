@@ -1,0 +1,1819 @@
+{
+  "canvas": [
+    1024,
+    1536
+  ],
+  "anchor": [
+    512,
+    1536
+  ],
+  "alphaThreshold": 220,
+  "layers": [
+    {
+      "file": "public/assets/portraits/hero-layered-v3/body-stand.png",
+      "source": "stand-calm-generated.png",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          0,
+          328,
+          1023,
+          1535
+        ]
+      ],
+      "bounds": [
+        229,
+        328,
+        828,
+        1482
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "71103e58cd5276c0f36ac1ad9cd687c6d6352225e95b0faa64a7918e52edd2fd"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/head.png",
+      "source": "stand-blank-generated.png",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          0,
+          177,
+          1023,
+          338
+        ]
+      ],
+      "bounds": [
+        384,
+        177,
+        610,
+        339
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "32669d1c02ce13940767fbe127f9354a679acf1f98b9068336274075ddf411de"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/hair-front.png",
+      "source": "stand-calm-generated.png",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          0,
+          0,
+          1023,
+          185
+        ]
+      ],
+      "bounds": [
+        394,
+        48,
+        622,
+        186
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "3f507d6ae3a9903775042eb1d64489a18b06a91f599dd0c89bd641587187a0b5"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/eyes-calm.png",
+      "source": "calm master",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          438,
+          192,
+          586,
+          282
+        ]
+      ],
+      "bounds": [
+        438,
+        192,
+        587,
+        283
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "0a157ccffa964873f721690e5de16e321aec069733c1ccf7f281517f4014a45f"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/eyes-calm-half.png",
+      "source": "blank + blink-half + calm brows",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          [
+            438,
+            192
+          ],
+          [
+            518,
+            192
+          ],
+          [
+            518,
+            245
+          ],
+          [
+            501,
+            243
+          ],
+          [
+            445,
+            223
+          ],
+          [
+            438,
+            223
+          ]
+        ],
+        [
+          [
+            532,
+            214
+          ],
+          [
+            586,
+            214
+          ],
+          [
+            586,
+            241
+          ],
+          [
+            532,
+            249
+          ]
+        ],
+        [
+          [
+            451,
+            231
+          ],
+          [
+            480,
+            239
+          ],
+          [
+            500,
+            246
+          ],
+          [
+            500,
+            262
+          ],
+          [
+            450,
+            261
+          ]
+        ],
+        [
+          [
+            535,
+            250
+          ],
+          [
+            560,
+            247
+          ],
+          [
+            569,
+            249
+          ],
+          [
+            569,
+            270
+          ],
+          [
+            534,
+            274
+          ]
+        ]
+      ],
+      "bounds": [
+        438,
+        192,
+        587,
+        283
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "ac267f07316c591f287ffcdcc1d421bad9fa638ff3947f9d317c2deb1ee7c4f1"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/eyes-calm-closed.png",
+      "source": "blank + blink-closed + calm brows",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          [
+            438,
+            192
+          ],
+          [
+            518,
+            192
+          ],
+          [
+            518,
+            245
+          ],
+          [
+            501,
+            243
+          ],
+          [
+            445,
+            223
+          ],
+          [
+            438,
+            223
+          ]
+        ],
+        [
+          [
+            532,
+            214
+          ],
+          [
+            586,
+            214
+          ],
+          [
+            586,
+            241
+          ],
+          [
+            532,
+            249
+          ]
+        ],
+        [
+          [
+            451,
+            231
+          ],
+          [
+            480,
+            239
+          ],
+          [
+            500,
+            246
+          ],
+          [
+            500,
+            262
+          ],
+          [
+            450,
+            261
+          ]
+        ],
+        [
+          [
+            535,
+            250
+          ],
+          [
+            560,
+            247
+          ],
+          [
+            569,
+            249
+          ],
+          [
+            569,
+            270
+          ],
+          [
+            534,
+            274
+          ]
+        ]
+      ],
+      "bounds": [
+        438,
+        192,
+        587,
+        283
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "7358dd1a1c0dcb17ac82ce3f021a3a0c0318147502e1a41e62991380609c6404"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/mouth-calm.png",
+      "source": "calm master",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          464,
+          278,
+          542,
+          321
+        ]
+      ],
+      "bounds": [
+        464,
+        278,
+        543,
+        322
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "c7ebc8a132c93bf2318ac9737d7d3cafab8ca83f1b19cb924701ecee1ee2e94d"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/mouth-calm-speech.png",
+      "source": "calm speech",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          464,
+          278,
+          542,
+          321
+        ]
+      ],
+      "bounds": [
+        464,
+        278,
+        543,
+        322
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "105755fea08c05fa271c86c25f009ce3f344195bee8833b876a4a87fee3c7fe6"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/eyes-proud.png",
+      "source": "proud master",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          438,
+          192,
+          586,
+          282
+        ]
+      ],
+      "bounds": [
+        438,
+        192,
+        587,
+        283
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "1488424e7dc19fa163525bd743f71c11d4336c0e097e660e162740a73b2e72fe"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/eyes-proud-half.png",
+      "source": "blank + blink-half + proud brows",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          [
+            438,
+            192
+          ],
+          [
+            518,
+            192
+          ],
+          [
+            518,
+            242
+          ],
+          [
+            500,
+            240
+          ],
+          [
+            448,
+            220
+          ],
+          [
+            438,
+            221
+          ]
+        ],
+        [
+          [
+            532,
+            214
+          ],
+          [
+            586,
+            214
+          ],
+          [
+            586,
+            241
+          ],
+          [
+            532,
+            249
+          ]
+        ],
+        [
+          [
+            451,
+            231
+          ],
+          [
+            480,
+            239
+          ],
+          [
+            500,
+            246
+          ],
+          [
+            500,
+            262
+          ],
+          [
+            450,
+            261
+          ]
+        ],
+        [
+          [
+            535,
+            250
+          ],
+          [
+            560,
+            247
+          ],
+          [
+            569,
+            249
+          ],
+          [
+            569,
+            270
+          ],
+          [
+            534,
+            274
+          ]
+        ]
+      ],
+      "bounds": [
+        438,
+        192,
+        587,
+        283
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "604d687d4880bab8871ebd20769c5302e8361dbf6325f42a256fff86b0bac430"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/eyes-proud-closed.png",
+      "source": "blank + blink-closed + proud brows",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          [
+            438,
+            192
+          ],
+          [
+            518,
+            192
+          ],
+          [
+            518,
+            242
+          ],
+          [
+            500,
+            240
+          ],
+          [
+            448,
+            220
+          ],
+          [
+            438,
+            221
+          ]
+        ],
+        [
+          [
+            532,
+            214
+          ],
+          [
+            586,
+            214
+          ],
+          [
+            586,
+            241
+          ],
+          [
+            532,
+            249
+          ]
+        ],
+        [
+          [
+            451,
+            231
+          ],
+          [
+            480,
+            239
+          ],
+          [
+            500,
+            246
+          ],
+          [
+            500,
+            262
+          ],
+          [
+            450,
+            261
+          ]
+        ],
+        [
+          [
+            535,
+            250
+          ],
+          [
+            560,
+            247
+          ],
+          [
+            569,
+            249
+          ],
+          [
+            569,
+            270
+          ],
+          [
+            534,
+            274
+          ]
+        ]
+      ],
+      "bounds": [
+        438,
+        192,
+        587,
+        283
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "f3ba29cf993c7c176122bda85f46d3b9b4d082f2907f9ace64183159816a3fe5"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/mouth-proud.png",
+      "source": "proud master",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          464,
+          278,
+          542,
+          321
+        ]
+      ],
+      "bounds": [
+        464,
+        278,
+        543,
+        322
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "baaf1898109df8178e053e7b1da3592c77f6a7e77a1bf79d5d7f770d812e60ba"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/mouth-proud-speech.png",
+      "source": "proud speech",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          464,
+          278,
+          542,
+          321
+        ]
+      ],
+      "bounds": [
+        464,
+        278,
+        543,
+        322
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "7be89628d2957c7491fbe5e300b97b528924c85cff38afcaa5e63bc86ed3a432"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/eyes-nervous.png",
+      "source": "nervous master",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          438,
+          192,
+          586,
+          282
+        ]
+      ],
+      "bounds": [
+        438,
+        192,
+        587,
+        283
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "af68cb9460271a7b8ccbe2094eeb9b0cecc4367357cb1493b7c94d7d42af3d4e"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/eyes-nervous-half.png",
+      "source": "blank + blink-half + nervous brows",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          438,
+          192,
+          518,
+          226
+        ],
+        [
+          532,
+          210,
+          586,
+          239
+        ],
+        [
+          [
+            451,
+            231
+          ],
+          [
+            480,
+            239
+          ],
+          [
+            500,
+            246
+          ],
+          [
+            500,
+            262
+          ],
+          [
+            450,
+            261
+          ]
+        ],
+        [
+          [
+            535,
+            250
+          ],
+          [
+            560,
+            247
+          ],
+          [
+            569,
+            249
+          ],
+          [
+            569,
+            270
+          ],
+          [
+            534,
+            274
+          ]
+        ]
+      ],
+      "bounds": [
+        438,
+        192,
+        587,
+        283
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "014e0882b2b286c2c7b82fde01d145e351d5f8574d0e0163a463f8aba5059838"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/eyes-nervous-closed.png",
+      "source": "blank + blink-closed + nervous brows",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          438,
+          192,
+          518,
+          226
+        ],
+        [
+          532,
+          210,
+          586,
+          239
+        ],
+        [
+          [
+            451,
+            231
+          ],
+          [
+            480,
+            239
+          ],
+          [
+            500,
+            246
+          ],
+          [
+            500,
+            262
+          ],
+          [
+            450,
+            261
+          ]
+        ],
+        [
+          [
+            535,
+            250
+          ],
+          [
+            560,
+            247
+          ],
+          [
+            569,
+            249
+          ],
+          [
+            569,
+            270
+          ],
+          [
+            534,
+            274
+          ]
+        ]
+      ],
+      "bounds": [
+        438,
+        192,
+        587,
+        283
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "3c6d74bfb400eaa76e6589b432bb38a985dfad7ce0dcf92433127af52dcaf971"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/mouth-nervous.png",
+      "source": "nervous master",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          464,
+          278,
+          542,
+          321
+        ]
+      ],
+      "bounds": [
+        464,
+        278,
+        543,
+        322
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "52960ea3bfcc800c21253d6dff3cb3424fd3ae58b372c58980681b8cd2702208"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/mouth-nervous-speech.png",
+      "source": "nervous speech",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          464,
+          278,
+          542,
+          321
+        ]
+      ],
+      "bounds": [
+        464,
+        278,
+        543,
+        322
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "a89de7d06b24f33562c76b447bc5e3e78cd22d3d7dbc982db08787a9b9630678"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/eyes-relaxed.png",
+      "source": "relaxed master",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          438,
+          192,
+          586,
+          282
+        ]
+      ],
+      "bounds": [
+        438,
+        192,
+        587,
+        283
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "e3d768c72e9edfc39568444524a1a77514a64f139363931d9c99cf9bf2cdbdda"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/eyes-relaxed-half.png",
+      "source": "blank + blink-half + relaxed brows",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          438,
+          192,
+          518,
+          225
+        ],
+        [
+          532,
+          210,
+          586,
+          237
+        ],
+        [
+          [
+            451,
+            231
+          ],
+          [
+            480,
+            239
+          ],
+          [
+            500,
+            246
+          ],
+          [
+            500,
+            262
+          ],
+          [
+            450,
+            261
+          ]
+        ],
+        [
+          [
+            535,
+            250
+          ],
+          [
+            560,
+            247
+          ],
+          [
+            569,
+            249
+          ],
+          [
+            569,
+            270
+          ],
+          [
+            534,
+            274
+          ]
+        ]
+      ],
+      "bounds": [
+        438,
+        192,
+        587,
+        283
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "24cb5219bf0d48474473a69f619cc9fbdb572454da322d5847448684ddd03521"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/eyes-relaxed-closed.png",
+      "source": "blank + blink-closed + relaxed brows",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          438,
+          192,
+          518,
+          225
+        ],
+        [
+          532,
+          210,
+          586,
+          237
+        ],
+        [
+          [
+            451,
+            231
+          ],
+          [
+            480,
+            239
+          ],
+          [
+            500,
+            246
+          ],
+          [
+            500,
+            262
+          ],
+          [
+            450,
+            261
+          ]
+        ],
+        [
+          [
+            535,
+            250
+          ],
+          [
+            560,
+            247
+          ],
+          [
+            569,
+            249
+          ],
+          [
+            569,
+            270
+          ],
+          [
+            534,
+            274
+          ]
+        ]
+      ],
+      "bounds": [
+        438,
+        192,
+        587,
+        283
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "49db4b5aa06e4449019a3a669472126abef4eb14507f390775a7be0a50273888"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/mouth-relaxed.png",
+      "source": "relaxed master",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          464,
+          278,
+          542,
+          321
+        ]
+      ],
+      "bounds": [
+        464,
+        278,
+        543,
+        322
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "0f7b8da6daea330193dbb23d2c672bf5415663eae7c142e5f52ad82dcc739e4e"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/mouth-relaxed-speech.png",
+      "source": "relaxed speech",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          464,
+          278,
+          542,
+          321
+        ]
+      ],
+      "bounds": [
+        464,
+        278,
+        543,
+        322
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "d5872ded7acdd5ea1510b3758c2f05b56bd696cdb7c6525401418ea1d7c95b83"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/eyes-puzzled.png",
+      "source": "puzzled master",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          438,
+          192,
+          586,
+          282
+        ]
+      ],
+      "bounds": [
+        438,
+        192,
+        587,
+        283
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "9823a2f4c93c37fb23227823f3bb15bd8928ae664098abc33502b60ee3b6c791"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/eyes-puzzled-half.png",
+      "source": "blank + blink-half + puzzled brows",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          [
+            438,
+            192
+          ],
+          [
+            518,
+            192
+          ],
+          [
+            518,
+            232
+          ],
+          [
+            494,
+            229
+          ],
+          [
+            466,
+            216
+          ],
+          [
+            438,
+            219
+          ]
+        ],
+        [
+          [
+            532,
+            214
+          ],
+          [
+            586,
+            214
+          ],
+          [
+            586,
+            242
+          ],
+          [
+            532,
+            249
+          ]
+        ],
+        [
+          [
+            451,
+            231
+          ],
+          [
+            480,
+            239
+          ],
+          [
+            500,
+            246
+          ],
+          [
+            500,
+            262
+          ],
+          [
+            450,
+            261
+          ]
+        ],
+        [
+          [
+            535,
+            250
+          ],
+          [
+            560,
+            247
+          ],
+          [
+            569,
+            249
+          ],
+          [
+            569,
+            270
+          ],
+          [
+            534,
+            274
+          ]
+        ]
+      ],
+      "bounds": [
+        438,
+        192,
+        587,
+        283
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "2803c9e8ef4015b516fdff728a978af1415a7eeb8a0dd46aa35fa3a483ec71e2"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/eyes-puzzled-closed.png",
+      "source": "blank + blink-closed + puzzled brows",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          [
+            438,
+            192
+          ],
+          [
+            518,
+            192
+          ],
+          [
+            518,
+            232
+          ],
+          [
+            494,
+            229
+          ],
+          [
+            466,
+            216
+          ],
+          [
+            438,
+            219
+          ]
+        ],
+        [
+          [
+            532,
+            214
+          ],
+          [
+            586,
+            214
+          ],
+          [
+            586,
+            242
+          ],
+          [
+            532,
+            249
+          ]
+        ],
+        [
+          [
+            451,
+            231
+          ],
+          [
+            480,
+            239
+          ],
+          [
+            500,
+            246
+          ],
+          [
+            500,
+            262
+          ],
+          [
+            450,
+            261
+          ]
+        ],
+        [
+          [
+            535,
+            250
+          ],
+          [
+            560,
+            247
+          ],
+          [
+            569,
+            249
+          ],
+          [
+            569,
+            270
+          ],
+          [
+            534,
+            274
+          ]
+        ]
+      ],
+      "bounds": [
+        438,
+        192,
+        587,
+        283
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "416884d1c993469eeadf23a25763867b4a65fc728dd86ebda70ffcfc847d866e"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/mouth-puzzled.png",
+      "source": "puzzled master",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          464,
+          278,
+          542,
+          321
+        ]
+      ],
+      "bounds": [
+        464,
+        278,
+        543,
+        322
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "726ab48c41e8f0c1c97009821b9d9670c1607b9f14a787f67b8608aad3fe649a"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/mouth-puzzled-speech.png",
+      "source": "puzzled speech",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          464,
+          278,
+          542,
+          321
+        ]
+      ],
+      "bounds": [
+        464,
+        278,
+        543,
+        322
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "2b887191aef75ded6c854dc272f161225e9a13facf5f1d279f3ed7126ae58fca"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/body-luggage.png",
+      "source": "luggage-complete-generated.png",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        "exclude left grip interior; 3px overlap; right suitcase stays attached"
+      ],
+      "bounds": [
+        162,
+        328,
+        961,
+        1483
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "e4053b7e51bb0c44bae267500a768fb28b17c4bcb37fe07794cd17b55521f0f2"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/luggage-grip.png",
+      "source": "luggage-complete-generated.png",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          [
+            143,
+            479
+          ],
+          [
+            392,
+            479
+          ],
+          [
+            530,
+            627
+          ],
+          [
+            549,
+            879
+          ],
+          [
+            120,
+            879
+          ]
+        ]
+      ],
+      "bounds": [
+        162,
+        479,
+        550,
+        880
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "f47de864c9b612e7b50b5cb358d21754941724fd5e5d93fef5dcb076201ae9d9"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/body-prepare.png",
+      "source": "prepare-torso-generated.png",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          0,
+          328,
+          1023,
+          1535
+        ]
+      ],
+      "bounds": [
+        227,
+        328,
+        832,
+        1483
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "55806596d9bd67125a9cdbba35b679094f5b5d1523505ee41cbeff2a86db6bfe"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/arm-left-prepare.png",
+      "source": "prepare-generated.png",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          [
+            165,
+            260
+          ],
+          [
+            385,
+            260
+          ],
+          [
+            385,
+            355
+          ],
+          [
+            375,
+            392
+          ],
+          [
+            366,
+            472
+          ],
+          [
+            305,
+            490
+          ],
+          [
+            225,
+            518
+          ],
+          [
+            169,
+            520
+          ],
+          [
+            160,
+            460
+          ]
+        ],
+        {
+          "connectedSeed": [
+            225,
+            400
+          ]
+        }
+      ],
+      "bounds": [
+        173,
+        272,
+        386,
+        518
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "43dbfdb0e7cfb0cf75910d20875715113c30e44e6d8bd98bf2d0cbe26725f225"
+    },
+    {
+      "file": "public/assets/portraits/hero-layered-v3/arm-right-prepare.png",
+      "source": "prepare-generated.png",
+      "canvas": [
+        1024,
+        1536
+      ],
+      "cropOffset": [
+        0,
+        0
+      ],
+      "mask": [
+        [
+          [
+            575,
+            343
+          ],
+          [
+            607,
+            278
+          ],
+          [
+            732,
+            278
+          ],
+          [
+            785,
+            351
+          ],
+          [
+            831,
+            526
+          ],
+          [
+            809,
+            568
+          ],
+          [
+            760,
+            573
+          ],
+          [
+            664,
+            531
+          ],
+          [
+            611,
+            485
+          ],
+          [
+            577,
+            440
+          ]
+        ],
+        {
+          "connectedSeed": [
+            760,
+            430
+          ]
+        }
+      ],
+      "bounds": [
+        575,
+        288,
+        821,
+        564
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "sha256": "cc7ce843843c03f1fc28a89a865ad80b51565609b4396af90c4697ab47909c74"
+    }
+  ]
+}

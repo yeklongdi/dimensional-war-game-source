@@ -1,0 +1,1252 @@
+[
+  {
+    "name": "calm-final-light",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "默认平静",
+      "pose": "普通站姿",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "eyes",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_stand_calm",
+    "talking": "false"
+  },
+  {
+    "name": "calm-final-dark",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "默认平静",
+      "pose": "普通站姿",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "eyes",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_stand_calm",
+    "talking": "false"
+  },
+  {
+    "name": "calm-half",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "默认平静",
+      "pose": "普通站姿",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0.289277px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0.467294px) rotate(0deg)"
+      },
+      {
+        "frame": "1",
+        "id": "eyes",
+        "transform": "translate(0px, 0.467294px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0.467294px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0.467294px) rotate(-0.310208deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_stand_calm",
+    "talking": "false"
+  },
+  {
+    "name": "calm-closed",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "默认平静",
+      "pose": "普通站姿",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0.135887px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0.21951px) rotate(0deg)"
+      },
+      {
+        "frame": "2",
+        "id": "eyes",
+        "transform": "translate(0px, 0.21951px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0.21951px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0.21951px) rotate(-0.315921deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_stand_calm",
+    "talking": "false"
+  },
+  {
+    "name": "calm-speech",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "默认平静",
+      "pose": "普通站姿",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, -0.241685px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, -0.390414px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "eyes",
+        "transform": "translate(0px, -0.390414px) rotate(0deg)"
+      },
+      {
+        "frame": "1",
+        "id": "mouth",
+        "transform": "translate(0px, -0.390414px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, -0.390414px) rotate(0.0439531deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_stand_calm",
+    "talking": "true"
+  },
+  {
+    "name": "proud-final-light",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "得意",
+      "pose": "普通站姿",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "eyes",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_stand_proud",
+    "talking": "false"
+  },
+  {
+    "name": "proud-final-dark",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "得意",
+      "pose": "普通站姿",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "eyes",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_stand_proud",
+    "talking": "false"
+  },
+  {
+    "name": "proud-half",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "得意",
+      "pose": "普通站姿",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0.289277px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0.467294px) rotate(0deg)"
+      },
+      {
+        "frame": "1",
+        "id": "eyes",
+        "transform": "translate(0px, 0.467294px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0.467294px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0.467294px) rotate(-0.310208deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_stand_proud",
+    "talking": "false"
+  },
+  {
+    "name": "proud-closed",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "得意",
+      "pose": "普通站姿",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0.135887px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0.21951px) rotate(0deg)"
+      },
+      {
+        "frame": "2",
+        "id": "eyes",
+        "transform": "translate(0px, 0.21951px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0.21951px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0.21951px) rotate(-0.315921deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_stand_proud",
+    "talking": "false"
+  },
+  {
+    "name": "proud-speech",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "得意",
+      "pose": "普通站姿",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, -0.241685px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, -0.390414px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "eyes",
+        "transform": "translate(0px, -0.390414px) rotate(0deg)"
+      },
+      {
+        "frame": "1",
+        "id": "mouth",
+        "transform": "translate(0px, -0.390414px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, -0.390414px) rotate(0.0439531deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_stand_proud",
+    "talking": "true"
+  },
+  {
+    "name": "nervous-final-light",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "紧张、期待",
+      "pose": "携带行李、站立",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "luggage",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "eyes",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_luggage_nervous",
+    "talking": "false"
+  },
+  {
+    "name": "nervous-final-dark",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "紧张、期待",
+      "pose": "携带行李、站立",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "luggage",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "eyes",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_luggage_nervous",
+    "talking": "false"
+  },
+  {
+    "name": "nervous-half",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "紧张、期待",
+      "pose": "携带行李、站立",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0.289277px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "luggage",
+        "transform": "translate(0px, 0.289277px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0.467294px) rotate(0deg)"
+      },
+      {
+        "frame": "1",
+        "id": "eyes",
+        "transform": "translate(0px, 0.467294px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0.467294px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0.467294px) rotate(-0.310208deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_luggage_nervous",
+    "talking": "false"
+  },
+  {
+    "name": "nervous-closed",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "紧张、期待",
+      "pose": "携带行李、站立",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0.135887px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "luggage",
+        "transform": "translate(0px, 0.135887px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0.21951px) rotate(0deg)"
+      },
+      {
+        "frame": "2",
+        "id": "eyes",
+        "transform": "translate(0px, 0.21951px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0.21951px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0.21951px) rotate(-0.315921deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_luggage_nervous",
+    "talking": "false"
+  },
+  {
+    "name": "nervous-speech",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "紧张、期待",
+      "pose": "携带行李、站立",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, -0.241685px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "luggage",
+        "transform": "translate(0px, -0.241685px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, -0.390414px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "eyes",
+        "transform": "translate(0px, -0.390414px) rotate(0deg)"
+      },
+      {
+        "frame": "1",
+        "id": "mouth",
+        "transform": "translate(0px, -0.390414px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, -0.390414px) rotate(0.0439531deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_luggage_nervous",
+    "talking": "true"
+  },
+  {
+    "name": "relaxed-final-light",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "放松、微笑",
+      "pose": "携带行李、站立",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "luggage",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "eyes",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_luggage_relaxed",
+    "talking": "false"
+  },
+  {
+    "name": "relaxed-final-dark",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "放松、微笑",
+      "pose": "携带行李、站立",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "luggage",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "eyes",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_luggage_relaxed",
+    "talking": "false"
+  },
+  {
+    "name": "relaxed-half",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "放松、微笑",
+      "pose": "携带行李、站立",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0.289277px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "luggage",
+        "transform": "translate(0px, 0.289277px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0.467294px) rotate(0deg)"
+      },
+      {
+        "frame": "1",
+        "id": "eyes",
+        "transform": "translate(0px, 0.467294px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0.467294px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0.467294px) rotate(-0.310208deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_luggage_relaxed",
+    "talking": "false"
+  },
+  {
+    "name": "relaxed-closed",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "放松、微笑",
+      "pose": "携带行李、站立",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0.135887px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "luggage",
+        "transform": "translate(0px, 0.135887px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0.21951px) rotate(0deg)"
+      },
+      {
+        "frame": "2",
+        "id": "eyes",
+        "transform": "translate(0px, 0.21951px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0.21951px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0.21951px) rotate(-0.315921deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_luggage_relaxed",
+    "talking": "false"
+  },
+  {
+    "name": "relaxed-speech",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "放松、微笑",
+      "pose": "携带行李、站立",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, -0.241685px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "luggage",
+        "transform": "translate(0px, -0.241685px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, -0.390414px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "eyes",
+        "transform": "translate(0px, -0.390414px) rotate(0deg)"
+      },
+      {
+        "frame": "1",
+        "id": "mouth",
+        "transform": "translate(0px, -0.390414px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, -0.390414px) rotate(0.0439531deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_luggage_relaxed",
+    "talking": "true"
+  },
+  {
+    "name": "puzzled-final-light",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "疑惑",
+      "pose": "准备伸懒腰",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "upper-left",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "upper-right",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "lower-left",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "lower-right",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "eyes",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_prepare_puzzled",
+    "talking": "false"
+  },
+  {
+    "name": "puzzled-final-dark",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "疑惑",
+      "pose": "准备伸懒腰",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "upper-left",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "upper-right",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "lower-left",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "lower-right",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "eyes",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0px) rotate(0deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_prepare_puzzled",
+    "talking": "false"
+  },
+  {
+    "name": "puzzled-half",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "疑惑",
+      "pose": "准备伸懒腰",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0.289277px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "upper-left",
+        "transform": "translate(0px, 0.289277px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "upper-right",
+        "transform": "translate(0px, 0.289277px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "lower-left",
+        "transform": "translate(0px, 0.289277px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "lower-right",
+        "transform": "translate(0px, 0.289277px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0.467294px) rotate(0deg)"
+      },
+      {
+        "frame": "1",
+        "id": "eyes",
+        "transform": "translate(0px, 0.467294px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0.467294px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0.467294px) rotate(-0.310208deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_prepare_puzzled",
+    "talking": "false"
+  },
+  {
+    "name": "puzzled-closed",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "疑惑",
+      "pose": "准备伸懒腰",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, 0.135887px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "upper-left",
+        "transform": "translate(0px, 0.135887px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "upper-right",
+        "transform": "translate(0px, 0.135887px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "lower-left",
+        "transform": "translate(0px, 0.135887px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "lower-right",
+        "transform": "translate(0px, 0.135887px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, 0.21951px) rotate(0deg)"
+      },
+      {
+        "frame": "2",
+        "id": "eyes",
+        "transform": "translate(0px, 0.21951px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "mouth",
+        "transform": "translate(0px, 0.21951px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, 0.21951px) rotate(-0.315921deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_prepare_puzzled",
+    "talking": "false"
+  },
+  {
+    "name": "puzzled-speech",
+    "actor": {
+      "actor": "男高",
+      "asset": "char_male_high_normal",
+      "expression": "疑惑",
+      "pose": "准备伸懒腰",
+      "position": "center",
+      "rear": "false",
+      "slot": "center",
+      "speaking": "true",
+      "visual": "layered"
+    },
+    "frames": [
+      {
+        "frame": "0",
+        "id": "body",
+        "transform": "translate(0px, -0.241685px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "upper-left",
+        "transform": "translate(0px, -0.241685px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "upper-right",
+        "transform": "translate(0px, -0.241685px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "lower-left",
+        "transform": "translate(0px, -0.241685px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "lower-right",
+        "transform": "translate(0px, -0.241685px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "head",
+        "transform": "translate(0px, -0.390414px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "eyes",
+        "transform": "translate(0px, -0.390414px) rotate(0deg)"
+      },
+      {
+        "frame": "1",
+        "id": "mouth",
+        "transform": "translate(0px, -0.390414px) rotate(0deg)"
+      },
+      {
+        "frame": "0",
+        "id": "hair-front",
+        "transform": "translate(0px, -0.390414px) rotate(0.0439531deg)"
+      }
+    ],
+    "images": true,
+    "recipe": "hero_prepare_puzzled",
+    "talking": "true"
+  }
+]

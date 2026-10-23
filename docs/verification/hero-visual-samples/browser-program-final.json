@@ -1,0 +1,685 @@
+[
+  {
+    "action": "complete-text",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "放松、微笑",
+        "left": "640px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_luggage_relaxed",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -0.241685px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -0.241685px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -0.390414px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -0.390414px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -0.390414px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -0.390414px) rotate(0.0439531deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "nodeIndex": "0",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "sceneId": "portrait_lab",
+      "testid": "story-stage",
+      "typingComplete": "true",
+      "waitKind": "text",
+      "waitToken": "lab:4"
+    },
+    "talking": "false",
+    "text": "男高开发验收文字：此处只验证分层、窗口、口型与回退，不添加正式剧情。\n人物下部应延伸到半透明文字窗后。点击 / 空格 / 回车　继续 ▸"
+  },
+  {
+    "action": "text-inner",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "放松、微笑",
+        "left": "640px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_luggage_relaxed",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -0.241685px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -0.241685px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -0.390414px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -0.390414px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -0.390414px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -0.390414px) rotate(0.0439531deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "nodeIndex": "0",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "sceneId": "portrait_lab",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "lab:5"
+    },
+    "talking": "false",
+    "text": "男高（开发验收文字）点击补全文字"
+  },
+  {
+    "action": "text-narration",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "放松、微笑",
+        "left": "640px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_luggage_relaxed",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -0.241685px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -0.241685px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -0.390414px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -0.390414px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -0.390414px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -0.390414px) rotate(0.0439531deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "nodeIndex": "0",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "sceneId": "portrait_lab",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "lab:6"
+    },
+    "talking": "false",
+    "text": "开发验收文字点击补全文字"
+  },
+  {
+    "action": "text-stage",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "放松、微笑",
+        "left": "640px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_luggage_relaxed",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -0.241685px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -0.241685px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -0.390414px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -0.390414px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -0.390414px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -0.390414px) rotate(0.0439531deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "nodeIndex": "0",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "sceneId": "portrait_lab",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "lab:7"
+    },
+    "talking": "false",
+    "text": "开发验收文字点击补全文字"
+  },
+  {
+    "action": "offscreen-speaker",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "放松、微笑",
+        "left": "640px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "false",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_luggage_relaxed",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -0.241685px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -0.241685px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -0.390414px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -0.390414px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -0.390414px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -0.390414px) rotate(0.0439531deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "nodeIndex": "0",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "sceneId": "portrait_lab",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "lab:8"
+    },
+    "talking": "false",
+    "text": "场外角色开发验收文字点击补全文字"
+  },
+  {
+    "reuse": null
+  },
+  {
+    "action": "breath-up",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "放松、微笑",
+        "left": "640px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_luggage_relaxed",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, -1.3px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, -1.3px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, -2.1px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, -2.1px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, -2.1px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, -2.1px) rotate(0.293047deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "nodeIndex": "0",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "sceneId": "portrait_lab",
+      "testid": "story-stage",
+      "typingComplete": "true",
+      "waitKind": "text",
+      "waitToken": "lab:10"
+    },
+    "talking": "false",
+    "text": "男高开发验收文字：此处只验证分层、窗口、口型与回退，不添加正式剧情。\n人物下部应延伸到半透明文字窗后。点击 / 空格 / 回车　继续 ▸"
+  },
+  {
+    "action": "breath-down",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "放松、微笑",
+        "left": "640px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_luggage_relaxed",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, 1.3px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, 1.3px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, 2.1px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, 2.1px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, 2.1px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, 2.1px) rotate(-0.103904deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "nodeIndex": "0",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "sceneId": "portrait_lab",
+      "testid": "story-stage",
+      "typingComplete": "true",
+      "waitKind": "text",
+      "waitToken": "lab:10"
+    },
+    "talking": "false",
+    "text": "男高开发验收文字：此处只验证分层、窗口、口型与回退，不添加正式剧情。\n人物下部应延伸到半透明文字窗后。点击 / 空格 / 回车　继续 ▸"
+  },
+  {
+    "reuse": {
+      "rootSame": true,
+      "bodySame": true,
+      "headSame": true,
+      "eyesSame": true,
+      "unchangedFrameSame": true,
+      "visibleFrames": 5
+    }
+  },
+  {
+    "action": "peers-male-speaker",
+    "dom": [
+      {
+        "actor": "男高",
+        "filter": "brightness(1)",
+        "hidden": false,
+        "left": "572px",
+        "speaking": "true",
+        "z": "4"
+      },
+      {
+        "actor": "同学甲",
+        "filter": "brightness(0.8)",
+        "hidden": false,
+        "left": "708px",
+        "speaking": "false",
+        "z": "1"
+      }
+    ]
+  },
+  {
+    "action": "offscreen-no-move",
+    "dom": [
+      {
+        "actor": "男高",
+        "filter": "brightness(1)",
+        "hidden": false,
+        "left": "572px",
+        "speaking": "false",
+        "z": "1"
+      },
+      {
+        "actor": "同学甲",
+        "filter": "brightness(0.8)",
+        "hidden": false,
+        "left": "708px",
+        "speaking": "false",
+        "z": "1"
+      }
+    ]
+  },
+  {
+    "action": "delayed-old-retained",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "得意",
+        "left": "640px",
+        "pose": "普通站姿",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_luggage_relaxed",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, 0px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, 0px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, 0px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, 0px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, 0px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, 0px) rotate(0deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "nodeIndex": "0",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "sceneId": "portrait_lab",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "lab:13"
+    },
+    "talking": "true",
+    "text": "男高开发验收文字点击补全文字"
+  },
+  {
+    "action": "delayed-latest-wins",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "紧张、期待",
+        "left": "640px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "layered"
+      }
+    ],
+    "figure": "hero_luggage_nervous",
+    "frames": [
+      [
+        "body",
+        "0",
+        "translate(0px, 0px) rotate(0deg)"
+      ],
+      [
+        "luggage",
+        "0",
+        "translate(0px, 0px) rotate(0deg)"
+      ],
+      [
+        "head",
+        "0",
+        "translate(0px, 0px) rotate(0deg)"
+      ],
+      [
+        "eyes",
+        "0",
+        "translate(0px, 0px) rotate(0deg)"
+      ],
+      [
+        "mouth",
+        "0",
+        "translate(0px, 0px) rotate(0deg)"
+      ],
+      [
+        "hair-front",
+        "0",
+        "translate(0px, 0px) rotate(0deg)"
+      ]
+    ],
+    "stage": {
+      "actId": "prologue",
+      "nodeIndex": "0",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "sceneId": "portrait_lab",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "lab:14"
+    },
+    "talking": "true",
+    "text": "男高开发验收文字点击补全文字"
+  },
+  {
+    "action": "layer-failure-static",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "紧张、期待",
+        "left": "640px",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "static"
+      }
+    ],
+    "frames": [],
+    "stage": {
+      "actId": "prologue",
+      "nodeIndex": "0",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "sceneId": "portrait_lab",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "lab:15"
+    },
+    "text": "男高开发验收文字点击补全文字",
+    "notes": "差分替换验证：{\"rootSame\":true,\"bodySame\":true,\"headSame\":true,\"eyesSame\":true,\"unchangedFrameSame\":true,\"visibleFrames\":5}\nvisual:男高:layer-load:hero_luggage_nervous: hero_luggage_nervous 分层加载失败，保留旧画面并尝试静态回退。Error: 受控单层失败，不标坏原静态 asset\n"
+  },
+  {
+    "action": "unsupported-pose-static",
+    "actors": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "expression": "紧张、期待",
+        "left": "640px",
+        "pose": "坐在沙发上",
+        "position": "center",
+        "rear": "false",
+        "slot": "center",
+        "speaking": "true",
+        "visual": "static"
+      }
+    ],
+    "frames": [],
+    "stage": {
+      "actId": "prologue",
+      "nodeIndex": "0",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "sceneId": "portrait_lab",
+      "testid": "story-stage",
+      "typingComplete": "false",
+      "waitKind": "text",
+      "waitToken": "lab:16"
+    },
+    "text": "男高开发验收文字点击补全文字"
+  }
+]

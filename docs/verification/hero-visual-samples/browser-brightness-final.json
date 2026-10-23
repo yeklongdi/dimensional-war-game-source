@@ -1,0 +1,34 @@
+{
+  "maleSpeaking": [
+    {
+      "actor": "男高",
+      "filter": "brightness(1)",
+      "hidden": false,
+      "left": "572px",
+      "speaking": "true",
+      "z": "4"
+    },
+    {
+      "actor": "同学甲",
+      "filter": "brightness(0.8)",
+      "hidden": false,
+      "left": "708px",
+      "speaking": "false",
+      "z": "1"
+    }
+  ],
+  "offscreen": [
+    {
+      "actor": "男高",
+      "filter": "brightness(0.8)",
+      "left": "572px",
+      "speaking": "false"
+    },
+    {
+      "actor": "同学甲",
+      "filter": "brightness(0.8)",
+      "left": "708px",
+      "speaking": "false"
+    }
+  ]
+}

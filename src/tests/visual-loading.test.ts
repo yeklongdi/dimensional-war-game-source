@@ -36,7 +36,8 @@ describe('加载原子交付与修订号生命周期', () => {
   });
   it('任一层失败拒绝整套，不把静态asset标坏', async () => {
     const recipe = heroRecipes[0]!, before = JSON.stringify(recipe);
-    await expect(loadLayers(recipe, async url => { if (url.endsWith('eyes-half-v2.png')) throw new Error('decode failed'); return url; })).rejects.toThrow('decode failed');
+    const failing = recipe.layers.find(layer => layer.channel === 'eyes')!.frames[1]!;
+    await expect(loadLayers(recipe, async url => { if (url === failing) throw new Error('decode failed'); return url; })).rejects.toThrow('decode failed');
     expect(JSON.stringify(recipe)).toBe(before);
   });
   it('请求等待期间保留现有画面，全部成功才一次替换', async () => {

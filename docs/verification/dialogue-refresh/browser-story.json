@@ -1,0 +1,209 @@
+{
+  "steps": [
+    {
+      "name": "p001行李紧张组合明确静态回退、底部180px",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "紧张、期待",
+            "left": "640px",
+            "pose": "携带行李、站立",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "static"
+          }
+        ],
+        "box": {
+          "height": 180,
+          "width": 1232,
+          "y": 540
+        },
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:2:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792679302339}",
+          "saveRequest": "2",
+          "saveStatus": "saved",
+          "sceneId": "p001",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "3:1"
+        },
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。"
+      }
+    },
+    {
+      "name": "p002入口继承行李姿态与紧张期待，尚未执行后续表情更新",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "紧张、期待",
+            "left": "572px",
+            "pose": "携带行李、站立",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "static"
+          },
+          {
+            "actor": "奶奶",
+            "asset": "char_grandmother_warm",
+            "expression": "惊喜、眼眶泛红",
+            "left": "708px",
+            "pose": "手持抹布、站在门内",
+            "position": "door",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "placeholder"
+          }
+        ],
+        "box": {
+          "height": 180,
+          "width": 1232,
+          "y": 540
+        },
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "3:2:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p002\"},\"savedAt\":1792679303691}",
+          "saveRequest": "3",
+          "saveStatus": "saved",
+          "sceneId": "p002",
+          "session": "3",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "3:5"
+        },
+        "text": "门很快打开。\n奶奶站在门里，手里攥着一块抹布。\n她看到男高后停顿数秒，随后快步迎上来。"
+      }
+    },
+    {
+      "name": "刷新继续p002场景头及演出恢复",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "紧张、期待",
+            "left": "572px",
+            "pose": "携带行李、站立",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "static"
+          },
+          {
+            "actor": "奶奶",
+            "asset": "char_grandmother_warm",
+            "expression": "惊喜、眼眶泛红",
+            "left": "708px",
+            "pose": "手持抹布、站在门内",
+            "position": "door",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "placeholder"
+          }
+        ],
+        "box": {
+          "height": 180,
+          "width": 1232,
+          "y": 540
+        },
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "2:1:story",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p002\"},\"savedAt\":1792679305446}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "sceneId": "p002",
+          "session": "2",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "2:1"
+        },
+        "text": "门很快打开。\n奶奶站"
+      }
+    },
+    {
+      "name": "p002原文顺序到达表情更新：行李姿态保持，记录放松微笑，静态回退不冒充差分",
+      "data": {
+        "actors": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "expression": "放松、微笑",
+            "left": "572px",
+            "pose": "携带行李、站立",
+            "position": "center",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "true",
+            "visual": "static"
+          },
+          {
+            "actor": "奶奶",
+            "asset": "char_grandmother_warm",
+            "expression": "惊喜、眼眶泛红",
+            "left": "708px",
+            "pose": "手持抹布、站在门内",
+            "position": "door",
+            "rear": "false",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "placeholder"
+          }
+        ],
+        "box": {
+          "height": 180,
+          "width": 1232,
+          "y": 540
+        },
+        "stage": {
+          "actId": "prologue",
+          "bgmId": "bgm_homecoming_warm",
+          "navToken": "2:1:story",
+          "nodeIndex": "6",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p002\"},\"savedAt\":1792679305446}",
+          "saveRequest": "1",
+          "saveStatus": "saved",
+          "sceneId": "p002",
+          "session": "2",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "2:3"
+        },
+        "text": "奶奶，"
+      }
+    }
+  ],
+  "errors": []
+}
