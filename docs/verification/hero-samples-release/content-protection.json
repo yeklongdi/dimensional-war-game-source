@@ -1,0 +1,4086 @@
+{
+  "releaseCommit": "da67aef77602d92a75fcc45eafaab994da484785",
+  "protected": 579,
+  "unexpected": [],
+  "changed": [
+    "README.md",
+    "docs/01-任务书.md",
+    "docs/decisions.md"
+  ],
+  "files": [
+    {
+      "path": "art/hero-layered-v3/masters/blink-closed-generated.png",
+      "before": "efa75f7a0bccddd32cd8078861177eab74b8fe445149435bb40671a85438e7f3",
+      "after": "efa75f7a0bccddd32cd8078861177eab74b8fe445149435bb40671a85438e7f3",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/blink-half-generated.png",
+      "before": "876dce650971ec03bb18e26553f60d8408ed629e0dc13792958fe0e6e8d20f73",
+      "after": "876dce650971ec03bb18e26553f60d8408ed629e0dc13792958fe0e6e8d20f73",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/calm-speech-generated.png",
+      "before": "628d563e41b6606aa88cf247554c408dc77eac9716e61dca2691d55a9f628a0e",
+      "after": "628d563e41b6606aa88cf247554c408dc77eac9716e61dca2691d55a9f628a0e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/face-reference.png",
+      "before": "ccfc38a93df71ea37badb79068c0ab2357a0f28078dc75891f957ad104c27e26",
+      "after": "ccfc38a93df71ea37badb79068c0ab2357a0f28078dc75891f957ad104c27e26",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/luggage-complete-generated.png",
+      "before": "ead2da5036d9560ab61c9f0fb02ef3637943dabe3fa96a8a85153d59800fed5c",
+      "after": "ead2da5036d9560ab61c9f0fb02ef3637943dabe3fa96a8a85153d59800fed5c",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/luggage-low-candidate.png",
+      "before": "18db54963ac75fc7b8d9f053d990e6df122c245f47d1df06b2219ad8a3230bcc",
+      "after": "18db54963ac75fc7b8d9f053d990e6df122c245f47d1df06b2219ad8a3230bcc",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/luggage-raised-generated.png",
+      "before": "988b71b0801ba9256e6052a00209e9f3086ad15fd4791eb65354c82a2d68990f",
+      "after": "988b71b0801ba9256e6052a00209e9f3086ad15fd4791eb65354c82a2d68990f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/nervous-generated.png",
+      "before": "a1e222cafec2a017c5c64b08872c15969bf33383503ba3626dcd60d747318802",
+      "after": "a1e222cafec2a017c5c64b08872c15969bf33383503ba3626dcd60d747318802",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/nervous-speech-generated.png",
+      "before": "8bdd1bd0671271c610443f4a74cd32f9e61fd8ace935e502129d5703f8223154",
+      "after": "8bdd1bd0671271c610443f4a74cd32f9e61fd8ace935e502129d5703f8223154",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/prepare-generated.png",
+      "before": "2fe503089c0a56e768281f0fb661f7d399f2926018b9ae38a43cf45b7b78c92a",
+      "after": "2fe503089c0a56e768281f0fb661f7d399f2926018b9ae38a43cf45b7b78c92a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/prepare-torso-generated.png",
+      "before": "eb45154d698fe3af8f1a58d03653a4c8a9ba60946cb4fd7d4171c9e885982d3c",
+      "after": "eb45154d698fe3af8f1a58d03653a4c8a9ba60946cb4fd7d4171c9e885982d3c",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/proud-generated.png",
+      "before": "4e7f2d06537cdc0bdf234a8a248063e388513698d68fe3aa36c0157c6729d424",
+      "after": "4e7f2d06537cdc0bdf234a8a248063e388513698d68fe3aa36c0157c6729d424",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/proud-speech-generated.png",
+      "before": "5d706121a21cfcb8da74714f114acca3413eea25b938982330875bdfc6fc183e",
+      "after": "5d706121a21cfcb8da74714f114acca3413eea25b938982330875bdfc6fc183e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/puzzled-generated.png",
+      "before": "66e599f7cc0d7e8737ce5ecc0c62e2c4e7f875797dcb34b7ec12feefe91b5b95",
+      "after": "66e599f7cc0d7e8737ce5ecc0c62e2c4e7f875797dcb34b7ec12feefe91b5b95",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/puzzled-speech-generated.png",
+      "before": "6664d2e24055ce08f1107d39fc7feff319342f3d2686f8e2eac347fc98a56d30",
+      "after": "6664d2e24055ce08f1107d39fc7feff319342f3d2686f8e2eac347fc98a56d30",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/relaxed-generated.png",
+      "before": "4c58aacbeea051a6469746e223ca870f0a5b53cf79da1e2b7b71068ebb02cafd",
+      "after": "4c58aacbeea051a6469746e223ca870f0a5b53cf79da1e2b7b71068ebb02cafd",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/relaxed-speech-generated.png",
+      "before": "392e20360a28fe2864ce483428335cf250a7c07c8519a15473c0814ef83f88c5",
+      "after": "392e20360a28fe2864ce483428335cf250a7c07c8519a15473c0814ef83f88c5",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/stand-blank-generated.png",
+      "before": "da7032ac0ee7f970a44f632519dae07d97a4ce59e43f03f6fcb7d35674c60d8d",
+      "after": "da7032ac0ee7f970a44f632519dae07d97a4ce59e43f03f6fcb7d35674c60d8d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/stand-calm-clean.png",
+      "before": "1aee2d28ffdb2547e4d779390fe8db18edf2e6a88c3695fde6c4f504f316b7b7",
+      "after": "1aee2d28ffdb2547e4d779390fe8db18edf2e6a88c3695fde6c4f504f316b7b7",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/masters/stand-calm-generated.png",
+      "before": "5f95f0db27e096ce23dce96c52292f2edfc6b2051939ec3ada0c3e790f5d40be",
+      "after": "5f95f0db27e096ce23dce96c52292f2edfc6b2051939ec3ada0c3e790f5d40be",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/review.json",
+      "before": "7c1cacbb5976db0796f3e7456193f47738f7dd89832e8b9870f55434ea034e37",
+      "after": "7c1cacbb5976db0796f3e7456193f47738f7dd89832e8b9870f55434ea034e37",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/segmented-review/lower-left-prepare.png",
+      "before": "aed819645fd52f3745e861142c7e976db07cb5454afca9358a419755e8dec338",
+      "after": "aed819645fd52f3745e861142c7e976db07cb5454afca9358a419755e8dec338",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/segmented-review/lower-right-prepare.png",
+      "before": "219ad7bf719a3e2cb12b3cc20cac9fe30e958c0eb362f43fcf79466784a7d619",
+      "after": "219ad7bf719a3e2cb12b3cc20cac9fe30e958c0eb362f43fcf79466784a7d619",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/segmented-review/upper-left-prepare.png",
+      "before": "77a5c156d37a82edca749d3d84d7e1f1baa5897ef22f479179864d1f951c039e",
+      "after": "77a5c156d37a82edca749d3d84d7e1f1baa5897ef22f479179864d1f951c039e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/segmented-review/upper-right-prepare.png",
+      "before": "72365fec1fef1dd76bc75c7742a4ff85ef33372442f310998287d69cba95de67",
+      "after": "72365fec1fef1dd76bc75c7742a4ff85ef33372442f310998287d69cba95de67",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/single-bag-review/body-luggage.png",
+      "before": "b6b2461d11412921a751f1da9bfa721a68bf24d597ebc0b9c712879c969e5bee",
+      "after": "b6b2461d11412921a751f1da9bfa721a68bf24d597ebc0b9c712879c969e5bee",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "art/hero-layered-v3/single-bag-review/luggage-grip.png",
+      "before": "24e657542066ace55488f2b1720742df76572b522b07cfd604bca97ebc891906",
+      "after": "24e657542066ace55488f2b1720742df76572b522b07cfd604bca97ebc891906",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/dialogue-refresh-verification.md",
+      "before": "f8709d8c455c216d1038b1d744ff32196b2b9d7322972641fbc8611a3375adb1",
+      "after": "f8709d8c455c216d1038b1d744ff32196b2b9d7322972641fbc8611a3375adb1",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/hero-visual-samples-verification.md",
+      "before": "90f9e8f540d2f54ea9115d4bef2ee47a5bd900f6779b0c4d1019a201b0ff68f4",
+      "after": "90f9e8f540d2f54ea9115d4bef2ee47a5bd900f6779b0c4d1019a201b0ff68f4",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/a007-restored-choice.jpg",
+      "before": "72280d79c9c0b63669efaadf166da18886b03b28bd5878959723aad1a7bfa645",
+      "after": "72280d79c9c0b63669efaadf166da18886b03b28bd5878959723aad1a7bfa645",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/a010-bottom-window.jpg",
+      "before": "f624d911d754f2bb4d0b7b1b4f0704466fac2d58d6d67d6f6e95a6b4001415cf",
+      "after": "f624d911d754f2bb4d0b7b1b4f0704466fac2d58d6d67d6f6e95a6b4001415cf",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/after.json",
+      "before": "7da27b8bf048badbd5cbffdca7dbdf629a73a0256e0f7b247623e4517c0b910d",
+      "after": "7da27b8bf048badbd5cbffdca7dbdf629a73a0256e0f7b247623e4517c0b910d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/asset-path-checks.json",
+      "before": "a9fbc3ade3c0cf72d6ff3d31972e728f974aa7a06bd446040fad6740dfac9c35",
+      "after": "a9fbc3ade3c0cf72d6ff3d31972e728f974aa7a06bd446040fad6740dfac9c35",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/before.json",
+      "before": "b570a3a757475f2f485d2f01f8fce7375db1add9d5b59e2956c6db2c4c9952b6",
+      "after": "b570a3a757475f2f485d2f01f8fce7375db1add9d5b59e2956c6db2c4c9952b6",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/browser-base.json",
+      "before": "39f3369df1ca92395b47d2c8d1f8be89c94b4da4a9fd08178f3eeaff1f98e670",
+      "after": "39f3369df1ca92395b47d2c8d1f8be89c94b4da4a9fd08178f3eeaff1f98e670",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/browser-choices.json",
+      "before": "4d3c854d4242cd2584f32ec6053a38398e6de8218ccaa504739b085ff01b394a",
+      "after": "4d3c854d4242cd2584f32ec6053a38398e6de8218ccaa504739b085ff01b394a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/browser-program.json",
+      "before": "97e925895e85263bcebfeaebed377d5fb8cbb2dd4e2457b22ebde9451b3b3163",
+      "after": "97e925895e85263bcebfeaebed377d5fb8cbb2dd4e2457b22ebde9451b3b3163",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/browser-story.json",
+      "before": "90bd1e0bcf031f79fe377b02b0eedfab08b493f20d738811364910d80159ff2d",
+      "after": "90bd1e0bcf031f79fe377b02b0eedfab08b493f20d738811364910d80159ff2d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/candidate-final-review.jpg",
+      "before": "d3fa9a1dc09fa611bd2f3028d9af514e7be401b974e73bd28cde42cc1190c794",
+      "after": "d3fa9a1dc09fa611bd2f3028d9af514e7be401b974e73bd28cde42cc1190c794",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/candidate-layers-final.jpg",
+      "before": "e8c9ed06f66eaa11a2dd56d8bef8e0556cec8b48a4b400be77989bb1d438d4ad",
+      "after": "e8c9ed06f66eaa11a2dd56d8bef8e0556cec8b48a4b400be77989bb1d438d4ad",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/candidate-program.jpg",
+      "before": "abbf06762e977563ed87d9d1c6def2337796ddcf4f31a4282351e388fa929589",
+      "after": "abbf06762e977563ed87d9d1c6def2337796ddcf4f31a4282351e388fa929589",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/file-changes.json",
+      "before": "98f4ea8fff97af8b0420664391ebcd2fda2387986dae7ebf2717d00f565672d5",
+      "after": "98f4ea8fff97af8b0420664391ebcd2fda2387986dae7ebf2717d00f565672d5",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/file-changes.md",
+      "before": "a14080c8d522a97f136eb94bfbcff7ea5a2121525558b94d70cd2b173f417b2f",
+      "after": "a14080c8d522a97f136eb94bfbcff7ea5a2121525558b94d70cd2b173f417b2f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/image-alpha.json",
+      "before": "9c01c7c41bcdce302842272be8befb2a89dbc30a1e084b18194e5e360109eb5f",
+      "after": "9c01c7c41bcdce302842272be8befb2a89dbc30a1e084b18194e5e360109eb5f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/imagegen-prompts.json",
+      "before": "ce708e103b2c066c6425a83d914ab49df2e9dd244680a164ab476daa0bcfda54",
+      "after": "ce708e103b2c066c6425a83d914ab49df2e9dd244680a164ab476daa0bcfda54",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/inventory/hero-inventory.json",
+      "before": "2a129ba33748066c756d0d035392eeb3ed7a3a33e849d9bbf1c4eff953d94b31",
+      "after": "2a129ba33748066c756d0d035392eeb3ed7a3a33e849d9bbf1c4eff953d94b31",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/inventory/hero-inventory.md",
+      "before": "a9c79546f147f898634fa0238d19007e2a719c9bb717ba90ea25a2cc4d628f17",
+      "after": "a9c79546f147f898634fa0238d19007e2a719c9bb717ba90ea25a2cc4d628f17",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/p001-static-fallback.jpg",
+      "before": "206572f550e8cb087ca00921eff7312793d7489925e123b9d2f239541fa3edbb",
+      "after": "206572f550e8cb087ca00921eff7312793d7489925e123b9d2f239541fa3edbb",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/p002-expression-update.jpg",
+      "before": "0af1e3e4c90c9bd478e73136c7d34c2f14d5f7b6269e1987b67ff824868194ea",
+      "after": "0af1e3e4c90c9bd478e73136c7d34c2f14d5f7b6269e1987b67ff824868194ea",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/p002-restored.jpg",
+      "before": "dfb5e71473dcad2853cf34b57c59f53b5e20986fffe23ca553999ddac680f939",
+      "after": "dfb5e71473dcad2853cf34b57c59f53b5e20986fffe23ca553999ddac680f939",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-refresh/production-output.json",
+      "before": "beafb58b48c2b6aa8c18bca7c1e7cee2a828e63ffa633e5bb1bab523d0ddcc63",
+      "after": "beafb58b48c2b6aa8c18bca7c1e7cee2a828e63ffa633e5bb1bab523d0ddcc63",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/a010-choice-regression.jpg",
+      "before": "d6993c4bf3130c17a5a719798a1fa348bd4394b8f6f5fc13a32c1d9fab02b0d0",
+      "after": "d6993c4bf3130c17a5a719798a1fa348bd4394b8f6f5fc13a32c1d9fab02b0d0",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/a010-return-note.jpg",
+      "before": "64a15101c86f74e72ba8632de96cd9071f94c440a2a4c092a71e41cdf1087818",
+      "after": "64a15101c86f74e72ba8632de96cd9071f94c440a2a4c092a71e41cdf1087818",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/after.json",
+      "before": "2fb6ad2975ccbc98f0a719dd426741db6acd41f98e9259b2c5f256263a44b37e",
+      "after": "2fb6ad2975ccbc98f0a719dd426741db6acd41f98e9259b2c5f256263a44b37e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/alpha-128.jpg",
+      "before": "47da78ae27273b4e208d781e0c0af67a5ba60f32d12cd606d32b14feb9e010f5",
+      "after": "47da78ae27273b4e208d781e0c0af67a5ba60f32d12cd606d32b14feb9e010f5",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/alpha-180.jpg",
+      "before": "4eee851e9a519178a606db45f735a291b30ce6f076334dc3c5f01906fcd8f385",
+      "after": "4eee851e9a519178a606db45f735a291b30ce6f076334dc3c5f01906fcd8f385",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/alpha-220.jpg",
+      "before": "bb8a475998a012d5a238976f2cdcf5241e11ad1c51fe7c2631827039a0d6eaa9",
+      "after": "bb8a475998a012d5a238976f2cdcf5241e11ad1c51fe7c2631827039a0d6eaa9",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/alpha-240.jpg",
+      "before": "6b05a38dce0678ca82a24ce75729869c07924d98da546ebc647143b085980e7b",
+      "after": "6b05a38dce0678ca82a24ce75729869c07924d98da546ebc647143b085980e7b",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/asset-path-checks.json",
+      "before": "805ba0cab73bb9e80d278422ee0f2e9e14fa495ecaf43d2a288c9eb23a9ffae8",
+      "after": "805ba0cab73bb9e80d278422ee0f2e9e14fa495ecaf43d2a288c9eb23a9ffae8",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/before.json",
+      "before": "9d43ae365fbf1011423fa2f079bf91754d8bee4bfb6b1ac3c78541267bd104f7",
+      "after": "9d43ae365fbf1011423fa2f079bf91754d8bee4bfb6b1ac3c78541267bd104f7",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/browser-a010-controlled.json",
+      "before": "f1afceae1745848887680d7b152eda10a43ed16ef81415e431a8677e7a8f72aa",
+      "after": "f1afceae1745848887680d7b152eda10a43ed16ef81415e431a8677e7a8f72aa",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/browser-act1-controlled.json",
+      "before": "caeede151a6d82929a175b92bb46d05c39a4ee39a64d238f9c2c807dc65c7575",
+      "after": "caeede151a6d82929a175b92bb46d05c39a4ee39a64d238f9c2c807dc65c7575",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/browser-animation-storage.json",
+      "before": "d8ba84e643ad94a2340371aaaf9f1710d213d7ade8b0756a55144940a6243bcf",
+      "after": "d8ba84e643ad94a2340371aaaf9f1710d213d7ade8b0756a55144940a6243bcf",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/browser-brightness-final.json",
+      "before": "4bc1744f8f20b9d5c6f7fdf3ac574f4e080c234071d1acec8b6e643a94993ea5",
+      "after": "4bc1744f8f20b9d5c6f7fdf3ac574f4e080c234071d1acec8b6e643a94993ea5",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/browser-console.json",
+      "before": "570900351021ba713ef60a56a90ed204ab7acdb95bb0a49bd50d66b3ebd243a4",
+      "after": "570900351021ba713ef60a56a90ed204ab7acdb95bb0a49bd50d66b3ebd243a4",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/browser-face-keyframes.png",
+      "before": "8c980809e522e95218e111ff96395d686b43c183936ce211b0cedfdc94b91b95",
+      "after": "8c980809e522e95218e111ff96395d686b43c183936ce211b0cedfdc94b91b95",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/browser-five-samples.json",
+      "before": "2c64a6fdcfa0e9d0c36b878060a58999cec70663be4e391d961b7187a9c54e1c",
+      "after": "2c64a6fdcfa0e9d0c36b878060a58999cec70663be4e391d961b7187a9c54e1c",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/browser-lifecycle.json",
+      "before": "dafb3b4d1e3308bf4fb3c74b91ad3a5ed7b0964287e1411c3fdb98440c8bd278",
+      "after": "dafb3b4d1e3308bf4fb3c74b91ad3a5ed7b0964287e1411c3fdb98440c8bd278",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/browser-normal-p001-p002.json",
+      "before": "9d05cbadceb317c27c798241acb3cb073482e51ad607cde7a446c2544291f444",
+      "after": "9d05cbadceb317c27c798241acb3cb073482e51ad607cde7a446c2544291f444",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/browser-program-final.json",
+      "before": "b363d4cbdeafb6b173b8245ead4bba3674cf44fd06ba3eb29deb493829625e70",
+      "after": "b363d4cbdeafb6b173b8245ead4bba3674cf44fd06ba3eb29deb493829625e70",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/browser-project-path.json",
+      "before": "4e1caff81ffdf2e6854d7a373f0791e0212e583f37ec3dbd196cd079718c34b7",
+      "after": "4e1caff81ffdf2e6854d7a373f0791e0212e583f37ec3dbd196cd079718c34b7",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/calm-closed.jpg",
+      "before": "c9fe11146ca8ff881cd1c460502260decdfe11a9d881c70c104a8db3f6a9738b",
+      "after": "c9fe11146ca8ff881cd1c460502260decdfe11a9d881c70c104a8db3f6a9738b",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/calm-composite-dark.jpg",
+      "before": "b44f2634a1c5bd1f71461519f1a1287aad00bb346bd441a506f411cf2df812e3",
+      "after": "b44f2634a1c5bd1f71461519f1a1287aad00bb346bd441a506f411cf2df812e3",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/calm-composite-light.jpg",
+      "before": "cc16b6e545150fd7dbbf5ea16df67a4921308009908a102e446fbc1d428b7324",
+      "after": "cc16b6e545150fd7dbbf5ea16df67a4921308009908a102e446fbc1d428b7324",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/calm-final-dark.jpg",
+      "before": "d444d22f078d530e292bfd0ed2bdcf3e97aa3454be13e218399a901cb7411f8f",
+      "after": "d444d22f078d530e292bfd0ed2bdcf3e97aa3454be13e218399a901cb7411f8f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/calm-final-light.jpg",
+      "before": "be1c9f451529d4bb78979c19f93c597885172dc15653778b0913ce696cdecb20",
+      "after": "be1c9f451529d4bb78979c19f93c597885172dc15653778b0913ce696cdecb20",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/calm-half.jpg",
+      "before": "27bba97e3350ab018ec7f9528082ecc608f8ea3f40812db5cc31bc09b93ce7c6",
+      "after": "27bba97e3350ab018ec7f9528082ecc608f8ea3f40812db5cc31bc09b93ce7c6",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/calm-speech.jpg",
+      "before": "8274deac7e7f30cd39bd87ee96a39f313ba658bc86757a987c7b421db8e15a98",
+      "after": "8274deac7e7f30cd39bd87ee96a39f313ba658bc86757a987c7b421db8e15a98",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/calm-window-blink.jpg",
+      "before": "d582e1ceafc17c4f4280a4a6625c4d5a1a54a821c064e1526219a2cae708a9af",
+      "after": "d582e1ceafc17c4f4280a4a6625c4d5a1a54a821c064e1526219a2cae708a9af",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/calm-window-rest.jpg",
+      "before": "cbce995727b9033fb39e30c11388c2db44ed8d60b446e617b5bdfb471b746215",
+      "after": "cbce995727b9033fb39e30c11388c2db44ed8d60b446e617b5bdfb471b746215",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/candidate-reviews/browser-five-samples.json",
+      "before": "19aaa513cc0a3bfc58b86635f0779ec765253330f2a57729ae9feeee202c9889",
+      "after": "19aaa513cc0a3bfc58b86635f0779ec765253330f2a57729ae9feeee202c9889",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/candidate-reviews/nervous-closed.jpg",
+      "before": "0102c7e7d601fe987b896304733dba62c2d9240272be8189159dc53d41418e7a",
+      "after": "0102c7e7d601fe987b896304733dba62c2d9240272be8189159dc53d41418e7a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/candidate-reviews/nervous-final-dark.jpg",
+      "before": "57b6699927cbb8cccaf297af423daa34b7a46ff2cf281a1824d51efedb8d8002",
+      "after": "57b6699927cbb8cccaf297af423daa34b7a46ff2cf281a1824d51efedb8d8002",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/candidate-reviews/nervous-final-light.jpg",
+      "before": "e5e3474fe6350576da8a535a2cb59e901dadc4d42d95358e4d246b99f252427f",
+      "after": "e5e3474fe6350576da8a535a2cb59e901dadc4d42d95358e4d246b99f252427f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/candidate-reviews/nervous-half.jpg",
+      "before": "030fc5bd4f05b3da742029394c6bed2663216cca151f5f8551a31c152429ac12",
+      "after": "030fc5bd4f05b3da742029394c6bed2663216cca151f5f8551a31c152429ac12",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/candidate-reviews/nervous-speech.jpg",
+      "before": "a3ce7c367d46ca8613d69ee4cd3f005a6f4f1b4859b6b2416564220cfb307fd8",
+      "after": "a3ce7c367d46ca8613d69ee4cd3f005a6f4f1b4859b6b2416564220cfb307fd8",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/candidate-reviews/puzzled-closed.jpg",
+      "before": "9f19741b2d27ac4e9d8c7cacfbefef70294aedee7ed80f4a92d4790444d0880c",
+      "after": "9f19741b2d27ac4e9d8c7cacfbefef70294aedee7ed80f4a92d4790444d0880c",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/candidate-reviews/puzzled-final-dark.jpg",
+      "before": "2c9df6b9e7815af21d8c7a447e1c9f16a9514166f63694f6bb2fa0043402d6ea",
+      "after": "2c9df6b9e7815af21d8c7a447e1c9f16a9514166f63694f6bb2fa0043402d6ea",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/candidate-reviews/puzzled-final-light.jpg",
+      "before": "dc27c97d60f1f8f77c9d5296d451145bfeafc5b6a09601816df8702814aff02d",
+      "after": "dc27c97d60f1f8f77c9d5296d451145bfeafc5b6a09601816df8702814aff02d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/candidate-reviews/puzzled-half.jpg",
+      "before": "804b5e2aa808646879b30b493e9b2400ed350c4c45eefde98ff987736ea716db",
+      "after": "804b5e2aa808646879b30b493e9b2400ed350c4c45eefde98ff987736ea716db",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/candidate-reviews/puzzled-speech.jpg",
+      "before": "61445ab5dacbf3183b03d88cb9e5dd381d94cf19918e34b84f07b9e47d8152a1",
+      "after": "61445ab5dacbf3183b03d88cb9e5dd381d94cf19918e34b84f07b9e47d8152a1",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/candidate-reviews/relaxed-closed.jpg",
+      "before": "c570fdab856614dc8c4c88cae353a36c41b225e459561ab6db6e1f012ff70b3d",
+      "after": "c570fdab856614dc8c4c88cae353a36c41b225e459561ab6db6e1f012ff70b3d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/candidate-reviews/relaxed-final-dark.jpg",
+      "before": "2c68dbdc4014d5e0835752c47357871c5b770c64f969802c21a2736c58994784",
+      "after": "2c68dbdc4014d5e0835752c47357871c5b770c64f969802c21a2736c58994784",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/candidate-reviews/relaxed-final-light.jpg",
+      "before": "f2d2917c1266c80dee992b2693f49b3a95cdc1bfa5069e0815e29b50c67a5626",
+      "after": "f2d2917c1266c80dee992b2693f49b3a95cdc1bfa5069e0815e29b50c67a5626",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/candidate-reviews/relaxed-half.jpg",
+      "before": "cd8eea283a43fd36a7ac81bea06c18a63bc99f1d3fe9e4beabca89a3469941ef",
+      "after": "cd8eea283a43fd36a7ac81bea06c18a63bc99f1d3fe9e4beabca89a3469941ef",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/candidate-reviews/relaxed-speech.jpg",
+      "before": "d8506a4f685034164063b7b393db1e39f4fdc7825a2fd62451110e358f411eaa",
+      "after": "d8506a4f685034164063b7b393db1e39f4fdc7825a2fd62451110e358f411eaa",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/controlled-layer-failure.jpg",
+      "before": "3a8981b26b635d3cf681a11bae154e3bf4cd8bf27ceff34b5aee914ed5724dc9",
+      "after": "3a8981b26b635d3cf681a11bae154e3bf4cd8bf27ceff34b5aee914ed5724dc9",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/file-changes.json",
+      "before": "1599234e4e624dd4cf1ed77cfef2655ac8b1131fa25355c602f76b4f4c72372f",
+      "after": "1599234e4e624dd4cf1ed77cfef2655ac8b1131fa25355c602f76b4f4c72372f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/file-changes.md",
+      "before": "a82bef72290a6559dc6a961b60a283d80157860b60b42fd793bb7066c3911697",
+      "after": "a82bef72290a6559dc6a961b60a283d80157860b60b42fd793bb7066c3911697",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/five-expression-keyframes.jpg",
+      "before": "2bcd65c32b09e4316faabb2cf47d7ef6a86186bc857125f9aaaf78191b04dd49",
+      "after": "2bcd65c32b09e4316faabb2cf47d7ef6a86186bc857125f9aaaf78191b04dd49",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/five-expressions-blink-sheet.png",
+      "before": "7292b39e915921832dc819c5095e90e521d87bfb06f459a6c06c83165c329c2b",
+      "after": "7292b39e915921832dc819c5095e90e521d87bfb06f459a6c06c83165c329c2b",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/five-final-samples.jpg",
+      "before": "68454ba460b3a8f11b62fc6638fde7347bb2585a83947d9c8cd3d7290a79aaa4",
+      "after": "68454ba460b3a8f11b62fc6638fde7347bb2585a83947d9c8cd3d7290a79aaa4",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/imagegen-prompts.json",
+      "before": "7848bc984ae2f67831fe43703d673eb9db56b056fed3f7726407264c2db3708a",
+      "after": "7848bc984ae2f67831fe43703d673eb9db56b056fed3f7726407264c2db3708a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/inventory/hero-inventory.json",
+      "before": "d1b9a72fa54394fa6d82df045780b5d29fdcae0ea40b731c62078b669f9b20ab",
+      "after": "d1b9a72fa54394fa6d82df045780b5d29fdcae0ea40b731c62078b669f9b20ab",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/inventory/hero-inventory.md",
+      "before": "f72b1461789e7a167614d4dbf023c9f8f2420d7d2403bfbdfe86f43be08ce93b",
+      "after": "f72b1461789e7a167614d4dbf023c9f8f2420d7d2403bfbdfe86f43be08ce93b",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/luggage-breath-down.jpg",
+      "before": "cf12b0c2403f56af3dca4c067d042f4c613750574aabae2d22b7023b11d00a8d",
+      "after": "cf12b0c2403f56af3dca4c067d042f4c613750574aabae2d22b7023b11d00a8d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/luggage-breath-up.jpg",
+      "before": "dcfd71f6aae56bf4d011f15ad35ad1e334c78536279a553a27af2aefff88fca8",
+      "after": "dcfd71f6aae56bf4d011f15ad35ad1e334c78536279a553a27af2aefff88fca8",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/nervous-closed.jpg",
+      "before": "a753a08e8e0507c5d370185e215bd6643c8b45705bb8738803715b35dc685dcc",
+      "after": "a753a08e8e0507c5d370185e215bd6643c8b45705bb8738803715b35dc685dcc",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/nervous-composite-dark.jpg",
+      "before": "fd0ee1e3abba84190391d48b9f8b804719cfdc40336e5abc2cfe725c8acfb64c",
+      "after": "fd0ee1e3abba84190391d48b9f8b804719cfdc40336e5abc2cfe725c8acfb64c",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/nervous-composite-light.jpg",
+      "before": "9e24d2ddb4953c45365a7a5101507953d1ab73ad34c58f7987e35ccf476244e8",
+      "after": "9e24d2ddb4953c45365a7a5101507953d1ab73ad34c58f7987e35ccf476244e8",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/nervous-final-dark.jpg",
+      "before": "f0d67a62243c8a669ca56f9723df72531a2e5e7b1585e246fb8cb90d98a04158",
+      "after": "f0d67a62243c8a669ca56f9723df72531a2e5e7b1585e246fb8cb90d98a04158",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/nervous-final-light.jpg",
+      "before": "cdc4edb92fc4cc046ce395b4fa18d133035b83febc17acafe3b68e3ba7c11a72",
+      "after": "cdc4edb92fc4cc046ce395b4fa18d133035b83febc17acafe3b68e3ba7c11a72",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/nervous-half.jpg",
+      "before": "682a1a322909437effda88f04bb69af9732d240476a30568bcf1bfbe5a8df663",
+      "after": "682a1a322909437effda88f04bb69af9732d240476a30568bcf1bfbe5a8df663",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/nervous-speech.jpg",
+      "before": "49351c6347628f233fe34b24b36e60bdb95b1bac1e5bbdc2469aa17d1b96b63b",
+      "after": "49351c6347628f233fe34b24b36e60bdb95b1bac1e5bbdc2469aa17d1b96b63b",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/nervous-window-review.jpg",
+      "before": "01d03f4a62d31b5b1a9734d28247c0b1eb7c44271ff11b19c695eba48165385a",
+      "after": "01d03f4a62d31b5b1a9734d28247c0b1eb7c44271ff11b19c695eba48165385a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/prepare-motion-final-v2.jpg",
+      "before": "59888ff53c97f21d74d870a6412eb0f35c366a56985a8249dda310a86abfad64",
+      "after": "59888ff53c97f21d74d870a6412eb0f35c366a56985a8249dda310a86abfad64",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/prepare-motion-final-whole-arms.jpg",
+      "before": "92d735ea293efb47d089b6b3a67bcc676e86413a60ab38c12d843097b349bf21",
+      "after": "92d735ea293efb47d089b6b3a67bcc676e86413a60ab38c12d843097b349bf21",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/prepare-motion-final.jpg",
+      "before": "ac95e8793a33a79a289c205a11d13ec016667a28a1319bbcb59b23dc6be55797",
+      "after": "ac95e8793a33a79a289c205a11d13ec016667a28a1319bbcb59b23dc6be55797",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/prepare-motion-first-review.jpg",
+      "before": "d6b27be4d7702e357e91f23f39de4f9b47b19520997f5f754f97ef2fe64c0a2e",
+      "after": "d6b27be4d7702e357e91f23f39de4f9b47b19520997f5f754f97ef2fe64c0a2e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/prepare-motion-fixed-review.jpg",
+      "before": "1734289fcdf4dab71018e2206bdc5ca3392c719fd0a2fbf93950d4ddab9f3383",
+      "after": "1734289fcdf4dab71018e2206bdc5ca3392c719fd0a2fbf93950d4ddab9f3383",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/prepare-right-guide.jpg",
+      "before": "0f62eaff3cef72ef10f64d0e4fd0fbf699ea7d41d1bdc2f89e0478fa80b4ecad",
+      "after": "0f62eaff3cef72ef10f64d0e4fd0fbf699ea7d41d1bdc2f89e0478fa80b4ecad",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/project-path-p001.jpg",
+      "before": "3da2bbc3d27b6f875e340b6426ae64d51606882fc4f57524be908dc56c871902",
+      "after": "3da2bbc3d27b6f875e340b6426ae64d51606882fc4f57524be908dc56c871902",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/project-path-p002.jpg",
+      "before": "413dedde4c10bc06e1c07557ebb31a7542260a9c815cfb489c53bc51ffc577bf",
+      "after": "413dedde4c10bc06e1c07557ebb31a7542260a9c815cfb489c53bc51ffc577bf",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/proud-closed.jpg",
+      "before": "5bb16d66e9f9cb99ff97a9b396b398a7be432dd427b17073d5cb1b4cdcc3f8e2",
+      "after": "5bb16d66e9f9cb99ff97a9b396b398a7be432dd427b17073d5cb1b4cdcc3f8e2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/proud-composite-dark.jpg",
+      "before": "97c46730c35da5b629613859e0722159c639c41d7747820399df8153aefe3683",
+      "after": "97c46730c35da5b629613859e0722159c639c41d7747820399df8153aefe3683",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/proud-composite-light.jpg",
+      "before": "ffaa3f8758ba0a4ec022fc00d349abe8388ddc9db5333c694f6ef44f74d9953e",
+      "after": "ffaa3f8758ba0a4ec022fc00d349abe8388ddc9db5333c694f6ef44f74d9953e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/proud-final-dark.jpg",
+      "before": "883355bda5d1f758ed2b8fec633e0c83b5aee3f3efdce84757d575d000067833",
+      "after": "883355bda5d1f758ed2b8fec633e0c83b5aee3f3efdce84757d575d000067833",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/proud-final-light.jpg",
+      "before": "6a9d36086c11cec371816c1cf838fe8eea2c996edb009ea328847bd5ebcf4684",
+      "after": "6a9d36086c11cec371816c1cf838fe8eea2c996edb009ea328847bd5ebcf4684",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/proud-half.jpg",
+      "before": "50b2d9a22604a258aecc5658f489337098155f219b4970af223118e2d4a452ca",
+      "after": "50b2d9a22604a258aecc5658f489337098155f219b4970af223118e2d4a452ca",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/proud-speech.jpg",
+      "before": "ea784f6feb184ea0d6ef4e9a7a9e8be1a6b5979a9f56a43ce0f90b5958f58c06",
+      "after": "ea784f6feb184ea0d6ef4e9a7a9e8be1a6b5979a9f56a43ce0f90b5958f58c06",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/proud-window-review.jpg",
+      "before": "a8d505e23e43fdaaa336e5d581639d5a12411f3c016b65411b19744c1f0f7a34",
+      "after": "a8d505e23e43fdaaa336e5d581639d5a12411f3c016b65411b19744c1f0f7a34",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/puzzled-breath-up.jpg",
+      "before": "6f1eb958a955e447c3494dd4607a03d2e83fd90d91d0a37ee1caa17c6d8e906e",
+      "after": "6f1eb958a955e447c3494dd4607a03d2e83fd90d91d0a37ee1caa17c6d8e906e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/puzzled-closed.jpg",
+      "before": "42ec6657c921c7b3f766ef5cab75df377a14ae5cb5e5e34094009d1af710e50c",
+      "after": "42ec6657c921c7b3f766ef5cab75df377a14ae5cb5e5e34094009d1af710e50c",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/puzzled-composite-dark.jpg",
+      "before": "59d30f5c18c5be4ef92b7a807d8bce2485c1b59744464b3f00f69a0cec292094",
+      "after": "59d30f5c18c5be4ef92b7a807d8bce2485c1b59744464b3f00f69a0cec292094",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/puzzled-composite-light.jpg",
+      "before": "32d0955b57ea93359575ec5466b1cadd54cb0d2dcf5086ea42442a8003fabbba",
+      "after": "32d0955b57ea93359575ec5466b1cadd54cb0d2dcf5086ea42442a8003fabbba",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/puzzled-final-dark.jpg",
+      "before": "01b90c316e45cd3eac5c78059b0b9791a71eb25221d5df23a46a52598de1c200",
+      "after": "01b90c316e45cd3eac5c78059b0b9791a71eb25221d5df23a46a52598de1c200",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/puzzled-final-light.jpg",
+      "before": "5f820ad6ed451d88b1261e913431ee9ba400a79e526ffc4b1af8aceaa82ff305",
+      "after": "5f820ad6ed451d88b1261e913431ee9ba400a79e526ffc4b1af8aceaa82ff305",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/puzzled-half.jpg",
+      "before": "b7afcaa59625798abf509550def86127222bfa098c1c206d1d16fd31df4a5a8f",
+      "after": "b7afcaa59625798abf509550def86127222bfa098c1c206d1d16fd31df4a5a8f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/puzzled-speech.jpg",
+      "before": "03263339c4aaea5f40528a42d133ec023a56e4f6eeaba088085b5b3d06ec0ee5",
+      "after": "03263339c4aaea5f40528a42d133ec023a56e4f6eeaba088085b5b3d06ec0ee5",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/puzzled-window-review.jpg",
+      "before": "8a9cd0f638ee4ca6ba1c979eac1cb980330a095a4bea4b87f03e7675a99a290f",
+      "after": "8a9cd0f638ee4ca6ba1c979eac1cb980330a095a4bea4b87f03e7675a99a290f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/relaxed-closed.jpg",
+      "before": "88801cc420a8c68efcb957153bb8ca72edd3e854da7a03fdd65fa49159fe7ed9",
+      "after": "88801cc420a8c68efcb957153bb8ca72edd3e854da7a03fdd65fa49159fe7ed9",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/relaxed-composite-dark.jpg",
+      "before": "78dcdd849577c956b59183512b960ade53abd5fae3afdbd434418c527c3d4597",
+      "after": "78dcdd849577c956b59183512b960ade53abd5fae3afdbd434418c527c3d4597",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/relaxed-composite-light.jpg",
+      "before": "b692e917e847f4a07cbe7947b2c91e4de60d3869463380d2b754f482cd620105",
+      "after": "b692e917e847f4a07cbe7947b2c91e4de60d3869463380d2b754f482cd620105",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/relaxed-final-dark.jpg",
+      "before": "f2311d908612c4bc9c29eabf7b877fd86391816915c3ff69316d32f58255ef98",
+      "after": "f2311d908612c4bc9c29eabf7b877fd86391816915c3ff69316d32f58255ef98",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/relaxed-final-light.jpg",
+      "before": "4c32691d176182bdc7b6fe7bd04fe6f8d22898d9e54d473598a7f6b473cbc3dd",
+      "after": "4c32691d176182bdc7b6fe7bd04fe6f8d22898d9e54d473598a7f6b473cbc3dd",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/relaxed-half.jpg",
+      "before": "764b5779f9e66b439a367da6e6e4103b65fcd2345a904fc07d965803459c5031",
+      "after": "764b5779f9e66b439a367da6e6e4103b65fcd2345a904fc07d965803459c5031",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/relaxed-speech.jpg",
+      "before": "784e1b7352453517d9444e22813202e026aea48e67ab5bd09501035299d71e81",
+      "after": "784e1b7352453517d9444e22813202e026aea48e67ab5bd09501035299d71e81",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/relaxed-window-review.jpg",
+      "before": "a01edd11a28c55dc3edddf2ba1321add6ed11cef69c1ad86c28aef7115155759",
+      "after": "a01edd11a28c55dc3edddf2ba1321add6ed11cef69c1ad86c28aef7115155759",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/story-a006-from-a005.jpg",
+      "before": "3aa220bffa63d17f2315a71835071f68012c6233ee67c30e8c6778953d7421f3",
+      "after": "3aa220bffa63d17f2315a71835071f68012c6233ee67c30e8c6778953d7421f3",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/story-a007-inherited.jpg",
+      "before": "f68e217c7644503901fc869fb3231d2442b1fce433ac769b95d5cfb07e7306ff",
+      "after": "f68e217c7644503901fc869fb3231d2442b1fce433ac769b95d5cfb07e7306ff",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/story-a007-restored.jpg",
+      "before": "bd0dcb5c683cb3a7bfc4edc23cea0e558284dc2357e9da942f97341f85e2256d",
+      "after": "bd0dcb5c683cb3a7bfc4edc23cea0e558284dc2357e9da942f97341f85e2256d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/story-p001-final.jpg",
+      "before": "88e915299e2144d69149851a024ecf8d7730aeb2c23d3e5b4976248f609bb810",
+      "after": "88e915299e2144d69149851a024ecf8d7730aeb2c23d3e5b4976248f609bb810",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/story-p001-luggage.jpg",
+      "before": "e87369eb45f319b7120e36aacfba66b470fb09f3827c448ad1c96aad23cffb6e",
+      "after": "e87369eb45f319b7120e36aacfba66b470fb09f3827c448ad1c96aad23cffb6e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/hero-visual-samples/story-p002-final.jpg",
+      "before": "51e5ead6fcb71efaa2eda44ca3c56f7a5b7f61595aa74859ce8de36cd3849acc",
+      "after": "51e5ead6fcb71efaa2eda44ca3c56f7a5b7f61595aa74859ce8de36cd3849acc",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v2/arms-alpha-review.png",
+      "before": "107679646e63dc9d2bfa00e263ca080575a08182212a50e2518ae5ce8d4a2920",
+      "after": "107679646e63dc9d2bfa00e263ca080575a08182212a50e2518ae5ce8d4a2920",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v2/arms-candidate.png",
+      "before": "157a79c51bfba86063f9f3b4cb1926f0e5d5f72367b1a20a65f18e9374d11eec",
+      "after": "157a79c51bfba86063f9f3b4cb1926f0e5d5f72367b1a20a65f18e9374d11eec",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/arm-left-prepare.png",
+      "before": "43dbfdb0e7cfb0cf75910d20875715113c30e44e6d8bd98bf2d0cbe26725f225",
+      "after": "43dbfdb0e7cfb0cf75910d20875715113c30e44e6d8bd98bf2d0cbe26725f225",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/arm-right-prepare.png",
+      "before": "cc7ce843843c03f1fc28a89a865ad80b51565609b4396af90c4697ab47909c74",
+      "after": "cc7ce843843c03f1fc28a89a865ad80b51565609b4396af90c4697ab47909c74",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/body-luggage.png",
+      "before": "e4053b7e51bb0c44bae267500a768fb28b17c4bcb37fe07794cd17b55521f0f2",
+      "after": "e4053b7e51bb0c44bae267500a768fb28b17c4bcb37fe07794cd17b55521f0f2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/body-prepare.png",
+      "before": "55806596d9bd67125a9cdbba35b679094f5b5d1523505ee41cbeff2a86db6bfe",
+      "after": "55806596d9bd67125a9cdbba35b679094f5b5d1523505ee41cbeff2a86db6bfe",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/body-stand.png",
+      "before": "71103e58cd5276c0f36ac1ad9cd687c6d6352225e95b0faa64a7918e52edd2fd",
+      "after": "71103e58cd5276c0f36ac1ad9cd687c6d6352225e95b0faa64a7918e52edd2fd",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/eyes-calm-closed.png",
+      "before": "7358dd1a1c0dcb17ac82ce3f021a3a0c0318147502e1a41e62991380609c6404",
+      "after": "7358dd1a1c0dcb17ac82ce3f021a3a0c0318147502e1a41e62991380609c6404",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/eyes-calm-half.png",
+      "before": "ac267f07316c591f287ffcdcc1d421bad9fa638ff3947f9d317c2deb1ee7c4f1",
+      "after": "ac267f07316c591f287ffcdcc1d421bad9fa638ff3947f9d317c2deb1ee7c4f1",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/eyes-calm.png",
+      "before": "0a157ccffa964873f721690e5de16e321aec069733c1ccf7f281517f4014a45f",
+      "after": "0a157ccffa964873f721690e5de16e321aec069733c1ccf7f281517f4014a45f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/eyes-nervous-closed.png",
+      "before": "3c6d74bfb400eaa76e6589b432bb38a985dfad7ce0dcf92433127af52dcaf971",
+      "after": "3c6d74bfb400eaa76e6589b432bb38a985dfad7ce0dcf92433127af52dcaf971",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/eyes-nervous-half.png",
+      "before": "014e0882b2b286c2c7b82fde01d145e351d5f8574d0e0163a463f8aba5059838",
+      "after": "014e0882b2b286c2c7b82fde01d145e351d5f8574d0e0163a463f8aba5059838",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/eyes-nervous.png",
+      "before": "af68cb9460271a7b8ccbe2094eeb9b0cecc4367357cb1493b7c94d7d42af3d4e",
+      "after": "af68cb9460271a7b8ccbe2094eeb9b0cecc4367357cb1493b7c94d7d42af3d4e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/eyes-proud-closed.png",
+      "before": "f3ba29cf993c7c176122bda85f46d3b9b4d082f2907f9ace64183159816a3fe5",
+      "after": "f3ba29cf993c7c176122bda85f46d3b9b4d082f2907f9ace64183159816a3fe5",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/eyes-proud-half.png",
+      "before": "604d687d4880bab8871ebd20769c5302e8361dbf6325f42a256fff86b0bac430",
+      "after": "604d687d4880bab8871ebd20769c5302e8361dbf6325f42a256fff86b0bac430",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/eyes-proud.png",
+      "before": "1488424e7dc19fa163525bd743f71c11d4336c0e097e660e162740a73b2e72fe",
+      "after": "1488424e7dc19fa163525bd743f71c11d4336c0e097e660e162740a73b2e72fe",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/eyes-puzzled-closed.png",
+      "before": "416884d1c993469eeadf23a25763867b4a65fc728dd86ebda70ffcfc847d866e",
+      "after": "416884d1c993469eeadf23a25763867b4a65fc728dd86ebda70ffcfc847d866e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/eyes-puzzled-half.png",
+      "before": "2803c9e8ef4015b516fdff728a978af1415a7eeb8a0dd46aa35fa3a483ec71e2",
+      "after": "2803c9e8ef4015b516fdff728a978af1415a7eeb8a0dd46aa35fa3a483ec71e2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/eyes-puzzled.png",
+      "before": "9823a2f4c93c37fb23227823f3bb15bd8928ae664098abc33502b60ee3b6c791",
+      "after": "9823a2f4c93c37fb23227823f3bb15bd8928ae664098abc33502b60ee3b6c791",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/eyes-relaxed-closed.png",
+      "before": "49db4b5aa06e4449019a3a669472126abef4eb14507f390775a7be0a50273888",
+      "after": "49db4b5aa06e4449019a3a669472126abef4eb14507f390775a7be0a50273888",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/eyes-relaxed-half.png",
+      "before": "24cb5219bf0d48474473a69f619cc9fbdb572454da322d5847448684ddd03521",
+      "after": "24cb5219bf0d48474473a69f619cc9fbdb572454da322d5847448684ddd03521",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/eyes-relaxed.png",
+      "before": "e3d768c72e9edfc39568444524a1a77514a64f139363931d9c99cf9bf2cdbdda",
+      "after": "e3d768c72e9edfc39568444524a1a77514a64f139363931d9c99cf9bf2cdbdda",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/hair-front.png",
+      "before": "3f507d6ae3a9903775042eb1d64489a18b06a91f599dd0c89bd641587187a0b5",
+      "after": "3f507d6ae3a9903775042eb1d64489a18b06a91f599dd0c89bd641587187a0b5",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/head.png",
+      "before": "32669d1c02ce13940767fbe127f9354a679acf1f98b9068336274075ddf411de",
+      "after": "32669d1c02ce13940767fbe127f9354a679acf1f98b9068336274075ddf411de",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/luggage-grip.png",
+      "before": "f47de864c9b612e7b50b5cb358d21754941724fd5e5d93fef5dcb076201ae9d9",
+      "after": "f47de864c9b612e7b50b5cb358d21754941724fd5e5d93fef5dcb076201ae9d9",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/mouth-calm-speech.png",
+      "before": "105755fea08c05fa271c86c25f009ce3f344195bee8833b876a4a87fee3c7fe6",
+      "after": "105755fea08c05fa271c86c25f009ce3f344195bee8833b876a4a87fee3c7fe6",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/mouth-calm.png",
+      "before": "c7ebc8a132c93bf2318ac9737d7d3cafab8ca83f1b19cb924701ecee1ee2e94d",
+      "after": "c7ebc8a132c93bf2318ac9737d7d3cafab8ca83f1b19cb924701ecee1ee2e94d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/mouth-nervous-speech.png",
+      "before": "a89de7d06b24f33562c76b447bc5e3e78cd22d3d7dbc982db08787a9b9630678",
+      "after": "a89de7d06b24f33562c76b447bc5e3e78cd22d3d7dbc982db08787a9b9630678",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/mouth-nervous.png",
+      "before": "52960ea3bfcc800c21253d6dff3cb3424fd3ae58b372c58980681b8cd2702208",
+      "after": "52960ea3bfcc800c21253d6dff3cb3424fd3ae58b372c58980681b8cd2702208",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/mouth-proud-speech.png",
+      "before": "7be89628d2957c7491fbe5e300b97b528924c85cff38afcaa5e63bc86ed3a432",
+      "after": "7be89628d2957c7491fbe5e300b97b528924c85cff38afcaa5e63bc86ed3a432",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/mouth-proud.png",
+      "before": "baaf1898109df8178e053e7b1da3592c77f6a7e77a1bf79d5d7f770d812e60ba",
+      "after": "baaf1898109df8178e053e7b1da3592c77f6a7e77a1bf79d5d7f770d812e60ba",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/mouth-puzzled-speech.png",
+      "before": "2b887191aef75ded6c854dc272f161225e9a13facf5f1d279f3ed7126ae58fca",
+      "after": "2b887191aef75ded6c854dc272f161225e9a13facf5f1d279f3ed7126ae58fca",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/mouth-puzzled.png",
+      "before": "726ab48c41e8f0c1c97009821b9d9670c1607b9f14a787f67b8608aad3fe649a",
+      "after": "726ab48c41e8f0c1c97009821b9d9670c1607b9f14a787f67b8608aad3fe649a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/mouth-relaxed-speech.png",
+      "before": "d5872ded7acdd5ea1510b3758c2f05b56bd696cdb7c6525401418ea1d7c95b83",
+      "after": "d5872ded7acdd5ea1510b3758c2f05b56bd696cdb7c6525401418ea1d7c95b83",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/mouth-relaxed.png",
+      "before": "0f7b8da6daea330193dbb23d2c672bf5415663eae7c142e5f52ad82dcc739e4e",
+      "after": "0f7b8da6daea330193dbb23d2c672bf5415663eae7c142e5f52ad82dcc739e4e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v3/registration.json",
+      "before": "43a01289fb97f8b5fbd14f9e36e1e6b69e7c0bc015307a9e0353c1a4f8871e93",
+      "after": "43a01289fb97f8b5fbd14f9e36e1e6b69e7c0bc015307a9e0353c1a4f8871e93",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/fixtures/portrait-keyframes.ts",
+      "before": "c32eab9f334227e518c5836fc2f3155d48f6e85ad6a5ddccec5eca31eb809c1f",
+      "after": "c32eab9f334227e518c5836fc2f3155d48f6e85ad6a5ddccec5eca31eb809c1f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/fixtures/segmented-visual.ts",
+      "before": "dbaed8d37feff12436c696b6bf21207821a8d5716ed88828e8d88e23c5a3e28c",
+      "after": "dbaed8d37feff12436c696b6bf21207821a8d5716ed88828e8d88e23c5a3e28c",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/hero-assets.test.mjs",
+      "before": "3b29219b250b0b744129931c4a62b0c25f909116f84371632fe8226eb2da4ecc",
+      "after": "3b29219b250b0b744129931c4a62b0c25f909116f84371632fe8226eb2da4ecc",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/hero-samples.test.ts",
+      "before": "371db83251a47d36684c10a5c33faac457ab092b48426f91ad27e8ba9eb01d19",
+      "after": "371db83251a47d36684c10a5c33faac457ab092b48426f91ad27e8ba9eb01d19",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/visual-refresh.test.ts",
+      "before": "2e580129fbeba440f77c5ff2e521002996985d0c9b724f99f8c451195a29ed9e",
+      "after": "2e580129fbeba440f77c5ff2e521002996985d0c9b724f99f8c451195a29ed9e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tools/check-dialogue-refresh.mjs",
+      "before": "52075358af892fe9fe78baa4de0f8d7623f3c298388a4be88ed08e6ec1641495",
+      "after": "52075358af892fe9fe78baa4de0f8d7623f3c298388a4be88ed08e6ec1641495",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tools/check-hero-samples.mjs",
+      "before": "bf04e1b890dc5ffe6413eb9598132ddb4af7256667fc4411a089b8f19393f4a2",
+      "after": "bf04e1b890dc5ffe6413eb9598132ddb4af7256667fc4411a089b8f19393f4a2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tools/inspect-hero-png.mjs",
+      "before": "6ca78db2e49b08e88061cb86425c557526bca85d2656c99af69cdbcf448671f6",
+      "after": "6ca78db2e49b08e88061cb86425c557526bca85d2656c99af69cdbcf448671f6",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tools/prepare-hero-samples.py",
+      "before": "4a85ab58d12f91538d1503e275e914f4083252461c8727c6c66bddba5519f566",
+      "after": "4a85ab58d12f91538d1503e275e914f4083252461c8727c6c66bddba5519f566",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tools/render-hero-sample-evidence.py",
+      "before": "974ec5a950afc580c7926addc6914c493d1793924a1bf738b0777ec532b61e31",
+      "after": "974ec5a950afc580c7926addc6914c493d1793924a1bf738b0777ec532b61e31",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": ".github/workflows/build-game.yml",
+      "before": "ab7ee400cb978dfe150786a2002e1c9b2fb3d1dd19d2e1e49de8533e81b24759",
+      "after": "ab7ee400cb978dfe150786a2002e1c9b2fb3d1dd19d2e1e49de8533e81b24759",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": ".gitignore",
+      "before": "1237e96565a91fc9fdbfdb1cbfe6fc748e28a9354c2c33f8c87c41adcf293e18",
+      "after": "1237e96565a91fc9fdbfdb1cbfe6fc748e28a9354c2c33f8c87c41adcf293e18",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "00-先读我.md",
+      "before": "578adb5e4be6b64c18ad40fbf410fe1dab275e3a67f31ec3754016abc470c61b",
+      "after": "578adb5e4be6b64c18ad40fbf410fe1dab275e3a67f31ec3754016abc470c61b",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "01-任务书.md",
+      "before": "2257a936ac5b713e37bb795a777c36e8c1ac0cab76c070be93f6f949d7d73676",
+      "after": "2257a936ac5b713e37bb795a777c36e8c1ac0cab76c070be93f6f949d7d73676",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "02-验收清单.md",
+      "before": "61125fe5406ee6b78b702684c439b3cf404a1146e4067949975a4c4046ebcf12",
+      "after": "61125fe5406ee6b78b702684c439b3cf404a1146e4067949975a4c4046ebcf12",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "AGENTS.md",
+      "before": "9297310a72a4842246bcec28b377a5c7372630ddac2f94095626fe42f3af7848",
+      "after": "9297310a72a4842246bcec28b377a5c7372630ddac2f94095626fe42f3af7848",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "before": "2bc38f9b7e0324ef4be6868a0b715851ce87aa797c609d880f6bb56de81da5b1",
+      "after": "2bc38f9b7e0324ef4be6868a0b715851ce87aa797c609d880f6bb56de81da5b1",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "LICENSE",
+      "before": "69d7a5bfdc2ee67e2368f85d2783c7b7b5a67d1f530c8a5a358f511eaa74df35",
+      "after": "69d7a5bfdc2ee67e2368f85d2783c7b7b5a67d1f530c8a5a358f511eaa74df35",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "README.md",
+      "before": "67877f5510bcc5753fc862df1f95d2aa0dc0a63dd3ae4e1bde0f3a9e4d59e095",
+      "after": "c8d2247395bea2ac238a1c1aecae2836b31c7ec15f51e46cba49129dfa01641c",
+      "unchanged": false,
+      "protected": false
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "before": "782638fee12a5d9ff3238e7a1733d5c77e6df5e3ab25378e9c9a0d1f23ef46f3",
+      "after": "782638fee12a5d9ff3238e7a1733d5c77e6df5e3ab25378e9c9a0d1f23ef46f3",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/01-任务书.md",
+      "before": "2a551001ebf46c3b998b3e7aa1786ec8a81852d8290c10784244d4f1e53b4d47",
+      "after": "70eea283d7d964df9954b1801c2d7c0f9d111d7a0e20d864a4ac6dc997cbe775",
+      "unchanged": false,
+      "protected": false
+    },
+    {
+      "path": "docs/decisions-map-selection.md",
+      "before": "b8edf76484c2ec266b753927909f3ef2a66b428cf9658c652c576f6e86db7801",
+      "after": "b8edf76484c2ec266b753927909f3ef2a66b428cf9658c652c576f6e86db7801",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/decisions-movement-preview.md",
+      "before": "67359d45655bda286ef345a44fb3aff365528d3d82dbbf533d3fa0f07db6e23d",
+      "after": "67359d45655bda286ef345a44fb3aff365528d3d82dbbf533d3fa0f07db6e23d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/decisions.md",
+      "before": "6117b254df12b1c928dd790a785ee89bc4d17d5ba75904205681bbc13bfc359a",
+      "after": "3ebd80a6801b8182195b15e4f01e112406a8a6dfc3499dedf220dc6aea5c81cf",
+      "unchanged": false,
+      "protected": false
+    },
+    {
+      "path": "docs/dialogue-presentation-spec.md",
+      "before": "21a9a44d6fe4d2bfcf278558b2ff3a64b04f1b80ca32ecae6355ae9001e2ed2d",
+      "after": "21a9a44d6fe4d2bfcf278558b2ff3a64b04f1b80ca32ecae6355ae9001e2ed2d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/dialogue-presentation-verification.md",
+      "before": "ead405cedbdeb68910951e957b61a7474a93a8484b79ed26681ed9ed349122d5",
+      "after": "ead405cedbdeb68910951e957b61a7474a93a8484b79ed26681ed9ed349122d5",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/github-pages-deployment.md",
+      "before": "c8cb4514c3b6458f621b06ecab3bba3aa8f37943a095983ea95213dd6113e009",
+      "after": "c8cb4514c3b6458f621b06ecab3bba3aa8f37943a095983ea95213dd6113e009",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/m1-verification.md",
+      "before": "66691de6d306bd2f842f3b98b91ed90b9258e1d57efba2b2c4e1ad2b96fd2ba9",
+      "after": "66691de6d306bd2f842f3b98b91ed90b9258e1d57efba2b2c4e1ad2b96fd2ba9",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/m2-data-sources.md",
+      "before": "6c5c14d13a0f729c9929dd1287995427ecd114deeefef1af81578115a75d2792",
+      "after": "6c5c14d13a0f729c9929dd1287995427ecd114deeefef1af81578115a75d2792",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/m2-verification.md",
+      "before": "970cbdb7c35ca4d0f15f3bcc3cb7faf50427e0cb564bf287ce97754aa104a24a",
+      "after": "970cbdb7c35ca4d0f15f3bcc3cb7faf50427e0cb564bf287ce97754aa104a24a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/m3-data-sources.md",
+      "before": "2b8dffc914ff7612d1e94937916739bf363d5521d76f310e7f05b6bf4e3b91e0",
+      "after": "2b8dffc914ff7612d1e94937916739bf363d5521d76f310e7f05b6bf4e3b91e0",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/m3-verification.md",
+      "before": "6334f0f2913cfe212fcb21df62bc216805d72f42abf25b7058e59e78a905c9e6",
+      "after": "6334f0f2913cfe212fcb21df62bc216805d72f42abf25b7058e59e78a905c9e6",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/m4-verification.md",
+      "before": "21135aaee74b6b11dfe7b98fbe88e17c6d50741266fc4930f9816a317977257c",
+      "after": "21135aaee74b6b11dfe7b98fbe88e17c6d50741266fc4930f9816a317977257c",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/map-selection-spec.md",
+      "before": "89897f944f1ebe10126016c878e196561b8d42b41a982569804b3eab15e67db0",
+      "after": "89897f944f1ebe10126016c878e196561b8d42b41a982569804b3eab15e67db0",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/map-selection-verification.md",
+      "before": "238eddb36cd0c02d4a4fb54b685df251c57c77fd817675c59942e1121f1d5486",
+      "after": "238eddb36cd0c02d4a4fb54b685df251c57c77fd817675c59942e1121f1d5486",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/map-window-verification.md",
+      "before": "151a0644fe434c09392d0b0274771499e0829d6807702fe2e3500d8bafce5caf",
+      "after": "151a0644fe434c09392d0b0274771499e0829d6807702fe2e3500d8bafce5caf",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/movement-preview-spec.md",
+      "before": "365f00aff4e6a1fd096146ea0c6273c0425360fcc3650cd559a7660cbf8f9f9a",
+      "after": "365f00aff4e6a1fd096146ea0c6273c0425360fcc3650cd559a7660cbf8f9f9a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/movement-preview-verification.md",
+      "before": "89a269572854bb67e37c3eba8442073b94fb3eaa6a28e3f973bf68d4dea2d6e9",
+      "after": "89a269572854bb67e37c3eba8442073b94fb3eaa6a28e3f973bf68d4dea2d6e9",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/open-questions.md",
+      "before": "0de1804cabc8c8f517d93e97cf6a1007437cf83592d9e3a012a695ea45046e87",
+      "after": "0de1804cabc8c8f517d93e97cf6a1007437cf83592d9e3a012a695ea45046e87",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/repository-consolidation.md",
+      "before": "03277927b08b06039065283225e4710c7a8a0e80baf798b2e76e895236594c11",
+      "after": "03277927b08b06039065283225e4710c7a8a0e80baf798b2e76e895236594c11",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/senrenbanka-presentation-study.md",
+      "before": "bf52ec2f9b443456b89e954ec7733bed1da4aa0719764a20d5c2f51b99bef507",
+      "after": "bf52ec2f9b443456b89e954ec7733bed1da4aa0719764a20d5c2f51b99bef507",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/sites-deployment.md",
+      "before": "a7dfbe0d5a258274774e769e5b877c6c8818a232a380e9a79855cfd98f099c31",
+      "after": "a7dfbe0d5a258274774e769e5b877c6c8818a232a380e9a79855cfd98f099c31",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/a007-choice.png",
+      "before": "e17a92b41ad58a0b2f220dae5789e302eeabf10e55f264abc00d4da619f05001",
+      "after": "e17a92b41ad58a0b2f220dae5789e302eeabf10e55f264abc00d4da619f05001",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/a010-return.png",
+      "before": "a93999f9cf4db0bf8ece424b421311fa3b8fb04b013af7ea60901d2e299f831e",
+      "after": "a93999f9cf4db0bf8ece424b421311fa3b8fb04b013af7ea60901d2e299f831e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/act1-battle.png",
+      "before": "5474b9429fd074541d65bae168f330460e8a5b4f68fe0c0c512335d3bde099e5",
+      "after": "5474b9429fd074541d65bae168f330460e8a5b4f68fe0c0c512335d3bde099e5",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/act1-end.png",
+      "before": "f726e10bec83d2e5d7fce0dbb84f5610c4be170b0669408f5600b6c649c19a5c",
+      "after": "f726e10bec83d2e5d7fce0dbb84f5610c4be170b0669408f5600b6c649c19a5c",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/browser-checks.json",
+      "before": "e26e8bc58c3befc079ee567dea1d3c8c43432c5bf967f84724de1f33dec9f3a3",
+      "after": "e26e8bc58c3befc079ee567dea1d3c8c43432c5bf967f84724de1f33dec9f3a3",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/a003-short-dialogue.jpg",
+      "before": "5ad9f736d3401560054870465c93fd60aa00ecc8e9e1d0e4692eb6c62c25e917",
+      "after": "5ad9f736d3401560054870465c93fd60aa00ecc8e9e1d0e4692eb6c62c25e917",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/a006-multi-actor.jpg",
+      "before": "6d5c9771d93f0759cff4c457160ad4456ab5f9a1e53cf0bd519e136c8ca76892",
+      "after": "6d5c9771d93f0759cff4c457160ad4456ab5f9a1e53cf0bd519e136c8ca76892",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/a010-bottom-narration.jpg",
+      "before": "b1c63da368e29fee1fcb3df918c1b0f96d48a63e79e1f29d0521fccd140834e6",
+      "after": "b1c63da368e29fee1fcb3df918c1b0f96d48a63e79e1f29d0521fccd140834e6",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/a011-long-stage.jpg",
+      "before": "081bbfc660c1e0434fef9fbf9339d45477220f1bbbe5ad3a0f1828d678d6766d",
+      "after": "081bbfc660c1e0434fef9fbf9339d45477220f1bbbe5ad3a0f1828d678d6766d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/before.json",
+      "before": "9bc3c96e994225f3bcff99ba687a3c0b4bd6e57e295a0448d0a03f2ae4766e33",
+      "after": "9bc3c96e994225f3bcff99ba687a3c0b4bd6e57e295a0448d0a03f2ae4766e33",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/body-comparison.json",
+      "before": "d18c69ecbc8113b05ebe940394e426ff2c9b0e1d56fb003f9331fb0c0b805294",
+      "after": "d18c69ecbc8113b05ebe940394e426ff2c9b0e1d56fb003f9331fb0c0b805294",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/browser-a003-supplement.json",
+      "before": "4ee7c49411a084b97a0efcd7f6f87ab7664f5299dab9749142acad7773d7eb9e",
+      "after": "4ee7c49411a084b97a0efcd7f6f87ab7664f5299dab9749142acad7773d7eb9e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/browser-first-run.json",
+      "before": "0f0875be46d68d56974db8f1ad1c9229c780280ceb2bd2007b923d2405b86b57",
+      "after": "0f0875be46d68d56974db8f1ad1c9229c780280ceb2bd2007b923d2405b86b57",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/browser-lab.json",
+      "before": "5db539de634eb1c9e488a5b56c8a496740154a5d85f291bac1ffdb22d6a8c981",
+      "after": "5db539de634eb1c9e488a5b56c8a496740154a5d85f291bac1ffdb22d6a8c981",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/browser-lifecycle-fixed.json",
+      "before": "04317cccce9f2b4af8f0791fb0875255c36eef4fbea13ea158fad9bfab55193c",
+      "after": "04317cccce9f2b4af8f0791fb0875255c36eef4fbea13ea158fad9bfab55193c",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/browser-mainline-final.json",
+      "before": "6d15db51ea7ca3176dd4a1c1c786be8d12d8903b62afe4566658e5fbdedea343",
+      "after": "6d15db51ea7ca3176dd4a1c1c786be8d12d8903b62afe4566658e5fbdedea343",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/browser-mainline.json",
+      "before": "0f0875be46d68d56974db8f1ad1c9229c780280ceb2bd2007b923d2405b86b57",
+      "after": "0f0875be46d68d56974db8f1ad1c9229c780280ceb2bd2007b923d2405b86b57",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/candidate-closed-eye.jpg",
+      "before": "5351bbfca57949d5c8b325d1810f75bfaed5272f0516fe6f0a3838704a0550f2",
+      "after": "5351bbfca57949d5c8b325d1810f75bfaed5272f0516fe6f0a3838704a0550f2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/candidate-half-eye.jpg",
+      "before": "74d5b4a9a1016e4a86de882804d81dd3882ef654a5abf2dfac9b4a8a96a50000",
+      "after": "74d5b4a9a1016e4a86de882804d81dd3882ef654a5abf2dfac9b4a8a96a50000",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/commands.txt",
+      "before": "dd606dc9e8d3210091ccbbc38c0eea153b679b97537de8bc46538681794afdb6",
+      "after": "dd606dc9e8d3210091ccbbc38c0eea153b679b97537de8bc46538681794afdb6",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/delivered-menu.jpg",
+      "before": "6852c26b9d3cae0ef72529724a4611725ea08d71772ad12af1f7854fc03930ed",
+      "after": "6852c26b9d3cae0ef72529724a4611725ea08d71772ad12af1f7854fc03930ed",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/delivered-preview.json",
+      "before": "83a3e725fa7eeb755b67c56467c80e7d9f3caf60790848ef9c16e145bae00ff6",
+      "after": "83a3e725fa7eeb755b67c56467c80e7d9f3caf60790848ef9c16e145bae00ff6",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/file-changes.json",
+      "before": "9f9194ae758f11953094551ad9994186e652ae1f722211ae02c862753844d4ce",
+      "after": "9f9194ae758f11953094551ad9994186e652ae1f722211ae02c862753844d4ce",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/file-changes.md",
+      "before": "1e6c02576dbd24952bacfcbb91fe036268df118da17f7124e212aecc0241d744",
+      "after": "1e6c02576dbd24952bacfcbb91fe036268df118da17f7124e212aecc0241d744",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/final-a006-multi-actor.jpg",
+      "before": "59f159d9a31038e15e038103857d6cebfe10f3aaa582be3515229aac1f5771c2",
+      "after": "59f159d9a31038e15e038103857d6cebfe10f3aaa582be3515229aac1f5771c2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/final-a010-bottom-narration.jpg",
+      "before": "cafa5c035b66bb09e3b8a1501aa202864bd69c30a868e5164442ab1bd6d8f6ee",
+      "after": "cafa5c035b66bb09e3b8a1501aa202864bd69c30a868e5164442ab1bd6d8f6ee",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/hero-inventory.json",
+      "before": "2a129ba33748066c756d0d035392eeb3ed7a3a33e849d9bbf1c4eff953d94b31",
+      "after": "2a129ba33748066c756d0d035392eeb3ed7a3a33e849d9bbf1c4eff953d94b31",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/hero-inventory.md",
+      "before": "a9c79546f147f898634fa0238d19007e2a719c9bb717ba90ea25a2cc4d628f17",
+      "after": "a9c79546f147f898634fa0238d19007e2a719c9bb717ba90ea25a2cc4d628f17",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/image-alpha.json",
+      "before": "b68c0d436beeba7b276c5bcbd1270c945a0bfbf33555e1a8f17e64be96c1271f",
+      "after": "b68c0d436beeba7b276c5bcbd1270c945a0bfbf33555e1a8f17e64be96c1271f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/imagegen-prompts.json",
+      "before": "dc11f713801872f521ed0439deaa4f907546ff62eeb66b46c160d29b698568f2",
+      "after": "dc11f713801872f521ed0439deaa4f907546ff62eeb66b46c160d29b698568f2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/imagegen-refinement.json",
+      "before": "1435bdf0a9f2e2104986ff8c0fff60b4af9853104719658ca7673632efdeab7e",
+      "after": "1435bdf0a9f2e2104986ff8c0fff60b4af9853104719658ca7673632efdeab7e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/p001-static-fallback.jpg",
+      "before": "fb9af1a67cfa0a74f868959262d05b95d05083fcb6246f6071db38e4b4f4591e",
+      "after": "fb9af1a67cfa0a74f868959262d05b95d05083fcb6246f6071db38e4b4f4591e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/p002-multi-actor.jpg",
+      "before": "7cf9fea56876e09cc673dccb4c4c1fd07444d6253d72b67ae63a3fdb34250b8a",
+      "after": "7cf9fea56876e09cc673dccb4c4c1fd07444d6253d72b67ae63a3fdb34250b8a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/prologue-movement.jpg",
+      "before": "578e5786653bc63038e7045e055d16ef172f0716ca635d5d4406b6c692cb9dca",
+      "after": "578e5786653bc63038e7045e055d16ef172f0716ca635d5d4406b6c692cb9dca",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/dialogue-presentation/protected-after.json",
+      "before": "12ad795f92f3e3433cc72c38b37d2f2a76b3fd215ec086eb566203b10218cc9e",
+      "after": "12ad795f92f3e3433cc72c38b37d2f2a76b3fd215ec086eb566203b10218cc9e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m2/battle-browser.json",
+      "before": "f7ba31fd85225dab8bbbd34d912ccde861b7e169c880c037bb98eb7a323c5c3a",
+      "after": "f7ba31fd85225dab8bbbd34d912ccde861b7e169c880c037bb98eb7a323c5c3a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m2/checks.json",
+      "before": "012f223cdfe185f195d90ec9caf0bec214672982172a77da278390e840718b66",
+      "after": "012f223cdfe185f195d90ec9caf0bec214672982172a77da278390e840718b66",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m2/cover-seed42.png",
+      "before": "979e36668f5317e2a22d5a6162241ff9e993ec1475e42b6ea2f557e3744ef0c0",
+      "after": "979e36668f5317e2a22d5a6162241ff9e993ec1475e42b6ea2f557e3744ef0c0",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m2/death-seed42.png",
+      "before": "b6a5e56b1c6df75781b14ffc518b3de2696d879149dfa3dd889a039aa1a510bf",
+      "after": "b6a5e56b1c6df75781b14ffc518b3de2696d879149dfa3dd889a039aa1a510bf",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m2/file-changes.json",
+      "before": "0ee0cd796e37a1d4983ee0ae2e403277f7c0399275fc0a6df7fbee9cc7ed4d17",
+      "after": "0ee0cd796e37a1d4983ee0ae2e403277f7c0399275fc0a6df7fbee9cc7ed4d17",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m2/m1-act1-end.png",
+      "before": "3fdc91c233b88c9f19483f26aa35f3c4c3ad4fdd620cd8af56d1e8367a068833",
+      "after": "3fdc91c233b88c9f19483f26aa35f3c4c3ad4fdd620cd8af56d1e8367a068833",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m2/opportunity-seed42.png",
+      "before": "a4a3383b4e3e453f57dee2af962155eb60caa248454a2b991a12ff5eb479af9b",
+      "after": "a4a3383b4e3e453f57dee2af962155eb60caa248454a2b991a12ff5eb479af9b",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m2/protected-hashes.json",
+      "before": "3c0bbf7e5a0c777189b3b66f6c00fb2d0380de535abb836de03572c222b3b09e",
+      "after": "3c0bbf7e5a0c777189b3b66f6c00fb2d0380de535abb836de03572c222b3b09e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m2/reaction-browser.json",
+      "before": "19f7a3369133f83bac7e66a141f23c8f23bb88025456712712361dd6d24d4f62",
+      "after": "19f7a3369133f83bac7e66a141f23c8f23bb88025456712712361dd6d24d4f62",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m2/reaction-prompt.png",
+      "before": "68c475c6481c63070db4037906df15a814ab5b3c041c488113a951994abcc4cb",
+      "after": "68c475c6481c63070db4037906df15a814ab5b3c041c488113a951994abcc4cb",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m2/rule-replays.json",
+      "before": "722d9a7f2aeea960df26d4d588e6667b903cbf837ffe128b7cd9bb3b87fe57a5",
+      "after": "722d9a7f2aeea960df26d4d588e6667b903cbf837ffe128b7cd9bb3b87fe57a5",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m2/scaled-board.png",
+      "before": "7c70a2bf1d6b8f4a59c6c64191fda9b73d2cbddc97aaf7297d54dbc571f8308a",
+      "after": "7c70a2bf1d6b8f4a59c6c64191fda9b73d2cbddc97aaf7297d54dbc571f8308a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m2/story-browser.json",
+      "before": "ce3253d51f6ae3d0e3b1c1bd211954ae796e49509d307418c354c7ca2e2798a7",
+      "after": "ce3253d51f6ae3d0e3b1c1bd211954ae796e49509d307418c354c7ca2e2798a7",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m2/unconscious-seed42.png",
+      "before": "d685661b8dd2da1e85722b51228f46a378b903cd46fa0e26bd00654066ed5502",
+      "after": "d685661b8dd2da1e85722b51228f46a378b903cd46fa0e26bd00654066ed5502",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m2/victory-seed42.png",
+      "before": "40867d0fd1c6d3e04f8849c5cd7c2fdf251a0d0fc4f622609cf4cde7378ddd45",
+      "after": "40867d0fd1c6d3e04f8849c5cd7c2fdf251a0d0fc4f622609cf4cde7378ddd45",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m3/act1-end.png",
+      "before": "d82e0816512ac75ff414f7cac45f19e1cfcf8469a5b4f21bf9217d61e8dcd599",
+      "after": "d82e0816512ac75ff414f7cac45f19e1cfcf8469a5b4f21bf9217d61e8dcd599",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m3/checks.json",
+      "before": "cd4ff02c901c21331125ff8282855222c9cf96a4a8181575ae50b1c89ee95af4",
+      "after": "cd4ff02c901c21331125ff8282855222c9cf96a4a8181575ae50b1c89ee95af4",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m3/direct-browser.json",
+      "before": "028117664a54223c13901b55140231a995ae9f815dcb45acea3b33216e4674e3",
+      "after": "028117664a54223c13901b55140231a995ae9f815dcb45acea3b33216e4674e3",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m3/file-changes.json",
+      "before": "90e0180d7ed7d2ea659b9a3f3517d5a1aa3619007e9c61382c4532979e8c41bc",
+      "after": "90e0180d7ed7d2ea659b9a3f3517d5a1aa3619007e9c61382c4532979e8c41bc",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m3/m2-browser.json",
+      "before": "ce0ca516e8935d9cd29a621d97be978885c238b64428409a2feb1de63270d455",
+      "after": "ce0ca516e8935d9cd29a621d97be978885c238b64428409a2feb1de63270d455",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m3/prologue-failure.png",
+      "before": "420dc5989bec5a45ac1b04ab5692e8bd495a4b9e9770e89dc1f5b9101e3e9f61",
+      "after": "420dc5989bec5a45ac1b04ab5692e8bd495a4b9e9770e89dc1f5b9101e3e9f61",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m3/prologue-victory.png",
+      "before": "9d590ce81d4888516b4fc15b21087403ade019e46179c26419587d0d188ac622",
+      "after": "9d590ce81d4888516b4fc15b21087403ade019e46179c26419587d0d188ac622",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m3/protected-hashes.json",
+      "before": "3eed793598f1375030eb7c2a4fff34b97cc47d1b81fee382b189e2866ef6abf8",
+      "after": "3eed793598f1375030eb7c2a4fff34b97cc47d1b81fee382b189e2866ef6abf8",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m3/retry-browser.json",
+      "before": "a2513c871445191020070f9a7716c7da7ef68867678ba5cbbb322daf919dbee2",
+      "after": "a2513c871445191020070f9a7716c7da7ef68867678ba5cbbb322daf919dbee2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m3/rule-replays.json",
+      "before": "2c70947c960aa87386c6a02c9c7085cebbcf1126ba70c61183880dbecc27e96d",
+      "after": "2c70947c960aa87386c6a02c9c7085cebbcf1126ba70c61183880dbecc27e96d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m3/shadow-failure.png",
+      "before": "c66eb406403647c43d69c6ba04ce50a5c10ab064edbf58e870cdbb593edfcada",
+      "after": "c66eb406403647c43d69c6ba04ce50a5c10ab064edbf58e870cdbb593edfcada",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m3/shadow-opening.png",
+      "before": "0a089608d42c3a8ea0448e58381c6f54f21cae79e91847df7611c23cf2e95b8f",
+      "after": "0a089608d42c3a8ea0448e58381c6f54f21cae79e91847df7611c23cf2e95b8f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m3/shadow-victory.png",
+      "before": "fe12d4fb9c594f71d23ce17180fbc698bc733204ed123452ab9cda851ec91222",
+      "after": "fe12d4fb9c594f71d23ce17180fbc698bc733204ed123452ab9cda851ec91222",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m3/tutorial-move.png",
+      "before": "62b08b7a1de0ff0c65baf6916dcc2d7a7881f4f0e90340de52dcce9a96b85948",
+      "after": "62b08b7a1de0ff0c65baf6916dcc2d7a7881f4f0e90340de52dcce9a96b85948",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/a007-choice.png",
+      "before": "48def2f8ade85756c3e12cd613acf4a606b8c032caba2feb7cd0a943712fccc3",
+      "after": "48def2f8ade85756c3e12cd613acf4a606b8c032caba2feb7cd0a943712fccc3",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/a010-return-note.png",
+      "before": "0c1091616ec7ccb4de3f469264307e5477178e086b04124f444cc8753f85f285",
+      "after": "0c1091616ec7ccb4de3f469264307e5477178e086b04124f444cc8753f85f285",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/act1-end.png",
+      "before": "0db54aaca97b856a89e1b1f8a23a2e4451cb186d465bce73ca97f575f0ed4b6e",
+      "after": "0db54aaca97b856a89e1b1f8a23a2e4451cb186d465bce73ca97f575f0ed4b6e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/act1-unlocked.png",
+      "before": "3e87d1141a9aa504abd392b73632f42ac183bf03e42928af5ccaf1b0b486dfad",
+      "after": "3e87d1141a9aa504abd392b73632f42ac183bf03e42928af5ccaf1b0b486dfad",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/checks.json",
+      "before": "4b2644f10a199c0124a8e1678c78c8fc850bd807a924d9f1ae1e0469e6ce63c7",
+      "after": "4b2644f10a199c0124a8e1678c78c8fc850bd807a924d9f1ae1e0469e6ce63c7",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/commands.txt",
+      "before": "5a21f75a5bb9568a9d18715504edda144f194289bca031086c428fd90213decc",
+      "after": "5a21f75a5bb9568a9d18715504edda144f194289bca031086c428fd90213decc",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/continue-menu.png",
+      "before": "ed41d7c337fe3443e119ba95e9c360f4f00ec68794f4fae9b08ccbc1801457f6",
+      "after": "ed41d7c337fe3443e119ba95e9c360f4f00ec68794f4fae9b08ccbc1801457f6",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/corrupt-save-confirm.png",
+      "before": "e5ba1404cf2eded4168c514dc09b159453aefeb10fdf823e9a73a167860fcd13",
+      "after": "e5ba1404cf2eded4168c514dc09b159453aefeb10fdf823e9a73a167860fcd13",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/file-changes.json",
+      "before": "8cf80e0f4aa60a22c72e6a94d1b613a5b1e30e1ebb84728c9ebe094a3537e2b7",
+      "after": "8cf80e0f4aa60a22c72e6a94d1b613a5b1e30e1ebb84728c9ebe094a3537e2b7",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/full-route-browser.json",
+      "before": "7aed2df1a57a4461a4a4876de9a1a7d9dd88ff4255289c8c842a5573db9bd258",
+      "after": "7aed2df1a57a4461a4a4876de9a1a7d9dd88ff4255289c8c842a5573db9bd258",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/full-route-complete.png",
+      "before": "4d8d112302c83003bc8e618b330bfa6f2f706973a0a60a9866013eb834d8a6a1",
+      "after": "4d8d112302c83003bc8e618b330bfa6f2f706973a0a60a9866013eb834d8a6a1",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/handoff-menu.png",
+      "before": "9d62884f0774f3da89256de1dd609ba06c5179dc23604041b6864f05b1166b2a",
+      "after": "9d62884f0774f3da89256de1dd609ba06c5179dc23604041b6864f05b1166b2a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/initial-levels.png",
+      "before": "8a6185895a0489f98af80524a8444008f8e76316e35a21c615cc314b7ee9c56d",
+      "after": "8a6185895a0489f98af80524a8444008f8e76316e35a21c615cc314b7ee9c56d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/m2-browser.json",
+      "before": "01a07519d6d90ad146e2717fc2fceddf9ccb75b31a4ade00c5dc9f8b0f75bf63",
+      "after": "01a07519d6d90ad146e2717fc2fceddf9ccb75b31a4ade00c5dc9f8b0f75bf63",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/m2-seed42.png",
+      "before": "40867d0fd1c6d3e04f8849c5cd7c2fdf251a0d0fc4f622609cf4cde7378ddd45",
+      "after": "40867d0fd1c6d3e04f8849c5cd7c2fdf251a0d0fc4f622609cf4cde7378ddd45",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/main-menu.png",
+      "before": "9d62884f0774f3da89256de1dd609ba06c5179dc23604041b6864f05b1166b2a",
+      "after": "9d62884f0774f3da89256de1dd609ba06c5179dc23604041b6864f05b1166b2a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/multi-window-browser.json",
+      "before": "85443450c8672ed75ba98b2a5f5eccec5f8e76734560171b1c1dfb55360f2b00",
+      "after": "85443450c8672ed75ba98b2a5f5eccec5f8e76734560171b1c1dfb55360f2b00",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/progress-browser.json",
+      "before": "292464785924fe2e4c93170dc37a0891395c16be79eb386ea2523faf18175261",
+      "after": "292464785924fe2e4c93170dc37a0891395c16be79eb386ea2523faf18175261",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/prologue-failure.png",
+      "before": "143b1f1dcb8eab23622a73bc20433660f88a0479583f75b3f5386d1d3355a577",
+      "after": "143b1f1dcb8eab23622a73bc20433660f88a0479583f75b3f5386d1d3355a577",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/prologue-victory.png",
+      "before": "fc6b90113e36ebd436851faee6bd01f9c319a7abc90a49b1244c3a785ec2b823",
+      "after": "fc6b90113e36ebd436851faee6bd01f9c319a7abc90a49b1244c3a785ec2b823",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/protected-hashes.json",
+      "before": "b8798f45e316319afad7014baef6f5319d94548584fa6e32c0d5a1608960b439",
+      "after": "b8798f45e316319afad7014baef6f5319d94548584fa6e32c0d5a1608960b439",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/replay-browser.json",
+      "before": "1dfee9a04a855a2fcf441ef8b79ecca35109103d2583c1de26bf2335b5744628",
+      "after": "1dfee9a04a855a2fcf441ef8b79ecca35109103d2583c1de26bf2335b5744628",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/shadow-failure.png",
+      "before": "afe0ae132c9dc9e864d259f86e2b6f5cdad9cb209d2d8375f994dcd6906782d9",
+      "after": "afe0ae132c9dc9e864d259f86e2b6f5cdad9cb209d2d8375f994dcd6906782d9",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/shadow-victory.png",
+      "before": "fe0ad63cb5b133e583eebfa0eb99602bfba328ac6423c8e4a0c8049b21ee7af5",
+      "after": "fe0ad63cb5b133e583eebfa0eb99602bfba328ac6423c8e4a0c8049b21ee7af5",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/slice-complete.png",
+      "before": "11e56f30904c9706e36bbc3775737a41eadca33366f877f9b38c193707f35caf",
+      "after": "11e56f30904c9706e36bbc3775737a41eadca33366f877f9b38c193707f35caf",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/m4/storage-fault-browser.json",
+      "before": "0fe1b25dae87e91dd1f8ee57b159e8b47e60821847337ebb69133482f6105ab9",
+      "after": "0fe1b25dae87e91dd1f8ee57b159e8b47e60821847337ebb69133482f6105ab9",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/a010-choice-return.jpg",
+      "before": "f4910024c6d9bf4111c4d4cb7955c7594b4e676a15a8160a2f3a33b7ca58f15c",
+      "after": "f4910024c6d9bf4111c4d4cb7955c7594b4e676a15a8160a2f3a33b7ca58f15c",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/before-files.json",
+      "before": "6ded8c074c154c1650160895418fb96857cd7a0c9e58b274a623bc8ad5f233f8",
+      "after": "6ded8c074c154c1650160895418fb96857cd7a0c9e58b274a623bc8ad5f233f8",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/checks.json",
+      "before": "5e95cb39f589035608f3879ac53151ee28465d7711963afe60de6a25d30c0412",
+      "after": "5e95cb39f589035608f3879ac53151ee28465d7711963afe60de6a25d30c0412",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/commands.txt",
+      "before": "bce3fd7c378ca5cd70f89415f26d51bd14a0cbb573a610b6317e5fe6c4842ee2",
+      "after": "bce3fd7c378ca5cd70f89415f26d51bd14a0cbb573a610b6317e5fe6c4842ee2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/completed-map.jpg",
+      "before": "ac22236af6465f29b9706ec6516471b2ed8ac325b672ba3161768d084b96dec2",
+      "after": "ac22236af6465f29b9706ec6516471b2ed8ac325b672ba3161768d084b96dec2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/corrupt-replaced-map.jpg",
+      "before": "e7ff40baad5efc2cfe900a0accc287c5056e0b86c31dd97c83cf473ec89ab602",
+      "after": "e7ff40baad5efc2cfe900a0accc287c5056e0b86c31dd97c83cf473ec89ab602",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/corrupt-save-browser.json",
+      "before": "e6e1fa2c0c4ff699696bc76f32bb9fb484e94d5152aee892e7e04fafad58e452",
+      "after": "e6e1fa2c0c4ff699696bc76f32bb9fb484e94d5152aee892e7e04fafad58e452",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/development-progress.json",
+      "before": "f32a2ffffcefe62de67ca20bf583907a68fdcb8f082185b7e1c17748e59fbdb8",
+      "after": "f32a2ffffcefe62de67ca20bf583907a68fdcb8f082185b7e1c17748e59fbdb8",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/existing-5180-origin.json",
+      "before": "28b9aa5fbf12af789635ebd92658544004c0ad3b725432e7b620085ad3c3f526",
+      "after": "28b9aa5fbf12af789635ebd92658544004c0ad3b725432e7b620085ad3c3f526",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/file-changes.json",
+      "before": "f89d18587444db30c10b1391988df8a5609a346f15e579af23b6f89da7cdf8f3",
+      "after": "f89d18587444db30c10b1391988df8a5609a346f15e579af23b6f89da7cdf8f3",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/final-completed-map.jpg",
+      "before": "13ab1aae1e9c458f2d078e8c22b36d31330d891052bc331734ff79cf0d1f8db3",
+      "after": "13ab1aae1e9c458f2d078e8c22b36d31330d891052bc331734ff79cf0d1f8db3",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/final-initial-map.jpg",
+      "before": "618a4915ad2cd270fdd950d82089f47ffce49cd25112ced6efa882c8b69036f5",
+      "after": "618a4915ad2cd270fdd950d82089f47ffce49cd25112ced6efa882c8b69036f5",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/final-keyboard-clip.json",
+      "before": "d20293b619c76f1e448ba8e35b8469d12c61727f862ceb08bed81e20c8e2ae73",
+      "after": "d20293b619c76f1e448ba8e35b8469d12c61727f862ceb08bed81e20c8e2ae73",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/final-map-interaction.json",
+      "before": "3646e38a5d65b64426fe5eff692216aeb8bfb819b891e5773f953168f1cd30c0",
+      "after": "3646e38a5d65b64426fe5eff692216aeb8bfb819b891e5773f953168f1cd30c0",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/final-route-browser.json",
+      "before": "76d10b760a2ce6e8475ebd9981a364d01e936978e6bc674f9fe686ea1443817f",
+      "after": "76d10b760a2ce6e8475ebd9981a364d01e936978e6bc674f9fe686ea1443817f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/full-prologue-victory.jpg",
+      "before": "023677064ebdd5c522e63b411161b15433a473a9dea617493bc38b340ae2b783",
+      "after": "023677064ebdd5c522e63b411161b15433a473a9dea617493bc38b340ae2b783",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/full-route-browser.json",
+      "before": "e5f541efc97c96e4adee1373058d6e83d38335a51d529a0f29d351e1913e78ed",
+      "after": "e5f541efc97c96e4adee1373058d6e83d38335a51d529a0f29d351e1913e78ed",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/image-prompt.txt",
+      "before": "fff14257a07dfc0682d1a1e0a3f6d92a810350f9502e4da9978818132eb1d7a4",
+      "after": "fff14257a07dfc0682d1a1e0a3f6d92a810350f9502e4da9978818132eb1d7a4",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/initial-map.jpg",
+      "before": "bddd0efa5491d3ec41db6979b9f928a6cce61633b2b905e20179efe4ad4f2766",
+      "after": "bddd0efa5491d3ec41db6979b9f928a6cce61633b2b905e20179efe4ad4f2766",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/interrupted-route.json",
+      "before": "5dd6db681ef083eb3d65debc313a2f6fd9799ea59062b03837a7827471ba5ab3",
+      "after": "5dd6db681ef083eb3d65debc313a2f6fd9799ea59062b03837a7827471ba5ab3",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/launch-menu.jpg",
+      "before": "6852c26b9d3cae0ef72529724a4611725ea08d71772ad12af1f7854fc03930ed",
+      "after": "6852c26b9d3cae0ef72529724a4611725ea08d71772ad12af1f7854fc03930ed",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/launch-origin.json",
+      "before": "8e85a45b6cc300f41fcc765cef06e3d190f7538ec9bdc2a57360a3221e2c37ba",
+      "after": "8e85a45b6cc300f41fcc765cef06e3d190f7538ec9bdc2a57360a3221e2c37ba",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/m2-browser.json",
+      "before": "63dd2dec73dc8716a0a958f14f3c91cad3b101f73ceec41d08f7e93e4f9e2630",
+      "after": "63dd2dec73dc8716a0a958f14f3c91cad3b101f73ceec41d08f7e93e4f9e2630",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/m2-seed42.jpg",
+      "before": "9ac683dfa433ca406099859053a5d52a7c977694e29748d1202cc440b5d5b652",
+      "after": "9ac683dfa433ca406099859053a5d52a7c977694e29748d1202cc440b5d5b652",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/migration-browser.json",
+      "before": "6ff8b1b9e988107631b59aab0a85cfadea55e5db92991ab3b981543c98e6844b",
+      "after": "6ff8b1b9e988107631b59aab0a85cfadea55e5db92991ab3b981543c98e6844b",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/multi-window-browser.json",
+      "before": "40d84931f132e1c70a6e0a037ac2928cdeabf5d0872f0094f6ceaf51c99c05c9",
+      "after": "40d84931f132e1c70a6e0a037ac2928cdeabf5d0872f0094f6ceaf51c99c05c9",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/multi-window-stale-completion.json",
+      "before": "adf1f0c401b290eb06ab4b1dc8b9c2bedb0545bc69d9b2fd80b901f6f9c013bc",
+      "after": "adf1f0c401b290eb06ab4b1dc8b9c2bedb0545bc69d9b2fd80b901f6f9c013bc",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/prologue-call-return.json",
+      "before": "89966022b3de6b43cc8c464db181d32165e532cf5a005467c7a119464bcace13",
+      "after": "89966022b3de6b43cc8c464db181d32165e532cf5a005467c7a119464bcace13",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/prologue-complete-map.jpg",
+      "before": "bd2769260c02438e89f88372ef1db1eddda1f76c1f578ebd57587c4957fb93e2",
+      "after": "bd2769260c02438e89f88372ef1db1eddda1f76c1f578ebd57587c4957fb93e2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/prologue-failure.jpg",
+      "before": "6e50441a2884a3cd5f766dabdc3c94d75dd091c0ba0b0283df21d4d460f755eb",
+      "after": "6e50441a2884a3cd5f766dabdc3c94d75dd091c0ba0b0283df21d4d460f755eb",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/prologue-victory.jpg",
+      "before": "0075c4ef3bce966a55a824a89e50d60286aee1b99ce315818bdc582974519951",
+      "after": "0075c4ef3bce966a55a824a89e50d60286aee1b99ce315818bdc582974519951",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/protected-after.json",
+      "before": "3ed497fb713019cba9b34994c63419a658d2d3597b1708802e910a2dc9aaed2e",
+      "after": "3ed497fb713019cba9b34994c63419a658d2d3597b1708802e910a2dc9aaed2e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/protected-before.json",
+      "before": "aab282ec3597db4b90c4ee230d739869ca8a149d1c73cc031cb92a54c342b477",
+      "after": "aab282ec3597db4b90c4ee230d739869ca8a149d1c73cc031cb92a54c342b477",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/protected-sketch.json",
+      "before": "026d6522c1c1cf31e58d44f683ec61158712b143b93e14a2d071e98349efc913",
+      "after": "026d6522c1c1cf31e58d44f683ec61158712b143b93e14a2d071e98349efc913",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/recovery-before-interruption.json",
+      "before": "0e3fc4c9c1b398a7008a2425bf51c108471ebcb44df924d227173081d41ec3b0",
+      "after": "0e3fc4c9c1b398a7008a2425bf51c108471ebcb44df924d227173081d41ec3b0",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/recovery-browser.json",
+      "before": "d77ef54dd9b896d897fbd694867482762354f098d25a6864160605da6ec867ba",
+      "after": "d77ef54dd9b896d897fbd694867482762354f098d25a6864160605da6ec867ba",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/retry-victory.json",
+      "before": "fafb084c341f453604dd6da0cf657da6a9ec177b3ec945e144e262e4ab903d7d",
+      "after": "fafb084c341f453604dd6da0cf657da6a9ec177b3ec945e144e262e4ab903d7d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/shadow-failure-browser.json",
+      "before": "ef71c0a245fff307cadf200b7d57760ff50d5c7283e6b0176547ffea7525e245",
+      "after": "ef71c0a245fff307cadf200b7d57760ff50d5c7283e6b0176547ffea7525e245",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/shadow-failure.jpg",
+      "before": "75acfa897cb1bd29ae9cee002ad88be8f80b2aca4d3059b55da449dbb69a4c2b",
+      "after": "75acfa897cb1bd29ae9cee002ad88be8f80b2aca4d3059b55da449dbb69a4c2b",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/shadow-victory.jpg",
+      "before": "10ab4defbf82e476b8dd849f3a39b0a9d15faff28f51dd44d64c2129e2fb0da0",
+      "after": "10ab4defbf82e476b8dd849f3a39b0a9d15faff28f51dd44d64c2129e2fb0da0",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/six-levels-complete.jpg",
+      "before": "ef50ecbd722b7eb425ee235ef00e1d91f845fd9e0cbad923330e0520d72d2ecc",
+      "after": "ef50ecbd722b7eb425ee235ef00e1d91f845fd9e0cbad923330e0520d72d2ecc",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-selection/storage-fault-browser.json",
+      "before": "bbc05a289db1c789646b082c51adf76e35022ca66c575eed3756b15c3b6d2c4e",
+      "after": "bbc05a289db1c789646b082c51adf76e35022ca66c575eed3756b15c3b6d2c4e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/after.json",
+      "before": "c0954966e70f7e96d8c92f6f2f68699a999776fb7edd5b5ee0cd60667a45486a",
+      "after": "c0954966e70f7e96d8c92f6f2f68699a999776fb7edd5b5ee0cd60667a45486a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/before.json",
+      "before": "2961a065ef5d3a2c5eaef745a6a1a33f14d03b952e1416f8382686a85a087e85",
+      "after": "2961a065ef5d3a2c5eaef745a6a1a33f14d03b952e1416f8382686a85a087e85",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/browser-completed.json",
+      "before": "58f82557d3c59f716906f0db343f44e81c866b449db3b44081613426eca57a35",
+      "after": "58f82557d3c59f716906f0db343f44e81c866b449db3b44081613426eca57a35",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/browser-local.json",
+      "before": "ac1be0607475c7177977b1ed97c8f5b9147024498089beacd6b5e41d4661f3c0",
+      "after": "ac1be0607475c7177977b1ed97c8f5b9147024498089beacd6b5e41d4661f3c0",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/browser-revisit.json",
+      "before": "588e6e6c3a00be6f0309dcbf4f705233c2f2f69ffd3e641acebe348264c27b4e",
+      "after": "588e6e6c3a00be6f0309dcbf4f705233c2f2f69ffd3e641acebe348264c27b4e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/completed-level-popup.jpg",
+      "before": "0d0177bfaa989652f63150fda2ab9f84078754cdc66cdcda2e5789b979c8f39e",
+      "after": "0d0177bfaa989652f63150fda2ab9f84078754cdc66cdcda2e5789b979c8f39e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/completed-school-small-final.jpg",
+      "before": "05e0ef3241ea79d69b0dc690500e07c2426df61295c469ed31a9136711c3e211",
+      "after": "05e0ef3241ea79d69b0dc690500e07c2426df61295c469ed31a9136711c3e211",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/completed-school-small.jpg",
+      "before": "5dba049602c81ebc36fcd96bd80eba191505a56940c3e1d02d4a73189b99f3fe",
+      "after": "5dba049602c81ebc36fcd96bd80eba191505a56940c3e1d02d4a73189b99f3fe",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/edge-location-popup.jpg",
+      "before": "4c3b9ea5d30a5da7c7ea6c5766de001102144ccf09adff3eb6f31fca62e50552",
+      "after": "4c3b9ea5d30a5da7c7ea6c5766de001102144ccf09adff3eb6f31fca62e50552",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/file-changes.json",
+      "before": "8522a2b35f83ad24907388e886ab99b50fa3061307d258dd4152db1f3383794e",
+      "after": "8522a2b35f83ad24907388e886ab99b50fa3061307d258dd4152db1f3383794e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/file-changes.md",
+      "before": "6d3f54de83a000164c2f390b84f1890d5cd8eb131b5dce0c4c5273f143886b4b",
+      "after": "6d3f54de83a000164c2f390b84f1890d5cd8eb131b5dce0c4c5273f143886b4b",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/first-level-complete.jpg",
+      "before": "a2b8791cbc6efb0a8fbea5f11a8aa340d5540b6b4e91b9d4329cf2c40daa003e",
+      "after": "a2b8791cbc6efb0a8fbea5f11a8aa340d5540b6b4e91b9d4329cf2c40daa003e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/live-1920-popup.jpg",
+      "before": "4138087537a093c2185a86c2ed0868b8fb1ae254f1e94d9dc2ac74ab179cfb97",
+      "after": "4138087537a093c2185a86c2ed0868b8fb1ae254f1e94d9dc2ac74ab179cfb97",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/live-900-popup.jpg",
+      "before": "79c5c6bd3bfa07e191eb913b47512f5c26fe53d806d0bdef9781e95a2219a3e2",
+      "after": "79c5c6bd3bfa07e191eb913b47512f5c26fe53d806d0bdef9781e95a2219a3e2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/live-900-story.jpg",
+      "before": "9f779dbf0ccdd70b1e2464d79988717c855f9b63d34286f6a875d3c1a06933c1",
+      "after": "9f779dbf0ccdd70b1e2464d79988717c855f9b63d34286f6a875d3c1a06933c1",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/live-back-to-map.jpg",
+      "before": "ba48edf9998f1cd65eb7cb6c1fd12f1e13d9752e194efc5cd119f7a9554b33ea",
+      "after": "ba48edf9998f1cd65eb7cb6c1fd12f1e13d9752e194efc5cd119f7a9554b33ea",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/live.json",
+      "before": "80ec504166aa270455ebca1a7d578233641f8214ec4942ae0f9a6e3e63636f1b",
+      "after": "80ec504166aa270455ebca1a7d578233641f8214ec4942ae0f9a6e3e63636f1b",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/location-popup.jpg",
+      "before": "f54658104be6d500997e65cb34ab7597ec2d251d1c7f8323623e6658ebc78d52",
+      "after": "f54658104be6d500997e65cb34ab7597ec2d251d1c7f8323623e6658ebc78d52",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/map-full-window.jpg",
+      "before": "4c57db38d32de215ba03f212cfe500079992faa388614896883dd5c612926529",
+      "after": "4c57db38d32de215ba03f212cfe500079992faa388614896883dd5c612926529",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/small-popup.jpg",
+      "before": "f142112b6ceeff7d7de8a6f713d82bf1b003b8ebabc3681ed2bcecbe04f3801d",
+      "after": "f142112b6ceeff7d7de8a6f713d82bf1b003b8ebabc3681ed2bcecbe04f3801d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/two-level-location.jpg",
+      "before": "66c66c9a86876a4409c7020d29bc9a2d88b4df3a5db3baa42c7bc1832ecda129",
+      "after": "66c66c9a86876a4409c7020d29bc9a2d88b4df3a5db3baa42c7bc1832ecda129",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/map-window/wide-popup.jpg",
+      "before": "0d7c759c0b215a820e7fe92e28b6b7f3f4213feada0564be32d8097683080025",
+      "after": "0d7c759c0b215a820e7fe92e28b6b7f3f4213feada0564be32d8097683080025",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/a010-return-choice.jpg",
+      "before": "ec24e50d4ed17321ee2a1ca0ede4aeb1ccf53936b1a35d5e8246311992cf21e9",
+      "after": "ec24e50d4ed17321ee2a1ca0ede4aeb1ccf53936b1a35d5e8246311992cf21e9",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/before-files.json",
+      "before": "ff6a3334e38f3bc37857ccb0d7dc8c639cbb32a474bac686603532686f088a19",
+      "after": "ff6a3334e38f3bc37857ccb0d7dc8c639cbb32a474bac686603532686f088a19",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/checks.json",
+      "before": "d37733b59ee5ab943b75bfda7b9a4ca3399fbed215e4ff10c349c4cb39ce7c8d",
+      "after": "d37733b59ee5ab943b75bfda7b9a4ca3399fbed215e4ff10c349c4cb39ce7c8d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/commands.txt",
+      "before": "30352ca7f1cf8fa2bdc0b49777362c7c3f02d8744fdac334f063dd6307856826",
+      "after": "30352ca7f1cf8fa2bdc0b49777362c7c3f02d8744fdac334f063dd6307856826",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/completed-map-with-return.jpg",
+      "before": "2e060d95e46b8bb1c0d182f06f2157b0b2f85b945db0c32a1ed6a2cf3e934103",
+      "after": "2e060d95e46b8bb1c0d182f06f2157b0b2f85b945db0c32a1ed6a2cf3e934103",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/completed-map.jpg",
+      "before": "666c214b480fb78035818571fc1418ee49f1297c5bd8a98825ed9b1ce4d0e32b",
+      "after": "666c214b480fb78035818571fc1418ee49f1297c5bd8a98825ed9b1ce4d0e32b",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/delivered-movement-preview.jpg",
+      "before": "b9979b4fc3832695053ccbe584c643788877358b23ea731d58a8af648217ca30",
+      "after": "b9979b4fc3832695053ccbe584c643788877358b23ea731d58a8af648217ca30",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/delivered-preview.json",
+      "before": "ee94b5defbfefc4ce1cedfd90eb0b907d85775e8e734e737eda9745ba02c3e36",
+      "after": "ee94b5defbfefc4ce1cedfd90eb0b907d85775e8e734e737eda9745ba02c3e36",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/file-changes.json",
+      "before": "0bdc09e7a41844fc435c096438082ccee2d5c153897d9b017435c52a8df1bc92",
+      "after": "0bdc09e7a41844fc435c096438082ccee2d5c153897d9b017435c52a8df1bc92",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/full-route-browser.json",
+      "before": "93d7f0e7c3cc917f21022ec58ffe1a1a613560f850cc2e8a9e4d3afe2dab62f0",
+      "after": "93d7f0e7c3cc917f21022ec58ffe1a1a613560f850cc2e8a9e4d3afe2dab62f0",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/full-route-with-return.json",
+      "before": "5f16b86e6752b3f27e7d9697011017b46fb55c2c916b90de5fea2383864e64ab",
+      "after": "5f16b86e6752b3f27e7d9697011017b46fb55c2c916b90de5fea2383864e64ab",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/held-confirm-browser.json",
+      "before": "b6a337a60f31c21f61688f928af59476439eec7cff246251346cb35ac417cee9",
+      "after": "b6a337a60f31c21f61688f928af59476439eec7cff246251346cb35ac417cee9",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/interaction-browser.json",
+      "before": "63999754c9e19807a0ae71af4c9a7cc014fa6dc96cf56661afc947cc44df46c2",
+      "after": "63999754c9e19807a0ae71af4c9a7cc014fa6dc96cf56661afc947cc44df46c2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/keyboard-selected-preview.jpg",
+      "before": "60cddb6ae7dc516f7f8026ab88be018c54a14a932057200e362a8777c11a6c55",
+      "after": "60cddb6ae7dc516f7f8026ab88be018c54a14a932057200e362a8777c11a6c55",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/launch-menu.jpg",
+      "before": "6852c26b9d3cae0ef72529724a4611725ea08d71772ad12af1f7854fc03930ed",
+      "after": "6852c26b9d3cae0ef72529724a4611725ea08d71772ad12af1f7854fc03930ed",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/launch-origin.json",
+      "before": "781bdb1c2f960eb037b948bc18afc297fc1ad38ca995cc57f5d61675a2584ed4",
+      "after": "781bdb1c2f960eb037b948bc18afc297fc1ad38ca995cc57f5d61675a2584ed4",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/loop-planned.jpg",
+      "before": "aae92532efcffba26eecda4489a3d67cc856cb23e149b81cd4137532e3c36e3e",
+      "after": "aae92532efcffba26eecda4489a3d67cc856cb23e149b81cd4137532e3c36e3e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/m2-seed42-browser.json",
+      "before": "a0c985897969480860568c394b81ffeda6576ced1fb300216702627d69f2c1f6",
+      "after": "a0c985897969480860568c394b81ffeda6576ced1fb300216702627d69f2c1f6",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/m2-seed42.jpg",
+      "before": "40867d0fd1c6d3e04f8849c5cd7c2fdf251a0d0fc4f622609cf4cde7378ddd45",
+      "after": "40867d0fd1c6d3e04f8849c5cd7c2fdf251a0d0fc4f622609cf4cde7378ddd45",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/migration-and-zero-writes.json",
+      "before": "f2d22a85f82731c7dd7be636236902631371e1469bf9c059127dde3ca83fba78",
+      "after": "f2d22a85f82731c7dd7be636236902631371e1469bf9c059127dde3ca83fba78",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/prologue-failure.jpg",
+      "before": "aff6da3c768de6bfa507d5024cc1da3ba11f27e8a1b77158fe574f4f8664a785",
+      "after": "aff6da3c768de6bfa507d5024cc1da3ba11f27e8a1b77158fe574f4f8664a785",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/prologue-planning.jpg",
+      "before": "5fcaa4c6d2b5117112bfb6ac4c2a4440a694740c6852eba33c2d7fffef15d0d4",
+      "after": "5fcaa4c6d2b5117112bfb6ac4c2a4440a694740c6852eba33c2d7fffef15d0d4",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/prologue-victory.jpg",
+      "before": "a43b6922b51372c35328b8522aada7fc73af4528e8383d6db9c1e7133da67b05",
+      "after": "a43b6922b51372c35328b8522aada7fc73af4528e8383d6db9c1e7133da67b05",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/protected-after.json",
+      "before": "6cbf5c0ba0d395db0b5d764e71fb29585d449e22e924c50d4bbc7df904687f7d",
+      "after": "6cbf5c0ba0d395db0b5d764e71fb29585d449e22e924c50d4bbc7df904687f7d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/protected-before.json",
+      "before": "fe2d990bac4520a829dbcb8ff3a0fd98662f50660c3442a9754f90eb182e26e8",
+      "after": "fe2d990bac4520a829dbcb8ff3a0fd98662f50660c3442a9754f90eb182e26e8",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/reaction-attack.jpg",
+      "before": "9e4d665018ba8c950855438339e8c3bd3bc052c9f6cfe4ba8880926df5a07b36",
+      "after": "9e4d665018ba8c950855438339e8c3bd3bc052c9f6cfe4ba8880926df5a07b36",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/reaction-browser.json",
+      "before": "cb154dafe648abb4393c0e483a0d2817c7e80279f655d4f4c1f34f2f213ae053",
+      "after": "cb154dafe648abb4393c0e483a0d2817c7e80279f655d4f4c1f34f2f213ae053",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/reaction-decline.jpg",
+      "before": "898b05d27cb65b48d565d03934590684e35a651728193fa8d9c9b974a4977e46",
+      "after": "898b05d27cb65b48d565d03934590684e35a651728193fa8d9c9b974a4977e46",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/recovery-browser.json",
+      "before": "0b70ed821651fe37f43a2920554963bbd4f12dbe25f2caaea2a6e4e9f6fe9bbe",
+      "after": "0b70ed821651fe37f43a2920554963bbd4f12dbe25f2caaea2a6e4e9f6fe9bbe",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/risk-executed.jpg",
+      "before": "bdeef4221c484e0eb973e0cb43d7b084972ad504b597f8e722164337a6c01f2b",
+      "after": "bdeef4221c484e0eb973e0cb43d7b084972ad504b597f8e722164337a6c01f2b",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/risk-preview.jpg",
+      "before": "9cf61b97d5412e52f053762ca80d47ca2f90e22003715f0b04b92bf9862cbe01",
+      "after": "9cf61b97d5412e52f053762ca80d47ca2f90e22003715f0b04b92bf9862cbe01",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/scale-browser.json",
+      "before": "35fd2ddc43d43562c9859d6cd00586cafafc7f3f97412350dcfe8ffb0e759cfd",
+      "after": "35fd2ddc43d43562c9859d6cd00586cafafc7f3f97412350dcfe8ffb0e759cfd",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/scaled-768x432.jpg",
+      "before": "d8274c99ddeb75b13c04aab195d22940803fbc63264510255794c7b6f9245dd1",
+      "after": "d8274c99ddeb75b13c04aab195d22940803fbc63264510255794c7b6f9245dd1",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/shadow-multi-point.jpg",
+      "before": "274405b03e4b647387cf732a9fa827af5b9334b8f100e93b08db76ad9a96806a",
+      "after": "274405b03e4b647387cf732a9fa827af5b9334b8f100e93b08db76ad9a96806a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/shadow-opening.jpg",
+      "before": "cdda1bd8adf3e0eaec4a4adb60237bcc7c47f7c0bf084a23988e6a8fd1bc2bf2",
+      "after": "cdda1bd8adf3e0eaec4a4adb60237bcc7c47f7c0bf084a23988e6a8fd1bc2bf2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/movement-preview/shadow-victory.jpg",
+      "before": "e6901c47141215cdd53f3e07d97202862294083eab9c5411a569145a0d102a60",
+      "after": "e6901c47141215cdd53f3e07d97202862294083eab9c5411a569145a0d102a60",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/p001-start.png",
+      "before": "d8bd8755c3afeb9f1199510385b0e75e6dd451968a35c06ba8c924841819d737",
+      "after": "d8bd8755c3afeb9f1199510385b0e75e6dd451968a35c06ba8c924841819d737",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/prologue-battle.png",
+      "before": "d4b46843d44c92e96367f76552df92e2a9795309cd3c1c87be8261e9547454f4",
+      "after": "d4b46843d44c92e96367f76552df92e2a9795309cd3c1c87be8261e9547454f4",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "docs/verification/protected-hashes.json",
+      "before": "fd18bf117c8511fbaee65215ef6b62d2cfd78b0aef3f54b7f26f7772643d0eb5",
+      "after": "fd18bf117c8511fbaee65215ef6b62d2cfd78b0aef3f54b7f26f7772643d0eb5",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "index.html",
+      "before": "dfed6b45889400d97754d32111271fc5de08a9042c8779dc76c305cc89147d65",
+      "after": "dfed6b45889400d97754d32111271fc5de08a9042c8779dc76c305cc89147d65",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "package-lock.json",
+      "before": "1b2d322f1a4361a0f64ab9e4119e3da701907217fc4872ac5987961b04095193",
+      "after": "1b2d322f1a4361a0f64ab9e4119e3da701907217fc4872ac5987961b04095193",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "package.json",
+      "before": "96b8013b757fa126c8b424f500b1eb1ad5ef525ff98e62853881c5356c41dff9",
+      "after": "96b8013b757fa126c8b424f500b1eb1ad5ef525ff98e62853881c5356c41dff9",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "prompts/M0-脚手架与导出.md",
+      "before": "177e7646cb8cefbbb6613ecd1633bbcbaf4a8a6a8bc94aa8114ac3b26e9e8920",
+      "after": "177e7646cb8cefbbb6613ecd1633bbcbaf4a8a6a8bc94aa8114ac3b26e9e8920",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "prompts/M1-对话播放器.md",
+      "before": "3e9a63d5453c34de7fed6be30aeafb21c9d0f743a16bfff12fbbf76ef1a90aca",
+      "after": "3e9a63d5453c34de7fed6be30aeafb21c9d0f743a16bfff12fbbf76ef1a90aca",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "prompts/M2-战棋核心.md",
+      "before": "f70b63c039cbc10d6df2a08041997e1af9da1525d691c9b388a8ca8290ee1539",
+      "after": "f70b63c039cbc10d6df2a08041997e1af9da1525d691c9b388a8ca8290ee1539",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "prompts/M3-两场战斗.md",
+      "before": "b956272a4b78c06ebe20518ac0ac7717f098f72b18531fe8e2a9aa3a4a76ac38",
+      "after": "b956272a4b78c06ebe20518ac0ac7717f098f72b18531fe8e2a9aa3a4a76ac38",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "prompts/M4-流程与验收.md",
+      "before": "5b7b323a962aef6edb9bdf5e601512efff041e256ae7db81d38b00ce787695a4",
+      "after": "5b7b323a962aef6edb9bdf5e601512efff041e256ae7db81d38b00ce787695a4",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/audio/homecoming.wav",
+      "before": "48791878ab477239c5301855cd8fcf9ce8d05eef75a1f3c07055527470a16701",
+      "after": "48791878ab477239c5301855cd8fcf9ce8d05eef75a1f3c07055527470a16701",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/audio/liuxie.wav",
+      "before": "2eeedb6dc5ebc450adcf33f340a0d66b8fd8ed30f7872ac9155532c44bef5c05",
+      "after": "2eeedb6dc5ebc450adcf33f340a0d66b8fd8ed30f7872ac9155532c44bef5c05",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/maps/sun-city-painted-v1.png",
+      "before": "56bc275af13fcc82c971ae2a074919a2380ee5404cf346053eae098a5ff1b57e",
+      "after": "56bc275af13fcc82c971ae2a074919a2380ee5404cf346053eae098a5ff1b57e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v1/body.png",
+      "before": "2f40311d2843f73407f8e18e8c704c589b24d913a8413e355dd80c73702c38c0",
+      "after": "2f40311d2843f73407f8e18e8c704c589b24d913a8413e355dd80c73702c38c0",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v1/eyes-calm.png",
+      "before": "a3df3467a891a986ceb7fe93fbf4f98498390a15c4836b404fc0ed8d3409b23f",
+      "after": "a3df3467a891a986ceb7fe93fbf4f98498390a15c4836b404fc0ed8d3409b23f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v1/eyes-closed-v2.png",
+      "before": "510bc67b5bf9a03becb0ae1c1cd9b0f9cfd19385081ced666a8720e2f9591e8f",
+      "after": "510bc67b5bf9a03becb0ae1c1cd9b0f9cfd19385081ced666a8720e2f9591e8f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v1/eyes-closed.png",
+      "before": "bc3371e148e12d24f63b41a810a7135d28a3587bf653f10384c9cd780ee50e05",
+      "after": "bc3371e148e12d24f63b41a810a7135d28a3587bf653f10384c9cd780ee50e05",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v1/eyes-half-v2.png",
+      "before": "c3ee5fa93a70d6a49a4a8a2ad66058bdc24e1cdd470108587f045889d2c0aa5a",
+      "after": "c3ee5fa93a70d6a49a4a8a2ad66058bdc24e1cdd470108587f045889d2c0aa5a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v1/eyes-half.png",
+      "before": "0939ebf9ac1444b9a277958b3f685ebe80419b3385b76ee492886b9c80fa41eb",
+      "after": "0939ebf9ac1444b9a277958b3f685ebe80419b3385b76ee492886b9c80fa41eb",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v1/hair-back.png",
+      "before": "b6452abdf66eb702c8f415e0d7a171b94a4a906db1343335436d312f34f92a6d",
+      "after": "b6452abdf66eb702c8f415e0d7a171b94a4a906db1343335436d312f34f92a6d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v1/hair-front.png",
+      "before": "3a2a332c27aa918381c278be8dd899a227c2390c081d2befe21c5060de1c491c",
+      "after": "3a2a332c27aa918381c278be8dd899a227c2390c081d2befe21c5060de1c491c",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v1/head.png",
+      "before": "e78beede9d5c5a84f37b334996a056dde750d8fe00fa2fe077c4045a1beffc32",
+      "after": "e78beede9d5c5a84f37b334996a056dde750d8fe00fa2fe077c4045a1beffc32",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v1/lower-left.png",
+      "before": "8e2516c687c0f037009a289cea0bb32a4ca7656cc713330782117c25bce312a5",
+      "after": "8e2516c687c0f037009a289cea0bb32a4ca7656cc713330782117c25bce312a5",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v1/lower-right.png",
+      "before": "f3e0500d8a66cff6f0fc9bbe6f7222c6991858e87570af4dc57168c93caf6d60",
+      "after": "f3e0500d8a66cff6f0fc9bbe6f7222c6991858e87570af4dc57168c93caf6d60",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v1/master-reference.png",
+      "before": "4a83585139ce20763c310681cf4f663776ab55ec9e486df4e4f9525a3d5111e7",
+      "after": "4a83585139ce20763c310681cf4f663776ab55ec9e486df4e4f9525a3d5111e7",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v1/mouth-calm.png",
+      "before": "194668a5847c7bea573c7185d828c1fdf7bbc6793232f5f3ffd4f2111bf0d25e",
+      "after": "194668a5847c7bea573c7185d828c1fdf7bbc6793232f5f3ffd4f2111bf0d25e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v1/mouth-open.png",
+      "before": "6e8e72fb0b9f681c7436d385142278142b58775b55e570df059b2c378189f996",
+      "after": "6e8e72fb0b9f681c7436d385142278142b58775b55e570df059b2c378189f996",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v1/upper-left.png",
+      "before": "d245f28e0efaba7bde06ff49fd5268e4787ec12a2c1b24808e0ce723b42abe54",
+      "after": "d245f28e0efaba7bde06ff49fd5268e4787ec12a2c1b24808e0ce723b42abe54",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero-layered-v1/upper-right.png",
+      "before": "4ffd09adb5df66fe5cd863b72d049bde6fe6bf5aba9222e47652c0acbd1ec125",
+      "after": "4ffd09adb5df66fe5cd863b72d049bde6fe6bf5aba9222e47652c0acbd1ec125",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/hero.png",
+      "before": "4d0a2884c88a31808289400f30ecc38edaa2e38cf6f5bc2ad2a3167905aee8b3",
+      "after": "4d0a2884c88a31808289400f30ecc38edaa2e38cf6f5bc2ad2a3167905aee8b3",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "public/assets/portraits/thief.png",
+      "before": "dd9cc178984660fee4eb49997d3242b8fdee35d5e92d577ffc45436f32e66f63",
+      "after": "dd9cc178984660fee4eb49997d3242b8fdee35d5e92d577ffc45436f32e66f63",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "source/data/hero.md",
+      "before": "dfad52adf111217b4481a99828d346bb3d4dd6a3b2cdd513b0f3033bebda95cc",
+      "after": "dfad52adf111217b4481a99828d346bb3d4dd6a3b2cdd513b0f3033bebda95cc",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "source/data/org_grunt.md",
+      "before": "6c2c331ae4f919aec3080c96eb1b970ebc2a9c166274b873a6fda58bfc1134f8",
+      "after": "6c2c331ae4f919aec3080c96eb1b970ebc2a9c166274b873a6fda58bfc1134f8",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "source/story/act1.md",
+      "before": "2d322c786a744cad4912f098523a9ad61955fc1b59040a0dc5ff08f08921a3bf",
+      "after": "2d322c786a744cad4912f098523a9ad61955fc1b59040a0dc5ff08f08921a3bf",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "source/story/prologue.md",
+      "before": "aad4cc222e351fe389d9a0164138ec9168b6cf1f9032fa4bdd21479dbfe597dc",
+      "after": "aad4cc222e351fe389d9a0164138ec9168b6cf1f9032fa4bdd21479dbfe597dc",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/content/act1.json",
+      "before": "b835a2ddd354a53bed9aa14489bfe90f1accf5821019b3c94388c35719992bcd",
+      "after": "b835a2ddd354a53bed9aa14489bfe90f1accf5821019b3c94388c35719992bcd",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/content/audio-map.json",
+      "before": "9cd5b5c6a8d7896acb0eb6fd42a29044ef281f5cbd311fcfd0472e95903c2840",
+      "after": "9cd5b5c6a8d7896acb0eb6fd42a29044ef281f5cbd311fcfd0472e95903c2840",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/content/battles.json",
+      "before": "40731538e3b182b697eceea0eb22554f936aa487648c11262bbe512337f2d5e0",
+      "after": "40731538e3b182b697eceea0eb22554f936aa487648c11262bbe512337f2d5e0",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/content/combatants.json",
+      "before": "e150f761de74111d58649bd238cb267998867b19582235d07dafdbf9a1c26f40",
+      "after": "e150f761de74111d58649bd238cb267998867b19582235d07dafdbf9a1c26f40",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/content/index.json",
+      "before": "a6ae3ad75097e31f89561601750275244829758bb5091b5f139cdad615eac532",
+      "after": "a6ae3ad75097e31f89561601750275244829758bb5091b5f139cdad615eac532",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/content/levels.ts",
+      "before": "51713aa59f006a0af42a47cc2db082febdc08fc4611821fad947c39782112a3a",
+      "after": "51713aa59f006a0af42a47cc2db082febdc08fc4611821fad947c39782112a3a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/content/map-locations.ts",
+      "before": "6fab41d1f42ff2be0c5cc932270e836d9001cd43ce4ead8229d0d88cce4dde2a",
+      "after": "6fab41d1f42ff2be0c5cc932270e836d9001cd43ce4ead8229d0d88cce4dde2a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/content/overrides.json",
+      "before": "217aafe4802dcf42fe637676c6b2864d6434088405ce973d231f011973ae47f3",
+      "after": "217aafe4802dcf42fe637676c6b2864d6434088405ce973d231f011973ae47f3",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/content/prologue.json",
+      "before": "e270bee77596a9662445ce87c9bd09b4be4386780568ae368ff24184683be10a",
+      "after": "e270bee77596a9662445ce87c9bd09b4be4386780568ae368ff24184683be10a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/content/types.ts",
+      "before": "63ad78f5bea78f8a3e984526de9c7391f70814951b34a7c9da3126e18d66113d",
+      "after": "63ad78f5bea78f8a3e984526de9c7391f70814951b34a7c9da3126e18d66113d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/asset-url.ts",
+      "before": "7dab38ac894f503253bf903e9bb9e2fb7586dd13f520ae15571961312b3215be",
+      "after": "7dab38ac894f503253bf903e9bb9e2fb7586dd13f520ae15571961312b3215be",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/audio.ts",
+      "before": "8bd01f608a6200656430974358781f312cbfe8092215abe956d613fc27aeebf1",
+      "after": "8bd01f608a6200656430974358781f312cbfe8092215abe956d613fc27aeebf1",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/actions.ts",
+      "before": "d3459fb50df2274c86932393e927277a24da7959e4a5f530e2f3e36d1232338a",
+      "after": "d3459fb50df2274c86932393e927277a24da7959e4a5f530e2f3e36d1232338a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/ai.ts",
+      "before": "cb33a6d36f913e13e645807d1703959d9427d810f368bb3d70465e24bb12ae33",
+      "after": "cb33a6d36f913e13e645807d1703959d9427d810f368bb3d70465e24bb12ae33",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/battle.ts",
+      "before": "52cb0eb6b67bd185b1fed7a6c1770e245a44a5b7d5ba4475b9d1416bc5f22274",
+      "after": "52cb0eb6b67bd185b1fed7a6c1770e245a44a5b7d5ba4475b9d1416bc5f22274",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/combat.ts",
+      "before": "917d4d1ecf3556131123e2b31003676f7b4876e29b3643cf0c8a77d3d9ab2e5a",
+      "after": "917d4d1ecf3556131123e2b31003676f7b4876e29b3643cf0c8a77d3d9ab2e5a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/controller.ts",
+      "before": "ff0889e3ad911c234509414a7c0eaafb4f9ce26edf61749a0e1d79a73c131916",
+      "after": "ff0889e3ad911c234509414a7c0eaafb4f9ce26edf61749a0e1d79a73c131916",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/debug-state.ts",
+      "before": "73fc23879939265ef59077f0e25edc7802502066278da09b582faa582f3adb43",
+      "after": "73fc23879939265ef59077f0e25edc7802502066278da09b582faa582f3adb43",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/definitions.ts",
+      "before": "e0e496fe6fd4398f924d509a2d6adedd0e80f45703786cbc91d7bf67bd8b1e72",
+      "after": "e0e496fe6fd4398f924d509a2d6adedd0e80f45703786cbc91d7bf67bd8b1e72",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/dice.ts",
+      "before": "3c4321081bb084adea4ae66d7fc12e9b32b888c5c032964ea427278e00575784",
+      "after": "3c4321081bb084adea4ae66d7fc12e9b32b888c5c032964ea427278e00575784",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/format-log.ts",
+      "before": "055c97862e191e09a769ef9e49db695ca438608ead6fd5e9d829711735ec1421",
+      "after": "055c97862e191e09a769ef9e49db695ca438608ead6fd5e9d829711735ec1421",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/grid.ts",
+      "before": "b938669436772846d1b7c0495736c6ea32eedf3a6fda6a0ddf3c8e4247f92e99",
+      "after": "b938669436772846d1b7c0495736c6ea32eedf3a6fda6a0ddf3c8e4247f92e99",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/initiative.ts",
+      "before": "6da232e51088275a55e7fe0af3b751ef0444797927baa4b9ea0a9f92f52ac77c",
+      "after": "6da232e51088275a55e7fe0af3b751ef0444797927baa4b9ea0a9f92f52ac77c",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/inspiration.ts",
+      "before": "602211b122953cd5b8f9b3448f9b7ec94421719dd1e7ccc0036e58e1e1a8e8c6",
+      "after": "602211b122953cd5b8f9b3448f9b7ec94421719dd1e7ccc0036e58e1e1a8e8c6",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/move-path.ts",
+      "before": "101a6c7370c504620854439b306e420ba14a251df766c9c7b10784b937f62a48",
+      "after": "101a6c7370c504620854439b306e420ba14a251df766c9c7b10784b937f62a48",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/movement-preview.ts",
+      "before": "ffc8cdb91de9a96ab429aa8ab43aecfdd5b3f00620b18985f2c7488b12980b83",
+      "after": "ffc8cdb91de9a96ab429aa8ab43aecfdd5b3f00620b18985f2c7488b12980b83",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/movement.ts",
+      "before": "c91927447c1cf727201c74fd8338e30f0c56c67c21a5765ea753619444b8d2ab",
+      "after": "c91927447c1cf727201c74fd8338e30f0c56c67c21a5765ea753619444b8d2ab",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/planning.ts",
+      "before": "ad1cd9a292cef430a6d45b6ce913395de3d22317075b6697fd55c5e1383d3540",
+      "after": "ad1cd9a292cef430a6d45b6ce913395de3d22317075b6697fd55c5e1383d3540",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/render-movement.ts",
+      "before": "be8c3c368526e9bbb169e7058f09be3da78f0acc909464c70c1769781a20be3e",
+      "after": "be8c3c368526e9bbb169e7058f09be3da78f0acc909464c70c1769781a20be3e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/render.ts",
+      "before": "fff775b31c3cf150b334f7f013c3dc99469d39d757ee1828f030b8c17967391d",
+      "after": "fff775b31c3cf150b334f7f013c3dc99469d39d757ee1828f030b8c17967391d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/rules.ts",
+      "before": "d22a33d7faa4d0935c807060415718a523602d0e0fec31ab60a7f7cee7c1007e",
+      "after": "d22a33d7faa4d0935c807060415718a523602d0e0fec31ab60a7f7cee7c1007e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/state-helpers.ts",
+      "before": "ea1d818f2a71e65032cfa88e4c8a7135956f690c06d0709f7bdf44ea89f1d0b4",
+      "after": "ea1d818f2a71e65032cfa88e4c8a7135956f690c06d0709f7bdf44ea89f1d0b4",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/turn.ts",
+      "before": "88449189754f944d729d26180aa853667673739f48e8d1266b2823d1a2456dcb",
+      "after": "88449189754f944d729d26180aa853667673739f48e8d1266b2823d1a2456dcb",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/tutorial.ts",
+      "before": "f6d011591943c830db0dd7eee85989bd2b838f3a30f26fbec5987b3f2c4ebae2",
+      "after": "f6d011591943c830db0dd7eee85989bd2b838f3a30f26fbec5987b3f2c4ebae2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/battle/types.ts",
+      "before": "511737b1daae8cbb792ca2e2ab696a44aa121d2bb6ffaea9900430197223f59c",
+      "after": "511737b1daae8cbb792ca2e2ab696a44aa121d2bb6ffaea9900430197223f59c",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/campaign.ts",
+      "before": "2ac935d70a51a0d7091d34e73f9a43d81abd6867809839ede8abdf69666d6e63",
+      "after": "2ac935d70a51a0d7091d34e73f9a43d81abd6867809839ede8abdf69666d6e63",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/controller.ts",
+      "before": "babd30d268496243a70df32ed33a7606fc6365b348c33ab03aac5808a1ffbe9e",
+      "after": "babd30d268496243a70df32ed33a7606fc6365b348c33ab03aac5808a1ffbe9e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/map-camera.ts",
+      "before": "9f5049d041b8d7ca6d00f44154ef38fa9571de7c7cd5f6141cb992d62c24f583",
+      "after": "9f5049d041b8d7ca6d00f44154ef38fa9571de7c7cd5f6141cb992d62c24f583",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/map-navigation.ts",
+      "before": "65ca4b30d2426d14ec2658998eb485c5b07e3b6037375bf40c1dfd2a187732ec",
+      "after": "65ca4b30d2426d14ec2658998eb485c5b07e3b6037375bf40c1dfd2a187732ec",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/map-popup-layout.ts",
+      "before": "05b5572034a1fa367a3cde410b74f5224e6a874887818f8b24c19b9aa890525f",
+      "after": "05b5572034a1fa367a3cde410b74f5224e6a874887818f8b24c19b9aa890525f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/router.ts",
+      "before": "21d91a2a02a2b25fb8e09e0f780e1b08784f7da9a90c6609ed6b91c09a051ade",
+      "after": "21d91a2a02a2b25fb8e09e0f780e1b08784f7da9a90c6609ed6b91c09a051ade",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/save-format.ts",
+      "before": "71f758363e8ca98bbcfab1df1a872541215c21bbbd607473c1dd52691792dee3",
+      "after": "71f758363e8ca98bbcfab1df1a872541215c21bbbd607473c1dd52691792dee3",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/save-storage.ts",
+      "before": "e2aa4af6f326477fcf899a4fc42082e403563a3e838d0c6212da6497853e6e73",
+      "after": "e2aa4af6f326477fcf899a4fc42082e403563a3e838d0c6212da6497853e6e73",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/save-v2.ts",
+      "before": "7bdf5da886a623fc4c512e388633068f8fb76cac35eee1f453fe6e68cb5aff42",
+      "after": "7bdf5da886a623fc4c512e388633068f8fb76cac35eee1f453fe6e68cb5aff42",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/state.ts",
+      "before": "588e0fe49823b274157a32ab24140956fda61337906af029dbb3e9ecbc98b348",
+      "after": "588e0fe49823b274157a32ab24140956fda61337906af029dbb3e9ecbc98b348",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/story/config.ts",
+      "before": "3329017ede41f8b58f3608cddc6a3f235ec3ddc4194281dfba804236edb6c180",
+      "after": "3329017ede41f8b58f3608cddc6a3f235ec3ddc4194281dfba804236edb6c180",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/story/library.ts",
+      "before": "368e88baa1c2fbc7fca422ef98d8a0603dc0911b37d2508ee5264a25d2d1fd94",
+      "after": "368e88baa1c2fbc7fca422ef98d8a0603dc0911b37d2508ee5264a25d2d1fd94",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/story/player.ts",
+      "before": "c425e0ea61ff4ae1e333cd6bd29050391fb231ae6266583e9bc10e7e06d5bc30",
+      "after": "c425e0ea61ff4ae1e333cd6bd29050391fb231ae6266583e9bc10e7e06d5bc30",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/story/presentation.ts",
+      "before": "56b5264f5261f36dd22ad74e29f41cec4e66a246b96e90b91aa718389d59055a",
+      "after": "56b5264f5261f36dd22ad74e29f41cec4e66a246b96e90b91aa718389d59055a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/story/restore.ts",
+      "before": "e47bcbd897277edd5365e56c96822cafb239bac961aa260f47a8418a9ad673a7",
+      "after": "e47bcbd897277edd5365e56c96822cafb239bac961aa260f47a8418a9ad673a7",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/ui/app-chrome.ts",
+      "before": "b6b8e4acee401eb4e5df4b9bff4311a92097adc1ec00f3bde4963ee0af466686",
+      "after": "b6b8e4acee401eb4e5df4b9bff4311a92097adc1ec00f3bde4963ee0af466686",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/ui/battle-controls.ts",
+      "before": "abbdb3b0690c60ae229b07b45458db6bfe1b609bd69781f9bc88a98edfae1185",
+      "after": "abbdb3b0690c60ae229b07b45458db6bfe1b609bd69781f9bc88a98edfae1185",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/ui/battle-dialogs.ts",
+      "before": "3f753c515a92121d9f73e5efd4cb5d6fb61375306b4185c84777d8b209c2d947",
+      "after": "3f753c515a92121d9f73e5efd4cb5d6fb61375306b4185c84777d8b209c2d947",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/ui/battle-view.ts",
+      "before": "5aab363de1dcdcfec4595d702b47fdce308fed900c79b39cdff73d2371bd700a",
+      "after": "5aab363de1dcdcfec4595d702b47fdce308fed900c79b39cdff73d2371bd700a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/ui/dev-overlay.ts",
+      "before": "d8d3400fd29fd203d55a5b472d7a0a3be08cb56018b8e837da19821bd242a88a",
+      "after": "d8d3400fd29fd203d55a5b472d7a0a3be08cb56018b8e837da19821bd242a88a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/ui/elements.ts",
+      "before": "bc8a78c09cf6de3526ef53a5f52e451eef18fd3d720d316e22d077a3ba792286",
+      "after": "bc8a78c09cf6de3526ef53a5f52e451eef18fd3d720d316e22d077a3ba792286",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/ui/layered-figure.ts",
+      "before": "2aabfb03574facdbbc568123e458bf7da5e850f5064954b10762cc8cf6438e49",
+      "after": "2aabfb03574facdbbc568123e458bf7da5e850f5064954b10762cc8cf6438e49",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/ui/map-popup.ts",
+      "before": "b9c209918e61ab3589e7459231c4046fbe85d2e71f40c9911c8882ff007ca01e",
+      "after": "b9c209918e61ab3589e7459231c4046fbe85d2e71f40c9911c8882ff007ca01e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/ui/map-view.ts",
+      "before": "3fbe6d7b84dd521364fc4d7355c4de5bc557072814f47ba07cf8924b03afcfa5",
+      "after": "3fbe6d7b84dd521364fc4d7355c4de5bc557072814f47ba07cf8924b03afcfa5",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/ui/menu-view.ts",
+      "before": "2719ebfcdb837da7de644535474ae48cdd3c863dda1e1e7ac3fe32397d7696f7",
+      "after": "2719ebfcdb837da7de644535474ae48cdd3c863dda1e1e7ac3fe32397d7696f7",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/ui/movement-controls.ts",
+      "before": "32cc0acc10b119248d65bacdc29ecd683272167489139487782188a004d2a528",
+      "after": "32cc0acc10b119248d65bacdc29ecd683272167489139487782188a004d2a528",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/ui/player-view.ts",
+      "before": "0b5d1dcad1ede0e8a38acb21312ccc07a50ebd3f531cc9887ec857cae51e7355",
+      "after": "0b5d1dcad1ede0e8a38acb21312ccc07a50ebd3f531cc9887ec857cae51e7355",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/ui/portraits.ts",
+      "before": "766adfe6d9af93871076f2b8c404dbed2a0fd1a12a7bbd8f332263c597b9c60c",
+      "after": "766adfe6d9af93871076f2b8c404dbed2a0fd1a12a7bbd8f332263c597b9c60c",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/visual/animation.ts",
+      "before": "3fbb4a4e5d31bf47f9195715e1643d37d0c15b0da16e8ae8fd9a752b5c00b32f",
+      "after": "3fbb4a4e5d31bf47f9195715e1643d37d0c15b0da16e8ae8fd9a752b5c00b32f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/visual/hero.ts",
+      "before": "e6da570cfc844f10ac685a12459d69eeb5bb5b867067f93b5dd446cb02f8d2dc",
+      "after": "e6da570cfc844f10ac685a12459d69eeb5bb5b867067f93b5dd446cb02f8d2dc",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/visual/loading.ts",
+      "before": "7bc32d69b9f85da7975e4b7ee234c6297f11b4feb26dc4e970ab2f25fed6ac15",
+      "after": "7bc32d69b9f85da7975e4b7ee234c6297f11b4feb26dc4e970ab2f25fed6ac15",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/visual/resolve.ts",
+      "before": "30ec872198696e7c6c3bc1ac1a9495628cd0d07cd30422eb7a049f729b1e705d",
+      "after": "30ec872198696e7c6c3bc1ac1a9495628cd0d07cd30422eb7a049f729b1e705d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/game/visual/types.ts",
+      "before": "b757e777605c1a7a2e82ba23f0613bf862b857998510acc8e95aad420fdbbfd1",
+      "after": "b757e777605c1a7a2e82ba23f0613bf862b857998510acc8e95aad420fdbbfd1",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/main.ts",
+      "before": "321441e172ff88c763a1f6c03b552ed218b0cfcac1c161eea0fcffbfcde72e24",
+      "after": "321441e172ff88c763a1f6c03b552ed218b0cfcac1c161eea0fcffbfcde72e24",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/styles/battle.css",
+      "before": "5b6bc8b9dd517aa0612c4576ef7a591272f73dcdd8ffb388ffffc86161fea4f9",
+      "after": "5b6bc8b9dd517aa0612c4576ef7a591272f73dcdd8ffb388ffffc86161fea4f9",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/styles/map.css",
+      "before": "376f87039690603cd844dbb8c8243734d56f5deb4f2d6697d75db514afca7d0d",
+      "after": "376f87039690603cd844dbb8c8243734d56f5deb4f2d6697d75db514afca7d0d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/styles/menu.css",
+      "before": "9df843f54d42b5be2c8a1e28204f5db90a1c72c01778705b4ce43a06fc8adc5f",
+      "after": "9df843f54d42b5be2c8a1e28204f5db90a1c72c01778705b4ce43a06fc8adc5f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/styles/player.css",
+      "before": "489d56e33ea2117790c0439e7ecb5d76f289921ac9e0e78dd8a712a522eae05e",
+      "after": "489d56e33ea2117790c0439e7ecb5d76f289921ac9e0e78dd8a712a522eae05e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/asset-url.test.ts",
+      "before": "118fdb7e0b172f9ac79933e6a7acc8dbc38ee7733457776983f35920cd8c74fb",
+      "after": "118fdb7e0b172f9ac79933e6a7acc8dbc38ee7733457776983f35920cd8c74fb",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/battle-ai.test.ts",
+      "before": "a7ca039cde614a31ca80edf59d26c0d239c41d2e7614e63bbf1ce2b7a96b3fd2",
+      "after": "a7ca039cde614a31ca80edf59d26c0d239c41d2e7614e63bbf1ce2b7a96b3fd2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/battle-flow.test.ts",
+      "before": "4f173f15b87b822b51d67e80ee5bb26b881daa3e2b4bf4d292197c6dfc365627",
+      "after": "4f173f15b87b822b51d67e80ee5bb26b881daa3e2b4bf4d292197c6dfc365627",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/battle-grid.test.ts",
+      "before": "6fe4932afd34f53b409d9e66fa947668f2722680d1d7eb5615183637b6f01785",
+      "after": "6fe4932afd34f53b409d9e66fa947668f2722680d1d7eb5615183637b6f01785",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/battle-helpers.ts",
+      "before": "8dc82234ce7bae8224d0a2b364d109165c58c087cb9b0f19da993e63b5c5b195",
+      "after": "8dc82234ce7bae8224d0a2b364d109165c58c087cb9b0f19da993e63b5c5b195",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/battle-m3.test.ts",
+      "before": "5d0f692bc1be11f181a63cb169f939552b5d381782325f4ace1c78d93e38c834",
+      "after": "5d0f692bc1be11f181a63cb169f939552b5d381782325f4ace1c78d93e38c834",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/battle-rules.test.ts",
+      "before": "f2c36d36e4edd24e5088f7089786a479994aee005304b0f76e1ad80ee909d6b8",
+      "after": "f2c36d36e4edd24e5088f7089786a479994aee005304b0f76e1ad80ee909d6b8",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/battle-seed.test.ts",
+      "before": "089fb84f999f91bc39c10b250f9a885bb608c97cabe8941aa2e8d0cb1933d87b",
+      "after": "089fb84f999f91bc39c10b250f9a885bb608c97cabe8941aa2e8d0cb1933d87b",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/battle-simulation.ts",
+      "before": "aa01670575400ddd0452f7a4dfe56c449294382e1dc70e8936f548f33bb27368",
+      "after": "aa01670575400ddd0452f7a4dfe56c449294382e1dc70e8936f548f33bb27368",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/campaign-helpers.ts",
+      "before": "5044ec370a203db18410acb151bc7f8843dea107285363ecc8078cb4ac808e36",
+      "after": "5044ec370a203db18410acb151bc7f8843dea107285363ecc8078cb4ac808e36",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/campaign.test.ts",
+      "before": "4584d4623ae016e39e69f6d1bc8315e2c7c574f8cf0bd2f1ed35ea9930e56b1a",
+      "after": "4584d4623ae016e39e69f6d1bc8315e2c7c574f8cf0bd2f1ed35ea9930e56b1a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/export-helpers.ts",
+      "before": "afee24c7a6c65ebc743f6856d34918785e2341c2b46837869ad5c8b2d0f2ca3a",
+      "after": "afee24c7a6c65ebc743f6856d34918785e2341c2b46837869ad5c8b2d0f2ca3a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/export.test.ts",
+      "before": "6d38cbf9e5eafcb33b536cdfcad117e83fbb6de5fcc10ce5a65e8aa60d7398fb",
+      "after": "6d38cbf9e5eafcb33b536cdfcad117e83fbb6de5fcc10ce5a65e8aa60d7398fb",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/fixtures/portrait-browser.ts",
+      "before": "fd1bbf28b54115981853850118e9329870e809d724337e9cf376c70cb5597bc3",
+      "after": "fd1bbf28b54115981853850118e9329870e809d724337e9cf376c70cb5597bc3",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/fixtures/reaction-browser.ts",
+      "before": "64e00692b58e932bd4fd75a55d2432505d2410b5ccf962056a81bfca73bf8443",
+      "after": "64e00692b58e932bd4fd75a55d2432505d2410b5ccf962056a81bfca73bf8443",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/fixtures/save-browser.ts",
+      "before": "0e2d6f76a4ddb3f8ef3c4eb8f8170530fb74da1f10520a4fba801588fd29e03d",
+      "after": "0e2d6f76a4ddb3f8ef3c4eb8f8170530fb74da1f10520a4fba801588fd29e03d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/inspiration.test.ts",
+      "before": "ce2f11b27a1cd43ca6e813570f04db089f831c8904a3144d1f84565c9dd82461",
+      "after": "ce2f11b27a1cd43ca6e813570f04db089f831c8904a3144d1f84565c9dd82461",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/m4-helpers.ts",
+      "before": "0ee649ec39fed0f91b9eeeca5c914dc7cf1f67bba6d035bb07d2af6c6d8513c7",
+      "after": "0ee649ec39fed0f91b9eeeca5c914dc7cf1f67bba6d035bb07d2af6c6d8513c7",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/map-flow.test.ts",
+      "before": "dc0365c789651cb4ad4ee15f68aef2ff52c98d08b2f112e50e105197310268c0",
+      "after": "dc0365c789651cb4ad4ee15f68aef2ff52c98d08b2f112e50e105197310268c0",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/map-popup-layout.test.ts",
+      "before": "7f188188d4f229285e3289a383c18d21c250e6b24c02bcd344e22479a0686f8b",
+      "after": "7f188188d4f229285e3289a383c18d21c250e6b24c02bcd344e22479a0686f8b",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/map-save-helpers.ts",
+      "before": "8ef3e6d9f26fac7bd96995ead9b2a3f95c4d935fefa5512bc87893574608e0ed",
+      "after": "8ef3e6d9f26fac7bd96995ead9b2a3f95c4d935fefa5512bc87893574608e0ed",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/map-save-v2.test.ts",
+      "before": "9783ed0ed21eb31e100845e55709e5f310845de0ce53c72950e13ddf6ae04fc2",
+      "after": "9783ed0ed21eb31e100845e55709e5f310845de0ce53c72950e13ddf6ae04fc2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/map-window.test.ts",
+      "before": "1d6a75fe1208d8192dac27fbec2a6213b954cd90a1dc07aa8e65765e5c40a922",
+      "after": "1d6a75fe1208d8192dac27fbec2a6213b954cd90a1dc07aa8e65765e5c40a922",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/movement-helpers.ts",
+      "before": "7acd6cb56746168c79d0b6fde692163bfc4027780cd54359f723d775b8cde48b",
+      "after": "7acd6cb56746168c79d0b6fde692163bfc4027780cd54359f723d775b8cde48b",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/movement-path.test.ts",
+      "before": "f41515972c181c9a8b3210460219d9cfc5555d148286512ec53870bdf1435f33",
+      "after": "f41515972c181c9a8b3210460219d9cfc5555d148286512ec53870bdf1435f33",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/movement-planning.test.ts",
+      "before": "97cdd765de511a3a205a852bf464260a3c2714b84be020e22e8e8f1b974de6fc",
+      "after": "97cdd765de511a3a205a852bf464260a3c2714b84be020e22e8e8f1b974de6fc",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/parser.test.ts",
+      "before": "f81e976fd783bcef32eb46d32add6fc4f8e3ed033e47e4a73273ad0b46c6901e",
+      "after": "f81e976fd783bcef32eb46d32add6fc4f8e3ed033e47e4a73273ad0b46c6901e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/player-helpers.ts",
+      "before": "5c47bc055a79132222827c3ce1cd4ae1ad4b48c2ff320116988dc342c9f200ba",
+      "after": "5c47bc055a79132222827c3ce1cd4ae1ad4b48c2ff320116988dc342c9f200ba",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/player.test.ts",
+      "before": "2b52e684551a015f21c753ace0926fab9b64baacfdf5a76f3da575e98f390ca3",
+      "after": "2b52e684551a015f21c753ace0926fab9b64baacfdf5a76f3da575e98f390ca3",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/restore.test.ts",
+      "before": "776177166abd5979bf3e76a5026f31f5d3bc391ce990485b840108d906262985",
+      "after": "776177166abd5979bf3e76a5026f31f5d3bc391ce990485b840108d906262985",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/router.test.ts",
+      "before": "d4c34b99610dd5d4326c17a3a9473054c73d42f4cbc6a663d33236d0f597d78e",
+      "after": "d4c34b99610dd5d4326c17a3a9473054c73d42f4cbc6a663d33236d0f597d78e",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/save-format.test.ts",
+      "before": "d89a492c5f0ff5f7193ffbccfe7d5f96333f1e7120f5b1124b739b1457544733",
+      "after": "d89a492c5f0ff5f7193ffbccfe7d5f96333f1e7120f5b1124b739b1457544733",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/save-storage.test.ts",
+      "before": "529acab65417948290e49e46d13e4c5ecbfcfbd680fe155e2b31326b0ede06c0",
+      "after": "529acab65417948290e49e46d13e4c5ecbfcfbd680fe155e2b31326b0ede06c0",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/visual-loading.test.ts",
+      "before": "f4b4ea92d4359c27de279e6d9dafcd70fe6f3a6397ec684b7c157300b54a69b2",
+      "after": "f4b4ea92d4359c27de279e6d9dafcd70fe6f3a6397ec684b7c157300b54a69b2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "src/tests/visual-rules.test.ts",
+      "before": "3cf45e1fe445261039ae4e9f7db3df9c5e890c7350bebc37145f89d4ac7c31a2",
+      "after": "3cf45e1fe445261039ae4e9f7db3df9c5e890c7350bebc37145f89d4ac7c31a2",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tests/battle-reaction.html",
+      "before": "f56fff655dfbb20026c21c2eaa58a07cdd0b8178d7c2b678b022039079c2c30d",
+      "after": "f56fff655dfbb20026c21c2eaa58a07cdd0b8178d7c2b678b022039079c2c30d",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tests/battle-scale.html",
+      "before": "806960c9124fc1ea1c7e6f7cee2ae08f9b20b23b03995f71916146759266683b",
+      "after": "806960c9124fc1ea1c7e6f7cee2ae08f9b20b23b03995f71916146759266683b",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tests/portrait-presentation.html",
+      "before": "3f3936f1a0c07e432e56d21f310da879ac8f1fcf2358b4ac50b9f3c3e66f24be",
+      "after": "3f3936f1a0c07e432e56d21f310da879ac8f1fcf2358b4ac50b9f3c3e66f24be",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tests/save-storage.html",
+      "before": "817b3ab3890e4b64008c1fb0ce849f9b2a5522cf63ef9fca663473bd1aaccda6",
+      "after": "817b3ab3890e4b64008c1fb0ce849f9b2a5522cf63ef9fca663473bd1aaccda6",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tools/audit-hero-presentation.mjs",
+      "before": "2717676676fd8528a40d86e7e60a86435a8adbeefa065840635e55d3245e5670",
+      "after": "2717676676fd8528a40d86e7e60a86435a8adbeefa065840635e55d3245e5670",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tools/check-map-window.mjs",
+      "before": "9483ac65cf9aa3db3fe1df0c60751126ab585e001bc92c65b17abbc8e003d33f",
+      "after": "9483ac65cf9aa3db3fe1df0c60751126ab585e001bc92c65b17abbc8e003d33f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tools/export-story.mjs",
+      "before": "a6d5d3a31b8c68505beb69e61ae914a551bafa1f1aca2dd548fbd8ae4c597b2a",
+      "after": "a6d5d3a31b8c68505beb69e61ae914a551bafa1f1aca2dd548fbd8ae4c597b2a",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tools/story-bundle.d.mts",
+      "before": "b4cec81681de27fffab59c27dc28ca195d1a43fad9669f8058e5f7063c9e1180",
+      "after": "b4cec81681de27fffab59c27dc28ca195d1a43fad9669f8058e5f7063c9e1180",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tools/story-bundle.mjs",
+      "before": "e28f6692b51953400f78a6e5d60b876d310f44b8b85faa0c0bec159ff1dc0e02",
+      "after": "e28f6692b51953400f78a6e5d60b876d310f44b8b85faa0c0bec159ff1dc0e02",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tools/story-diagnostics.mjs",
+      "before": "95e1d27faab7010d52e05510822be67fb4124431fad1896ca3206be01483a3f0",
+      "after": "95e1d27faab7010d52e05510822be67fb4124431fad1896ca3206be01483a3f0",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tools/story-normalize.mjs",
+      "before": "edaa763b64b30b6bc7c164c86be0396bff4377665e805a242fffb133f77d93ae",
+      "after": "edaa763b64b30b6bc7c164c86be0396bff4377665e805a242fffb133f77d93ae",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tools/story-parser.d.mts",
+      "before": "60e133d55bfb19dac9bc3f1903176baaaae12a0f0b0e68c5e5e9a54412bbed3f",
+      "after": "60e133d55bfb19dac9bc3f1903176baaaae12a0f0b0e68c5e5e9a54412bbed3f",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tools/story-parser.mjs",
+      "before": "e12373cbd7a745561d0fdade720efbf3e1cb0ea5a3755ba2af180eabbadea5c7",
+      "after": "e12373cbd7a745561d0fdade720efbf3e1cb0ea5a3755ba2af180eabbadea5c7",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tools/story-syntax.mjs",
+      "before": "a62951c391d9386bd97b8fb7afd569007a5290768a48d24b973caa681dbd5234",
+      "after": "a62951c391d9386bd97b8fb7afd569007a5290768a48d24b973caa681dbd5234",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tools/verify-presentation.mjs",
+      "before": "c8e7af1b9b124ebde66d9bd052e55a7ac7b8dfb5ad9c5e63ba0202471a7ebd39",
+      "after": "c8e7af1b9b124ebde66d9bd052e55a7ac7b8dfb5ad9c5e63ba0202471a7ebd39",
+      "unchanged": true,
+      "protected": true
+    },
+    {
+      "path": "tsconfig.json",
+      "before": "d6d4da3f351a3e88f86b05e7c134582cefbb562f161d3e48355e75b97e6f0462",
+      "after": "d6d4da3f351a3e88f86b05e7c134582cefbb562f161d3e48355e75b97e6f0462",
+      "unchanged": true,
+      "protected": true
+    }
+  ]
+}

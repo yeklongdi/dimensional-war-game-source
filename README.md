@@ -8,7 +8,7 @@
 
 最终类型检查、27个测试文件409项测试及生产构建通过，正式子路径构建及33张资源字节核对通过。实际浏览器覆盖五组合浅深背景／眨眼／口型、动作三关键帧、P001→P002正常流程、A005→A007受控检查点流程、地图返回、刷新继续、快速更新与故障回退；本轮未重新手动通关七关或两战。逐项结果、截图、19姿态／24表情的剩余清单及保护哈希见[本阶段独立验收](docs/hero-visual-samples-verification.md)。
 
-本地开发：[五组合样板页](http://127.0.0.1:43856/tests/portrait-presentation.html)；正式子路径的本地生产预览：[从菜单游玩](http://127.0.0.1:43857/dimensional-war-game-source/?seed=0)。这两个地址仅在对应服务器运行时有效，重启方法见验收记录。五组合制作阶段按当时要求只本地交付；2026-10-23维护者另行授权同步GitHub，本次同步及Pages结果单独记录在[发布记录](docs/hero-samples-github-release.md)，历史验收不改写。
+本地开发：[五组合样板页](http://127.0.0.1:43856/tests/portrait-presentation.html)；正式子路径的本地生产预览：[从菜单游玩](http://127.0.0.1:43857/dimensional-war-game-source/?seed=0)。这两个地址仅在对应服务器运行时有效，重启方法见验收记录。五组合制作阶段按当时要求只本地交付；2026-10-23维护者另行授权同步GitHub，**最新五组合已推送并成功部署到下方正式网站**。[对应Actions](https://github.com/yeklongdi/dimensional-war-game-source/actions/runs/39903115088)与[发布记录](docs/hero-samples-github-release.md)保留实际结果，历史验收不改写。
 
 ## 已发布：地图铺满窗口与地点选关浮窗
 
@@ -42,7 +42,7 @@
 
 源码、正式内容和部署统一在[本仓库](https://github.com/yeklongdi/dimensional-war-game-source)。推送 `main` 后，GitHub Actions 自动执行 `npm ci`、类型检查、全部测试与项目路径构建，再发布 `dist/` 到 GitHub Pages；Pull Request 只做检查与构建。无需跨仓库同步或跨仓库凭据。此前的私有工程仓库和单独网页仓库在迁移验证后删除，旧网页地址不再作为正式入口。
 
-2026-10-21旧站部署检查为20个测试文件、292项通过；其版本与验收证据保留在[历史部署记录](docs/github-pages-deployment.md)，其中旧仓库地址和跨仓库更新步骤已由本次[单仓库部署流程](docs/repository-consolidation.md)替代。2026-10-22本轮推送后工作流build与deploy均成功，已在正式地址复核1920×900与900×620下的铺满、地点浮窗、进入首关与返回地图，见[本轮线上验收](docs/map-window-verification.md#发布与线上验收)。当前完整工程为24个测试文件、356项；分层男高美术仍未通过，不因本次发布而启用。
+2026-10-21旧站部署检查为20个测试文件、292项通过；其版本与验收证据保留在[历史部署记录](docs/github-pages-deployment.md)，其中旧仓库地址和跨仓库更新步骤已由[单仓库部署流程](docs/repository-consolidation.md)替代。2026-10-22地图浮窗推送后工作流build与deploy均成功，已在正式地址复核1920×900与900×620下的铺满、地点浮窗、进入首关与返回地图，见[当时线上验收](docs/map-window-verification.md#发布与线上验收)。当时工程为24个测试文件356项，v1／v2男高美术未通过；2026-10-23最新v3五组合已批准并发布，当前为27个测试文件409项。
 
 localhost 与正式网站的存档相互独立，不会自动迁移或跨设备同步。两首 WAV 保留原音质，较大的音乐文件可能使首次加载变慢。
 

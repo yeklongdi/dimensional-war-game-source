@@ -1,0 +1,18 @@
+{
+  "url": "https://yeklongdi.github.io/dimensional-war-game-source/",
+  "before": {
+    "save": "最近存档：仓库区事件 · 仓库区外围·第一次战斗 · 2026/10/22 18:46:19",
+    "scripts": [
+      "https://yeklongdi.github.io/dimensional-war-game-source/assets/index-D0U3i-j7.js"
+    ]
+  },
+  "after": {
+    "save": "最近存档：仓库区事件 · 仓库区外围·第一次战斗 · 2026/10/22 18:46:19",
+    "scripts": [
+      "https://yeklongdi.github.io/dimensional-war-game-source/assets/index-IDeKdHp1.js"
+    ]
+  },
+  "saveFeedbackUnchanged": true,
+  "errors": [],
+  "scope": "正式地址匿名入口与刷新；原有P006检查点未清理，未声称重新线上通关"
+}
