@@ -79,7 +79,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "e165b6c9ddf401c146ea0a54656faf1ebd42e9677fa7a58cbd67e7d8496db674"
+      "sha256": "04ed414f706c980688b19575408ac417b371924a2cac713f35b7daf77da41f0b"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -379,7 +379,7 @@
     },
     {
       "path": "docs/skip-forward-verification.md",
-      "sha256": "08c8241ced524e206a46597826d79c3e1809b1d38d3adc1fcbc0d79b95dbe40e"
+      "sha256": "554689d55a5b7dd21ba65f3c2ed239f83e76d97d702978e70bcf382b558407a3"
     },
     {
       "path": "docs/verification/a007-choice.png",

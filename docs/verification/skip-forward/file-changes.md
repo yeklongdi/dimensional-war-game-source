@@ -41,6 +41,11 @@
 
 ## 新增验收证据
 
+- docs/verification/skip-forward/actions-feature.json
+- docs/verification/skip-forward/online-fast-forward.jpg
+- docs/verification/skip-forward/online-http.json
+- docs/verification/skip-forward/online-level-one-complete.jpg
+- docs/verification/skip-forward/release.json
 - docs/verification/skip-forward/after.json
 - docs/verification/skip-forward/before.json
 - docs/verification/skip-forward/browser-route.json

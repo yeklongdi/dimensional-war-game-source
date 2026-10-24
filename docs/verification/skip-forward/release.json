@@ -1,0 +1,41 @@
+{
+  "url": "https://yeklongdi.github.io/dimensional-war-game-source/",
+  "branch": "main",
+  "repository": "yeklongdi/dimensional-war-game-source",
+  "visibility": "PUBLIC",
+  "contentCommit": "7060492172e48cae29c4b10ec1b69ea26860b5fc",
+  "actions": {
+    "url": "https://github.com/yeklongdi/dimensional-war-game-source/actions/runs/40071535915",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "localChecks": {
+    "typecheck": "pass",
+    "testFiles": 36,
+    "tests": 523,
+    "rootBuild": "pass",
+    "baseBuild": "pass",
+    "builtScript": "index-TOV-zCU1.js",
+    "builtStyle": "index-D_w9lRjR.css"
+  },
+  "online": {
+    "httpFiles": 88,
+    "failedFiles": 0,
+    "script": "/dimensional-war-game-source/assets/index-TOV-zCU1.js",
+    "consoleErrors": [],
+    "fastForwardToLevelOneComplete": true
+  },
+  "controlled": {
+    "steps": 8,
+    "realDefeat": true,
+    "lethalDamage": 10,
+    "postBattleScene": "p007",
+    "gateRejected": "自动档损坏；有效手动槽仍可读取，原槽未覆盖。",
+    "gateAccepted": "自动档：警报下的同行者·第一名干部到场"
+  },
+  "protected": {
+    "files": 758,
+    "violations": 0
+  },
+  "note": "本轮未使用维护者正式域名存档演示跳过；正式域名浏览器检查使用独立临时浏览器配置，仅本地开发归档成档不影响他人。"
+}

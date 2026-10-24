@@ -48,4 +48,10 @@ ESC置顶菜单、停止不续跑、教学战前停点、两战跳过、A007四�
 
 正式站沿用https://yeklongdi.github.io/dimensional-war-game-source/，main正常提交推送，检查Actions与真实产物后才记录成功。不创建Sites或其他平台，不修改仓库可见性。正式旧档只检查不覆盖，不用于演示跳过。
 
-当前剩余浏览器与发布结果待追加；本段不预先宣称部署成功。
+内容提交`7060492`，[Actions 40071535915](https://github.com/yeklongdi/dimensional-war-game-source/actions/runs/40071535915)构建与部署成功。线上88个发布文件全部HTTP 200，SHA256与本地产物逐一相同（见online-http.json）；正式站脚本为`/dimensional-war-game-source/assets/index-TOV-zCU1.js`，与本轮正式base产物一致，控制台无error。
+
+正式域名用独立临时浏览器配置实际走了一遍：地图→奶奶家关卡卡片→ESC出现置顶【跳过】→点击后逐句快进并显示“快进中·点击停止”，到本关结束自动停下并回到地图、进度1/9。未加载或覆盖维护者真实存档，也未用它演示跳过。回执汇总见release.json。
+
+![正式站快进中](verification/skip-forward/online-fast-forward.jpg)
+
+本轮实际未覆盖：超宽屏与移动端布局未测；未在浏览器里手动实打赢两场战斗后再点跳过（跳过与正常胜利的等价性由自动测试对照真实胜利返回状态）；C004之后未逐关实走到C013，第九关完成以新档全流程一次连续通过为准。
