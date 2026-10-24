@@ -8,7 +8,7 @@ import { appStep, freshApp, navigate, play, reachApp, sampleV2 } from './m4-help
 
 const presentation = (state: GameState) => ({ actors: state.actors, backgroundId: state.backgroundId, bgmId: state.bgmId, sceneTitle: state.sceneTitle, time: state.time });
 describe('M4 场景开头恢复与静默演出重建', () => {
-  it('25个主场景的入口演出与真实顺序推进一致', () => {
+  it('可达的38个主场景及回班分支入口演出与真实推进一致', () => {
     let game = freshApp(), last = ''; const scenes: string[] = [];
     for (let step = 0; step < 1600; step++) {
       if (game.screen === 'story' && game.sceneId !== last) {
@@ -16,10 +16,10 @@ describe('M4 场景开头恢复与静默演出重建', () => {
         expect(presentation(restored), game.sceneId).toEqual(presentation(game));
         expect(restored.branch).toBeUndefined(); scenes.push(game.sceneId); last = game.sceneId;
       }
-      if (game.screen === 'map' && game.progress!.completedLevelIds.length === 7) break;
+      if (game.waiting?.kind === 'blocked-call') break;
       game = appStep(game);
     }
-    expect(scenes).toHaveLength(25);
+    expect(new Set(scenes).size).toBe(39);
   });
   it('A007/A010无SHOW时沿用素材及位置，恢复不增加过去的SET或CALL副作用', () => {
     const base = emptyState(); base.campaignSeed = 0;

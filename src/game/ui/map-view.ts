@@ -1,4 +1,4 @@
-import { currentLevel, progressEdges, visibleLevels } from '../../content/levels.js';
+import { currentLevel, levels, progressEdges, visibleLevels } from '../../content/levels.js';
 import { locationById, mapLocations } from '../../content/map-locations.js';
 import { coverScale, mapSize, projectLocation } from '../map-camera.js';
 import type { LocationId } from '../../content/map-locations.js';
@@ -125,7 +125,7 @@ export class MapView {
     Object.assign(this.stage.dataset, { screen: 'map', completedLevels: p.completedLevelIds.join(','), currentLevel: current?.id ?? '',
       selectedLocation: map.selected, popupOpen: String(map.popupOpen), camera: JSON.stringify(camera), viewport: JSON.stringify(map.viewport),
       visibleNodes: String(locations.size), sliceComplete: String(!current) });
-    this.subtitle.textContent = current ? `主线进度 ${p.completedLevelIds.length} / 7 · ${current.name}` : '垂直切片已完成 · 7 / 7';
+    this.subtitle.textContent = current ? `主线进度 ${p.completedLevelIds.length} / ${levels.length} · ${current.name}` : `垂直切片已完成 · ${levels.length} / ${levels.length}`;
     const nodesKey = `${p.completedLevelIds.join(',')}:${state.run}`;
     if (this.nodesKey !== nodesKey) {
       this.nodesKey = nodesKey; this.pins.replaceChildren(); this.drawLines(state);

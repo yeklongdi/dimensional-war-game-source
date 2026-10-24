@@ -1,0 +1,1866 @@
+[
+  {
+    "option": {
+      "label": "char_male_high_normal · 躺在床上、刚醒／困倦、慌张",
+      "value": "0"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "困倦、慌张",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-bed-sleepy.png"
+          }
+        ],
+        "pose": "躺在床上、刚醒",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 躺在床上、刚醒／自信、急着出门",
+      "value": "2"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "自信、急着出门",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-bed-awake.png"
+          }
+        ],
+        "pose": "躺在床上、刚醒",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 飞奔、手里攥着水煮蛋／着急",
+      "value": "4"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "着急",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-worried.png"
+          }
+        ],
+        "pose": "飞奔、手里攥着水煮蛋",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_thief_smile · 从路口拐出／意外",
+      "value": "5"
+    },
+    "actors": [
+      {
+        "actor": "怪盗",
+        "expression": "意外",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/thief-daily-alert.png"
+          }
+        ],
+        "pose": "从路口拐出",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 叼着面包、跑进校门／匆忙",
+      "value": "6"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "匆忙",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-worried.png"
+          }
+        ],
+        "pose": "叼着面包、跑进校门",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 站在讲台前、拿着白板笔／自信、兴奋",
+      "value": "11"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "自信、兴奋",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-excited.png"
+          }
+        ],
+        "pose": "站在讲台前、拿着白板笔",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_thief_smile · 托腮看向男高／有趣、微笑",
+      "value": "13"
+    },
+    "actors": [
+      {
+        "actor": "怪盗",
+        "expression": "有趣、微笑",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/thief-daily-smile.png"
+          }
+        ],
+        "pose": "托腮看向男高",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 拎着书包准备落座／期待",
+      "value": "15"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "期待",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-excited.png"
+          }
+        ],
+        "pose": "拎着书包准备落座",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 准备伸懒腰／疑惑",
+      "value": "18"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "疑惑",
+        "frame": "layered",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/body-prepare.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/arm-left-prepare.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/arm-right-prepare.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/head.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/eyes-puzzled.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/eyes-puzzled-half.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/eyes-puzzled-closed.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/mouth-puzzled.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/mouth-puzzled-speech.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/hair-front.png"
+          }
+        ],
+        "pose": "准备伸懒腰",
+        "visual": "layered"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 自然跟随／好奇、友善",
+      "value": "20"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "好奇、友善",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-friendly.png"
+          }
+        ],
+        "pose": "自然跟随",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 停步观察围栏／好奇",
+      "value": "23"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "好奇",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-friendly.png"
+          }
+        ],
+        "pose": "停步观察围栏",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 推开铁皮小门、准备进入／兴奋、好奇",
+      "value": "25"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "兴奋、好奇",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-excited.png"
+          }
+        ],
+        "pose": "推开铁皮小门、准备进入",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 推开铁皮小门、准备进入／被吸引、犹豫",
+      "value": "29"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "被吸引、犹豫",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-alert.png"
+          }
+        ],
+        "pose": "推开铁皮小门、准备进入",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 持剑、准备保护虚拟主播／震惊、警戒",
+      "value": "30"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "震惊、警戒",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/hero-sword-guard.png"
+          }
+        ],
+        "pose": "持剑、准备保护虚拟主播",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 战斗后疲惫、扶住虚拟主播／麻烦、担心",
+      "value": "33"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "麻烦、担心",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-worried.png"
+          }
+        ],
+        "pose": "战斗后疲惫、扶住虚拟主播",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 抱着虚拟主播、疲惫／尴尬、担心",
+      "value": "35"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "尴尬、担心",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-worried.png"
+          }
+        ],
+        "pose": "抱着虚拟主播、疲惫",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 站在病床边／担心，松一口气",
+      "value": "36"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "担心，松一口气",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-worried.png"
+          }
+        ],
+        "pose": "站在病床边",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 取剑，抖开旧布包裹／犹豫，决定",
+      "value": "38"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "犹豫，决定",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-alert.png"
+          }
+        ],
+        "pose": "取剑，抖开旧布包裹",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 携带行李、站立／紧张、期待",
+      "value": "39"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "紧张、期待",
+        "frame": "layered",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/body-luggage.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/luggage-grip.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/head.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/eyes-nervous.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/eyes-nervous-half.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/eyes-nervous-closed.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/mouth-nervous.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/mouth-nervous-speech.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/hair-front.png"
+          }
+        ],
+        "pose": "携带行李、站立",
+        "visual": "layered"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 携带行李、站立／放松、微笑",
+      "value": "41"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "放松、微笑",
+        "frame": "layered",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/body-luggage.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/luggage-grip.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/head.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/eyes-relaxed.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/eyes-relaxed-half.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/eyes-relaxed-closed.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/mouth-relaxed.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/mouth-relaxed-speech.png"
+          },
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-layered-v3/hair-front.png"
+          }
+        ],
+        "pose": "携带行李、站立",
+        "visual": "layered"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 坐在沙发上／得意",
+      "value": "42"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "得意",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/hero-seated-proud.png"
+          }
+        ],
+        "pose": "坐在沙发上",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 坐在沙发上／热血、得意",
+      "value": "44"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "热血、得意",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/hero-seated-proud.png"
+          }
+        ],
+        "pose": "坐在沙发上",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 整理行李／怀念、轻松",
+      "value": "45"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "怀念、轻松",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-friendly.png"
+          }
+        ],
+        "pose": "整理行李",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 整理行李／轻松、准备出门",
+      "value": "47"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "轻松、准备出门",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-friendly.png"
+          }
+        ],
+        "pose": "整理行李",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 散步、观察四周／好奇",
+      "value": "48"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "好奇",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-friendly.png"
+          }
+        ],
+        "pose": "散步、观察四周",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_thief_masked_black_placeholder · 被逼到墙角、试图逃跑／",
+      "value": "51"
+    },
+    "actors": [
+      {
+        "actor": "蒙面人",
+        "expression": "",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/thief-action.png"
+          }
+        ],
+        "pose": "被逼到墙角、试图逃跑",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 散步、观察四周／认真、出头",
+      "value": "52"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "认真、出头",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-alert.png"
+          }
+        ],
+        "pose": "散步、观察四周",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 战斗后喘息／疑惑、警惕",
+      "value": "53"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "疑惑、警惕",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-alert.png"
+          }
+        ],
+        "pose": "战斗后喘息",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_thief_masked_black_placeholder · 战斗后站稳、观察男高、准备离开／",
+      "value": "54"
+    },
+    "actors": [
+      {
+        "actor": "蒙面人",
+        "expression": "",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/thief-action.png"
+          }
+        ],
+        "pose": "战斗后站稳、观察男高、准备离开",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 刚跑回家、呼吸急促／装作平静",
+      "value": "55"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "装作平静",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-friendly.png"
+          }
+        ],
+        "pose": "刚跑回家、呼吸急促",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 躺在床上、望向天花板／期待、认真",
+      "value": "57"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "期待、认真",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-bed-awake.png"
+          }
+        ],
+        "pose": "躺在床上、望向天花板",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 坐在餐桌旁，校服袖口挽起／轻松，偶尔走神",
+      "value": "58"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "轻松，偶尔走神",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/hero-seated-calm.png"
+          }
+        ],
+        "pose": "坐在餐桌旁，校服袖口挽起",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 坐在床沿，解开旧布／疑惑，疲惫",
+      "value": "60"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "疑惑，疲惫",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/hero-seated-alert.png"
+          }
+        ],
+        "pose": "坐在床沿，解开旧布",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 重新坐在饭桌旁／茫然，逐渐警觉",
+      "value": "61"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "茫然，逐渐警觉",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/hero-seated-alert.png"
+          }
+        ],
+        "pose": "重新坐在饭桌旁",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 站在椅子旁，望向雾中／警惕",
+      "value": "63"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "警惕",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-alert.png"
+          }
+        ],
+        "pose": "站在椅子旁，望向雾中",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 推门，扶住门框保持站立／愤怒，困倦",
+      "value": "64"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "愤怒，困倦",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-angry.png"
+          }
+        ],
+        "pose": "推门，扶住门框保持站立",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 扶着门框，握住发热的手／痛苦，重新集中精神",
+      "value": "65"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "痛苦，重新集中精神",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-pained.png"
+          }
+        ],
+        "pose": "扶着门框，握住发热的手",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 扶住门框，抬头望向剑光／挣扎，求生",
+      "value": "66"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "挣扎，求生",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-pained.png"
+          }
+        ],
+        "pose": "扶住门框，抬头望向剑光",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_link_silent_placeholder · 持剑，扶住男高／专注",
+      "value": "67"
+    },
+    "actors": [
+      {
+        "actor": "金发青年",
+        "expression": "专注",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/link-guard.png"
+          }
+        ],
+        "pose": "持剑，扶住男高",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 勉强站稳，跟住青年／震惊",
+      "value": "68"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "震惊",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-surprised.png"
+          }
+        ],
+        "pose": "勉强站稳，跟住青年",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_link_silent_placeholder · 站在男高身前，举剑／冷静，警戒",
+      "value": "69"
+    },
+    "actors": [
+      {
+        "actor": "金发青年",
+        "expression": "冷静，警戒",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/link-guard.png"
+          }
+        ],
+        "pose": "站在男高身前，举剑",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 从床上坐起，扶着被子／惊魂未定，疑惑",
+      "value": "70"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "惊魂未定，疑惑",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/hero-seated-alert.png"
+          }
+        ],
+        "pose": "从床上坐起，扶着被子",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_link_silent_placeholder · 站在床边，持大师之剑／观察，克制",
+      "value": "71"
+    },
+    "actors": [
+      {
+        "actor": "金发青年",
+        "expression": "观察，克制",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/link-calm.png"
+          }
+        ],
+        "pose": "站在床边，持大师之剑",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 坐在床沿，侧耳倾听／疑惑",
+      "value": "72"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "疑惑",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/hero-seated-alert.png"
+          }
+        ],
+        "pose": "坐在床沿，侧耳倾听",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_link_silent_placeholder · 站在床边，转向窗户／警戒",
+      "value": "73"
+    },
+    "actors": [
+      {
+        "actor": "金发青年",
+        "expression": "警戒",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/link-guard.png"
+          }
+        ],
+        "pose": "站在床边，转向窗户",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 站在窗边，松开窗帘／戒备",
+      "value": "74"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "戒备",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-alert.png"
+          }
+        ],
+        "pose": "站在窗边，松开窗帘",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_link_silent_placeholder · 站在窗侧，避开灯光／警戒",
+      "value": "75"
+    },
+    "actors": [
+      {
+        "actor": "金发青年",
+        "expression": "警戒",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/link-guard.png"
+          }
+        ],
+        "pose": "站在窗侧，避开灯光",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 披上外套，与队员保持距离／戒备",
+      "value": "76"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "戒备",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-alert.png"
+          }
+        ],
+        "pose": "披上外套，与队员保持距离",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_link_silent_placeholder · 跟在男高侧后方／观察",
+      "value": "77"
+    },
+    "actors": [
+      {
+        "actor": "金发青年",
+        "expression": "观察",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/link-calm.png"
+          }
+        ],
+        "pose": "跟在男高侧后方",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 摆开徒手架势，靠近墙侧／紧张，集中",
+      "value": "79"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "紧张，集中",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-alert.png"
+          }
+        ],
+        "pose": "摆开徒手架势，靠近墙侧",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_link_silent_placeholder · 拔剑护住主路方向／冷静",
+      "value": "80"
+    },
+    "actors": [
+      {
+        "actor": "金发青年",
+        "expression": "冷静",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/link-guard.png"
+          }
+        ],
+        "pose": "拔剑护住主路方向",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 站在墙侧，调整呼吸／警惕",
+      "value": "82"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "警惕",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-alert.png"
+          }
+        ],
+        "pose": "站在墙侧，调整呼吸",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_link_silent_placeholder · 向前半步，将男高护在身后／戒备",
+      "value": "83"
+    },
+    "actors": [
+      {
+        "actor": "金发青年",
+        "expression": "戒备",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/link-guard.png"
+          }
+        ],
+        "pose": "向前半步，将男高护在身后",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_deoxys_normal_placeholder · 悬浮，触臂展开／锁定目标",
+      "value": "85"
+    },
+    "actors": [
+      {
+        "actor": "不明生物·普通型",
+        "expression": "锁定目标",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/deoxys-normal.png"
+          }
+        ],
+        "pose": "悬浮，触臂展开",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 靠墙移动，避开主战线／紧张，随后惊讶",
+      "value": "86"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "紧张，随后惊讶",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-surprised.png"
+          }
+        ],
+        "pose": "靠墙移动，避开主战线",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_link_silent_placeholder · 持剑突进，连续截断对手攻势／专注",
+      "value": "87"
+    },
+    "actors": [
+      {
+        "actor": "金发青年",
+        "expression": "专注",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/link-guard.png"
+          }
+        ],
+        "pose": "持剑突进，连续截断对手攻势",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 望向新出现的敌人／惊讶",
+      "value": "88"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "惊讶",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-surprised.png"
+          }
+        ],
+        "pose": "望向新出现的敌人",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_link_silent_placeholder · 收剑，重新判断站位／戒备",
+      "value": "89"
+    },
+    "actors": [
+      {
+        "actor": "金发青年",
+        "expression": "戒备",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/link-guard.png"
+          }
+        ],
+        "pose": "收剑，重新判断站位",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_deoxys_defense_placeholder · 展开屏障，护住普通型／稳定",
+      "value": "90"
+    },
+    "actors": [
+      {
+        "actor": "不明生物·防御型",
+        "expression": "稳定",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/deoxys-defense.png"
+          }
+        ],
+        "pose": "展开屏障，护住普通型",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 迎击绕后队员，观察出口／吃力，清醒",
+      "value": "92"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "吃力，清醒",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-tired.png"
+          }
+        ],
+        "pose": "迎击绕后队员，观察出口",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_link_silent_placeholder · 挡开正面攻势，回护男高／集中",
+      "value": "93"
+    },
+    "actors": [
+      {
+        "actor": "金发青年",
+        "expression": "集中",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/link-guard.png"
+          }
+        ],
+        "pose": "挡开正面攻势，回护男高",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 随青年移动，寻找空隙／焦急",
+      "value": "94"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "焦急",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-worried.png"
+          }
+        ],
+        "pose": "随青年移动，寻找空隙",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_link_silent_placeholder · 边退边挡住攻击／警戒",
+      "value": "95"
+    },
+    "actors": [
+      {
+        "actor": "金发青年",
+        "expression": "警戒",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/link-guard.png"
+          }
+        ],
+        "pose": "边退边挡住攻击",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_thief_masked_black_placeholder · 从墙侧探身，伸手示意／从容",
+      "value": "96"
+    },
+    "actors": [
+      {
+        "actor": "蒙面人",
+        "expression": "从容",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/thief-action.png"
+          }
+        ],
+        "pose": "从墙侧探身，伸手示意",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_saber_traveler_placeholder · 守在通道出口，握剑戒备／沉着",
+      "value": "97"
+    },
+    "actors": [
+      {
+        "actor": "女剑士",
+        "expression": "沉着",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/saber-calm.png"
+          }
+        ],
+        "pose": "守在通道出口，握剑戒备",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 扶墙调整呼吸，望向蒙面人／疑惑",
+      "value": "98"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "疑惑",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-friendly.png"
+          }
+        ],
+        "pose": "扶墙调整呼吸，望向蒙面人",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_link_silent_placeholder · 守在巷口附近／观察",
+      "value": "99"
+    },
+    "actors": [
+      {
+        "actor": "金发青年",
+        "expression": "观察",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/link-calm.png"
+          }
+        ],
+        "pose": "守在巷口附近",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_thief_masked_black_placeholder · 抬手准备摘下面罩／轻松",
+      "value": "100"
+    },
+    "actors": [
+      {
+        "actor": "蒙面人",
+        "expression": "轻松",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/thief-action.png"
+          }
+        ],
+        "pose": "抬手准备摘下面罩",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_saber_traveler_placeholder · 站在外侧留意来路／警戒",
+      "value": "101"
+    },
+    "actors": [
+      {
+        "actor": "女剑士",
+        "expression": "警戒",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/saber-alert.png"
+          }
+        ],
+        "pose": "站在外侧留意来路",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_thief_smile · 收起面罩／带笑，观察男高",
+      "value": "102"
+    },
+    "actors": [
+      {
+        "actor": "怪盗",
+        "expression": "带笑，观察男高",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/thief-unmasked-action-smile.png"
+          }
+        ],
+        "pose": "收起面罩",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 站直，认真追问／困惑，警惕",
+      "value": "103"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "困惑，警惕",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-alert.png"
+          }
+        ],
+        "pose": "站直，认真追问",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_thief_smile · 靠墙简短解释／认真",
+      "value": "104"
+    },
+    "actors": [
+      {
+        "actor": "怪盗",
+        "expression": "认真",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/thief-unmasked-action-serious.png"
+          }
+        ],
+        "pose": "靠墙简短解释",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_link_silent_placeholder · 留意巷口与男高／安静",
+      "value": "105"
+    },
+    "actors": [
+      {
+        "actor": "金发青年",
+        "expression": "安静",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/link-calm.png"
+          }
+        ],
+        "pose": "留意巷口与男高",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_saber_traveler_placeholder · 观察外侧，偶尔看向两人／耐心有限",
+      "value": "106"
+    },
+    "actors": [
+      {
+        "actor": "女剑士",
+        "expression": "耐心有限",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/saber-impatient.png"
+          }
+        ],
+        "pose": "观察外侧，偶尔看向两人",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 看向女剑士／认真",
+      "value": "107"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "认真",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-alert.png"
+          }
+        ],
+        "pose": "看向女剑士",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_thief_smile · 侧身介绍同伴／郑重",
+      "value": "108"
+    },
+    "actors": [
+      {
+        "actor": "怪盗",
+        "expression": "郑重",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/thief-unmasked-action-serious.png"
+          }
+        ],
+        "pose": "侧身介绍同伴",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_saber_traveler_placeholder · 走近半步，仍留意来路／沉着",
+      "value": "109"
+    },
+    "actors": [
+      {
+        "actor": "女剑士",
+        "expression": "沉着",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/saber-calm.png"
+          }
+        ],
+        "pose": "走近半步，仍留意来路",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_saber_traveler_placeholder · 向男高颔首／平静",
+      "value": "110"
+    },
+    "actors": [
+      {
+        "actor": "女剑士",
+        "expression": "平静",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/saber-calm.png"
+          }
+        ],
+        "pose": "向男高颔首",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 望向回家方向／担忧，坚定",
+      "value": "111"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "担忧，坚定",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-alert.png"
+          }
+        ],
+        "pose": "望向回家方向",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_thief_smile · 放低声音，提出约定／认真",
+      "value": "112"
+    },
+    "actors": [
+      {
+        "actor": "怪盗",
+        "expression": "认真",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/thief-unmasked-action-serious.png"
+          }
+        ],
+        "pose": "放低声音，提出约定",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_link_silent_placeholder · 站到男高身边／专注",
+      "value": "113"
+    },
+    "actors": [
+      {
+        "actor": "金发青年",
+        "expression": "专注",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/link-guard.png"
+          }
+        ],
+        "pose": "站到男高身边",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_saber_traveler_placeholder · 准备带路离开／警戒",
+      "value": "114"
+    },
+    "actors": [
+      {
+        "actor": "女剑士",
+        "expression": "警戒",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/saber-alert.png"
+          }
+        ],
+        "pose": "准备带路离开",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_male_high_normal · 整理外套，将包好的剑交回青年／紧张，疲惫",
+      "value": "115"
+    },
+    "actors": [
+      {
+        "actor": "男高",
+        "expression": "紧张，疲惫",
+        "frame": "bust",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/hero-half-v1/hero-half-tired.png"
+          }
+        ],
+        "pose": "整理外套，将包好的剑交回青年",
+        "visual": "static"
+      }
+    ]
+  },
+  {
+    "option": {
+      "label": "char_link_silent_placeholder · 将旧布裹住的剑垂在身侧／安静",
+      "value": "116"
+    },
+    "actors": [
+      {
+        "actor": "金发青年",
+        "expression": "安静",
+        "frame": "waist",
+        "images": [
+          {
+            "loaded": true,
+            "src": "/assets/portraits/prologue-v2/link-wrapped.png"
+          }
+        ],
+        "pose": "将旧布裹住的剑垂在身侧",
+        "visual": "static"
+      }
+    ]
+  }
+]

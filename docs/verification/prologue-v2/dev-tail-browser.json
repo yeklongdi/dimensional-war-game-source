@@ -1,0 +1,169 @@
+[
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c011",
+    "text": "男高看了看自己的同伴，忍住了立刻照着问职阶的冲动。眼下，对方仍会在他靠近巷口时，先一步看清外面的情况。",
+    "token": "103:78"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c012",
+    "speaker": "男高",
+    "text": "要是我不想争那个愿望呢？能不能就当没这回事？",
+    "token": "103:79"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c012",
+    "text": "怪盗没有马上回答。他朝刚才交战的方向看了一眼。",
+    "token": "103:80"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c012",
+    "speaker": "怪盗",
+    "text": "我也希望能这么简单。但你也见到了，他们会拦你，会动手。你不想争，不代表他们会放过你。",
+    "token": "103:81"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c012",
+    "text": "男高沉默下来。他想起出门前没有亮灯的房间，手慢慢攥紧，又松开。",
+    "token": "103:82"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c012",
+    "speaker": "男高",
+    "text": "愿望的事先放一边。我得先确认奶奶没事。",
+    "token": "103:83"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c012",
+    "speaker": "怪盗",
+    "text": "那今晚先到这里。明天学校见。",
+    "token": "103:84"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c012",
+    "speaker": "男高",
+    "text": "你还有东西没说清。",
+    "token": "103:85"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c012",
+    "speaker": "怪盗",
+    "text": "有。我也有很多事要问你。等找个不会随时冒出追兵的地方，我们互相讲。",
+    "token": "103:86"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c012",
+    "speaker": "男高",
+    "text": "行。先交换情报。别再让我什么都不知道就冲进去。",
+    "token": "103:87"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c012",
+    "speaker": "怪盗",
+    "text": "这句我记住了。",
+    "token": "103:88"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c012",
+    "text": "Saber先探出巷口，确认另一侧道路没有被堵住。怪盗指了指与原路不同的方向，带着他们再绕过一段街道。",
+    "token": "103:89"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c012",
+    "text": "到了可以分开的地方，双方停步观察。确定没有人尾随后，男高与金发青年才转向回家的路。",
+    "token": "103:90"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c013",
+    "text": "回到老住宅区后，两人又停了一次。青年沿街口看过，确认没有尾随的身影，才陪男高走向院门。",
+    "token": "103:91"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c013",
+    "text": "男高一路上已经把旧布重新裹在剑外。敲门前，他拉平被扯皱的外套，刚把手抬起来，门就开了。",
+    "token": "103:92"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c013",
+    "speaker": "奶奶",
+    "text": "大半夜又往外跑。刚才外面那么响，你去哪儿了？",
+    "token": "103:93"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c013",
+    "speaker": "男高",
+    "text": "我到路口看了一下。后来绕了点路……您没事吧？",
+    "token": "103:94"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c013",
+    "speaker": "奶奶",
+    "text": "我能有什么事。倒是你——",
+    "token": "103:95"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c013",
+    "text": "她的目光越过男高，落在门外陌生的青年身上。男高赶紧侧开一步。",
+    "token": "103:96"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c013",
+    "speaker": "男高",
+    "text": "这是我朋友。刚才碰上，他今晚不太方便回去，能在我房间住一下吗？",
+    "token": "103:97"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c013",
+    "text": "话说到后面，男高自己也觉得含糊。青年却像听懂了眼前的处境，收好手里的长包，朝奶奶认真地欠身。",
+    "token": "103:98"
+  },
+  {
+    "complete": "true",
+    "kind": "text",
+    "scene": "c013",
+    "speaker": "奶奶",
+    "text": "先进来。站在门口吹风像什么话。",
+    "token": "103:99"
+  }
+]

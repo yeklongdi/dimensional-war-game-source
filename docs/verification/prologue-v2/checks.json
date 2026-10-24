@@ -1,0 +1,67 @@
+{
+  "protectedFiles": 65,
+  "protectedChanged": 0,
+  "snapshots": 4,
+  "historicalJsonChanged": 0,
+  "deterministic": true,
+  "exportRuns": [
+    {
+      "stdout": "序幕（一）：搬来太阳市的前一天 9 场景 / 序幕（二）：转学生来到太阳市第一高中 22 场景 / 序幕（三）：床边的勇者 8 场景 / 序幕（四）：警报下的同行者 13 场景 / warning 297 条\nA007 4 个选项 / battle calls：battle_prologue_tutorial、battle_black_humanoid、battle_prologue4_patrol、battle_prologue4_deoxys_encounter\n四份新快照与四份旧 source 导出前后 SHA-256 一致；问题清单已更新。",
+      "hashes": {
+        "src/content/prologue-v2/prologue.json": "0a14bee8263c26b9805201a50eed84b8c14f12e47550b5ea3ad982fbc8d3c77f",
+        "src/content/prologue-v2/act1.json": "30adc1baf4b7170e95cb19c938509031d6a5117052f7f0f24521349e8aff8f5c",
+        "src/content/prologue-v2/prologue_3.json": "0e48c11e0230202d9b2f2fae2e21f51e4703cffca270ad84c7d6ac5d3c7cbb0d",
+        "src/content/prologue-v2/prologue_4.json": "f26b6704714c736814c056822076844d97c87d0ba21369d7b87fe64584b7d3bd",
+        "src/content/prologue-v2/index.json": "18ddc78b1e464202c0b0d30b3775c5733162977d2940e4e00c2241f4949a7aaa",
+        "docs/open-questions.md": "90d9cacc13632463c3db8cfe61012502c551537d1621fdec835bd9fcc01f2f73"
+      }
+    },
+    {
+      "stdout": "序幕（一）：搬来太阳市的前一天 9 场景 / 序幕（二）：转学生来到太阳市第一高中 22 场景 / 序幕（三）：床边的勇者 8 场景 / 序幕（四）：警报下的同行者 13 场景 / warning 297 条\nA007 4 个选项 / battle calls：battle_prologue_tutorial、battle_black_humanoid、battle_prologue4_patrol、battle_prologue4_deoxys_encounter\n四份新快照与四份旧 source 导出前后 SHA-256 一致；问题清单已更新。",
+      "hashes": {
+        "src/content/prologue-v2/prologue.json": "0a14bee8263c26b9805201a50eed84b8c14f12e47550b5ea3ad982fbc8d3c77f",
+        "src/content/prologue-v2/act1.json": "30adc1baf4b7170e95cb19c938509031d6a5117052f7f0f24521349e8aff8f5c",
+        "src/content/prologue-v2/prologue_3.json": "0e48c11e0230202d9b2f2fae2e21f51e4703cffca270ad84c7d6ac5d3c7cbb0d",
+        "src/content/prologue-v2/prologue_4.json": "f26b6704714c736814c056822076844d97c87d0ba21369d7b87fe64584b7d3bd",
+        "src/content/prologue-v2/index.json": "18ddc78b1e464202c0b0d30b3775c5733162977d2940e4e00c2241f4949a7aaa",
+        "docs/open-questions.md": "90d9cacc13632463c3db8cfe61012502c551537d1621fdec835bd9fcc01f2f73"
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "id": "prologue",
+      "count": 9
+    },
+    {
+      "id": "act1",
+      "count": 22
+    },
+    {
+      "id": "prologue_3",
+      "count": 8
+    },
+    {
+      "id": "prologue_4",
+      "count": 13
+    }
+  ],
+  "mainScenes": 48,
+  "unfinishedScenes": 4,
+  "a007Options": 4,
+  "a007Enabled": [
+    2
+  ],
+  "calls": [
+    "battle_black_humanoid",
+    "battle_prologue4_deoxys_encounter",
+    "battle_prologue4_patrol",
+    "battle_prologue_tutorial",
+    "event_master_sword_vision",
+    "random_rd3"
+  ],
+  "warnings": 297,
+  "portraits": 28,
+  "rgba": true,
+  "codeLineLimit": true
+}

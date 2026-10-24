@@ -1,6 +1,7 @@
 import overridesJson from '../../content/overrides.json';
 import audioMapJson from '../../content/audio-map.json';
 import { assetBindings } from '../asset-url.js';
+import { staticBindings } from '../visual/static-portraits.js';
 
 type Overrides = {
   displayNames: Record<string, Record<string, string>>;
@@ -10,7 +11,7 @@ type Overrides = {
   stageNotes: Record<string, Record<string, string[]>>;
   choiceReturns: { actId: string; sceneId: string; optionIndex: number; metaNodeIndex: number }[];
 };
-export const overrides: Overrides = { ...overridesJson, portraits: assetBindings(overridesJson.portraits) };
+export const overrides: Overrides = { ...overridesJson, portraits: { ...assetBindings(overridesJson.portraits), ...staticBindings } };
 export const bgmBindings: Readonly<Record<string, string>> = assetBindings(audioMapJson);
 export const sfxBindings: Readonly<Record<string, string>> = {};
 export const backgroundBindings: Readonly<Record<string, string>> = {};

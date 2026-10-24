@@ -1,0 +1,954 @@
+[
+  {
+    "asset": "char_male_high_normal",
+    "pose": "躺在床上、刚醒",
+    "expression": "困倦、慌张",
+    "scenes": [
+      "a001"
+    ]
+  },
+  {
+    "asset": "char_grandmother_warm",
+    "pose": "端着早饭、站在门口",
+    "expression": "催促、关心",
+    "scenes": [
+      "a001"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "躺在床上、刚醒",
+    "expression": "自信、急着出门",
+    "scenes": [
+      "a001"
+    ]
+  },
+  {
+    "asset": "char_virtual_streamer_shy",
+    "pose": "背着书包、站在隔壁门口",
+    "expression": "疑惑",
+    "scenes": [
+      "a001"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "飞奔、手里攥着水煮蛋",
+    "expression": "着急",
+    "scenes": [
+      "a002"
+    ]
+  },
+  {
+    "asset": "char_thief_smile",
+    "pose": "从路口拐出",
+    "expression": "意外",
+    "scenes": [
+      "a002"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "叼着面包、跑进校门",
+    "expression": "匆忙",
+    "scenes": [
+      "a003"
+    ]
+  },
+  {
+    "asset": "char_teacher_placeholder",
+    "pose": "追着男高喊话",
+    "expression": "严肃、无奈",
+    "scenes": [
+      "a003"
+    ]
+  },
+  {
+    "asset": "char_villain_calm",
+    "pose": "靠在栏杆边、拿着饮料",
+    "expression": "玩味",
+    "scenes": [
+      "a003",
+      "a006"
+    ]
+  },
+  {
+    "asset": "char_idol_neutral",
+    "pose": "站在反派身旁",
+    "expression": "疑惑、不安",
+    "scenes": [
+      "a003"
+    ]
+  },
+  {
+    "asset": "prop_dark_god_crystal_placeholder",
+    "pose": "",
+    "expression": "",
+    "scenes": [
+      "a003",
+      "p009"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "站在讲台前、拿着白板笔",
+    "expression": "自信、兴奋",
+    "scenes": [
+      "a004"
+    ]
+  },
+  {
+    "asset": "char_teacher_placeholder",
+    "pose": "站在教室门口",
+    "expression": "平静",
+    "scenes": [
+      "a004"
+    ]
+  },
+  {
+    "asset": "char_thief_smile",
+    "pose": "托腮看向男高",
+    "expression": "有趣、微笑",
+    "scenes": [
+      "a004",
+      "a005",
+      "a006"
+    ]
+  },
+  {
+    "asset": "char_teacher_placeholder",
+    "pose": "指向空座位",
+    "expression": "平静",
+    "scenes": [
+      "a005"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "拎着书包准备落座",
+    "expression": "期待",
+    "scenes": [
+      "a005"
+    ]
+  },
+  {
+    "asset": "char_virtual_streamer_shy",
+    "pose": "背着书包、站在隔壁门口",
+    "expression": "紧张",
+    "scenes": [
+      "a005"
+    ]
+  },
+  {
+    "asset": "char_virtual_streamer_shy",
+    "pose": "背着书包、站在隔壁门口",
+    "expression": "紧张、躲避视线",
+    "scenes": [
+      "a005",
+      "a006"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "准备伸懒腰",
+    "expression": "疑惑",
+    "scenes": [
+      "a006"
+    ]
+  },
+  {
+    "asset": "char_teacher_placeholder",
+    "pose": "朝男高招手",
+    "expression": "平常",
+    "scenes": [
+      "a006"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "自然跟随",
+    "expression": "好奇、友善",
+    "scenes": [
+      "a008"
+    ]
+  },
+  {
+    "asset": "char_virtual_streamer_shy",
+    "pose": "低头带路、与男高保持距离",
+    "expression": "紧张",
+    "scenes": [
+      "a008"
+    ]
+  },
+  {
+    "asset": "char_virtual_streamer_shy",
+    "pose": "低头带路、与男高保持距离",
+    "expression": "害羞、耳朵发红",
+    "scenes": [
+      "a008"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "停步观察围栏",
+    "expression": "好奇",
+    "scenes": [
+      "a009"
+    ]
+  },
+  {
+    "asset": "char_virtual_streamer_shy",
+    "pose": "紧张、放慢脚步",
+    "expression": "不安",
+    "scenes": [
+      "a009"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "推开铁皮小门、准备进入",
+    "expression": "兴奋、好奇",
+    "scenes": [
+      "a011"
+    ]
+  },
+  {
+    "asset": "char_virtual_streamer_shy",
+    "pose": "慌张跟随",
+    "expression": "害怕、焦虑",
+    "scenes": [
+      "a011"
+    ]
+  },
+  {
+    "asset": "prop_master_sword_corrupted_placeholder",
+    "pose": "悬浮、下半段被黑绿色污秽覆盖",
+    "expression": "",
+    "scenes": [
+      "a011"
+    ]
+  },
+  {
+    "asset": "char_virtual_streamer_shy",
+    "pose": "慌张跟随",
+    "expression": "恐惧",
+    "scenes": [
+      "a011"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "推开铁皮小门、准备进入",
+    "expression": "被吸引、犹豫",
+    "scenes": [
+      "a011"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "持剑、准备保护虚拟主播",
+    "expression": "震惊、警戒",
+    "scenes": [
+      "a013"
+    ]
+  },
+  {
+    "asset": "char_virtual_streamer_shy",
+    "pose": "趴在坑边、即将失去意识",
+    "expression": "恐惧",
+    "scenes": [
+      "a013"
+    ]
+  },
+  {
+    "asset": "char_black_humanoid_placeholder",
+    "pose": "由污秽聚合、站起",
+    "expression": "",
+    "scenes": [
+      "a013"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "战斗后疲惫、扶住虚拟主播",
+    "expression": "麻烦、担心",
+    "scenes": [
+      "a014"
+    ]
+  },
+  {
+    "asset": "char_virtual_streamer_shy",
+    "pose": "昏迷",
+    "expression": "恐惧",
+    "scenes": [
+      "a014",
+      "a015"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "抱着虚拟主播、疲惫",
+    "expression": "尴尬、担心",
+    "scenes": [
+      "a015"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "站在病床边",
+    "expression": "担心，松一口气",
+    "scenes": [
+      "a015_recovery"
+    ]
+  },
+  {
+    "asset": "char_virtual_streamer_shy",
+    "pose": "躺在病床上，逐渐醒来",
+    "expression": "疲惫，疑惑",
+    "scenes": [
+      "a015_recovery"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "取剑，抖开旧布包裹",
+    "expression": "犹豫，决定",
+    "scenes": [
+      "a015_retrieve"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "携带行李、站立",
+    "expression": "紧张、期待",
+    "scenes": [
+      "p001"
+    ]
+  },
+  {
+    "asset": "char_grandmother_warm",
+    "pose": "手持抹布、站在门内",
+    "expression": "惊喜、眼眶泛红",
+    "scenes": [
+      "p002"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "携带行李、站立",
+    "expression": "放松、微笑",
+    "scenes": [
+      "p002"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "坐在沙发上",
+    "expression": "得意",
+    "scenes": [
+      "p003"
+    ]
+  },
+  {
+    "asset": "char_grandmother_warm",
+    "pose": "坐在男高旁边、仔细打量",
+    "expression": "欣慰、感伤",
+    "scenes": [
+      "p003"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "坐在沙发上",
+    "expression": "热血、得意",
+    "scenes": [
+      "p003"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "整理行李",
+    "expression": "怀念、轻松",
+    "scenes": [
+      "p004"
+    ]
+  },
+  {
+    "asset": "char_grandmother_warm",
+    "pose": "坐在男高旁边、仔细打量",
+    "expression": "关心",
+    "scenes": [
+      "p004"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "整理行李",
+    "expression": "轻松、准备出门",
+    "scenes": [
+      "p004"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "散步、观察四周",
+    "expression": "好奇",
+    "scenes": [
+      "p005"
+    ]
+  },
+  {
+    "asset": "char_organization_member_placeholder",
+    "pose": "持金属装置、逼近",
+    "expression": "",
+    "scenes": [
+      "p005"
+    ]
+  },
+  {
+    "asset": "char_organization_member_placeholder",
+    "pose": "封锁退路",
+    "expression": "",
+    "scenes": [
+      "p005"
+    ]
+  },
+  {
+    "asset": "char_thief_masked_black_placeholder",
+    "pose": "被逼到墙角、试图逃跑",
+    "expression": "",
+    "scenes": [
+      "p005"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "散步、观察四周",
+    "expression": "认真、出头",
+    "scenes": [
+      "p005"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "战斗后喘息",
+    "expression": "疑惑、警惕",
+    "scenes": [
+      "p007"
+    ]
+  },
+  {
+    "asset": "char_thief_masked_black_placeholder",
+    "pose": "战斗后站稳、观察男高、准备离开",
+    "expression": "",
+    "scenes": [
+      "p007"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "刚跑回家、呼吸急促",
+    "expression": "装作平静",
+    "scenes": [
+      "p008"
+    ]
+  },
+  {
+    "asset": "char_grandmother_warm",
+    "pose": "坐在藤椅上等待",
+    "expression": "关心",
+    "scenes": [
+      "p008"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "躺在床上、望向天花板",
+    "expression": "期待、认真",
+    "scenes": [
+      "p009"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "坐在餐桌旁，校服袖口挽起",
+    "expression": "轻松，偶尔走神",
+    "scenes": [
+      "b001"
+    ]
+  },
+  {
+    "asset": "char_grandmother_warm",
+    "pose": "给男高夹菜",
+    "expression": "关切，微笑",
+    "scenes": [
+      "b001"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "坐在床沿，解开旧布",
+    "expression": "疑惑，疲惫",
+    "scenes": [
+      "b002"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "重新坐在饭桌旁",
+    "expression": "茫然，逐渐警觉",
+    "scenes": [
+      "b003"
+    ]
+  },
+  {
+    "asset": "char_grandmother_warm",
+    "pose": "坐在桌对面，动作重复",
+    "expression": "笑容固定",
+    "scenes": [
+      "b003"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "站在椅子旁，望向雾中",
+    "expression": "警惕",
+    "scenes": [
+      "b004"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "推门，扶住门框保持站立",
+    "expression": "愤怒，困倦",
+    "scenes": [
+      "b005"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "扶着门框，握住发热的手",
+    "expression": "痛苦，重新集中精神",
+    "scenes": [
+      "b006"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "扶住门框，抬头望向剑光",
+    "expression": "挣扎，求生",
+    "scenes": [
+      "b006"
+    ]
+  },
+  {
+    "asset": "char_link_silent_placeholder",
+    "pose": "持剑，扶住男高",
+    "expression": "专注",
+    "scenes": [
+      "b006"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "勉强站稳，跟住青年",
+    "expression": "震惊",
+    "scenes": [
+      "b007"
+    ]
+  },
+  {
+    "asset": "char_link_silent_placeholder",
+    "pose": "站在男高身前，举剑",
+    "expression": "冷静，警戒",
+    "scenes": [
+      "b007"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "从床上坐起，扶着被子",
+    "expression": "惊魂未定，疑惑",
+    "scenes": [
+      "b008"
+    ]
+  },
+  {
+    "asset": "char_link_silent_placeholder",
+    "pose": "站在床边，持大师之剑",
+    "expression": "观察，克制",
+    "scenes": [
+      "b008"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "坐在床沿，侧耳倾听",
+    "expression": "疑惑",
+    "scenes": [
+      "c001"
+    ]
+  },
+  {
+    "asset": "char_link_silent_placeholder",
+    "pose": "站在床边，转向窗户",
+    "expression": "警戒",
+    "scenes": [
+      "c001"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "站在窗边，松开窗帘",
+    "expression": "戒备",
+    "scenes": [
+      "c001"
+    ]
+  },
+  {
+    "asset": "char_link_silent_placeholder",
+    "pose": "站在窗侧，避开灯光",
+    "expression": "警戒",
+    "scenes": [
+      "c001"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "披上外套，与队员保持距离",
+    "expression": "戒备",
+    "scenes": [
+      "c002"
+    ]
+  },
+  {
+    "asset": "char_link_silent_placeholder",
+    "pose": "跟在男高侧后方",
+    "expression": "观察",
+    "scenes": [
+      "c002"
+    ]
+  },
+  {
+    "asset": "char_organization_member_placeholder",
+    "pose": "拿着探测装置，抬头打量",
+    "expression": "怀疑",
+    "scenes": [
+      "c002"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "摆开徒手架势，靠近墙侧",
+    "expression": "紧张，集中",
+    "scenes": [
+      "c003"
+    ]
+  },
+  {
+    "asset": "char_link_silent_placeholder",
+    "pose": "拔剑护住主路方向",
+    "expression": "冷静",
+    "scenes": [
+      "c003"
+    ]
+  },
+  {
+    "asset": "char_organization_member_placeholder",
+    "pose": "招呼同伴围上",
+    "expression": "急躁",
+    "scenes": [
+      "c003"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "站在墙侧，调整呼吸",
+    "expression": "警惕",
+    "scenes": [
+      "c004"
+    ]
+  },
+  {
+    "asset": "char_link_silent_placeholder",
+    "pose": "向前半步，将男高护在身后",
+    "expression": "戒备",
+    "scenes": [
+      "c004"
+    ]
+  },
+  {
+    "asset": "char_organization_officer_a_placeholder",
+    "pose": "停步，观察两人",
+    "expression": "克制，审视",
+    "scenes": [
+      "c004"
+    ]
+  },
+  {
+    "asset": "char_deoxys_normal_placeholder",
+    "pose": "悬浮，触臂展开",
+    "expression": "锁定目标",
+    "scenes": [
+      "c004",
+      "c005",
+      "c006"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "靠墙移动，避开主战线",
+    "expression": "紧张，随后惊讶",
+    "scenes": [
+      "c005"
+    ]
+  },
+  {
+    "asset": "char_link_silent_placeholder",
+    "pose": "持剑突进，连续截断对手攻势",
+    "expression": "专注",
+    "scenes": [
+      "c005"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "望向新出现的敌人",
+    "expression": "惊讶",
+    "scenes": [
+      "c006"
+    ]
+  },
+  {
+    "asset": "char_link_silent_placeholder",
+    "pose": "收剑，重新判断站位",
+    "expression": "戒备",
+    "scenes": [
+      "c006"
+    ]
+  },
+  {
+    "asset": "char_deoxys_defense_placeholder",
+    "pose": "展开屏障，护住普通型",
+    "expression": "稳定",
+    "scenes": [
+      "c006"
+    ]
+  },
+  {
+    "asset": "char_organization_officer_b_placeholder",
+    "pose": "走入侧巷口，指挥部队",
+    "expression": "冷静",
+    "scenes": [
+      "c006"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "迎击绕后队员，观察出口",
+    "expression": "吃力，清醒",
+    "scenes": [
+      "c007"
+    ]
+  },
+  {
+    "asset": "char_link_silent_placeholder",
+    "pose": "挡开正面攻势，回护男高",
+    "expression": "集中",
+    "scenes": [
+      "c007"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "随青年移动，寻找空隙",
+    "expression": "焦急",
+    "scenes": [
+      "c008"
+    ]
+  },
+  {
+    "asset": "char_link_silent_placeholder",
+    "pose": "边退边挡住攻击",
+    "expression": "警戒",
+    "scenes": [
+      "c008"
+    ]
+  },
+  {
+    "asset": "char_thief_masked_black_placeholder",
+    "pose": "从墙侧探身，伸手示意",
+    "expression": "从容",
+    "scenes": [
+      "c008"
+    ]
+  },
+  {
+    "asset": "char_saber_traveler_placeholder",
+    "pose": "守在通道出口，握剑戒备",
+    "expression": "沉着",
+    "scenes": [
+      "c008"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "扶墙调整呼吸，望向蒙面人",
+    "expression": "疑惑",
+    "scenes": [
+      "c009"
+    ]
+  },
+  {
+    "asset": "char_link_silent_placeholder",
+    "pose": "守在巷口附近",
+    "expression": "观察",
+    "scenes": [
+      "c009"
+    ]
+  },
+  {
+    "asset": "char_thief_masked_black_placeholder",
+    "pose": "抬手准备摘下面罩",
+    "expression": "轻松",
+    "scenes": [
+      "c009"
+    ]
+  },
+  {
+    "asset": "char_saber_traveler_placeholder",
+    "pose": "站在外侧留意来路",
+    "expression": "警戒",
+    "scenes": [
+      "c009"
+    ]
+  },
+  {
+    "asset": "char_thief_smile",
+    "pose": "收起面罩",
+    "expression": "带笑，观察男高",
+    "scenes": [
+      "c009"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "站直，认真追问",
+    "expression": "困惑，警惕",
+    "scenes": [
+      "c010"
+    ]
+  },
+  {
+    "asset": "char_thief_smile",
+    "pose": "靠墙简短解释",
+    "expression": "认真",
+    "scenes": [
+      "c010"
+    ]
+  },
+  {
+    "asset": "char_link_silent_placeholder",
+    "pose": "留意巷口与男高",
+    "expression": "安静",
+    "scenes": [
+      "c010"
+    ]
+  },
+  {
+    "asset": "char_saber_traveler_placeholder",
+    "pose": "观察外侧，偶尔看向两人",
+    "expression": "耐心有限",
+    "scenes": [
+      "c010"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "看向女剑士",
+    "expression": "认真",
+    "scenes": [
+      "c011"
+    ]
+  },
+  {
+    "asset": "char_thief_smile",
+    "pose": "侧身介绍同伴",
+    "expression": "郑重",
+    "scenes": [
+      "c011"
+    ]
+  },
+  {
+    "asset": "char_saber_traveler_placeholder",
+    "pose": "走近半步，仍留意来路",
+    "expression": "沉着",
+    "scenes": [
+      "c011"
+    ]
+  },
+  {
+    "asset": "char_saber_traveler_placeholder",
+    "pose": "向男高颔首",
+    "expression": "平静",
+    "scenes": [
+      "c011"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "望向回家方向",
+    "expression": "担忧，坚定",
+    "scenes": [
+      "c012"
+    ]
+  },
+  {
+    "asset": "char_thief_smile",
+    "pose": "放低声音，提出约定",
+    "expression": "认真",
+    "scenes": [
+      "c012"
+    ]
+  },
+  {
+    "asset": "char_link_silent_placeholder",
+    "pose": "站到男高身边",
+    "expression": "专注",
+    "scenes": [
+      "c012"
+    ]
+  },
+  {
+    "asset": "char_saber_traveler_placeholder",
+    "pose": "准备带路离开",
+    "expression": "警戒",
+    "scenes": [
+      "c012"
+    ]
+  },
+  {
+    "asset": "char_male_high_normal",
+    "pose": "整理外套，将包好的剑交回青年",
+    "expression": "紧张，疲惫",
+    "scenes": [
+      "c013"
+    ]
+  },
+  {
+    "asset": "char_link_silent_placeholder",
+    "pose": "将旧布裹住的剑垂在身侧",
+    "expression": "安静",
+    "scenes": [
+      "c013"
+    ]
+  },
+  {
+    "asset": "char_grandmother_warm",
+    "pose": "站在门里，披着外衣",
+    "expression": "担忧",
+    "scenes": [
+      "c013"
+    ]
+  }
+]

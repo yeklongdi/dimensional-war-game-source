@@ -13,16 +13,16 @@ export function policyResolution(sceneId, token) {
     return '2026-10-18 用户确认：本句按制作备注隐藏。';
   }
   if (sceneId === 'a007' || sceneId.startsWith('a007_')) {
-    return '任务书 §4.5：本切片仅启用选项 2；其他路线及 random_rd3 不执行。用户确认三个未完成场景完整保留并计入 19 场。';
+    return '用户确认：A007仅启用选项2；其他路线及random_rd3不执行，未完成分支保留。新版序幕（二）为18主场景及4未完成分支。';
   }
   if (sceneId === 'a010' && raw.includes('【暂无线性后果】')) {
-    return '任务书 §4.5：M1 在选择“回班上”后单独显示此原文，再返回选项；导出仍保留 meta 和原始 JUMP。';
+    return '任务书 §16：按新版原文进入A010_RETURN_CLASS，播放已有正文后停在未完成分支；系统提供重新选择，不执行旧版自动返回循环。';
   }
   if (sceneId === 'a011' && raw.includes('【原文只有')) return '原文已有单线强制事件；保留制作备注，不增加分支。';
   if (sceneId === 'a014' && raw.includes('【待确认】')) {
     return '任务书 §5.6 / §5.9 已规定战斗数值、胜负和重试；战斗奖励尚未规定，M0 不补写。';
   }
-  if (sceneId === 'a016' && raw.includes('【待确认】')) return '任务书 §1.1：第一幕结束后返回关卡选择，本切片到此结束。';
+  if (sceneId === 'a016' && raw.includes('【待确认】')) return '任务书 §16：序幕（二）完成后返回地图并开放序幕（三）；本轮正式流程在C003未接战斗处阻断。';
   return '';
 }
 
@@ -51,21 +51,26 @@ export function createCollector(actId, sourceFile) {
 
 export function renderQuestions(acts, warnings) {
   const lines = [
-    '# M0 内容问题与制作备注', '',
+    '# 内容问题与制作备注', '',
     '> 由导出脚本覆盖生成；人工决定请记录到 decisions.md。原文与 source/ 均不改写。', '',
     `场景：${acts.map(act => `${act.title} ${act.scenes.length}`).join(' / ')}。`, '',
     `warning 共 **${warnings.length} 条**；同一原文位置的多个类别合并计一条。`, '',
     '条目包括已由任务书确定处理方式的制作备注；“已有处理依据”不会从原文或清单中删除。', '',
     '## 优先待决事项', '',
   ];
+  if (acts.some(act => act.id === 'prologue_4')) {
+    lines.push('- **序幕（四）两场战斗待制作**：C003的battle_prologue4_patrol及C005的battle_prologue4_deoxys_encounter只保留调用并阻断，不能跳过或伪造胜利。分阶段目标、失败与数值仍需确认。',
+      '- **人物素材覆盖（已确认范围）**：用户决定有图按图、从者据官方图参考制作，且再次确认其他占位不用改。首批18张加男高10张，共28张；已定形象84组状态有半身表情显示。完整动作缺口见art/prologue-v2/README.md及art/hero-half-v1/README.md，不自行设计无图人物外貌。',
+      '- **未完成分支**：A007仅主播路线启用；A010返回班级分支播放已有文本后停止，不开放序幕（三）。新稿取代旧的自动返回选项约定。');
+  }
   if (warnings.some(item => item.categories.includes('pending_call') && item.raw.includes('event_master_sword_vision'))) {
     lines.push('- **A012 幻象演出如何绑定**：`event_master_sword_vision` 与 `CG: cg_master_sword_vision_placeholder` 尚无执行约定及绑定素材；请确定沿用占位演出，还是提供对应 CG / 音效映射。已有幻象旁白完整保留。');
   }
   if (warnings.some(item => item.categories.includes('placeholder'))) {
-    lines.push('- **占位素材的绑定清单**：背景、立绘、BGM、SFX 仍含占位标记；请确定哪些素材 id 对应现有文件。任务书已允许缺失时占位，M0 不复制媒体；同学甲、同学乙也缺少立绘声明。');
+    lines.push('- **占位素材的绑定清单**：原文仍有背景、立绘、BGM、SFX占位标记；运行绑定见工程配置，不改原文标记。缺失项按任务书§16显式占位；同学甲乙与一般学生本轮保留场外对白。');
   }
   if (warnings.some(item => item.categories.includes('variable'))) {
-    lines.push('- **正式变量名与重复事件如何对应**：当前 flag 按幕、场景、SET 序号生成；A010 与 A014 都有“增加男高对学校地下异常的调查进度”。请确定后续是否对应同一事件及正式命名。本切片依任务书只记录布尔值，不进行数值计算。');
+    lines.push('- **旧稿待定变量与重复事件如何对应**：待定SET按幕、场景、序号生成flag；A010与A014都记录地下异常调查，后续是否合为事件仍待确认。新版明确布尔SET保留原变量名和值，本轮不自行改成数值系统。');
   }
   for (const act of acts) {
     lines.push('', `## ${act.title}（${act.id}）`, '');

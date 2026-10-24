@@ -9,6 +9,7 @@ import type { VaultRequest } from './vault-storage.js';
 import { defaults, validSettings } from './settings.js';
 import type { Settings, SettingsRead } from './settings.js';
 import type { Confirmation, RuntimeAction, SystemAction, SystemState } from './system-types.js';
+import { checkpointScene } from './story/chapter-policy.js';
 
 export type RuntimeTransition = Omit<AppTransition, 'saves'> & { vaults?: VaultRequest[]; settingsWrite?: { revision: number; data: Settings } };
 export type GameAction = AppAction | RuntimeAction;
@@ -35,7 +36,7 @@ export function hydrateRuntime(seed: number, read: VaultRead, settings: Settings
 }
 export function progressSnapshot(state: GameState, now: number): SaveV2 {
   const p = state.progress!;
-  const checkpoint = state.activeLevelId ? { kind: 'level' as const, levelId: state.activeLevelId, sceneId: state.sceneId }
+  const checkpoint = state.activeLevelId ? { kind: 'level' as const, levelId: state.activeLevelId, sceneId: checkpointScene(state) }
     : (p.draft ?? p.checkpoint)?.checkpoint ?? { kind: 'map' as const };
   return { version: 2, flags: { ...state.flags }, completedLevelIds: [...p.completedLevelIds],
     checkpoint: normalizedCheckpoint(checkpoint, p.completedLevelIds), savedAt: now };
@@ -71,7 +72,7 @@ function result(state: GameState, action: Extract<RuntimeAction, { type: 'vault-
     }
     return { state: { ...state, system: updated }, effects: [] };
   }
-  const nextSystem: SystemState = { ...s, read: { kind: 'valid', data: outcome.data }, pending: undefined,
+  const nextSystem: SystemState = { ...s, read: { kind: 'valid', data: outcome.data, legacy: s.read.legacy }, pending: undefined,
     message: '', uiRevision: s.uiRevision + Number(!automatic) };
   if (op.kind === 'activate' || op.kind === 'migrate') {
     const auto = readSlot(outcome.data.auto, library, outcome.data.revision);
@@ -127,7 +128,7 @@ function systemAction(state: GameState, a: SystemAction, library: StoryLibrary, 
     const snapshot: SaveV2 = { version: 2, flags: {}, completedLevelIds: [], checkpoint: { kind: 'map' }, savedAt: now };
     const confirmation: Confirmation = { kind: 'new', slot: -1, expected: s.read.kind === 'valid' ? fingerprint(s.read.data.auto) : 'null', snapshot,
       replaceRaw: s.read.kind === 'invalid' ? s.read.raw : undefined };
-    if (s.read.kind === 'empty') return request(state, confirmation, newId);
+    if (s.read.kind === 'empty' && !s.read.legacy?.length) return request(state, confirmation, newId);
     return { state: { ...state, system: { ...s, panel: 'confirm', confirmation, uiRevision: s.uiRevision + 1 } }, effects: [] };
   }
   if (a.intent === 'pick-load' || a.intent === 'pick-save') {

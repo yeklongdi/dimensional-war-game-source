@@ -1,0 +1,72 @@
+[
+  {
+    "id": "hero-half-friendly",
+    "prompt": "编辑参考图1，为同一位男高制作Galgame透明半身立绘。严格保留已经确定的夸张黑色飞机头、脸型、深色眼睛、黑色金扣校服外套、红色内衫和银色方牌项链，不改成另一人，不换服装。仅画头顶至腰部的上半身，禁止画腿、鞋、地面、室内背景或全身缩略图。1024×1536竖画布，头顶约y40，脸中心约y230，肩线约y380，腰线约y1000，腰以下留透明；身体水平居中，脸朝向和尺寸沿参考，半身正面略侧，双臂自然在腰侧，不拿道具。精细16bit像素插画，与原图线条、像素颗粒及光照一致。背景是真透明，人物衣物皮肤不透明；不要光晕、阴影色块、描边底板、文字或UI。此次只改变指定表情：好奇、友善，眉毛略抬，轻微微笑，闭嘴，眼神对眼前环境感兴趣。",
+    "reference": "E:\\笔记\\次元战争设定\\游戏文件\\art\\hero-layered-v3\\masters\\stand-calm-clean.png",
+    "source": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-026abda6-ca67-4297-a603-06097e382d27.png",
+    "file": "public/assets/portraits/hero-half-v1/hero-half-friendly.png"
+  },
+  {
+    "id": "hero-half-alert",
+    "prompt": "这是同一位男高已确定的透明半身母版。只修改脸内的眉毛、眼睛和嘴来实现指定表情。保持头发、脸型、耳朵、头部位置、外套、红内衫、项链、双臂、手、腰部轮廓和所有身体像素尽可能原样，不改变人物大小、画布或构图，不重画身体。1024×1536，保持原有真正透明背景，不添背景、光晕、文字或UI。精细16bit像素插画。指定表情：认真、警戒、做出决定，双眉收紧，目光集中，嘴唇抿直，不微笑。",
+    "reference": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-026abda6-ca67-4297-a603-06097e382d27.png",
+    "source": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-7e8a536b-32dc-424a-a25f-f88b5a8f0e8c.png",
+    "file": "public/assets/portraits/hero-half-v1/hero-half-alert.png"
+  },
+  {
+    "id": "hero-half-worried",
+    "prompt": "这是同一位男高已确定的透明半身母版。只修改脸内的眉毛、眼睛和嘴来实现指定表情。保持头发、脸型、耳朵、头部位置、外套、红内衫、项链、双臂、手、腰部轮廓和所有身体像素尽可能原样，不改变人物大小、画布或构图，不重画身体。1024×1536，保持原有真正透明背景，不添背景、光晕、文字或UI。精细16bit像素插画。指定表情：担心、紧张并有一点尴尬，眉心上抬，嘴角略下，眼神在意同伴；不哭，不加伤痕。",
+    "reference": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-026abda6-ca67-4297-a603-06097e382d27.png",
+    "source": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-29989cd3-487e-4451-81db-1466d074e15d.png",
+    "file": "public/assets/portraits/hero-half-v1/hero-half-worried.png"
+  },
+  {
+    "id": "hero-half-tired",
+    "prompt": "这是同一位男高已确定的透明半身母版。只修改脸内的眉毛、眼睛和嘴来实现指定表情。保持头发、脸型、耳朵、头部位置、外套、红内衫、项链、双臂、手、腰部轮廓和所有身体像素尽可能原样，不改变人物大小、画布或构图，不重画身体。1024×1536，保持原有真正透明背景，不添背景、光晕、文字或UI。精细16bit像素插画。指定表情：明显疲惫、吃力但清醒，眼睑半垂，眉眼放松而无力，嘴微启喘息，不微笑。",
+    "reference": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-026abda6-ca67-4297-a603-06097e382d27.png",
+    "source": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-87ce79b0-d091-4da2-9410-92b82bd77225.png",
+    "file": "public/assets/portraits/hero-half-v1/hero-half-tired.png"
+  },
+  {
+    "id": "hero-half-pained",
+    "prompt": "这是同一位男高已确定的透明半身母版。只修改脸内的眉毛、眼睛和嘴来实现指定表情。保持头发、脸型、耳朵、头部位置、外套、红内衫、项链、双臂、手、腰部轮廓和所有身体像素尽可能原样，不改变人物大小、画布或构图，不重画身体。1024×1536，保持原有真正透明背景，不添背景、光晕、文字或UI。精细16bit像素插画。指定表情：疼痛、挣扎中努力集中，眉头深皱，咬紧牙关，一只眼稍眯；不加伤口、血或新配饰。",
+    "reference": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-026abda6-ca67-4297-a603-06097e382d27.png",
+    "source": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-473c4899-52d2-4d02-93d8-5346cc7b4d87.png",
+    "file": "public/assets/portraits/hero-half-v1/hero-half-pained.png"
+  },
+  {
+    "id": "hero-half-angry",
+    "prompt": "这是同一位男高已确定的透明半身母版。只修改脸内的眉毛、眼睛和嘴来实现指定表情。保持头发、脸型、耳朵、头部位置、外套、红内衫、项链、双臂、手、腰部轮廓和所有身体像素尽可能原样，不改变人物大小、画布或构图，不重画身体。1024×1536，保持原有真正透明背景，不添背景、光晕、文字或UI。精细16bit像素插画。指定表情：愤怒并带困倦，压低双眉，眼神坚定而恼火，嘴角紧绷；不要改头发或衣服。",
+    "reference": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-026abda6-ca67-4297-a603-06097e382d27.png",
+    "source": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-b2404090-cdce-4856-a762-1d7a8c203e02.png",
+    "file": "public/assets/portraits/hero-half-v1/hero-half-angry.png"
+  },
+  {
+    "id": "hero-half-surprised",
+    "prompt": "这是同一位男高已确定的透明半身母版。只修改脸内的眉毛、眼睛和嘴来实现指定表情。保持头发、脸型、耳朵、头部位置、外套、红内衫、项链、双臂、手、腰部轮廓和所有身体像素尽可能原样，不改变人物大小、画布或构图，不重画身体。1024×1536，保持原有真正透明背景，不添背景、光晕、文字或UI。精细16bit像素插画。指定表情：震惊、惊讶，双眼明显睁大，眉毛抬高，嘴微张；不是微笑。",
+    "reference": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-026abda6-ca67-4297-a603-06097e382d27.png",
+    "source": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-d750aa39-da33-4cd2-9ecf-ff947ca37193.png",
+    "file": "public/assets/portraits/hero-half-v1/hero-half-surprised.png"
+  },
+  {
+    "id": "hero-half-excited",
+    "prompt": "这是同一位男高已确定的透明半身母版。只修改脸内的眉毛、眼睛和嘴来实现指定表情。保持头发、脸型、耳朵、头部位置、外套、红内衫、项链、双臂、手、腰部轮廓和所有身体像素尽可能原样，不改变人物大小、画布或构图，不重画身体。1024×1536，保持原有真正透明背景，不添背景、光晕、文字或UI。精细16bit像素插画。指定表情：自信、兴奋、得意，昂扬的眼神，眉毛自信上挑，露出明确笑容；保持参考的脸型。",
+    "reference": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-026abda6-ca67-4297-a603-06097e382d27.png",
+    "source": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-4574d7df-f388-4da1-ab37-0ea0d947a53f.png",
+    "file": "public/assets/portraits/hero-half-v1/hero-half-excited.png"
+  },
+  {
+    "id": "hero-half-bed-sleepy",
+    "prompt": "以参考图1为男高既定形象，制作A001“躺在床上、刚醒”的透明半身立绘。保留黑色飞机头、脸型、黑色金扣外套、红色内衫和银色方牌项链。人物上半身斜靠在一小块枕头上，明显是躺靠刚醒，不能站立；仅画头顶至腰，双腿鞋与整张床都不出现。头部大小、画布位置尽量沿同一半身母版，枕头仅在人背后局部出现。表情困倦而慌张：半睁的眼睛、略抬的眉、意识到睡过头的紧张嘴形。1024×1536固定竖画布，精细16bit像素插画，主体完整不透明，枕头外是真透明，无房间背景、矩形色底、光晕、文字或UI。",
+    "reference": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-026abda6-ca67-4297-a603-06097e382d27.png",
+    "source": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-73afb6a9-462d-47b0-ba14-98566cfb6c6f.png",
+    "file": "public/assets/portraits/hero-half-v1/hero-half-bed-sleepy.png"
+  },
+  {
+    "id": "hero-half-bed-awake",
+    "prompt": "仅编辑这位男高的脸部表情，保持同一半躺靠枕头姿态、头发脸型、黑金校服、红内衫、项链、两只手和全部身体位置不变，背景保持真透明。表情改为清醒、自信、急着出门：双眼更睁开，眉毛自信上挑，嘴角上扬，去掉汗滴。不要改成站姿，不改变人物尺寸和1024×1536画布，不加腿脚、房间、光晕、文字或UI，保持原精细16bit像素风。",
+    "reference": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-73afb6a9-462d-47b0-ba14-98566cfb6c6f.png",
+    "source": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-8e2a7b27-be8e-44bb-89ad-0b80866923cf.png",
+    "file": "public/assets/portraits/hero-half-v1/hero-half-bed-awake.png"
+  }
+]

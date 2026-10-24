@@ -13,8 +13,8 @@ export type LayerRecipe = {
   pose: string; expression: string; approved: boolean; candidateReady: boolean;
 };
 export type VisualPlan =
-  | { kind: 'layered'; key: string; recipe: LayerRecipe; fallback?: string; diagnostic?: string }
-  | { kind: 'static'; key: string; url: string; diagnostic?: string }
+  | { kind: 'layered'; key: string; recipe: LayerRecipe; fallback?: string; fallbackFrame?: 'waist' | 'bust'; diagnostic?: string }
+  | { kind: 'static'; key: string; url: string; frame?: 'waist' | 'bust'; diagnostic?: string }
   | { kind: 'placeholder'; key: string; diagnostic?: string };
 export type SpeechInput = Pick<ActorState, 'actor' | 'visible'> & { supported: boolean; mouthAllowed: boolean; prop: boolean };
 export function isTalking(actor: SpeechInput, waiting: TextWait | null): boolean {

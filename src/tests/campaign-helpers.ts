@@ -53,6 +53,7 @@ export function campaignStep(state: GameState): GameState {
   const wait = state.waiting;
   if (!wait || wait.kind === 'error') throw new Error(`剧情不能继续 ${JSON.stringify(wait)}`);
   if (wait.kind === 'text') return campaignAction(state, { type: 'advance', token: wait.token });
+  if (wait.kind === 'unfinished') return campaignAction(state, { type: 'reselect', token: wait.token });
   if (wait.kind === 'choice') return campaignAction(state, { type: 'choose', token: wait.token, index: state.sceneId === 'a007' ? 2 : 1 });
   if (wait.kind === 'end' && state.actId === 'prologue') return campaignAction(state, { type: 'enter-act1', token: wait.token });
   throw new Error('已经到达第一幕结束');

@@ -4,6 +4,7 @@ import { navigationToken } from '../router.js';
 import type { NavigationAction } from '../router.js';
 import type { GameState } from '../state.js';
 import { button, element } from './elements.js';
+import { chapterTitles } from '../story/chapter-policy.js';
 
 /** 非模态地点浮窗；卡片本身即进入操作，地图始终可以拖缩。 */
 export class MapPopup {
@@ -45,7 +46,7 @@ export class MapPopup {
         const card = button('', `enter-${level.id}`, () => this.dispatch({ type: 'enter-level', token: this.token, levelId: level.id }));
         card.classList.add('map-level-card'); card.classList.toggle('completed', completed); card.dataset.levelId = level.id;
         card.setAttribute('aria-label', `${level.name}，${label}`);
-        card.append(element('span', 'map-level-number', `第 ${levels.indexOf(level) + 1} 关 · ${level.actId === 'prologue' ? '序幕' : '第一幕'}`),
+        card.append(element('span', 'map-level-number', `第 ${levels.indexOf(level) + 1} 关 · ${chapterTitles[level.actId]}`),
           element('strong', 'map-level-title', level.name), element('span', 'map-level-status', label));
         this.cards.set(level.id, card); this.content.append(card);
       }

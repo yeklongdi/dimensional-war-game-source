@@ -60,6 +60,7 @@ export function appStep(state: GameState): GameState {
   }
   const waiting = state.waiting;
   if (waiting?.kind === 'text') return play(state, { type: 'advance', token: waiting.token });
+  if (waiting?.kind === 'unfinished') return play(state, { type: 'reselect', token: waiting.token });
   if (waiting?.kind === 'choice') return play(state, { type: 'choose', token: waiting.token,
     index: state.sceneId === 'a007' || (state.sceneId === 'a010' && !state.flags.flag_act1_a010_03) ? 2 : 1 });
   throw new Error('没有可执行的测试步骤');

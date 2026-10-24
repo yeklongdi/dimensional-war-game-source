@@ -1,0 +1,764 @@
+{
+  "id": "prologue",
+  "title": "序幕（一）：搬来太阳市的前一天",
+  "scenes": [
+    {
+      "id": "p001",
+      "title": "奶奶家门前",
+      "time": "下午、傍晚前",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_grandmother_house_dusk",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_homecoming_warm",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "center",
+          "placeholder": true,
+          "pose": "携带行李、站立",
+          "expression": "紧张、期待"
+        },
+        {
+          "kind": "stage",
+          "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。\n镜头从房屋和桂花树缓慢推进到男高。"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "六年了……终于回来了。"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "以后，就由我来陪奶奶。"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_door_knock",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "男高伸手敲门。"
+        },
+        {
+          "kind": "jump",
+          "target": "p002"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue.md",
+        "line": 116
+      },
+      "background": "bg_grandmother_house_dusk",
+      "bgm": "bgm_homecoming_warm"
+    },
+    {
+      "id": "p002",
+      "title": "奶奶家·进门",
+      "time": "下午",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_grandmother_house_entrance",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_homecoming_warm",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "奶奶",
+          "asset": "char_grandmother_warm",
+          "position": "door",
+          "placeholder": true,
+          "pose": "手持抹布、站在门内",
+          "expression": "惊喜、眼眶泛红"
+        },
+        {
+          "kind": "stage",
+          "text": "门很快打开。\n奶奶站在门里，手里攥着一块抹布。\n她看到男高后停顿数秒，随后快步迎上来。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "孩子……是你回来了？"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "expression": "放松、微笑"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "奶奶，我回来了。"
+        },
+        {
+          "kind": "stage",
+          "text": "奶奶仰头打量男高，又伸手拍了拍他的肩膀。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "好，好……回来就好。\n快进来，饭马上就好。"
+        },
+        {
+          "kind": "stage",
+          "text": "奶奶让开门口，男高拎着行李进屋。"
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "奶奶"
+        },
+        {
+          "kind": "jump",
+          "target": "p003"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue.md",
+        "line": 147
+      },
+      "background": "bg_grandmother_house_entrance",
+      "bgm": "bgm_homecoming_warm"
+    },
+    {
+      "id": "p003",
+      "title": "奶奶家·客厅",
+      "time": "下午至傍晚",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_grandmother_house_living_room",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_homecoming_warm",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "坐在沙发上",
+          "expression": "得意"
+        },
+        {
+          "kind": "show",
+          "actor": "奶奶",
+          "asset": "char_grandmother_warm",
+          "position": "right",
+          "placeholder": true,
+          "pose": "坐在男高旁边、仔细打量",
+          "expression": "欣慰、感伤"
+        },
+        {
+          "kind": "stage",
+          "text": "客厅保留旧木柜、茶壶和墙上的老照片。\n奶奶拉着男高坐下，不时查看他的脸和手臂。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "长这么高了。\n瘦是瘦了点，可是结实了。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "你这样子，倒像你爷爷年轻的时候。"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "expression": "热血、得意"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "奶奶，我长大了。\n以后换我照顾您，您就放心吧！"
+        },
+        {
+          "kind": "stage",
+          "text": "奶奶先是一愣，随后笑了出来，但眼角泛起泪光。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "好，好。我们家孩子，长大了。"
+        },
+        {
+          "kind": "stage",
+          "text": "画面停留在祖孙二人的笑容上，随后淡出至晚饭后。"
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "奶奶"
+        },
+        {
+          "kind": "jump",
+          "target": "p004"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue.md",
+        "line": 188
+      },
+      "background": "bg_grandmother_house_living_room",
+      "bgm": "bgm_homecoming_warm"
+    },
+    {
+      "id": "p004",
+      "title": "奶奶家·整理房间与出门",
+      "time": "晚饭后、入夜前",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_grandmother_house_bedroom",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_homecoming_warm",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "center",
+          "placeholder": true,
+          "pose": "整理行李",
+          "expression": "怀念、轻松"
+        },
+        {
+          "kind": "stage",
+          "text": "男高把行李搬进自己的房间。"
+        },
+        {
+          "kind": "narration",
+          "text": "房间不大，但收拾得很干净。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高把衣服叠进衣柜，把明天报到要用的书本和文具装进书包。\n他把自己带来的游戏卡带摆在书桌上。\n窗外的路灯逐渐亮起。"
+        },
+        {
+          "kind": "background",
+          "name": "bg_grandmother_house_kitchen_night",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "奶奶",
+          "asset": "char_grandmother_warm",
+          "position": "kitchen",
+          "placeholder": true,
+          "expression": "关心"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "奶奶，我想出去走走，认认路。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "都这个点了，还出去？\n别走太远，早点回来，我给你留门。"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "expression": "轻松、准备出门"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "知道啦！我就在附近转转，一会儿就回来。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高换上外套，走出家门。"
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "奶奶"
+        },
+        {
+          "kind": "jump",
+          "target": "p005"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue.md",
+        "line": 236
+      },
+      "background": "bg_grandmother_house_bedroom",
+      "bgm": "bgm_homecoming_warm"
+    },
+    {
+      "id": "p005",
+      "title": "旧街区·仓库区外围",
+      "time": "夜晚",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_sun_city_old_street_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_old_street_mystery",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "散步、观察四周",
+          "expression": "好奇"
+        },
+        {
+          "kind": "stage",
+          "text": "商业街的霓虹灯还亮着，但行人已经不多。\n男高沿街认路，不知不觉走进旧街区。\n背景切换为昏暗路灯、关闭的店铺和高墙围住的仓库区。"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "这里……是什么地方？"
+        },
+        {
+          "kind": "stage",
+          "text": "墙上没有公司名称，只有一块被雨水侵蚀得难以辨认的警示牌。\n高墙附近传来金属碰撞声和挣扎声。"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_metal_collision",
+          "placeholder": true
+        },
+        {
+          "kind": "meta",
+          "directive": "CAMERA",
+          "raw": "CAMERA: 镜头切换至高墙另一侧的月光下。",
+          "meta": true
+        },
+        {
+          "kind": "show",
+          "actor": "黑衣人甲",
+          "asset": "char_organization_member_placeholder",
+          "position": "left",
+          "placeholder": true,
+          "pose": "持金属装置、逼近"
+        },
+        {
+          "kind": "show",
+          "actor": "黑衣人乙",
+          "asset": "char_organization_member_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "封锁退路"
+        },
+        {
+          "kind": "show",
+          "actor": "蒙面人",
+          "asset": "char_thief_masked_black_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "被逼到墙角、试图逃跑"
+        },
+        {
+          "kind": "stage",
+          "text": "蒙面人穿着黑衣，面部被遮住，正被黑衣组织行动人员逼到墙角。\n黑衣组织行动人员封锁退路，蒙面人试图从包围中脱身。\n男高躲到墙角阴影里，观察高墙另一侧的情况。"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "那些人……在围什么人？\n那个人的脸被遮住了。"
+        },
+        {
+          "kind": "stage",
+          "text": "蒙面人试图冲出包围，黑衣组织行动人员继续逼近。\n男高从阴影里走出。"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "expression": "认真、出头",
+          "update": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "喂！你们在干什么！"
+        },
+        {
+          "kind": "stage",
+          "text": "黑衣人回头，看见男高后短暂愣住。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "不管你们有什么纠纷，这么多人欺负一个，我看不过去！"
+        },
+        {
+          "kind": "set",
+          "flag": "flag_prologue_p005_01",
+          "note": "SET: [变量名待定] 记录男高介入仓库区冲突",
+          "meta": true
+        },
+        {
+          "kind": "jump",
+          "target": "p006"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue.md",
+        "line": 284
+      },
+      "background": "bg_sun_city_old_street_night",
+      "bgm": "bgm_old_street_mystery"
+    },
+    {
+      "id": "p006",
+      "title": "仓库区外围·第一次战斗",
+      "time": "夜晚",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_warehouse_area_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_first_battle",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "黑衣人将注意力转向男高。\n战斗界面切入。"
+        },
+        {
+          "kind": "call",
+          "name": "battle_prologue_tutorial"
+        },
+        {
+          "kind": "set",
+          "flag": "flag_prologue_p006_01",
+          "note": "SET: [变量名待定] 记录序幕战斗教学完成",
+          "meta": true
+        },
+        {
+          "kind": "check",
+          "raw": "CHECK: [战斗失败处理待确认]",
+          "meta": true
+        },
+        {
+          "kind": "narration",
+          "text": "战斗结果返回后，继续进入战斗结束场景。",
+          "meta": true
+        },
+        {
+          "kind": "jump",
+          "target": "p007"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue.md",
+        "line": 348
+      },
+      "background": "bg_warehouse_area_night",
+      "bgm": "bgm_first_battle"
+    },
+    {
+      "id": "p007",
+      "title": "仓库区外围·蒙面人离开",
+      "time": "夜晚、战斗后",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_warehouse_area_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_first_battle_after",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "center",
+          "placeholder": true,
+          "pose": "战斗后喘息",
+          "expression": "疑惑、警惕"
+        },
+        {
+          "kind": "stage",
+          "text": "几个黑衣人倒在地上，另一些黑衣人退回仓库区阴影。\n男高转头看向墙角。"
+        },
+        {
+          "kind": "show",
+          "actor": "蒙面人",
+          "asset": "char_thief_masked_black_placeholder",
+          "position": "far",
+          "placeholder": true,
+          "pose": "战斗后站稳、观察男高、准备离开"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "……那个人是谁？\n那些人又是谁？"
+        },
+        {
+          "kind": "stage",
+          "text": "蒙面人的脸仍被遮住。他看了男高一会儿，随后转身钻进夜色。\n远处仓库区重新亮起灯光，隐约传来人声。"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_distant_warehouse_noise",
+          "placeholder": true
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "糟了，得赶紧回家。"
+        },
+        {
+          "kind": "set",
+          "flag": "flag_prologue_p007_01",
+          "note": "SET: [变量名待定] 记录蒙面人在男高面前离开",
+          "meta": true
+        },
+        {
+          "kind": "hide",
+          "actor": "蒙面人"
+        },
+        {
+          "kind": "jump",
+          "target": "p008"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue.md",
+        "line": 370
+      },
+      "background": "bg_warehouse_area_night",
+      "bgm": "bgm_first_battle_after"
+    },
+    {
+      "id": "p008",
+      "title": "奶奶家·回家",
+      "time": "夜晚",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_grandmother_house_living_room_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_homecoming_warm",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "刚跑回家、呼吸急促",
+          "expression": "装作平静"
+        },
+        {
+          "kind": "show",
+          "actor": "奶奶",
+          "asset": "char_grandmother_warm",
+          "position": "right",
+          "placeholder": true,
+          "pose": "坐在藤椅上等待",
+          "expression": "关心"
+        },
+        {
+          "kind": "stage",
+          "text": "男高一路小跑回到老房子。\n客厅的灯还亮着，奶奶从藤椅上站起。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "回来啦？怎么去了这么久？\n外面冷不冷？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "不冷。我就是……多逛了一会儿，差点迷路。"
+        },
+        {
+          "kind": "stage",
+          "text": "奶奶没有继续追问，只是点点头。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "快去洗漱吧。明天一早，还要去学校报到呢。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "知道了。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高走进浴室。\n热水落下，镜头给到他握紧的、指节发红的手。"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "也许只是自己多管闲事。\n也许是有什么纠纷，自己偏偏撞了进去。\n可那些装置和蒙面人的身手，又不像普通的争执。"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "可是……事情真的有那么简单吗？"
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "奶奶"
+        },
+        {
+          "kind": "jump",
+          "target": "p009"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue.md",
+        "line": 408
+      },
+      "background": "bg_grandmother_house_living_room_night",
+      "bgm": "bgm_homecoming_warm"
+    },
+    {
+      "id": "p009",
+      "title": "男高房间·睡前",
+      "time": "深夜",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_grandmother_house_bedroom_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_night_before_school",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "bed",
+          "placeholder": true,
+          "pose": "躺在床上、望向天花板",
+          "expression": "期待、认真"
+        },
+        {
+          "kind": "stage",
+          "text": "枕边放着明天报到要用的书包。"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "明天开始，我就是太阳市第一高中的学生了。"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "先好好上学，陪奶奶生活……"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "要是再遇到今晚那种事，也得像勇者一样站出来。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高闭上眼睛。\n镜头从房间拉远，切换至学校地下深处。"
+        },
+        {
+          "kind": "background",
+          "name": "bg_school_underground_dark",
+          "placeholder": true
+        },
+        {
+          "kind": "meta",
+          "directive": "CAMERA",
+          "raw": "CAMERA: 镜头缓慢推进黑暗中的漆黑结晶。",
+          "meta": true
+        },
+        {
+          "kind": "show",
+          "actor": "黑色结晶",
+          "asset": "prop_dark_god_crystal_placeholder",
+          "position": "center",
+          "placeholder": true
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_low_heartbeat",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "黑色结晶像心脏一样，极轻微地跳动了一下。"
+        },
+        {
+          "kind": "set",
+          "flag": "flag_prologue_p009_01",
+          "note": "SET: [变量名待定] 记录序幕结束",
+          "meta": true
+        },
+        {
+          "kind": "end"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue.md",
+        "line": 465
+      },
+      "background": "bg_grandmother_house_bedroom_night",
+      "bgm": "bgm_night_before_school"
+    }
+  ]
+}

@@ -30,7 +30,7 @@ export type StoryNode = NodeAnnotations & (
   | { kind: 'stage' | 'narration'; text: string }
   | { kind: 'dialogue' | 'inner'; speaker: string; text: string }
   | ChoiceNode
-  | { kind: 'set'; flag: string; note: string }
+  | { kind: 'set'; flag: string; value?: boolean; note: string }
   | { kind: 'call'; name: string; args?: Record<string, string> }
   | { kind: 'check'; raw: string }
   | { kind: 'jump'; target: string }

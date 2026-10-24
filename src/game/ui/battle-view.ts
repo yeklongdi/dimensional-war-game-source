@@ -12,6 +12,7 @@ import { renderBattleDialog } from './battle-dialogs.js';
 import { tutorialText } from '../battle/tutorial.js';
 import { movementOverlay } from '../battle/movement-preview.js';
 import { MovementControls, planningInput } from './movement-controls.js';
+import { chapterTitles } from '../story/chapter-policy.js';
 
 const statusLabels = { active: '可行动', unconscious: '昏迷·倒地·失能', stable: '稳定·失去战斗能力', dead: '死亡', defeated: '被击败' };
 export class BattleView {
@@ -83,7 +84,8 @@ export class BattleView {
       mode, rngDraws: String(state.rng.draws), fixtureDone: String(fixtureDone) });
     this.stage.dataset.battleId = state.id;
     if (formal) Object.assign(this.stage.dataset, { actId: game.actId, sceneId: game.sceneId, returnNodeIndex: String(game.nodeIndex), storyWaitToken: game.waiting?.token ?? '' });
-    const title = element('div', 'battle-title'); title.append(element('h1', '', formal ? state.title : fixture ? '内部测试 · 借机反应' : 'M2 · 战棋调试场'), element('p', '', formal ? `第 ${state.round} 轮${state.pendingRoll?.kind === 'initiative' ? ' · 先攻待确认' : ''}` : `${fixture ? '固定测试骰序' : `seed ${state.seed}`} · 骰子 ${state.rng.draws} 次 · 第 ${state.round} 轮`));
+    const formalTitle = chapterTitles[game.actId] ? state.title.replace(/^(序幕|第一幕)/, chapterTitles[game.actId]) : state.title;
+    const title = element('div', 'battle-title'); title.append(element('h1', '', formal ? formalTitle : fixture ? '内部测试 · 借机反应' : 'M2 · 战棋调试场'), element('p', '', formal ? `第 ${state.round} 轮${state.pendingRoll?.kind === 'initiative' ? ' · 先攻待确认' : ''}` : `${fixture ? '固定测试骰序' : `seed ${state.seed}`} · 骰子 ${state.rng.draws} 次 · 第 ${state.round} 轮`));
     const order = element('div', 'initiative-strip');
     for (const entry of state.order) {
       const unit = state.units.find(item => item.id === entry.actor)!;

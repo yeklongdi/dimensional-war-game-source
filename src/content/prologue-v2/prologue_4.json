@@ -1,0 +1,1695 @@
+{
+  "id": "prologue_4",
+  "title": "序幕（四）：警报下的同行者",
+  "scenes": [
+    {
+      "id": "c001",
+      "title": "警报与搜捕队",
+      "time": "序幕三结束后，同一夜",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_grandmother_bedroom_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_after_dream_quiet",
+          "placeholder": true
+        },
+        {
+          "kind": "check",
+          "raw": "CHECK: prologue_3_complete == true AND link_summoned == true [章节入口约束；未满足时不得接入本幕]",
+          "meta": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "坐在床沿，侧耳倾听",
+          "expression": "疑惑"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "站在床边，转向窗户",
+          "expression": "警戒"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_search_vehicle_alarm",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "一阵短促的电子警报打破了房间里的安静。男高刚想继续问话，便看见窗帘边缘扫过一道白光。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "外面怎么了？"
+        },
+        {
+          "kind": "stage",
+          "text": "他掀起窗帘一角。街口停着一辆深色车辆，几个穿黑制服的人正拿着金属装置沿路查看。那身衣服，他昨晚才在仓库区见过。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "……又是他们。"
+        },
+        {
+          "kind": "stage",
+          "text": "金发青年走到窗侧，避开扫来的灯光，朝男高做了个退后一点的手势。"
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "金发青年"
+        },
+        {
+          "kind": "background",
+          "name": "bg_old_residential_search_night",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "街口，队员按住耳机，盯着装置上迅速变淡的反应。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "搜捕通讯",
+          "text": "梦境反应确认。位置在这片住宅区。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "搜捕通讯",
+          "text": "反应刚刚中断。实验体还没有找到，分组继续搜索。"
+        },
+        {
+          "kind": "stage",
+          "text": "一支小队转向街道另一端，另一支留在岔路口。灯光掠过紧闭的店门与墙角，搜捕没有随着警报停止。"
+        },
+        {
+          "kind": "background",
+          "name": "bg_grandmother_bedroom_night",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "站在窗边，松开窗帘",
+          "expression": "戒备"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "站在窗侧，避开灯光",
+          "expression": "警戒"
+        },
+        {
+          "kind": "stage",
+          "text": "男高松开窗帘，回头看了一眼通向楼下的房门。"
+        },
+        {
+          "kind": "jump",
+          "target": "c002"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_4.md",
+        "line": 60
+      },
+      "background": "bg_grandmother_bedroom_night",
+      "bgm": "bgm_after_dream_quiet"
+    },
+    {
+      "id": "c002",
+      "title": "出门与认出",
+      "time": "同一夜",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_residential_junction_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_organization_tension",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "金发青年"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "披上外套，与队员保持距离",
+          "expression": "戒备"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "跟在男高侧后方",
+          "expression": "观察"
+        },
+        {
+          "kind": "show",
+          "actor": "黑衣队员",
+          "asset": "char_organization_member_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "拿着探测装置，抬头打量",
+          "expression": "怀疑"
+        },
+        {
+          "kind": "stage",
+          "text": "男高披上外套，放轻脚步下楼。奶奶房间里没有亮灯。他轻轻带上院门，走到路口时，才让自己出现在搜捕队的视线中。金发青年始终跟在侧后方。"
+        },
+        {
+          "kind": "stage",
+          "text": "一名队员本来只是朝他们举起灯，照到男高的脸后，动作忽然停住。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "黑衣队员",
+          "text": "是你。昨晚仓库外面那个学生。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "你们大半夜在居民区找什么？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "黑衣队员",
+          "text": "先站住。你身后的人，把手里的东西放下。"
+        },
+        {
+          "kind": "stage",
+          "text": "金发青年没有放剑，只把剑尖移开居民家的方向。队员看见他的装束与武器，立刻后退一步，招呼同伴靠近。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "黑衣队员",
+          "text": "这边有情况。昨晚放跑目标的人又出现了，还带着一个——"
+        },
+        {
+          "kind": "stage",
+          "text": "男高打断他，朝通往旧街区的支路退了几步。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "要问昨晚的事，跟我说。别堵在人家门口。"
+        },
+        {
+          "kind": "stage",
+          "text": "他边说边走，把两人的位置带离住宅正门。队员跟着逼近，另一人试图从旁边绕过去，抓住男高的胳膊。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "我自己会走，别动手。"
+        },
+        {
+          "kind": "stage",
+          "text": "对方却猛地收紧手指。男高拧身挣开，金发青年也在同一刻迈步，挡住了另一名队员伸来的金属装置。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "搜捕通讯",
+          "text": "路口小组控制现场。其余小组继续找实验体，不要全部离开搜索区域。"
+        },
+        {
+          "kind": "jump",
+          "target": "c003"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_4.md",
+        "line": 128
+      },
+      "background": "bg_residential_junction_night",
+      "bgm": "bgm_organization_tension"
+    },
+    {
+      "id": "c003",
+      "title": "第一次配合",
+      "time": "同一夜，第一场战斗",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_old_district_access_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_first_partners_battle",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "金发青年"
+        },
+        {
+          "kind": "hide",
+          "actor": "黑衣队员"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "摆开徒手架势，靠近墙侧",
+          "expression": "紧张，集中"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "拔剑护住主路方向",
+          "expression": "冷静"
+        },
+        {
+          "kind": "show",
+          "actor": "黑衣队员",
+          "asset": "char_organization_member_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "招呼同伴围上",
+          "expression": "急躁"
+        },
+        {
+          "kind": "stage",
+          "text": "队员们散开，堵住两人前后。男高刚准备迎向正面的人，青年便向左侧示意，给他留出靠墙的一边。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "那边交给我？好。"
+        },
+        {
+          "kind": "stage",
+          "text": "他退进青年让出的空位，避开正面交错的攻击。"
+        },
+        {
+          "kind": "call",
+          "name": "battle_prologue4_patrol"
+        },
+        {
+          "kind": "stage",
+          "text": "男高挡开伸向领口的手，用肩膀顶开近身的队员。另一人想从侧面扑上来，脚步却被青年用剑身一拨，踉跄着撞上同伴。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高抬头，恰好看见街灯下又有人举起装置。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "右边！"
+        },
+        {
+          "kind": "stage",
+          "text": "青年已经转身，剑光贴着金属装置掠过，将它打落在地。他没有追着倒下的人补击，只顺势往前一步，截住后方的支援。"
+        },
+        {
+          "kind": "stage",
+          "text": "短暂的混乱很快结束。队员或抱着手臂蹲下，或退到路边，不敢再单独上前。男高扶着膝盖喘气，抬眼看向身旁仍握着剑的人。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "……你比我想的还厉害。"
+        },
+        {
+          "kind": "stage",
+          "text": "青年确认他还能站稳，才重新望向支路尽头。那里传来了不紧不慢的脚步声。"
+        },
+        {
+          "kind": "jump",
+          "target": "c004"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_4.md",
+        "line": 199
+      },
+      "background": "bg_old_district_access_night",
+      "bgm": "bgm_first_partners_battle"
+    },
+    {
+      "id": "c004",
+      "title": "第一名干部到场",
+      "time": "小兵战后",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_old_district_battle_street_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_foreigner_approach",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "金发青年"
+        },
+        {
+          "kind": "hide",
+          "actor": "黑衣队员"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "站在墙侧，调整呼吸",
+          "expression": "警惕"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "向前半步，将男高护在身后",
+          "expression": "戒备"
+        },
+        {
+          "kind": "show",
+          "actor": "黑衣干部甲",
+          "asset": "char_organization_officer_a_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "停步，观察两人",
+          "expression": "克制，审视"
+        },
+        {
+          "kind": "stage",
+          "text": "一名黑衣干部从队员让开的通道中走来。他没有先看地上的人，目光直接停在了持剑青年的身上。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "黑衣干部甲",
+          "text": "退后。你们处理不了这个。"
+        },
+        {
+          "kind": "stage",
+          "text": "队员迅速让出一段空地。干部身旁，一个红蓝相间的人形生物缓缓悬起，细长的触臂在身侧展开，胸口的水晶映着路灯的冷光。"
+        },
+        {
+          "kind": "show",
+          "actor": "不明生物·普通型",
+          "asset": "char_deoxys_normal_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "悬浮，触臂展开",
+          "expression": "锁定目标"
+        },
+        {
+          "kind": "stage",
+          "text": "男高看见它没有碰到地面，喉咙不由得紧了一下。昨晚那些装置和白天的黑色人形，都没有给过他这种感觉。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "这又是什么……？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "黑衣干部甲",
+          "text": "新出现的从者。原来如此。"
+        },
+        {
+          "kind": "stage",
+          "text": "他看向男高，像终于把昨晚的意外和眼前的人联系到一起。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "黑衣干部甲",
+          "text": "那就一起留下。"
+        },
+        {
+          "kind": "stage",
+          "text": "青年没有理会干部。他把男高轻轻往侧后方挡了一下，握剑的姿势随之收紧。"
+        },
+        {
+          "kind": "jump",
+          "target": "c005"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_4.md",
+        "line": 260
+      },
+      "background": "bg_old_district_battle_street_night",
+      "bgm": "bgm_foreigner_approach"
+    },
+    {
+      "id": "c005",
+      "title": "林克明显占优",
+      "time": "同一夜，从者遭遇前半段",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_old_district_battle_street_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_link_advantage",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "金发青年"
+        },
+        {
+          "kind": "hide",
+          "actor": "黑衣干部甲"
+        },
+        {
+          "kind": "hide",
+          "actor": "不明生物·普通型"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "靠墙移动，避开主战线",
+          "expression": "紧张，随后惊讶"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "持剑突进，连续截断对手攻势",
+          "expression": "专注"
+        },
+        {
+          "kind": "show",
+          "actor": "不明生物·普通型",
+          "asset": "char_deoxys_normal_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "悬浮，触臂展开",
+          "expression": "锁定目标"
+        },
+        {
+          "kind": "stage",
+          "text": "红蓝生物率先抬起触臂。无形的压力扫过街面，碎石一齐跳起；青年却在它完成动作之前，已经侧身跨进了攻击的空隙。"
+        },
+        {
+          "kind": "call",
+          "name": "battle_prologue4_deoxys_encounter"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_sword_energy_clash",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "第一剑打偏伸来的触臂，第二步逼近胸前。普通型急速后退，刚想从另一边卷住剑刃，青年便旋腕抽剑，再次截断它的动作。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高原本已经绷紧全身，准备随时躲开横扫过来的攻击。可他很快发现，对方一直在后退。"
+        },
+        {
+          "kind": "stage",
+          "text": "普通型拉开距离，水晶前浮起明亮的光。青年借墙边一踏改变方向，在光束扫过的位置留下一道残影，落地时又一次逼到近处。"
+        },
+        {
+          "kind": "stage",
+          "text": "干部伸出的手停在半空。刚才从容的神色终于沉了下来。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "能赢……"
+        },
+        {
+          "kind": "stage",
+          "text": "他说得很轻，却不是凭空给自己打气。对方每次重新组织攻击，都被青年更快一步打断；双方的位置已经从男高身前移向了街道另一端。"
+        },
+        {
+          "kind": "stage",
+          "text": "青年没有贪追过深，始终留着能退回男高身边的距离。普通型胸前再次亮起光时，他已经压下剑锋，准备继续逼近。"
+        },
+        {
+          "kind": "jump",
+          "target": "c006"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_4.md",
+        "line": 321
+      },
+      "background": "bg_old_district_battle_street_night",
+      "bgm": "bgm_link_advantage"
+    },
+    {
+      "id": "c006",
+      "title": "防御型与第二名干部加入",
+      "time": "同一场遭遇，增援抵达",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_old_district_battle_street_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_organization_reinforcements",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "金发青年"
+        },
+        {
+          "kind": "hide",
+          "actor": "不明生物·普通型"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "望向新出现的敌人",
+          "expression": "惊讶"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "收剑，重新判断站位",
+          "expression": "戒备"
+        },
+        {
+          "kind": "show",
+          "actor": "不明生物·普通型",
+          "asset": "char_deoxys_normal_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "悬浮，触臂展开",
+          "expression": "锁定目标"
+        },
+        {
+          "kind": "show",
+          "actor": "不明生物·防御型",
+          "asset": "char_deoxys_defense_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "展开屏障，护住普通型",
+          "expression": "稳定"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_barrier_impact",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "剑刃落下之前，一面厚重的屏障插入两者之间。青年的手腕随冲击微微一沉，脚步却没有乱，立即收剑滑向一旁。"
+        },
+        {
+          "kind": "stage",
+          "text": "屏障后，又一个红蓝色的身影落进街灯照亮的地方。它的轮廓比先前厚重，姿态更低，双臂展开，将普通型护在了后面。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "还有一个？！"
+        },
+        {
+          "kind": "show",
+          "actor": "黑衣干部乙",
+          "asset": "char_organization_officer_b_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "走入侧巷口，指挥部队",
+          "expression": "冷静"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "黑衣干部乙",
+          "text": "正面交给我。封住后面，别让他们回到住宅区。"
+        },
+        {
+          "kind": "stage",
+          "text": "更多黑衣人从岔路进入。男高刚刚留意的出口，被两队人一前一后挡住；普通型也借屏障的掩护移开，重新瞄向青年侧面。"
+        },
+        {
+          "kind": "stage",
+          "text": "干部甲退到防御型旁边，简短地与后来的人交换手势。两个红蓝身影的动作随之衔接起来，一个接下剑锋，另一个便从旁侧发起攻击。"
+        },
+        {
+          "kind": "jump",
+          "target": "c007"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_4.md",
+        "line": 377
+      },
+      "background": "bg_old_district_battle_street_night",
+      "bgm": "bgm_organization_reinforcements"
+    },
+    {
+      "id": "c007",
+      "title": "局势转为棘手",
+      "time": "同一场遭遇，增援后",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_old_district_battle_street_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_encirclement_pressure",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "金发青年"
+        },
+        {
+          "kind": "hide",
+          "actor": "不明生物·普通型"
+        },
+        {
+          "kind": "hide",
+          "actor": "不明生物·防御型"
+        },
+        {
+          "kind": "hide",
+          "actor": "黑衣干部乙"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "迎击绕后队员，观察出口",
+          "expression": "吃力，清醒"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "挡开正面攻势，回护男高",
+          "expression": "集中"
+        },
+        {
+          "kind": "stage",
+          "text": "青年向前逼出一步，普通型仍然被迫让开；可当他准备继续追击，侧面的屏障便再次插入，另一道攻击又紧跟着扫向男高所在的位置。"
+        },
+        {
+          "kind": "stage",
+          "text": "他立即折返，替男高挡住这一击。男高也没有站在原处等着被护住，扑向绕到身后的队员，打偏对方伸来的手。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "后面也有人！"
+        },
+        {
+          "kind": "stage",
+          "text": "青年用空着的手指向一处暂时没有被堵死的墙角。男高向那边退去，刚站稳，便看见远处又亮起一排灯。"
+        },
+        {
+          "kind": "stage",
+          "text": "对方倒下几个人，后面马上有人补上。正面的敌人始终没有追得太近，却让他们无法安心转身。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "一个你能对付。可他们好像没打算只来一个。"
+        },
+        {
+          "kind": "stage",
+          "text": "青年看向被封住的巷口，又看了一眼男高身后的敌人。他把剑横过来，给男高留出移动的方向。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "明白。先出去，再想办法。"
+        },
+        {
+          "kind": "stage",
+          "text": "他提起精神，再次挡开一名队员。两人开始向墙侧移动，包围圈也跟着收紧。"
+        },
+        {
+          "kind": "jump",
+          "target": "c008"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_4.md",
+        "line": 433
+      },
+      "background": "bg_old_district_battle_street_night",
+      "bgm": "bgm_encirclement_pressure"
+    },
+    {
+      "id": "c008",
+      "title": "怪盗与女剑士接应",
+      "time": "同一夜，撤离",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_old_district_battle_street_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_thief_escape",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "金发青年"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "随青年移动，寻找空隙",
+          "expression": "焦急"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "边退边挡住攻击",
+          "expression": "警戒"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "墙侧的声音",
+          "text": "再往那边退，可真没路了。"
+        },
+        {
+          "kind": "show",
+          "actor": "蒙面人",
+          "asset": "char_thief_masked_black_placeholder",
+          "position": "left",
+          "placeholder": true,
+          "pose": "从墙侧探身，伸手示意",
+          "expression": "从容"
+        },
+        {
+          "kind": "stage",
+          "text": "男高转头，看见墙侧一片像被折起的空气。一个蒙面人从缝隙后探出身，手掌撑着边缘，正朝他们招手。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "你——"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "蒙面人",
+          "text": "先过来！有话换个地方说！"
+        },
+        {
+          "kind": "stage",
+          "text": "青年的视线越过蒙面人，落向缝隙另一边。那里，一名持剑少女正看着出口，确认接应的方向。两人短暂对视，少女点了点头。"
+        },
+        {
+          "kind": "stage",
+          "text": "青年挡开普通型追来的触臂，让男高先通过。男高跨过那道弯折的空气，脚下已经换成另一条巷子湿冷的石面。"
+        },
+        {
+          "kind": "background",
+          "name": "bg_old_district_escape_alley_night",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "女剑士",
+          "asset": "char_saber_traveler_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "守在通道出口，握剑戒备",
+          "expression": "沉着"
+        },
+        {
+          "kind": "stage",
+          "text": "青年紧随其后。有人试图从入口追来，少女立即挥剑，将伸进来的装置打落；一阵风卷起碎屑，逼得追兵掩面退开。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "女剑士",
+          "text": "人齐了。走。"
+        },
+        {
+          "kind": "stage",
+          "text": "蒙面人收回手，入口随之合拢。四人没有在落脚处停留，而是继续穿过转角与背街，绕开原来被封住的路线。"
+        },
+        {
+          "kind": "stage",
+          "text": "远处仍听得见搜索的呼喊，身后却没有紧跟的脚步。少女留在最后观察了一阵，才示意他们再往里走。"
+        },
+        {
+          "kind": "jump",
+          "target": "c009"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_4.md",
+        "line": 487
+      },
+      "background": "bg_old_district_battle_street_night",
+      "bgm": "bgm_thief_escape"
+    },
+    {
+      "id": "c009",
+      "title": "小巷中的真实身份",
+      "time": "脱离包围后",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_old_district_quiet_alley_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_thief_reveal_quiet",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "金发青年"
+        },
+        {
+          "kind": "hide",
+          "actor": "蒙面人"
+        },
+        {
+          "kind": "hide",
+          "actor": "女剑士"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "扶墙调整呼吸，望向蒙面人",
+          "expression": "疑惑"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "守在巷口附近",
+          "expression": "观察"
+        },
+        {
+          "kind": "show",
+          "actor": "蒙面人",
+          "asset": "char_thief_masked_black_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "抬手准备摘下面罩",
+          "expression": "轻松"
+        },
+        {
+          "kind": "show",
+          "actor": "女剑士",
+          "asset": "char_saber_traveler_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "站在外侧留意来路",
+          "expression": "警戒"
+        },
+        {
+          "kind": "stage",
+          "text": "确认这段路暂时没有追兵，蒙面人才停在墙边，长长吐出一口气。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "蒙面人",
+          "text": "昨天那次，谢了。"
+        },
+        {
+          "kind": "stage",
+          "text": "他摘下面罩。街灯从巷口照过来，露出一张男高白天才见过的脸。"
+        },
+        {
+          "kind": "hide",
+          "actor": "蒙面人"
+        },
+        {
+          "kind": "show",
+          "actor": "怪盗",
+          "asset": "char_thief_smile",
+          "position": "right",
+          "placeholder": true,
+          "pose": "收起面罩",
+          "expression": "带笑，观察男高"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "……是你？！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "这次轮到我。先别急着问，追兵还没走远。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "早上路口，教室前面……还有昨天晚上被他们围住的人，全都是你？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "后面那件可以小点声。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高瞪着他，试图把白天那个转着笔打招呼的同学，与昨夜仓库外的蒙面人重叠起来。怪盗看着他的表情，笑意慢慢收了些。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "昨天你还不知道我是谁，就冲上来了。我记着。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "你倒是先说声别往那边走啊。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "我也没想到，今天还能在另一场包围里碰见你。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "我跟着他们的搜捕队过来，本来想看看他们在找什么。结果先看见你站在街上。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高看了一眼自己凌乱的袖口，又看向两名持剑的人。这回，他没有顺着玩笑笑过去。"
+        },
+        {
+          "kind": "set",
+          "flag": "thief_identity_known",
+          "value": true,
+          "note": "SET: thief_identity_known = true"
+        },
+        {
+          "kind": "jump",
+          "target": "c010"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_4.md",
+        "line": 552
+      },
+      "background": "bg_old_district_quiet_alley_night",
+      "bgm": "bgm_thief_reveal_quiet"
+    },
+    {
+      "id": "c010",
+      "title": "圣杯战争的最低限度说明",
+      "time": "短暂交换情报",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_old_district_quiet_alley_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_holy_grail_explanation",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "金发青年"
+        },
+        {
+          "kind": "hide",
+          "actor": "女剑士"
+        },
+        {
+          "kind": "hide",
+          "actor": "怪盗"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "站直，认真追问",
+          "expression": "困惑，警惕"
+        },
+        {
+          "kind": "show",
+          "actor": "怪盗",
+          "asset": "char_thief_smile",
+          "position": "right",
+          "placeholder": true,
+          "pose": "靠墙简短解释",
+          "expression": "认真"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "留意巷口与男高",
+          "expression": "安静"
+        },
+        {
+          "kind": "show",
+          "actor": "女剑士",
+          "asset": "char_saber_traveler_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "观察外侧，偶尔看向两人",
+          "expression": "耐心有限"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "先告诉我，他们是什么人？刚才那两个东西又是什么？还有他——"
+        },
+        {
+          "kind": "stage",
+          "text": "男高指了指身旁的金发青年。青年转头看他，仍没有说话。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "你居然真的什么都不知道。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "先说最要紧的。你身边这位是从者。召唤并与从者建立联系的人，叫御主。你现在已经被他们当成这一类人了。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "所以，我睡了一觉，醒来就得参加这个？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "至少不是睡一觉就能解决的问题了。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "女剑士",
+          "text": "你可以把说明说得更清楚一点。"
+        },
+        {
+          "kind": "stage",
+          "text": "怪盗举了举手，收起玩笑。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "这件事叫圣杯战争。参与者各自拥有从者，彼此争斗。四名从者被淘汰后，圣杯就会出现。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "剩下的人可以争夺它。夺到圣杯，就能借里面庞大的魔力实现愿望。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "拿愿望当奖品，让这些人互相打？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "至少他们想让事情这样进行。按我查到的资料，刚才那群黑衣人背后的组织，参与布置了这场仪式。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "那他们刚才是在找谁？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "我只听见他们说在找逃出来的实验体。是不是找你，我看不像；但他们已经看见你和从者站在一起了。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高低头看了看手上的灼痕。怪盗也看见了，却没有凭这个就给它下结论。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "你今天究竟碰过什么，我们得找时间从头对一遍。这里先别展开。"
+        },
+        {
+          "kind": "set",
+          "flag": "holy_grail_rules_known",
+          "value": true,
+          "note": "SET: holy_grail_rules_known = true"
+        },
+        {
+          "kind": "jump",
+          "target": "c011"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_4.md",
+        "line": 639
+      },
+      "background": "bg_old_district_quiet_alley_night",
+      "bgm": "bgm_holy_grail_explanation"
+    },
+    {
+      "id": "c011",
+      "title": "介绍 Saber",
+      "time": "说明之后",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_old_district_quiet_alley_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_temporary_companions",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "怪盗"
+        },
+        {
+          "kind": "hide",
+          "actor": "金发青年"
+        },
+        {
+          "kind": "hide",
+          "actor": "女剑士"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "看向女剑士",
+          "expression": "认真"
+        },
+        {
+          "kind": "show",
+          "actor": "怪盗",
+          "asset": "char_thief_smile",
+          "position": "right",
+          "placeholder": true,
+          "pose": "侧身介绍同伴",
+          "expression": "郑重"
+        },
+        {
+          "kind": "show",
+          "actor": "女剑士",
+          "asset": "char_saber_traveler_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "走近半步，仍留意来路",
+          "expression": "沉着"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "还有，这位是我的从者。你叫她 Saber 就好。"
+        },
+        {
+          "kind": "hide",
+          "actor": "女剑士"
+        },
+        {
+          "kind": "show",
+          "actor": "Saber",
+          "asset": "char_saber_traveler_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "向男高颔首",
+          "expression": "平静"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "刚才也谢谢你。要不是你在那边接着，我们还真不好出来。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Saber",
+          "text": "你们抓住了时机。接下来也要尽快离开这里。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "Saber……这是名字？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "职阶。名字和来历，等熟一点再说。今晚先记住谁和谁站在一起就够了。"
+        },
+        {
+          "kind": "stage",
+          "text": "Saber看向金发青年，向他轻轻点头。青年同样回礼，两人都没有在这时追问对方的身份。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高看了看自己的同伴，忍住了立刻照着问职阶的冲动。眼下，对方仍会在他靠近巷口时，先一步看清外面的情况。"
+        },
+        {
+          "kind": "set",
+          "flag": "saber_class_known",
+          "value": true,
+          "note": "SET: saber_class_known = true"
+        },
+        {
+          "kind": "jump",
+          "target": "c012"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_4.md",
+        "line": 733
+      },
+      "background": "bg_old_district_quiet_alley_night",
+      "bgm": "bgm_temporary_companions"
+    },
+    {
+      "id": "c012",
+      "title": "暂时合作",
+      "time": "同一夜，分别前",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_old_district_quiet_alley_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_temporary_companions",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "怪盗"
+        },
+        {
+          "kind": "hide",
+          "actor": "Saber"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "望向回家方向",
+          "expression": "担忧，坚定"
+        },
+        {
+          "kind": "show",
+          "actor": "怪盗",
+          "asset": "char_thief_smile",
+          "position": "right",
+          "placeholder": true,
+          "pose": "放低声音，提出约定",
+          "expression": "认真"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "站到男高身边",
+          "expression": "专注"
+        },
+        {
+          "kind": "show",
+          "actor": "女剑士",
+          "asset": "char_saber_traveler_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "准备带路离开",
+          "expression": "警戒"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "要是我不想争那个愿望呢？能不能就当没这回事？"
+        },
+        {
+          "kind": "stage",
+          "text": "怪盗没有马上回答。他朝刚才交战的方向看了一眼。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "我也希望能这么简单。但你也见到了，他们会拦你，会动手。你不想争，不代表他们会放过你。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高沉默下来。他想起出门前没有亮灯的房间，手慢慢攥紧，又松开。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "愿望的事先放一边。我得先确认奶奶没事。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "那今晚先到这里。明天学校见。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "你还有东西没说清。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "有。我也有很多事要问你。等找个不会随时冒出追兵的地方，我们互相讲。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "行。先交换情报。别再让我什么都不知道就冲进去。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "这句我记住了。"
+        },
+        {
+          "kind": "stage",
+          "text": "Saber先探出巷口，确认另一侧道路没有被堵住。怪盗指了指与原路不同的方向，带着他们再绕过一段街道。"
+        },
+        {
+          "kind": "stage",
+          "text": "到了可以分开的地方，双方停步观察。确定没有人尾随后，男高与金发青年才转向回家的路。"
+        },
+        {
+          "kind": "set",
+          "flag": "temporary_cooperation",
+          "value": true,
+          "note": "SET: temporary_cooperation = true"
+        },
+        {
+          "kind": "jump",
+          "target": "c013"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_4.md",
+        "line": 794
+      },
+      "background": "bg_old_district_quiet_alley_night",
+      "bgm": "bgm_temporary_companions"
+    },
+    {
+      "id": "c013",
+      "title": "夜归与新的同伴",
+      "time": "同一夜，稍后",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_grandmother_house_entrance_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_homecoming_warm_low",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "怪盗"
+        },
+        {
+          "kind": "hide",
+          "actor": "金发青年"
+        },
+        {
+          "kind": "hide",
+          "actor": "女剑士"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "整理外套，将包好的剑交回青年",
+          "expression": "紧张，疲惫"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "将旧布裹住的剑垂在身侧",
+          "expression": "安静"
+        },
+        {
+          "kind": "show",
+          "actor": "奶奶",
+          "asset": "char_grandmother_warm",
+          "position": "right",
+          "placeholder": true,
+          "pose": "站在门里，披着外衣",
+          "expression": "担忧"
+        },
+        {
+          "kind": "stage",
+          "text": "回到老住宅区后，两人又停了一次。青年沿街口看过，确认没有尾随的身影，才陪男高走向院门。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高一路上已经把旧布重新裹在剑外。敲门前，他拉平被扯皱的外套，刚把手抬起来，门就开了。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "大半夜又往外跑。刚才外面那么响，你去哪儿了？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "我到路口看了一下。后来绕了点路……您没事吧？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "我能有什么事。倒是你——"
+        },
+        {
+          "kind": "stage",
+          "text": "她的目光越过男高，落在门外陌生的青年身上。男高赶紧侧开一步。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "这是我朋友。刚才碰上，他今晚不太方便回去，能在我房间住一下吗？"
+        },
+        {
+          "kind": "stage",
+          "text": "话说到后面，男高自己也觉得含糊。青年却像听懂了眼前的处境，收好手里的长包，朝奶奶认真地欠身。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "先进来。站在门口吹风像什么话。"
+        },
+        {
+          "kind": "background",
+          "name": "bg_grandmother_living_room_night",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "奶奶让出门，把两人领进客厅。她看见男高手背蹭出的红痕，又取来干净毛巾，让他自己把脸和手擦一擦。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "借住可以。明天把事情讲清楚，也别让人家家里担心。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "……知道了。"
+        },
+        {
+          "kind": "stage",
+          "text": "他接过毛巾，终于长长松了一口气。青年没有打断，也没有擅自往屋里走，直到男高示意，才跟着上楼。"
+        },
+        {
+          "kind": "hide",
+          "actor": "奶奶"
+        },
+        {
+          "kind": "background",
+          "name": "bg_grandmother_bedroom_night",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "回到房间，男高给青年铺好临时的被褥，把书包挪到一旁。大师之剑放在两人都能看见的地方。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "今晚先休息。明天去学校……还有一大堆事情等着问。"
+        },
+        {
+          "kind": "stage",
+          "text": "青年点头，在靠近门的一侧坐下。男高躺回床上，隔了一会儿，又转过头。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "还有，刚才一直忘了说。欢迎——嗯，先住这里吧。"
+        },
+        {
+          "kind": "stage",
+          "text": "青年看向他，目光柔和了一些。楼下，奶奶收杯子的声音轻轻响起；再往后，房子重新安静下来。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高听着熟悉的声音，慢慢闭上眼。这一次，入睡前他知道，床边已经不只剩下自己一个人。"
+        },
+        {
+          "kind": "set",
+          "flag": "prologue_4_complete",
+          "value": true,
+          "note": "SET: prologue_4_complete = true"
+        },
+        {
+          "kind": "end"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_4.md",
+        "line": 870
+      },
+      "background": "bg_grandmother_house_entrance_night",
+      "bgm": "bgm_homecoming_warm_low"
+    }
+  ]
+}

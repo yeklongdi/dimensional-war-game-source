@@ -1,0 +1,45 @@
+{
+  "contentVersion": "prologue_four_parts_v1",
+  "files": [
+    {
+      "id": "prologue",
+      "title": "序幕（一）：搬来太阳市的前一天",
+      "part": "序幕（一）",
+      "script": "序幕_Galgame脚本.md",
+      "count": 9,
+      "sourceFile": "source/story/prologue-v2/prologue.md",
+      "from": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（一）\\序幕_Galgame脚本.md",
+      "sha256": "49ac6d4ff378c724354968e7519acc40bdec578d4f807fee3ee7e70c02bcc05a"
+    },
+    {
+      "id": "act1",
+      "title": "序幕（二）：转学生来到太阳市第一高中",
+      "part": "序幕（二）",
+      "script": "序幕（二）_Galgame脚本.md",
+      "count": 22,
+      "sourceFile": "source/story/prologue-v2/act1.md",
+      "from": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（二）\\序幕（二）_Galgame脚本.md",
+      "sha256": "a5c2cc7cc7ff5ca311084cdc2f4b5c7a3c5d2f307857ea89c2f6636542c93f3f"
+    },
+    {
+      "id": "prologue_3",
+      "title": "序幕（三）：床边的勇者",
+      "part": "序幕（三）",
+      "script": "序幕（三）_Galgame脚本.md",
+      "count": 8,
+      "sourceFile": "source/story/prologue-v2/prologue_3.md",
+      "from": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（三）\\序幕（三）_Galgame脚本.md",
+      "sha256": "9f8d9d866540b740b093b923d98d1479cbecbf22dd91628ef43212fa51e50dbf"
+    },
+    {
+      "id": "prologue_4",
+      "title": "序幕（四）：警报下的同行者",
+      "part": "序幕（四）",
+      "script": "序幕（四）_Galgame脚本.md",
+      "count": 13,
+      "sourceFile": "source/story/prologue-v2/prologue_4.md",
+      "from": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（四）\\序幕（四）_Galgame脚本.md",
+      "sha256": "ad1a350d8c05b8f2cffa409dd5ba30b15aaf4134203529e581236db8f0f83bd4"
+    }
+  ]
+}

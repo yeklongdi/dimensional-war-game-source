@@ -1,0 +1,839 @@
+{
+  "id": "prologue_3",
+  "title": "序幕（三）：床边的勇者",
+  "scenes": [
+    {
+      "id": "b001",
+      "title": "晚饭与新同学",
+      "time": "开学第一天傍晚",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_grandmother_dining_evening",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_homecoming_warm",
+          "placeholder": true
+        },
+        {
+          "kind": "check",
+          "raw": "CHECK: has_master_sword == true [章节入口约束；未满足时不得接入本幕]",
+          "meta": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "坐在餐桌旁，校服袖口挽起",
+          "expression": "轻松，偶尔走神"
+        },
+        {
+          "kind": "show",
+          "actor": "奶奶",
+          "asset": "char_grandmother_warm",
+          "position": "right",
+          "placeholder": true,
+          "pose": "给男高夹菜",
+          "expression": "关切，微笑"
+        },
+        {
+          "kind": "stage",
+          "text": "男高回到奶奶家时，厨房里正响着锅铲碰到锅沿的声音。他先把用旧布包好的剑放进楼上的房间，洗净手，才下楼接过奶奶手中的碗。"
+        },
+        {
+          "kind": "stage",
+          "text": "饭桌上摆着热菜和两副碗筷。奶奶看他坐稳，先往他碗里夹了一筷子菜。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "新学校怎么样？有人肯跟你一起吃饭吗？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "有啊！我前面那家伙挺会聊天的，旁边那位……声音有点小，不过人很好。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "那就好。你说话也别总那么大声，别把人家吓着。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "我有那么吓人吗？"
+        },
+        {
+          "kind": "stage",
+          "text": "奶奶抬眼看他。他想起自己今天在讲台上的自我介绍，自己先笑了起来。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "好吧，下次注意。学校图书馆可大了，还有体育馆。操场那边有一块——"
+        },
+        {
+          "kind": "stage",
+          "text": "他的话停在半截。坑底的黑色人形、倒在围栏旁的少女，以及那把仍留着裂纹的剑，一起挤进脑海。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "有一块什么？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "施工的地方，围起来了。我们就从旁边经过。"
+        },
+        {
+          "kind": "stage",
+          "text": "他说完低头扒了一口饭。奶奶没有追问施工区，只把汤碗推近了些。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "先把饭吃了。第一天认那么多路，累了吧？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "还行。明天早上我帮您收拾，您别又一个人全做完了。"
+        },
+        {
+          "kind": "stage",
+          "text": "奶奶笑着说好。男高看着碗边升起的热气，肩膀慢慢放松，刚才那句含糊的话却还硌在心里。"
+        },
+        {
+          "kind": "jump",
+          "target": "b002"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_3.md",
+        "line": 48
+      },
+      "background": "bg_grandmother_dining_evening",
+      "bgm": "bgm_homecoming_warm"
+    },
+    {
+      "id": "b002",
+      "title": "床边的大师之剑",
+      "time": "当晚，洗漱后",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_grandmother_bedroom_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_sword_quiet_mystery",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "奶奶"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "坐在床沿，解开旧布",
+          "expression": "疑惑，疲惫"
+        },
+        {
+          "kind": "stage",
+          "text": "帮奶奶收好碗筷、洗漱完毕，男高回到房间，轻轻关上门。旧铁皮机器人仍摆在窗台上，书包靠着书桌，只有床边多出的长条包裹显得格外陌生。"
+        },
+        {
+          "kind": "stage",
+          "text": "他解开旧布，把大师之剑横放在膝上。翼状护手上的金色三角在台灯下泛着微光，剑刃恢复了明亮的颜色，细小的腐蚀裂纹却还在。"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "白天看到的那些……到底是谁的记忆？"
+        },
+        {
+          "kind": "stage",
+          "text": "他试着再次握住剑柄，等了一会儿。没有空岛，没有巨龙，也没有那个从高处坠下的金发青年。房间里只有台灯轻微的电流声。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "白天动静那么大，现在倒装起普通的剑来了。"
+        },
+        {
+          "kind": "stage",
+          "text": "说完，他也觉得自己的问题有些好笑。困意这时才一下子涌上来，他打了个哈欠，把剑平放在床边，拉好窗帘。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "明天再想。先睡觉……这回可不能又让奶奶叫半天。"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_light_switch",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "台灯熄灭。男高翻了个身，呼吸渐渐放缓。"
+        },
+        {
+          "kind": "stage",
+          "text": "月光从窗帘缝隙落下来。床边，剑刃中央的金色纹路缓缓亮起；被袖口盖住的剑形灼痕，也回应似的闪了一下。"
+        },
+        {
+          "kind": "jump",
+          "target": "b003"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_3.md",
+        "line": 122
+      },
+      "background": "bg_grandmother_bedroom_night",
+      "bgm": "bgm_sword_quiet_mystery"
+    },
+    {
+      "id": "b003",
+      "title": "没有尽头的晚饭",
+      "time": "梦境，时间停滞",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_grandmother_dining_evening",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_homecoming_warm_dream",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "重新坐在饭桌旁",
+          "expression": "茫然，逐渐警觉"
+        },
+        {
+          "kind": "show",
+          "actor": "奶奶",
+          "asset": "char_grandmother_warm",
+          "position": "right",
+          "placeholder": true,
+          "pose": "坐在桌对面，动作重复",
+          "expression": "笑容固定"
+        },
+        {
+          "kind": "stage",
+          "text": "男高再抬起头时，面前还是那碗热汤。筷子正握在手里，奶奶坐在桌对面，笑着看他。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "……我不是已经睡了吗？"
+        },
+        {
+          "kind": "stage",
+          "text": "奶奶像没听见，只伸手指了指他的饭碗。他迟疑着夹起一块菜，低头时，却发现刚才夹走的那一块仍留在原处。"
+        },
+        {
+          "kind": "stage",
+          "text": "他又夹了一次。盘子没有变化，汤面升起的热气也像沿着同一道弧线反复飘动。"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_clock_tick_stop",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "墙上的钟轻响一声。秒针往前挪了一格，又退回原位。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "奶奶，钟是不是坏了？"
+        },
+        {
+          "kind": "stage",
+          "text": "没有回答。桌对面的人仍维持着那个笑容。男高放下筷子，朝窗外看去：路灯下没有行人，也没有车影，夜色浓得像贴在玻璃上。"
+        },
+        {
+          "kind": "stage",
+          "text": "他等了很久，远处的天边没有一点变亮的迹象。身后的饭菜却一直冒着热气。"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "不对。刚才已经收过碗了。这里是梦。"
+        },
+        {
+          "kind": "stage",
+          "text": "他站起身。桌对面的身影终于动了一下，周围随之浮起淡淡的白雾。"
+        },
+        {
+          "kind": "jump",
+          "target": "b004"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_3.md",
+        "line": 171
+      },
+      "background": "bg_grandmother_dining_evening",
+      "bgm": "bgm_homecoming_warm_dream"
+    },
+    {
+      "id": "b004",
+      "title": "雾中的邀请",
+      "time": "梦境",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_dream_dining_fog",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_nightmare_invitation",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "奶奶"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "站在椅子旁，望向雾中",
+          "expression": "警惕"
+        },
+        {
+          "kind": "stage",
+          "text": "白雾漫过饭桌，桌对面的奶奶逐渐看不清了。一个陌生的声音从那个方向响起，故意拖长尾音，像在郑重念出某句排练过的话。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "雾中的声音",
+          "text": "欢迎来到……属于你的梦。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "谁？我奶奶呢？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "雾中的声音",
+          "text": "你不是很喜欢这里吗？那就一直留下来。"
+        },
+        {
+          "kind": "stage",
+          "text": "雾里隐约出现一个纤细的轮廓。她没有走近，只歪着头，像等着对方赞叹这张永远温暖的饭桌。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "雾中的声音",
+          "text": "这里有热饭，有你想见的人。你想要什么，还可以再告诉我。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "我想醒过来。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "雾中的声音",
+          "text": "……那个不算。"
+        },
+        {
+          "kind": "stage",
+          "text": "她答得太快，刚才故作深沉的腔调一下子漏了底。短暂安静后，她又压低声音。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "雾中的声音",
+          "text": "留在这里就不会累。也不用担心，想见的人会不见。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高望向奶奶方才坐着的位置。那里的身影像一张被水泡开的照片，越看越模糊。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "喜欢也得让我自己决定吧？我要醒过来。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "雾中的声音",
+          "text": "为什么？明明睡着就不会累了。"
+        },
+        {
+          "kind": "jump",
+          "target": "b005"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_3.md",
+        "line": 226
+      },
+      "background": "bg_dream_dining_fog",
+      "bgm": "bgm_nightmare_invitation"
+    },
+    {
+      "id": "b005",
+      "title": "男高拒绝留下",
+      "time": "梦境",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_dream_house_loop",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_nightmare_pressure",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "推门，扶住门框保持站立",
+          "expression": "愤怒，困倦"
+        },
+        {
+          "kind": "stage",
+          "text": "男高没有再等回答。他绕开饭桌，冲到门口，拧开门把。"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_door_loop",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "门外仍是一张饭桌。热汤、两副碗筷、停住的钟，都在同样的位置。"
+        },
+        {
+          "kind": "stage",
+          "text": "他一口气穿过第二扇门，接着是第三扇。每次脚步落地，椅背都正好抵在他的膝后。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "把门打开！真的那一扇！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "雾中的声音",
+          "text": "你坐下就好了呀。坐下来，再睡一会儿。"
+        },
+        {
+          "kind": "stage",
+          "text": "雾缠上他的脚踝。男高的眼皮忽然重得抬不起来，连自己刚才为什么站起来，都有一瞬间想不清。"
+        },
+        {
+          "kind": "stage",
+          "text": "他抓紧门框，盯住木头上的一道划痕，一遍遍在心里报出自己的名字、学校和今天发生的事。"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "我回到太阳市了。今天第一天上学。明天……还有明天。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "有人等我回去。我不能留在这儿。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "雾中的声音",
+          "text": "这里也有人等你。你看，饭还热着呢。"
+        },
+        {
+          "kind": "stage",
+          "text": "椅子被无形的力量拉到身后。男高用肩膀抵住门框，拼命不让自己坐下；指尖却一点点滑落，脚下也再使不出刚才的力气。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "我说了……放我出去！"
+        },
+        {
+          "kind": "jump",
+          "target": "b006"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_3.md",
+        "line": 291
+      },
+      "background": "bg_dream_house_loop",
+      "bgm": "bgm_nightmare_pressure"
+    },
+    {
+      "id": "b006",
+      "title": "梦外的剑鸣",
+      "time": "同一时刻",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_dream_house_loop",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_sword_answer",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "扶着门框，握住发热的手",
+          "expression": "痛苦，重新集中精神"
+        },
+        {
+          "kind": "stage",
+          "text": "一阵灼热从手上传来。男高猛地睁开一点眼睛，看见袖口下的剑形灼痕正在发光。"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_master_sword_resonance",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "与白天相同的剑鸣穿过浓雾。他下意识朝声音伸出手，指尖碰到的却仍是空处。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "是那把剑……？"
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "background",
+          "name": "bg_grandmother_bedroom_night",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "现实中，床边的大师之剑轻轻震动。沿剑刃亮起的金色纹路，与男高手上的光连在一起。白天触剑时建立的联系，在这一刻终于得到了清晰的回应。"
+        },
+        {
+          "kind": "background",
+          "name": "bg_dream_house_loop",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "扶住门框，抬头望向剑光",
+          "expression": "挣扎，求生"
+        },
+        {
+          "kind": "stage",
+          "text": "男高咬住牙，抬头望向雾中透进来的一线亮光。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "谁都好……如果你听得见，帮我一把！"
+        },
+        {
+          "kind": "stage",
+          "text": "光落在门前，一只手越过雾，稳稳握住了他的手腕。"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "持剑，扶住男高",
+          "expression": "专注"
+        },
+        {
+          "kind": "stage",
+          "text": "男高抬起头。金发、陌生的服装，以及那把翼状护手的剑——白天幻象中的青年，此刻正站在他面前。"
+        },
+        {
+          "kind": "stage",
+          "text": "青年没有开口。他先扶稳男高，随后转过身，将剑横在两人与浓雾之间。"
+        },
+        {
+          "kind": "set",
+          "flag": "link_summoned",
+          "value": true,
+          "note": "SET: link_summoned = true"
+        },
+        {
+          "kind": "jump",
+          "target": "b007"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_3.md",
+        "line": 351
+      },
+      "background": "bg_dream_house_loop",
+      "bgm": "bgm_sword_answer"
+    },
+    {
+      "id": "b007",
+      "title": "一剑斩断噩梦",
+      "time": "梦境结束前",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_dream_house_fracture",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_sword_breaks_dream",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "金发青年"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "勉强站稳，跟住青年",
+          "expression": "震惊"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "站在男高身前，举剑",
+          "expression": "冷静，警戒"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "雾中的声音",
+          "text": "这里是我的——"
+        },
+        {
+          "kind": "stage",
+          "text": "话没说完，青年已经向前踏出一步。剑刃沿着雾中最亮的缝隙落下。"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_sword_cuts_dream",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "缠在脚踝上的白雾骤然松开。饭桌、墙壁和一扇扇重复的门，同时裂开一道清晰的口子。"
+        },
+        {
+          "kind": "stage",
+          "text": "青年反手握住男高的手腕，带着他朝那道裂口走去。身后，刚才从容的声音一下子拔高。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "雾中的声音",
+          "text": "等一下！我还没说可以结束——！"
+        },
+        {
+          "kind": "stage",
+          "text": "她试着把雾重新聚起来。青年转身挡住最后一缕追来的白雾，剑锋一振，男高眼前的房屋便彻底散开。"
+        },
+        {
+          "kind": "stage",
+          "text": "热汤的气味、停住的钟和模糊的身影都远去了。男高听见自己急促的呼吸，以及有人在近处踩过木地板的轻响。"
+        },
+        {
+          "kind": "stage",
+          "text": "那只握着他手腕的手没有松开。"
+        },
+        {
+          "kind": "set",
+          "flag": "nightmare_encountered",
+          "value": true,
+          "note": "SET: nightmare_encountered = true"
+        },
+        {
+          "kind": "jump",
+          "target": "b008"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_3.md",
+        "line": 412
+      },
+      "background": "bg_dream_house_fracture",
+      "bgm": "bgm_sword_breaks_dream"
+    },
+    {
+      "id": "b008",
+      "title": "醒来后的陌生人",
+      "time": "同一夜，梦醒后",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_grandmother_bedroom_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_after_dream_quiet",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "金发青年"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "从床上坐起，扶着被子",
+          "expression": "惊魂未定，疑惑"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "站在床边，持大师之剑",
+          "expression": "观察，克制"
+        },
+        {
+          "kind": "stage",
+          "text": "男高猛地坐起来，差点撞上床边的人。那人及时后退半步，空着的手仍护在他肩旁。"
+        },
+        {
+          "kind": "stage",
+          "text": "房间还是原来的房间。书包、台灯、窗台上的铁皮机器人，全都在。他连着喘了几口气，才确定自己终于回来了。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "刚才……是你把我拉出来的？"
+        },
+        {
+          "kind": "stage",
+          "text": "金发青年看了他片刻，轻轻点头。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "那你是谁？又是怎么进我房间的？"
+        },
+        {
+          "kind": "stage",
+          "text": "青年低头看了一眼手中的剑。男高顺着看过去：床边的旧布已经空了，对方握着的，正是自己带回家的大师之剑。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "你是跟着这把剑来的？"
+        },
+        {
+          "kind": "stage",
+          "text": "青年没有回答。他的目光从男高发亮的手移到脸上，确认男高能够坐稳，才慢慢放低剑尖。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高抬起手，摸了摸已经不再发烫的灼痕。他有一肚子问题，却先把身子往床里挪了挪，给对方让出一点地方。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "……不管怎么说，刚才谢谢你。"
+        },
+        {
+          "kind": "stage",
+          "text": "青年微微颔首。两人隔着床边那一小块月光，安静地看着彼此。"
+        },
+        {
+          "kind": "set",
+          "flag": "prologue_3_complete",
+          "value": true,
+          "note": "SET: prologue_3_complete = true"
+        },
+        {
+          "kind": "end"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/prologue-v2/prologue_3.md",
+        "line": 463
+      },
+      "background": "bg_grandmother_bedroom_night",
+      "bgm": "bgm_after_dream_quiet"
+    }
+  ]
+}

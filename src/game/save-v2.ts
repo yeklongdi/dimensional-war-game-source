@@ -29,7 +29,10 @@ export function decodeV2(raw: string | null, library: StoryLibrary): SaveReadV2 
   if (!Array.isArray(value.completedLevelIds) || value.completedLevelIds.length > levels.length
     || value.completedLevelIds.some((id, index) => id !== levelIds[index])) return invalid('完成关卡不是连续前缀');
   const completed = value.completedLevelIds as LevelId[], flags = value.flags as Record<string, boolean>;
-  if (Boolean(flags[completionFlags.prologue]) !== (completed.length >= 3) || Boolean(flags[completionFlags.act1]) !== (completed.length === 7)) return invalid('幕完成记录不符');
+  if (Boolean(flags[completionFlags.prologue]) !== (completed.length >= 3) || Boolean(flags[completionFlags.act1]) !== (completed.length >= 7)) return invalid('幕完成记录不符');
+  if (library.prologue_3 && ((completed.length >= 7 && !flags.has_master_sword)
+    || (completed.length >= 8 && (!flags.prologue_3_complete || !flags.link_summoned))
+    || completed.length >= 9)) return invalid('新版章节入口或完成记录不符；序幕四战斗尚未开放');
   const point = value.checkpoint;
   if (!isRecord(point)) return invalid('检查点不符');
   let checkpoint: Checkpoint;
@@ -38,6 +41,7 @@ export function decodeV2(raw: string | null, library: StoryLibrary): SaveReadV2 
     const level = typeof point.levelId === 'string' ? levelById(point.levelId) : undefined;
     if (!level || typeof point.sceneId !== 'string' || !level.sceneIds.includes(point.sceneId)
       || !library[level.actId]?.scenes.some(scene => scene.id === point.sceneId) || levelIds.indexOf(level.id) > completed.length) return invalid('关卡场景不可进入');
+    if (library.prologue_4 && level.actId === 'prologue_4' && !['c001', 'c002', 'c003'].includes(point.sceneId)) return invalid('检查点越过了未接战斗');
     checkpoint = normalizedCheckpoint({ kind: 'level', levelId: level.id, sceneId: point.sceneId }, completed);
   } else return invalid('检查点结构不符');
   if (typeof value.savedAt !== 'number' || !Number.isSafeInteger(value.savedAt) || value.savedAt < 0 || value.savedAt > 8_640_000_000_000_000) return invalid('保存时间不符');

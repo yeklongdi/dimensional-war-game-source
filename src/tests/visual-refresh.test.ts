@@ -9,7 +9,7 @@ import { segmentedVisual } from './fixtures/segmented-visual.js';
 const actor: ActorState = { actor: '男高', visible: true, position: 'right', asset: 'char_male_high_normal', pose: '坐在沙发上', expression: '得意' };
 describe('本轮分层接入复核', () => {
   it('不同缺口仍用同一张静态回退时只更新诊断，不因表情换了重复加载整张图', () => {
-    const first = resolveVisual(actor), changed = resolveVisual({ ...actor, pose: '躺在床上、刚醒', expression: '疑惑' });
+    const first = resolveVisual({ ...actor, pose: '抱着虚拟主播、疲惫' }), changed = resolveVisual({ ...actor, pose: '取剑，抖开旧布包裹', expression: '期待' });
     expect(first.kind).toBe('static'); expect(changed.kind).toBe('static');
     expect(first.key).toBe(changed.key); expect(first.diagnostic).not.toBe(changed.diagnostic);
     expect(actor).toMatchObject({ position: 'right', pose: '坐在沙发上', expression: '得意' });

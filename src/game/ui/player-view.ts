@@ -4,12 +4,15 @@ import { button, element } from './elements.js';
 import { renderDebug } from './dev-overlay.js';
 import { PortraitsView } from './portraits.js';
 import type { PortraitPorts } from './portraits.js';
+import { chapterTitles, displaySceneTitle } from '../story/chapter-policy.js';
+import { renderProps } from './props.js';
 
 export class PlayerView {
   readonly stage = element('main', 'stage');
   private readonly backdrop = element('div', 'backdrop');
   private readonly title = element('div', 'scene-title');
   private readonly actors = element('div', 'portraits');
+  private readonly props = element('div', 'story-props');
   private readonly hud = element('div', 'hud');
   private readonly content = element('div', 'player-content');
   private readonly debug = element('aside', 'dev-overlay');
@@ -22,11 +25,14 @@ export class PlayerView {
   private readonly gesture: () => void;
   private readonly resizeObserver: ResizeObserver;
   private readonly endNavigation?: () => void;
+  private readonly systemNavigation?: (intent: 'load' | 'go-menu') => void;
 
-  constructor(root: HTMLElement, dispatch: (action: Action) => void, gesture: () => void, endNavigation?: () => void, portraitPorts?: PortraitPorts) {
+  constructor(root: HTMLElement, dispatch: (action: Action) => void, gesture: () => void, endNavigation?: () => void, portraitPorts?: PortraitPorts,
+    systemNavigation?: (intent: 'load' | 'go-menu') => void) {
     this.dispatch = dispatch;
     this.gesture = gesture;
     this.endNavigation = endNavigation;
+    this.systemNavigation = systemNavigation;
     this.portraits = new PortraitsView(this.actors, dispatch, portraitPorts);
     this.stage.id = 'stage';
     this.stage.tabIndex = 0;
@@ -35,7 +41,7 @@ export class PlayerView {
     this.content.dataset.testid = 'player-content';
     this.debug.dataset.testid = 'dev-overlay';
     this.debug.hidden = true;
-    this.stage.append(this.backdrop, this.title, this.actors, this.hud, this.content, this.debug);
+    this.stage.append(this.backdrop, this.title, this.actors, this.props, this.hud, this.content, this.debug);
     root.append(this.stage);
     this.debug.addEventListener('click', event => event.stopPropagation());
     this.stage.addEventListener('click', event => {
@@ -65,9 +71,10 @@ export class PlayerView {
     });
     const background = !state.failedAssets[state.backgroundId] && backgroundBindings[state.backgroundId];
     this.backdrop.style.background = background ? `url("${background}") center / cover` : timeGradient(state.time);
-    this.title.textContent = background ? '' : state.sceneTitle;
-    this.hud.textContent = `${state.actId === 'prologue' ? '序幕' : '第一幕'}　 /　 次元战争`;
+    this.title.textContent = background ? '' : displaySceneTitle(state.sceneTitle);
+    this.hud.textContent = `${chapterTitles[state.actId] ?? state.actId}　 /　 次元战争`;
     this.portraits.render(state);
+    renderProps(this.props, state);
     if (this.waitToken !== waiting?.token) {
       this.waitToken = waiting?.token ?? '';
       this.content.replaceChildren();
@@ -120,10 +127,19 @@ export class PlayerView {
       const panel = element('section', 'interlude-panel');
       if (waiting.kind === 'battle') {
         panel.append(element('h1', '', '正在进入战斗'));
+      } else if (waiting.kind === 'blocked-call' || waiting.kind === 'unfinished') {
+        panel.dataset.testid = waiting.kind;
+        panel.append(element('h1', '', waiting.kind === 'blocked-call' ? '此战斗尚未开放' : '此分支尚未完成'),
+          element('p', '', waiting.message));
+        if (waiting.kind === 'unfinished' && state.sceneId === 'a010_return_class')
+          panel.append(button('重新选择', 'reselect-choice', activate({ type: 'reselect', token })));
+        if (this.endNavigation) panel.append(button('返回地图', 'blocked-map', this.endNavigation));
+        if (this.systemNavigation) panel.append(button('读取存档', 'blocked-load', () => this.systemNavigation!('load')),
+          button('返回主菜单', 'blocked-menu', () => this.systemNavigation!('go-menu')));
       } else if (waiting.kind === 'end') {
         const prologue = state.actId === 'prologue';
         panel.dataset.testid = 'act-end';
-        panel.append(element('div', 'eyebrow', '次元战争'), element('h1', '', prologue ? '序幕结束' : '第一幕结束'),
+        panel.append(element('div', 'eyebrow', '次元战争'), element('h1', '', `${chapterTitles[state.actId] ?? state.actId}结束`),
           this.endNavigation ? button('返回地图', 'end-levels', this.endNavigation)
             : button(prologue ? '进入第一幕' : '重新开始', prologue ? 'enter-act1' : 'restart', activate({ type: prologue ? 'enter-act1' : 'restart', token })));
       } else {

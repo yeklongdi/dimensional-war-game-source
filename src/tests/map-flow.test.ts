@@ -7,22 +7,24 @@ import { storyLibrary } from '../game/story/library.js';
 import { clampCamera, fitScale, focusCamera, mapSize, mapViewport, zoomCamera } from '../game/map-camera.js';
 import { appAction, appStep, freshApp, enterLevel, navigate, sampleV2 } from './m4-helpers.js';
 
-describe('七关配置、显现与反向回访', () => {
-  it('七关唯一覆盖25主场景，三条未完成路线不在入口配置', () => {
-    expect(levels.map(level => level.sceneIds.length)).toEqual([4, 3, 2, 3, 5, 6, 2]);
+describe('九关配置、显现与反向回访', () => {
+  it('九关唯一覆盖48主场景，四条未完成分支不在主线场景配置', () => {
+    expect(levels.map(level => level.sceneIds.length)).toEqual([4, 3, 2, 3, 5, 6, 4, 8, 13]);
     const scenes = levels.flatMap(level => level.sceneIds);
-    expect(scenes).toEqual(baseline.scenes); expect(new Set(scenes).size).toBe(25);
+    expect(scenes.filter(id => baseline.scenes.includes(id))).toEqual(baseline.scenes);
+    expect(new Set(scenes).size).toBe(48);
     expect(mapLocations).toHaveLength(5);
     for (const [index, level] of levels.entries()) expect(level.prerequisiteLevelId).toBe(index ? levels[index - 1]!.id : undefined);
   });
   it('新档仅奶奶家；按前缀显现，回访复用五节点及四条线', () => {
     expect(visibleLevels([]).map(level => level.id)).toEqual(['prologue_01']);
     const counts = levelIds.map((_, index) => new Set(visibleLevels(levelIds.slice(0, index)).map(level => level.locationId)).size);
-    expect(counts).toEqual([1, 2, 2, 3, 4, 5, 5]);
+    expect(counts).toEqual([1, 2, 2, 3, 4, 5, 5, 5, 5]);
     const edges = progressEdges(levelIds);
-    expect(edges).toHaveLength(4);
+    expect(edges).toHaveLength(5);
     expect(edges.find(edge => [edge.from, edge.to].includes('old_warehouse'))).toMatchObject({ from: 'old_warehouse', to: 'grandma_home' });
-    expect(edges.find(edge => [edge.from, edge.to].includes('construction_site'))).toMatchObject({ from: 'construction_site', to: 'high_school', latest: true });
+    expect(edges.find(edge => [edge.from, edge.to].includes('construction_site'))).toMatchObject({ from: 'construction_site', to: 'high_school', latest: false });
+    expect(edges.find(edge => edge.latest)).toMatchObject({ from: 'grandma_home', to: 'school_road' });
   });
   it('正式地理坐标保持西家东路口、学校东北、仓库南、施工在学校东北', () => {
     const [home, warehouse, road, school, construction] = mapLocations.map(location => location.position);
@@ -33,15 +35,16 @@ describe('七关配置、显现与反向回访', () => {
   });
 });
 describe('真实规则整条主线与关卡边界', () => {
-  it('七次返回地图；25场161段正文与历史主线完全相同，战后SET完整', () => {
+  it('八次返回地图后在C003真实阻断，新增正文与战后SET完整', () => {
     let state = freshApp(); const seen = new Set<string>(), scenes: string[] = [], texts: { scene: string; node: string; text: string }[] = [], completed: string[] = [];
     for (let step = 0; step < 2400; step++) {
       const wait = state.waiting;
       if (state.screen === 'story' && scenes[scenes.length - 1] !== state.sceneId) scenes.push(state.sceneId);
       if (state.screen === 'story' && wait?.kind === 'text' && !seen.has(wait.token)) {
         seen.add(wait.token);
-        texts.push({ scene: state.sceneId, node: String(wait.origin.nodeIndex), text: wait.textKind === 'inner' ? `（${wait.text}）` : wait.text });
+        texts.push({ scene: state.sceneId, node: String(wait.origin.nodeIndex), text: wait.text });
       }
+      if (wait?.kind === 'blocked-call') break;
       if (state.screen === 'map') {
         completed.push(state.progress!.completedLevelIds.at(-1)!);
         for (const id of state.progress!.completedLevelIds) expect(enterLevel(state, id)).toBe(state);
@@ -51,9 +54,17 @@ describe('真实规则整条主线与关卡边界', () => {
       if (wait?.kind === 'text' && wait.revealed < Array.from(wait.text).length) expect(next.progress!.completedLevelIds).toEqual(state.progress!.completedLevelIds);
       state = next;
     }
-    expect(completed).toEqual(levelIds); expect(scenes).toEqual(baseline.scenes);
-    expect(texts).toEqual(baseline.texts.map(({ scene, node, text }) => ({ scene, node, text })));
-    expect(texts).toHaveLength(161);
+    expect(completed).toEqual(levelIds.slice(0, 8));
+    const mainScenes = [...new Set(scenes)].filter(id => !id.includes('_return_'));
+    expect(mainScenes).toEqual(levels.flatMap(level => level.sceneIds).slice(0, 38));
+    expect(texts.some(text => text.scene === 'a015_retrieve')).toBe(true);
+    expect(texts.some(text => text.scene === 'b008')).toBe(true);
+    expect(texts.map(item => item.text).join('')).not.toMatch(/【待确认】|【不可执行】|【分支占位】|CHECK:/);
+    for (const item of texts) {
+      const node = Object.values(storyLibrary).flatMap(act => act.scenes).find(scene => scene.id === item.scene)!.nodes[Number(item.node)];
+      expect(node && 'text' in node && node.text.includes(item.text), item.scene).toBe(true);
+    }
+    expect(state.waiting).toMatchObject({ kind: 'blocked-call', callId: 'battle_prologue4_patrol' });
     const a014 = storyLibrary.act1!.scenes.find(scene => scene.id === 'a014')!, call = a014.nodes.findIndex(node => node.kind === 'call');
     expect(texts.filter(text => text.scene === 'a014' && Number(text.node) > call)).toHaveLength(4);
     const sets = a014.nodes.filter(node => node.kind === 'set'); expect(sets).toHaveLength(2);

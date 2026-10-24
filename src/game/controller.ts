@@ -6,7 +6,8 @@ import { navigationToken } from './router.js';
 import type { NavigationAction } from './router.js';
 import { hydrateRuntime, paused, reduceRuntime } from './runtime.js';
 import type { GameAction, RuntimeTransition } from './runtime.js';
-import { browserStorage, browserVaultStore } from './vault-storage.js';
+import { browserStorage } from './vault-storage.js';
+import { browserStoryVaultStore, saveKeyV4 } from './save-v4.js';
 import type { VaultStore } from './vault-storage.js';
 import { saveKeyV3 } from './save-v3.js';
 import { createSettingsStore, settingsKey } from './settings.js';
@@ -28,7 +29,7 @@ import { readSeed } from './battle/controller.js';
 export type PlayerPorts = { vault?: VaultStore; settingsStore?: SettingsStore; now?: () => number; randomSeed?: () => number; randomId?: () => string };
 /** 单个状态、活动视图与音频实例；时钟、存储和随机源均是 IO 边界。 */
 export function mountPlayer(root: HTMLElement, search = new URLSearchParams(location.search), ports: PlayerPorts = {}) {
-  const store = ports.vault ?? browserVaultStore(storyLibrary), now = ports.now ?? Date.now;
+  const store = ports.vault ?? browserStoryVaultStore(storyLibrary), now = ports.now ?? Date.now;
   const settingsStore = ports.settingsStore ?? createSettingsStore(browserStorage), newId = ports.randomId ?? (() => crypto.randomUUID());
   const parsed = readSeed(search.get('seed'), ports.randomSeed ?? (() => crypto.getRandomValues(new Uint32Array(1))[0]!));
   if (parsed.warning) console.warn(`[次元战争:seed] ${parsed.warning}`);
@@ -98,6 +99,8 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
       const scope = state.run;
       if (state.screen === 'story') view = new PlayerView(root, action => play(action, scope), () => audio.unlock(), () => {
         if (state.run === scope) navigate({ type: 'open-map', token: navigationToken(state) });
+      }, undefined, intent => {
+        if (state.run === scope) dispatch({ type: 'system', intent, token: `${state.run}:system:${state.system!.uiRevision}` });
       });
       else if (state.screen === 'battle') view = new BattleView(root, action => play(action, scope));
       else if (state.screen === 'map') view = new MapView(root, navigate);
@@ -152,7 +155,7 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
     if (state.waiting?.kind === 'text') { event.preventDefault(); play({ type: 'advance', token: state.waiting.token }); }
   };
   const storageChanged = (event: StorageEvent) => {
-    if (event.key === saveKeyV3 || event.key === saveKeyV2 || event.key === saveKey || event.key === null) dispatch({ type: 'vault-external', read: store.read() });
+    if (event.key === saveKeyV4 || event.key === saveKeyV3 || event.key === saveKeyV2 || event.key === saveKey || event.key === null) dispatch({ type: 'vault-external', read: store.read() });
     if (event.key === settingsKey) { /* 偏好不自动覆盖当前窗口正在调节的值，刷新时读取最新持久设置。 */ }
   };
   document.addEventListener('keydown', keydown); window.addEventListener('storage', storageChanged);

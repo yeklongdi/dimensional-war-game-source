@@ -13,6 +13,7 @@ import { locationById } from '../content/map-locations.js';
 import { focusCamera, mapViewport } from './map-camera.js';
 import { reduceMapNavigation } from './map-navigation.js';
 import type { MapAction } from './map-navigation.js';
+import { chapterEntryError, checkpointScene, sceneEntryError } from './story/chapter-policy.js';
 
 type SimpleNavigation = 'open-map' | 'main-menu' | 'resume' | 'ask-replace' | 'cancel-replace' | 'confirm-replace';
 export type NavigationAction = { [T in SimpleNavigation]: { type: T; token: string } }[SimpleNavigation]
@@ -56,7 +57,7 @@ function memoryPoint(state: GameState): Checkpoint {
 }
 function save(state: GameState, now: number, point?: Checkpoint, replace?: { key: 'v1' | 'v2'; raw: string }): AppTransition {
   const p = state.progress!;
-  const checkpoint = normalizedCheckpoint(point ?? (state.activeLevelId ? { kind: 'level', levelId: state.activeLevelId, sceneId: state.sceneId } : memoryPoint(state)), p.completedLevelIds);
+  const checkpoint = normalizedCheckpoint(point ?? (state.activeLevelId ? { kind: 'level', levelId: state.activeLevelId, sceneId: checkpointScene(state) } : memoryPoint(state)), p.completedLevelIds);
   const data: SaveV2 = { version: 2, flags: { ...state.flags }, completedLevelIds: [...p.completedLevelIds], checkpoint, savedAt: now };
   const revision = p.request + 1, blocked = p.status === 'blocked' && replace === undefined;
   return { effects: [], state: { ...state, progress: { ...p, draft: data, request: revision, confirming: false,
@@ -81,6 +82,8 @@ function handoff(previous: GameState, next: GameState): AppTransition {
 }
 function begin(previous: GameState, library: StoryLibrary, levelId: string, sceneId: string, now: number): AppTransition {
   const level = levelById(levelId)!;
+  const error = chapterEntryError(level.actId, previous.flags) ?? sceneEntryError(level.actId, sceneId);
+  if (error) return { state: previous, effects: [], rejectedReason: error };
   const transition = connectCall(resumeScene(previous, library, level.actId, sceneId, previous.run + 1, level.id));
   transition.state.progress = { ...previous.progress!, navigation: previous.progress!.navigation + 1, confirming: false };
   const saved = save(transition.state, now);

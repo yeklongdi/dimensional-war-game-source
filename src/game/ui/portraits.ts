@@ -8,6 +8,7 @@ import type { VisualPlan } from '../visual/types.js';
 import { element } from './elements.js';
 import { LayeredFigure, visualClock } from './layered-figure.js';
 import type { FigureClock } from './layered-figure.js';
+import { isStoryProp } from './props.js';
 
 export type PortraitPorts = { candidates?: boolean; image?: ImagePort<HTMLImageElement>; clock?: FigureClock; fixedTime?: () => number | undefined };
 class ActorPortrait {
@@ -56,11 +57,13 @@ class ActorPortrait {
         else this.figure = new LayeredFigure(plan.recipe, loaded.images, this.clock, start);
         if (this.root.firstElementChild !== this.figure.root) this.root.replaceChildren(this.figure.root);
         this.root.dataset.visual = 'layered';
+        this.root.dataset.frame = 'layered';
       } else if (loaded.kind === 'static') {
         this.figure?.dispose(); this.figure = undefined;
         const image = loaded.image.cloneNode() as HTMLImageElement;
         image.className = 'portrait-image'; image.alt = name;
         this.root.replaceChildren(image); this.root.dataset.visual = 'static';
+        this.root.dataset.frame = plan.kind === 'static' ? plan.frame ?? 'legacy' : plan.kind === 'layered' ? plan.fallbackFrame ?? 'legacy' : 'legacy';
       } else { this.figure?.dispose(); this.figure = undefined; this.placeholder(name); }
       this.syncSpeech();
     }, error => {
@@ -78,7 +81,7 @@ class ActorPortrait {
       if (image) {
         const copy = image.cloneNode() as HTMLImageElement;
         copy.className = 'portrait-image'; copy.alt = name;
-        this.root.classList.remove('portrait-placeholder'); this.root.replaceChildren(copy); this.root.dataset.visual = 'static';
+        this.root.classList.remove('portrait-placeholder'); this.root.replaceChildren(copy); this.root.dataset.visual = 'static'; this.root.dataset.frame = plan.fallbackFrame ?? 'legacy';
       } else this.placeholder(name);
     }, () => this.staticFailure(this.actor!, name));
   }
@@ -88,6 +91,7 @@ class ActorPortrait {
       message: `立绘 ${actor.asset} 无法读取，使用色块占位。` });
   }
   private placeholder(name: string): void {
+    delete this.root.dataset.frame;
     this.root.classList.add('portrait-placeholder'); this.root.dataset.visual = 'placeholder';
     this.root.replaceChildren(element('span', 'portrait-initial', Array.from(name)[0] ?? '?'),
       element('span', 'portrait-name', name), element('span', 'placeholder-label', '立绘占位'));
@@ -123,16 +127,18 @@ export class PortraitsView {
     if (this.disposed) return;
     if (this.session !== undefined && this.session !== state.run) this.clear();
     this.session = state.run;
-    const visible = Object.values(state.actors).filter(actor => actor.visible);
-    for (const actor of Object.values(state.actors)) {
+    const people = Object.values(state.actors).filter(actor => !isStoryProp(actor));
+    const visible = people.filter(actor => actor.visible);
+    for (const actor of people) {
       let instance = this.instances.get(actor.actor);
       if (!instance) { instance = new ActorPortrait(this.dispatch, this.ports); this.instances.set(actor.actor, instance); this.root.append(instance.root); }
       const { slot } = placement(actor.position), peers = visible.filter(other => placement(other.position).slot === slot);
-      const offset = (peers.findIndex(other => other.actor === actor.actor) - (peers.length - 1) / 2) * 136;
-      instance.root.style.left = `${slotX[slot] + offset}px`;
+      // 半身图比旧首字占位宽；同槽拉开脸部间距，避免占位遮住同伴面部。
+      const offset = (peers.findIndex(other => other.actor === actor.actor) - (peers.length - 1) / 2) * 320;
+      instance.root.style.left = `${Math.max(180, Math.min(1100, slotX[slot] + offset))}px`;
       instance.update(state, actor);
     }
-    for (const [key, instance] of this.instances) if (!state.actors[key]) { instance.dispose(); this.instances.delete(key); }
+    for (const [key, instance] of this.instances) if (!state.actors[key] || isStoryProp(state.actors[key]!)) { instance.dispose(); this.instances.delete(key); }
   }
   private clear(): void { for (const instance of this.instances.values()) instance.dispose(); this.instances.clear(); }
   dispose(): void { this.disposed = true; this.clear(); }

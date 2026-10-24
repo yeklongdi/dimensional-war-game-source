@@ -4,7 +4,8 @@ import { paused, systemToken } from '../runtime.js';
 import { defaults, textSpeeds } from '../settings.js';
 import { readSlot, slotValue } from '../save-v3.js';
 import { storyLibrary } from '../story/library.js';
-import { currentLevel, levelById } from '../../content/levels.js';
+import { displaySceneTitle } from '../story/chapter-policy.js';
+import { currentLevel, levelById, levels } from '../../content/levels.js';
 import type { SaveV2 } from '../save-v2.js';
 import { button, element } from './elements.js';
 
@@ -12,7 +13,7 @@ export function snapshotLabel(data: SaveV2): string {
   const point = data.checkpoint;
   if (point.kind === 'map') return `太阳市地图 · ${currentLevel(data.completedLevelIds)?.name ?? '垂直切片已完成'}`;
   const level = levelById(point.levelId)!;
-  return `${level.name} · ${storyLibrary[level.actId]!.scenes.find(s => s.id === point.sceneId)!.title}`;
+  return `${level.name} · ${displaySceneTitle(storyLibrary[level.actId]!.scenes.find(s => s.id === point.sceneId)!.title)}`;
 }
 export class SystemView {
   private readonly layer = element('div', 'system-layer');
@@ -86,8 +87,9 @@ export class SystemView {
         const c = s.confirmation!;
         const title = c.kind === 'new' ? '开始新游戏？' : c.kind === 'load' ? `读取${c.slot === 0 ? '自动档' : `手动槽${c.slot}`}？` : `覆盖手动槽${c.slot}？`;
         const description = c.kind === 'new' ? c.replaceRaw !== undefined
-          ? '记录无法完整读取。确认后建立新的v3活动进度；无法恢复的v3内容会被替换，v1／v2原始字符串保留。'
-          : '当前自动进度将被新游戏替换，手动存档和设置保留。'
+          ? '新版记录无法完整读取。确认后建立新的v4活动进度；当前损坏的v4容器将被替换，旧版v1／v2／v3原件与设置保留。'
+          : s.read.kind === 'empty' && s.read.legacy?.length ? '新版剧情需要重新开始。旧版存档原件与设置保留，不迁移或覆盖旧进度。'
+            : '当前新版自动进度将被新游戏替换，新版手动存档、旧版原件和设置保留。'
           : c.kind === 'load' ? '将用该档替换当前自动进度，恢复该档自己的关卡与事件记录；原手动槽不会改动。'
             : '仅覆盖这个槽位。若其他窗口更新了目标，将要求重新确认。';
         this.content.append(element('h1', '', title), element('p', '', description), element('p', 'snapshot-preview', snapshotLabel(c.snapshot)),
@@ -114,13 +116,19 @@ export class SystemView {
       const b = button('', `slot-${slot}`, this.act(saving ? 'pick-save' : 'pick-load', slot));
       b.classList.add('save-slot'); if (slot === 0) b.classList.add('auto-slot');
       b.append(element('strong', '', label));
-      if (item.kind === 'valid') b.append(element('span', '', snapshotLabel(item.record.data)), element('small', '', `${item.record.data.completedLevelIds.length}/7 已完成 · ${new Date(item.record.data.savedAt).toLocaleString('zh-CN')}`));
+      if (item.kind === 'valid') b.append(element('span', '', snapshotLabel(item.record.data)), element('small', '', `${item.record.data.completedLevelIds.length}/${levels.length} 已完成 · ${new Date(item.record.data.savedAt).toLocaleString('zh-CN')}`));
       else b.append(element('span', '', item.kind === 'empty' ? '空槽' : '损坏 · 不可读取'));
       b.disabled = !!s.pending || s.read.kind !== 'valid' || (!saving && item.kind !== 'valid');
       b.setAttribute('aria-label', `${label}，${item.kind === 'valid' ? snapshotLabel(item.record.data) : item.kind === 'empty' ? '空槽' : '损坏'}`);
       grid.append(b);
     }
     this.content.append(grid);
+    if (!saving && s.read.legacy?.length) {
+      const archive = element('section', 'legacy-archives'); archive.dataset.testid = 'legacy-archives';
+      archive.append(element('h2', '', '旧版本存档 · 只读保留'));
+      for (const item of s.read.legacy) archive.append(element('p', '', `${item.key}：${item.message}`));
+      this.content.append(archive);
+    }
     if (s.read.kind === 'invalid' || s.read.kind === 'unavailable') this.content.append(element('p', 'save-warning', s.read.message));
   }
   private buildSettings() {

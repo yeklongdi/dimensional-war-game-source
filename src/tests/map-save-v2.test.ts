@@ -4,7 +4,7 @@ import { completionFlags, encodeSave, saveKey } from '../game/save-format.js';
 import { decodeV2, encodeV2, migrateV1, readSaves, saveKeyV2 } from '../game/save-v2.js';
 import { createSaveStore } from '../game/save-storage.js';
 import { startApp, reduceApp } from '../game/router.js';
-import { storyLibrary } from '../game/story/library.js';
+import { legacyLibrary as storyLibrary } from './legacy-library.js';
 import { sampleSave, sampleV2, navigate } from './m4-helpers.js';
 import { memory, serialLock } from './map-save-helpers.js';
 
@@ -37,15 +37,15 @@ describe('v2格式与检查点归一化', () => {
   it('完成前三关/七关必须与两个幕flag一致', () => {
     const data = sampleV2('act1'); delete data.flags[completionFlags.prologue];
     expect(decodeV2(encodeV2(data), storyLibrary).kind).toBe('invalid');
-    const all = sampleV2('act1'); all.completedLevelIds = [...levelIds]; all.checkpoint = { kind: 'map' };
+    const all = sampleV2('act1'); all.completedLevelIds = levelIds.slice(0, 7); all.checkpoint = { kind: 'map' };
     expect(decodeV2(encodeV2(all), storyLibrary).kind).toBe('invalid');
     all.flags[completionFlags.act1] = true;
     expect(decodeV2(encodeV2(all), storyLibrary).kind).toBe('valid');
   });
 });
 describe('v1只读迁移', () => {
-  it.each(levels.flatMap((level, index) => level.sceneIds.map(sceneId => ({ level, index, sceneId }))))('$sceneId 按所在关迁移，当前关不视为完成', ({ level, index, sceneId }) => {
-    const old = sampleSave(level.actId, sceneId); old.flags.flag_battle_black_humanoid_won = true;
+  it.each(levels.slice(0, 7).flatMap((level, index) => level.sceneIds.filter(id => /^p\d{3}$|^a\d{3}$/.test(id)).map(sceneId => ({ level, index, sceneId }))))('$sceneId 按所在关迁移，当前关不视为完成', ({ level, index, sceneId }) => {
+    const old = sampleSave(level.actId as 'prologue' | 'act1', sceneId); old.flags.flag_battle_black_humanoid_won = true;
     const original = structuredClone(old), data = migrateV1(old);
     expect(data.completedLevelIds).toEqual(levelIds.slice(0, index));
     expect(data.checkpoint).toEqual({ kind: 'level', levelId: level.id, sceneId });
@@ -59,7 +59,7 @@ describe('v1只读迁移', () => {
   it.each(['p001', 'a007', 'a016'])('全部完成的%s旧档仅展示完成地图', scene => {
     const old = sampleSave(scene.startsWith('p') ? 'prologue' : 'act1', scene);
     old.flags[completionFlags.prologue] = true; old.flags[completionFlags.act1] = true; old.unlockedActs = ['prologue', 'act1'];
-    expect(migrateV1(old)).toMatchObject({ completedLevelIds: levelIds, checkpoint: { kind: 'map' } });
+    expect(migrateV1(old)).toMatchObject({ completedLevelIds: levelIds.slice(0, 7), checkpoint: { kind: 'map' } });
   });
   it('有效v2优先且不读取v1；损坏v2也不能回退导入', () => {
     const data = sampleV2(), legacy = () => { throw new Error('不应读v1'); };

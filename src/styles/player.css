@@ -79,6 +79,12 @@ audio { display: none; }
 .portrait[data-rear="true"] { opacity: .7; z-index: 0; }
 .portrait[data-speaking="true"] { z-index: 4; filter: brightness(1); }
 .portrait[data-visual="static"] { top: 45px; width: 420px; height: 650px; }
+.portrait[data-visual="static"][data-frame="waist"] { top: 0; width: 768px; height: 1152px; }
+.portrait[data-visual="static"][data-frame="bust"] { top: 0; width: 600px; height: 900px; }
+.story-props { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
+.story-prop-placeholder { position: absolute; top: 180px; transform: translateX(-50%); width: 230px; min-height: 140px; padding: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px dashed #c8b77a; background: #141827dd; color: #e5d7ad; border-radius: 6px; }
+.story-prop-title { font-size: 24px; }
+.story-prop-placeholder small { font-size: 13px; opacity: .7; }
 .portrait-layered { position: absolute; left: 0; top: 0; transform: scale(.75); transform-origin: 0 0; }
 .portrait-layer { position: absolute; inset: 0; }
 .portrait-layer img { position: absolute; inset: 0; width: 100%; height: 100%; }

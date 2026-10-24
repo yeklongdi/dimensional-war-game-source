@@ -44,9 +44,10 @@ describe('真正新游戏与独立恢复', () => {
     else { expect(h.state.waiting).toMatchObject({ kind: 'text', revealed: 0 }); }
     expect(JSON.stringify(JSON.parse(h.m.values.get(saveKeyV3)!).auto)).not.toMatch(/movementDraft|revealed|pendingRoll|actors/);
   });
-  it('全通关档恢复完成地图，已完成关仍不可直接重开', async () => {
-    const all = sampleV2('act1', 'a016'); all.completedLevelIds.push('act1_04'); all.flags.flag_act1_completed = true; all.checkpoint = { kind: 'map' };
-    const h = menuHarness(all); await loadAuto(h); expect(h.state.screen).toBe('map'); expect(h.state.progress!.completedLevelIds).toHaveLength(7);
+  it('已完成前八关恢复地图，已完成关不可重开，只开放未完成第九关', async () => {
+    const all = sampleV2('act1', 'a016'); all.completedLevelIds.push('act1_04', 'prologue3_01');
+    Object.assign(all.flags, { flag_act1_completed: true, has_master_sword: true, link_summoned: true, prologue_3_complete: true }); all.checkpoint = { kind: 'map' };
+    const h = menuHarness(all); await loadAuto(h); expect(h.state.screen).toBe('map'); expect(h.state.progress!.completedLevelIds).toHaveLength(8);
     const before = h.state; await h.action({ type: 'enter-level', token: navigationToken(h.state), levelId: 'prologue_01' }); expect(h.state).toBe(before);
   });
 });

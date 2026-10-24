@@ -139,13 +139,15 @@ export function parseStory(markdown, options) {
       case 'SET': {
         setCount++;
         const sequence = String(setCount).padStart(2, '0');
-        append({ kind: 'set', flag: `flag_${act.id}_${scene.id}_${sequence}`, note: token.raw }, token);
+        const explicit = /^([a-z][a-z0-9_]*)\s*=\s*(true|false)$/.exec(token.value.trim());
+        append({ kind: 'set', flag: explicit?.[1] ?? `flag_${act.id}_${scene.id}_${sequence}`,
+          ...(explicit ? { value: explicit[2] === 'true' } : {}), note: token.raw }, token);
         break;
       }
       case 'CALL': {
         const node = append(parseCall(token.value), token);
-        if (!node.name.startsWith('battle_')) {
-          collector.add(scene.id, token, 'pending_call', `调用 ${node.name} 尚未接入；M0 只保留数据。`, policyResolution(scene.id, token));
+        if (!['battle_prologue_tutorial', 'battle_black_humanoid'].includes(node.name)) {
+          collector.add(scene.id, token, 'pending_call', `调用 ${node.name} 尚未接入；保留原始调用。新增战斗在运行时阻断。`, policyResolution(scene.id, token));
         }
         break;
       }

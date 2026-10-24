@@ -3,6 +3,7 @@ import { assetBindings, assetUrl } from '../game/asset-url.js';
 import { bgmBindings, overrides } from '../game/story/config.js';
 import audioMap from '../content/audio-map.json';
 import rawOverrides from '../content/overrides.json';
+import { staticBindings } from '../game/visual/static-portraits.js';
 
 describe('static hosting base', () => {
   it.each(['/', '/dimensional-war-game/', '/another-release/', './'])('applies %s to every existing media type', base => {
@@ -28,6 +29,6 @@ describe('static hosting base', () => {
 
   it('uses Vite base for the real audio and portrait bindings', () => {
     expect(bgmBindings).toEqual(assetBindings(audioMap));
-    expect(overrides.portraits).toEqual(assetBindings(rawOverrides.portraits));
+    expect(overrides.portraits).toEqual({ ...assetBindings(rawOverrides.portraits), ...staticBindings });
   });
 });

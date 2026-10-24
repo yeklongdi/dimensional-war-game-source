@@ -1,0 +1,275 @@
+{
+  "generator": "built-in image_gen",
+  "assets": [
+    {
+      "id": "thief-daily-smile",
+      "file": "public/assets/portraits/prologue-v2/thief-daily-smile.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-2de26fee-49b9-4f54-a5e6-3487ff852dcb.png",
+      "sha256": "c43d5c9eb8e1f4c223f7543c857241c4e93ff38f8235960a788618ec43009e9f",
+      "size": [
+        1024,
+        1536
+      ],
+      "transparentRatio": 0.5288,
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "id": "thief-daily-serious",
+      "file": "public/assets/portraits/prologue-v2/thief-daily-serious.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-20a503cd-fb0c-4167-8238-48047fee69e5.png",
+      "sha256": "3b24dddbeba1f1995fe0f552c5441f12877fac808af4b46282dd4ea28fbc9ef6",
+      "size": [
+        1024,
+        1536
+      ],
+      "transparentRatio": 0.531,
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "id": "thief-daily-alert",
+      "file": "public/assets/portraits/prologue-v2/thief-daily-alert.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-cc080f75-5381-4c74-afe5-9e22138e8a71.png",
+      "sha256": "37d4f325d44c57db0ded8625063a675475181419de9118fdbba1793f4c5c6eee",
+      "size": [
+        1024,
+        1536
+      ],
+      "transparentRatio": 0.5325,
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "id": "link-calm",
+      "file": "public/assets/portraits/prologue-v2/link-calm.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-f94cbab3-3914-4b06-9198-4c11de1132d2.png",
+      "sha256": "cd9343533e2e616b60b96d5b1e9f6caf381b671df01212427d76798117f5c0c0",
+      "size": [
+        1024,
+        1536
+      ],
+      "transparentRatio": 0.4563,
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "id": "saber-calm",
+      "file": "public/assets/portraits/prologue-v2/saber-calm.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-281701c1-ad3b-4492-abb3-60d5af28d406.png",
+      "sha256": "af8361ca6656c658c37f67de61c4760a9ce5bfd79d23634d1345a51ad5d9edbf",
+      "size": [
+        1024,
+        1536
+      ],
+      "transparentRatio": 0.3794,
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "id": "deoxys-normal",
+      "file": "public/assets/portraits/prologue-v2/deoxys-normal.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-a6aac19d-9a80-4fb2-97c1-fe9cd42c4b4c.png",
+      "sha256": "27b0671f8f9766e0096ad4033b4eb8dd6ad6d7f60c0c53c64bd1e76f96c25af7",
+      "size": [
+        1024,
+        1536
+      ],
+      "transparentRatio": 0.6219,
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "id": "deoxys-defense",
+      "file": "public/assets/portraits/prologue-v2/deoxys-defense.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-f65f24ed-9cf0-4410-b01e-d221e7131a0a.png",
+      "sha256": "066d18c9b36952c40ba380f311d58ec903a6040ae5a696b4ab92387d68e66684",
+      "size": [
+        1024,
+        1536
+      ],
+      "transparentRatio": 0.4809,
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "id": "thief-action",
+      "file": "public/assets/portraits/prologue-v2/thief-action.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-d5fc8192-8a33-4fe7-947e-8a4856baf459.png",
+      "sha256": "271c17ca8b077039a29c58dcca2b60929489557fced1d6b5deb40b6e96aca318",
+      "size": [
+        1024,
+        1536
+      ],
+      "transparentRatio": 0.6883,
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "id": "link-guard",
+      "file": "public/assets/portraits/prologue-v2/link-guard.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-e2273a3f-b676-4da4-b7fa-a851f0f625ce.png",
+      "sha256": "a370cd7b8c522efa0c6205df931b936a7d3c2a4cefcea10b43a5c9628ead6cd0",
+      "size": [
+        1024,
+        1536
+      ],
+      "transparentRatio": 0.4244,
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "id": "saber-alert",
+      "file": "public/assets/portraits/prologue-v2/saber-alert.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-f934470b-f895-4574-b92a-6fc6aff4d5eb.png",
+      "sha256": "dded6b11aa92a6595637f82c02de85ea93b7ce5880b3930db3d6dfd2ba51161c",
+      "size": [
+        1024,
+        1536
+      ],
+      "transparentRatio": 0.3821,
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "id": "saber-impatient",
+      "file": "public/assets/portraits/prologue-v2/saber-impatient.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-7051b1ed-fb9b-4c5d-b4bc-63dae33f1f6c.png",
+      "sha256": "57c8e5ca3646f048217c13e922e3a40b35fa2eade4b2756b5beacee498f46b2b",
+      "size": [
+        1024,
+        1536
+      ],
+      "transparentRatio": 0.3864,
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "id": "hero-seated-proud",
+      "file": "public/assets/portraits/prologue-v2/hero-seated-proud.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-5a827440-3142-4004-9257-bf10c4f34f83.png",
+      "sha256": "75b807f3fca52a3f1def65787db0711ee6ba60ca7c22790333b3eb606d08c6c7",
+      "size": [
+        1024,
+        1536
+      ],
+      "transparentRatio": 0.4805,
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "id": "hero-sword-guard",
+      "file": "public/assets/portraits/prologue-v2/hero-sword-guard.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-660631ca-5edb-4e7f-ae38-c5dae7f1bac7.png",
+      "sha256": "21c85bd60522950a28408ce0eb3cb5cb5e4588eed0ebe15740d41bd0f78ffe85",
+      "size": [
+        1024,
+        1536
+      ],
+      "transparentRatio": 0.432,
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "id": "link-wrapped",
+      "file": "public/assets/portraits/prologue-v2/link-wrapped.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-45351075-0189-422b-b27a-89071f89885a.png",
+      "sha256": "de804ea91c9c60e3066198a6ba9337c171597389b27877b29bb17b809312fc8f",
+      "size": [
+        1024,
+        1536
+      ],
+      "transparentRatio": 0.4697,
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "id": "hero-seated-calm",
+      "file": "public/assets/portraits/prologue-v2/hero-seated-calm.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-f106fe8f-9d4a-457b-8540-7ce451585e8f.png",
+      "sha256": "5d11c3055f87e492d1e581f2474071860a552ccde6babb73e4cb347595959ccf",
+      "size": [
+        1024,
+        1536
+      ],
+      "transparentRatio": 0.4856,
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "id": "hero-seated-alert",
+      "file": "public/assets/portraits/prologue-v2/hero-seated-alert.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-8d69787f-d3de-44dd-b478-6ae38cb10da9.png",
+      "sha256": "63850a10de235c49510f8a6c95a3228b67f7f834ca0619529b3f170a5c11fd09",
+      "size": [
+        1024,
+        1536
+      ],
+      "transparentRatio": 0.4874,
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "id": "thief-unmasked-action-smile",
+      "file": "public/assets/portraits/prologue-v2/thief-unmasked-action-smile.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-60f3469e-40cd-4cb3-a873-5fad57407556.png",
+      "sha256": "cb9b5b45921a3ccb5fc6ef8d8191ef684aa1d7638f3509f4615f7a4a1045ec46",
+      "size": [
+        1024,
+        1536
+      ],
+      "transparentRatio": 0.6998,
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "id": "thief-unmasked-action-serious",
+      "file": "public/assets/portraits/prologue-v2/thief-unmasked-action-serious.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-05c68f40-db30-4885-a968-c853405071b3.png",
+      "sha256": "ef4537d262d19deb7695fe3c6c99e0f15414638881efc680898a113616a6fbad",
+      "size": [
+        1024,
+        1536
+      ],
+      "transparentRatio": 0.6904,
+      "alphaRange": [
+        0,
+        254
+      ]
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "generator": "built-in image_gen",
+  "assets": [
+    {
+      "id": "hero-half-friendly",
+      "file": "public/assets/portraits/hero-half-v1/hero-half-friendly.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-026abda6-ca67-4297-a603-06097e382d27.png",
+      "sha256": "9f4dc1b84787154f9360b8497f72c92f9c6b4f97bc094f0333989e9ae09cf5df",
+      "size": [
+        1024,
+        1536
+      ],
+      "rgba": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentRatio": 0.5087
+    },
+    {
+      "id": "hero-half-alert",
+      "file": "public/assets/portraits/hero-half-v1/hero-half-alert.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-7e8a536b-32dc-424a-a25f-f88b5a8f0e8c.png",
+      "sha256": "db219ab7b206e6cbbe63c60da226074fe0ca609a7c18afe5f789784f130add4e",
+      "size": [
+        1024,
+        1536
+      ],
+      "rgba": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentRatio": 0.5128
+    },
+    {
+      "id": "hero-half-worried",
+      "file": "public/assets/portraits/hero-half-v1/hero-half-worried.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-29989cd3-487e-4451-81db-1466d074e15d.png",
+      "sha256": "d6ba425414a3664f2855e52b98e165966bfb964ef1fc220e44151c90d3bb9fe9",
+      "size": [
+        1024,
+        1536
+      ],
+      "rgba": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentRatio": 0.5123
+    },
+    {
+      "id": "hero-half-tired",
+      "file": "public/assets/portraits/hero-half-v1/hero-half-tired.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-87ce79b0-d091-4da2-9410-92b82bd77225.png",
+      "sha256": "8b2cb1e9081ea125b278f2883dc90e267f1f808884b0dd7197f45e8a9192c3dd",
+      "size": [
+        1024,
+        1536
+      ],
+      "rgba": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentRatio": 0.512
+    },
+    {
+      "id": "hero-half-pained",
+      "file": "public/assets/portraits/hero-half-v1/hero-half-pained.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-473c4899-52d2-4d02-93d8-5346cc7b4d87.png",
+      "sha256": "dfdd8c66a80624a1e6241b686401a3dc592cbcbe9ad39f9ba60e2c2dfcca73ac",
+      "size": [
+        1024,
+        1536
+      ],
+      "rgba": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentRatio": 0.512
+    },
+    {
+      "id": "hero-half-angry",
+      "file": "public/assets/portraits/hero-half-v1/hero-half-angry.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-b2404090-cdce-4856-a762-1d7a8c203e02.png",
+      "sha256": "4dfd4d31319409e4f083fb2fbe2dda94063fbe78df97e459fe32b3adcaf66ca8",
+      "size": [
+        1024,
+        1536
+      ],
+      "rgba": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentRatio": 0.5126
+    },
+    {
+      "id": "hero-half-surprised",
+      "file": "public/assets/portraits/hero-half-v1/hero-half-surprised.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-d750aa39-da33-4cd2-9ecf-ff947ca37193.png",
+      "sha256": "35d02f2490d77d187071539ef7333c631be9710d4ed4c0eea3bdc1d719e3eca9",
+      "size": [
+        1024,
+        1536
+      ],
+      "rgba": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentRatio": 0.5137
+    },
+    {
+      "id": "hero-half-excited",
+      "file": "public/assets/portraits/hero-half-v1/hero-half-excited.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-4574d7df-f388-4da1-ab37-0ea0d947a53f.png",
+      "sha256": "83f0de67aa48809e45d7bca7c35b63e61ef0eb61019baeadf86e5b7686a755ae",
+      "size": [
+        1024,
+        1536
+      ],
+      "rgba": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentRatio": 0.5119
+    },
+    {
+      "id": "hero-half-bed-sleepy",
+      "file": "public/assets/portraits/hero-half-v1/hero-half-bed-sleepy.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-73afb6a9-462d-47b0-ba14-98566cfb6c6f.png",
+      "sha256": "fd37038403a0f909bd52367e5117517f2f6160a0bc9b6a0a8fc7ffff27de5830",
+      "size": [
+        1024,
+        1536
+      ],
+      "rgba": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentRatio": 0.4055
+    },
+    {
+      "id": "hero-half-bed-awake",
+      "file": "public/assets/portraits/hero-half-v1/hero-half-bed-awake.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a15182-06a8-7e40-b1a0-89a3112cd5d0\\exec-8e2a7b27-be8e-44bb-89ad-0b80866923cf.png",
+      "sha256": "9bec477d43572fae0a98c8c8e3dde3719265c9e0130f8d64b79e6d065678ac33",
+      "size": [
+        1024,
+        1536
+      ],
+      "rgba": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentRatio": 0.407
+    }
+  ]
+}

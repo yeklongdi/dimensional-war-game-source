@@ -7,9 +7,10 @@ export const saveKeyV3 = 'dw.save.v3';
 export type SaveV3 = { version: 3; activeRunId: string; revision: number; auto: unknown; manual: unknown[] };
 export type SlotRecord = { revision: number; data: SaveV2 };
 export type SlotRead = { kind: 'empty' } | { kind: 'valid'; record: SlotRecord } | { kind: 'invalid'; message: string };
-export type VaultRead = { kind: 'empty' } | { kind: 'valid'; data: SaveV3 }
+export type LegacyArchive = { key: string; status: 'retained' | 'invalid'; message: string };
+export type VaultRead = ({ kind: 'empty' } | { kind: 'valid'; data: SaveV3 }
   | { kind: 'migration'; data: SaveV2 }
-  | { kind: 'invalid'; raw: string; message: string } | { kind: 'unavailable'; message: string };
+  | { kind: 'invalid'; raw: string; message: string } | { kind: 'unavailable'; message: string }) & { legacy?: LegacyArchive[] };
 export const record = (v: unknown): v is Record<string, unknown> => typeof v === 'object' && v !== null && !Array.isArray(v);
 const integer = (v: unknown): v is number => typeof v === 'number' && Number.isSafeInteger(v) && v >= 0;
 export function decodeV3(raw: string | null): VaultRead {

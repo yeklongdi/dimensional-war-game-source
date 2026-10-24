@@ -1,0 +1,267 @@
+{
+  "createdAt": "2026-10-23T23:58:26.218208+00:00",
+  "head": "3fcd64b659047c944241ac96432380e9525eebd3",
+  "status": "",
+  "protected": [
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\source\\data\\hero.md",
+      "sha256": "dfad52adf111217b4481a99828d346bb3d4dd6a3b2cdd513b0f3033bebda95cc"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\source\\data\\org_grunt.md",
+      "sha256": "6c2c331ae4f919aec3080c96eb1b970ebc2a9c166274b873a6fda58bfc1134f8"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\source\\story\\act1.md",
+      "sha256": "2d322c786a744cad4912f098523a9ad61955fc1b59040a0dc5ff08f08921a3bf"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\source\\story\\prologue.md",
+      "sha256": "aad4cc222e351fe389d9a0164138ec9168b6cf1f9032fa4bdd21479dbfe597dc"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\arm-left-prepare.png",
+      "sha256": "43dbfdb0e7cfb0cf75910d20875715113c30e44e6d8bd98bf2d0cbe26725f225"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\arm-right-prepare.png",
+      "sha256": "cc7ce843843c03f1fc28a89a865ad80b51565609b4396af90c4697ab47909c74"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\body-luggage.png",
+      "sha256": "e4053b7e51bb0c44bae267500a768fb28b17c4bcb37fe07794cd17b55521f0f2"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\body-prepare.png",
+      "sha256": "55806596d9bd67125a9cdbba35b679094f5b5d1523505ee41cbeff2a86db6bfe"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\body-stand.png",
+      "sha256": "71103e58cd5276c0f36ac1ad9cd687c6d6352225e95b0faa64a7918e52edd2fd"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\eyes-calm-closed.png",
+      "sha256": "7358dd1a1c0dcb17ac82ce3f021a3a0c0318147502e1a41e62991380609c6404"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\eyes-calm-half.png",
+      "sha256": "ac267f07316c591f287ffcdcc1d421bad9fa638ff3947f9d317c2deb1ee7c4f1"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\eyes-calm.png",
+      "sha256": "0a157ccffa964873f721690e5de16e321aec069733c1ccf7f281517f4014a45f"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\eyes-nervous-closed.png",
+      "sha256": "3c6d74bfb400eaa76e6589b432bb38a985dfad7ce0dcf92433127af52dcaf971"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\eyes-nervous-half.png",
+      "sha256": "014e0882b2b286c2c7b82fde01d145e351d5f8574d0e0163a463f8aba5059838"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\eyes-nervous.png",
+      "sha256": "af68cb9460271a7b8ccbe2094eeb9b0cecc4367357cb1493b7c94d7d42af3d4e"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\eyes-proud-closed.png",
+      "sha256": "f3ba29cf993c7c176122bda85f46d3b9b4d082f2907f9ace64183159816a3fe5"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\eyes-proud-half.png",
+      "sha256": "604d687d4880bab8871ebd20769c5302e8361dbf6325f42a256fff86b0bac430"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\eyes-proud.png",
+      "sha256": "1488424e7dc19fa163525bd743f71c11d4336c0e097e660e162740a73b2e72fe"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\eyes-puzzled-closed.png",
+      "sha256": "416884d1c993469eeadf23a25763867b4a65fc728dd86ebda70ffcfc847d866e"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\eyes-puzzled-half.png",
+      "sha256": "2803c9e8ef4015b516fdff728a978af1415a7eeb8a0dd46aa35fa3a483ec71e2"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\eyes-puzzled.png",
+      "sha256": "9823a2f4c93c37fb23227823f3bb15bd8928ae664098abc33502b60ee3b6c791"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\eyes-relaxed-closed.png",
+      "sha256": "49db4b5aa06e4449019a3a669472126abef4eb14507f390775a7be0a50273888"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\eyes-relaxed-half.png",
+      "sha256": "24cb5219bf0d48474473a69f619cc9fbdb572454da322d5847448684ddd03521"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\eyes-relaxed.png",
+      "sha256": "e3d768c72e9edfc39568444524a1a77514a64f139363931d9c99cf9bf2cdbdda"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\hair-front.png",
+      "sha256": "3f507d6ae3a9903775042eb1d64489a18b06a91f599dd0c89bd641587187a0b5"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\head.png",
+      "sha256": "32669d1c02ce13940767fbe127f9354a679acf1f98b9068336274075ddf411de"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\luggage-grip.png",
+      "sha256": "f47de864c9b612e7b50b5cb358d21754941724fd5e5d93fef5dcb076201ae9d9"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\mouth-calm-speech.png",
+      "sha256": "105755fea08c05fa271c86c25f009ce3f344195bee8833b876a4a87fee3c7fe6"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\mouth-calm.png",
+      "sha256": "c7ebc8a132c93bf2318ac9737d7d3cafab8ca83f1b19cb924701ecee1ee2e94d"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\mouth-nervous-speech.png",
+      "sha256": "a89de7d06b24f33562c76b447bc5e3e78cd22d3d7dbc982db08787a9b9630678"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\mouth-nervous.png",
+      "sha256": "52960ea3bfcc800c21253d6dff3cb3424fd3ae58b372c58980681b8cd2702208"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\mouth-proud-speech.png",
+      "sha256": "7be89628d2957c7491fbe5e300b97b528924c85cff38afcaa5e63bc86ed3a432"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\mouth-proud.png",
+      "sha256": "baaf1898109df8178e053e7b1da3592c77f6a7e77a1bf79d5d7f770d812e60ba"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\mouth-puzzled-speech.png",
+      "sha256": "2b887191aef75ded6c854dc272f161225e9a13facf5f1d279f3ed7126ae58fca"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\mouth-puzzled.png",
+      "sha256": "726ab48c41e8f0c1c97009821b9d9670c1607b9f14a787f67b8608aad3fe649a"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\mouth-relaxed-speech.png",
+      "sha256": "d5872ded7acdd5ea1510b3758c2f05b56bd696cdb7c6525401418ea1d7c95b83"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\mouth-relaxed.png",
+      "sha256": "0f7b8da6daea330193dbb23d2c672bf5415663eae7c142e5f52ad82dcc739e4e"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\游戏文件\\public\\assets\\portraits\\hero-layered-v3\\registration.json",
+      "sha256": "43a01289fb97f8b5fbd14f9e36e1e6b69e7c0bc015307a9e0353c1a4f8871e93"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（一）\\序幕.canvas",
+      "sha256": "53f19bf989fa7753a5396904ec3e93548df80b446e0d8e49c63fc6579f4ce744"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（一）\\序幕_Galgame脚本.md",
+      "sha256": "49ac6d4ff378c724354968e7519acc40bdec578d4f807fee3ee7e70c02bcc05a"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（一）\\序幕（一）：搬来太阳市的前一天.md",
+      "sha256": "291e7253d9c4fd201717f3eda2d1ec56283391dc4340edaadfa3be070fd60ff8"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（三）\\序幕（三）.canvas",
+      "sha256": "089c1f81e6176e38b49bd26e9aca37b5588aa36dd18db2bb41a9157d08f5bf1a"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（三）\\序幕（三）.md",
+      "sha256": "63e3de06fc2cf3ad877ba27f975bd80a24fc5d7660235e2f2df88864da9954ea"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（三）\\序幕（三）_Galgame脚本.md",
+      "sha256": "9f8d9d866540b740b093b923d98d1479cbecbf22dd91628ef43212fa51e50dbf"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（二）\\序幕（二）.canvas",
+      "sha256": "a646e662c79acd3a604096790dcca1435352416aa33609d54ef01c92857587ed"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（二）\\序幕（二）_Galgame脚本.md",
+      "sha256": "a5c2cc7cc7ff5ca311084cdc2f4b5c7a3c5d2f307857ea89c2f6636542c93f3f"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（二）\\序幕（二）：转学生来到太阳市第一高中.md",
+      "sha256": "cdac38da4221450b4fadb1f61d9ffdfe9da131359e13ddc30048e591cb27cee4"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（四）\\序幕（四）.canvas",
+      "sha256": "66f5ea75efd1053f681e378a731baf18120c157d26706e226f2145331f89d93c"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（四）\\序幕（四）.md",
+      "sha256": "e240f5719892ca557da131f2bf64fdd18970481ea82ac6457d738e2268d0b138"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（四）\\序幕（四）_Galgame脚本.md",
+      "sha256": "ad1a350d8c05b8f2cffa409dd5ba30b15aaf4134203529e581236db8f0f83bd4"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\角色\\角色格式.md",
+      "sha256": "418ac74f9898f175466f28d75458977e14bd55621262216b339791fdf0bf1b1d"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\角色\\从者\\bsk（褪色者）\\角色卡\\bsk（褪色者）.md",
+      "sha256": "2379d4d97d58a2b39c7766ebb0997f95dc82243fd9014a2fc87c8d14a5172ed5"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\角色\\从者\\watcher\\角色卡\\watcher.md",
+      "sha256": "88abb8e730fdaa3cb9ecad5c26883311661aaebc449ed44b48856df2fa104344"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\角色\\从者\\小丑：assasin\\角色卡\\小丑：assasin.md",
+      "sha256": "28f1dc3946e20ee935913763559e493840dd7bff5bb9516c4337fa458a65cae4"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\角色\\从者\\旅行者（saber）\\角色卡\\旅行者（rider）.md",
+      "sha256": "5bdfe216232cfd51fa34289762ba7dd33f6254d3850c317877d8cffb4a70ce2f"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\角色\\从者\\林克（rider）\\角色卡\\林克（saber）.md",
+      "sha256": "3a9f8714ddaeef75548c6c14474ecb1956b51bcbce12f685016c26d44e2279ab"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\角色\\从者\\金闪闪（archer）\\角色卡\\金闪闪（archer）.md",
+      "sha256": "49ced2a373aca68e321ca95658761769a60aa970ec8e6991cf73e5fed48c455e"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\角色\\从者\\降临者（Foreigner）代欧奇希斯\\角色卡\\降临者（Foreigner）代欧奇希斯.md",
+      "sha256": "ca83d99e08b6b5b2989c22c18f44032749f8ddfe6f512a44bfe951a1977950de"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\角色\\御主\\御主：偶像（archer）\\角色卡\\御主：偶像（archer）.md",
+      "sha256": "b4c13b210445a560925259e1b73fa606f6f44def8aebcb21acfa67a897e741bd"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\角色\\御主\\御主：圣杯的黑幕（Foreigner）\\角色卡\\御主：圣杯的黑幕（Foreigner）.md",
+      "sha256": "572454759b6f8b699dca8ff02505c57b06ee9b1bd9489e6df03cf38a534e3705"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\角色\\御主\\御主：怪盗+（rider）\\角色卡\\御主：怪盗+（rider）.md",
+      "sha256": "13b6bed435c4180343ffe37d3656bbaf031b99b280ac0563ec727d67055f4c39"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\角色\\御主\\御主：梦魇（bsk）\\角色卡\\御主：梦魇（bsk）.md",
+      "sha256": "8a85aad405a6e14eb0281e260f21b03880ed42b26fd3cd37d9105d14f2e3c29b"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\角色\\御主\\御主：热血男高+saber\\角色卡\\御主：热血男高+saber.md",
+      "sha256": "dfad52adf111217b4481a99828d346bb3d4dd6a3b2cdd513b0f3033bebda95cc"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\角色\\御主\\御主：纯粹的恶人+assasin\\角色卡\\御主：纯粹的恶人+assasin.md",
+      "sha256": "cd83e2939c79bfcd54d92ce2e336ed52d317fc7d888d61ced01e5ee90536725e"
+    },
+    {
+      "path": "E:\\笔记\\次元战争设定\\角色\\御主\\御主：虚拟主播（watcher）\\角色卡\\御主：虚拟主播（watcher）.md",
+      "sha256": "ba60c0b08ce37cb65d97e6194a168dd14dcf57d2709e1fb7da80ae3b817a6fd8"
+    }
+  ]
+}

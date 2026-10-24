@@ -118,14 +118,17 @@ describe('M1 选择与调用', () => {
     expect(chosen.flags.flag_act1_a007_01).toBe(true);
   });
 
-  it('A010 第二项先 SET、显示原 meta，再返回同一选择，原始 jump 不改', () => {
+  it('A010第二项隐藏制作备注，播放已有分支后阻断；明确重新选择，原跳转不改', () => {
     const choice = reach('a010', 'choice');
     const option = choice.waiting?.kind === 'choice' ? choice.waiting.options[1] : undefined;
     const copy = JSON.stringify(option);
     const explanation = reduceGame(choice, { type: 'choose', token: choice.waiting!.token, index: 2 }, storyLibrary).state;
     expect(explanation.flags.flag_act1_a010_03).toBe(true);
-    expect(explanation.waiting).toMatchObject({ kind: 'text', textKind: 'narration', text: option?.nodes[1] && 'text' in option.nodes[1] ? option.nodes[1].text : '' });
-    const returned = next(explanation);
+    expect(explanation).toMatchObject({ sceneId: 'a010_return_class', waiting: { kind: 'text', textKind: 'stage' } });
+    const stopped = next(explanation);
+    expect(stopped.waiting?.kind).toBe('unfinished');
+    expect(reduceGame(stopped, { type: 'advance', token: stopped.waiting!.token }, storyLibrary).state).toBe(stopped);
+    const returned = reduceGame(stopped, { type: 'reselect', token: stopped.waiting!.token }, storyLibrary).state;
     expect(returned.sceneId).toBe('a010');
     expect(returned.waiting).toMatchObject({ kind: 'choice', prompt: '男高是否进入废弃施工现场。' });
     expect(returned.actors).toEqual(choice.actors);
@@ -179,7 +182,7 @@ describe('M1 两幕流程', () => {
     expect(reduceGame(restart, { type: 'advance', token: final.waiting!.token }, storyLibrary).state).toBe(restart);
   });
 
-  it('真实两幕所有主场景与两个 battle 可完整到达，A012 幻象不阻断，12 个 flag 全记录', () => {
+  it('新版前两段含取剑主线与两个battle可到达，A012不阻断，显式取剑flag记录', () => {
     let state = startGame(storyLibrary).state;
     const scenes = new Set<string>();
     const battles: string[] = [];
@@ -203,16 +206,19 @@ describe('M1 两幕流程', () => {
       } else if (wait.kind === 'end') {
         if (state.actId === 'act1') break;
         state = reduceGame(state, { type: 'enter-act1', token: wait.token }, storyLibrary).state;
+      } else if (wait.kind === 'unfinished') {
+        state = reduceGame(state, { type: 'reselect', token: wait.token }, storyLibrary).state;
       }
     }
     expect(state).toMatchObject({ actId: 'act1', sceneId: 'a016', waiting: { kind: 'end' } });
-    expect(scenes.size).toBe(25);
+    expect(scenes.size).toBe(28);
     expect(battles).toEqual(['battle_prologue_tutorial', 'battle_black_humanoid']);
-    expect(Object.keys(state.flags)).toHaveLength(12);
+    expect(Object.keys(state.flags)).toHaveLength(13);
+    expect(state.flags.has_master_sword).toBe(true);
     expect(texts).toContain('男高看见一座漂浮在云海之上的岛屿。');
     expect(state.warnings['call:event_master_sword_vision']).toBeDefined();
     expect(state.actors['大师之剑']?.visible).toBe(false);
-    expect(state.actors['虚拟主播']?.visible).toBe(true);
+    expect(state.actors['虚拟主播']?.visible).toBe(false);
     expect(Object.values(state.hiddenNotes).filter(note => note.kind === 'stage-camera')).toHaveLength(8);
   });
 });

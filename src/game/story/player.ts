@@ -3,7 +3,8 @@ import type { Action, Effect, GameState, Origin, StoryLibrary, Transition } from
 import { emptyState, warning } from '../state.js';
 import { overrides, sfxBindings } from './config.js';
 import { applyPresentation, hideActors, stageText } from './presentation.js';
-import { levelById, levelExits } from '../../content/levels.js';
+import { levelById, levelExits, levelHasScene } from '../../content/levels.js';
+import { chapterEntryError, unfinishedScene, sceneEntryError } from './chapter-policy.js';
 
 function getScene(state: GameState, library: StoryLibrary): Scene {
   const scene = library[state.actId]?.scenes.find(item => item.id === state.sceneId);
@@ -55,7 +56,7 @@ function drive(state: GameState, library: StoryLibrary, effects: Effect[]): Tran
       if (node.meta || ['check', 'meta', 'unknown'].includes(node.kind)) note(state, node, origin);
       if (applyPresentation(state, node, effects)) continue;
       switch (node.kind) {
-        case 'set': state.flags[node.flag] = true; continue;
+        case 'set': state.flags[node.flag] = node.value ?? true; continue;
         case 'check': case 'meta': case 'unknown': continue;
         case 'stage': case 'dialogue': case 'inner': case 'narration': {
           const allowed = branch?.returnToChoice && branch.visibleMetaNodeIndex === origin.optionNodeIndex;
@@ -82,7 +83,7 @@ function drive(state: GameState, library: StoryLibrary, effects: Effect[]): Tran
             if (state.activeLevelId) {
               const level = levelById(state.activeLevelId)!, exit = levelExits[level.id];
               if (state.sceneId === exit.sceneId && node.target === exit.target) return { state, effects, completedLevelId: level.id };
-              if (!level.sceneIds.includes(node.target)) throw new Error(`拒绝未配置的跨关跳转 ${state.sceneId} → ${node.target}`);
+              if (!levelHasScene(level, node.target)) throw new Error(`拒绝未配置的跨关跳转 ${state.sceneId} → ${node.target}`);
             }
             enterScene(state, node.target, library);
           }
@@ -96,9 +97,19 @@ function drive(state: GameState, library: StoryLibrary, effects: Effect[]): Tran
             state.waiting = { kind: 'battle', token: token(state), origin, battleId: node.name };
             return { state, effects };
           }
+          if (node.name.startsWith('battle_')) {
+            state.waiting = { kind: 'blocked-call', token: token(state), origin, callId: node.name,
+              message: '此战斗尚未开放。进度已停在调用之前，可返回地图、读取存档或返回主菜单。' };
+            return { state, effects };
+          }
           warning(state, effects, `call:${node.name}`, `调用 ${node.name} 暂用占位处理，继续原文已有内容。`);
           continue;
         case 'end':
+          if (unfinishedScene(state.sceneId)) {
+            state.waiting = { kind: 'unfinished', token: token(state), origin,
+              message: '此分支的后续剧情尚未完成，不计通关。可以重新选择、返回地图或读取存档。' };
+            return { state, effects };
+          }
           if (state.activeLevelId) {
             const exit = levelExits[state.activeLevelId];
             if (exit.sceneId !== state.sceneId || exit.target) throw new Error(`拒绝未配置的关卡 END ${state.sceneId}`);
@@ -123,7 +134,12 @@ export function startGame(library: StoryLibrary, run = 1): Transition {
 
 /** 输入必须是新建会话；先应用目标场景退场配置，再正常执行第一个节点。 */
 export function startScene(state: GameState, library: StoryLibrary): Transition {
-  if (state.activeLevelId && !levelById(state.activeLevelId)?.sceneIds.includes(state.sceneId)) throw new Error('关卡入口与场景不匹配');
+  if (state.activeLevelId) {
+    const level = levelById(state.activeLevelId);
+    if (!level || !levelHasScene(level, state.sceneId)) throw new Error('关卡入口与场景不匹配');
+    const error = chapterEntryError(state.actId, state.flags) ?? sceneEntryError(state.actId, state.sceneId);
+    if (error) throw new Error(error);
+  }
   enterScene(state, state.sceneId, library);
   return drive(state, library, []);
 }
@@ -139,6 +155,7 @@ export function reduceGame(previous: GameState, action: Action, library: StoryLi
   if (action.type === 'reveal' && waiting?.kind !== 'text') return unchanged();
   if (action.type === 'enter-act1' && (waiting?.kind !== 'end' || previous.actId !== 'prologue')) return unchanged();
   if (action.type === 'restart' && waiting?.kind !== 'end' && waiting?.kind !== 'error') return unchanged();
+  if (action.type === 'reselect' && (waiting?.kind !== 'unfinished' || previous.sceneId !== 'a010_return_class')) return unchanged();
   if (action.type === 'restart') return startGame(library, previous.run + 1);
   if (action.type === 'warning' && previous.warnings[action.key]) return unchanged();
   const state = structuredClone(previous);
@@ -161,13 +178,17 @@ export function reduceGame(previous: GameState, action: Action, library: StoryLi
       return drive(state, library, effects);
     case 'choose': {
       if (waiting?.kind !== 'choice') return unchanged();
-      const override = overrides.choiceReturns.find(item => item.actId === state.actId && item.sceneId === state.sceneId && item.optionIndex === action.index);
+      const override = library.act1?.scenes.some(scene => scene.id === 'a010_return_class') ? undefined
+        : overrides.choiceReturns.find(item => item.actId === state.actId && item.sceneId === state.sceneId && item.optionIndex === action.index);
       state.branch = { choiceNodeIndex: waiting.choiceNodeIndex, optionIndex: action.index, index: 0,
         returnToChoice: Boolean(override), visibleMetaNodeIndex: override?.metaNodeIndex };
       return drive(state, library, effects);
     }
     case 'complete-battle':
       if (waiting?.kind === 'battle') hideActors(state, overrides.battleHides[waiting.battleId] ?? []);
+      return drive(state, library, effects);
+    case 'reselect':
+      enterScene(state, 'a010', library);
       return drive(state, library, effects);
     case 'enter-act1':
       state.actId = 'act1';

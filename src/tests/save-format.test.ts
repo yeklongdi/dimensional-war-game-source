@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { allowedFlags, completionFlags, decodeSave, encodeSave, mergeFlags } from '../game/save-format.js';
-import { storyLibrary } from '../game/story/library.js';
+import { legacyLibrary as storyLibrary } from './legacy-library.js';
 import { sampleSave } from './m4-helpers.js';
 
 describe('M4 五字段存档校验', () => {

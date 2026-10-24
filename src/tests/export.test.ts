@@ -1,23 +1,28 @@
 import { describe, expect, it } from 'vitest';
-import prologueRaw from '../../source/story/prologue.md?raw';
-import act1Raw from '../../source/story/act1.md?raw';
-import prologueJson from '../content/prologue.json';
-import act1Json from '../content/act1.json';
-import indexJson from '../content/index.json';
+import prologueRaw from '../../source/story/prologue-v2/prologue.md?raw';
+import act1Raw from '../../source/story/prologue-v2/act1.md?raw';
+import part3Raw from '../../source/story/prologue-v2/prologue_3.md?raw';
+import part4Raw from '../../source/story/prologue-v2/prologue_4.md?raw';
+import prologueJson from '../content/prologue-v2/prologue.json';
+import act1Json from '../content/prologue-v2/act1.json';
+import part3Json from '../content/prologue-v2/prologue_3.json';
+import part4Json from '../content/prologue-v2/prologue_4.json';
+import indexJson from '../content/prologue-v2/index.json';
 import questions from '../../docs/open-questions.md?raw';
-import { createExportBundle } from '../../tools/story-bundle.mjs';
+import { createPrologueBundle } from '../../tools/prologue-bundle.mjs';
 import type { Act, ContentIndex } from '../content/types.js';
 import { allNodes, choiceOf, exportedTextBlocks, originalTextBlocks, sceneOf, sourceScene } from './export-helpers.js';
 
 const prologue = prologueJson as Act;
 const act1 = act1Json as Act;
 const index = indexJson as ContentIndex;
-const acts = [prologue, act1];
+const acts = [prologue, act1, part3Json as Act, part4Json as Act];
 
 describe('真实剧本导出回归', () => {
-  it('序幕 9 场，第一幕 19 场，保留三个未完成场景', () => {
+  it('四段9/22/8/13场，保留四个未完成场景', () => {
     expect(prologue.scenes).toHaveLength(9);
-    expect(act1.scenes).toHaveLength(19);
+    expect(acts.map(act => act.scenes.length)).toEqual([9, 22, 8, 13]);
+    expect(sceneOf(act1, 'a010_return_class').nodes.at(-1)).toEqual({ kind: 'end' });
     for (const id of ['a007_todo_thief', 'a007_todo_villain', 'a007_random_unavailable']) {
       expect(sceneOf(act1, id).nodes.some(node => node.kind === 'narration' && node.meta)).toBe(true);
     }
@@ -46,15 +51,15 @@ describe('真实剧本导出回归', () => {
       ['去废弃施工现场看看。', true], ['回班上。', true],
     ]);
     expect(choice.options[0]!.nodes.at(-1)).toEqual({ kind: 'jump', target: 'a011' });
-    expect(choice.options[1]!.nodes.at(-1)).toEqual({ kind: 'jump', target: 'a016' });
+    expect(choice.options[1]!.nodes.at(-1)).toEqual({ kind: 'jump', target: 'a010_return_class' });
     expect(choice.options[1]!.nodes.find(node => node.kind === 'narration')).toMatchObject({ meta: true });
   });
 
-  it('两个战斗调用各一次；其他调用也完整保留', () => {
+  it('两个旧战斗、两个待接战斗各一次；其他调用完整保留', () => {
     const calls = acts.flatMap(act => act.scenes.flatMap(scene => [...allNodes(scene.nodes)]))
       .filter(node => node.kind === 'call').map(node => node.name);
     expect(calls.filter(name => name.startsWith('battle_'))).toEqual([
-      'battle_prologue_tutorial', 'battle_black_humanoid',
+      'battle_prologue_tutorial', 'battle_black_humanoid', 'battle_prologue4_patrol', 'battle_prologue4_deoxys_encounter',
     ]);
     expect(calls).toContain('random_rd3');
     expect(calls).toContain('event_master_sword_vision');
@@ -116,9 +121,9 @@ describe('真实剧本导出回归', () => {
     expect(index.warningCount).toBe(index.warnings.length);
     const locations = index.warnings.map(warning => `${warning.sourceFile}:${warning.line}`);
     expect(new Set(locations).size).toBe(locations.length);
-    expect(index.warnings.filter(warning => warning.categories.includes('missing_asset')).map(warning => warning.details.join(' '))).toEqual([
+    expect(index.warnings.filter(warning => warning.categories.includes('missing_asset')).map(warning => warning.details.join(' '))).toEqual(expect.arrayContaining([
       '说话人“同学甲”没有任何含 asset 的 SHOW 声明。', '说话人“同学乙”没有任何含 asset 的 SHOW 声明。',
-    ]);
+    ]));
     expect(sceneOf(act1, 'a012').nodes.find(node => node.kind === 'unknown')).toEqual({
       kind: 'unknown', raw: 'CG: cg_master_sword_vision_placeholder [占位符]', meta: true, placeholder: true,
     });
@@ -128,9 +133,9 @@ describe('真实剧本导出回归', () => {
   });
 
   it('重新解析得到相同产物，连续导出无时间戳或随机差异', () => {
-    const sources = { prologue: prologueRaw, act1: act1Raw };
-    const first = createExportBundle(sources);
-    const second = createExportBundle(sources);
+    const sources = { prologue: prologueRaw, act1: act1Raw, prologue_3: part3Raw, prologue_4: part4Raw };
+    const first = createPrologueBundle(sources);
+    const second = createPrologueBundle(sources);
     expect(first).toEqual(second);
     expect(first.acts).toEqual(acts);
     expect(first.index).toEqual(index);

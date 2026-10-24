@@ -120,11 +120,12 @@ describe('失败、重试与旧回调隔离', () => {
       } else game = campaignStep(game);
     }
     expect(game).toMatchObject({ screen: 'story', sceneId: 'a016', waiting: { kind: 'end' } });
-    expect(scenes.size).toBe(25); expect(battles.size).toBe(2);
-    expect(Object.keys(game.flags)).toHaveLength(14);
+    expect(scenes.size).toBe(28); expect(battles.size).toBe(2);
+    expect(Object.keys(game.flags)).toHaveLength(15);
+    expect(game.flags.has_master_sword).toBe(true);
     expect(texts.join('')).not.toMatch(/【待确认】|【不可执行】|\[变量名待定\]|CHECK:|CAMERA:|镜头/);
     expect(texts).toContain('男高看见一座漂浮在云海之上的岛屿。');
-    expect(game.actors['虚拟主播']!.visible).toBe(true);
+    expect(game.actors['虚拟主播']!.visible).toBe(false);
     const restarted = campaignAction(game, { type: 'restart', token: game.waiting!.token });
     expect(restarted).toMatchObject({ sceneId: 'p001', flags: {}, campaignSeed: 0, battleSerial: game.battleSerial });
     expect(startGame(storyLibrary).state.screen).toBe('story');

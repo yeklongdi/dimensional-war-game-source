@@ -1,5 +1,5 @@
-const ASSET_MARKER = /\[(?:占位符[^\]\r\n]*|已有候选素材[^\]\r\n]*)\]/g;
-const PRODUCTION_MARKER = /【(?:待确认|不可执行|暂无线性后果)】|\[变量名待定\]/;
+const ASSET_MARKER = /\[(?:占位符[^\]\r\n]*|制作占位[^\]\r\n]*|已有候选素材[^\]\r\n]*)\]/g;
+const PRODUCTION_MARKER = /【(?:待确认|不可执行|暂无线性后果|分支占位)】|\[变量名待定\]/;
 const TEXT_KEYS = new Set(['STAGE', 'DIALOGUE', 'INNER', 'NARRATION']);
 const KNOWN_KEYS = new Set([
   'SCENE', 'TITLE', 'TIME', 'BACKGROUND', 'BGM', 'SFX', 'SHOW', 'HIDE',

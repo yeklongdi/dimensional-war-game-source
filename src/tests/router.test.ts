@@ -29,13 +29,14 @@ describe('地图导航与累计通关', () => {
     expect(map.progress!.checkpoint!.flags[completionFlags.prologue]).toBe(true);
     expect(map.map!.selected).toBe('school_road');
   });
-  it('黑色人形胜利不提前完成第六关，全部完成后任何入口均不可重玩', () => {
+  it('黑色人形胜利不提前完成第六关，序幕二结束开放第八关，已完成入口不可重玩', () => {
     const won = reachApp(state => state.battle?.id === 'battle_black_humanoid' && state.battle.result?.outcome === 'win');
     expect(won.flags[completionFlags.act1]).toBeUndefined(); expect(won.progress!.completedLevelIds).toHaveLength(5);
     const final = reachApp(state => state.screen === 'map' && state.progress!.completedLevelIds.length === 7, won);
     expect(final.flags[completionFlags.act1]).toBe(true);
-    expect(final.map!.unlock).toBe(false);
-    for (const id of [...levelIds, 'act2']) expect(enterLevel(final, id)).toBe(final);
+    expect(final.map!.unlock).toBe(true);
+    for (const id of [...levelIds.slice(0, 7), 'prologue4_01', 'act2']) expect(enterLevel(final, id)).toBe(final);
+    expect(enterLevel(final, 'prologue3_01').sceneId).toBe('b001');
     const menu = navigate(final, 'main-menu'), continued = navigate(menu, 'resume');
     expect(continued.screen).toBe('map'); expect(continued.progress!.completedLevelIds).toHaveLength(7);
     expect(continued.flags).toEqual(final.flags);
@@ -79,10 +80,10 @@ describe('保存纪律与生命周期回归', () => {
     expect(selected.saves).toHaveLength(1);
     const request = selected.saves![0]!; expect(request.kind === 'save' && request.data.savedAt).toBe(1234);
   });
-  it('A010回班说明后刷新回选择；原JUMP a016既不执行也不完成第六关', () => {
+  it('A010回班后停在未完成分支，明确重新选择或刷新回选择，不完成第六关', () => {
     const choice = reachApp(game => game.sceneId === 'a010' && game.waiting?.kind === 'choice');
     const explanation = play(choice, { type: 'choose', token: choice.waiting!.token, index: 2 });
-    expect(explanation).toMatchObject({ sceneId: 'a010', waiting: { kind: 'text' }, flags: { flag_act1_a010_03: true } });
+    expect(explanation).toMatchObject({ sceneId: 'a010_return_class', waiting: { kind: 'text' }, flags: { flag_act1_a010_03: true } });
     const returned = reachApp(game => game.waiting?.kind === 'choice', explanation);
     expect(returned.sceneId).toBe('a010'); expect(returned.progress!.completedLevelIds).toHaveLength(5);
     const resumed = navigate(startApp(0, { kind: 'valid', data: explanation.progress!.checkpoint! }).state, 'resume');

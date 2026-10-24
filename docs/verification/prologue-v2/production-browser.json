@@ -1,0 +1,42 @@
+{
+  "images": [
+    {
+      "loaded": true,
+      "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/body-luggage.png"
+    },
+    {
+      "loaded": true,
+      "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/luggage-grip.png"
+    },
+    {
+      "loaded": true,
+      "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/head.png"
+    },
+    {
+      "loaded": true,
+      "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous.png"
+    },
+    {
+      "loaded": true,
+      "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous-half.png"
+    },
+    {
+      "loaded": true,
+      "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous-closed.png"
+    },
+    {
+      "loaded": true,
+      "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-nervous.png"
+    },
+    {
+      "loaded": true,
+      "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-nervous-speech.png"
+    },
+    {
+      "loaded": true,
+      "src": "/dimensional-war-game-source/assets/portraits/hero-layered-v3/hair-front.png"
+    }
+  ],
+  "save": "saved",
+  "scene": "p001"
+}
