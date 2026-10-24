@@ -243,7 +243,7 @@
     },
     {
       "path": "docs/01-任务书.md",
-      "sha256": "fc3598c113ef0bc99b19a963a85a8bb3bca5be503112c95b4bff1f23fb5b334f"
+      "sha256": "93fdeb75200fb83be97305c996c2261096fb41d1b885cf344d26e11ddb87dd5b"
     },
     {
       "path": "docs/decisions-map-selection.md",
