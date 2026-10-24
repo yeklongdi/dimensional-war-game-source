@@ -110,6 +110,11 @@
           "text": "奶奶笑着说好。男高看着碗边升起的热气，肩膀慢慢放松，刚才那句含糊的话却还硌在心里。"
         },
         {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "总不能让她第一天就替我担心。\n……明天再想办法弄清楚。"
+        },
+        {
           "kind": "jump",
           "target": "b002"
         }
@@ -173,7 +178,7 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "白天动静那么大，现在倒装起普通的剑来了。"
+          "text": "白天动静那么大，现在倒装起一把普通的剑来了。"
         },
         {
           "kind": "stage",
@@ -204,7 +209,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_3.md",
-        "line": 122
+        "line": 127
       },
       "background": "bg_grandmother_bedroom_night",
       "bgm": "bgm_sword_quiet_mystery"
@@ -301,7 +306,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_3.md",
-        "line": 171
+        "line": 176
       },
       "background": "bg_grandmother_dining_evening",
       "bgm": "bgm_homecoming_warm_dream"
@@ -355,7 +360,7 @@
         {
           "kind": "dialogue",
           "speaker": "雾中的声音",
-          "text": "你不是很喜欢这里吗？那就一直留下来。"
+          "text": "她就在你身边呀。你不是很喜欢这里吗？那就一直留下来。"
         },
         {
           "kind": "stage",
@@ -364,7 +369,7 @@
         {
           "kind": "dialogue",
           "speaker": "雾中的声音",
-          "text": "这里有热饭，有你想见的人。你想要什么，还可以再告诉我。"
+          "text": "这里有热饭，有你想见的人。想要什么，还可以再告诉我。"
         },
         {
           "kind": "dialogue",
@@ -392,7 +397,27 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "喜欢也得让我自己决定吧？我要醒过来。"
+          "text": "你不是她。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "雾中的声音",
+          "text": "哪里不像？脸是一样的，饭也是热的。\n你明明很喜欢这些。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "我奶奶会嫌我吵，会催我吃饭，也会听我把话说完。\n你只会让我留下。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "雾中的声音",
+          "text": "……留下不好吗？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "好不好，也该由我自己选。\n我要醒过来。"
         },
         {
           "kind": "dialogue",
@@ -406,7 +431,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_3.md",
-        "line": 226
+        "line": 231
       },
       "background": "bg_dream_dining_fog",
       "bgm": "bgm_nightmare_invitation"
@@ -477,12 +502,12 @@
         {
           "kind": "inner",
           "speaker": "男高",
-          "text": "我回到太阳市了。今天第一天上学。明天……还有明天。"
+          "text": "我回到太阳市了。今天第一天上学。\n奶奶还在外面。明早她要是再来叫我……我得应她一声。"
         },
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "有人等我回去。我不能留在这儿。"
+          "text": "有人真的在等我回去。我不能留在这儿。"
         },
         {
           "kind": "dialogue",
@@ -505,7 +530,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_3.md",
-        "line": 291
+        "line": 315
       },
       "background": "bg_dream_house_loop",
       "bgm": "bgm_nightmare_pressure"
@@ -626,7 +651,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_3.md",
-        "line": 351
+        "line": 376
       },
       "background": "bg_dream_house_loop",
       "bgm": "bgm_sword_answer"
@@ -724,7 +749,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_3.md",
-        "line": 412
+        "line": 437
       },
       "background": "bg_dream_house_fracture",
       "bgm": "bgm_sword_breaks_dream"
@@ -812,7 +837,7 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "……不管怎么说，刚才谢谢你。"
+          "text": "我还不知道你是谁，也不知道你为什么会出现。\n但刚才是你救了我。……谢谢。"
         },
         {
           "kind": "stage",
@@ -830,7 +855,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_3.md",
-        "line": 463
+        "line": 488
       },
       "background": "bg_grandmother_bedroom_night",
       "bgm": "bgm_after_dream_quiet"

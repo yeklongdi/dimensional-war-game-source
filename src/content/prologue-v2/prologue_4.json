@@ -123,7 +123,12 @@
         },
         {
           "kind": "stage",
-          "text": "男高松开窗帘，回头看了一眼通向楼下的房门。"
+          "text": "男高松开窗帘，回头看了一眼通向楼下的房门。\n奶奶的房间没有亮灯。要是那些人一路查到这扇门，他不能让她什么都不知道地卷进来。"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "至少，先把他们引离这里。"
         },
         {
           "kind": "jump",
@@ -203,7 +208,7 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "你们大半夜在居民区找什么？"
+          "text": "你们大半夜拿着那种东西，在居民区找什么？"
         },
         {
           "kind": "dialogue",
@@ -226,7 +231,7 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "要问昨晚的事，跟我说。别堵在人家门口。"
+          "text": "要问昨晚的事，就跟我说。\n这里都是住户，别堵在别人家门口。"
         },
         {
           "kind": "stage",
@@ -253,7 +258,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 128
+        "line": 133
       },
       "background": "bg_residential_junction_night",
       "bgm": "bgm_organization_tension"
@@ -366,7 +371,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 199
+        "line": 205
       },
       "background": "bg_old_district_access_night",
       "bgm": "bgm_first_partners_battle"
@@ -481,7 +486,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 260
+        "line": 266
       },
       "background": "bg_old_district_battle_street_night",
       "bgm": "bgm_foreigner_approach"
@@ -593,7 +598,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 321
+        "line": 327
       },
       "background": "bg_old_district_battle_street_night",
       "bgm": "bgm_link_advantage"
@@ -708,7 +713,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 377
+        "line": 383
       },
       "background": "bg_old_district_battle_street_night",
       "bgm": "bgm_organization_reinforcements"
@@ -790,7 +795,7 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "一个你能对付。可他们好像没打算只来一个。"
+          "text": "你打得过它，可他们没打算跟你单挑！"
         },
         {
           "kind": "stage",
@@ -812,7 +817,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 433
+        "line": 439
       },
       "background": "bg_old_district_battle_street_night",
       "bgm": "bgm_encirclement_pressure"
@@ -861,7 +866,7 @@
         {
           "kind": "dialogue",
           "speaker": "墙侧的声音",
-          "text": "再往那边退，可真没路了。"
+          "text": "两位，夜路可不是这么逛的。\n再退一步，可就真撞墙了。"
         },
         {
           "kind": "show",
@@ -932,7 +937,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 487
+        "line": 493
       },
       "background": "bg_old_district_battle_street_night",
       "bgm": "bgm_thief_escape"
@@ -1011,7 +1016,7 @@
         {
           "kind": "dialogue",
           "speaker": "蒙面人",
-          "text": "昨天那次，谢了。"
+          "text": "昨天那次，谢了。\n连自己救的是谁都不知道，你也真敢冲。"
         },
         {
           "kind": "stage",
@@ -1038,7 +1043,7 @@
         {
           "kind": "dialogue",
           "speaker": "怪盗",
-          "text": "这次轮到我。先别急着问，追兵还没走远。"
+          "text": "这次轮到我带你脱身。先别急着问，追兵还没走远。"
         },
         {
           "kind": "dialogue",
@@ -1048,7 +1053,7 @@
         {
           "kind": "dialogue",
           "speaker": "怪盗",
-          "text": "后面那件可以小点声。"
+          "text": "怪盗也得上课。后面那件事，麻烦小点声。"
         },
         {
           "kind": "stage",
@@ -1057,17 +1062,17 @@
         {
           "kind": "dialogue",
           "speaker": "怪盗",
-          "text": "昨天你还不知道我是谁，就冲上来了。我记着。"
+          "text": "昨晚你还不知道我是谁，就冲上来了。\n这个人情，我记着。"
         },
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "你倒是先说声别往那边走啊。"
+          "text": "那你可以早点提醒我，别再一个人往包围圈里走。"
         },
         {
           "kind": "dialogue",
           "speaker": "怪盗",
-          "text": "我也没想到，今天还能在另一场包围里碰见你。"
+          "text": "我也没想到，今天会在另一场包围里碰见你。"
         },
         {
           "kind": "dialogue",
@@ -1091,7 +1096,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 552
+        "line": 559
       },
       "background": "bg_old_district_quiet_alley_night",
       "bgm": "bgm_thief_reveal_quiet"
@@ -1185,17 +1190,17 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "所以，我睡了一觉，醒来就得参加这个？"
+          "text": "我连规则都是刚听见的，怎么就算参加了？"
         },
         {
           "kind": "dialogue",
           "speaker": "怪盗",
-          "text": "至少不是睡一觉就能解决的问题了。"
+          "text": "因为他们不会因为你是新手，就对你客气。"
         },
         {
           "kind": "dialogue",
           "speaker": "女剑士",
-          "text": "你可以把说明说得更清楚一点。"
+          "text": "挑重点。先告诉他，现在已经躲不开的是什么。"
         },
         {
           "kind": "stage",
@@ -1214,7 +1219,7 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "拿愿望当奖品，让这些人互相打？"
+          "text": "拿愿望当奖品，让这些人互相打？\n这算什么规则。"
         },
         {
           "kind": "dialogue",
@@ -1253,7 +1258,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 639
+        "line": 648
       },
       "background": "bg_old_district_quiet_alley_night",
       "bgm": "bgm_holy_grail_explanation"
@@ -1352,7 +1357,7 @@
         {
           "kind": "dialogue",
           "speaker": "怪盗",
-          "text": "职阶。名字和来历，等熟一点再说。今晚先记住谁和谁站在一起就够了。"
+          "text": "是职阶。真名和来历也是情报。\n不是故意拿你当外人——这条巷子不适合把底牌全摊开。"
         },
         {
           "kind": "stage",
@@ -1375,7 +1380,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 733
+        "line": 743
       },
       "background": "bg_old_district_quiet_alley_night",
       "bgm": "bgm_temporary_companions"
@@ -1455,7 +1460,7 @@
         {
           "kind": "dialogue",
           "speaker": "怪盗",
-          "text": "我也希望能这么简单。但你也见到了，他们会拦你，会动手。你不想争，不代表他们会放过你。"
+          "text": "我也希望能这么简单。但你也见到了，他们会拦你，会动手。\n你不想争，不代表他们会因此放过你和你在意的人。"
         },
         {
           "kind": "stage",
@@ -1512,7 +1517,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 794
+        "line": 805
       },
       "background": "bg_old_district_quiet_alley_night",
       "bgm": "bgm_temporary_companions"
@@ -1600,7 +1605,7 @@
         },
         {
           "kind": "stage",
-          "text": "她的目光越过男高，落在门外陌生的青年身上。男高赶紧侧开一步。"
+          "text": "她的目光越过男高，落在门外陌生的青年身上，又扫过他手中用旧布裹住的长包。\n奶奶没有当场追问。男高赶紧侧开一步，好让她看清青年的脸。"
         },
         {
           "kind": "dialogue",
@@ -1655,24 +1660,24 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "今晚先休息。明天去学校……还有一大堆事情等着问。"
+          "text": "今晚先休息。你救了我，总不能再让你站着守一夜。"
         },
         {
           "kind": "stage",
-          "text": "青年点头，在靠近门的一侧坐下。男高躺回床上，隔了一会儿，又转过头。"
+          "text": "青年看了看床边的位置，最终仍在靠近门的一侧坐下。男高躺回床上，隔了一会儿，又转过头。"
         },
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "还有，刚才一直忘了说。欢迎——嗯，先住这里吧。"
+          "text": "还有，刚才一直忘了说。\n虽然今天发生的事，我一件都还没弄明白……但欢迎你来。今晚，这里也算你的落脚处。"
         },
         {
           "kind": "stage",
-          "text": "青年看向他，目光柔和了一些。楼下，奶奶收杯子的声音轻轻响起；再往后，房子重新安静下来。"
+          "text": "青年看向他，目光柔和了一些，认真点头。楼下，奶奶收杯子的声音轻轻响起；再往后，房子重新安静下来。"
         },
         {
           "kind": "stage",
-          "text": "男高听着熟悉的声音，慢慢闭上眼。这一次，入睡前他知道，床边已经不只剩下自己一个人。"
+          "text": "男高听着熟悉的声音，慢慢闭上眼。\n这一次，他知道身边多了一个人。"
         },
         {
           "kind": "set",
@@ -1686,7 +1691,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 870
+        "line": 882
       },
       "background": "bg_grandmother_house_entrance_night",
       "bgm": "bgm_homecoming_warm_low"

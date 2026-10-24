@@ -9,7 +9,7 @@
       "count": 9,
       "sourceFile": "source/story/prologue-v2/prologue.md",
       "from": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（一）\\序幕_Galgame脚本.md",
-      "sha256": "49ac6d4ff378c724354968e7519acc40bdec578d4f807fee3ee7e70c02bcc05a"
+      "sha256": "dfb2f330acc1c7ed9eba44f7208bd1445e5ec4975def0a0b0e7ee753d5525891"
     },
     {
       "id": "act1",
@@ -19,7 +19,7 @@
       "count": 22,
       "sourceFile": "source/story/prologue-v2/act1.md",
       "from": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（二）\\序幕（二）_Galgame脚本.md",
-      "sha256": "a5c2cc7cc7ff5ca311084cdc2f4b5c7a3c5d2f307857ea89c2f6636542c93f3f"
+      "sha256": "1efab5dad7b6b6f0f103eb6712c50dc2a573f67c8e6f9a33ab90e5d3385359cd"
     },
     {
       "id": "prologue_3",
@@ -29,7 +29,7 @@
       "count": 8,
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
       "from": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（三）\\序幕（三）_Galgame脚本.md",
-      "sha256": "9f8d9d866540b740b093b923d98d1479cbecbf22dd91628ef43212fa51e50dbf"
+      "sha256": "4d157acdd98eb04a97727563b0ccb2d8008a3a33699204a3e0ec6630b2a668fe"
     },
     {
       "id": "prologue_4",
@@ -39,7 +39,7 @@
       "count": 13,
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
       "from": "E:\\笔记\\次元战争设定\\剧情\\序幕\\序幕（四）\\序幕（四）_Galgame脚本.md",
-      "sha256": "ad1a350d8c05b8f2cffa409dd5ba30b15aaf4134203529e581236db8f0f83bd4"
+      "sha256": "9d3d8ba35afa109052f4ee71d72465129637a03cb1bd51f9bc839b62da5bbd13"
     }
   ]
 }

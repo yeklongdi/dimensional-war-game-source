@@ -37,7 +37,16 @@
         },
         {
           "kind": "stage",
-          "text": "闹钟响了几遍，男高仍然没有醒来。\n奶奶端着早饭上楼，把男高叫醒。"
+          "text": "闹钟已经响过几遍，男高仍把半张脸埋在被子里。\n昨晚的金属装置、蒙面人的背影和仓库区重新亮起的灯，在断续的梦里转了一夜。"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "那些人后来怎么样了……\n不行，再想下去天都要亮了。"
+        },
+        {
+          "kind": "stage",
+          "text": "奶奶端着早饭上楼，在门边站了两秒，直接伸手拉开了窗帘。"
         },
         {
           "kind": "dialogue",
@@ -47,7 +56,7 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "知道了知道了……"
+          "text": "起了起了……我真的醒了。"
         },
         {
           "kind": "stage",
@@ -67,7 +76,7 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "放心，我体力好着呢！"
+          "text": "知道，我保证看着路！奶奶，晚上见！"
         },
         {
           "kind": "stage",
@@ -97,7 +106,7 @@
         {
           "kind": "inner",
           "speaker": "虚拟主播",
-          "text": "没见过的人……。"
+          "text": "没见过的人……是邻居家新搬来的吗？"
         },
         {
           "kind": "stage",
@@ -163,16 +172,25 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "抱歉！真的很抱歉啦！"
+          "text": "抱歉！你没事吧？"
         },
         {
           "kind": "stage",
-          "text": "男高扶住差点滑落的书包，头也不回地继续向学校跑去。"
+          "text": "男高赶紧伸手扶了对方一把，又接住自己差点掉落的水煮蛋。\n上课预备铃从远处传来，他急得回头看了一眼学校。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "真的对不起！我快迟到了，先走一步！"
         },
         {
           "kind": "dialogue",
           "speaker": "怪盗",
-          "text": "不要跑那么快啊！"
+          "text": "一大早的，赶着去哪儿啊……"
+        },
+        {
+          "kind": "stage",
+          "text": "怪盗站稳后拍了拍衣摆，望着男高飞奔的背影，意外地挑了下眉。"
         },
         {
           "kind": "inner",
@@ -195,7 +213,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 232
+        "line": 240
       },
       "background": "bg_sun_city_school_road_morning",
       "bgm": "bgm_school_morning"
@@ -243,18 +261,22 @@
           "text": "那个学生！站住！\n学校里面不许跑！第一天报到就横冲直撞，像什么样子！"
         },
         {
+          "kind": "stage",
+          "text": "男高猛地刹住脚，转身站直，嘴里的面包还没来得及拿下。"
+        },
+        {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "抱歉啦！老师！下次我会注意的！"
+          "text": "对不起，老师！我下次一定提前出门！"
         },
         {
           "kind": "stage",
-          "text": "男高没有停下，反而加速跑向教学楼。"
+          "text": "老师看了看他快要滑到地上的书包，又看了眼时间，无奈地朝教学楼一抬手。"
         },
         {
           "kind": "dialogue",
           "speaker": "老师",
-          "text": "喂！让你站住！"
+          "text": "先把拉链拉好，赶紧去报到。走廊里不许再跑！"
         },
         {
           "kind": "meta",
@@ -283,16 +305,26 @@
         {
           "kind": "dialogue",
           "speaker": "反派",
-          "text": "转学生？第一天报到就撞了人，又挨老师训……\n这个人，还挺有趣的。"
+          "text": "刚转来就撞人，又被老师追着训……他倒是一点都不怯场。"
         },
         {
-          "kind": "inner",
+          "kind": "dialogue",
           "speaker": "偶像",
-          "text": "那个人……为什么他会注意到这种普通的学生？"
+          "text": "你好像很在意他。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "反派",
+          "text": "只是觉得这股精神劲很新鲜。\n就是不知道，遇上真正的麻烦以后，还能不能保住。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "偶像",
+          "text": "……是吗。"
         },
         {
           "kind": "stage",
-          "text": "偶像迅速收回视线，但不安没有消失。\n镜头短暂掠过学校地下。"
+          "text": "反派抿了一口饮料，语气仍像随口闲谈。\n偶像也笑了一下，目光却重新落向男高离开的方向。\n镜头短暂掠过学校地下。"
         },
         {
           "kind": "show",
@@ -337,7 +369,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 275
+        "line": 291
       },
       "background": "bg_school_gate_morning",
       "bgm": "bgm_school_morning"
@@ -387,7 +419,7 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "还有，如果有人遇到困难，也可以来找我！"
+          "text": "搬东西、找路、体育活动都可以叫我。\n要是有人遇到麻烦，也欢迎来找我！"
         },
         {
           "kind": "stage",
@@ -401,11 +433,11 @@
         {
           "kind": "dialogue",
           "speaker": "同学乙",
-          "text": "还说什么遇到困难来找他……"
+          "text": "转学第一天就放出这种话，真有自信。"
         },
         {
           "kind": "stage",
-          "text": "男高没有在意同学的反应，反而拍了拍胸脯。\n靠窗位置上的怪盗认出了男高。"
+          "text": "男高听出大家是在笑，却只当他们记住了自己，坦然拍了拍胸脯。\n靠窗位置上的怪盗认出了男高。"
         },
         {
           "kind": "show",
@@ -419,11 +451,11 @@
         {
           "kind": "inner",
           "speaker": "怪盗",
-          "text": "原来就是你啊，转学生。"
+          "text": "是他啊。……这所学校，看来要热闹起来了。"
         },
         {
           "kind": "stage",
-          "text": "男高也认出怪盗，朝他挥手。\n怪盗对男高做出“加油”的口型。"
+          "text": "男高也认出怪盗，朝他挥手。\n怪盗抬手回了个很轻的招呼，随即用笔尖点了点讲台，提醒他老师还站在旁边。"
         },
         {
           "kind": "hide",
@@ -444,7 +476,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 345
+        "line": 373
       },
       "background": "bg_school_classroom_morning",
       "bgm": "bgm_school_classroom_daily"
@@ -504,16 +536,16 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "好嘞！"
+          "text": "好，谢谢老师！"
         },
         {
           "kind": "stage",
-          "text": "男高拎着书包走向座位，坐到怪盗后面、虚拟主播左边。\n他转头朝虚拟主播笑了一下。"
+          "text": "男高拎着书包走向座位，坐到怪盗后面、虚拟主播左边。\n他先朝邻座笑了一下，又刻意压低了一点声音。"
         },
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "你好！以后请多关照！"
+          "text": "你好。以后请多关照。"
         },
         {
           "kind": "show",
@@ -524,20 +556,30 @@
         {
           "kind": "dialogue",
           "speaker": "虚拟主播",
-          "text": "……嗯。"
+          "text": "……嗯。请、请多关照。"
         },
         {
           "kind": "stage",
-          "text": "怪盗从前排回过头。"
+          "text": "怪盗从前排回过头，正好对上男高的视线。"
         },
         {
           "kind": "dialogue",
           "speaker": "怪盗",
-          "text": "欢迎入座，新生~。"
+          "text": "又见面了，转学生。你这登场方式，想不记住都难。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "早上真是抱歉。回头我正式赔罪。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "先坐好吧，新同学。老师可看这边了。"
         },
         {
           "kind": "stage",
-          "text": "男高用力点头。"
+          "text": "男高立刻坐直，用力点头。"
         },
         {
           "kind": "hide",
@@ -562,7 +604,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 405
+        "line": 434
       },
       "background": "bg_school_classroom_morning",
       "bgm": "bgm_school_classroom_daily"
@@ -633,12 +675,12 @@
         {
           "kind": "dialogue",
           "speaker": "老师",
-          "text": "你刚转来，对学校还不熟吧。\n这样，我找一名同学带你逛逛校园，认认路。"
+          "text": "你刚转来，对学校还不熟吧。\n课间正好有时间，让同学带你逛逛校园，认认路。"
         },
         {
           "kind": "dialogue",
           "speaker": "老师",
-          "text": "你自己看看，想跟谁一起去？"
+          "text": "他们都是这个班的学生。你自己看看，想跟谁一起去？"
         },
         {
           "kind": "stage",
@@ -651,7 +693,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 460
+        "line": 497
       },
       "background": "bg_school_classroom_day",
       "bgm": "bgm_school_classroom_daily"
@@ -765,7 +807,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 500
+        "line": 537
       },
       "background": "bg_school_classroom_day",
       "bgm": "bgm_school_choice"
@@ -791,7 +833,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 540
+        "line": 577
       },
       "background": "bg_school_classroom_day"
     },
@@ -816,7 +858,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 553
+        "line": 590
       },
       "background": "bg_school_classroom_day"
     },
@@ -846,7 +888,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 566
+        "line": 603
       },
       "background": "bg_school_classroom_day"
     },
@@ -885,31 +927,36 @@
         },
         {
           "kind": "stage",
-          "text": "老师的话音落下后，虚拟主播发现所有人都看向她。\n她放下手里的东西，走到男高身边，离男高半米远停下。"
+          "text": "老师的话音落下后，虚拟主播发现所有人都看向她。\n她下意识把怀里的书抱紧，过了两秒才放下东西，走到离男高半步远的位置。"
         },
         {
           "kind": "dialogue",
           "speaker": "虚拟主播",
-          "text": "那……那跟我来吧。"
+          "text": "那……跟我来吧。"
         },
         {
           "kind": "stage",
-          "text": "虚拟主播带男高进入主教学楼一层东侧的图书馆。\n镜头表现书架、靠窗自习区和安静的馆内环境。"
+          "text": "虚拟主播带男高进入主教学楼一层东侧的图书馆。\n一进门，她的脚步反而稳了些，像是回到了自己熟悉的地方。\n镜头表现书架、靠窗自习区和安静的馆内环境。"
         },
         {
           "kind": "dialogue",
           "speaker": "虚拟主播",
-          "text": "这、这里是图书馆……藏书有八万多册……"
+          "text": "这里是图书馆。靠窗的是自习区，校史和地方志在最里面。"
         },
         {
           "kind": "dialogue",
           "speaker": "虚拟主播",
-          "text": "靠窗那边是自习区，平时很安静……\n校史和地方志也在这里。"
+          "text": "藏书大概有八万多册。平时……很安静。"
         },
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "好厉害！比我以前学校的图书馆大多了！"
+          "text": "你记得好清楚。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "嗯。这里人少……我常来。"
         },
         {
           "kind": "show",
@@ -919,7 +966,7 @@
         },
         {
           "kind": "stage",
-          "text": "虚拟主播轻轻点头。"
+          "text": "她说完便继续往前带路，像是终于找到一段不用临时组织语言的介绍。"
         },
         {
           "kind": "background",
@@ -933,12 +980,26 @@
         {
           "kind": "dialogue",
           "speaker": "虚拟主播",
-          "text": "那是食堂……一楼是打饭窗口，二楼是座位区……"
+          "text": "那是食堂。一楼是打饭窗口，二楼座位多一些。"
         },
         {
           "kind": "dialogue",
           "speaker": "虚拟主播",
-          "text": "中午人会很多，靠窗的位置……大家都很喜欢坐。"
+          "text": "中午靠窗的位置很抢手……我一般坐里面，那里人少。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "懂了。以后找不到你，就先去看最安静的角落。"
+        },
+        {
+          "kind": "stage",
+          "text": "虚拟主播脚步一顿，耳朵慢慢红了。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "……也不用特意找我。"
         },
         {
           "kind": "dialogue",
@@ -953,7 +1014,7 @@
         {
           "kind": "dialogue",
           "speaker": "虚拟主播",
-          "text": "那是体育馆……一楼是篮球场和羽毛球场，二楼是观众席……"
+          "text": "体育馆。一楼是篮球场和羽毛球场，二楼是观众席。"
         },
         {
           "kind": "dialogue",
@@ -962,7 +1023,7 @@
         },
         {
           "kind": "stage",
-          "text": "男高一边听一边点头，时不时夸她一句。\n虚拟主播的耳朵再次发红。"
+          "text": "男高一边听一边点头。\n她介绍得越具体，声音反而越平稳；只有发现男高正看着自己时，才会突然卡住。"
         },
         {
           "kind": "jump",
@@ -971,7 +1032,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 581
+        "line": 618
       },
       "background": "bg_school_library_day",
       "bgm": "bgm_school_daily"
@@ -1021,17 +1082,17 @@
         {
           "kind": "dialogue",
           "speaker": "虚拟主播",
-          "text": "听说……很久以前这里就要建新楼，但一直没动静。"
+          "text": "听说……这里原本要建新楼，但一直没有真的动工。"
         },
         {
           "kind": "dialogue",
           "speaker": "虚拟主播",
-          "text": "学校不让靠近，说是施工危险……\n也有人说是地下挖出了什么东西。"
+          "text": "学校不让靠近，说是施工危险。\n也有人传，说地下挖出过什么奇怪的东西。"
         },
         {
           "kind": "dialogue",
           "speaker": "虚拟主播",
-          "text": "反正……老师说过，不要靠近那里。"
+          "text": "我不知道哪个是真的……不过老师特意提醒过，不要来这边。"
         },
         {
           "kind": "stage",
@@ -1044,7 +1105,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 658
+        "line": 710
       },
       "background": "bg_school_construction_zone_day",
       "bgm": "bgm_school_mystery"
@@ -1118,7 +1179,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 701
+        "line": 753
       },
       "background": "bg_school_construction_zone_day",
       "bgm": "bgm_school_mystery"
@@ -1163,36 +1224,59 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "有门不走，翻什么墙！"
+          "text": "门都没锁，看来只是不想让人随便进。"
         },
         {
           "kind": "stage",
-          "text": "男高推开小门走进去。\n虚拟主播飞快地观察四周，随后咬牙跟上。"
+          "text": "男高推开小门走进去。\n虚拟主播飞快地观察四周，确认暂时没有老师经过，才咬咬牙跟到门内，却停在坑边不肯再往前。"
         },
         {
           "kind": "dialogue",
           "speaker": "虚拟主播",
-          "text": "等、等一下……这里真的不能进……"
+          "text": "等、等一下……这里真的不能进。"
         },
         {
           "kind": "dialogue",
           "speaker": "虚拟主播",
-          "text": "老师说过不能靠近这里的……\n被发现了会被叫家长的……"
+          "text": "老师说过不能靠近。被发现了，肯定会被叫家长的……"
         },
         {
           "kind": "dialogue",
           "speaker": "虚拟主播",
-          "text": "而且这里很危险……听说有人晚上路过，听见里面传出奇怪的声音……"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "虚拟主播",
-          "text": "喂……你有没有在听我说话……"
+          "text": "而且这里真的很危险。听说有人晚上路过，还听见里面传出奇怪的声音……"
         },
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "听着呢听着呢！你看，这不就是个大坑嘛，哪有那么吓人——嗯？"
+          "text": "我听见了。所以我下去看一眼就回来，不会乱碰。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高走到坑边，朝下面看了看。大坑深得看不见完整的底部，只有塌落的泥土和裸露的钢筋。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "你留在上面等我。要是有人过来，就先提醒我。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "你至少先找条能下去的路——"
+        },
+        {
+          "kind": "stage",
+          "text": "男高撑着坑沿跃下，落地时屈膝卸力，很快站稳。\n虚拟主播没能拦住他，只能跪趴在坑边，一半身体藏在防尘布后。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "……只看一眼。说好了。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "知道——嗯？"
         },
         {
           "kind": "stage",
@@ -1206,7 +1290,7 @@
         {
           "kind": "dialogue",
           "speaker": "虚拟主播",
-          "text": "……我们还是，回去吧。"
+          "text": "我们……还是回去吧。"
         },
         {
           "kind": "stage",
@@ -1236,6 +1320,11 @@
           "text": "男高观察剑身。\n剑柄顶端是紫蓝色菱形剑首，握柄缠着青绿色绳纹，翼状护手中央嵌着暗淡的金色三角宝石。\n剑身上半段泛着象牙白的冷光，下半段被黑绿色污秽腐蚀，剑尖扭曲发黑。"
         },
         {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "别碰它……那个看起来，很不正常。"
+        },
+        {
           "kind": "show",
           "actor": "男高",
           "update": true,
@@ -1243,7 +1332,7 @@
         },
         {
           "kind": "stage",
-          "text": "男高不由自主地伸手靠近剑柄。\n剑身极轻微地颤动，金色三角宝石比刚才亮了一点。"
+          "text": "男高明知不该靠近，却还是不由自主地朝剑柄伸出手。\n剑身极轻微地颤动，金色三角宝石比刚才亮了一点。"
         },
         {
           "kind": "narration",
@@ -1257,7 +1346,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 722
+        "line": 774
       },
       "background": "bg_school_construction_zone_day",
       "bgm": "bgm_school_mystery"
@@ -1346,12 +1435,12 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "我是不是睡糊涂了？"
+          "text": "刚才那些……不是我睡糊涂了吧？"
         },
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "一把剑而已，怎么会让我看到这么奇怪的东西……"
+          "text": "一把剑，怎么会让我看到那种东西……"
         },
         {
           "kind": "stage",
@@ -1364,7 +1453,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 807
+        "line": 881
       },
       "background": "bg_school_construction_pit",
       "bgm": "bgm_master_sword_vision"
@@ -1416,7 +1505,16 @@
         },
         {
           "kind": "stage",
-          "text": "虚拟主播看见黑色人形，身体软软倒在坑边。"
+          "text": "虚拟主播看见黑色人形，先是撑着坑边想提醒男高。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "后、后面……快上来——"
+        },
+        {
+          "kind": "stage",
+          "text": "她的声音没能说完。恐惧抽走了她全身的力气，身体软软倒在坑边。"
         },
         {
           "kind": "sfx",
@@ -1426,16 +1524,21 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "这、这是什么东西？！"
+          "text": "喂！你怎么了——\n这、这是什么东西？！"
         },
         {
           "kind": "stage",
-          "text": "男高低头看向昏迷的虚拟主播，又看向坑底的黑色人形。\n他握紧大师之剑，挡在虚拟主播前面。"
+          "text": "男高看向昏迷的虚拟主播，又看向坑底正在逼近的黑色人形。\n把她留在这里逃跑做不到，带着她直接爬上坑壁也来不及。\n他握紧大师之剑，站到了两者之间。"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "不能把她丢在这里。"
         },
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "没办法了……\n只能先把你打倒，再带她离开！"
+          "text": "本来想先带她上去的……\n看来只能先解决你了！"
         },
         {
           "kind": "stage",
@@ -1448,7 +1551,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 874
+        "line": 948
       },
       "background": "bg_school_construction_pit",
       "bgm": "bgm_black_humanoid_appearance"
@@ -1504,7 +1607,7 @@
         },
         {
           "kind": "stage",
-          "text": "男高把大师之剑插回坑底旁边的泥土，随后冲向坑边扶住虚拟主播。\n他抱起虚拟主播，沿着坑壁向上爬。"
+          "text": "男高把大师之剑插回坑底旁边的泥土，随后冲向坑边扶住虚拟主播。\n他先俯身确认她还有呼吸，才松了口气，小心抱起她，沿着坑壁向上爬。"
         },
         {
           "kind": "stage",
@@ -1533,7 +1636,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 918
+        "line": 1005
       },
       "background": "bg_school_construction_pit",
       "bgm": "bgm_black_humanoid_battle"
@@ -1596,7 +1699,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 962
+        "line": 1049
       },
       "background": "bg_school_hallway_day",
       "bgm": "bgm_school_mystery"
@@ -1659,7 +1762,21 @@
         {
           "kind": "dialogue",
           "speaker": "虚拟主播",
-          "text": "……嗯。那把剑——"
+          "text": "……嗯。对不起，我什么都没帮上。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "你道什么歉。是我非要进去，才害你碰上那种东西。\n要道歉也是我先说。……抱歉。"
+        },
+        {
+          "kind": "stage",
+          "text": "虚拟主播抓紧被角，轻轻摇头。她想起坑底那把剑，声音又低了下去。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "那把剑——"
         },
         {
           "kind": "stage",
@@ -1668,11 +1785,21 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "先休息。我已经把老师叫来了。"
+          "text": "先休息。我已经把老师叫来了。\n有什么话，等你好一点再说。"
         },
         {
           "kind": "stage",
-          "text": "他向老师确认这里有人照顾，才离开保健室。下午的课照常继续；临近放学，虚拟主播回教室拿书包，他再次确认她能够正常回应，才放下心来。"
+          "text": "他向老师确认这里有人照顾，才离开保健室。\n下午的课照常继续；临近放学，虚拟主播回教室拿书包。男高特意观察她能否正常回应，又在门口低声补了一句。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "下次我不会再让你跟着我冒险了。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "虚拟主播",
+          "text": "……下次也不要自己一个人去。"
         },
         {
           "kind": "jump",
@@ -1681,7 +1808,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 988
+        "line": 1075
       },
       "background": "bg_school_infirmary_day",
       "bgm": "bgm_school_daily"
@@ -1721,7 +1848,7 @@
         {
           "kind": "inner",
           "speaker": "男高",
-          "text": "要是又有人进去，碰到它……"
+          "text": "要是又有人进去，碰到它……\n总不能把这种东西留在谁都能靠近的地方。"
         },
         {
           "kind": "stage",
@@ -1738,7 +1865,7 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "先带回去。总不能让别人再随便碰到。"
+          "text": "先带回去藏好。总比留在这种谁都能进来的地方强。"
         },
         {
           "kind": "stage",
@@ -1761,7 +1888,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 1037
+        "line": 1146
       },
       "background": "bg_school_construction_zone_dusk",
       "bgm": "bgm_sword_quiet_mystery"
@@ -1802,7 +1929,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 1080
+        "line": 1190
       },
       "background": "bg_grandmother_house_dusk",
       "bgm": "bgm_scene_transition"
@@ -1832,7 +1959,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/act1.md",
-        "line": 1096
+        "line": 1206
       },
       "background": "bg_school_classroom_day",
       "bgm": "bgm_school_daily"

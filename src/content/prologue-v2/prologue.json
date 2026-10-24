@@ -38,7 +38,7 @@
         {
           "kind": "inner",
           "speaker": "男高",
-          "text": "以后，就由我来陪奶奶。"
+          "text": "这次不是只回来住几天。\n以后，换我陪奶奶了。"
         },
         {
           "kind": "sfx",
@@ -87,12 +87,12 @@
         },
         {
           "kind": "stage",
-          "text": "门很快打开。\n奶奶站在门里，手里攥着一块抹布。\n她看到男高后停顿数秒，随后快步迎上来。"
+          "text": "门内很快传来拖鞋声。\n奶奶一只手里还攥着抹布，开门看见他，先笑了起来，目光却在他脸上停了好一会儿。"
         },
         {
           "kind": "dialogue",
           "speaker": "奶奶",
-          "text": "孩子……是你回来了？"
+          "text": "可算到了。路上累不累？先让我看看。"
         },
         {
           "kind": "show",
@@ -103,16 +103,16 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "奶奶，我回来了。"
+          "text": "奶奶，我回来了。\n您怎么还跟以前一样，第一句话就问我累不累？"
         },
         {
           "kind": "stage",
-          "text": "奶奶仰头打量男高，又伸手拍了拍他的肩膀。"
+          "text": "奶奶仰头打量男高，伸手替他理了理被行李带压歪的衣领。"
         },
         {
           "kind": "dialogue",
           "speaker": "奶奶",
-          "text": "好，好……回来就好。\n快进来，饭马上就好。"
+          "text": "不问你，还能问谁？\n快进来，饭马上就好。"
         },
         {
           "kind": "stage",
@@ -133,7 +133,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue.md",
-        "line": 147
+        "line": 148
       },
       "background": "bg_grandmother_house_entrance",
       "bgm": "bgm_homecoming_warm"
@@ -173,17 +173,12 @@
         },
         {
           "kind": "stage",
-          "text": "客厅保留旧木柜、茶壶和墙上的老照片。\n奶奶拉着男高坐下，不时查看他的脸和手臂。"
+          "text": "客厅还是记忆里的旧木柜、茶壶和满墙老照片。\n奶奶拉着男高坐下，一会儿看他的脸，一会儿又捏捏他的手臂，像是要把错过的几年一次看回来。"
         },
         {
           "kind": "dialogue",
           "speaker": "奶奶",
-          "text": "长这么高了。\n瘦是瘦了点，可是结实了。"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "奶奶",
-          "text": "你这样子，倒像你爷爷年轻的时候。"
+          "text": "长这么高了。瘦是瘦了点，倒是结实。\n眉眼……有点像你爷爷年轻的时候。"
         },
         {
           "kind": "show",
@@ -194,20 +189,39 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "奶奶，我长大了。\n以后换我照顾您，您就放心吧！"
-        },
-        {
-          "kind": "stage",
-          "text": "奶奶先是一愣，随后笑了出来，但眼角泛起泪光。"
+          "text": "那正好。以后家里的重活归我，您就负责验收。"
         },
         {
           "kind": "dialogue",
           "speaker": "奶奶",
-          "text": "好，好。我们家孩子，长大了。"
+          "text": "先把自己的行李收拾好，再来夸口。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "保证完成任务！"
         },
         {
           "kind": "stage",
-          "text": "画面停留在祖孙二人的笑容上，随后淡出至晚饭后。"
+          "text": "奶奶笑着拍了他一下，起身想去看厨房。男高却先一步把茶壶拎起来，跟了过去。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "奶奶，我回来可不只是为了上学。\n以后别什么事都一个人扛。还有我呢。"
+        },
+        {
+          "kind": "stage",
+          "text": "奶奶背对着他停了一下，再开口时，声音仍带着笑。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "知道。那今天先帮我把这壶茶端过去，别洒了。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高应得响亮。画面停在祖孙二人一前一后的背影上，随后淡出至晚饭后。"
         },
         {
           "kind": "hide",
@@ -224,7 +238,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue.md",
-        "line": 188
+        "line": 189
       },
       "background": "bg_grandmother_house_living_room",
       "bgm": "bgm_homecoming_warm"
@@ -259,11 +273,15 @@
         },
         {
           "kind": "narration",
-          "text": "房间不大，但收拾得很干净。"
+          "text": "房间不大，却收拾得很干净。床单像刚晒过，书桌也空出了足够的位置。"
         },
         {
           "kind": "stage",
-          "text": "男高把衣服叠进衣柜，把明天报到要用的书本和文具装进书包。\n他把自己带来的游戏卡带摆在书桌上。\n窗外的路灯逐渐亮起。"
+          "text": "窗台上摆着一个旧铁皮机器人，边角已经生了锈。\n那是爷爷以前送给他的玩具。男高用袖口擦去薄灰，把它转向门口，端端正正地放好。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高把衣服叠进衣柜，把明天报到要用的书本和文具装进书包。\n他带来的游戏卡带就放在机器人旁边，像新旧两段生活终于在同一张书桌上碰了面。\n窗外的路灯逐渐亮起。"
         },
         {
           "kind": "background",
@@ -286,7 +304,7 @@
         {
           "kind": "dialogue",
           "speaker": "奶奶",
-          "text": "都这个点了，还出去？\n别走太远，早点回来，我给你留门。"
+          "text": "都这个点了，还出去？\n别走远。找不到路就打电话，我给你留门。"
         },
         {
           "kind": "show",
@@ -297,7 +315,7 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "知道啦！我就在附近转转，一会儿就回来。"
+          "text": "知道。就在附近转一圈，顺便看看明天怎么走。"
         },
         {
           "kind": "stage",
@@ -318,7 +336,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue.md",
-        "line": 236
+        "line": 248
       },
       "background": "bg_grandmother_house_bedroom",
       "bgm": "bgm_homecoming_warm"
@@ -354,7 +372,7 @@
         {
           "kind": "inner",
           "speaker": "男高",
-          "text": "这里……是什么地方？"
+          "text": "刚才明明还在商业街……怎么走到这种地方来了？"
         },
         {
           "kind": "stage",
@@ -402,11 +420,11 @@
         {
           "kind": "inner",
           "speaker": "男高",
-          "text": "那些人……在围什么人？\n那个人的脸被遮住了。"
+          "text": "几个人堵一个，手里还拿着东西……\n这怎么看都不像普通争执。"
         },
         {
           "kind": "stage",
-          "text": "蒙面人试图冲出包围，黑衣组织行动人员继续逼近。\n男高从阴影里走出。"
+          "text": "蒙面人刚侧身避开伸来的金属装置，另一名黑衣人便再次堵住缺口。\n男高看了看四周，没有看见其他路人。他吸了口气，从阴影里走了出去。"
         },
         {
           "kind": "show",
@@ -417,7 +435,7 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "喂！你们在干什么！"
+          "text": "喂！先把东西放下！"
         },
         {
           "kind": "stage",
@@ -426,7 +444,7 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "不管你们有什么纠纷，这么多人欺负一个，我看不过去！"
+          "text": "有什么话不能好好说？\n这么多人堵一个，我可不能装作没看见！"
         },
         {
           "kind": "set",
@@ -441,7 +459,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue.md",
-        "line": 284
+        "line": 300
       },
       "background": "bg_sun_city_old_street_night",
       "bgm": "bgm_old_street_mystery"
@@ -492,7 +510,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue.md",
-        "line": 348
+        "line": 365
       },
       "background": "bg_warehouse_area_night",
       "bgm": "bgm_first_battle"
@@ -536,11 +554,11 @@
         {
           "kind": "inner",
           "speaker": "男高",
-          "text": "……那个人是谁？\n那些人又是谁？"
+          "text": "他到底是什么人？\n那些人为什么非要抓住他？"
         },
         {
           "kind": "stage",
-          "text": "蒙面人的脸仍被遮住。他看了男高一会儿，随后转身钻进夜色。\n远处仓库区重新亮起灯光，隐约传来人声。"
+          "text": "男高刚想开口叫住对方，蒙面人却先朝他轻轻点了一下头。\n那不是答案，更像一句来不及说出口的道谢。\n下一刻，蒙面人转身钻进夜色，很快便看不清了。\n远处仓库区重新亮起灯光，隐约传来人声。"
         },
         {
           "kind": "sfx",
@@ -569,7 +587,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue.md",
-        "line": 370
+        "line": 387
       },
       "background": "bg_warehouse_area_night",
       "bgm": "bgm_first_battle_after"
@@ -614,26 +632,26 @@
         {
           "kind": "dialogue",
           "speaker": "奶奶",
-          "text": "回来啦？怎么去了这么久？\n外面冷不冷？"
+          "text": "回来啦？怎么气喘吁吁的，外面冷不冷？"
         },
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "不冷。我就是……多逛了一会儿，差点迷路。"
+          "text": "不冷。就是走错了条路，怕您等急，跑回来的。"
         },
         {
           "kind": "stage",
-          "text": "奶奶没有继续追问，只是点点头。"
+          "text": "奶奶看了眼他皱起来的外套，没有继续追问，只把留给他的那盏灯调亮了一些。"
         },
         {
           "kind": "dialogue",
           "speaker": "奶奶",
-          "text": "快去洗漱吧。明天一早，还要去学校报到呢。"
+          "text": "快去洗漱吧。明天一早还要报到，别第一天就没精神。"
         },
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "知道了。"
+          "text": "知道。您也早点睡，不用一直等我。"
         },
         {
           "kind": "stage",
@@ -642,12 +660,12 @@
         {
           "kind": "inner",
           "speaker": "男高",
-          "text": "也许只是自己多管闲事。\n也许是有什么纠纷，自己偏偏撞了进去。\n可那些装置和蒙面人的身手，又不像普通的争执。"
+          "text": "也许真是我稀里糊涂撞进了别人的麻烦。\n可那些装置、那个人的身手……还有他们看彼此的眼神，都不像小事。"
         },
         {
           "kind": "inner",
           "speaker": "男高",
-          "text": "可是……事情真的有那么简单吗？"
+          "text": "不过，要我现在装作没看见，还是做不到。"
         },
         {
           "kind": "hide",
@@ -664,7 +682,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue.md",
-        "line": 408
+        "line": 427
       },
       "background": "bg_grandmother_house_living_room_night",
       "bgm": "bgm_homecoming_warm"
@@ -695,7 +713,7 @@
         },
         {
           "kind": "stage",
-          "text": "枕边放着明天报到要用的书包。"
+          "text": "枕边放着明天报到要用的书包。\n窗台上的铁皮机器人被月光照出一道暗亮的边，像仍在替这个房间守着什么。"
         },
         {
           "kind": "inner",
@@ -705,12 +723,12 @@
         {
           "kind": "inner",
           "speaker": "男高",
-          "text": "先好好上学，陪奶奶生活……"
+          "text": "先把日子过好。好好上学，也多陪陪奶奶。"
         },
         {
           "kind": "inner",
           "speaker": "男高",
-          "text": "要是再遇到今晚那种事，也得像勇者一样站出来。"
+          "text": "至于今晚那种事……\n真再碰上，我还是会站出来。毕竟，我想成为的就是那种勇者。"
         },
         {
           "kind": "stage",
@@ -755,7 +773,7 @@
       ],
       "meta": {
         "sourceFile": "source/story/prologue-v2/prologue.md",
-        "line": 465
+        "line": 482
       },
       "background": "bg_grandmother_house_bedroom_night",
       "bgm": "bgm_night_before_school"

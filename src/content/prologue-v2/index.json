@@ -74,7 +74,7 @@
       "actId": "prologue",
       "sceneId": "p001",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 139,
+      "line": 140,
       "raw": "SFX: sfx_door_knock [占位符]",
       "categories": [
         "placeholder"
@@ -88,7 +88,7 @@
       "actId": "prologue",
       "sceneId": "p002",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 150,
+      "line": 151,
       "raw": "BACKGROUND: bg_grandmother_house_entrance [占位符]",
       "categories": [
         "placeholder"
@@ -102,7 +102,7 @@
       "actId": "prologue",
       "sceneId": "p002",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 151,
+      "line": 152,
       "raw": "BGM: bgm_homecoming_warm [占位符，延续]",
       "categories": [
         "placeholder"
@@ -116,7 +116,7 @@
       "actId": "prologue",
       "sceneId": "p002",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 153,
+      "line": 154,
       "raw": "SHOW: 奶奶 asset=char_grandmother_warm [占位符] position=door",
       "categories": [
         "placeholder"
@@ -130,7 +130,7 @@
       "actId": "prologue",
       "sceneId": "p003",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 191,
+      "line": 192,
       "raw": "BACKGROUND: bg_grandmother_house_living_room [占位符]",
       "categories": [
         "placeholder"
@@ -144,7 +144,7 @@
       "actId": "prologue",
       "sceneId": "p003",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 192,
+      "line": 193,
       "raw": "BGM: bgm_homecoming_warm [占位符，延续]",
       "categories": [
         "placeholder"
@@ -158,7 +158,7 @@
       "actId": "prologue",
       "sceneId": "p003",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 194,
+      "line": 195,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=left",
       "categories": [
         "placeholder"
@@ -172,7 +172,7 @@
       "actId": "prologue",
       "sceneId": "p003",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 195,
+      "line": 196,
       "raw": "SHOW: 奶奶 asset=char_grandmother_warm [占位符] position=right",
       "categories": [
         "placeholder"
@@ -186,7 +186,7 @@
       "actId": "prologue",
       "sceneId": "p004",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 239,
+      "line": 251,
       "raw": "BACKGROUND: bg_grandmother_house_bedroom [占位符]",
       "categories": [
         "placeholder"
@@ -200,7 +200,7 @@
       "actId": "prologue",
       "sceneId": "p004",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 240,
+      "line": 252,
       "raw": "BGM: bgm_homecoming_warm [占位符，渐弱]",
       "categories": [
         "placeholder"
@@ -214,7 +214,7 @@
       "actId": "prologue",
       "sceneId": "p004",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 242,
+      "line": 254,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
       "categories": [
         "placeholder"
@@ -228,7 +228,7 @@
       "actId": "prologue",
       "sceneId": "p004",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 257,
+      "line": 273,
       "raw": "BACKGROUND: bg_grandmother_house_kitchen_night [占位符]",
       "categories": [
         "placeholder"
@@ -242,7 +242,7 @@
       "actId": "prologue",
       "sceneId": "p004",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 258,
+      "line": 274,
       "raw": "SHOW: 奶奶 asset=char_grandmother_warm [占位符] position=kitchen",
       "categories": [
         "placeholder"
@@ -256,7 +256,7 @@
       "actId": "prologue",
       "sceneId": "p005",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 287,
+      "line": 303,
       "raw": "BACKGROUND: bg_sun_city_old_street_night [占位符]",
       "categories": [
         "placeholder"
@@ -270,7 +270,7 @@
       "actId": "prologue",
       "sceneId": "p005",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 288,
+      "line": 304,
       "raw": "BGM: bgm_old_street_mystery [占位符，待绑定]",
       "categories": [
         "placeholder"
@@ -284,7 +284,7 @@
       "actId": "prologue",
       "sceneId": "p005",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 290,
+      "line": 306,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=left",
       "categories": [
         "placeholder"
@@ -298,7 +298,7 @@
       "actId": "prologue",
       "sceneId": "p005",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 307,
+      "line": 323,
       "raw": "SFX: sfx_metal_collision [占位符]",
       "categories": [
         "placeholder"
@@ -312,7 +312,7 @@
       "actId": "prologue",
       "sceneId": "p005",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 309,
+      "line": 325,
       "raw": "CAMERA: 镜头切换至高墙另一侧的月光下。",
       "categories": [
         "meta"
@@ -328,7 +328,7 @@
       "actId": "prologue",
       "sceneId": "p005",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 310,
+      "line": 326,
       "raw": "SHOW: 黑衣人甲 asset=char_organization_member_placeholder [占位符] position=left",
       "categories": [
         "placeholder"
@@ -342,7 +342,7 @@
       "actId": "prologue",
       "sceneId": "p005",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 311,
+      "line": 327,
       "raw": "SHOW: 黑衣人乙 asset=char_organization_member_placeholder [占位符] position=right",
       "categories": [
         "placeholder"
@@ -356,7 +356,7 @@
       "actId": "prologue",
       "sceneId": "p005",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 312,
+      "line": 328,
       "raw": "SHOW: 蒙面人 asset=char_thief_masked_black_placeholder [占位符] position=center",
       "categories": [
         "placeholder"
@@ -370,7 +370,7 @@
       "actId": "prologue",
       "sceneId": "p005",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 343,
+      "line": 360,
       "raw": "SET: [变量名待定] 记录男高介入仓库区冲突",
       "categories": [
         "meta",
@@ -388,7 +388,7 @@
       "actId": "prologue",
       "sceneId": "p006",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 351,
+      "line": 368,
       "raw": "BACKGROUND: bg_warehouse_area_night [占位符]",
       "categories": [
         "placeholder"
@@ -402,7 +402,7 @@
       "actId": "prologue",
       "sceneId": "p006",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 352,
+      "line": 369,
       "raw": "BGM: bgm_first_battle [占位符，待绑定]",
       "categories": [
         "placeholder"
@@ -416,7 +416,7 @@
       "actId": "prologue",
       "sceneId": "p006",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 360,
+      "line": 377,
       "raw": "SET: [变量名待定] 记录序幕战斗教学完成",
       "categories": [
         "meta",
@@ -434,7 +434,7 @@
       "actId": "prologue",
       "sceneId": "p006",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 362,
+      "line": 379,
       "raw": "CHECK: [战斗失败处理待确认]",
       "categories": [
         "meta",
@@ -452,7 +452,7 @@
       "actId": "prologue",
       "sceneId": "p006",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 364,
+      "line": 381,
       "raw": "NARRATION:\n战斗结果返回后，继续进入战斗结束场景。",
       "categories": [
         "meta"
@@ -468,7 +468,7 @@
       "actId": "prologue",
       "sceneId": "p007",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 373,
+      "line": 390,
       "raw": "BACKGROUND: bg_warehouse_area_night [占位符]",
       "categories": [
         "placeholder"
@@ -482,7 +482,7 @@
       "actId": "prologue",
       "sceneId": "p007",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 374,
+      "line": 391,
       "raw": "BGM: bgm_first_battle_after [占位符，待绑定]",
       "categories": [
         "placeholder"
@@ -496,7 +496,7 @@
       "actId": "prologue",
       "sceneId": "p007",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 376,
+      "line": 393,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
       "categories": [
         "placeholder"
@@ -510,7 +510,7 @@
       "actId": "prologue",
       "sceneId": "p007",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 384,
+      "line": 401,
       "raw": "SHOW: 蒙面人 asset=char_thief_masked_black_placeholder [占位符] position=far",
       "categories": [
         "placeholder"
@@ -524,7 +524,7 @@
       "actId": "prologue",
       "sceneId": "p007",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 396,
+      "line": 415,
       "raw": "SFX: sfx_distant_warehouse_noise [占位符]",
       "categories": [
         "placeholder"
@@ -538,7 +538,7 @@
       "actId": "prologue",
       "sceneId": "p007",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 402,
+      "line": 421,
       "raw": "SET: [变量名待定] 记录蒙面人在男高面前离开",
       "categories": [
         "meta",
@@ -556,7 +556,7 @@
       "actId": "prologue",
       "sceneId": "p008",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 411,
+      "line": 430,
       "raw": "BACKGROUND: bg_grandmother_house_living_room_night [占位符]",
       "categories": [
         "placeholder"
@@ -570,7 +570,7 @@
       "actId": "prologue",
       "sceneId": "p008",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 412,
+      "line": 431,
       "raw": "BGM: bgm_homecoming_warm [占位符，低音量]",
       "categories": [
         "placeholder"
@@ -584,7 +584,7 @@
       "actId": "prologue",
       "sceneId": "p008",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 414,
+      "line": 433,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=left",
       "categories": [
         "placeholder"
@@ -598,7 +598,7 @@
       "actId": "prologue",
       "sceneId": "p008",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 415,
+      "line": 434,
       "raw": "SHOW: 奶奶 asset=char_grandmother_warm [占位符] position=right",
       "categories": [
         "placeholder"
@@ -612,7 +612,7 @@
       "actId": "prologue",
       "sceneId": "p009",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 468,
+      "line": 485,
       "raw": "BACKGROUND: bg_grandmother_house_bedroom_night [占位符]",
       "categories": [
         "placeholder"
@@ -626,7 +626,7 @@
       "actId": "prologue",
       "sceneId": "p009",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 469,
+      "line": 486,
       "raw": "BGM: bgm_night_before_school [占位符，待绑定]",
       "categories": [
         "placeholder"
@@ -640,7 +640,7 @@
       "actId": "prologue",
       "sceneId": "p009",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 471,
+      "line": 488,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=bed",
       "categories": [
         "placeholder"
@@ -654,7 +654,7 @@
       "actId": "prologue",
       "sceneId": "p009",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 494,
+      "line": 513,
       "raw": "BACKGROUND: bg_school_underground_dark [占位符]",
       "categories": [
         "placeholder"
@@ -668,7 +668,7 @@
       "actId": "prologue",
       "sceneId": "p009",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 495,
+      "line": 514,
       "raw": "CAMERA: 镜头缓慢推进黑暗中的漆黑结晶。",
       "categories": [
         "meta"
@@ -684,7 +684,7 @@
       "actId": "prologue",
       "sceneId": "p009",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 496,
+      "line": 515,
       "raw": "SHOW: 黑色结晶 asset=prop_dark_god_crystal_placeholder [占位符] position=center",
       "categories": [
         "placeholder"
@@ -698,7 +698,7 @@
       "actId": "prologue",
       "sceneId": "p009",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 498,
+      "line": 517,
       "raw": "SFX: sfx_low_heartbeat [占位符]",
       "categories": [
         "placeholder"
@@ -712,7 +712,7 @@
       "actId": "prologue",
       "sceneId": "p009",
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "line": 503,
+      "line": 522,
       "raw": "SET: [变量名待定] 记录序幕结束",
       "categories": [
         "meta",
@@ -786,7 +786,7 @@
       "actId": "act1",
       "sceneId": "a001",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 213,
+      "line": 221,
       "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right",
       "categories": [
         "placeholder"
@@ -800,7 +800,7 @@
       "actId": "act1",
       "sceneId": "a002",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 235,
+      "line": 243,
       "raw": "BACKGROUND: bg_sun_city_school_road_morning [占位符]",
       "categories": [
         "placeholder"
@@ -814,22 +814,8 @@
       "actId": "act1",
       "sceneId": "a002",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 236,
+      "line": 244,
       "raw": "BGM: bgm_school_morning [占位符，延续]",
-      "categories": [
-        "placeholder"
-      ],
-      "details": [
-        "素材仍有原始占位 / 待绑定标记。"
-      ],
-      "resolutions": []
-    },
-    {
-      "actId": "act1",
-      "sceneId": "a002",
-      "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 238,
-      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=left",
       "categories": [
         "placeholder"
       ],
@@ -843,6 +829,20 @@
       "sceneId": "a002",
       "sourceFile": "source/story/prologue-v2/act1.md",
       "line": 246,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=left",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "act1",
+      "sceneId": "a002",
+      "sourceFile": "source/story/prologue-v2/act1.md",
+      "line": 254,
       "raw": "SHOW: 怪盗 asset=char_thief_smile [已有候选素材，尚未绑定] position=right",
       "categories": [
         "placeholder"
@@ -856,7 +856,7 @@
       "actId": "act1",
       "sceneId": "a002",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 265,
+      "line": 281,
       "raw": "INNER:\n怪盗：\n【原文未提供更多心声，此处不补写。】",
       "categories": [
         "meta"
@@ -870,7 +870,7 @@
       "actId": "act1",
       "sceneId": "a003",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 278,
+      "line": 294,
       "raw": "BACKGROUND: bg_school_gate_morning [占位符]",
       "categories": [
         "placeholder"
@@ -884,7 +884,7 @@
       "actId": "act1",
       "sceneId": "a003",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 279,
+      "line": 295,
       "raw": "BGM: bgm_school_morning [占位符，延续]",
       "categories": [
         "placeholder"
@@ -898,7 +898,7 @@
       "actId": "act1",
       "sceneId": "a003",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 281,
+      "line": 297,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
       "categories": [
         "placeholder"
@@ -912,7 +912,7 @@
       "actId": "act1",
       "sceneId": "a003",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 290,
+      "line": 306,
       "raw": "SHOW: 老师 asset=char_teacher_placeholder [占位符] position=left",
       "categories": [
         "placeholder"
@@ -926,7 +926,7 @@
       "actId": "act1",
       "sceneId": "a003",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 310,
+      "line": 329,
       "raw": "CAMERA: 镜头切换到教学楼二楼走廊。",
       "categories": [
         "meta"
@@ -942,7 +942,7 @@
       "actId": "act1",
       "sceneId": "a003",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 311,
+      "line": 330,
       "raw": "SHOW: 反派 asset=char_villain_calm [占位符] position=left",
       "categories": [
         "placeholder"
@@ -956,7 +956,7 @@
       "actId": "act1",
       "sceneId": "a003",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 312,
+      "line": 331,
       "raw": "SHOW: 偶像 asset=char_idol_neutral [占位符] position=right",
       "categories": [
         "placeholder"
@@ -970,7 +970,7 @@
       "actId": "act1",
       "sceneId": "a003",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 331,
+      "line": 359,
       "raw": "SHOW: 黑色结晶 asset=prop_dark_god_crystal_placeholder [占位符] position=center",
       "categories": [
         "placeholder"
@@ -984,7 +984,7 @@
       "actId": "act1",
       "sceneId": "a003",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 332,
+      "line": 360,
       "raw": "SFX: sfx_low_heartbeat [占位符]",
       "categories": [
         "placeholder"
@@ -998,7 +998,7 @@
       "actId": "act1",
       "sceneId": "a004",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 348,
+      "line": 376,
       "raw": "BACKGROUND: bg_school_classroom_morning [占位符]",
       "categories": [
         "placeholder"
@@ -1012,7 +1012,7 @@
       "actId": "act1",
       "sceneId": "a004",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 349,
+      "line": 377,
       "raw": "BGM: bgm_school_classroom_daily [占位符，待绑定]",
       "categories": [
         "placeholder"
@@ -1026,7 +1026,7 @@
       "actId": "act1",
       "sceneId": "a004",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 351,
+      "line": 379,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
       "categories": [
         "placeholder"
@@ -1040,7 +1040,7 @@
       "actId": "act1",
       "sceneId": "a004",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 354,
+      "line": 382,
       "raw": "SHOW: 老师 asset=char_teacher_placeholder [占位符] position=left",
       "categories": [
         "placeholder"
@@ -1054,7 +1054,7 @@
       "actId": "act1",
       "sceneId": "a004",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 374,
+      "line": 403,
       "raw": "DIALOGUE:\n同学甲：\n这自我介绍也太像动画主角了吧……",
       "categories": [
         "missing_asset"
@@ -1068,8 +1068,8 @@
       "actId": "act1",
       "sceneId": "a004",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 378,
-      "raw": "DIALOGUE:\n同学乙：\n还说什么遇到困难来找他……",
+      "line": 407,
+      "raw": "DIALOGUE:\n同学乙：\n转学第一天就放出这种话，真有自信。",
       "categories": [
         "missing_asset"
       ],
@@ -1082,7 +1082,7 @@
       "actId": "act1",
       "sceneId": "a004",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 386,
+      "line": 415,
       "raw": "SHOW: 怪盗 asset=char_thief_smile [已有候选素材，尚未绑定] position=left",
       "categories": [
         "placeholder"
@@ -1096,7 +1096,7 @@
       "actId": "act1",
       "sceneId": "a005",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 408,
+      "line": 437,
       "raw": "BACKGROUND: bg_school_classroom_morning [占位符]",
       "categories": [
         "placeholder"
@@ -1110,7 +1110,7 @@
       "actId": "act1",
       "sceneId": "a005",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 409,
+      "line": 438,
       "raw": "BGM: bgm_school_classroom_daily [占位符，延续]",
       "categories": [
         "placeholder"
@@ -1124,7 +1124,7 @@
       "actId": "act1",
       "sceneId": "a005",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 411,
+      "line": 440,
       "raw": "SHOW: 老师 asset=char_teacher_placeholder [占位符] position=left",
       "categories": [
         "placeholder"
@@ -1138,7 +1138,7 @@
       "actId": "act1",
       "sceneId": "a005",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 412,
+      "line": 441,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
       "categories": [
         "placeholder"
@@ -1152,7 +1152,7 @@
       "actId": "act1",
       "sceneId": "a005",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 413,
+      "line": 442,
       "raw": "SHOW: 怪盗 asset=char_thief_smile [已有候选素材，尚未绑定] position=back_left",
       "categories": [
         "placeholder"
@@ -1166,7 +1166,7 @@
       "actId": "act1",
       "sceneId": "a005",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 414,
+      "line": 443,
       "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=back_right",
       "categories": [
         "placeholder"
@@ -1180,7 +1180,7 @@
       "actId": "act1",
       "sceneId": "a006",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 463,
+      "line": 500,
       "raw": "BACKGROUND: bg_school_classroom_day [占位符]",
       "categories": [
         "placeholder"
@@ -1194,7 +1194,7 @@
       "actId": "act1",
       "sceneId": "a006",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 464,
+      "line": 501,
       "raw": "BGM: bgm_school_classroom_daily [占位符，延续]",
       "categories": [
         "placeholder"
@@ -1208,7 +1208,7 @@
       "actId": "act1",
       "sceneId": "a006",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 466,
+      "line": 503,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
       "categories": [
         "placeholder"
@@ -1222,7 +1222,7 @@
       "actId": "act1",
       "sceneId": "a006",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 467,
+      "line": 504,
       "raw": "SHOW: 老师 asset=char_teacher_placeholder [占位符] position=front",
       "categories": [
         "placeholder"
@@ -1236,7 +1236,7 @@
       "actId": "act1",
       "sceneId": "a006",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 468,
+      "line": 505,
       "raw": "SHOW: 怪盗 asset=char_thief_smile [已有候选素材，尚未绑定] position=window",
       "categories": [
         "placeholder"
@@ -1250,7 +1250,7 @@
       "actId": "act1",
       "sceneId": "a006",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 469,
+      "line": 506,
       "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right",
       "categories": [
         "placeholder"
@@ -1264,7 +1264,7 @@
       "actId": "act1",
       "sceneId": "a006",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 470,
+      "line": 507,
       "raw": "SHOW: 反派 asset=char_villain_calm [占位符] position=back",
       "categories": [
         "placeholder"
@@ -1278,7 +1278,7 @@
       "actId": "act1",
       "sceneId": "a007",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 503,
+      "line": 540,
       "raw": "BACKGROUND: bg_school_classroom_day [占位符]",
       "categories": [
         "placeholder"
@@ -1292,7 +1292,7 @@
       "actId": "act1",
       "sceneId": "a007",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 504,
+      "line": 541,
       "raw": "BGM: bgm_school_choice [占位符，待绑定]",
       "categories": [
         "placeholder"
@@ -1306,7 +1306,7 @@
       "actId": "act1",
       "sceneId": "a007",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 510,
+      "line": 547,
       "raw": "STAGE:\n【不可执行】原文只有选项名称，没有怪盗带路正文。",
       "categories": [
         "meta"
@@ -1322,7 +1322,7 @@
       "actId": "act1",
       "sceneId": "a007",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 516,
+      "line": 553,
       "raw": "SET: [变量名待定] 记录玩家选择虚拟主播带路",
       "categories": [
         "meta",
@@ -1340,7 +1340,7 @@
       "actId": "act1",
       "sceneId": "a007",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 521,
+      "line": 558,
       "raw": "STAGE:\n【不可执行】原文只有选项名称，没有反派带路正文。",
       "categories": [
         "meta"
@@ -1356,7 +1356,7 @@
       "actId": "act1",
       "sceneId": "a007",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 527,
+      "line": 564,
       "raw": "STAGE:\n这是系统随机，不是玩家直接选择。",
       "categories": [
         "meta"
@@ -1372,7 +1372,7 @@
       "actId": "act1",
       "sceneId": "a007",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 529,
+      "line": 566,
       "raw": "CALL: random_rd3",
       "categories": [
         "pending_call"
@@ -1388,7 +1388,7 @@
       "actId": "act1",
       "sceneId": "a007",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 531,
+      "line": 568,
       "raw": "CHECK: [系统随机结果 = 1] -> JUMP: A007_RANDOM_UNAVAILABLE",
       "categories": [
         "meta",
@@ -1406,7 +1406,7 @@
       "actId": "act1",
       "sceneId": "a007",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 532,
+      "line": 569,
       "raw": "CHECK: [系统随机结果 = 2] -> SET: [变量名待定] 记录随机进入虚拟主播路线；JUMP: A008",
       "categories": [
         "meta",
@@ -1426,7 +1426,7 @@
       "actId": "act1",
       "sceneId": "a007",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 533,
+      "line": 570,
       "raw": "CHECK: [系统随机结果 = 3] -> JUMP: A007_RANDOM_UNAVAILABLE",
       "categories": [
         "meta",
@@ -1444,7 +1444,7 @@
       "actId": "act1",
       "sceneId": "a007",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 535,
+      "line": 572,
       "raw": "NARRATION:\n【待确认】是否可以通过读取存档重新生成 `rd3` 结果。",
       "categories": [
         "meta"
@@ -1460,7 +1460,7 @@
       "actId": "act1",
       "sceneId": "a007_todo_thief",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 543,
+      "line": 580,
       "raw": "BACKGROUND: bg_school_classroom_day [占位符]",
       "categories": [
         "placeholder"
@@ -1474,7 +1474,7 @@
       "actId": "act1",
       "sceneId": "a007_todo_thief",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 545,
+      "line": 582,
       "raw": "NARRATION:\n【不可执行】原文没有提供怪盗带男高参观校园的正文。\n本场景不补写内容，不增加新的路线结果。",
       "categories": [
         "meta"
@@ -1490,7 +1490,7 @@
       "actId": "act1",
       "sceneId": "a007_todo_villain",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 556,
+      "line": 593,
       "raw": "BACKGROUND: bg_school_classroom_day [占位符]",
       "categories": [
         "placeholder"
@@ -1504,7 +1504,7 @@
       "actId": "act1",
       "sceneId": "a007_todo_villain",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 558,
+      "line": 595,
       "raw": "NARRATION:\n【不可执行】原文没有提供反派带男高参观校园的正文。\n本场景不补写内容，不增加新的路线结果。",
       "categories": [
         "meta"
@@ -1520,7 +1520,7 @@
       "actId": "act1",
       "sceneId": "a007_random_unavailable",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 569,
+      "line": 606,
       "raw": "BACKGROUND: bg_school_classroom_day [占位符]",
       "categories": [
         "placeholder"
@@ -1534,7 +1534,7 @@
       "actId": "act1",
       "sceneId": "a007_random_unavailable",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 571,
+      "line": 608,
       "raw": "NARRATION:\n【不可执行】`rd3` 随机结果对应怪盗或反派路线，但该路线当前没有原文正文。",
       "categories": [
         "meta"
@@ -1550,7 +1550,7 @@
       "actId": "act1",
       "sceneId": "a007_random_unavailable",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 574,
+      "line": 611,
       "raw": "NARRATION:\n【待确认】此处应返回选项、暂停流程，还是等待路线正文补充。",
       "categories": [
         "meta"
@@ -1566,7 +1566,7 @@
       "actId": "act1",
       "sceneId": "a008",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 584,
+      "line": 621,
       "raw": "BACKGROUND: bg_school_library_day [占位符]",
       "categories": [
         "placeholder"
@@ -1580,7 +1580,7 @@
       "actId": "act1",
       "sceneId": "a008",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 585,
+      "line": 622,
       "raw": "BGM: bgm_school_daily [占位符，待绑定]",
       "categories": [
         "placeholder"
@@ -1594,7 +1594,7 @@
       "actId": "act1",
       "sceneId": "a008",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 587,
+      "line": 624,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=left",
       "categories": [
         "placeholder"
@@ -1608,7 +1608,7 @@
       "actId": "act1",
       "sceneId": "a008",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 588,
+      "line": 625,
       "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right",
       "categories": [
         "placeholder"
@@ -1622,7 +1622,7 @@
       "actId": "act1",
       "sceneId": "a008",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 623,
+      "line": 664,
       "raw": "BACKGROUND: bg_school_cafeteria_day [占位符]",
       "categories": [
         "placeholder"
@@ -1636,7 +1636,7 @@
       "actId": "act1",
       "sceneId": "a008",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 641,
+      "line": 693,
       "raw": "BACKGROUND: bg_school_gym_day [占位符]",
       "categories": [
         "placeholder"
@@ -1650,7 +1650,7 @@
       "actId": "act1",
       "sceneId": "a009",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 661,
+      "line": 713,
       "raw": "BACKGROUND: bg_school_construction_zone_day [占位符]",
       "categories": [
         "placeholder"
@@ -1664,7 +1664,7 @@
       "actId": "act1",
       "sceneId": "a009",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 662,
+      "line": 714,
       "raw": "BGM: bgm_school_mystery [占位符，待绑定]",
       "categories": [
         "placeholder"
@@ -1678,7 +1678,7 @@
       "actId": "act1",
       "sceneId": "a009",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 664,
+      "line": 716,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=left",
       "categories": [
         "placeholder"
@@ -1692,7 +1692,7 @@
       "actId": "act1",
       "sceneId": "a009",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 665,
+      "line": 717,
       "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right",
       "categories": [
         "placeholder"
@@ -1706,7 +1706,7 @@
       "actId": "act1",
       "sceneId": "a010",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 704,
+      "line": 756,
       "raw": "BACKGROUND: bg_school_construction_zone_day [占位符]",
       "categories": [
         "placeholder"
@@ -1720,7 +1720,7 @@
       "actId": "act1",
       "sceneId": "a010",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 705,
+      "line": 757,
       "raw": "BGM: bgm_school_mystery [占位符，延续]",
       "categories": [
         "placeholder"
@@ -1734,7 +1734,7 @@
       "actId": "act1",
       "sceneId": "a010",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 709,
+      "line": 761,
       "raw": "SET: [变量名待定] 记录男高选择进入施工区域",
       "categories": [
         "meta",
@@ -1752,7 +1752,7 @@
       "actId": "act1",
       "sceneId": "a010",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 710,
+      "line": 762,
       "raw": "SET: [变量名待定] 增加男高对学校地下异常的调查进度",
       "categories": [
         "meta",
@@ -1770,7 +1770,7 @@
       "actId": "act1",
       "sceneId": "a010",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 715,
+      "line": 767,
       "raw": "SET: [变量名待定] 记录男高选择返回班级",
       "categories": [
         "meta",
@@ -1788,7 +1788,7 @@
       "actId": "act1",
       "sceneId": "a010",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 716,
+      "line": 768,
       "raw": "NARRATION:\n【分支占位】返回班级支线尚未展开，不接入未发生的拔剑与取剑事件。",
       "categories": [
         "meta"
@@ -1802,7 +1802,7 @@
       "actId": "act1",
       "sceneId": "a011",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 725,
+      "line": 777,
       "raw": "BACKGROUND: bg_school_construction_zone_day [占位符]",
       "categories": [
         "placeholder"
@@ -1816,7 +1816,7 @@
       "actId": "act1",
       "sceneId": "a011",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 726,
+      "line": 778,
       "raw": "BGM: bgm_school_mystery [占位符，低音量]",
       "categories": [
         "placeholder"
@@ -1830,7 +1830,7 @@
       "actId": "act1",
       "sceneId": "a011",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 728,
+      "line": 780,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=left",
       "categories": [
         "placeholder"
@@ -1844,7 +1844,7 @@
       "actId": "act1",
       "sceneId": "a011",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 729,
+      "line": 781,
       "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right",
       "categories": [
         "placeholder"
@@ -1858,7 +1858,7 @@
       "actId": "act1",
       "sceneId": "a011",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 772,
+      "line": 842,
       "raw": "SFX: sfx_low_heartbeat [占位符]",
       "categories": [
         "placeholder"
@@ -1872,7 +1872,7 @@
       "actId": "act1",
       "sceneId": "a011",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 782,
+      "line": 852,
       "raw": "SHOW: 大师之剑 asset=prop_master_sword_corrupted_placeholder [占位符] position=bottom_center",
       "categories": [
         "placeholder"
@@ -1886,7 +1886,7 @@
       "actId": "act1",
       "sceneId": "a011",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 800,
+      "line": 874,
       "raw": "NARRATION:\n【原文只有“选择 1：男高伸手触碰剑柄”，没有替代选项；本处转换为强制事件，不新增玩家分支。】",
       "categories": [
         "meta"
@@ -1902,7 +1902,7 @@
       "actId": "act1",
       "sceneId": "a012",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 810,
+      "line": 884,
       "raw": "BACKGROUND: bg_school_construction_pit [占位符]",
       "categories": [
         "placeholder"
@@ -1916,7 +1916,7 @@
       "actId": "act1",
       "sceneId": "a012",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 811,
+      "line": 885,
       "raw": "BGM: bgm_master_sword_vision [占位符，待绑定]",
       "categories": [
         "placeholder"
@@ -1930,7 +1930,7 @@
       "actId": "act1",
       "sceneId": "a012",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 817,
+      "line": 891,
       "raw": "SFX: sfx_master_sword_resonance [占位符]",
       "categories": [
         "placeholder"
@@ -1944,7 +1944,7 @@
       "actId": "act1",
       "sceneId": "a012",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 818,
+      "line": 892,
       "raw": "CG: cg_master_sword_vision_placeholder [占位符]",
       "categories": [
         "placeholder",
@@ -1962,7 +1962,7 @@
       "actId": "act1",
       "sceneId": "a012",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 819,
+      "line": 893,
       "raw": "CAMERA: 镜头从剑柄金色三角宝石推进至幻象。",
       "categories": [
         "meta"
@@ -1978,7 +1978,7 @@
       "actId": "act1",
       "sceneId": "a012",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 821,
+      "line": 895,
       "raw": "CALL: event_master_sword_vision",
       "categories": [
         "pending_call"
@@ -1992,7 +1992,7 @@
       "actId": "act1",
       "sceneId": "a012",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 823,
+      "line": 897,
       "raw": "NARRATION:\n【待确认】该特殊事件只负责幻象、音效和画面演出，不在本脚本中补写林克的完整角色卡背景。",
       "categories": [
         "meta"
@@ -2006,7 +2006,7 @@
       "actId": "act1",
       "sceneId": "a013",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 877,
+      "line": 951,
       "raw": "BACKGROUND: bg_school_construction_pit [占位符]",
       "categories": [
         "placeholder"
@@ -2020,7 +2020,7 @@
       "actId": "act1",
       "sceneId": "a013",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 878,
+      "line": 952,
       "raw": "BGM: bgm_black_humanoid_appearance [占位符，待绑定]",
       "categories": [
         "placeholder"
@@ -2034,7 +2034,7 @@
       "actId": "act1",
       "sceneId": "a013",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 880,
+      "line": 954,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=bottom_center",
       "categories": [
         "placeholder"
@@ -2048,7 +2048,7 @@
       "actId": "act1",
       "sceneId": "a013",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 881,
+      "line": 955,
       "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=top_right",
       "categories": [
         "placeholder"
@@ -2062,7 +2062,7 @@
       "actId": "act1",
       "sceneId": "a013",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 882,
+      "line": 956,
       "raw": "SHOW: 黑色人形 asset=char_black_humanoid_placeholder [占位符] position=bottom_left",
       "categories": [
         "placeholder"
@@ -2076,7 +2076,7 @@
       "actId": "act1",
       "sceneId": "a013",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 897,
+      "line": 978,
       "raw": "SFX: sfx_fainting [占位符]",
       "categories": [
         "placeholder"
@@ -2090,7 +2090,7 @@
       "actId": "act1",
       "sceneId": "a014",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 921,
+      "line": 1008,
       "raw": "BACKGROUND: bg_school_construction_pit [占位符]",
       "categories": [
         "placeholder"
@@ -2104,7 +2104,7 @@
       "actId": "act1",
       "sceneId": "a014",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 922,
+      "line": 1009,
       "raw": "BGM: bgm_black_humanoid_battle [占位符，待绑定]",
       "categories": [
         "placeholder"
@@ -2118,7 +2118,7 @@
       "actId": "act1",
       "sceneId": "a014",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 929,
+      "line": 1016,
       "raw": "NARRATION:\n【待确认】黑色人形的战斗数据、胜利条件、失败处理和战斗奖励。",
       "categories": [
         "meta"
@@ -2134,7 +2134,7 @@
       "actId": "act1",
       "sceneId": "a014",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 937,
+      "line": 1024,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
       "categories": [
         "placeholder"
@@ -2148,7 +2148,7 @@
       "actId": "act1",
       "sceneId": "a014",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 938,
+      "line": 1025,
       "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right",
       "categories": [
         "placeholder"
@@ -2162,7 +2162,7 @@
       "actId": "act1",
       "sceneId": "a014",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 956,
+      "line": 1043,
       "raw": "SET: [变量名待定] 记录虚拟主播目击黑色人形",
       "categories": [
         "meta",
@@ -2180,7 +2180,7 @@
       "actId": "act1",
       "sceneId": "a014",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 957,
+      "line": 1044,
       "raw": "SET: [变量名待定] 增加男高对学校地下异常的调查进度",
       "categories": [
         "meta",
@@ -2198,7 +2198,7 @@
       "actId": "act1",
       "sceneId": "a015",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 965,
+      "line": 1052,
       "raw": "BACKGROUND: bg_school_hallway_day [占位符]",
       "categories": [
         "placeholder"
@@ -2212,7 +2212,7 @@
       "actId": "act1",
       "sceneId": "a015",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 966,
+      "line": 1053,
       "raw": "BGM: bgm_school_mystery [占位符，低音量]",
       "categories": [
         "placeholder"
@@ -2226,7 +2226,7 @@
       "actId": "act1",
       "sceneId": "a015",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 968,
+      "line": 1055,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
       "categories": [
         "placeholder"
@@ -2240,7 +2240,7 @@
       "actId": "act1",
       "sceneId": "a015",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 969,
+      "line": 1056,
       "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=center_front",
       "categories": [
         "placeholder"
@@ -2254,7 +2254,7 @@
       "actId": "act1",
       "sceneId": "a015",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 978,
+      "line": 1065,
       "raw": "SFX: sfx_school_bell [占位符]",
       "categories": [
         "placeholder"
@@ -2268,7 +2268,7 @@
       "actId": "act1",
       "sceneId": "a015",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 983,
+      "line": 1070,
       "raw": "SET: [变量名待定] 记录男高带虚拟主播返回学校",
       "categories": [
         "meta",
@@ -2286,7 +2286,7 @@
       "actId": "act1",
       "sceneId": "a015_recovery",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 991,
+      "line": 1078,
       "raw": "BACKGROUND: bg_school_infirmary_day [制作占位]",
       "categories": [
         "placeholder"
@@ -2300,7 +2300,7 @@
       "actId": "act1",
       "sceneId": "a015_recovery",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 992,
+      "line": 1079,
       "raw": "BGM: bgm_school_daily [制作占位／待绑定]",
       "categories": [
         "placeholder"
@@ -2314,7 +2314,7 @@
       "actId": "act1",
       "sceneId": "a015_recovery",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 994,
+      "line": 1081,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=left",
       "categories": [
         "placeholder"
@@ -2328,7 +2328,7 @@
       "actId": "act1",
       "sceneId": "a015_recovery",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 998,
+      "line": 1085,
       "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right",
       "categories": [
         "placeholder"
@@ -2342,7 +2342,7 @@
       "actId": "act1",
       "sceneId": "a015_recovery",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 1005,
+      "line": 1092,
       "raw": "DIALOGUE:\n保健室老师：\n先把她交给我。你去叫班主任，回来再把经过说清楚。",
       "categories": [
         "missing_asset"
@@ -2356,7 +2356,7 @@
       "actId": "act1",
       "sceneId": "a015_retrieve",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 1040,
+      "line": 1149,
       "raw": "BACKGROUND: bg_school_construction_zone_dusk [制作占位]",
       "categories": [
         "placeholder"
@@ -2370,7 +2370,7 @@
       "actId": "act1",
       "sceneId": "a015_retrieve",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 1041,
+      "line": 1150,
       "raw": "BGM: bgm_sword_quiet_mystery [制作占位／待绑定]",
       "categories": [
         "placeholder"
@@ -2384,7 +2384,7 @@
       "actId": "act1",
       "sceneId": "a015_retrieve",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 1045,
+      "line": 1154,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符] position=center",
       "categories": [
         "placeholder"
@@ -2398,7 +2398,7 @@
       "actId": "act1",
       "sceneId": "a016",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 1083,
+      "line": 1193,
       "raw": "BACKGROUND: bg_grandmother_house_dusk [制作占位]",
       "categories": [
         "placeholder"
@@ -2412,7 +2412,7 @@
       "actId": "act1",
       "sceneId": "a016",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 1084,
+      "line": 1194,
       "raw": "BGM: bgm_scene_transition [占位符，待绑定]",
       "categories": [
         "placeholder"
@@ -2426,7 +2426,7 @@
       "actId": "act1",
       "sceneId": "a016",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 1086,
+      "line": 1196,
       "raw": "CHECK: has_master_sword == true [仅取剑主线可进入此终点]",
       "categories": [
         "meta",
@@ -2442,7 +2442,7 @@
       "actId": "act1",
       "sceneId": "a016",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 1091,
+      "line": 1201,
       "raw": "SET: [变量名待定] 记录序幕（二）主线结束",
       "categories": [
         "meta",
@@ -2460,7 +2460,7 @@
       "actId": "act1",
       "sceneId": "a010_return_class",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 1099,
+      "line": 1209,
       "raw": "BACKGROUND: bg_school_classroom_day [占位符]",
       "categories": [
         "placeholder"
@@ -2474,7 +2474,7 @@
       "actId": "act1",
       "sceneId": "a010_return_class",
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "line": 1100,
+      "line": 1210,
       "raw": "BGM: bgm_school_daily [占位符]",
       "categories": [
         "placeholder"
@@ -2560,22 +2560,8 @@
       "actId": "prologue_3",
       "sceneId": "b002",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 125,
+      "line": 130,
       "raw": "BACKGROUND: bg_grandmother_bedroom_night [制作占位]",
-      "categories": [
-        "placeholder"
-      ],
-      "details": [
-        "素材仍有原始占位 / 待绑定标记。"
-      ],
-      "resolutions": []
-    },
-    {
-      "actId": "prologue_3",
-      "sceneId": "b002",
-      "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 126,
-      "raw": "BGM: bgm_sword_quiet_mystery [制作占位／待绑定]",
       "categories": [
         "placeholder"
       ],
@@ -2589,6 +2575,20 @@
       "sceneId": "b002",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
       "line": 131,
+      "raw": "BGM: bgm_sword_quiet_mystery [制作占位／待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue_3",
+      "sceneId": "b002",
+      "sourceFile": "source/story/prologue-v2/prologue_3.md",
+      "line": 136,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -2602,7 +2602,7 @@
       "actId": "prologue_3",
       "sceneId": "b002",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 159,
+      "line": 164,
       "raw": "SFX: sfx_light_switch [制作占位]",
       "categories": [
         "placeholder"
@@ -2616,7 +2616,7 @@
       "actId": "prologue_3",
       "sceneId": "b003",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 174,
+      "line": 179,
       "raw": "BACKGROUND: bg_grandmother_dining_evening [制作占位]",
       "categories": [
         "placeholder"
@@ -2630,7 +2630,7 @@
       "actId": "prologue_3",
       "sceneId": "b003",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 175,
+      "line": 180,
       "raw": "BGM: bgm_homecoming_warm_dream [制作占位／待绑定]",
       "categories": [
         "placeholder"
@@ -2644,7 +2644,7 @@
       "actId": "prologue_3",
       "sceneId": "b003",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 179,
+      "line": 184,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -2658,7 +2658,7 @@
       "actId": "prologue_3",
       "sceneId": "b003",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 183,
+      "line": 188,
       "raw": "SHOW: 奶奶 asset=char_grandmother_warm [占位符／待核对复用] position=right",
       "categories": [
         "placeholder"
@@ -2672,7 +2672,7 @@
       "actId": "prologue_3",
       "sceneId": "b003",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 200,
+      "line": 205,
       "raw": "SFX: sfx_clock_tick_stop [制作占位]",
       "categories": [
         "placeholder"
@@ -2686,7 +2686,7 @@
       "actId": "prologue_3",
       "sceneId": "b004",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 229,
+      "line": 234,
       "raw": "BACKGROUND: bg_dream_dining_fog [制作占位]",
       "categories": [
         "placeholder"
@@ -2700,7 +2700,7 @@
       "actId": "prologue_3",
       "sceneId": "b004",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 230,
+      "line": 235,
       "raw": "BGM: bgm_nightmare_invitation [制作占位／待绑定]",
       "categories": [
         "placeholder"
@@ -2714,7 +2714,7 @@
       "actId": "prologue_3",
       "sceneId": "b004",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 235,
+      "line": 240,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -2728,7 +2728,7 @@
       "actId": "prologue_3",
       "sceneId": "b004",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 242,
+      "line": 247,
       "raw": "DIALOGUE:\n雾中的声音：\n欢迎来到……属于你的梦。",
       "categories": [
         "missing_asset"
@@ -2742,7 +2742,7 @@
       "actId": "prologue_3",
       "sceneId": "b005",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 294,
+      "line": 318,
       "raw": "BACKGROUND: bg_dream_house_loop [制作占位]",
       "categories": [
         "placeholder"
@@ -2756,7 +2756,7 @@
       "actId": "prologue_3",
       "sceneId": "b005",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 295,
+      "line": 319,
       "raw": "BGM: bgm_nightmare_pressure [制作占位／待绑定]",
       "categories": [
         "placeholder"
@@ -2770,7 +2770,7 @@
       "actId": "prologue_3",
       "sceneId": "b005",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 299,
+      "line": 323,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -2784,7 +2784,7 @@
       "actId": "prologue_3",
       "sceneId": "b005",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 306,
+      "line": 330,
       "raw": "SFX: sfx_door_loop [制作占位]",
       "categories": [
         "placeholder"
@@ -2798,7 +2798,7 @@
       "actId": "prologue_3",
       "sceneId": "b005",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 318,
+      "line": 342,
       "raw": "DIALOGUE:\n雾中的声音：\n你坐下就好了呀。坐下来，再睡一会儿。",
       "categories": [
         "missing_asset"
@@ -2812,7 +2812,7 @@
       "actId": "prologue_3",
       "sceneId": "b006",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 354,
+      "line": 379,
       "raw": "BACKGROUND: bg_dream_house_loop [制作占位]",
       "categories": [
         "placeholder"
@@ -2826,7 +2826,7 @@
       "actId": "prologue_3",
       "sceneId": "b006",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 355,
+      "line": 380,
       "raw": "BGM: bgm_sword_answer [制作占位／待绑定]",
       "categories": [
         "placeholder"
@@ -2840,7 +2840,7 @@
       "actId": "prologue_3",
       "sceneId": "b006",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 359,
+      "line": 384,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -2854,7 +2854,7 @@
       "actId": "prologue_3",
       "sceneId": "b006",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 366,
+      "line": 391,
       "raw": "SFX: sfx_master_sword_resonance [制作占位]",
       "categories": [
         "placeholder"
@@ -2868,7 +2868,7 @@
       "actId": "prologue_3",
       "sceneId": "b006",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 376,
+      "line": 401,
       "raw": "BACKGROUND: bg_grandmother_bedroom_night [制作占位，场内切镜]",
       "categories": [
         "placeholder"
@@ -2882,7 +2882,7 @@
       "actId": "prologue_3",
       "sceneId": "b006",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 381,
+      "line": 406,
       "raw": "BACKGROUND: bg_dream_house_loop [制作占位，场内切镜]",
       "categories": [
         "placeholder"
@@ -2896,7 +2896,7 @@
       "actId": "prologue_3",
       "sceneId": "b006",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 382,
+      "line": 407,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -2910,7 +2910,7 @@
       "actId": "prologue_3",
       "sceneId": "b006",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 396,
+      "line": 421,
       "raw": "SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=right",
       "categories": [
         "placeholder"
@@ -2924,7 +2924,7 @@
       "actId": "prologue_3",
       "sceneId": "b007",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 415,
+      "line": 440,
       "raw": "BACKGROUND: bg_dream_house_fracture [制作占位]",
       "categories": [
         "placeholder"
@@ -2938,7 +2938,7 @@
       "actId": "prologue_3",
       "sceneId": "b007",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 416,
+      "line": 441,
       "raw": "BGM: bgm_sword_breaks_dream [制作占位／待绑定]",
       "categories": [
         "placeholder"
@@ -2952,7 +2952,7 @@
       "actId": "prologue_3",
       "sceneId": "b007",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 421,
+      "line": 446,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -2966,7 +2966,7 @@
       "actId": "prologue_3",
       "sceneId": "b007",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 425,
+      "line": 450,
       "raw": "SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=right",
       "categories": [
         "placeholder"
@@ -2980,7 +2980,7 @@
       "actId": "prologue_3",
       "sceneId": "b007",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 429,
+      "line": 454,
       "raw": "DIALOGUE:\n雾中的声音：\n这里是我的——",
       "categories": [
         "missing_asset"
@@ -2994,7 +2994,7 @@
       "actId": "prologue_3",
       "sceneId": "b007",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 436,
+      "line": 461,
       "raw": "SFX: sfx_sword_cuts_dream [制作占位]",
       "categories": [
         "placeholder"
@@ -3008,7 +3008,7 @@
       "actId": "prologue_3",
       "sceneId": "b008",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 466,
+      "line": 491,
       "raw": "BACKGROUND: bg_grandmother_bedroom_night [制作占位]",
       "categories": [
         "placeholder"
@@ -3022,7 +3022,7 @@
       "actId": "prologue_3",
       "sceneId": "b008",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 467,
+      "line": 492,
       "raw": "BGM: bgm_after_dream_quiet [制作占位／待绑定]",
       "categories": [
         "placeholder"
@@ -3036,7 +3036,7 @@
       "actId": "prologue_3",
       "sceneId": "b008",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 472,
+      "line": 497,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -3050,7 +3050,7 @@
       "actId": "prologue_3",
       "sceneId": "b008",
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "line": 476,
+      "line": 501,
       "raw": "SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=right",
       "categories": [
         "placeholder"
@@ -3220,7 +3220,7 @@
       "actId": "prologue_4",
       "sceneId": "c002",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 131,
+      "line": 136,
       "raw": "BACKGROUND: bg_residential_junction_night [制作占位]",
       "categories": [
         "placeholder"
@@ -3234,7 +3234,7 @@
       "actId": "prologue_4",
       "sceneId": "c002",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 132,
+      "line": 137,
       "raw": "BGM: bgm_organization_tension [制作占位／待绑定]",
       "categories": [
         "placeholder"
@@ -3248,7 +3248,7 @@
       "actId": "prologue_4",
       "sceneId": "c002",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 137,
+      "line": 142,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -3262,7 +3262,7 @@
       "actId": "prologue_4",
       "sceneId": "c002",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 141,
+      "line": 146,
       "raw": "SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center",
       "categories": [
         "placeholder"
@@ -3276,7 +3276,7 @@
       "actId": "prologue_4",
       "sceneId": "c002",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 145,
+      "line": 150,
       "raw": "SHOW: 黑衣队员 asset=char_organization_member_placeholder [占位符／待核对复用] position=right",
       "categories": [
         "placeholder"
@@ -3290,7 +3290,7 @@
       "actId": "prologue_4",
       "sceneId": "c002",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 191,
+      "line": 197,
       "raw": "DIALOGUE:\n搜捕通讯：\n路口小组控制现场。其余小组继续找实验体，不要全部离开搜索区域。",
       "categories": [
         "missing_asset"
@@ -3304,7 +3304,7 @@
       "actId": "prologue_4",
       "sceneId": "c003",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 202,
+      "line": 208,
       "raw": "BACKGROUND: bg_old_district_access_night [制作占位]",
       "categories": [
         "placeholder"
@@ -3318,7 +3318,7 @@
       "actId": "prologue_4",
       "sceneId": "c003",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 203,
+      "line": 209,
       "raw": "BGM: bgm_first_partners_battle [制作占位／待绑定]",
       "categories": [
         "placeholder"
@@ -3332,7 +3332,7 @@
       "actId": "prologue_4",
       "sceneId": "c003",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 209,
+      "line": 215,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -3346,7 +3346,7 @@
       "actId": "prologue_4",
       "sceneId": "c003",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 213,
+      "line": 219,
       "raw": "SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center",
       "categories": [
         "placeholder"
@@ -3360,7 +3360,7 @@
       "actId": "prologue_4",
       "sceneId": "c003",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 217,
+      "line": 223,
       "raw": "SHOW: 黑衣队员 asset=char_organization_member_placeholder [占位符／待核对复用] position=right",
       "categories": [
         "placeholder"
@@ -3374,7 +3374,7 @@
       "actId": "prologue_4",
       "sceneId": "c003",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 231,
+      "line": 237,
       "raw": "CALL: battle_prologue4_patrol",
       "categories": [
         "pending_call"
@@ -3388,22 +3388,8 @@
       "actId": "prologue_4",
       "sceneId": "c004",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 263,
+      "line": 269,
       "raw": "BACKGROUND: bg_old_district_battle_street_night [制作占位]",
-      "categories": [
-        "placeholder"
-      ],
-      "details": [
-        "素材仍有原始占位 / 待绑定标记。"
-      ],
-      "resolutions": []
-    },
-    {
-      "actId": "prologue_4",
-      "sceneId": "c004",
-      "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 264,
-      "raw": "BGM: bgm_foreigner_approach [制作占位／待绑定]",
       "categories": [
         "placeholder"
       ],
@@ -3417,6 +3403,20 @@
       "sceneId": "c004",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
       "line": 270,
+      "raw": "BGM: bgm_foreigner_approach [制作占位／待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue_4",
+      "sceneId": "c004",
+      "sourceFile": "source/story/prologue-v2/prologue_4.md",
+      "line": 276,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -3430,7 +3430,7 @@
       "actId": "prologue_4",
       "sceneId": "c004",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 274,
+      "line": 280,
       "raw": "SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center",
       "categories": [
         "placeholder"
@@ -3444,7 +3444,7 @@
       "actId": "prologue_4",
       "sceneId": "c004",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 278,
+      "line": 284,
       "raw": "SHOW: 黑衣干部甲 asset=char_organization_officer_a_placeholder [占位符／待核对复用] position=right",
       "categories": [
         "placeholder"
@@ -3458,7 +3458,7 @@
       "actId": "prologue_4",
       "sceneId": "c004",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 292,
+      "line": 298,
       "raw": "SHOW: 不明生物·普通型 asset=char_deoxys_normal_placeholder [占位符／待核对复用] position=right",
       "categories": [
         "placeholder"
@@ -3472,7 +3472,7 @@
       "actId": "prologue_4",
       "sceneId": "c005",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 324,
+      "line": 330,
       "raw": "BACKGROUND: bg_old_district_battle_street_night [制作占位]",
       "categories": [
         "placeholder"
@@ -3486,7 +3486,7 @@
       "actId": "prologue_4",
       "sceneId": "c005",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 325,
+      "line": 331,
       "raw": "BGM: bgm_link_advantage [制作占位／待绑定]",
       "categories": [
         "placeholder"
@@ -3500,7 +3500,7 @@
       "actId": "prologue_4",
       "sceneId": "c005",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 332,
+      "line": 338,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -3514,7 +3514,7 @@
       "actId": "prologue_4",
       "sceneId": "c005",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 336,
+      "line": 342,
       "raw": "SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center",
       "categories": [
         "placeholder"
@@ -3528,7 +3528,7 @@
       "actId": "prologue_4",
       "sceneId": "c005",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 340,
+      "line": 346,
       "raw": "SHOW: 不明生物·普通型 asset=char_deoxys_normal_placeholder [占位符／待核对复用] position=right",
       "categories": [
         "placeholder"
@@ -3542,7 +3542,7 @@
       "actId": "prologue_4",
       "sceneId": "c005",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 347,
+      "line": 353,
       "raw": "CALL: battle_prologue4_deoxys_encounter",
       "categories": [
         "pending_call"
@@ -3556,7 +3556,7 @@
       "actId": "prologue_4",
       "sceneId": "c005",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 349,
+      "line": 355,
       "raw": "SFX: sfx_sword_energy_clash [制作占位]",
       "categories": [
         "placeholder"
@@ -3570,22 +3570,8 @@
       "actId": "prologue_4",
       "sceneId": "c006",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 380,
+      "line": 386,
       "raw": "BACKGROUND: bg_old_district_battle_street_night [制作占位]",
-      "categories": [
-        "placeholder"
-      ],
-      "details": [
-        "素材仍有原始占位 / 待绑定标记。"
-      ],
-      "resolutions": []
-    },
-    {
-      "actId": "prologue_4",
-      "sceneId": "c006",
-      "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 381,
-      "raw": "BGM: bgm_organization_reinforcements [制作占位／待绑定]",
       "categories": [
         "placeholder"
       ],
@@ -3599,6 +3585,20 @@
       "sceneId": "c006",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
       "line": 387,
+      "raw": "BGM: bgm_organization_reinforcements [制作占位／待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue_4",
+      "sceneId": "c006",
+      "sourceFile": "source/story/prologue-v2/prologue_4.md",
+      "line": 393,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -3612,7 +3612,7 @@
       "actId": "prologue_4",
       "sceneId": "c006",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 391,
+      "line": 397,
       "raw": "SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center",
       "categories": [
         "placeholder"
@@ -3626,7 +3626,7 @@
       "actId": "prologue_4",
       "sceneId": "c006",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 395,
+      "line": 401,
       "raw": "SHOW: 不明生物·普通型 asset=char_deoxys_normal_placeholder [占位符／待核对复用] position=right",
       "categories": [
         "placeholder"
@@ -3640,7 +3640,7 @@
       "actId": "prologue_4",
       "sceneId": "c006",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 399,
+      "line": 405,
       "raw": "SHOW: 不明生物·防御型 asset=char_deoxys_defense_placeholder [占位符／待核对复用] position=right",
       "categories": [
         "placeholder"
@@ -3654,7 +3654,7 @@
       "actId": "prologue_4",
       "sceneId": "c006",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 403,
+      "line": 409,
       "raw": "SFX: sfx_barrier_impact [制作占位]",
       "categories": [
         "placeholder"
@@ -3668,7 +3668,7 @@
       "actId": "prologue_4",
       "sceneId": "c006",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 415,
+      "line": 421,
       "raw": "SHOW: 黑衣干部乙 asset=char_organization_officer_b_placeholder [占位符／待核对复用] position=right",
       "categories": [
         "placeholder"
@@ -3682,7 +3682,7 @@
       "actId": "prologue_4",
       "sceneId": "c007",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 436,
+      "line": 442,
       "raw": "BACKGROUND: bg_old_district_battle_street_night [制作占位]",
       "categories": [
         "placeholder"
@@ -3696,7 +3696,7 @@
       "actId": "prologue_4",
       "sceneId": "c007",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 437,
+      "line": 443,
       "raw": "BGM: bgm_encirclement_pressure [制作占位／待绑定]",
       "categories": [
         "placeholder"
@@ -3710,7 +3710,7 @@
       "actId": "prologue_4",
       "sceneId": "c007",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 445,
+      "line": 451,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -3724,36 +3724,8 @@
       "actId": "prologue_4",
       "sceneId": "c007",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 449,
+      "line": 455,
       "raw": "SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center",
-      "categories": [
-        "placeholder"
-      ],
-      "details": [
-        "素材仍有原始占位 / 待绑定标记。"
-      ],
-      "resolutions": []
-    },
-    {
-      "actId": "prologue_4",
-      "sceneId": "c008",
-      "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 490,
-      "raw": "BACKGROUND: bg_old_district_battle_street_night [制作占位]",
-      "categories": [
-        "placeholder"
-      ],
-      "details": [
-        "素材仍有原始占位 / 待绑定标记。"
-      ],
-      "resolutions": []
-    },
-    {
-      "actId": "prologue_4",
-      "sceneId": "c008",
-      "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 491,
-      "raw": "BGM: bgm_thief_escape [制作占位／待绑定]",
       "categories": [
         "placeholder"
       ],
@@ -3767,6 +3739,34 @@
       "sceneId": "c008",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
       "line": 496,
+      "raw": "BACKGROUND: bg_old_district_battle_street_night [制作占位]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue_4",
+      "sceneId": "c008",
+      "sourceFile": "source/story/prologue-v2/prologue_4.md",
+      "line": 497,
+      "raw": "BGM: bgm_thief_escape [制作占位／待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue_4",
+      "sceneId": "c008",
+      "sourceFile": "source/story/prologue-v2/prologue_4.md",
+      "line": 502,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -3780,7 +3780,7 @@
       "actId": "prologue_4",
       "sceneId": "c008",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 500,
+      "line": 506,
       "raw": "SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center",
       "categories": [
         "placeholder"
@@ -3794,8 +3794,8 @@
       "actId": "prologue_4",
       "sceneId": "c008",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 504,
-      "raw": "DIALOGUE:\n墙侧的声音：\n再往那边退，可真没路了。",
+      "line": 510,
+      "raw": "DIALOGUE:\n墙侧的声音：\n两位，夜路可不是这么逛的。\n再退一步，可就真撞墙了。",
       "categories": [
         "missing_asset"
       ],
@@ -3808,7 +3808,7 @@
       "actId": "prologue_4",
       "sceneId": "c008",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 508,
+      "line": 515,
       "raw": "SHOW: 蒙面人 asset=char_thief_masked_black_placeholder [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -3822,7 +3822,7 @@
       "actId": "prologue_4",
       "sceneId": "c008",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 529,
+      "line": 536,
       "raw": "BACKGROUND: bg_old_district_escape_alley_night [制作占位，场内切镜]",
       "categories": [
         "placeholder"
@@ -3836,7 +3836,7 @@
       "actId": "prologue_4",
       "sceneId": "c008",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 531,
+      "line": 538,
       "raw": "SHOW: 女剑士 asset=char_saber_traveler_placeholder [占位符／待核对复用] position=right",
       "categories": [
         "placeholder"
@@ -3850,22 +3850,8 @@
       "actId": "prologue_4",
       "sceneId": "c009",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 555,
+      "line": 562,
       "raw": "BACKGROUND: bg_old_district_quiet_alley_night [制作占位]",
-      "categories": [
-        "placeholder"
-      ],
-      "details": [
-        "素材仍有原始占位 / 待绑定标记。"
-      ],
-      "resolutions": []
-    },
-    {
-      "actId": "prologue_4",
-      "sceneId": "c009",
-      "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 556,
-      "raw": "BGM: bgm_thief_reveal_quiet [制作占位／待绑定]",
       "categories": [
         "placeholder"
       ],
@@ -3879,6 +3865,20 @@
       "sceneId": "c009",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
       "line": 563,
+      "raw": "BGM: bgm_thief_reveal_quiet [制作占位／待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue_4",
+      "sceneId": "c009",
+      "sourceFile": "source/story/prologue-v2/prologue_4.md",
+      "line": 570,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -3892,7 +3892,7 @@
       "actId": "prologue_4",
       "sceneId": "c009",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 567,
+      "line": 574,
       "raw": "SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center",
       "categories": [
         "placeholder"
@@ -3906,7 +3906,7 @@
       "actId": "prologue_4",
       "sceneId": "c009",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 571,
+      "line": 578,
       "raw": "SHOW: 蒙面人 asset=char_thief_masked_black_placeholder [占位符／待核对复用] position=right",
       "categories": [
         "placeholder"
@@ -3920,7 +3920,7 @@
       "actId": "prologue_4",
       "sceneId": "c009",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 575,
+      "line": 582,
       "raw": "SHOW: 女剑士 asset=char_saber_traveler_placeholder [占位符／待核对复用] position=center",
       "categories": [
         "placeholder"
@@ -3934,7 +3934,7 @@
       "actId": "prologue_4",
       "sceneId": "c009",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 591,
+      "line": 599,
       "raw": "SHOW: 怪盗 asset=char_thief_smile [占位符／待核对复用] position=right",
       "categories": [
         "placeholder"
@@ -3948,7 +3948,7 @@
       "actId": "prologue_4",
       "sceneId": "c010",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 642,
+      "line": 651,
       "raw": "BACKGROUND: bg_old_district_quiet_alley_night [制作占位]",
       "categories": [
         "placeholder"
@@ -3962,7 +3962,7 @@
       "actId": "prologue_4",
       "sceneId": "c010",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 643,
+      "line": 652,
       "raw": "BGM: bgm_holy_grail_explanation [制作占位／待绑定]",
       "categories": [
         "placeholder"
@@ -3976,7 +3976,7 @@
       "actId": "prologue_4",
       "sceneId": "c010",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 650,
+      "line": 659,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -3990,7 +3990,7 @@
       "actId": "prologue_4",
       "sceneId": "c010",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 654,
+      "line": 663,
       "raw": "SHOW: 怪盗 asset=char_thief_smile [占位符／待核对复用] position=right",
       "categories": [
         "placeholder"
@@ -4004,7 +4004,7 @@
       "actId": "prologue_4",
       "sceneId": "c010",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 658,
+      "line": 667,
       "raw": "SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center",
       "categories": [
         "placeholder"
@@ -4018,7 +4018,7 @@
       "actId": "prologue_4",
       "sceneId": "c010",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 662,
+      "line": 671,
       "raw": "SHOW: 女剑士 asset=char_saber_traveler_placeholder [占位符／待核对复用] position=center",
       "categories": [
         "placeholder"
@@ -4032,7 +4032,7 @@
       "actId": "prologue_4",
       "sceneId": "c011",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 736,
+      "line": 746,
       "raw": "BACKGROUND: bg_old_district_quiet_alley_night [制作占位]",
       "categories": [
         "placeholder"
@@ -4046,7 +4046,7 @@
       "actId": "prologue_4",
       "sceneId": "c011",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 737,
+      "line": 747,
       "raw": "BGM: bgm_temporary_companions [制作占位／待绑定]",
       "categories": [
         "placeholder"
@@ -4060,7 +4060,7 @@
       "actId": "prologue_4",
       "sceneId": "c011",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 744,
+      "line": 754,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -4074,22 +4074,8 @@
       "actId": "prologue_4",
       "sceneId": "c011",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 748,
+      "line": 758,
       "raw": "SHOW: 怪盗 asset=char_thief_smile [占位符／待核对复用] position=right",
-      "categories": [
-        "placeholder"
-      ],
-      "details": [
-        "素材仍有原始占位 / 待绑定标记。"
-      ],
-      "resolutions": []
-    },
-    {
-      "actId": "prologue_4",
-      "sceneId": "c011",
-      "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 752,
-      "raw": "SHOW: 女剑士 asset=char_saber_traveler_placeholder [占位符／待核对复用] position=center",
       "categories": [
         "placeholder"
       ],
@@ -4103,6 +4089,20 @@
       "sceneId": "c011",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
       "line": 762,
+      "raw": "SHOW: 女剑士 asset=char_saber_traveler_placeholder [占位符／待核对复用] position=center",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "prologue_4",
+      "sceneId": "c011",
+      "sourceFile": "source/story/prologue-v2/prologue_4.md",
+      "line": 772,
       "raw": "SHOW: Saber asset=char_saber_traveler_placeholder [占位符／待核对复用] position=center",
       "categories": [
         "placeholder"
@@ -4116,7 +4116,7 @@
       "actId": "prologue_4",
       "sceneId": "c012",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 797,
+      "line": 808,
       "raw": "BACKGROUND: bg_old_district_quiet_alley_night [制作占位]",
       "categories": [
         "placeholder"
@@ -4130,7 +4130,7 @@
       "actId": "prologue_4",
       "sceneId": "c012",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 798,
+      "line": 809,
       "raw": "BGM: bgm_temporary_companions [制作占位／待绑定]",
       "categories": [
         "placeholder"
@@ -4144,7 +4144,7 @@
       "actId": "prologue_4",
       "sceneId": "c012",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 804,
+      "line": 815,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -4158,7 +4158,7 @@
       "actId": "prologue_4",
       "sceneId": "c012",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 808,
+      "line": 819,
       "raw": "SHOW: 怪盗 asset=char_thief_smile [占位符／待核对复用] position=right",
       "categories": [
         "placeholder"
@@ -4172,7 +4172,7 @@
       "actId": "prologue_4",
       "sceneId": "c012",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 812,
+      "line": 823,
       "raw": "SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center",
       "categories": [
         "placeholder"
@@ -4186,7 +4186,7 @@
       "actId": "prologue_4",
       "sceneId": "c012",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 816,
+      "line": 827,
       "raw": "SHOW: 女剑士 asset=char_saber_traveler_placeholder [占位符／待核对复用] position=center",
       "categories": [
         "placeholder"
@@ -4200,7 +4200,7 @@
       "actId": "prologue_4",
       "sceneId": "c013",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 873,
+      "line": 885,
       "raw": "BACKGROUND: bg_grandmother_house_entrance_night [制作占位]",
       "categories": [
         "placeholder"
@@ -4214,7 +4214,7 @@
       "actId": "prologue_4",
       "sceneId": "c013",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 874,
+      "line": 886,
       "raw": "BGM: bgm_homecoming_warm_low [制作占位／待绑定]",
       "categories": [
         "placeholder"
@@ -4228,7 +4228,7 @@
       "actId": "prologue_4",
       "sceneId": "c013",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 881,
+      "line": 893,
       "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
       "categories": [
         "placeholder"
@@ -4242,7 +4242,7 @@
       "actId": "prologue_4",
       "sceneId": "c013",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 885,
+      "line": 897,
       "raw": "SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center",
       "categories": [
         "placeholder"
@@ -4256,7 +4256,7 @@
       "actId": "prologue_4",
       "sceneId": "c013",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 889,
+      "line": 901,
       "raw": "SHOW: 奶奶 asset=char_grandmother_warm [占位符／待核对复用] position=right",
       "categories": [
         "placeholder"
@@ -4270,7 +4270,7 @@
       "actId": "prologue_4",
       "sceneId": "c013",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 925,
+      "line": 938,
       "raw": "BACKGROUND: bg_grandmother_living_room_night [制作占位，场内切镜]",
       "categories": [
         "placeholder"
@@ -4284,7 +4284,7 @@
       "actId": "prologue_4",
       "sceneId": "c013",
       "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "line": 942,
+      "line": 955,
       "raw": "BACKGROUND: bg_grandmother_bedroom_night [制作占位，场内切镜]",
       "categories": [
         "placeholder"

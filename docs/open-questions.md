@@ -45,7 +45,7 @@ BGM: bgm_homecoming_warm [占位符，待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 ````
 
-#### source/story/prologue-v2/prologue.md:139 · 占位素材
+#### source/story/prologue-v2/prologue.md:140 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -55,7 +55,7 @@ SFX: sfx_door_knock [占位符]
 
 ### p002 · 奶奶家·进门
 
-#### source/story/prologue-v2/prologue.md:150 · 占位素材
+#### source/story/prologue-v2/prologue.md:151 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -63,7 +63,7 @@ SFX: sfx_door_knock [占位符]
 BACKGROUND: bg_grandmother_house_entrance [占位符]
 ````
 
-#### source/story/prologue-v2/prologue.md:151 · 占位素材
+#### source/story/prologue-v2/prologue.md:152 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -71,7 +71,7 @@ BACKGROUND: bg_grandmother_house_entrance [占位符]
 BGM: bgm_homecoming_warm [占位符，延续]
 ````
 
-#### source/story/prologue-v2/prologue.md:153 · 占位素材
+#### source/story/prologue-v2/prologue.md:154 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -81,7 +81,7 @@ SHOW: 奶奶 asset=char_grandmother_warm [占位符] position=door
 
 ### p003 · 奶奶家·客厅
 
-#### source/story/prologue-v2/prologue.md:191 · 占位素材
+#### source/story/prologue-v2/prologue.md:192 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -89,7 +89,7 @@ SHOW: 奶奶 asset=char_grandmother_warm [占位符] position=door
 BACKGROUND: bg_grandmother_house_living_room [占位符]
 ````
 
-#### source/story/prologue-v2/prologue.md:192 · 占位素材
+#### source/story/prologue-v2/prologue.md:193 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -97,7 +97,7 @@ BACKGROUND: bg_grandmother_house_living_room [占位符]
 BGM: bgm_homecoming_warm [占位符，延续]
 ````
 
-#### source/story/prologue-v2/prologue.md:194 · 占位素材
+#### source/story/prologue-v2/prologue.md:195 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -105,7 +105,7 @@ BGM: bgm_homecoming_warm [占位符，延续]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=left
 ````
 
-#### source/story/prologue-v2/prologue.md:195 · 占位素材
+#### source/story/prologue-v2/prologue.md:196 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -115,7 +115,7 @@ SHOW: 奶奶 asset=char_grandmother_warm [占位符] position=right
 
 ### p004 · 奶奶家·整理房间与出门
 
-#### source/story/prologue-v2/prologue.md:239 · 占位素材
+#### source/story/prologue-v2/prologue.md:251 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -123,7 +123,7 @@ SHOW: 奶奶 asset=char_grandmother_warm [占位符] position=right
 BACKGROUND: bg_grandmother_house_bedroom [占位符]
 ````
 
-#### source/story/prologue-v2/prologue.md:240 · 占位素材
+#### source/story/prologue-v2/prologue.md:252 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -131,7 +131,7 @@ BACKGROUND: bg_grandmother_house_bedroom [占位符]
 BGM: bgm_homecoming_warm [占位符，渐弱]
 ````
 
-#### source/story/prologue-v2/prologue.md:242 · 占位素材
+#### source/story/prologue-v2/prologue.md:254 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -139,7 +139,7 @@ BGM: bgm_homecoming_warm [占位符，渐弱]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 ````
 
-#### source/story/prologue-v2/prologue.md:257 · 占位素材
+#### source/story/prologue-v2/prologue.md:273 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -147,7 +147,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 BACKGROUND: bg_grandmother_house_kitchen_night [占位符]
 ````
 
-#### source/story/prologue-v2/prologue.md:258 · 占位素材
+#### source/story/prologue-v2/prologue.md:274 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -157,7 +157,7 @@ SHOW: 奶奶 asset=char_grandmother_warm [占位符] position=kitchen
 
 ### p005 · 旧街区·仓库区外围
 
-#### source/story/prologue-v2/prologue.md:287 · 占位素材
+#### source/story/prologue-v2/prologue.md:303 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -165,7 +165,7 @@ SHOW: 奶奶 asset=char_grandmother_warm [占位符] position=kitchen
 BACKGROUND: bg_sun_city_old_street_night [占位符]
 ````
 
-#### source/story/prologue-v2/prologue.md:288 · 占位素材
+#### source/story/prologue-v2/prologue.md:304 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -173,7 +173,7 @@ BACKGROUND: bg_sun_city_old_street_night [占位符]
 BGM: bgm_old_street_mystery [占位符，待绑定]
 ````
 
-#### source/story/prologue-v2/prologue.md:290 · 占位素材
+#### source/story/prologue-v2/prologue.md:306 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -181,7 +181,7 @@ BGM: bgm_old_street_mystery [占位符，待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=left
 ````
 
-#### source/story/prologue-v2/prologue.md:307 · 占位素材
+#### source/story/prologue-v2/prologue.md:323 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -189,7 +189,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=left
 SFX: sfx_metal_collision [占位符]
 ````
 
-#### source/story/prologue-v2/prologue.md:309 · 制作备注
+#### source/story/prologue-v2/prologue.md:325 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 - 已有处理依据：任务书 §3.3：镜头说明只供制作查看。
@@ -198,7 +198,7 @@ SFX: sfx_metal_collision [占位符]
 CAMERA: 镜头切换至高墙另一侧的月光下。
 ````
 
-#### source/story/prologue-v2/prologue.md:310 · 占位素材
+#### source/story/prologue-v2/prologue.md:326 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -206,7 +206,7 @@ CAMERA: 镜头切换至高墙另一侧的月光下。
 SHOW: 黑衣人甲 asset=char_organization_member_placeholder [占位符] position=left
 ````
 
-#### source/story/prologue-v2/prologue.md:311 · 占位素材
+#### source/story/prologue-v2/prologue.md:327 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -214,7 +214,7 @@ SHOW: 黑衣人甲 asset=char_organization_member_placeholder [占位符] positi
 SHOW: 黑衣人乙 asset=char_organization_member_placeholder [占位符] position=right
 ````
 
-#### source/story/prologue-v2/prologue.md:312 · 占位素材
+#### source/story/prologue-v2/prologue.md:328 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -222,7 +222,7 @@ SHOW: 黑衣人乙 asset=char_organization_member_placeholder [占位符] positi
 SHOW: 蒙面人 asset=char_thief_masked_black_placeholder [占位符] position=center
 ````
 
-#### source/story/prologue-v2/prologue.md:343 · 制作备注 / 变量名待定
+#### source/story/prologue-v2/prologue.md:360 · 制作备注 / 变量名待定
 
 - 制作备注完整保留；默认不向玩家展示。
 - 原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。
@@ -234,7 +234,7 @@ SET: [变量名待定] 记录男高介入仓库区冲突
 
 ### p006 · 仓库区外围·第一次战斗
 
-#### source/story/prologue-v2/prologue.md:351 · 占位素材
+#### source/story/prologue-v2/prologue.md:368 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -242,7 +242,7 @@ SET: [变量名待定] 记录男高介入仓库区冲突
 BACKGROUND: bg_warehouse_area_night [占位符]
 ````
 
-#### source/story/prologue-v2/prologue.md:352 · 占位素材
+#### source/story/prologue-v2/prologue.md:369 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -250,7 +250,7 @@ BACKGROUND: bg_warehouse_area_night [占位符]
 BGM: bgm_first_battle [占位符，待绑定]
 ````
 
-#### source/story/prologue-v2/prologue.md:360 · 制作备注 / 变量名待定
+#### source/story/prologue-v2/prologue.md:377 · 制作备注 / 变量名待定
 
 - 制作备注完整保留；默认不向玩家展示。
 - 原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。
@@ -260,7 +260,7 @@ BGM: bgm_first_battle [占位符，待绑定]
 SET: [变量名待定] 记录序幕战斗教学完成
 ````
 
-#### source/story/prologue-v2/prologue.md:362 · 制作备注 / CHECK（只记录）
+#### source/story/prologue-v2/prologue.md:379 · 制作备注 / CHECK（只记录）
 
 - 制作备注完整保留；默认不向玩家展示。
 - CHECK 中的条件与嵌套 SET / JUMP 均不解释、不执行。
@@ -270,7 +270,7 @@ SET: [变量名待定] 记录序幕战斗教学完成
 CHECK: [战斗失败处理待确认]
 ````
 
-#### source/story/prologue-v2/prologue.md:364 · 制作备注
+#### source/story/prologue-v2/prologue.md:381 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 - 已有处理依据：2026-10-18 用户确认：本句按制作备注隐藏。
@@ -282,7 +282,7 @@ NARRATION:
 
 ### p007 · 仓库区外围·蒙面人离开
 
-#### source/story/prologue-v2/prologue.md:373 · 占位素材
+#### source/story/prologue-v2/prologue.md:390 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -290,7 +290,7 @@ NARRATION:
 BACKGROUND: bg_warehouse_area_night [占位符]
 ````
 
-#### source/story/prologue-v2/prologue.md:374 · 占位素材
+#### source/story/prologue-v2/prologue.md:391 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -298,7 +298,7 @@ BACKGROUND: bg_warehouse_area_night [占位符]
 BGM: bgm_first_battle_after [占位符，待绑定]
 ````
 
-#### source/story/prologue-v2/prologue.md:376 · 占位素材
+#### source/story/prologue-v2/prologue.md:393 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -306,7 +306,7 @@ BGM: bgm_first_battle_after [占位符，待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 ````
 
-#### source/story/prologue-v2/prologue.md:384 · 占位素材
+#### source/story/prologue-v2/prologue.md:401 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -314,7 +314,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 SHOW: 蒙面人 asset=char_thief_masked_black_placeholder [占位符] position=far
 ````
 
-#### source/story/prologue-v2/prologue.md:396 · 占位素材
+#### source/story/prologue-v2/prologue.md:415 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -322,7 +322,7 @@ SHOW: 蒙面人 asset=char_thief_masked_black_placeholder [占位符] position=f
 SFX: sfx_distant_warehouse_noise [占位符]
 ````
 
-#### source/story/prologue-v2/prologue.md:402 · 制作备注 / 变量名待定
+#### source/story/prologue-v2/prologue.md:421 · 制作备注 / 变量名待定
 
 - 制作备注完整保留；默认不向玩家展示。
 - 原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。
@@ -334,7 +334,7 @@ SET: [变量名待定] 记录蒙面人在男高面前离开
 
 ### p008 · 奶奶家·回家
 
-#### source/story/prologue-v2/prologue.md:411 · 占位素材
+#### source/story/prologue-v2/prologue.md:430 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -342,7 +342,7 @@ SET: [变量名待定] 记录蒙面人在男高面前离开
 BACKGROUND: bg_grandmother_house_living_room_night [占位符]
 ````
 
-#### source/story/prologue-v2/prologue.md:412 · 占位素材
+#### source/story/prologue-v2/prologue.md:431 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -350,7 +350,7 @@ BACKGROUND: bg_grandmother_house_living_room_night [占位符]
 BGM: bgm_homecoming_warm [占位符，低音量]
 ````
 
-#### source/story/prologue-v2/prologue.md:414 · 占位素材
+#### source/story/prologue-v2/prologue.md:433 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -358,7 +358,7 @@ BGM: bgm_homecoming_warm [占位符，低音量]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=left
 ````
 
-#### source/story/prologue-v2/prologue.md:415 · 占位素材
+#### source/story/prologue-v2/prologue.md:434 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -368,7 +368,7 @@ SHOW: 奶奶 asset=char_grandmother_warm [占位符] position=right
 
 ### p009 · 男高房间·睡前
 
-#### source/story/prologue-v2/prologue.md:468 · 占位素材
+#### source/story/prologue-v2/prologue.md:485 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -376,7 +376,7 @@ SHOW: 奶奶 asset=char_grandmother_warm [占位符] position=right
 BACKGROUND: bg_grandmother_house_bedroom_night [占位符]
 ````
 
-#### source/story/prologue-v2/prologue.md:469 · 占位素材
+#### source/story/prologue-v2/prologue.md:486 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -384,7 +384,7 @@ BACKGROUND: bg_grandmother_house_bedroom_night [占位符]
 BGM: bgm_night_before_school [占位符，待绑定]
 ````
 
-#### source/story/prologue-v2/prologue.md:471 · 占位素材
+#### source/story/prologue-v2/prologue.md:488 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -392,7 +392,7 @@ BGM: bgm_night_before_school [占位符，待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=bed
 ````
 
-#### source/story/prologue-v2/prologue.md:494 · 占位素材
+#### source/story/prologue-v2/prologue.md:513 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -400,7 +400,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=bed
 BACKGROUND: bg_school_underground_dark [占位符]
 ````
 
-#### source/story/prologue-v2/prologue.md:495 · 制作备注
+#### source/story/prologue-v2/prologue.md:514 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 - 已有处理依据：任务书 §3.3：镜头说明只供制作查看。
@@ -409,7 +409,7 @@ BACKGROUND: bg_school_underground_dark [占位符]
 CAMERA: 镜头缓慢推进黑暗中的漆黑结晶。
 ````
 
-#### source/story/prologue-v2/prologue.md:496 · 占位素材
+#### source/story/prologue-v2/prologue.md:515 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -417,7 +417,7 @@ CAMERA: 镜头缓慢推进黑暗中的漆黑结晶。
 SHOW: 黑色结晶 asset=prop_dark_god_crystal_placeholder [占位符] position=center
 ````
 
-#### source/story/prologue-v2/prologue.md:498 · 占位素材
+#### source/story/prologue-v2/prologue.md:517 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -425,7 +425,7 @@ SHOW: 黑色结晶 asset=prop_dark_god_crystal_placeholder [占位符] position=
 SFX: sfx_low_heartbeat [占位符]
 ````
 
-#### source/story/prologue-v2/prologue.md:503 · 制作备注 / 变量名待定
+#### source/story/prologue-v2/prologue.md:522 · 制作备注 / 变量名待定
 
 - 制作备注完整保留；默认不向玩家展示。
 - 原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。
@@ -472,7 +472,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 SHOW: 奶奶 asset=char_grandmother_warm [占位符] position=door
 ````
 
-#### source/story/prologue-v2/act1.md:213 · 占位素材
+#### source/story/prologue-v2/act1.md:221 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -482,7 +482,7 @@ SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right
 
 ### a002 · 上学途中·路口相撞
 
-#### source/story/prologue-v2/act1.md:235 · 占位素材
+#### source/story/prologue-v2/act1.md:243 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -490,7 +490,7 @@ SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right
 BACKGROUND: bg_sun_city_school_road_morning [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:236 · 占位素材
+#### source/story/prologue-v2/act1.md:244 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -498,7 +498,7 @@ BACKGROUND: bg_sun_city_school_road_morning [占位符]
 BGM: bgm_school_morning [占位符，延续]
 ````
 
-#### source/story/prologue-v2/act1.md:238 · 占位素材
+#### source/story/prologue-v2/act1.md:246 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -506,7 +506,7 @@ BGM: bgm_school_morning [占位符，延续]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=left
 ````
 
-#### source/story/prologue-v2/act1.md:246 · 占位素材
+#### source/story/prologue-v2/act1.md:254 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -514,7 +514,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=left
 SHOW: 怪盗 asset=char_thief_smile [已有候选素材，尚未绑定] position=right
 ````
 
-#### source/story/prologue-v2/act1.md:265 · 制作备注
+#### source/story/prologue-v2/act1.md:281 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 
@@ -526,7 +526,7 @@ INNER:
 
 ### a003 · 学校门口
 
-#### source/story/prologue-v2/act1.md:278 · 占位素材
+#### source/story/prologue-v2/act1.md:294 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -534,7 +534,7 @@ INNER:
 BACKGROUND: bg_school_gate_morning [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:279 · 占位素材
+#### source/story/prologue-v2/act1.md:295 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -542,7 +542,7 @@ BACKGROUND: bg_school_gate_morning [占位符]
 BGM: bgm_school_morning [占位符，延续]
 ````
 
-#### source/story/prologue-v2/act1.md:281 · 占位素材
+#### source/story/prologue-v2/act1.md:297 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -550,7 +550,7 @@ BGM: bgm_school_morning [占位符，延续]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 ````
 
-#### source/story/prologue-v2/act1.md:290 · 占位素材
+#### source/story/prologue-v2/act1.md:306 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -558,7 +558,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 SHOW: 老师 asset=char_teacher_placeholder [占位符] position=left
 ````
 
-#### source/story/prologue-v2/act1.md:310 · 制作备注
+#### source/story/prologue-v2/act1.md:329 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 - 已有处理依据：任务书 §3.3：镜头说明只供制作查看。
@@ -567,7 +567,7 @@ SHOW: 老师 asset=char_teacher_placeholder [占位符] position=left
 CAMERA: 镜头切换到教学楼二楼走廊。
 ````
 
-#### source/story/prologue-v2/act1.md:311 · 占位素材
+#### source/story/prologue-v2/act1.md:330 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -575,7 +575,7 @@ CAMERA: 镜头切换到教学楼二楼走廊。
 SHOW: 反派 asset=char_villain_calm [占位符] position=left
 ````
 
-#### source/story/prologue-v2/act1.md:312 · 占位素材
+#### source/story/prologue-v2/act1.md:331 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -583,7 +583,7 @@ SHOW: 反派 asset=char_villain_calm [占位符] position=left
 SHOW: 偶像 asset=char_idol_neutral [占位符] position=right
 ````
 
-#### source/story/prologue-v2/act1.md:331 · 占位素材
+#### source/story/prologue-v2/act1.md:359 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -591,7 +591,7 @@ SHOW: 偶像 asset=char_idol_neutral [占位符] position=right
 SHOW: 黑色结晶 asset=prop_dark_god_crystal_placeholder [占位符] position=center
 ````
 
-#### source/story/prologue-v2/act1.md:332 · 占位素材
+#### source/story/prologue-v2/act1.md:360 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -601,7 +601,7 @@ SFX: sfx_low_heartbeat [占位符]
 
 ### a004 · 教室·自我介绍
 
-#### source/story/prologue-v2/act1.md:348 · 占位素材
+#### source/story/prologue-v2/act1.md:376 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -609,7 +609,7 @@ SFX: sfx_low_heartbeat [占位符]
 BACKGROUND: bg_school_classroom_morning [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:349 · 占位素材
+#### source/story/prologue-v2/act1.md:377 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -617,7 +617,7 @@ BACKGROUND: bg_school_classroom_morning [占位符]
 BGM: bgm_school_classroom_daily [占位符，待绑定]
 ````
 
-#### source/story/prologue-v2/act1.md:351 · 占位素材
+#### source/story/prologue-v2/act1.md:379 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -625,7 +625,7 @@ BGM: bgm_school_classroom_daily [占位符，待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 ````
 
-#### source/story/prologue-v2/act1.md:354 · 占位素材
+#### source/story/prologue-v2/act1.md:382 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -633,7 +633,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 SHOW: 老师 asset=char_teacher_placeholder [占位符] position=left
 ````
 
-#### source/story/prologue-v2/act1.md:374 · 角色缺少素材
+#### source/story/prologue-v2/act1.md:403 · 角色缺少素材
 
 - 说话人“同学甲”没有任何含 asset 的 SHOW 声明。
 
@@ -643,17 +643,17 @@ DIALOGUE:
 这自我介绍也太像动画主角了吧……
 ````
 
-#### source/story/prologue-v2/act1.md:378 · 角色缺少素材
+#### source/story/prologue-v2/act1.md:407 · 角色缺少素材
 
 - 说话人“同学乙”没有任何含 asset 的 SHOW 声明。
 
 ````text
 DIALOGUE:
 同学乙：
-还说什么遇到困难来找他……
+转学第一天就放出这种话，真有自信。
 ````
 
-#### source/story/prologue-v2/act1.md:386 · 占位素材
+#### source/story/prologue-v2/act1.md:415 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -663,7 +663,7 @@ SHOW: 怪盗 asset=char_thief_smile [已有候选素材，尚未绑定] position
 
 ### a005 · 教室·座位安排
 
-#### source/story/prologue-v2/act1.md:408 · 占位素材
+#### source/story/prologue-v2/act1.md:437 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -671,7 +671,7 @@ SHOW: 怪盗 asset=char_thief_smile [已有候选素材，尚未绑定] position
 BACKGROUND: bg_school_classroom_morning [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:409 · 占位素材
+#### source/story/prologue-v2/act1.md:438 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -679,7 +679,7 @@ BACKGROUND: bg_school_classroom_morning [占位符]
 BGM: bgm_school_classroom_daily [占位符，延续]
 ````
 
-#### source/story/prologue-v2/act1.md:411 · 占位素材
+#### source/story/prologue-v2/act1.md:440 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -687,7 +687,7 @@ BGM: bgm_school_classroom_daily [占位符，延续]
 SHOW: 老师 asset=char_teacher_placeholder [占位符] position=left
 ````
 
-#### source/story/prologue-v2/act1.md:412 · 占位素材
+#### source/story/prologue-v2/act1.md:441 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -695,7 +695,7 @@ SHOW: 老师 asset=char_teacher_placeholder [占位符] position=left
 SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 ````
 
-#### source/story/prologue-v2/act1.md:413 · 占位素材
+#### source/story/prologue-v2/act1.md:442 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -703,7 +703,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 SHOW: 怪盗 asset=char_thief_smile [已有候选素材，尚未绑定] position=back_left
 ````
 
-#### source/story/prologue-v2/act1.md:414 · 占位素材
+#### source/story/prologue-v2/act1.md:443 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -713,7 +713,7 @@ SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=back_rig
 
 ### a006 · 课间·带路的人选
 
-#### source/story/prologue-v2/act1.md:463 · 占位素材
+#### source/story/prologue-v2/act1.md:500 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -721,7 +721,7 @@ SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=back_rig
 BACKGROUND: bg_school_classroom_day [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:464 · 占位素材
+#### source/story/prologue-v2/act1.md:501 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -729,7 +729,7 @@ BACKGROUND: bg_school_classroom_day [占位符]
 BGM: bgm_school_classroom_daily [占位符，延续]
 ````
 
-#### source/story/prologue-v2/act1.md:466 · 占位素材
+#### source/story/prologue-v2/act1.md:503 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -737,7 +737,7 @@ BGM: bgm_school_classroom_daily [占位符，延续]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 ````
 
-#### source/story/prologue-v2/act1.md:467 · 占位素材
+#### source/story/prologue-v2/act1.md:504 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -745,7 +745,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 SHOW: 老师 asset=char_teacher_placeholder [占位符] position=front
 ````
 
-#### source/story/prologue-v2/act1.md:468 · 占位素材
+#### source/story/prologue-v2/act1.md:505 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -753,7 +753,7 @@ SHOW: 老师 asset=char_teacher_placeholder [占位符] position=front
 SHOW: 怪盗 asset=char_thief_smile [已有候选素材，尚未绑定] position=window
 ````
 
-#### source/story/prologue-v2/act1.md:469 · 占位素材
+#### source/story/prologue-v2/act1.md:506 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -761,7 +761,7 @@ SHOW: 怪盗 asset=char_thief_smile [已有候选素材，尚未绑定] position
 SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right
 ````
 
-#### source/story/prologue-v2/act1.md:470 · 占位素材
+#### source/story/prologue-v2/act1.md:507 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -771,7 +771,7 @@ SHOW: 反派 asset=char_villain_calm [占位符] position=back
 
 ### a007 · 课间·选择校园向导
 
-#### source/story/prologue-v2/act1.md:503 · 占位素材
+#### source/story/prologue-v2/act1.md:540 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -779,7 +779,7 @@ SHOW: 反派 asset=char_villain_calm [占位符] position=back
 BACKGROUND: bg_school_classroom_day [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:504 · 占位素材
+#### source/story/prologue-v2/act1.md:541 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -787,7 +787,7 @@ BACKGROUND: bg_school_classroom_day [占位符]
 BGM: bgm_school_choice [占位符，待绑定]
 ````
 
-#### source/story/prologue-v2/act1.md:510 · 制作备注
+#### source/story/prologue-v2/act1.md:547 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 - 已有处理依据：用户确认：A007仅启用选项2；其他路线及random_rd3不执行，未完成分支保留。新版序幕（二）为18主场景及4未完成分支。
@@ -797,7 +797,7 @@ STAGE:
 【不可执行】原文只有选项名称，没有怪盗带路正文。
 ````
 
-#### source/story/prologue-v2/act1.md:516 · 制作备注 / 变量名待定
+#### source/story/prologue-v2/act1.md:553 · 制作备注 / 变量名待定
 
 - 制作备注完整保留；默认不向玩家展示。
 - 原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。
@@ -807,7 +807,7 @@ STAGE:
 SET: [变量名待定] 记录玩家选择虚拟主播带路
 ````
 
-#### source/story/prologue-v2/act1.md:521 · 制作备注
+#### source/story/prologue-v2/act1.md:558 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 - 已有处理依据：用户确认：A007仅启用选项2；其他路线及random_rd3不执行，未完成分支保留。新版序幕（二）为18主场景及4未完成分支。
@@ -817,7 +817,7 @@ STAGE:
 【不可执行】原文只有选项名称，没有反派带路正文。
 ````
 
-#### source/story/prologue-v2/act1.md:527 · 制作备注
+#### source/story/prologue-v2/act1.md:564 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 - 已有处理依据：用户确认：A007仅启用选项2；其他路线及random_rd3不执行，未完成分支保留。新版序幕（二）为18主场景及4未完成分支。
@@ -827,7 +827,7 @@ STAGE:
 这是系统随机，不是玩家直接选择。
 ````
 
-#### source/story/prologue-v2/act1.md:529 · 调用待接入
+#### source/story/prologue-v2/act1.md:566 · 调用待接入
 
 - 调用 random_rd3 尚未接入；保留原始调用。新增战斗在运行时阻断。
 - 已有处理依据：用户确认：A007仅启用选项2；其他路线及random_rd3不执行，未完成分支保留。新版序幕（二）为18主场景及4未完成分支。
@@ -836,7 +836,7 @@ STAGE:
 CALL: random_rd3
 ````
 
-#### source/story/prologue-v2/act1.md:531 · 制作备注 / CHECK（只记录）
+#### source/story/prologue-v2/act1.md:568 · 制作备注 / CHECK（只记录）
 
 - 制作备注完整保留；默认不向玩家展示。
 - CHECK 中的条件与嵌套 SET / JUMP 均不解释、不执行。
@@ -846,7 +846,7 @@ CALL: random_rd3
 CHECK: [系统随机结果 = 1] -> JUMP: A007_RANDOM_UNAVAILABLE
 ````
 
-#### source/story/prologue-v2/act1.md:532 · 制作备注 / 变量名待定 / CHECK（只记录）
+#### source/story/prologue-v2/act1.md:569 · 制作备注 / 变量名待定 / CHECK（只记录）
 
 - 制作备注完整保留；默认不向玩家展示。
 - 原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。
@@ -857,7 +857,7 @@ CHECK: [系统随机结果 = 1] -> JUMP: A007_RANDOM_UNAVAILABLE
 CHECK: [系统随机结果 = 2] -> SET: [变量名待定] 记录随机进入虚拟主播路线；JUMP: A008
 ````
 
-#### source/story/prologue-v2/act1.md:533 · 制作备注 / CHECK（只记录）
+#### source/story/prologue-v2/act1.md:570 · 制作备注 / CHECK（只记录）
 
 - 制作备注完整保留；默认不向玩家展示。
 - CHECK 中的条件与嵌套 SET / JUMP 均不解释、不执行。
@@ -867,7 +867,7 @@ CHECK: [系统随机结果 = 2] -> SET: [变量名待定] 记录随机进入虚�
 CHECK: [系统随机结果 = 3] -> JUMP: A007_RANDOM_UNAVAILABLE
 ````
 
-#### source/story/prologue-v2/act1.md:535 · 制作备注
+#### source/story/prologue-v2/act1.md:572 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 - 已有处理依据：用户确认：A007仅启用选项2；其他路线及random_rd3不执行，未完成分支保留。新版序幕（二）为18主场景及4未完成分支。
@@ -879,7 +879,7 @@ NARRATION:
 
 ### a007_todo_thief · 怪盗带路·未完成
 
-#### source/story/prologue-v2/act1.md:543 · 占位素材
+#### source/story/prologue-v2/act1.md:580 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -887,7 +887,7 @@ NARRATION:
 BACKGROUND: bg_school_classroom_day [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:545 · 制作备注
+#### source/story/prologue-v2/act1.md:582 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 - 已有处理依据：用户确认：A007仅启用选项2；其他路线及random_rd3不执行，未完成分支保留。新版序幕（二）为18主场景及4未完成分支。
@@ -900,7 +900,7 @@ NARRATION:
 
 ### a007_todo_villain · 反派带路·未完成
 
-#### source/story/prologue-v2/act1.md:556 · 占位素材
+#### source/story/prologue-v2/act1.md:593 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -908,7 +908,7 @@ NARRATION:
 BACKGROUND: bg_school_classroom_day [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:558 · 制作备注
+#### source/story/prologue-v2/act1.md:595 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 - 已有处理依据：用户确认：A007仅启用选项2；其他路线及random_rd3不执行，未完成分支保留。新版序幕（二）为18主场景及4未完成分支。
@@ -921,7 +921,7 @@ NARRATION:
 
 ### a007_random_unavailable · 随机结果对应未完成路线
 
-#### source/story/prologue-v2/act1.md:569 · 占位素材
+#### source/story/prologue-v2/act1.md:606 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -929,7 +929,7 @@ NARRATION:
 BACKGROUND: bg_school_classroom_day [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:571 · 制作备注
+#### source/story/prologue-v2/act1.md:608 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 - 已有处理依据：用户确认：A007仅启用选项2；其他路线及random_rd3不执行，未完成分支保留。新版序幕（二）为18主场景及4未完成分支。
@@ -939,7 +939,7 @@ NARRATION:
 【不可执行】`rd3` 随机结果对应怪盗或反派路线，但该路线当前没有原文正文。
 ````
 
-#### source/story/prologue-v2/act1.md:574 · 制作备注
+#### source/story/prologue-v2/act1.md:611 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 - 已有处理依据：用户确认：A007仅启用选项2；其他路线及random_rd3不执行，未完成分支保留。新版序幕（二）为18主场景及4未完成分支。
@@ -951,7 +951,7 @@ NARRATION:
 
 ### a008 · 虚拟主播带路参观校园
 
-#### source/story/prologue-v2/act1.md:584 · 占位素材
+#### source/story/prologue-v2/act1.md:621 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -959,7 +959,7 @@ NARRATION:
 BACKGROUND: bg_school_library_day [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:585 · 占位素材
+#### source/story/prologue-v2/act1.md:622 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -967,7 +967,7 @@ BACKGROUND: bg_school_library_day [占位符]
 BGM: bgm_school_daily [占位符，待绑定]
 ````
 
-#### source/story/prologue-v2/act1.md:587 · 占位素材
+#### source/story/prologue-v2/act1.md:624 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -975,7 +975,7 @@ BGM: bgm_school_daily [占位符，待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=left
 ````
 
-#### source/story/prologue-v2/act1.md:588 · 占位素材
+#### source/story/prologue-v2/act1.md:625 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -983,7 +983,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=left
 SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right
 ````
 
-#### source/story/prologue-v2/act1.md:623 · 占位素材
+#### source/story/prologue-v2/act1.md:664 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -991,7 +991,7 @@ SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right
 BACKGROUND: bg_school_cafeteria_day [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:641 · 占位素材
+#### source/story/prologue-v2/act1.md:693 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1001,7 +1001,7 @@ BACKGROUND: bg_school_gym_day [占位符]
 
 ### a009 · 废弃施工区外围
 
-#### source/story/prologue-v2/act1.md:661 · 占位素材
+#### source/story/prologue-v2/act1.md:713 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1009,7 +1009,7 @@ BACKGROUND: bg_school_gym_day [占位符]
 BACKGROUND: bg_school_construction_zone_day [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:662 · 占位素材
+#### source/story/prologue-v2/act1.md:714 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1017,7 +1017,7 @@ BACKGROUND: bg_school_construction_zone_day [占位符]
 BGM: bgm_school_mystery [占位符，待绑定]
 ````
 
-#### source/story/prologue-v2/act1.md:664 · 占位素材
+#### source/story/prologue-v2/act1.md:716 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1025,7 +1025,7 @@ BGM: bgm_school_mystery [占位符，待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=left
 ````
 
-#### source/story/prologue-v2/act1.md:665 · 占位素材
+#### source/story/prologue-v2/act1.md:717 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1035,7 +1035,7 @@ SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right
 
 ### a010 · 是否进入施工区域
 
-#### source/story/prologue-v2/act1.md:704 · 占位素材
+#### source/story/prologue-v2/act1.md:756 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1043,7 +1043,7 @@ SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right
 BACKGROUND: bg_school_construction_zone_day [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:705 · 占位素材
+#### source/story/prologue-v2/act1.md:757 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1051,7 +1051,7 @@ BACKGROUND: bg_school_construction_zone_day [占位符]
 BGM: bgm_school_mystery [占位符，延续]
 ````
 
-#### source/story/prologue-v2/act1.md:709 · 制作备注 / 变量名待定
+#### source/story/prologue-v2/act1.md:761 · 制作备注 / 变量名待定
 
 - 制作备注完整保留；默认不向玩家展示。
 - 原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。
@@ -1061,7 +1061,7 @@ BGM: bgm_school_mystery [占位符，延续]
 SET: [变量名待定] 记录男高选择进入施工区域
 ````
 
-#### source/story/prologue-v2/act1.md:710 · 制作备注 / 变量名待定
+#### source/story/prologue-v2/act1.md:762 · 制作备注 / 变量名待定
 
 - 制作备注完整保留；默认不向玩家展示。
 - 原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。
@@ -1071,7 +1071,7 @@ SET: [变量名待定] 记录男高选择进入施工区域
 SET: [变量名待定] 增加男高对学校地下异常的调查进度
 ````
 
-#### source/story/prologue-v2/act1.md:715 · 制作备注 / 变量名待定
+#### source/story/prologue-v2/act1.md:767 · 制作备注 / 变量名待定
 
 - 制作备注完整保留；默认不向玩家展示。
 - 原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。
@@ -1081,7 +1081,7 @@ SET: [变量名待定] 增加男高对学校地下异常的调查进度
 SET: [变量名待定] 记录男高选择返回班级
 ````
 
-#### source/story/prologue-v2/act1.md:716 · 制作备注
+#### source/story/prologue-v2/act1.md:768 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 
@@ -1092,7 +1092,7 @@ NARRATION:
 
 ### a011 · 施工区域·坑底与腐蚀之剑
 
-#### source/story/prologue-v2/act1.md:725 · 占位素材
+#### source/story/prologue-v2/act1.md:777 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1100,7 +1100,7 @@ NARRATION:
 BACKGROUND: bg_school_construction_zone_day [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:726 · 占位素材
+#### source/story/prologue-v2/act1.md:778 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1108,7 +1108,7 @@ BACKGROUND: bg_school_construction_zone_day [占位符]
 BGM: bgm_school_mystery [占位符，低音量]
 ````
 
-#### source/story/prologue-v2/act1.md:728 · 占位素材
+#### source/story/prologue-v2/act1.md:780 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1116,7 +1116,7 @@ BGM: bgm_school_mystery [占位符，低音量]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=left
 ````
 
-#### source/story/prologue-v2/act1.md:729 · 占位素材
+#### source/story/prologue-v2/act1.md:781 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1124,7 +1124,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=left
 SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right
 ````
 
-#### source/story/prologue-v2/act1.md:772 · 占位素材
+#### source/story/prologue-v2/act1.md:842 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1132,7 +1132,7 @@ SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right
 SFX: sfx_low_heartbeat [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:782 · 占位素材
+#### source/story/prologue-v2/act1.md:852 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1140,7 +1140,7 @@ SFX: sfx_low_heartbeat [占位符]
 SHOW: 大师之剑 asset=prop_master_sword_corrupted_placeholder [占位符] position=bottom_center
 ````
 
-#### source/story/prologue-v2/act1.md:800 · 制作备注
+#### source/story/prologue-v2/act1.md:874 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 - 已有处理依据：原文已有单线强制事件；保留制作备注，不增加分支。
@@ -1152,7 +1152,7 @@ NARRATION:
 
 ### a012 · 大师之剑·触碰与幻象
 
-#### source/story/prologue-v2/act1.md:810 · 占位素材
+#### source/story/prologue-v2/act1.md:884 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1160,7 +1160,7 @@ NARRATION:
 BACKGROUND: bg_school_construction_pit [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:811 · 占位素材
+#### source/story/prologue-v2/act1.md:885 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1168,7 +1168,7 @@ BACKGROUND: bg_school_construction_pit [占位符]
 BGM: bgm_master_sword_vision [占位符，待绑定]
 ````
 
-#### source/story/prologue-v2/act1.md:817 · 占位素材
+#### source/story/prologue-v2/act1.md:891 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1176,7 +1176,7 @@ BGM: bgm_master_sword_vision [占位符，待绑定]
 SFX: sfx_master_sword_resonance [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:818 · 占位素材 / 制作备注 / 未知指令
+#### source/story/prologue-v2/act1.md:892 · 占位素材 / 制作备注 / 未知指令
 
 - 素材仍有原始占位 / 待绑定标记。
 - 制作备注完整保留；默认不向玩家展示。
@@ -1186,7 +1186,7 @@ SFX: sfx_master_sword_resonance [占位符]
 CG: cg_master_sword_vision_placeholder [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:819 · 制作备注
+#### source/story/prologue-v2/act1.md:893 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 - 已有处理依据：任务书 §3.3：镜头说明只供制作查看。
@@ -1195,7 +1195,7 @@ CG: cg_master_sword_vision_placeholder [占位符]
 CAMERA: 镜头从剑柄金色三角宝石推进至幻象。
 ````
 
-#### source/story/prologue-v2/act1.md:821 · 调用待接入
+#### source/story/prologue-v2/act1.md:895 · 调用待接入
 
 - 调用 event_master_sword_vision 尚未接入；保留原始调用。新增战斗在运行时阻断。
 
@@ -1203,7 +1203,7 @@ CAMERA: 镜头从剑柄金色三角宝石推进至幻象。
 CALL: event_master_sword_vision
 ````
 
-#### source/story/prologue-v2/act1.md:823 · 制作备注
+#### source/story/prologue-v2/act1.md:897 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 
@@ -1214,7 +1214,7 @@ NARRATION:
 
 ### a013 · 施工区域·黑色人形
 
-#### source/story/prologue-v2/act1.md:877 · 占位素材
+#### source/story/prologue-v2/act1.md:951 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1222,7 +1222,7 @@ NARRATION:
 BACKGROUND: bg_school_construction_pit [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:878 · 占位素材
+#### source/story/prologue-v2/act1.md:952 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1230,7 +1230,7 @@ BACKGROUND: bg_school_construction_pit [占位符]
 BGM: bgm_black_humanoid_appearance [占位符，待绑定]
 ````
 
-#### source/story/prologue-v2/act1.md:880 · 占位素材
+#### source/story/prologue-v2/act1.md:954 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1238,7 +1238,7 @@ BGM: bgm_black_humanoid_appearance [占位符，待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=bottom_center
 ````
 
-#### source/story/prologue-v2/act1.md:881 · 占位素材
+#### source/story/prologue-v2/act1.md:955 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1246,7 +1246,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=bottom_center
 SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=top_right
 ````
 
-#### source/story/prologue-v2/act1.md:882 · 占位素材
+#### source/story/prologue-v2/act1.md:956 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1254,7 +1254,7 @@ SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=top_righ
 SHOW: 黑色人形 asset=char_black_humanoid_placeholder [占位符] position=bottom_left
 ````
 
-#### source/story/prologue-v2/act1.md:897 · 占位素材
+#### source/story/prologue-v2/act1.md:978 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1264,7 +1264,7 @@ SFX: sfx_fainting [占位符]
 
 ### a014 · 黑色人形战斗
 
-#### source/story/prologue-v2/act1.md:921 · 占位素材
+#### source/story/prologue-v2/act1.md:1008 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1272,7 +1272,7 @@ SFX: sfx_fainting [占位符]
 BACKGROUND: bg_school_construction_pit [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:922 · 占位素材
+#### source/story/prologue-v2/act1.md:1009 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1280,7 +1280,7 @@ BACKGROUND: bg_school_construction_pit [占位符]
 BGM: bgm_black_humanoid_battle [占位符，待绑定]
 ````
 
-#### source/story/prologue-v2/act1.md:929 · 制作备注
+#### source/story/prologue-v2/act1.md:1016 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 - 已有处理依据：任务书 §5.6 / §5.9 已规定战斗数值、胜负和重试；战斗奖励尚未规定，M0 不补写。
@@ -1290,7 +1290,7 @@ NARRATION:
 【待确认】黑色人形的战斗数据、胜利条件、失败处理和战斗奖励。
 ````
 
-#### source/story/prologue-v2/act1.md:937 · 占位素材
+#### source/story/prologue-v2/act1.md:1024 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1298,7 +1298,7 @@ NARRATION:
 SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 ````
 
-#### source/story/prologue-v2/act1.md:938 · 占位素材
+#### source/story/prologue-v2/act1.md:1025 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1306,7 +1306,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right
 ````
 
-#### source/story/prologue-v2/act1.md:956 · 制作备注 / 变量名待定
+#### source/story/prologue-v2/act1.md:1043 · 制作备注 / 变量名待定
 
 - 制作备注完整保留；默认不向玩家展示。
 - 原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。
@@ -1316,7 +1316,7 @@ SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right
 SET: [变量名待定] 记录虚拟主播目击黑色人形
 ````
 
-#### source/story/prologue-v2/act1.md:957 · 制作备注 / 变量名待定
+#### source/story/prologue-v2/act1.md:1044 · 制作备注 / 变量名待定
 
 - 制作备注完整保留；默认不向玩家展示。
 - 原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。
@@ -1328,7 +1328,7 @@ SET: [变量名待定] 增加男高对学校地下异常的调查进度
 
 ### a015 · 回到学校
 
-#### source/story/prologue-v2/act1.md:965 · 占位素材
+#### source/story/prologue-v2/act1.md:1052 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1336,7 +1336,7 @@ SET: [变量名待定] 增加男高对学校地下异常的调查进度
 BACKGROUND: bg_school_hallway_day [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:966 · 占位素材
+#### source/story/prologue-v2/act1.md:1053 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1344,7 +1344,7 @@ BACKGROUND: bg_school_hallway_day [占位符]
 BGM: bgm_school_mystery [占位符，低音量]
 ````
 
-#### source/story/prologue-v2/act1.md:968 · 占位素材
+#### source/story/prologue-v2/act1.md:1055 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1352,7 +1352,7 @@ BGM: bgm_school_mystery [占位符，低音量]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 ````
 
-#### source/story/prologue-v2/act1.md:969 · 占位素材
+#### source/story/prologue-v2/act1.md:1056 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1360,7 +1360,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=center_front
 ````
 
-#### source/story/prologue-v2/act1.md:978 · 占位素材
+#### source/story/prologue-v2/act1.md:1065 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1368,7 +1368,7 @@ SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=center_f
 SFX: sfx_school_bell [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:983 · 制作备注 / 变量名待定
+#### source/story/prologue-v2/act1.md:1070 · 制作备注 / 变量名待定
 
 - 制作备注完整保留；默认不向玩家展示。
 - 原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。
@@ -1380,7 +1380,7 @@ SET: [变量名待定] 记录男高带虚拟主播返回学校
 
 ### a015_recovery · 保健室与照顾交接
 
-#### source/story/prologue-v2/act1.md:991 · 占位素材
+#### source/story/prologue-v2/act1.md:1078 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1388,7 +1388,7 @@ SET: [变量名待定] 记录男高带虚拟主播返回学校
 BACKGROUND: bg_school_infirmary_day [制作占位]
 ````
 
-#### source/story/prologue-v2/act1.md:992 · 占位素材
+#### source/story/prologue-v2/act1.md:1079 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1396,7 +1396,7 @@ BACKGROUND: bg_school_infirmary_day [制作占位]
 BGM: bgm_school_daily [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/act1.md:994 · 占位素材
+#### source/story/prologue-v2/act1.md:1081 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1404,7 +1404,7 @@ BGM: bgm_school_daily [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=left
 ````
 
-#### source/story/prologue-v2/act1.md:998 · 占位素材
+#### source/story/prologue-v2/act1.md:1085 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1412,7 +1412,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=left
 SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right
 ````
 
-#### source/story/prologue-v2/act1.md:1005 · 角色缺少素材
+#### source/story/prologue-v2/act1.md:1092 · 角色缺少素材
 
 - 说话人“保健室老师”没有任何含 asset 的 SHOW 声明。
 
@@ -1424,7 +1424,7 @@ DIALOGUE:
 
 ### a015_retrieve · 放学返回施工区取剑
 
-#### source/story/prologue-v2/act1.md:1040 · 占位素材
+#### source/story/prologue-v2/act1.md:1149 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1432,7 +1432,7 @@ DIALOGUE:
 BACKGROUND: bg_school_construction_zone_dusk [制作占位]
 ````
 
-#### source/story/prologue-v2/act1.md:1041 · 占位素材
+#### source/story/prologue-v2/act1.md:1150 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1440,7 +1440,7 @@ BACKGROUND: bg_school_construction_zone_dusk [制作占位]
 BGM: bgm_sword_quiet_mystery [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/act1.md:1045 · 占位素材
+#### source/story/prologue-v2/act1.md:1154 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1450,7 +1450,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 
 ### a016 · 序幕（二）取剑主线结束
 
-#### source/story/prologue-v2/act1.md:1083 · 占位素材
+#### source/story/prologue-v2/act1.md:1193 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1458,7 +1458,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 BACKGROUND: bg_grandmother_house_dusk [制作占位]
 ````
 
-#### source/story/prologue-v2/act1.md:1084 · 占位素材
+#### source/story/prologue-v2/act1.md:1194 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1466,7 +1466,7 @@ BACKGROUND: bg_grandmother_house_dusk [制作占位]
 BGM: bgm_scene_transition [占位符，待绑定]
 ````
 
-#### source/story/prologue-v2/act1.md:1086 · 制作备注 / CHECK（只记录）
+#### source/story/prologue-v2/act1.md:1196 · 制作备注 / CHECK（只记录）
 
 - 制作备注完整保留；默认不向玩家展示。
 - CHECK 中的条件与嵌套 SET / JUMP 均不解释、不执行。
@@ -1475,7 +1475,7 @@ BGM: bgm_scene_transition [占位符，待绑定]
 CHECK: has_master_sword == true [仅取剑主线可进入此终点]
 ````
 
-#### source/story/prologue-v2/act1.md:1091 · 制作备注 / 变量名待定
+#### source/story/prologue-v2/act1.md:1201 · 制作备注 / 变量名待定
 
 - 制作备注完整保留；默认不向玩家展示。
 - 原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。
@@ -1487,7 +1487,7 @@ SET: [变量名待定] 记录序幕（二）主线结束
 
 ### a010_return_class · 返回班级·未完成支线
 
-#### source/story/prologue-v2/act1.md:1099 · 占位素材
+#### source/story/prologue-v2/act1.md:1209 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1495,7 +1495,7 @@ SET: [变量名待定] 记录序幕（二）主线结束
 BACKGROUND: bg_school_classroom_day [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:1100 · 占位素材
+#### source/story/prologue-v2/act1.md:1210 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1551,7 +1551,7 @@ SHOW: 奶奶 asset=char_grandmother_warm [占位符／待核对复用] position=
 
 ### b002 · 床边的大师之剑
 
-#### source/story/prologue-v2/prologue_3.md:125 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:130 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1559,7 +1559,7 @@ SHOW: 奶奶 asset=char_grandmother_warm [占位符／待核对复用] position=
 BACKGROUND: bg_grandmother_bedroom_night [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_3.md:126 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:131 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1567,7 +1567,7 @@ BACKGROUND: bg_grandmother_bedroom_night [制作占位]
 BGM: bgm_sword_quiet_mystery [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_3.md:131 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:136 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1575,7 +1575,7 @@ BGM: bgm_sword_quiet_mystery [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_3.md:159 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:164 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1585,7 +1585,7 @@ SFX: sfx_light_switch [制作占位]
 
 ### b003 · 没有尽头的晚饭
 
-#### source/story/prologue-v2/prologue_3.md:174 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:179 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1593,7 +1593,7 @@ SFX: sfx_light_switch [制作占位]
 BACKGROUND: bg_grandmother_dining_evening [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_3.md:175 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:180 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1601,7 +1601,7 @@ BACKGROUND: bg_grandmother_dining_evening [制作占位]
 BGM: bgm_homecoming_warm_dream [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_3.md:179 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:184 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1609,7 +1609,7 @@ BGM: bgm_homecoming_warm_dream [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_3.md:183 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:188 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1617,7 +1617,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=
 SHOW: 奶奶 asset=char_grandmother_warm [占位符／待核对复用] position=right
 ````
 
-#### source/story/prologue-v2/prologue_3.md:200 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:205 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1627,7 +1627,7 @@ SFX: sfx_clock_tick_stop [制作占位]
 
 ### b004 · 雾中的邀请
 
-#### source/story/prologue-v2/prologue_3.md:229 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:234 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1635,7 +1635,7 @@ SFX: sfx_clock_tick_stop [制作占位]
 BACKGROUND: bg_dream_dining_fog [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_3.md:230 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:235 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1643,7 +1643,7 @@ BACKGROUND: bg_dream_dining_fog [制作占位]
 BGM: bgm_nightmare_invitation [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_3.md:235 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:240 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1651,7 +1651,7 @@ BGM: bgm_nightmare_invitation [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_3.md:242 · 角色缺少素材
+#### source/story/prologue-v2/prologue_3.md:247 · 角色缺少素材
 
 - 说话人“雾中的声音”没有任何含 asset 的 SHOW 声明。
 
@@ -1663,7 +1663,7 @@ DIALOGUE:
 
 ### b005 · 男高拒绝留下
 
-#### source/story/prologue-v2/prologue_3.md:294 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:318 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1671,7 +1671,7 @@ DIALOGUE:
 BACKGROUND: bg_dream_house_loop [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_3.md:295 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:319 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1679,7 +1679,7 @@ BACKGROUND: bg_dream_house_loop [制作占位]
 BGM: bgm_nightmare_pressure [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_3.md:299 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:323 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1687,7 +1687,7 @@ BGM: bgm_nightmare_pressure [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_3.md:306 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:330 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1695,7 +1695,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=
 SFX: sfx_door_loop [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_3.md:318 · 角色缺少素材
+#### source/story/prologue-v2/prologue_3.md:342 · 角色缺少素材
 
 - 说话人“雾中的声音”没有任何含 asset 的 SHOW 声明。
 
@@ -1707,7 +1707,7 @@ DIALOGUE:
 
 ### b006 · 梦外的剑鸣
 
-#### source/story/prologue-v2/prologue_3.md:354 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:379 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1715,7 +1715,7 @@ DIALOGUE:
 BACKGROUND: bg_dream_house_loop [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_3.md:355 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:380 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1723,7 +1723,7 @@ BACKGROUND: bg_dream_house_loop [制作占位]
 BGM: bgm_sword_answer [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_3.md:359 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:384 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1731,7 +1731,7 @@ BGM: bgm_sword_answer [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_3.md:366 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:391 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1739,7 +1739,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=
 SFX: sfx_master_sword_resonance [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_3.md:376 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:401 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1747,7 +1747,7 @@ SFX: sfx_master_sword_resonance [制作占位]
 BACKGROUND: bg_grandmother_bedroom_night [制作占位，场内切镜]
 ````
 
-#### source/story/prologue-v2/prologue_3.md:381 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:406 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1755,7 +1755,7 @@ BACKGROUND: bg_grandmother_bedroom_night [制作占位，场内切镜]
 BACKGROUND: bg_dream_house_loop [制作占位，场内切镜]
 ````
 
-#### source/story/prologue-v2/prologue_3.md:382 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:407 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1763,7 +1763,7 @@ BACKGROUND: bg_dream_house_loop [制作占位，场内切镜]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_3.md:396 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:421 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1773,7 +1773,7 @@ SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复�
 
 ### b007 · 一剑斩断噩梦
 
-#### source/story/prologue-v2/prologue_3.md:415 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:440 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1781,7 +1781,7 @@ SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复�
 BACKGROUND: bg_dream_house_fracture [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_3.md:416 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:441 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1789,7 +1789,7 @@ BACKGROUND: bg_dream_house_fracture [制作占位]
 BGM: bgm_sword_breaks_dream [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_3.md:421 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:446 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1797,7 +1797,7 @@ BGM: bgm_sword_breaks_dream [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_3.md:425 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:450 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1805,7 +1805,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=
 SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=right
 ````
 
-#### source/story/prologue-v2/prologue_3.md:429 · 角色缺少素材
+#### source/story/prologue-v2/prologue_3.md:454 · 角色缺少素材
 
 - 说话人“雾中的声音”没有任何含 asset 的 SHOW 声明。
 
@@ -1815,7 +1815,7 @@ DIALOGUE:
 这里是我的——
 ````
 
-#### source/story/prologue-v2/prologue_3.md:436 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:461 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1825,7 +1825,7 @@ SFX: sfx_sword_cuts_dream [制作占位]
 
 ### b008 · 醒来后的陌生人
 
-#### source/story/prologue-v2/prologue_3.md:466 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:491 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1833,7 +1833,7 @@ SFX: sfx_sword_cuts_dream [制作占位]
 BACKGROUND: bg_grandmother_bedroom_night [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_3.md:467 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:492 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1841,7 +1841,7 @@ BACKGROUND: bg_grandmother_bedroom_night [制作占位]
 BGM: bgm_after_dream_quiet [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_3.md:472 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:497 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1849,7 +1849,7 @@ BGM: bgm_after_dream_quiet [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_3.md:476 · 占位素材
+#### source/story/prologue-v2/prologue_3.md:501 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1955,7 +1955,7 @@ SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复�
 
 ### c002 · 出门与认出
 
-#### source/story/prologue-v2/prologue_4.md:131 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:136 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1963,7 +1963,7 @@ SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复�
 BACKGROUND: bg_residential_junction_night [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:132 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:137 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1971,7 +1971,7 @@ BACKGROUND: bg_residential_junction_night [制作占位]
 BGM: bgm_organization_tension [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:137 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:142 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1979,7 +1979,7 @@ BGM: bgm_organization_tension [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_4.md:141 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:146 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1987,7 +1987,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=
 SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center
 ````
 
-#### source/story/prologue-v2/prologue_4.md:145 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:150 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1995,7 +1995,7 @@ SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复�
 SHOW: 黑衣队员 asset=char_organization_member_placeholder [占位符／待核对复用] position=right
 ````
 
-#### source/story/prologue-v2/prologue_4.md:191 · 角色缺少素材
+#### source/story/prologue-v2/prologue_4.md:197 · 角色缺少素材
 
 - 说话人“搜捕通讯”没有任何含 asset 的 SHOW 声明。
 
@@ -2007,7 +2007,7 @@ DIALOGUE:
 
 ### c003 · 第一次配合
 
-#### source/story/prologue-v2/prologue_4.md:202 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:208 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2015,7 +2015,7 @@ DIALOGUE:
 BACKGROUND: bg_old_district_access_night [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:203 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:209 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2023,7 +2023,7 @@ BACKGROUND: bg_old_district_access_night [制作占位]
 BGM: bgm_first_partners_battle [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:209 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:215 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2031,7 +2031,7 @@ BGM: bgm_first_partners_battle [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_4.md:213 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:219 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2039,7 +2039,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=
 SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center
 ````
 
-#### source/story/prologue-v2/prologue_4.md:217 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:223 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2047,7 +2047,7 @@ SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复�
 SHOW: 黑衣队员 asset=char_organization_member_placeholder [占位符／待核对复用] position=right
 ````
 
-#### source/story/prologue-v2/prologue_4.md:231 · 调用待接入
+#### source/story/prologue-v2/prologue_4.md:237 · 调用待接入
 
 - 调用 battle_prologue4_patrol 尚未接入；保留原始调用。新增战斗在运行时阻断。
 
@@ -2057,7 +2057,7 @@ CALL: battle_prologue4_patrol
 
 ### c004 · 第一名干部到场
 
-#### source/story/prologue-v2/prologue_4.md:263 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:269 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2065,7 +2065,7 @@ CALL: battle_prologue4_patrol
 BACKGROUND: bg_old_district_battle_street_night [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:264 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:270 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2073,7 +2073,7 @@ BACKGROUND: bg_old_district_battle_street_night [制作占位]
 BGM: bgm_foreigner_approach [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:270 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:276 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2081,7 +2081,7 @@ BGM: bgm_foreigner_approach [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_4.md:274 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:280 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2089,7 +2089,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=
 SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center
 ````
 
-#### source/story/prologue-v2/prologue_4.md:278 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:284 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2097,7 +2097,7 @@ SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复�
 SHOW: 黑衣干部甲 asset=char_organization_officer_a_placeholder [占位符／待核对复用] position=right
 ````
 
-#### source/story/prologue-v2/prologue_4.md:292 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:298 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2107,7 +2107,7 @@ SHOW: 不明生物·普通型 asset=char_deoxys_normal_placeholder [占位符／
 
 ### c005 · 林克明显占优
 
-#### source/story/prologue-v2/prologue_4.md:324 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:330 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2115,7 +2115,7 @@ SHOW: 不明生物·普通型 asset=char_deoxys_normal_placeholder [占位符／
 BACKGROUND: bg_old_district_battle_street_night [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:325 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:331 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2123,7 +2123,7 @@ BACKGROUND: bg_old_district_battle_street_night [制作占位]
 BGM: bgm_link_advantage [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:332 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:338 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2131,7 +2131,7 @@ BGM: bgm_link_advantage [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_4.md:336 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:342 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2139,7 +2139,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=
 SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center
 ````
 
-#### source/story/prologue-v2/prologue_4.md:340 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:346 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2147,7 +2147,7 @@ SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复�
 SHOW: 不明生物·普通型 asset=char_deoxys_normal_placeholder [占位符／待核对复用] position=right
 ````
 
-#### source/story/prologue-v2/prologue_4.md:347 · 调用待接入
+#### source/story/prologue-v2/prologue_4.md:353 · 调用待接入
 
 - 调用 battle_prologue4_deoxys_encounter 尚未接入；保留原始调用。新增战斗在运行时阻断。
 
@@ -2155,7 +2155,7 @@ SHOW: 不明生物·普通型 asset=char_deoxys_normal_placeholder [占位符／
 CALL: battle_prologue4_deoxys_encounter
 ````
 
-#### source/story/prologue-v2/prologue_4.md:349 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:355 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2165,7 +2165,7 @@ SFX: sfx_sword_energy_clash [制作占位]
 
 ### c006 · 防御型与第二名干部加入
 
-#### source/story/prologue-v2/prologue_4.md:380 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:386 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2173,7 +2173,7 @@ SFX: sfx_sword_energy_clash [制作占位]
 BACKGROUND: bg_old_district_battle_street_night [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:381 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:387 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2181,7 +2181,7 @@ BACKGROUND: bg_old_district_battle_street_night [制作占位]
 BGM: bgm_organization_reinforcements [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:387 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:393 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2189,7 +2189,7 @@ BGM: bgm_organization_reinforcements [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_4.md:391 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:397 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2197,7 +2197,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=
 SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center
 ````
 
-#### source/story/prologue-v2/prologue_4.md:395 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:401 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2205,7 +2205,7 @@ SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复�
 SHOW: 不明生物·普通型 asset=char_deoxys_normal_placeholder [占位符／待核对复用] position=right
 ````
 
-#### source/story/prologue-v2/prologue_4.md:399 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:405 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2213,7 +2213,7 @@ SHOW: 不明生物·普通型 asset=char_deoxys_normal_placeholder [占位符／
 SHOW: 不明生物·防御型 asset=char_deoxys_defense_placeholder [占位符／待核对复用] position=right
 ````
 
-#### source/story/prologue-v2/prologue_4.md:403 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:409 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2221,7 +2221,7 @@ SHOW: 不明生物·防御型 asset=char_deoxys_defense_placeholder [占位符�
 SFX: sfx_barrier_impact [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:415 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:421 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2231,7 +2231,7 @@ SHOW: 黑衣干部乙 asset=char_organization_officer_b_placeholder [占位符�
 
 ### c007 · 局势转为棘手
 
-#### source/story/prologue-v2/prologue_4.md:436 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:442 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2239,7 +2239,7 @@ SHOW: 黑衣干部乙 asset=char_organization_officer_b_placeholder [占位符�
 BACKGROUND: bg_old_district_battle_street_night [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:437 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:443 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2247,7 +2247,7 @@ BACKGROUND: bg_old_district_battle_street_night [制作占位]
 BGM: bgm_encirclement_pressure [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:445 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:451 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2255,7 +2255,7 @@ BGM: bgm_encirclement_pressure [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_4.md:449 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:455 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2265,7 +2265,7 @@ SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复�
 
 ### c008 · 怪盗与女剑士接应
 
-#### source/story/prologue-v2/prologue_4.md:490 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:496 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2273,7 +2273,7 @@ SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复�
 BACKGROUND: bg_old_district_battle_street_night [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:491 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:497 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2281,7 +2281,7 @@ BACKGROUND: bg_old_district_battle_street_night [制作占位]
 BGM: bgm_thief_escape [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:496 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:502 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2289,7 +2289,7 @@ BGM: bgm_thief_escape [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_4.md:500 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:506 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2297,17 +2297,18 @@ SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=
 SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center
 ````
 
-#### source/story/prologue-v2/prologue_4.md:504 · 角色缺少素材
+#### source/story/prologue-v2/prologue_4.md:510 · 角色缺少素材
 
 - 说话人“墙侧的声音”没有任何含 asset 的 SHOW 声明。
 
 ````text
 DIALOGUE:
 墙侧的声音：
-再往那边退，可真没路了。
+两位，夜路可不是这么逛的。
+再退一步，可就真撞墙了。
 ````
 
-#### source/story/prologue-v2/prologue_4.md:508 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:515 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2315,7 +2316,7 @@ DIALOGUE:
 SHOW: 蒙面人 asset=char_thief_masked_black_placeholder [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_4.md:529 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:536 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2323,7 +2324,7 @@ SHOW: 蒙面人 asset=char_thief_masked_black_placeholder [占位符／待核对
 BACKGROUND: bg_old_district_escape_alley_night [制作占位，场内切镜]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:531 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:538 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2333,7 +2334,7 @@ SHOW: 女剑士 asset=char_saber_traveler_placeholder [占位符／待核对复�
 
 ### c009 · 小巷中的真实身份
 
-#### source/story/prologue-v2/prologue_4.md:555 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:562 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2341,7 +2342,7 @@ SHOW: 女剑士 asset=char_saber_traveler_placeholder [占位符／待核对复�
 BACKGROUND: bg_old_district_quiet_alley_night [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:556 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:563 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2349,7 +2350,7 @@ BACKGROUND: bg_old_district_quiet_alley_night [制作占位]
 BGM: bgm_thief_reveal_quiet [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:563 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:570 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2357,7 +2358,7 @@ BGM: bgm_thief_reveal_quiet [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_4.md:567 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:574 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2365,7 +2366,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=
 SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center
 ````
 
-#### source/story/prologue-v2/prologue_4.md:571 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:578 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2373,7 +2374,7 @@ SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复�
 SHOW: 蒙面人 asset=char_thief_masked_black_placeholder [占位符／待核对复用] position=right
 ````
 
-#### source/story/prologue-v2/prologue_4.md:575 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:582 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2381,7 +2382,7 @@ SHOW: 蒙面人 asset=char_thief_masked_black_placeholder [占位符／待核对
 SHOW: 女剑士 asset=char_saber_traveler_placeholder [占位符／待核对复用] position=center
 ````
 
-#### source/story/prologue-v2/prologue_4.md:591 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:599 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2391,7 +2392,7 @@ SHOW: 怪盗 asset=char_thief_smile [占位符／待核对复用] position=right
 
 ### c010 · 圣杯战争的最低限度说明
 
-#### source/story/prologue-v2/prologue_4.md:642 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:651 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2399,7 +2400,7 @@ SHOW: 怪盗 asset=char_thief_smile [占位符／待核对复用] position=right
 BACKGROUND: bg_old_district_quiet_alley_night [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:643 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:652 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2407,7 +2408,7 @@ BACKGROUND: bg_old_district_quiet_alley_night [制作占位]
 BGM: bgm_holy_grail_explanation [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:650 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:659 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2415,7 +2416,7 @@ BGM: bgm_holy_grail_explanation [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_4.md:654 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:663 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2423,7 +2424,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=
 SHOW: 怪盗 asset=char_thief_smile [占位符／待核对复用] position=right
 ````
 
-#### source/story/prologue-v2/prologue_4.md:658 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:667 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2431,7 +2432,7 @@ SHOW: 怪盗 asset=char_thief_smile [占位符／待核对复用] position=right
 SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center
 ````
 
-#### source/story/prologue-v2/prologue_4.md:662 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:671 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2441,7 +2442,7 @@ SHOW: 女剑士 asset=char_saber_traveler_placeholder [占位符／待核对复�
 
 ### c011 · 介绍 Saber
 
-#### source/story/prologue-v2/prologue_4.md:736 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:746 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2449,7 +2450,7 @@ SHOW: 女剑士 asset=char_saber_traveler_placeholder [占位符／待核对复�
 BACKGROUND: bg_old_district_quiet_alley_night [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:737 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:747 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2457,7 +2458,7 @@ BACKGROUND: bg_old_district_quiet_alley_night [制作占位]
 BGM: bgm_temporary_companions [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:744 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:754 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2465,7 +2466,7 @@ BGM: bgm_temporary_companions [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_4.md:748 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:758 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2473,7 +2474,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=
 SHOW: 怪盗 asset=char_thief_smile [占位符／待核对复用] position=right
 ````
 
-#### source/story/prologue-v2/prologue_4.md:752 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:762 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2481,7 +2482,7 @@ SHOW: 怪盗 asset=char_thief_smile [占位符／待核对复用] position=right
 SHOW: 女剑士 asset=char_saber_traveler_placeholder [占位符／待核对复用] position=center
 ````
 
-#### source/story/prologue-v2/prologue_4.md:762 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:772 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2491,7 +2492,7 @@ SHOW: Saber asset=char_saber_traveler_placeholder [占位符／待核对复用] 
 
 ### c012 · 暂时合作
 
-#### source/story/prologue-v2/prologue_4.md:797 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:808 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2499,7 +2500,7 @@ SHOW: Saber asset=char_saber_traveler_placeholder [占位符／待核对复用] 
 BACKGROUND: bg_old_district_quiet_alley_night [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:798 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:809 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2507,7 +2508,7 @@ BACKGROUND: bg_old_district_quiet_alley_night [制作占位]
 BGM: bgm_temporary_companions [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:804 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:815 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2515,7 +2516,7 @@ BGM: bgm_temporary_companions [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_4.md:808 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:819 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2523,7 +2524,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=
 SHOW: 怪盗 asset=char_thief_smile [占位符／待核对复用] position=right
 ````
 
-#### source/story/prologue-v2/prologue_4.md:812 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:823 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2531,7 +2532,7 @@ SHOW: 怪盗 asset=char_thief_smile [占位符／待核对复用] position=right
 SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center
 ````
 
-#### source/story/prologue-v2/prologue_4.md:816 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:827 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2541,7 +2542,7 @@ SHOW: 女剑士 asset=char_saber_traveler_placeholder [占位符／待核对复�
 
 ### c013 · 夜归与新的同伴
 
-#### source/story/prologue-v2/prologue_4.md:873 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:885 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2549,7 +2550,7 @@ SHOW: 女剑士 asset=char_saber_traveler_placeholder [占位符／待核对复�
 BACKGROUND: bg_grandmother_house_entrance_night [制作占位]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:874 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:886 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2557,7 +2558,7 @@ BACKGROUND: bg_grandmother_house_entrance_night [制作占位]
 BGM: bgm_homecoming_warm_low [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:881 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:893 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2565,7 +2566,7 @@ BGM: bgm_homecoming_warm_low [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left
 ````
 
-#### source/story/prologue-v2/prologue_4.md:885 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:897 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2573,7 +2574,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=
 SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复用] position=center
 ````
 
-#### source/story/prologue-v2/prologue_4.md:889 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:901 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2581,7 +2582,7 @@ SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复�
 SHOW: 奶奶 asset=char_grandmother_warm [占位符／待核对复用] position=right
 ````
 
-#### source/story/prologue-v2/prologue_4.md:925 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:938 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -2589,7 +2590,7 @@ SHOW: 奶奶 asset=char_grandmother_warm [占位符／待核对复用] position=
 BACKGROUND: bg_grandmother_living_room_night [制作占位，场内切镜]
 ````
 
-#### source/story/prologue-v2/prologue_4.md:942 · 占位素材
+#### source/story/prologue-v2/prologue_4.md:955 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
