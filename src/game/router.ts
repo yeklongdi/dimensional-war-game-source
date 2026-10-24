@@ -82,7 +82,7 @@ function handoff(previous: GameState, next: GameState): AppTransition {
 }
 function begin(previous: GameState, library: StoryLibrary, levelId: string, sceneId: string, now: number): AppTransition {
   const level = levelById(levelId)!;
-  const error = chapterEntryError(level.actId, previous.flags) ?? sceneEntryError(level.actId, sceneId);
+  const error = chapterEntryError(level.actId, previous.flags) ?? sceneEntryError(level.actId, sceneId, previous.flags);
   if (error) return { state: previous, effects: [], rejectedReason: error };
   const transition = connectCall(resumeScene(previous, library, level.actId, sceneId, previous.run + 1, level.id));
   transition.state.progress = { ...previous.progress!, navigation: previous.progress!.navigation + 1, confirming: false };
@@ -137,7 +137,7 @@ export function reduceApp(previous: GameState, action: AppAction, library: Story
     if (transition.completedLevelId) return complete(transition, now);
     const moved = state.actId !== previous.actId || state.sceneId !== previous.sceneId;
     const resolved = state.screen === 'battle' && state.battle?.result && !previous.battle?.result;
-    if (!(moved || resolved || action.action.type === 'choose' || action.action.type === 'continue-story')) return transition;
+    if (!(moved || resolved || ['choose', 'continue-story', 'skip-battle', 'skip-call'].includes(action.action.type))) return transition;
     const saved = save(state, now);
     return { ...saved, effects: transition.effects };
   }

@@ -4,6 +4,7 @@
 .system-dialog p { margin: 8px 0 18px; color: #c6d1df; }
 .system-dialog .action-button { width: 100%; margin: 10px 0; justify-content: center; }
 .system-dialog[data-panel="system"] { width: min(480px,100%); }
+.system-dialog .skip-description { margin: 0 0 6px; font-size: 13px; color: #c8bb98; }
 .system-dialog[data-panel="confirm"] { width: min(620px,100%); }
 .system-notice { white-space: pre-wrap; color: #f4cc7b !important; margin-bottom: 0 !important; }
 .system-notice:empty { display: none; }

@@ -41,6 +41,7 @@ export type BattleReturn = {
   attempt: number; definition: BattleDefinition; combatants: Combatant[]; initialRng: RngState;
 };
 export type GameState = {
+  fastForward?: { run: number; revision: number }; fastForwardSerial?: number;
   system?: SystemState; settings?: Settings;
   screen: 'menu' | 'map' | 'story' | 'battle' | 'battle-debug'; battle?: BattleState; battleMode?: BattleMode;
   movementDraft?: MovementDraft;
@@ -60,7 +61,7 @@ export type Effect =
   | { kind: 'warn'; key: string; message: string };
 export type Transition = { state: GameState; effects: Effect[]; completedLevelId?: LevelId };
 export type Action =
-  | { type: 'advance' | 'complete-battle' | 'enter-act1' | 'restart' | 'reselect'; token: string }
+  | { type: 'advance' | 'complete-battle' | 'skip-call' | 'enter-act1' | 'restart' | 'reselect'; token: string }
   | { type: 'choose'; token: string; index: number }
   | { type: 'reveal'; token: string; count: number }
   | { type: 'toggle-debug' }

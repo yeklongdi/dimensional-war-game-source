@@ -10,6 +10,8 @@ import { defaults, validSettings } from './settings.js';
 import type { Settings, SettingsRead } from './settings.js';
 import type { Confirmation, RuntimeAction, SystemAction, SystemState } from './system-types.js';
 import { checkpointScene } from './story/chapter-policy.js';
+import { forwardMatches, normalizeForward, skipReason, startForward, stopForward } from './fast-forward.js';
+import { battleToken } from './battle/state-helpers.js';
 
 export type RuntimeTransition = Omit<AppTransition, 'saves'> & { vaults?: VaultRequest[]; settingsWrite?: { revision: number; data: Settings } };
 export type GameAction = AppAction | RuntimeAction;
@@ -113,6 +115,14 @@ function systemAction(state: GameState, a: SystemAction, library: StoryLibrary, 
       confirmation: undefined, pending: undefined, revision: s.revision + 1, uiRevision: s.uiRevision + 1, message: '' } }, effects: [] };
   }
   if (s.pending) return same;
+  if (a.intent === 'skip') {
+    if (s.panel !== 'system' || skipReason(state)) return same;
+    const cleared = { ...state, system: { ...s, panel: undefined, parent: undefined, uiRevision: s.uiRevision + 1, message: '' } };
+    if (state.screen === 'story' && state.waiting?.kind === 'text') return { state: startForward(cleared), effects: [] };
+    const action = state.screen === 'battle' ? { type: 'skip-battle' as const, token: battleToken(state.battle!) }
+      : { type: 'skip-call' as const, token: state.waiting!.token };
+    return wrap(reduceApp(cleared, { type: 'play', run: state.run, action }, library, now), cleared.system, state.settings!);
+  }
   if (a.intent === 'go-map' || a.intent === 'go-menu') {
     const cleared = { ...state, system: { ...s, panel: undefined, parent: undefined, uiRevision: s.uiRevision + 1 } };
     return wrap(reduceApp(cleared, { type: a.intent === 'go-map' ? 'open-map' : 'main-menu', token: navigationToken(cleared) }, library, now), cleared.system, state.settings!);
@@ -145,8 +155,17 @@ function systemAction(state: GameState, a: SystemAction, library: StoryLibrary, 
   }
   return same;
 }
-export function reduceRuntime(state: GameState, action: GameAction, library: StoryLibrary, now: number, newId = 'test-run-identity'): RuntimeTransition {
+function runtimeCore(state: GameState, action: GameAction, library: StoryLibrary, now: number, newId: string): RuntimeTransition {
   const s = state.system; if (!s) return reduceApp(state, action as AppAction, library, now);
+  if (action.type === 'fast-forward') {
+    if (!forwardMatches(state, action)) return { state, effects: [] };
+    if (action.intent === 'stop') return { state: stopForward(state), effects: [] };
+    if (paused(state)) return { state, effects: [] };
+    return wrap(reduceApp(state, { type: 'play', run: action.run, action: { type: 'advance', token: action.token } }, library, now), s, state.settings!);
+  }
+  if (state.fastForward && action.type === 'play' && action.action.type === 'advance') {
+    return action.run === state.run && action.action.token === state.waiting?.token ? { state: stopForward(state), effects: [] } : { state, effects: [] };
+  }
   if (action.type === 'system') return systemAction(state, action, library, now, newId);
   if (action.type === 'vault-result') return result(state, action, library, now);
   if (action.type === 'settings-change') {
@@ -169,4 +188,9 @@ export function reduceRuntime(state: GameState, action: GameAction, library: Sto
   if ((paused(state) && !diagnostic && action.type !== 'resize-map') || (state.screen === 'menu' && (action.type === 'resume' || action.type === 'open-map'))) return { state, effects: [], rejectedReason: '系统菜单已暂停底层操作' };
   const t = reduceApp(state, action, library, now);
   return t.state === state ? t : wrap(t, s, state.settings ?? { ...defaults });
+}
+
+export function reduceRuntime(state: GameState, action: GameAction, library: StoryLibrary, now: number, newId = 'test-run-identity'): RuntimeTransition {
+  const transition = runtimeCore(state, action, library, now, newId);
+  return { ...transition, state: normalizeForward(transition.state) };
 }

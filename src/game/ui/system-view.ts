@@ -8,6 +8,7 @@ import { displaySceneTitle } from '../story/chapter-policy.js';
 import { currentLevel, levelById, levels } from '../../content/levels.js';
 import type { SaveV2 } from '../save-v2.js';
 import { button, element } from './elements.js';
+import { skipReason } from '../fast-forward.js';
 
 export function snapshotLabel(data: SaveV2): string {
   const point = data.checkpoint;
@@ -80,6 +81,13 @@ export class SystemView {
       else if (!s.panel) this.content.append(element('h1', '', '正在升级旧档…'));
       else if (s.panel === 'system') {
         this.content.append(element('h1', '', '系统菜单'));
+        if (state.screen === 'story' || state.screen === 'battle') {
+          const skip = button('跳过', 'system-skip', this.act('skip'));
+          const reason = skipReason(state); skip.disabled = !!reason; skip.title = reason;
+          this.content.append(skip, element('p', 'skip-description', reason || (state.screen === 'battle'
+            ? '跳过本场战斗，按胜利继续原剧情。' : state.waiting?.kind === 'blocked-call'
+              ? '跳过此处尚未制作的战斗，继续原文。' : '每句0.3秒快进，遇选项、战斗或关末停止。')));
+        }
         for (const [title, intent] of [['存档', 'save'], ['读取', 'load'], ['设置', 'settings'], ['返回游戏', 'back'], ['返回地图', 'go-map'], ['返回主菜单', 'go-menu']] as const)
           this.content.append(button(title, `system-${intent}`, this.act(intent)));
       } else if (s.panel === 'settings') this.buildSettings();

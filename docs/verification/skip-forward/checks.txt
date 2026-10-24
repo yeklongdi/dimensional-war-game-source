@@ -1,0 +1,84 @@
+
+> dimensional-war-web@0.0.0 typecheck
+> tsc --noEmit
+
+
+> dimensional-war-web@0.0.0 test
+> vitest run
+
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.0.5 [39m[90mE:/笔记/次元战争设定/游戏文件[39m
+
+ [32m✓[39m src/tests/prologue-four-parts.test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 220[2mms[22m[39m
+ [32m✓[39m src/tests/restore.test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 279[2mms[22m[39m
+ [32m✓[39m src/tests/map-flow.test.ts [2m([22m[2m10 tests[22m[2m)[22m[33m 305[2mms[22m[39m
+ [32m✓[39m src/tests/router.test.ts [2m([22m[2m21 tests[22m[2m)[22m[33m 334[2mms[22m[39m
+ [32m✓[39m src/tests/player.test.ts [2m([22m[2m14 tests[22m[2m)[22m[33m 535[2mms[22m[39m
+ [32m✓[39m src/tests/campaign.test.ts [2m([22m[2m10 tests[22m[2m)[22m[33m 490[2mms[22m[39m
+ [32m✓[39m src/tests/export.test.ts [2m([22m[2m12 tests[22m[2m)[22m[32m 189[2mms[22m[39m
+ [32m✓[39m src/tests/movement-planning.test.ts [2m([22m[2m16 tests[22m[2m)[22m[32m 185[2mms[22m[39m
+ [32m✓[39m src/tests/skip-progress.test.ts [2m([22m[2m13 tests[22m[2m)[22m[32m 222[2mms[22m[39m
+ [32m✓[39m src/tests/battle-skip.test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 272[2mms[22m[39m
+ [32m✓[39m src/tests/fast-forward.test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 143[2mms[22m[39m
+ [32m✓[39m src/tests/system-runtime.test.ts [2m([22m[2m18 tests[22m[2m)[22m[32m 192[2mms[22m[39m
+ [32m✓[39m src/tests/battle-flow.test.ts [2m([22m[2m19 tests[22m[2m)[22m[32m 75[2mms[22m[39m
+ [32m✓[39m src/tests/battle-ai.test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 79[2mms[22m[39m
+ [32m✓[39m src/tests/movement-path.test.ts [2m([22m[2m27 tests[22m[2m)[22m[32m 151[2mms[22m[39m
+ [32m✓[39m src/tests/save-v4.test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 80[2mms[22m[39m
+ [32m✓[39m src/tests/map-save-v2.test.ts [2m([22m[2m56 tests[22m[2m)[22m[32m 90[2mms[22m[39m
+ [32m✓[39m src/tests/vault-v3.test.ts [2m([22m[2m23 tests[22m[2m)[22m[32m 82[2mms[22m[39m
+ [32m✓[39m src/tests/inspiration.test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 52[2mms[22m[39m
+ [32m✓[39m src/tests/battle-m3.test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 72[2mms[22m[39m
+ [32m✓[39m src/tests/battle-rules.test.ts [2m([22m[2m17 tests[22m[2m)[22m[32m 46[2mms[22m[39m
+ [32m✓[39m src/tests/hero-samples.test.ts [2m([22m[2m14 tests[22m[2m)[22m[32m 54[2mms[22m[39m
+ [32m✓[39m src/tests/prologue-portraits.test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 69[2mms[22m[39m
+ [32m✓[39m src/tests/visual-rules.test.ts [2m([22m[2m28 tests[22m[2m)[22m[32m 52[2mms[22m[39m
+ [32m✓[39m src/tests/parser.test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 39[2mms[22m[39m
+ [32m✓[39m src/tests/battle-grid.test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 28[2mms[22m[39m
+ [32m✓[39m src/tests/settings-audio.test.ts [2m([22m[2m15 tests[22m[2m)[22m[32m 39[2mms[22m[39m
+ [32m✓[39m src/tests/map-window.test.ts [2m([22m[2m17 tests[22m[2m)[22m[32m 42[2mms[22m[39m
+ [32m✓[39m src/tests/visual-loading.test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 43[2mms[22m[39m
+ [32m✓[39m src/tests/save-storage.test.ts [2m([22m[2m11 tests[22m[2m)[22m[32m 66[2mms[22m[39m
+ [32m✓[39m src/tests/visual-refresh.test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 27[2mms[22m[39m
+ [32m✓[39m src/tests/map-popup-layout.test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 20[2mms[22m[39m
+ [32m✓[39m src/tests/asset-url.test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 17[2mms[22m[39m
+ [32m✓[39m src/tests/save-format.test.ts [2m([22m[2m21 tests[22m[2m)[22m[32m 37[2mms[22m[39m
+ [32m✓[39m src/tests/battle-seed.test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 18[2mms[22m[39m
+ [32m✓[39m src/tests/hero-assets.test.mjs [2m([22m[2m33 tests[22m[2m)[22m[33m 4968[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m36 passed[39m[22m[90m (36)[39m
+[2m      Tests [22m [1m[32m523 passed[39m[22m[90m (523)[39m
+[2m   Start at [22m 14:44:53
+[2m   Duration [22m 5.40s[2m (tests 59%, import 28%, transform 9%, worker 3%, environment 1%)[22m
+
+[2m    Isolate [22m [33m36 workers spawned[39m[2m · ~437ms startup each (spawn + environment, per file)[22m
+[2m            [22m [2mat least ~1.81s faster with [22m[33misolate: false[39m[2m — reuses workers across files instead of one per file[22m
+
+
+> dimensional-war-web@0.0.0 build
+> tsc --noEmit && vite build
+
+[36mvite v8.3.4 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 90 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.43 kB │ gzip:  0.30 kB
+dist/assets/index-D_w9lRjR.css   20.91 kB │ gzip:  5.63 kB
+dist/assets/index-C9PI85b6.js   291.12 kB │ gzip: 91.87 kB
+
+[32m✓ built in 434ms[39m
+
+> dimensional-war-web@0.0.0 build
+> tsc --noEmit && vite build --base /dimensional-war-game-source/
+
+[36mvite v8.3.4 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 90 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.49 kB │ gzip:  0.32 kB
+dist/assets/index-D_w9lRjR.css   20.91 kB │ gzip:  5.63 kB
+dist/assets/index-TOV-zCU1.js   291.17 kB │ gzip: 91.88 kB
+
+[32m✓ built in 277ms[39m

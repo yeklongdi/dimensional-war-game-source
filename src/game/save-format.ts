@@ -1,6 +1,7 @@
 import type { StoryLibrary } from './state.js';
 import type { LevelId } from '../content/levels.js';
 import type { SaveV2 } from './save-v2.js';
+import { skippedFlag } from './story/skip-policy.js';
 
 export const saveKey = 'dw.save.v1';
 export type ActId = 'prologue' | 'act1';
@@ -34,6 +35,7 @@ export function mergeFlags(...records: Readonly<Record<string, boolean>>[]): Rec
 export function allowedFlags(library: StoryLibrary): ReadonlySet<string> {
   const flags = new Set<string>([...Object.values(completionFlags), 'flag_battle_prologue_tutorial_won', 'flag_battle_black_humanoid_won']);
   for (const act of Object.values(library)) for (const scene of act.scenes) for (const node of scene.nodes) {
+    if (library.prologue_4 && node.kind === 'call') { const flag = skippedFlag(node.name); if (flag) flags.add(flag); }
     if (node.kind === 'set') flags.add(node.flag);
     if (node.kind === 'choice') for (const option of node.options) for (const child of option.nodes) if (child.kind === 'set') flags.add(child.flag);
   }

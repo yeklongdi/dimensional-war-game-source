@@ -5,6 +5,7 @@ import { overrides, sfxBindings } from './config.js';
 import { applyPresentation, hideActors, stageText } from './presentation.js';
 import { levelById, levelExits, levelHasScene } from '../../content/levels.js';
 import { chapterEntryError, unfinishedScene, sceneEntryError } from './chapter-policy.js';
+import { skippedFlag, unbuiltBattles } from './skip-policy.js';
 
 function getScene(state: GameState, library: StoryLibrary): Scene {
   const scene = library[state.actId]?.scenes.find(item => item.id === state.sceneId);
@@ -99,7 +100,8 @@ function drive(state: GameState, library: StoryLibrary, effects: Effect[]): Tran
           }
           if (node.name.startsWith('battle_')) {
             state.waiting = { kind: 'blocked-call', token: token(state), origin, callId: node.name,
-              message: '此战斗尚未开放。进度已停在调用之前，可返回地图、读取存档或返回主菜单。' };
+              message: unbuiltBattles.includes(node.name) ? '此战斗尚未制作，可从系统菜单跳过。'
+                : '此战斗尚未开放。可返回地图、读取存档或返回主菜单。' };
             return { state, effects };
           }
           warning(state, effects, `call:${node.name}`, `调用 ${node.name} 暂用占位处理，继续原文已有内容。`);
@@ -137,7 +139,7 @@ export function startScene(state: GameState, library: StoryLibrary): Transition 
   if (state.activeLevelId) {
     const level = levelById(state.activeLevelId);
     if (!level || !levelHasScene(level, state.sceneId)) throw new Error('关卡入口与场景不匹配');
-    const error = chapterEntryError(state.actId, state.flags) ?? sceneEntryError(state.actId, state.sceneId);
+    const error = chapterEntryError(state.actId, state.flags) ?? sceneEntryError(state.actId, state.sceneId, state.flags);
     if (error) throw new Error(error);
   }
   enterScene(state, state.sceneId, library);
@@ -152,6 +154,7 @@ export function reduceGame(previous: GameState, action: Action, library: StoryLi
   if (action.type === 'choose' && (waiting?.kind !== 'choice' || !waiting.options.some(item => item.index === action.index && item.enabled))) return unchanged();
   if (action.type === 'advance' && waiting?.kind !== 'text') return unchanged();
   if (action.type === 'complete-battle' && waiting?.kind !== 'battle') return unchanged();
+  if (action.type === 'skip-call' && (waiting?.kind !== 'blocked-call' || !unbuiltBattles.includes(waiting.callId))) return unchanged();
   if (action.type === 'reveal' && waiting?.kind !== 'text') return unchanged();
   if (action.type === 'enter-act1' && (waiting?.kind !== 'end' || previous.actId !== 'prologue')) return unchanged();
   if (action.type === 'restart' && waiting?.kind !== 'end' && waiting?.kind !== 'error') return unchanged();
@@ -186,6 +189,11 @@ export function reduceGame(previous: GameState, action: Action, library: StoryLi
     }
     case 'complete-battle':
       if (waiting?.kind === 'battle') hideActors(state, overrides.battleHides[waiting.battleId] ?? []);
+      return drive(state, library, effects);
+    case 'skip-call':
+      if (waiting?.kind !== 'blocked-call') return unchanged();
+      state.flags[skippedFlag(waiting.callId)!] = true;
+      warning(state, effects, `skip:${waiting.callId}`, `已主动跳过未制作的战斗 ${waiting.callId}，继续原文。`);
       return drive(state, library, effects);
     case 'reselect':
       enterScene(state, 'a010', library);

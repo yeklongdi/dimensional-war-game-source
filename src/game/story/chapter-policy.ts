@@ -1,4 +1,5 @@
 import type { GameState } from '../state.js';
+import { lateSceneError } from './skip-policy.js';
 
 export const chapterTitles: Readonly<Record<string, string>> = {
   prologue: '序幕（一）', act1: '序幕（二）', prologue_3: '序幕（三）', prologue_4: '序幕（四）',
@@ -15,7 +16,6 @@ export function checkpointScene(state: Pick<GameState, 'actId' | 'sceneId'>): st
   return state.actId === 'act1' && state.sceneId === 'a010_return_class' ? 'a010' : state.sceneId;
 }
 export const unfinishedScene = (scene: string): boolean => scene === 'a010_return_class' || scene.startsWith('a007_');
-export function sceneEntryError(actId: string, sceneId: string): string | undefined {
-  return actId === 'prologue_4' && !['c001', 'c002', 'c003'].includes(sceneId)
-    ? '序幕（四）尚有未接战斗，后续场景仅供独立开发预览。' : undefined;
+export function sceneEntryError(actId: string, sceneId: string, flags: Readonly<Record<string, boolean>> = {}): string | undefined {
+  return actId === 'prologue_4' ? lateSceneError(sceneId, flags) : undefined;
 }

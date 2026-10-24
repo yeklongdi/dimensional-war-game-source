@@ -1,0 +1,87 @@
+{
+  "note": "受控检查点页 tests/skip-forward.html 使用合法场景头 v4 与替换IO，不接触真实localStorage；战斗中真实打到失败，不注入血量或胜负；门槛反向用例使用独立开发origin手写非法v4串。",
+  "origin": "http://127.0.0.1:43920/tests/skip-forward.html?scene=p006",
+  "steps": [
+    {
+      "case": "controlled-checkpoint-load",
+      "observed": {
+        "scene": "p006",
+        "text": "黑衣人将注意力转向男高。\n战斗界面切入。",
+        "writes": "2",
+        "legacyUnchanged": "true",
+        "checkpoint": { "kind": "level", "levelId": "prologue_02", "sceneId": "p006" }
+      }
+    },
+    {
+      "case": "escape-opens-skip-first",
+      "observed": {
+        "dialog": "系统菜单",
+        "firstAction": "跳过",
+        "hint": "每句0.3秒快进，遇选项、战斗或关末停止。",
+        "screenshot": "controlled-checkpoint-menu.jpg"
+      }
+    },
+    {
+      "case": "forward-from-checkpoint-stops-before-battle",
+      "observed": {
+        "after": "序幕（一） · 仓库区冲突 / 第 1 轮 · 先攻待确认",
+        "heroHp": "10/10",
+        "enemiesHp": ["6/6", "6/6"]
+      }
+    },
+    {
+      "case": "real-defeat-without-injection",
+      "observed": {
+        "method": "每回合只点结束时回合，不攻击；敌方AI自行进攻",
+        "round5": "男高 HP 0/10 · 昏迷·倒地·失能 · 死亡豁免：成功 0 / 失败 2",
+        "result": "失败：男高死亡 / 战斗失败",
+        "screenshot": "controlled-failure-screen.jpg",
+        "log": "controlled-failure.txt"
+      }
+    },
+    {
+      "case": "escape-at-failure",
+      "observed": {
+        "dialog": "系统菜单",
+        "firstAction": "跳过",
+        "hint": "跳过本场战斗，按胜利继续原剧情。"
+      }
+    },
+    {
+      "case": "skip-after-failure-returns-post-battle",
+      "observed": {
+        "scene": "p007",
+        "text": "几个黑衣人倒在地上，另一些黑衣人退回仓库区阴影。\n男高转头看向墙角。",
+        "flags": {
+          "flag_battle_prologue_tutorial_won": true,
+          "flag_battle_prologue_tutorial_skipped": true,
+          "flag_prologue_p006_01": true
+        },
+        "checkpoint": { "kind": "level", "levelId": "prologue_02", "sceneId": "p007" },
+        "completedLevelIds": ["prologue_01"],
+        "writes": "4",
+        "legacyUnchanged": "true",
+        "screenshot": "controlled-failure-skip-after.jpg"
+      }
+    },
+    {
+      "case": "late-checkpoint-without-skip-record-rejected",
+      "origin": "http://127.0.0.1:43922/",
+      "observed": {
+        "seeded": "v4 auto 检查点 c004，flags 无 flag_battle_prologue4_patrol_skipped",
+        "menuNotice": "自动档损坏；有效手动槽仍可读取，原槽未覆盖。",
+        "rawPreserved": { "revision": 1, "savedAt": 1792800000000 },
+        "screenshot": "gate-rejected.jpg"
+      }
+    },
+    {
+      "case": "late-checkpoint-with-skip-record-accepted",
+      "origin": "http://127.0.0.1:43922/",
+      "observed": {
+        "patched": "同一串仅补 flag_battle_prologue4_patrol_skipped=true",
+        "autoSlot": "自动档：警报下的同行者 · 第一名干部到场",
+        "screenshot": "gate-accepted.jpg"
+      }
+    }
+  ]
+}

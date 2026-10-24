@@ -4,7 +4,8 @@ import { storyLibrary } from './story/library.js';
 import type { CampaignAction } from './campaign.js';
 import { navigationToken } from './router.js';
 import type { NavigationAction } from './router.js';
-import { hydrateRuntime, paused, reduceRuntime } from './runtime.js';
+import { hydrateRuntime, paused, reduceRuntime, systemToken } from './runtime.js';
+import { currentForwardAction, textClockPlan } from './fast-forward.js';
 import type { GameAction, RuntimeTransition } from './runtime.js';
 import { browserStorage } from './vault-storage.js';
 import { browserStoryVaultStore, saveKeyV4 } from './save-v4.js';
@@ -45,19 +46,16 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
   const systemView = new SystemView(root, dispatch);
 
   function syncClock() {
-    const waiting = state.waiting;
-    const typing = !paused(state) && !state.progress?.confirming && state.screen === 'story' && waiting?.kind === 'text' && waiting.revealed < Array.from(waiting.text).length;
-    const waitToken = typing ? waiting.token : '', textMs = state.settings!.textMs;
-    const nextToken = typing ? `${waitToken}:${textMs}` : '';
+    const plan = textClockPlan(state), nextToken = plan?.key ?? '';
     if (timerToken === nextToken) return;
     if (timer !== undefined) window.clearInterval(timer);
     timerToken = nextToken; timer = undefined;
-    if (!typing) return;
-    const run = state.run;
+    if (!plan) return;
     timer = window.setInterval(() => {
-      if (disposed || paused(state) || state.run !== run || state.screen !== 'story' || state.waiting?.kind !== 'text' || state.waiting.token !== waitToken || timerToken !== nextToken) return;
-      play({ type: 'reveal', token: waitToken, count: state.waiting.revealed + 1 }, run);
-    }, textMs);
+      if (disposed || paused(state) || state.run !== plan.run || state.screen !== 'story' || state.waiting?.kind !== 'text' || state.waiting.token !== plan.token || timerToken !== nextToken) return;
+      if (plan.revision !== undefined) dispatch({ type: 'fast-forward', intent: 'tick', run: plan.run, revision: plan.revision, token: plan.token });
+      else play({ type: 'reveal', token: plan.token, count: state.waiting.revealed + 1 }, plan.run);
+    }, plan.delay);
   }
   function syncBattleClock() {
     if (battleTimer !== undefined) window.clearTimeout(battleTimer);
@@ -125,13 +123,13 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
   }
   function dispatch(action: GameAction) {
     if (disposed) return;
-    if (action.type === 'play') {
+    if (action.type === 'play' || action.type === 'fast-forward') {
       const latest = store.read();
       if (latest.kind === 'valid' && state.system!.activeRunId && latest.data.activeRunId !== state.system!.activeRunId) queue.push({ type: 'vault-external', read: latest });
     }
     if (action.type === 'system') {
       audio.unlock();
-      if (action.intent === 'reload') queue.push({ type: 'vault-external', read: store.read() });
+      if (action.intent === 'reload' || action.intent === 'skip') queue.push({ type: 'vault-external', read: store.read() });
     }
     queue.push(action);
     if (dispatching) return;
@@ -146,7 +144,12 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
     } finally { dispatching = false; }
   }
   const keydown = (event: KeyboardEvent) => {
-    if (disposed || paused(state) || state.progress?.confirming || state.screen !== 'story' || event.repeat || event.isComposing) return;
+    if (disposed || paused(state) || state.progress?.confirming || event.repeat || event.isComposing) return;
+    if (event.key === 'Escape' && (state.screen === 'story' || state.screen === 'battle')) {
+      event.preventDefault(); event.stopImmediatePropagation();
+      dispatch({ type: 'system', intent: 'open', token: systemToken(state) }); return;
+    }
+    if (state.screen !== 'story') return;
     if (event.target instanceof Element && event.target.closest('.app-chrome, .dev-overlay, button')) return;
     if (event.code === 'Backquote' || event.key === '~') { event.preventDefault(); play({ type: 'toggle-debug' }); return; }
     if (event.code !== 'Space' && event.key !== 'Enter') return;
@@ -158,13 +161,17 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
     if (event.key === saveKeyV4 || event.key === saveKeyV3 || event.key === saveKeyV2 || event.key === saveKey || event.key === null) dispatch({ type: 'vault-external', read: store.read() });
     if (event.key === settingsKey) { /* 偏好不自动覆盖当前窗口正在调节的值，刷新时读取最新持久设置。 */ }
   };
-  document.addEventListener('keydown', keydown); window.addEventListener('storage', storageChanged);
+  const stopFast = () => { const action = currentForwardAction(state, 'stop'); if (action) dispatch(action); };
+  const visibilityChanged = () => { if (document.hidden) stopFast(); };
+  document.addEventListener('keydown', keydown, true); window.addEventListener('storage', storageChanged);
+  window.addEventListener('blur', stopFast); document.addEventListener('visibilitychange', visibilityChanged);
   commit(initial, true);
   return () => {
     disposed = true; queue.length = 0;
     if (timer !== undefined) window.clearInterval(timer);
     if (battleTimer !== undefined) window.clearTimeout(battleTimer);
-    document.removeEventListener('keydown', keydown); window.removeEventListener('storage', storageChanged);
+    document.removeEventListener('keydown', keydown, true); window.removeEventListener('storage', storageChanged);
+    window.removeEventListener('blur', stopFast); document.removeEventListener('visibilitychange', visibilityChanged);
     view?.dispose(); systemView.dispose(); audio.dispose();
   };
 }
