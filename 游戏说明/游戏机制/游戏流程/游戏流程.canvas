@@ -1,0 +1,69 @@
+{
+  "nodes": [
+    {
+      "id": "0b775a3d0bb6b414",
+      "type": "text",
+      "text": "开始游戏\n",
+      "styleAttributes": {},
+      "x": -1960,
+      "y": -246,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "2cd5f381026ea0a2",
+      "x": -880,
+      "y": -416,
+      "width": 400,
+      "height": 400,
+      "type": "file",
+      "file": "游戏说明/游戏机制/关卡内剧情树.md"
+    },
+    {
+      "id": "cc310fe2f48b5730",
+      "x": -1480,
+      "y": -416,
+      "width": 400,
+      "height": 400,
+      "type": "file",
+      "file": "游戏说明/游戏机制/关卡选择.md"
+    },
+    {
+      "id": "991f2b3014eede0a",
+      "type": "file",
+      "file": "游戏说明/游戏机制/关卡选择.md",
+      "x": 360,
+      "y": -416,
+      "width": 400,
+      "height": 400
+    }
+  ],
+  "edges": [
+    {
+      "id": "45e8d3e3caeb49be",
+      "fromNode": "0b775a3d0bb6b414",
+      "fromSide": "right",
+      "toNode": "cc310fe2f48b5730",
+      "toSide": "left"
+    },
+    {
+      "id": "a82aa007ef429c4d",
+      "fromNode": "cc310fe2f48b5730",
+      "fromSide": "right",
+      "toNode": "2cd5f381026ea0a2",
+      "toSide": "left"
+    },
+    {
+      "id": "ac3e948216023fcb",
+      "fromNode": "2cd5f381026ea0a2",
+      "fromSide": "right",
+      "toNode": "991f2b3014eede0a",
+      "toSide": "left",
+      "label": "可体验剧情完了后 解锁下一个关卡"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
+}

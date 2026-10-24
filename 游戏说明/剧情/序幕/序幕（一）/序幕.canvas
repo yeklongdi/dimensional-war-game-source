@@ -1,0 +1,201 @@
+{
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  },
+  "edges": [
+    {
+      "toNode": "n1",
+      "fromNode": "n0",
+      "toSide": "top",
+      "id": "e0",
+      "fromSide": "bottom"
+    },
+    {
+      "toNode": "n2",
+      "fromNode": "n1",
+      "toSide": "top",
+      "id": "e1",
+      "fromSide": "bottom"
+    },
+    {
+      "toNode": "n3",
+      "fromNode": "n2",
+      "toSide": "top",
+      "id": "e2",
+      "fromSide": "bottom"
+    },
+    {
+      "toNode": "n4",
+      "fromNode": "n3",
+      "toSide": "top",
+      "id": "e3",
+      "fromSide": "bottom"
+    },
+    {
+      "toNode": "n5",
+      "fromNode": "n4",
+      "toSide": "top",
+      "id": "e4",
+      "fromSide": "bottom"
+    },
+    {
+      "toNode": "n6",
+      "fromNode": "n5",
+      "toSide": "top",
+      "id": "e5",
+      "fromSide": "bottom"
+    },
+    {
+      "toNode": "n7",
+      "fromNode": "n6",
+      "toSide": "top",
+      "id": "e6",
+      "fromSide": "bottom"
+    },
+    {
+      "toNode": "n8",
+      "fromNode": "n7",
+      "toSide": "top",
+      "id": "e7",
+      "fromSide": "bottom"
+    },
+    {
+      "toNode": "n9",
+      "fromNode": "n8",
+      "toSide": "top",
+      "id": "e8",
+      "fromSide": "bottom"
+    },
+    {
+      "id": "e9",
+      "label": "次日清晨",
+      "toSide": "top",
+      "toNode": "n10",
+      "fromSide": "bottom",
+      "fromNode": "n9"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "n0",
+      "y": -820,
+      "width": 440,
+      "type": "text",
+      "height": 80,
+      "x": -600,
+      "styleAttributes": {},
+      "text": "序幕（一）：搬来太阳市的前一天"
+    },
+    {
+      "id": "n1",
+      "y": -660,
+      "width": 440,
+      "type": "text",
+      "height": 130,
+      "x": -600,
+      "styleAttributes": {},
+      "text": "① 奶奶家门前，下午\n男高拎着行李箱和行李袋，站在奶奶家门前。老房子、桂花树、傍晚的阳光。\n他深吸一口气：六年了，终于回来了。"
+    },
+    {
+      "id": "n2",
+      "y": -450,
+      "width": 440,
+      "type": "text",
+      "height": 130,
+      "x": -600,
+      "styleAttributes": {},
+      "text": "② 进门\n奶奶开门迎出来，看到他愣了几秒，眼眶红了。\n她轻声问：孩子，是你回来了？"
+    },
+    {
+      "id": "n3",
+      "y": -240,
+      "width": 440,
+      "type": "text",
+      "height": 130,
+      "x": -600,
+      "styleAttributes": {},
+      "text": "③ 奶奶的慰问\n奶奶说他长高了、结实了，像爷爷年轻的时候。\n男高热血回应：奶奶，我长大了，以后换我照顾您！"
+    },
+    {
+      "id": "n4",
+      "y": -30,
+      "width": 440,
+      "type": "text",
+      "height": 130,
+      "x": -600,
+      "styleAttributes": {},
+      "text": "④ 整理东西\n收拾房间、叠衣服、装好明天报到的书包。\n出门前奶奶叮嘱：别走太远，早点回来，我给你留门。"
+    },
+    {
+      "id": "n5",
+      "y": 180,
+      "width": 440,
+      "type": "text",
+      "height": 210,
+      "x": -600,
+      "styleAttributes": {},
+      "text": "⑤ 夜晚的街道\n散步时走进旧街区，来到仓库区外围。\n月光下，黑衣组织成员正围堵一个黑衣蒙面人，男高见他被逼到墙角，主动介入。\n作者身份是怪盗；本幕不向男高揭露。"
+    },
+    {
+      "id": "n6",
+      "y": 470,
+      "width": 440,
+      "type": "text",
+      "height": 110,
+      "x": -600,
+      "styleAttributes": {},
+      "text": "⑥ 战斗开始\n【战斗开始 进行战斗教学】"
+    },
+    {
+      "id": "n7",
+      "y": 660,
+      "width": 440,
+      "type": "text",
+      "height": 190,
+      "x": -600,
+      "styleAttributes": {},
+      "text": "⑦ 战斗结束\n黑衣人或倒地或退走，男高喘着气。\n蒙面人仍遮住脸，向男高点头后离开。\n双方此时没有互通身份；序幕四由怪盗回报援手。"
+    },
+    {
+      "id": "n8",
+      "y": 930,
+      "width": 440,
+      "type": "text",
+      "height": 130,
+      "x": -600,
+      "styleAttributes": {},
+      "text": "⑧ 回家\n一路小跑回家，奶奶坐在藤椅上等他。\n男高含糊带过，说只是多逛了一会儿，差点迷路。"
+    },
+    {
+      "id": "n9",
+      "y": 1140,
+      "width": 440,
+      "type": "text",
+      "height": 130,
+      "x": -600,
+      "styleAttributes": {},
+      "text": "⑨ 序幕结束\n睡前下定决心：明天开始，我就是太阳市第一高中的学生了。\n学校地下深处，漆黑的结晶像心脏般，极轻微地跳动了一下。"
+    },
+    {
+      "id": "n10",
+      "y": 1350,
+      "width": 440,
+      "file": "游戏说明/剧情/序幕/序幕（二）/序幕（二）：转学生来到太阳市第一高中.md",
+      "type": "file",
+      "height": 260,
+      "x": -600,
+      "styleAttributes": {}
+    },
+    {
+      "id": "n11",
+      "y": 1350,
+      "width": 440,
+      "file": "游戏说明/剧情/序幕/序幕（一）/序幕_Galgame脚本.md",
+      "type": "file",
+      "height": 260,
+      "x": -80,
+      "styleAttributes": {}
+    }
+  ]
+}

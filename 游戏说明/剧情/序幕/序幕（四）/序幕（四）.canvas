@@ -1,0 +1,322 @@
+{
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  },
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": 0,
+      "y": -260,
+      "width": 600,
+      "height": 170,
+      "text": "# 序幕（四）：警报下的同行者\nC001—C013\n搜捕梦魇 → 卷入冲突 → 压制普通型 → 增援 → 撤离 → 夜归",
+      "color": "3"
+    },
+    {
+      "id": "C001",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 270,
+      "text": "## C001｜警报与搜捕队\n**搜捕** · 男高房间／老住宅区街道\n\n组织探测到梦境能力，正在住宅片区搜捕逃出的实验体。\n\n**对白锚点**：男高：“外面怎么了？”",
+      "color": "2"
+    },
+    {
+      "id": "C002",
+      "type": "text",
+      "x": 0,
+      "y": 360,
+      "width": 600,
+      "height": 270,
+      "text": "## C002｜出门与认出\n**对峙** · 老住宅区路口，向旧街区支路移动\n\n搜捕队认出男高，冲突被他引向远离住宅的支路。\n\n**对白锚点**：黑衣队员：“是你。昨晚仓库外面那个学生。”",
+      "color": "2"
+    },
+    {
+      "id": "C003",
+      "type": "text",
+      "x": 0,
+      "y": 720,
+      "width": 600,
+      "height": 270,
+      "text": "## C003｜第一次配合\n**战斗** · 通往旧街区的支路\n\n小兵战：男高处理近身敌人，林克迅速打散主要威胁。\n\n**对白锚点**：男高：“那边交给我？好。”",
+      "color": "1"
+    },
+    {
+      "id": "C004",
+      "type": "text",
+      "x": 0,
+      "y": 1080,
+      "width": 600,
+      "height": 270,
+      "text": "## C004｜第一名干部到场\n**强敌登场** · 旧街区支路较宽处\n\n普通型代欧奇希斯与负责它的干部抵达，确认出现新的从者。\n\n**对白锚点**：黑衣干部甲：“退后。你们处理不了这个。”",
+      "color": "2"
+    },
+    {
+      "id": "C005",
+      "type": "text",
+      "x": 0,
+      "y": 1440,
+      "width": 600,
+      "height": 270,
+      "text": "## C005｜林克明显占优\n**战斗／压制** · 旧街区支路交战处\n\n林克连续迫退普通型；此阶段明确占优，对手没有退场。\n\n**对白锚点**：男高：“能赢……”",
+      "color": "1"
+    },
+    {
+      "id": "C006",
+      "type": "text",
+      "x": 0,
+      "y": 1800,
+      "width": 600,
+      "height": 270,
+      "text": "## C006｜防御型与第二名干部加入\n**增援** · 同一街道，侧巷与后方出口\n\n防御型掩护普通型重组攻势，第二干部与部队从侧后方封路。\n\n**对白锚点**：男高：“还有一个？！”",
+      "color": "1"
+    },
+    {
+      "id": "C007",
+      "type": "text",
+      "x": 0,
+      "y": 2160,
+      "width": 600,
+      "height": 270,
+      "text": "## C007｜局势转为棘手\n**战斗／判断** · 逐渐收紧的街道包围圈\n\n林克仍能抗住正面，但多方向攻击与封路使撤离成为目标。\n\n**对白锚点**：男高：“后面也有人！”",
+      "color": "1"
+    },
+    {
+      "id": "C008",
+      "type": "text",
+      "x": 0,
+      "y": 2520,
+      "width": 600,
+      "height": 270,
+      "text": "## C008｜怪盗与女剑士接应\n**救援／撤离** · 街道墙侧／包围圈外的狭巷\n\n怪盗打开空间通道，女剑士接应，四人绕过封锁后继续转移。\n\n**对白锚点**：墙侧的声音：“再往那边退，可真没路了。”",
+      "color": "2"
+    },
+    {
+      "id": "C009",
+      "type": "text",
+      "x": 0,
+      "y": 2880,
+      "width": 600,
+      "height": 270,
+      "text": "## C009｜小巷中的真实身份\n**身份揭露** · 旧街区一条暂时安静的小巷\n\n怪盗揭露同班同学身份，并确认自己是首夜获救的蒙面人。\n\n**对白锚点**：蒙面人：“昨天那次，谢了。”",
+      "color": "2"
+    },
+    {
+      "id": "C010",
+      "type": "text",
+      "x": 0,
+      "y": 3240,
+      "width": 600,
+      "height": 270,
+      "text": "## C010｜圣杯战争的最低限度说明\n**情报** · 同一小巷\n\n怪盗解释御主、从者与四名从者退场后争夺圣杯的规则。\n\n**对白锚点**：男高：“先告诉我，他们是什么人？刚才那两个东西又是什么？还有他——”",
+      "color": "5"
+    },
+    {
+      "id": "C011",
+      "type": "text",
+      "x": 0,
+      "y": 3600,
+      "width": 600,
+      "height": 270,
+      "text": "## C011｜介绍 Saber\n**从者介绍** · 同一小巷，准备转移\n\n怪盗只公开自己从者的 Saber 职阶，不透露真名。\n\n**对白锚点**：怪盗：“还有，这位是我的从者。你叫她 Saber 就好。”",
+      "color": "5"
+    },
+    {
+      "id": "C012",
+      "type": "text",
+      "x": 0,
+      "y": 3960,
+      "width": 600,
+      "height": 270,
+      "text": "## C012｜暂时合作\n**合作** · 小巷出口附近\n\n男高优先保护家人，双方约定返校后继续交换情报。\n\n**对白锚点**：男高：“要是我不想争那个愿望呢？能不能就当没这回事？”",
+      "color": "2"
+    },
+    {
+      "id": "C013",
+      "type": "text",
+      "x": 0,
+      "y": 4320,
+      "width": 600,
+      "height": 270,
+      "text": "## C013｜夜归与新的同伴\n**日常／收束** · 奶奶家门前、客厅与男高房间\n\n确认无人尾随后回家，以朋友借宿解释林克身份，约定次日返校。\n\n**对白锚点**：奶奶：“大半夜又往外跑。刚才外面那么响，你去哪儿了？”",
+      "color": "4"
+    },
+    {
+      "id": "previous",
+      "type": "file",
+      "file": "游戏说明/剧情/序幕/序幕（三）/序幕（三）.md",
+      "x": -740,
+      "y": 0,
+      "width": 500,
+      "height": 260
+    },
+    {
+      "id": "previous_canvas",
+      "type": "file",
+      "file": "游戏说明/剧情/序幕/序幕（三）/序幕（三）.canvas",
+      "x": -740,
+      "y": 350,
+      "width": 500,
+      "height": 260
+    },
+    {
+      "id": "prose",
+      "type": "file",
+      "file": "游戏说明/剧情/序幕/序幕（四）/序幕（四）.md",
+      "x": 760,
+      "y": 0,
+      "width": 500,
+      "height": 260
+    },
+    {
+      "id": "script",
+      "type": "file",
+      "file": "游戏说明/剧情/序幕/序幕（四）/序幕（四）_Galgame脚本.md",
+      "x": 760,
+      "y": 350,
+      "width": 500,
+      "height": 260
+    },
+    {
+      "id": "entry_rules",
+      "type": "text",
+      "x": -740,
+      "y": 700,
+      "width": 500,
+      "height": 560,
+      "text": "## 连续性与显示边界\n\n组织搜捕目标是梦魇，不是因林克召唤定位住宅。\n\n林克明显压制普通型；防御型、第二干部与部队改变局势。\n\n怪盗 C009揭露身份，女剑士 C011才显示为 Saber。\n\n从者真名仅作者掌握，不进玩家正文。\n\n四名从者退场后出现圣杯；本幕退场数为零。",
+      "color": "6"
+    },
+    {
+      "id": "end_state",
+      "type": "text",
+      "x": 760,
+      "y": 700,
+      "width": 500,
+      "height": 640,
+      "text": "## 本幕结束状态\n\n- 男高与林克已经共同作战，暂时脱离组织封锁。\n- 组织确认出现新的从者，仍继续搜捕梦魇。\n- 男高确认怪盗身份，双方各救过对方一次。\n- 男高得知御主、从者及圣杯的基本信息。\n- Saber仅公开职阶，未透露真名。\n- 四名从者被淘汰才出现圣杯；本幕没有从者被淘汰。\n- 男高与怪盗暂时交换情报，约定第二天学校见。\n- 林克以朋友借宿的说法进入奶奶家，奶奶未获知真相。",
+      "color": "5"
+    },
+    {
+      "id": "next",
+      "type": "file",
+      "file": "游戏说明/大纲.md",
+      "x": 760,
+      "y": 4320,
+      "width": 500,
+      "height": 260
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_title",
+      "fromNode": "title",
+      "fromSide": "bottom",
+      "toNode": "C001",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_C002",
+      "fromNode": "C001",
+      "fromSide": "bottom",
+      "toNode": "C002",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_C003",
+      "fromNode": "C002",
+      "fromSide": "bottom",
+      "toNode": "C003",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_C004",
+      "fromNode": "C003",
+      "fromSide": "bottom",
+      "toNode": "C004",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_C005",
+      "fromNode": "C004",
+      "fromSide": "bottom",
+      "toNode": "C005",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_C006",
+      "fromNode": "C005",
+      "fromSide": "bottom",
+      "toNode": "C006",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_C007",
+      "fromNode": "C006",
+      "fromSide": "bottom",
+      "toNode": "C007",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_C008",
+      "fromNode": "C007",
+      "fromSide": "bottom",
+      "toNode": "C008",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_C009",
+      "fromNode": "C008",
+      "fromSide": "bottom",
+      "toNode": "C009",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_C010",
+      "fromNode": "C009",
+      "fromSide": "bottom",
+      "toNode": "C010",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_C011",
+      "fromNode": "C010",
+      "fromSide": "bottom",
+      "toNode": "C011",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_C012",
+      "fromNode": "C011",
+      "fromSide": "bottom",
+      "toNode": "C012",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_C013",
+      "fromNode": "C012",
+      "fromSide": "bottom",
+      "toNode": "C013",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_entry",
+      "label": "梦醒后，同一夜",
+      "fromNode": "previous",
+      "fromSide": "right",
+      "toNode": "C001",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_next",
+      "label": "次日返校接第五幕",
+      "fromNode": "C013",
+      "fromSide": "right",
+      "toNode": "next",
+      "toSide": "left"
+    }
+  ]
+}

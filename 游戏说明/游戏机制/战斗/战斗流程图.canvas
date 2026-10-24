@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "id": "2262f268e50d7b6a",
+      "type": "text",
+      "text": "战斗开始根据dnd5.5e（5r）规则 按照敏捷开始骰先攻",
+      "styleAttributes": {},
+      "x": -460,
+      "y": -160,
+      "width": 260,
+      "height": 60
+    },
+    {
+      "id": "f8f76f4ec3531600",
+      "type": "file",
+      "file": "图例/战斗/战斗流程图.canvas",
+      "x": -60,
+      "y": -200,
+      "width": 180,
+      "height": 140
+    },
+    {
+      "id": "7f065ff69abbca3f",
+      "type": "text",
+      "text": "战斗结束 退出战斗",
+      "styleAttributes": {},
+      "x": 240,
+      "y": -160,
+      "width": 260,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "a14f4c4f0b1924a1",
+      "styleAttributes": {},
+      "toFloating": false,
+      "fromNode": "2262f268e50d7b6a",
+      "fromSide": "right",
+      "toNode": "f8f76f4ec3531600",
+      "toSide": "left"
+    },
+    {
+      "id": "0d19e1a715582ce2",
+      "styleAttributes": {},
+      "toFloating": false,
+      "fromNode": "f8f76f4ec3531600",
+      "fromSide": "right",
+      "toNode": "7f065ff69abbca3f",
+      "toSide": "left"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
+}

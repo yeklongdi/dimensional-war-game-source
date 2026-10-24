@@ -1,0 +1,189 @@
+12:42:56 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_house_dusk] 背景 bg_grandmother_house_dusk 尚未绑定，使用场景渐变占位。
+12:42:59 [vite] (client) [console.warn] [次元战争:asset:sfx_door_knock] 音频 sfx_door_knock 尚未绑定，静默处理。
+12:43:13 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_house_entrance] 背景 bg_grandmother_house_entrance 尚未绑定，使用场景渐变占位。
+12:43:13 [vite] (client) [console.warn] [次元战争:asset:char_grandmother_warm] 立绘 char_grandmother_warm 尚未绑定，使用色块占位。
+12:43:15 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_house_living_room] 背景 bg_grandmother_house_living_room 尚未绑定，使用场景渐变占位。
+12:43:15 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:坐在沙发上:得意] 男高「坐在沙发上／得意」尚无合格分层，使用明确静态回退。
+12:43:16 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:坐在沙发上:热血、得意] 男高「坐在沙发上／热血、得意」尚无合格分层，使用明确静态回退。
+12:43:17 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_house_bedroom] 背景 bg_grandmother_house_bedroom 尚未绑定，使用场景渐变占位。
+12:43:17 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:整理行李:怀念、轻松] 男高「整理行李／怀念、轻松」尚无合格分层，使用明确静态回退。 男高「整理行李」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:43:18 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_house_kitchen_night] 背景 bg_grandmother_house_kitchen_night 尚未绑定，使用场景渐变占位。
+12:43:19 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:整理行李:轻松、准备出门] 男高「整理行李／轻松、准备出门」尚无合格分层，使用明确静态回退。 男高「整理行李」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:44:08 [vite] (client) [console.warn] [次元战争:asset:bg_sun_city_old_street_night] 背景 bg_sun_city_old_street_night 尚未绑定，使用场景渐变占位。
+12:44:08 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:散步、观察四周:好奇] 男高「散步、观察四周／好奇」尚无合格分层，使用明确静态回退。 男高「散步、观察四周」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:44:09 [vite] (client) [console.warn] [次元战争:asset:sfx_metal_collision] 音频 sfx_metal_collision 尚未绑定，静默处理。
+12:44:09 [vite] (client) [console.warn] [次元战争:asset:char_organization_member_placeholder] 立绘 char_organization_member_placeholder 尚未绑定，使用色块占位。
+12:44:10 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:散步、观察四周:认真、出头] 男高「散步、观察四周／认真、出头」尚无合格分层，使用明确静态回退。 男高「散步、观察四周」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:44:11 [vite] (client) [console.warn] [次元战争:asset:bg_warehouse_area_night] 背景 bg_warehouse_area_night 尚未绑定，使用场景渐变占位。
+12:44:11 [vite] (client) [console.warn] [次元战争:asset:bgm_first_battle] 音频 bgm_first_battle 尚未绑定，静默处理。
+12:44:44 [vite] (client) [console.warn] [次元战争:skip:battle_prologue_tutorial] 已主动跳过战斗 battle_prologue_tutorial，按胜利返回原剧情。
+12:44:44 [vite] (client) [console.warn] [次元战争:asset:bgm_first_battle_after] 音频 bgm_first_battle_after 尚未绑定，静默处理。
+12:44:44 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:战斗后喘息:疑惑、警惕] 男高「战斗后喘息／疑惑、警惕」尚无合格分层，使用明确静态回退。 男高「战斗后喘息」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:44:45 [vite] (client) [console.warn] [次元战争:asset:sfx_distant_warehouse_noise] 音频 sfx_distant_warehouse_noise 尚未绑定，静默处理。
+12:45:11 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_house_living_room_night] 背景 bg_grandmother_house_living_room_night 尚未绑定，使用场景渐变占位。
+12:45:11 [vite] (client) [console.warn] [次元战争:asset:char_grandmother_warm] 立绘 char_grandmother_warm 尚未绑定，使用色块占位。
+12:45:11 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:刚跑回家、呼吸急促:装作平静] 男高「刚跑回家、呼吸急促／装作平静」尚无合格分层，使用明确静态回退。 男高「刚跑回家、呼吸急促」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:45:14 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_house_bedroom_night] 背景 bg_grandmother_house_bedroom_night 尚未绑定，使用场景渐变占位。
+12:45:14 [vite] (client) [console.warn] [次元战争:asset:bgm_night_before_school] 音频 bgm_night_before_school 尚未绑定，静默处理。
+12:45:14 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:躺在床上、望向天花板:期待、认真] 男高「躺在床上、望向天花板／期待、认真」尚无合格分层，使用明确静态回退。
+12:45:15 [vite] (client) [console.warn] [次元战争:asset:bg_school_underground_dark] 背景 bg_school_underground_dark 尚未绑定，使用场景渐变占位。
+12:45:15 [vite] (client) [console.warn] [次元战争:asset:prop_dark_god_crystal_placeholder] 立绘 prop_dark_god_crystal_placeholder 尚未绑定，使用色块占位。
+12:45:15 [vite] (client) [console.warn] [次元战争:asset:sfx_low_heartbeat] 音频 sfx_low_heartbeat 尚未绑定，静默处理。
+12:46:45 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_house_bedroom_morning] 背景 bg_grandmother_house_bedroom_morning 尚未绑定，使用场景渐变占位。
+12:46:45 [vite] (client) [console.warn] [次元战争:asset:bgm_school_morning] 音频 bgm_school_morning 尚未绑定，静默处理。
+12:46:45 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:躺在床上、刚醒:困倦、慌张] 男高「躺在床上、刚醒／困倦、慌张」尚无合格分层，使用明确静态回退。
+12:46:47 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:躺在床上、刚醒:自信、急着出门] 男高「躺在床上、刚醒／自信、急着出门」尚无合格分层，使用明确静态回退。
+12:46:48 [vite] (client) [console.warn] [次元战争:asset:char_virtual_streamer_shy] 立绘 char_virtual_streamer_shy 尚未绑定，使用色块占位。
+12:46:48 [vite] (client) [console.warn] [次元战争:asset:bg_sun_city_school_road_morning] 背景 bg_sun_city_school_road_morning 尚未绑定，使用场景渐变占位。
+12:46:48 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:飞奔、手里攥着水煮蛋:着急] 男高「飞奔、手里攥着水煮蛋／着急」尚无合格分层，使用明确静态回退。 男高「飞奔、手里攥着水煮蛋」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:46:50 [vite] (client) [console.warn] [次元战争:asset:bg_school_gate_morning] 背景 bg_school_gate_morning 尚未绑定，使用场景渐变占位。
+12:46:50 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:叼着面包、跑进校门:匆忙] 男高「叼着面包、跑进校门／匆忙」尚无合格分层，使用明确静态回退。 男高「叼着面包、跑进校门」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:46:50 [vite] (client) [console.warn] [次元战争:asset:char_teacher_placeholder] 立绘 char_teacher_placeholder 尚未绑定，使用色块占位。
+12:46:52 [vite] (client) [console.warn] [次元战争:asset:char_villain_calm] 立绘 char_villain_calm 尚未绑定，使用色块占位。
+12:46:52 [vite] (client) [console.warn] [次元战争:asset:char_idol_neutral] 立绘 char_idol_neutral 尚未绑定，使用色块占位。
+12:47:56 [vite] (client) [console.warn] [次元战争:asset:bg_school_classroom_morning] 背景 bg_school_classroom_morning 尚未绑定，使用场景渐变占位。
+12:47:56 [vite] (client) [console.warn] [次元战争:asset:bgm_school_classroom_daily] 音频 bgm_school_classroom_daily 尚未绑定，静默处理。
+12:47:56 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:站在讲台前、拿着白板笔:自信、兴奋] 男高「站在讲台前、拿着白板笔／自信、兴奋」尚无合格分层，使用明确静态回退。 男高「站在讲台前、拿着白板笔」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:47:59 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:拎着书包准备落座:期待] 男高「拎着书包准备落座／期待」尚无合格分层，使用明确静态回退。 男高「拎着书包准备落座」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:48:01 [vite] (client) [console.warn] [次元战争:asset:bg_school_classroom_day] 背景 bg_school_classroom_day 尚未绑定，使用场景渐变占位。
+12:48:03 [vite] (client) [console.warn] [次元战争:asset:bgm_school_choice] 音频 bgm_school_choice 尚未绑定，静默处理。
+12:48:31 [vite] (client) [console.warn] [次元战争:asset:bg_school_library_day] 背景 bg_school_library_day 尚未绑定，使用场景渐变占位。
+12:48:31 [vite] (client) [console.warn] [次元战争:asset:bgm_school_daily] 音频 bgm_school_daily 尚未绑定，静默处理。
+12:48:31 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:自然跟随:好奇、友善] 男高「自然跟随／好奇、友善」尚无合格分层，使用明确静态回退。 男高「自然跟随」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:48:34 [vite] (client) [console.warn] [次元战争:asset:bg_school_cafeteria_day] 背景 bg_school_cafeteria_day 尚未绑定，使用场景渐变占位。
+12:48:35 [vite] (client) [console.warn] [次元战争:asset:bg_school_gym_day] 背景 bg_school_gym_day 尚未绑定，使用场景渐变占位。
+12:49:08 [vite] (client) [console.warn] [次元战争:asset:bg_school_construction_zone_day] 背景 bg_school_construction_zone_day 尚未绑定，使用场景渐变占位。
+12:49:08 [vite] (client) [console.warn] [次元战争:asset:bgm_school_mystery] 音频 bgm_school_mystery 尚未绑定，静默处理。
+12:49:08 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:停步观察围栏:好奇] 男高「停步观察围栏／好奇」尚无合格分层，使用明确静态回退。 男高「停步观察围栏」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:49:43 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:推开铁皮小门、准备进入:兴奋、好奇] 男高「推开铁皮小门、准备进入／兴奋、好奇」尚无合格分层，使用明确静态回退。 男高「推开铁皮小门、准备进入」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:49:47 [vite] (client) [console.warn] [次元战争:asset:prop_master_sword_corrupted_placeholder] 立绘 prop_master_sword_corrupted_placeholder 尚未绑定，使用色块占位。
+12:49:48 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:推开铁皮小门、准备进入:被吸引、犹豫] 男高「推开铁皮小门、准备进入／被吸引、犹豫」尚无合格分层，使用明确静态回退。 男高「推开铁皮小门、准备进入」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:49:48 [vite] (client) [console.warn] [次元战争:asset:bg_school_construction_pit] 背景 bg_school_construction_pit 尚未绑定，使用场景渐变占位。
+12:49:48 [vite] (client) [console.warn] [次元战争:asset:bgm_master_sword_vision] 音频 bgm_master_sword_vision 尚未绑定，静默处理。
+12:49:48 [vite] (client) [console.warn] [次元战争:asset:sfx_master_sword_resonance] 音频 sfx_master_sword_resonance 尚未绑定，静默处理。
+12:49:48 [vite] (client) [console.warn] [次元战争:call:event_master_sword_vision] 调用 event_master_sword_vision 暂用占位处理，继续原文已有内容。
+12:49:52 [vite] (client) [console.warn] [次元战争:asset:bgm_black_humanoid_appearance] 音频 bgm_black_humanoid_appearance 尚未绑定，静默处理。
+12:49:52 [vite] (client) [console.warn] [次元战争:asset:char_black_humanoid_placeholder] 立绘 char_black_humanoid_placeholder 尚未绑定，使用色块占位。
+12:49:52 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:持剑、准备保护虚拟主播:震惊、警戒] 男高「持剑、准备保护虚拟主播／震惊、警戒」尚无合格分层，使用明确静态回退。
+12:49:53 [vite] (client) [console.warn] [次元战争:asset:sfx_fainting] 音频 sfx_fainting 尚未绑定，静默处理。
+12:49:54 [vite] (client) [console.warn] [次元战争:asset:bgm_black_humanoid_battle] 音频 bgm_black_humanoid_battle 尚未绑定，静默处理。
+12:50:24 [vite] (client) [console.warn] [次元战争:skip:battle_black_humanoid] 已主动跳过战斗 battle_black_humanoid，按胜利返回原剧情。
+12:50:24 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:战斗后疲惫、扶住虚拟主播:麻烦、担心] 男高「战斗后疲惫、扶住虚拟主播／麻烦、担心」尚无合格分层，使用明确静态回退。 男高「战斗后疲惫、扶住虚拟主播」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:50:37 [vite] (client) [console.warn] [次元战争:asset:bg_school_hallway_day] 背景 bg_school_hallway_day 尚未绑定，使用场景渐变占位。
+12:50:37 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:抱着虚拟主播、疲惫:尴尬、担心] 男高「抱着虚拟主播、疲惫／尴尬、担心」尚无合格分层，使用明确静态回退。 男高「抱着虚拟主播、疲惫」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:50:38 [vite] (client) [console.warn] [次元战争:asset:sfx_school_bell] 音频 sfx_school_bell 尚未绑定，静默处理。
+12:50:38 [vite] (client) [console.warn] [次元战争:asset:bg_school_infirmary_day] 背景 bg_school_infirmary_day 尚未绑定，使用场景渐变占位。
+12:50:38 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:站在病床边:担心，松一口气] 男高「站在病床边／担心，松一口气」尚无合格分层，使用明确静态回退。 男高「站在病床边」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:50:41 [vite] (client) [console.warn] [次元战争:asset:bg_school_construction_zone_dusk] 背景 bg_school_construction_zone_dusk 尚未绑定，使用场景渐变占位。
+12:50:41 [vite] (client) [console.warn] [次元战争:asset:bgm_sword_quiet_mystery] 音频 bgm_sword_quiet_mystery 尚未绑定，静默处理。
+12:50:41 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:取剑，抖开旧布包裹:犹豫，决定] 男高「取剑，抖开旧布包裹／犹豫，决定」尚无合格分层，使用明确静态回退。 男高「取剑，抖开旧布包裹」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:50:44 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_house_dusk] 背景 bg_grandmother_house_dusk 尚未绑定，使用场景渐变占位。
+12:50:44 [vite] (client) [console.warn] [次元战争:asset:bgm_scene_transition] 音频 bgm_scene_transition 尚未绑定，静默处理。
+12:51:22 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_dining_evening] 背景 bg_grandmother_dining_evening 尚未绑定，使用场景渐变占位。
+12:51:22 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:坐在餐桌旁，校服袖口挽起:轻松，偶尔走神] 男高「坐在餐桌旁，校服袖口挽起／轻松，偶尔走神」尚无合格分层，使用明确静态回退。
+12:51:27 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_bedroom_night] 背景 bg_grandmother_bedroom_night 尚未绑定，使用场景渐变占位。
+12:51:27 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:坐在床沿，解开旧布:疑惑，疲惫] 男高「坐在床沿，解开旧布／疑惑，疲惫」尚无合格分层，使用明确静态回退。
+12:51:29 [vite] (client) [console.warn] [次元战争:asset:sfx_light_switch] 音频 sfx_light_switch 尚未绑定，静默处理。
+12:51:30 [vite] (client) [console.warn] [次元战争:asset:bgm_homecoming_warm_dream] 音频 bgm_homecoming_warm_dream 尚未绑定，静默处理。
+12:51:30 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:重新坐在饭桌旁:茫然，逐渐警觉] 男高「重新坐在饭桌旁／茫然，逐渐警觉」尚无合格分层，使用明确静态回退。
+12:51:31 [vite] (client) [console.warn] [次元战争:asset:sfx_clock_tick_stop] 音频 sfx_clock_tick_stop 尚未绑定，静默处理。
+12:51:33 [vite] (client) [console.warn] [次元战争:asset:bg_dream_dining_fog] 背景 bg_dream_dining_fog 尚未绑定，使用场景渐变占位。
+12:51:33 [vite] (client) [console.warn] [次元战争:asset:bgm_nightmare_invitation] 音频 bgm_nightmare_invitation 尚未绑定，静默处理。
+12:51:33 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:站在椅子旁，望向雾中:警惕] 男高「站在椅子旁，望向雾中／警惕」尚无合格分层，使用明确静态回退。 男高「站在椅子旁，望向雾中」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:51:37 [vite] (client) [console.warn] [次元战争:asset:bg_dream_house_loop] 背景 bg_dream_house_loop 尚未绑定，使用场景渐变占位。
+12:51:37 [vite] (client) [console.warn] [次元战争:asset:bgm_nightmare_pressure] 音频 bgm_nightmare_pressure 尚未绑定，静默处理。
+12:51:37 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:推门，扶住门框保持站立:愤怒，困倦] 男高「推门，扶住门框保持站立／愤怒，困倦」尚无合格分层，使用明确静态回退。 男高「推门，扶住门框保持站立」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:51:37 [vite] (client) [console.warn] [次元战争:asset:sfx_door_loop] 音频 sfx_door_loop 尚未绑定，静默处理。
+12:51:41 [vite] (client) [console.warn] [次元战争:asset:bgm_sword_answer] 音频 bgm_sword_answer 尚未绑定，静默处理。
+12:51:41 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:扶着门框，握住发热的手:痛苦，重新集中精神] 男高「扶着门框，握住发热的手／痛苦，重新集中精神」尚无合格分层，使用明确静态回退。 男高「扶着门框，握住发热的手」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:51:42 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:扶住门框，抬头望向剑光:挣扎，求生] 男高「扶住门框，抬头望向剑光／挣扎，求生」尚无合格分层，使用明确静态回退。 男高「扶住门框，抬头望向剑光」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:51:44 [vite] (client) [console.warn] [次元战争:asset:bg_dream_house_fracture] 背景 bg_dream_house_fracture 尚未绑定，使用场景渐变占位。
+12:51:44 [vite] (client) [console.warn] [次元战争:asset:bgm_sword_breaks_dream] 音频 bgm_sword_breaks_dream 尚未绑定，静默处理。
+12:51:44 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:勉强站稳，跟住青年:震惊] 男高「勉强站稳，跟住青年／震惊」尚无合格分层，使用明确静态回退。 男高「勉强站稳，跟住青年」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:51:44 [vite] (client) [console.warn] [次元战争:asset:sfx_sword_cuts_dream] 音频 sfx_sword_cuts_dream 尚未绑定，静默处理。
+12:51:46 [vite] (client) [console.warn] [次元战争:asset:bgm_after_dream_quiet] 音频 bgm_after_dream_quiet 尚未绑定，静默处理。
+12:51:46 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:从床上坐起，扶着被子:惊魂未定，疑惑] 男高「从床上坐起，扶着被子／惊魂未定，疑惑」尚无合格分层，使用明确静态回退。
+12:52:18 [vite] (client) [console.warn] [次元战争:asset:sfx_search_vehicle_alarm] 音频 sfx_search_vehicle_alarm 尚未绑定，静默处理。
+12:52:18 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:坐在床沿，侧耳倾听:疑惑] 男高「坐在床沿，侧耳倾听／疑惑」尚无合格分层，使用明确静态回退。
+12:52:19 [vite] (client) [console.warn] [次元战争:asset:bg_old_residential_search_night] 背景 bg_old_residential_search_night 尚未绑定，使用场景渐变占位。
+12:52:21 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:站在窗边，松开窗帘:戒备] 男高「站在窗边，松开窗帘／戒备」尚无合格分层，使用明确静态回退。 男高「站在窗边，松开窗帘」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:52:21 [vite] (client) [console.warn] [次元战争:asset:bg_residential_junction_night] 背景 bg_residential_junction_night 尚未绑定，使用场景渐变占位。
+12:52:21 [vite] (client) [console.warn] [次元战争:asset:bgm_organization_tension] 音频 bgm_organization_tension 尚未绑定，静默处理。
+12:52:21 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:披上外套，与队员保持距离:戒备] 男高「披上外套，与队员保持距离／戒备」尚无合格分层，使用明确静态回退。 男高「披上外套，与队员保持距离」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:52:25 [vite] (client) [console.warn] [次元战争:asset:bg_old_district_access_night] 背景 bg_old_district_access_night 尚未绑定，使用场景渐变占位。
+12:52:25 [vite] (client) [console.warn] [次元战争:asset:bgm_first_partners_battle] 音频 bgm_first_partners_battle 尚未绑定，静默处理。
+12:52:25 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:摆开徒手架势，靠近墙侧:紧张，集中] 男高「摆开徒手架势，靠近墙侧／紧张，集中」尚无合格分层，使用明确静态回退。 男高「摆开徒手架势，靠近墙侧」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:52:50 [vite] (client) [console.warn] [次元战争:skip:battle_prologue4_patrol] 已主动跳过未制作的战斗 battle_prologue4_patrol，继续原文。
+12:52:53 [vite] (client) [console.warn] [次元战争:asset:bg_old_district_access_night] 背景 bg_old_district_access_night 尚未绑定，使用场景渐变占位。
+12:52:53 [vite] (client) [console.warn] [次元战争:asset:bgm_first_partners_battle] 音频 bgm_first_partners_battle 尚未绑定，静默处理。
+12:52:53 [vite] (client) [console.warn] [次元战争:asset:char_organization_member_placeholder] 立绘 char_organization_member_placeholder 尚未绑定，使用色块占位。
+12:52:53 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:摆开徒手架势，靠近墙侧:紧张，集中] 男高「摆开徒手架势，靠近墙侧／紧张，集中」尚无合格分层，使用明确静态回退。 男高「摆开徒手架势，靠近墙侧」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:53:10 [vite] (client) [console.warn] [次元战争:skip:battle_prologue4_patrol] 已主动跳过未制作的战斗 battle_prologue4_patrol，继续原文。
+12:53:13 [vite] (client) [console.warn] [次元战争:asset:bg_old_district_battle_street_night] 背景 bg_old_district_battle_street_night 尚未绑定，使用场景渐变占位。
+12:53:13 [vite] (client) [console.warn] [次元战争:asset:bgm_foreigner_approach] 音频 bgm_foreigner_approach 尚未绑定，静默处理。
+12:53:13 [vite] (client) [console.warn] [次元战争:asset:char_organization_officer_a_placeholder] 立绘 char_organization_officer_a_placeholder 尚未绑定，使用色块占位。
+12:53:13 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:站在墙侧，调整呼吸:警惕] 男高「站在墙侧，调整呼吸／警惕」尚无合格分层，使用明确静态回退。 男高「站在墙侧，调整呼吸」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:53:16 [vite] (client) [console.warn] [次元战争:asset:bgm_link_advantage] 音频 bgm_link_advantage 尚未绑定，静默处理。
+12:53:16 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:靠墙移动，避开主战线:紧张，随后惊讶] 男高「靠墙移动，避开主战线／紧张，随后惊讶」尚无合格分层，使用明确静态回退。 男高「靠墙移动，避开主战线」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:53:51 [vite] (client) [console.warn] [次元战争:skip:battle_prologue4_deoxys_encounter] 已主动跳过未制作的战斗 battle_prologue4_deoxys_encounter，继续原文。
+12:53:51 [vite] (client) [console.warn] [次元战争:asset:sfx_sword_energy_clash] 音频 sfx_sword_energy_clash 尚未绑定，静默处理。
+12:53:52 [vite] (client) [console.warn] [次元战争:asset:bgm_organization_reinforcements] 音频 bgm_organization_reinforcements 尚未绑定，静默处理。
+12:53:52 [vite] (client) [console.warn] [次元战争:asset:sfx_barrier_impact] 音频 sfx_barrier_impact 尚未绑定，静默处理。
+12:53:52 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:望向新出现的敌人:惊讶] 男高「望向新出现的敌人／惊讶」尚无合格分层，使用明确静态回退。 男高「望向新出现的敌人」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:53:54 [vite] (client) [console.warn] [次元战争:asset:bg_old_district_battle_street_night] 背景 bg_old_district_battle_street_night 尚未绑定，使用场景渐变占位。
+12:53:54 [vite] (client) [console.warn] [次元战争:asset:bgm_organization_reinforcements] 音频 bgm_organization_reinforcements 尚未绑定，静默处理。
+12:53:54 [vite] (client) [console.warn] [次元战争:asset:sfx_barrier_impact] 音频 sfx_barrier_impact 尚未绑定，静默处理。
+12:53:54 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:望向新出现的敌人:惊讶] 男高「望向新出现的敌人／惊讶」尚无合格分层，使用明确静态回退。 男高「望向新出现的敌人」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:53:55 [vite] (client) [console.warn] [次元战争:asset:char_organization_officer_b_placeholder] 立绘 char_organization_officer_b_placeholder 尚未绑定，使用色块占位。
+12:53:56 [vite] (client) [console.warn] [次元战争:asset:bgm_encirclement_pressure] 音频 bgm_encirclement_pressure 尚未绑定，静默处理。
+12:53:56 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:迎击绕后队员，观察出口:吃力，清醒] 男高「迎击绕后队员，观察出口／吃力，清醒」尚无合格分层，使用明确静态回退。 男高「迎击绕后队员，观察出口」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:53:59 [vite] (client) [console.warn] [次元战争:asset:bgm_thief_escape] 音频 bgm_thief_escape 尚未绑定，静默处理。
+12:53:59 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:随青年移动，寻找空隙:焦急] 男高「随青年移动，寻找空隙／焦急」尚无合格分层，使用明确静态回退。 男高「随青年移动，寻找空隙」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:54:01 [vite] (client) [console.warn] [次元战争:asset:bg_old_district_escape_alley_night] 背景 bg_old_district_escape_alley_night 尚未绑定，使用场景渐变占位。
+12:54:02 [vite] (client) [console.warn] [次元战争:asset:bg_old_district_quiet_alley_night] 背景 bg_old_district_quiet_alley_night 尚未绑定，使用场景渐变占位。
+12:54:02 [vite] (client) [console.warn] [次元战争:asset:bgm_thief_reveal_quiet] 音频 bgm_thief_reveal_quiet 尚未绑定，静默处理。
+12:54:02 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:扶墙调整呼吸，望向蒙面人:疑惑] 男高「扶墙调整呼吸，望向蒙面人／疑惑」尚无合格分层，使用明确静态回退。 男高「扶墙调整呼吸，望向蒙面人」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:54:06 [vite] (client) [console.warn] [次元战争:asset:bgm_holy_grail_explanation] 音频 bgm_holy_grail_explanation 尚未绑定，静默处理。
+12:54:06 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:站直，认真追问:困惑，警惕] 男高「站直，认真追问／困惑，警惕」尚无合格分层，使用明确静态回退。 男高「站直，认真追问」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:54:11 [vite] (client) [console.warn] [次元战争:asset:bgm_temporary_companions] 音频 bgm_temporary_companions 尚未绑定，静默处理。
+12:54:11 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:看向女剑士:认真] 男高「看向女剑士／认真」尚无合格分层，使用明确静态回退。 男高「看向女剑士」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:54:13 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:望向回家方向:担忧，坚定] 男高「望向回家方向／担忧，坚定」尚无合格分层，使用明确静态回退。 男高「望向回家方向」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:54:17 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_house_entrance_night] 背景 bg_grandmother_house_entrance_night 尚未绑定，使用场景渐变占位。
+12:54:17 [vite] (client) [console.warn] [次元战争:asset:bgm_homecoming_warm_low] 音频 bgm_homecoming_warm_low 尚未绑定，静默处理。
+12:54:17 [vite] (client) [console.warn] [次元战争:asset:char_grandmother_warm] 立绘 char_grandmother_warm 尚未绑定，使用色块占位。
+12:54:17 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:整理外套，将包好的剑交回青年:紧张，疲惫] 男高「整理外套，将包好的剑交回青年／紧张，疲惫」尚无合格分层，使用明确静态回退。 男高「整理外套，将包好的剑交回青年」的完整动作尚未制作，当前使用对应透明半身表情回退。
+12:54:20 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_living_room_night] 背景 bg_grandmother_living_room_night 尚未绑定，使用场景渐变占位。
+12:54:21 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_bedroom_night] 背景 bg_grandmother_bedroom_night 尚未绑定，使用场景渐变占位。
+14:38:34 [vite] (client) [console.warn] [次元战争:asset:bg_warehouse_area_night] 背景 bg_warehouse_area_night 尚未绑定，使用场景渐变占位。
+14:38:34 [vite] (client) [console.warn] [次元战争:asset:bgm_first_battle] 音频 bgm_first_battle 尚未绑定，静默处理。
+14:38:34 [vite] (client) [console.warn] [次元战争:asset:char_organization_member_placeholder] 立绘 char_organization_member_placeholder 尚未绑定，使用色块占位。
+14:38:34 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:散步、观察四周:认真、出头] 男高「散步、观察四周／认真、出头」尚无合格分层，使用明确静态回退。 男高「散步、观察四周」的完整动作尚未制作，当前使用对应透明半身表情回退。
+14:41:48 [vite] (client) [console.warn] [次元战争:skip:battle_prologue_tutorial] 已主动跳过战斗 battle_prologue_tutorial，按胜利返回原剧情。
+14:41:48 [vite] (client) [console.warn] [次元战争:asset:bgm_first_battle_after] 音频 bgm_first_battle_after 尚未绑定，静默处理。
+14:41:48 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:战斗后喘息:疑惑、警惕] 男高「战斗后喘息／疑惑、警惕」尚无合格分层，使用明确静态回退。 男高「战斗后喘息」的完整动作尚未制作，当前使用对应透明半身表情回退。
+17:21:28 [vite] (client) [console.warn] [次元战争:asset:bg_old_district_quiet_alley_night] 背景 bg_old_district_quiet_alley_night 尚未绑定，使用场景渐变占位。
+17:21:28 [vite] (client) [console.warn] [次元战争:asset:bgm_thief_reveal_quiet] 音频 bgm_thief_reveal_quiet 尚未绑定，静默处理。
+17:21:28 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:扶墙调整呼吸，望向蒙面人:疑惑] 男高「扶墙调整呼吸，望向蒙面人／疑惑」尚无合格分层，使用明确静态回退。 男高「扶墙调整呼吸，望向蒙面人」的完整动作尚未制作，当前使用对应透明半身表情回退。
+17:21:56 [vite] (client) [console.warn] [次元战争:asset:bgm_holy_grail_explanation] 音频 bgm_holy_grail_explanation 尚未绑定，静默处理。
+17:21:56 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:站直，认真追问:困惑，警惕] 男高「站直，认真追问／困惑，警惕」尚无合格分层，使用明确静态回退。 男高「站直，认真追问」的完整动作尚未制作，当前使用对应透明半身表情回退。
+17:22:01 [vite] (client) [console.warn] [次元战争:asset:bgm_temporary_companions] 音频 bgm_temporary_companions 尚未绑定，静默处理。
+17:22:01 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:看向女剑士:认真] 男高「看向女剑士／认真」尚无合格分层，使用明确静态回退。 男高「看向女剑士」的完整动作尚未制作，当前使用对应透明半身表情回退。
+17:22:03 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:望向回家方向:担忧，坚定] 男高「望向回家方向／担忧，坚定」尚无合格分层，使用明确静态回退。 男高「望向回家方向」的完整动作尚未制作，当前使用对应透明半身表情回退。
+17:22:07 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_house_entrance_night] 背景 bg_grandmother_house_entrance_night 尚未绑定，使用场景渐变占位。
+17:22:07 [vite] (client) [console.warn] [次元战争:asset:bgm_homecoming_warm_low] 音频 bgm_homecoming_warm_low 尚未绑定，静默处理。
+17:22:07 [vite] (client) [console.warn] [次元战争:asset:char_grandmother_warm] 立绘 char_grandmother_warm 尚未绑定，使用色块占位。
+17:22:07 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:整理外套，将包好的剑交回青年:紧张，疲惫] 男高「整理外套，将包好的剑交回青年／紧张，疲惫」尚无合格分层，使用明确静态回退。 男高「整理外套，将包好的剑交回青年」的完整动作尚未制作，当前使用对应透明半身表情回退。
+17:22:10 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_living_room_night] 背景 bg_grandmother_living_room_night 尚未绑定，使用场景渐变占位。
+17:22:11 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_bedroom_night] 背景 bg_grandmother_bedroom_night 尚未绑定，使用场景渐变占位。
+17:25:30 [vite] (client) [console.warn] [次元战争:asset:bg_old_district_quiet_alley_night] 背景 bg_old_district_quiet_alley_night 尚未绑定，使用场景渐变占位。
+17:25:30 [vite] (client) [console.warn] [次元战争:asset:bgm_thief_reveal_quiet] 音频 bgm_thief_reveal_quiet 尚未绑定，静默处理。
+17:25:30 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:扶墙调整呼吸，望向蒙面人:疑惑] 男高「扶墙调整呼吸，望向蒙面人／疑惑」尚无合格分层，使用明确静态回退。 男高「扶墙调整呼吸，望向蒙面人」的完整动作尚未制作，当前使用对应透明半身表情回退。
+17:29:18 [vite] (client) [console.warn] [次元战争:asset:bg_school_classroom_day] 背景 bg_school_classroom_day 尚未绑定，使用场景渐变占位。
+17:29:18 [vite] (client) [console.warn] [次元战争:asset:bgm_school_classroom_daily] 音频 bgm_school_classroom_daily 尚未绑定，静默处理。
+17:29:18 [vite] (client) [console.warn] [次元战争:asset:char_teacher_placeholder] 立绘 char_teacher_placeholder 尚未绑定，使用色块占位。
+17:29:18 [vite] (client) [console.warn] [次元战争:asset:char_virtual_streamer_shy] 立绘 char_virtual_streamer_shy 尚未绑定，使用色块占位。
+17:29:18 [vite] (client) [console.warn] [次元战争:asset:char_villain_calm] 立绘 char_villain_calm 尚未绑定，使用色块占位。
+17:29:20 [vite] (client) [console.warn] [次元战争:asset:bgm_school_choice] 音频 bgm_school_choice 尚未绑定，静默处理。
+17:30:42 [vite] (client) [console.warn] [次元战争:asset:bg_school_library_day] 背景 bg_school_library_day 尚未绑定，使用场景渐变占位。
+17:30:42 [vite] (client) [console.warn] [次元战争:asset:bgm_school_daily] 音频 bgm_school_daily 尚未绑定，静默处理。
+17:30:42 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:自然跟随:好奇、友善] 男高「自然跟随／好奇、友善」尚无合格分层，使用明确静态回退。 男高「自然跟随」的完整动作尚未制作，当前使用对应透明半身表情回退。

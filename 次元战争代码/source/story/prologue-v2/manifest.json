@@ -1,0 +1,45 @@
+{
+  "contentVersion": "prologue_four_parts_v1",
+  "files": [
+    {
+      "id": "prologue",
+      "title": "序幕（一）：搬来太阳市的前一天",
+      "part": "序幕（一）",
+      "script": "序幕_Galgame脚本.md",
+      "count": 9,
+      "sourceFile": "source/story/prologue-v2/prologue.md",
+      "from": "../游戏说明/剧情/序幕/序幕（一）/序幕_Galgame脚本.md",
+      "sha256": "dfb2f330acc1c7ed9eba44f7208bd1445e5ec4975def0a0b0e7ee753d5525891"
+    },
+    {
+      "id": "act1",
+      "title": "序幕（二）：转学生来到太阳市第一高中",
+      "part": "序幕（二）",
+      "script": "序幕（二）_Galgame脚本.md",
+      "count": 22,
+      "sourceFile": "source/story/prologue-v2/act1.md",
+      "from": "../游戏说明/剧情/序幕/序幕（二）/序幕（二）_Galgame脚本.md",
+      "sha256": "1efab5dad7b6b6f0f103eb6712c50dc2a573f67c8e6f9a33ab90e5d3385359cd"
+    },
+    {
+      "id": "prologue_3",
+      "title": "序幕（三）：床边的勇者",
+      "part": "序幕（三）",
+      "script": "序幕（三）_Galgame脚本.md",
+      "count": 8,
+      "sourceFile": "source/story/prologue-v2/prologue_3.md",
+      "from": "../游戏说明/剧情/序幕/序幕（三）/序幕（三）_Galgame脚本.md",
+      "sha256": "4d157acdd98eb04a97727563b0ccb2d8008a3a33699204a3e0ec6630b2a668fe"
+    },
+    {
+      "id": "prologue_4",
+      "title": "序幕（四）：警报下的同行者",
+      "part": "序幕（四）",
+      "script": "序幕（四）_Galgame脚本.md",
+      "count": 13,
+      "sourceFile": "source/story/prologue-v2/prologue_4.md",
+      "from": "../游戏说明/剧情/序幕/序幕（四）/序幕（四）_Galgame脚本.md",
+      "sha256": "9d3d8ba35afa109052f4ee71d72465129637a03cb1bd51f9bc839b62da5bbd13"
+    }
+  ]
+}

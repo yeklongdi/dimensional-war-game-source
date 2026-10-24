@@ -1,0 +1,16 @@
+
+  VITE v8.3.4  ready in 874 ms
+
+  ➜  Local:   http://127.0.0.1:43856/
+  ➜  press h + enter to show help
+11:45:02 [vite] (client) page reload src/game/visual/hero.ts
+12:10:29 [vite] (client) page reload src/game/visual/hero.ts
+14:29:12 [vite] (client) page reload src/game/state.ts
+14:35:18 [vite] (client) page reload src/game/audio.ts
+14:35:18 [vite] (client) page reload src/game/ui/menu-view.ts
+14:35:18 [vite] (client) page reload src/game/ui/portraits.ts
+14:37:35 [vite] (client) page reload src/game/controller.ts
+14:37:36 [vite] (client) page reload src/game/ui/app-chrome.ts
+14:37:36 [vite] (client) page reload src/tests/fixtures/save-browser.ts
+14:38:39 [vite] (client) page reload src/game/ui/app-chrome.ts
+14:53:10 [vite] (client) page reload src/game/audio.ts

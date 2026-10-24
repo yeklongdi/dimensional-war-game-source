@@ -1,0 +1,280 @@
+{
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  },
+  "edges": [
+    {
+      "id": "e0",
+      "fromNode": "n0",
+      "fromSide": "right",
+      "toNode": "n1",
+      "toSide": "left"
+    },
+    {
+      "id": "e1",
+      "fromNode": "n1",
+      "fromSide": "right",
+      "toNode": "n2",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "fromNode": "n2",
+      "fromSide": "right",
+      "toNode": "v0",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "fromNode": "n2",
+      "fromSide": "right",
+      "toNode": "v1",
+      "toSide": "left"
+    },
+    {
+      "id": "e4",
+      "fromNode": "n2",
+      "fromSide": "right",
+      "toNode": "v2",
+      "toSide": "left"
+    },
+    {
+      "id": "e5",
+      "fromNode": "v0",
+      "fromSide": "right",
+      "toNode": "vo0",
+      "toSide": "left",
+      "label": "选择进入"
+    },
+    {
+      "id": "e6",
+      "fromNode": "v0",
+      "fromSide": "right",
+      "toNode": "vo1",
+      "toSide": "left",
+      "label": "选择返回"
+    },
+    {
+      "id": "bridge_1",
+      "fromNode": "vo0",
+      "fromSide": "right",
+      "toNode": "a012",
+      "toSide": "left"
+    },
+    {
+      "id": "bridge_2",
+      "fromNode": "a012",
+      "fromSide": "right",
+      "toNode": "a013_a014",
+      "toSide": "left"
+    },
+    {
+      "id": "bridge_3",
+      "fromNode": "a013_a014",
+      "fromSide": "right",
+      "toNode": "a015",
+      "toSide": "left"
+    },
+    {
+      "id": "bridge_4",
+      "fromNode": "a015",
+      "fromSide": "right",
+      "toNode": "a015_recovery",
+      "toSide": "left"
+    },
+    {
+      "id": "bridge_5",
+      "fromNode": "a015_recovery",
+      "fromSide": "right",
+      "toNode": "a015_retrieve",
+      "toSide": "left"
+    },
+    {
+      "id": "bridge_6",
+      "fromNode": "a015_retrieve",
+      "fromSide": "right",
+      "toNode": "a016",
+      "toSide": "left"
+    },
+    {
+      "id": "bridge_next",
+      "fromNode": "a016",
+      "fromSide": "right",
+      "toNode": "next_prologue3",
+      "toSide": "left",
+      "label": "同日傍晚 → B001"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "n0",
+      "type": "text",
+      "styleAttributes": {},
+      "text": "【上学途中】\n高二开学第一天，男高因昨晚仓库区的怪事睡过头，被奶奶叫醒后冲出门。\n隔壁虚拟主播看到他的背影；路上与怪盗相撞。\n他直接冲进校门被老师训斥，随口应付后加速跑走，反派和偶像在二楼远远看到。",
+      "x": -1220,
+      "y": -180,
+      "width": 440,
+      "height": 230
+    },
+    {
+      "id": "n1",
+      "type": "text",
+      "styleAttributes": {},
+      "text": "【自我介绍】\n上课铃响，男高进教室，在白板上写下自己的名字并打招呼：遇到困难可以来找我！\n同学笑他像动画主角，怪盗认出他。\n老师安排座位：坐到怪盗后面、虚拟主播左边的空位。",
+      "x": -600,
+      "y": -180,
+      "width": 440,
+      "height": 230
+    },
+    {
+      "id": "n2",
+      "type": "text",
+      "styleAttributes": {},
+      "text": "【老师喊过来】\n几小时后课间，老师把男高叫过来，找一名同学带他逛学校。\n【选项】1.怪盗 2.虚拟主播 3.反派 4.让老师选择\n（rd3：1为怪盗、2为虚拟主播、3为反派）",
+      "x": 80,
+      "y": -180,
+      "width": 460,
+      "height": 260
+    },
+    {
+      "id": "v0",
+      "type": "text",
+      "styleAttributes": {},
+      "text": "虚拟主播\n她怯生生带男高参观：图书馆（主教学楼一层东侧，藏书八万册）→ 食堂（主教学楼后方）→ 体育馆（操场北侧）。\n路过废弃施工区（东北角，铁皮围栏、塌陷大坑、生锈塔吊），男高发问，她说学校不让靠近。",
+      "x": 780,
+      "y": -440,
+      "width": 440,
+      "height": 260
+    },
+    {
+      "id": "v1",
+      "type": "text",
+      "styleAttributes": {},
+      "text": "怪盗带路\n原有未完成路线，当前不接入拔剑或序幕三。",
+      "x": 780,
+      "y": -30,
+      "width": 440,
+      "height": 170
+    },
+    {
+      "id": "vo0",
+      "type": "text",
+      "styleAttributes": {},
+      "text": "A010 → A011｜进入废弃施工区\n从铁皮小门进入，虚拟主播慌张跟随。\n坑底传来心跳声，男高下到坑底，发现被腐蚀的大师之剑。\n伸手时剑身轻颤、宝石微亮，触剑为强制事件。\n仅此主线可继续后续取剑与序幕三。",
+      "x": 1460,
+      "y": -440,
+      "width": 460,
+      "height": 350
+    },
+    {
+      "id": "vo1",
+      "type": "text",
+      "styleAttributes": {},
+      "text": "A010_RETURN_CLASS｜回班上\n男高收回目光，返回教室。\n未完成支线在独立节点结束，不进入 A016取剑主线终点，也不接 B001。",
+      "x": 1460,
+      "y": 80,
+      "width": 460,
+      "height": 210
+    },
+    {
+      "id": "script_link_first_act",
+      "file": "游戏说明/剧情/序幕/序幕（二）/序幕（二）_Galgame脚本.md",
+      "type": "file",
+      "styleAttributes": {},
+      "x": 80,
+      "y": 520,
+      "width": 460,
+      "height": 280
+    },
+    {
+      "id": "v2",
+      "type": "text",
+      "styleAttributes": {},
+      "text": "反派带路\n原有未完成路线，当前不接入拔剑或序幕三。",
+      "x": 780,
+      "y": 210,
+      "width": 440,
+      "height": 170
+    },
+    {
+      "id": "a012",
+      "type": "text",
+      "x": 2120,
+      "y": -440,
+      "width": 520,
+      "height": 280,
+      "text": "A012｜触剑与幻象\n看见空岛、金发青年、光之龙与大师之剑的片段。\n男高拔出剑，污秽落入坑底。\n此时建立召唤联系，尚未完成林克现界。",
+      "color": "6"
+    },
+    {
+      "id": "a013_a014",
+      "type": "text",
+      "x": 2800,
+      "y": -440,
+      "width": 520,
+      "height": 280,
+      "text": "A013—A014｜黑色人形战斗\n污秽聚成人形，虚拟主播昏迷。\n男高持剑战斗，事后先把剑暂插坑底，优先救人。\n从这里离开时尚未把剑带走。",
+      "color": "1"
+    },
+    {
+      "id": "a015",
+      "type": "text",
+      "x": 3480,
+      "y": -440,
+      "width": 520,
+      "height": 280,
+      "text": "A015｜回到教学楼\n男高抱着虚拟主播返回。\n灼痕在袖口下发光，尚未作为令咒解释。\n接保健室，不在此直接结束主线。",
+      "color": "4"
+    },
+    {
+      "id": "a015_recovery",
+      "type": "text",
+      "x": 4160,
+      "y": -440,
+      "width": 520,
+      "height": 280,
+      "text": "A015_RECOVERY｜保健室\n交给保健室老师，通知班主任。\n虚拟主播醒来，男高确认有人照顾。\n下午照常上课，临近放学再确认她能正常回应。",
+      "color": "4"
+    },
+    {
+      "id": "a015_retrieve",
+      "type": "text",
+      "x": 4840,
+      "y": -440,
+      "width": 520,
+      "height": 280,
+      "text": "A015_RETRIEVE｜放学取剑\n男高担心别人再次触剑，返回原施工区。\n从坑底取回大师之剑，用旧布裹好带走。\nSET：has_master_sword = true。",
+      "color": "3"
+    },
+    {
+      "id": "a016",
+      "type": "text",
+      "x": 5520,
+      "y": -440,
+      "width": 520,
+      "height": 280,
+      "text": "A016｜取剑主线结束\n同日傍晚，带着包好的剑回到奶奶家。\n只有已取剑主线进入 B001晚饭场景。\n回班上与其他未完成路线不经此终点。",
+      "color": "4"
+    },
+    {
+      "id": "next_prologue3",
+      "type": "file",
+      "file": "游戏说明/剧情/序幕/序幕（三）/序幕（三）.md",
+      "x": 6200,
+      "y": -440,
+      "width": 520,
+      "height": 300
+    },
+    {
+      "id": "bridge_notes",
+      "type": "text",
+      "x": 2120,
+      "y": 80,
+      "width": 520,
+      "height": 340,
+      "text": "## 入口与制作边界\n未取剑支线不能直接进入序幕三。\n\n大师之剑：白天救人暂留 → 放学取回 → 当夜床边共鸣。\n\n白板与 Galgame 脚本保持相同的 A015_RECOVERY、A015_RETRIEVE 编号。\n\n战斗数据与引擎接入不在本次文档修订内。",
+      "color": "5"
+    }
+  ]
+}

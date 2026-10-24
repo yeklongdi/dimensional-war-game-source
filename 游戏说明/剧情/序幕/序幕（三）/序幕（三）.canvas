@@ -1,0 +1,237 @@
+{
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  },
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": 0,
+      "y": -260,
+      "width": 600,
+      "height": 170,
+      "text": "# 序幕（三）：床边的勇者\nB001—B008\n晚饭 → 梦魇侵入 → 召唤与破梦 → 床边会面",
+      "color": "3"
+    },
+    {
+      "id": "B001",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 600,
+      "height": 270,
+      "text": "## B001｜晚饭与新同学\n**日常** · 奶奶家餐桌\n\n男高与奶奶吃晚饭，谈新同学，却隐去施工区的异常。\n\n**对白锚点**：奶奶：“新学校怎么样？有人肯跟你一起吃饭吗？”",
+      "color": "4"
+    },
+    {
+      "id": "B002",
+      "type": "text",
+      "x": 0,
+      "y": 360,
+      "width": 600,
+      "height": 270,
+      "text": "## B002｜床边的大师之剑\n**日常／伏笔** · 男高房间\n\n大师之剑已经带回家；男高入睡后，剑与灼痕开始共鸣。\n\n**对白锚点**：男高：“白天动静那么大，现在倒装起普通的剑来了。”",
+      "color": "4"
+    },
+    {
+      "id": "B003",
+      "type": "text",
+      "x": 0,
+      "y": 720,
+      "width": 600,
+      "height": 270,
+      "text": "## B003｜没有尽头的晚饭\n**梦境** · 梦中的奶奶家餐桌\n\n熟悉的晚饭开始重复，钟表与门外的夜色暴露梦境异常。\n\n**对白锚点**：男高：“……我不是已经睡了吗？”",
+      "color": "6"
+    },
+    {
+      "id": "B004",
+      "type": "text",
+      "x": 0,
+      "y": 1080,
+      "width": 600,
+      "height": 270,
+      "text": "## B004｜雾中的邀请\n**梦境／威胁** · 梦中的餐厅与雾\n\n梦魇以陌生声音邀请男高永远留下，没有理解强留他人的后果。\n\n**对白锚点**：雾中的声音：“欢迎来到……属于你的梦。”",
+      "color": "6"
+    },
+    {
+      "id": "B005",
+      "type": "text",
+      "x": 0,
+      "y": 1440,
+      "width": 600,
+      "height": 270,
+      "text": "## B005｜男高拒绝留下\n**梦境／挣扎** · 循环的梦境房屋\n\n男高主动寻找出口；梦魇强行加深睡意，梦境开始成为囚笼。\n\n**对白锚点**：男高：“把门打开！真的那一扇！”",
+      "color": "6"
+    },
+    {
+      "id": "B006",
+      "type": "text",
+      "x": 0,
+      "y": 1800,
+      "width": 600,
+      "height": 270,
+      "text": "## B006｜梦外的剑鸣\n**召唤** · 梦境门前／现实中的男高房间\n\n白天建立的联系响应求生愿望，林克通过大师之剑完成召唤。\n\n**对白锚点**：男高：“是那把剑……？”",
+      "color": "2"
+    },
+    {
+      "id": "B007",
+      "type": "text",
+      "x": 0,
+      "y": 2160,
+      "width": 600,
+      "height": 270,
+      "text": "## B007｜一剑斩断噩梦\n**梦境／救援** · 正在崩解的梦境\n\n林克切断本次梦境束缚，梦魇因被打断而短暂发怒。\n\n**对白锚点**：雾中的声音：“这里是我的——”",
+      "color": "6"
+    },
+    {
+      "id": "B008",
+      "type": "text",
+      "x": 0,
+      "y": 2520,
+      "width": 600,
+      "height": 270,
+      "text": "## B008｜醒来后的陌生人\n**日常／会面** · 男高房间\n\n男高醒来见到持剑的林克；两人尚未完成交流，衔接下一幕。\n\n**对白锚点**：男高：“刚才……是你把我拉出来的？”",
+      "color": "4"
+    },
+    {
+      "id": "previous",
+      "type": "file",
+      "file": "游戏说明/剧情/序幕/序幕（二）/序幕（二）：转学生来到太阳市第一高中.md",
+      "x": -740,
+      "y": 0,
+      "width": 500,
+      "height": 260
+    },
+    {
+      "id": "previous_canvas",
+      "type": "file",
+      "file": "游戏说明/剧情/序幕/序幕（二）/序幕（二）.canvas",
+      "x": -740,
+      "y": 350,
+      "width": 500,
+      "height": 260
+    },
+    {
+      "id": "prose",
+      "type": "file",
+      "file": "游戏说明/剧情/序幕/序幕（三）/序幕（三）.md",
+      "x": 760,
+      "y": 0,
+      "width": 500,
+      "height": 260
+    },
+    {
+      "id": "script",
+      "type": "file",
+      "file": "游戏说明/剧情/序幕/序幕（三）/序幕（三）_Galgame脚本.md",
+      "x": 760,
+      "y": 350,
+      "width": 500,
+      "height": 260
+    },
+    {
+      "id": "entry_rules",
+      "type": "text",
+      "x": -740,
+      "y": 700,
+      "width": 500,
+      "height": 430,
+      "text": "## 连续性与显示边界\n\n入口：已在序幕二放学取回大师之剑。\n\n“回班上”的未完成支线不得接入。\n\n梦魇本体仍在漫画店阁楼；此卡仅供作者。\n\n林克通过本次召唤联系破梦，全幕无对白。\n\n灼痕暂不直接认定为令咒。",
+      "color": "6"
+    },
+    {
+      "id": "end_state",
+      "type": "text",
+      "x": 760,
+      "y": 700,
+      "width": 500,
+      "height": 440,
+      "text": "## 本幕结束状态\n\n- 男高已经遇到梦魇，但不知道其真实来历。\n- 林克完成现界，持有男高带回家的大师之剑。\n- 奶奶暂时不知道楼上发生的事。\n- 梦魇的本次束缚被切断，本体未被斩杀。\n- 外部搜捕与警报留到序幕四开场。",
+      "color": "5"
+    },
+    {
+      "id": "next",
+      "type": "file",
+      "file": "游戏说明/剧情/序幕/序幕（四）/序幕（四）.md",
+      "x": 760,
+      "y": 2520,
+      "width": 500,
+      "height": 260
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_title",
+      "fromNode": "title",
+      "fromSide": "bottom",
+      "toNode": "B001",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_B002",
+      "fromNode": "B001",
+      "fromSide": "bottom",
+      "toNode": "B002",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_B003",
+      "fromNode": "B002",
+      "fromSide": "bottom",
+      "toNode": "B003",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_B004",
+      "fromNode": "B003",
+      "fromSide": "bottom",
+      "toNode": "B004",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_B005",
+      "fromNode": "B004",
+      "fromSide": "bottom",
+      "toNode": "B005",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_B006",
+      "fromNode": "B005",
+      "fromSide": "bottom",
+      "toNode": "B006",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_B007",
+      "fromNode": "B006",
+      "fromSide": "bottom",
+      "toNode": "B007",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_B008",
+      "fromNode": "B007",
+      "fromSide": "bottom",
+      "toNode": "B008",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_entry",
+      "label": "仅已取剑主线",
+      "fromNode": "previous",
+      "fromSide": "right",
+      "toNode": "B001",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_next",
+      "label": "警报响起，进入 C001",
+      "fromNode": "B008",
+      "fromSide": "right",
+      "toNode": "next",
+      "toSide": "left"
+    }
+  ]
+}

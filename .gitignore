@@ -32,3 +32,12 @@ dist-ssr
 !.env.example
 *.pem
 *.key
+
+# Local editor state and retired local checkouts are not project content.
+/.obsidian/
+/.workbuddy/
+/游戏源码发布/
+/游戏文件/
+
+# 已归档的验收日志属于项目说明，不是运行缓存。
+!/游戏说明/工程/verification/**/*.log

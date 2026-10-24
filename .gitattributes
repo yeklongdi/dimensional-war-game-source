@@ -1,0 +1,8 @@
+# SHA-256保护的输入及历史补丁保留原始字节，不转换行尾。
+次元战争代码/source/** -text
+游戏说明/剧情/** -text
+次元战争代码/历史补丁/*.diff -text -whitespace
+游戏说明/工程/verification/**/*.log -text -whitespace
+
+# Markdown的行末空格可用于显式换行，原有文稿格式原样保留。
+*.md whitespace=-blank-at-eol,-blank-at-eof

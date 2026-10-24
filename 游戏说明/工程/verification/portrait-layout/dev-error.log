@@ -1,0 +1,6 @@
+17:27:17 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_house_dusk] 背景 bg_grandmother_house_dusk 尚未绑定，使用场景渐变占位。
+17:27:19 [vite] (client) [console.warn] [次元战争:asset:sfx_door_knock] 音频 sfx_door_knock 尚未绑定，静默处理。
+17:27:19 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_house_entrance] 背景 bg_grandmother_house_entrance 尚未绑定，使用场景渐变占位。
+17:27:19 [vite] (client) [console.warn] [次元战争:asset:char_grandmother_warm] 立绘 char_grandmother_warm 尚未绑定，使用色块占位。
+17:28:10 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_house_entrance] 背景 bg_grandmother_house_entrance 尚未绑定，使用场景渐变占位。
+17:28:10 [vite] (client) [console.warn] [次元战争:asset:char_grandmother_warm] 立绘 char_grandmother_warm 尚未绑定，使用色块占位。

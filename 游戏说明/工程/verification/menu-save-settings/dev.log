@@ -1,0 +1,9 @@
+
+  VITE v8.3.4  ready in 674 ms
+
+  ➜  Local:   http://127.0.0.1:43910/
+  ➜  press h + enter to show help
+15:42:54 [vite] (client) page reload src/tests/fixtures/save-browser.ts
+15:49:31 [vite] (client) page reload tests/menu-layout.html
+15:54:39 [vite] (client) page reload src/game/ui/app-chrome.ts
+15:54:39 [vite] (client) page reload src/tests/fixtures/save-browser.ts

@@ -1,0 +1,21 @@
+11:46:06 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_house_dusk] 背景 bg_grandmother_house_dusk 尚未绑定，使用场景渐变占位。
+11:46:07 [vite] (client) [console.warn] [次元战争:asset:sfx_door_knock] 音频 sfx_door_knock 尚未绑定，静默处理。
+11:46:07 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_house_entrance] 背景 bg_grandmother_house_entrance 尚未绑定，使用场景渐变占位。
+11:46:07 [vite] (client) [console.warn] [次元战争:asset:char_grandmother_warm] 立绘 char_grandmother_warm 尚未绑定，使用色块占位。
+11:46:54 [vite] (client) [console.warn] [次元战争:asset:bg_grandmother_house_entrance] 背景 bg_grandmother_house_entrance 尚未绑定，使用场景渐变占位。
+11:46:54 [vite] (client) [console.warn] [次元战争:asset:char_grandmother_warm] 立绘 char_grandmother_warm 尚未绑定，使用色块占位。
+11:48:10 [vite] (client) [console.warn] [次元战争:asset:bg_school_classroom_morning] 背景 bg_school_classroom_morning 尚未绑定，使用场景渐变占位。
+11:48:10 [vite] (client) [console.warn] [次元战争:asset:bgm_school_classroom_daily] 音频 bgm_school_classroom_daily 尚未绑定，静默处理。
+11:48:10 [vite] (client) [console.warn] [次元战争:asset:char_teacher_placeholder] 立绘 char_teacher_placeholder 尚未绑定，使用色块占位。
+11:48:10 [vite] (client) [console.warn] [次元战争:asset:char_virtual_streamer_shy] 立绘 char_virtual_streamer_shy 尚未绑定，使用色块占位。
+11:48:10 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:拎着书包准备落座:期待] 男高「拎着书包准备落座／期待」尚无合格分层，使用明确静态回退。
+11:48:12 [vite] (client) [console.warn] [次元战争:asset:bg_school_classroom_day] 背景 bg_school_classroom_day 尚未绑定，使用场景渐变占位。
+11:48:12 [vite] (client) [console.warn] [次元战争:asset:char_villain_calm] 立绘 char_villain_calm 尚未绑定，使用色块占位。
+11:49:09 [vite] (client) [console.warn] [次元战争:asset:bgm_school_choice] 音频 bgm_school_choice 尚未绑定，静默处理。
+11:50:27 [vite] (client) [console.warn] [次元战争:asset:bg_school_library_day] 背景 bg_school_library_day 尚未绑定，使用场景渐变占位。
+11:50:27 [vite] (client) [console.warn] [次元战争:asset:bgm_school_daily] 音频 bgm_school_daily 尚未绑定，静默处理。
+11:50:27 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:自然跟随:好奇、友善] 男高「自然跟随／好奇、友善」尚无合格分层，使用明确静态回退。
+12:01:21 [vite] (client) [console.warn] [次元战争:asset:bg_school_construction_zone_day] 背景 bg_school_construction_zone_day 尚未绑定，使用场景渐变占位。
+12:01:21 [vite] (client) [console.warn] [次元战争:asset:bgm_school_mystery] 音频 bgm_school_mystery 尚未绑定，静默处理。
+12:01:21 [vite] (client) [console.warn] [次元战争:asset:char_virtual_streamer_shy] 立绘 char_virtual_streamer_shy 尚未绑定，使用色块占位。
+12:01:21 [vite] (client) [console.warn] [次元战争:visual:男高:mapping:停步观察围栏:好奇] 男高「停步观察围栏／好奇」尚无合格分层，使用明确静态回退。
