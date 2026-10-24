@@ -1,0 +1,800 @@
+{
+  "base": "http://127.0.0.1:43923/dimensional-war-game-source/",
+  "checkedAt": "2026-10-24T09:39:23.879Z",
+  "total": 88,
+  "failed": [],
+  "results": [
+    {
+      "file": "dist/assets/audio/homecoming.wav",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/audio/homecoming.wav",
+      "status": 200,
+      "bytes": 11369352,
+      "expected": "48791878ab477239c5301855cd8fcf9ce8d05eef75a1f3c07055527470a16701",
+      "actual": "48791878ab477239c5301855cd8fcf9ce8d05eef75a1f3c07055527470a16701",
+      "match": true
+    },
+    {
+      "file": "dist/assets/audio/liuxie.wav",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/audio/liuxie.wav",
+      "status": 200,
+      "bytes": 19737328,
+      "expected": "2eeedb6dc5ebc450adcf33f340a0d66b8fd8ed30f7872ac9155532c44bef5c05",
+      "actual": "2eeedb6dc5ebc450adcf33f340a0d66b8fd8ed30f7872ac9155532c44bef5c05",
+      "match": true
+    },
+    {
+      "file": "dist/assets/index-DJx5Vb64.js",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/index-DJx5Vb64.js",
+      "status": 200,
+      "bytes": 305049,
+      "expected": "0218c793314ac91dcd8051ecac914cf32a7735b71b9e7d162c01c2a5a0b5be4e",
+      "actual": "0218c793314ac91dcd8051ecac914cf32a7735b71b9e7d162c01c2a5a0b5be4e",
+      "match": true
+    },
+    {
+      "file": "dist/assets/index-TLRgB-2k.css",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/index-TLRgB-2k.css",
+      "status": 200,
+      "bytes": 21013,
+      "expected": "0e34394a23b31970d61271edc9323069e342c68c06b0ecd9231695c4fc500dc0",
+      "actual": "0e34394a23b31970d61271edc9323069e342c68c06b0ecd9231695c4fc500dc0",
+      "match": true
+    },
+    {
+      "file": "dist/assets/maps/sun-city-painted-v1.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/maps/sun-city-painted-v1.png",
+      "status": 200,
+      "bytes": 3836748,
+      "expected": "56bc275af13fcc82c971ae2a074919a2380ee5404cf346053eae098a5ff1b57e",
+      "actual": "56bc275af13fcc82c971ae2a074919a2380ee5404cf346053eae098a5ff1b57e",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-half-v1/hero-half-alert.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-alert.png",
+      "status": 200,
+      "bytes": 1507174,
+      "expected": "db219ab7b206e6cbbe63c60da226074fe0ca609a7c18afe5f789784f130add4e",
+      "actual": "db219ab7b206e6cbbe63c60da226074fe0ca609a7c18afe5f789784f130add4e",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-half-v1/hero-half-angry.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-angry.png",
+      "status": 200,
+      "bytes": 1522656,
+      "expected": "4dfd4d31319409e4f083fb2fbe2dda94063fbe78df97e459fe32b3adcaf66ca8",
+      "actual": "4dfd4d31319409e4f083fb2fbe2dda94063fbe78df97e459fe32b3adcaf66ca8",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-half-v1/hero-half-bed-awake.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-bed-awake.png",
+      "status": 200,
+      "bytes": 1732299,
+      "expected": "9bec477d43572fae0a98c8c8e3dde3719265c9e0130f8d64b79e6d065678ac33",
+      "actual": "9bec477d43572fae0a98c8c8e3dde3719265c9e0130f8d64b79e6d065678ac33",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-half-v1/hero-half-bed-sleepy.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-bed-sleepy.png",
+      "status": 200,
+      "bytes": 1796104,
+      "expected": "fd37038403a0f909bd52367e5117517f2f6160a0bc9b6a0a8fc7ffff27de5830",
+      "actual": "fd37038403a0f909bd52367e5117517f2f6160a0bc9b6a0a8fc7ffff27de5830",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-half-v1/hero-half-excited.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-excited.png",
+      "status": 200,
+      "bytes": 1531089,
+      "expected": "83f0de67aa48809e45d7bca7c35b63e61ef0eb61019baeadf86e5b7686a755ae",
+      "actual": "83f0de67aa48809e45d7bca7c35b63e61ef0eb61019baeadf86e5b7686a755ae",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-half-v1/hero-half-friendly.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-friendly.png",
+      "status": 200,
+      "bytes": 1571745,
+      "expected": "9f4dc1b84787154f9360b8497f72c92f9c6b4f97bc094f0333989e9ae09cf5df",
+      "actual": "9f4dc1b84787154f9360b8497f72c92f9c6b4f97bc094f0333989e9ae09cf5df",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-half-v1/hero-half-pained.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-pained.png",
+      "status": 200,
+      "bytes": 1546831,
+      "expected": "dfdd8c66a80624a1e6241b686401a3dc592cbcbe9ad39f9ba60e2c2dfcca73ac",
+      "actual": "dfdd8c66a80624a1e6241b686401a3dc592cbcbe9ad39f9ba60e2c2dfcca73ac",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-half-v1/hero-half-surprised.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-surprised.png",
+      "status": 200,
+      "bytes": 1524070,
+      "expected": "35d02f2490d77d187071539ef7333c631be9710d4ed4c0eea3bdc1d719e3eca9",
+      "actual": "35d02f2490d77d187071539ef7333c631be9710d4ed4c0eea3bdc1d719e3eca9",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-half-v1/hero-half-tired.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-tired.png",
+      "status": 200,
+      "bytes": 1505637,
+      "expected": "8b2cb1e9081ea125b278f2883dc90e267f1f808884b0dd7197f45e8a9192c3dd",
+      "actual": "8b2cb1e9081ea125b278f2883dc90e267f1f808884b0dd7197f45e8a9192c3dd",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-half-v1/hero-half-worried.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-worried.png",
+      "status": 200,
+      "bytes": 1491825,
+      "expected": "d6ba425414a3664f2855e52b98e165966bfb964ef1fc220e44151c90d3bb9fe9",
+      "actual": "d6ba425414a3664f2855e52b98e165966bfb964ef1fc220e44151c90d3bb9fe9",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v1/body.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v1/body.png",
+      "status": 200,
+      "bytes": 1089652,
+      "expected": "2f40311d2843f73407f8e18e8c704c589b24d913a8413e355dd80c73702c38c0",
+      "actual": "2f40311d2843f73407f8e18e8c704c589b24d913a8413e355dd80c73702c38c0",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v1/eyes-calm.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v1/eyes-calm.png",
+      "status": 200,
+      "bytes": 595529,
+      "expected": "a3df3467a891a986ceb7fe93fbf4f98498390a15c4836b404fc0ed8d3409b23f",
+      "actual": "a3df3467a891a986ceb7fe93fbf4f98498390a15c4836b404fc0ed8d3409b23f",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v1/eyes-closed-v2.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v1/eyes-closed-v2.png",
+      "status": 200,
+      "bytes": 571360,
+      "expected": "510bc67b5bf9a03becb0ae1c1cd9b0f9cfd19385081ced666a8720e2f9591e8f",
+      "actual": "510bc67b5bf9a03becb0ae1c1cd9b0f9cfd19385081ced666a8720e2f9591e8f",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v1/eyes-closed.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v1/eyes-closed.png",
+      "status": 200,
+      "bytes": 465649,
+      "expected": "bc3371e148e12d24f63b41a810a7135d28a3587bf653f10384c9cd780ee50e05",
+      "actual": "bc3371e148e12d24f63b41a810a7135d28a3587bf653f10384c9cd780ee50e05",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v1/eyes-half-v2.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v1/eyes-half-v2.png",
+      "status": 200,
+      "bytes": 665471,
+      "expected": "c3ee5fa93a70d6a49a4a8a2ad66058bdc24e1cdd470108587f045889d2c0aa5a",
+      "actual": "c3ee5fa93a70d6a49a4a8a2ad66058bdc24e1cdd470108587f045889d2c0aa5a",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v1/eyes-half.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v1/eyes-half.png",
+      "status": 200,
+      "bytes": 483189,
+      "expected": "0939ebf9ac1444b9a277958b3f685ebe80419b3385b76ee492886b9c80fa41eb",
+      "actual": "0939ebf9ac1444b9a277958b3f685ebe80419b3385b76ee492886b9c80fa41eb",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v1/hair-back.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v1/hair-back.png",
+      "status": 200,
+      "bytes": 510183,
+      "expected": "b6452abdf66eb702c8f415e0d7a171b94a4a906db1343335436d312f34f92a6d",
+      "actual": "b6452abdf66eb702c8f415e0d7a171b94a4a906db1343335436d312f34f92a6d",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v1/hair-front.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v1/hair-front.png",
+      "status": 200,
+      "bytes": 489554,
+      "expected": "3a2a332c27aa918381c278be8dd899a227c2390c081d2befe21c5060de1c491c",
+      "actual": "3a2a332c27aa918381c278be8dd899a227c2390c081d2befe21c5060de1c491c",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v1/head.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v1/head.png",
+      "status": 200,
+      "bytes": 642225,
+      "expected": "e78beede9d5c5a84f37b334996a056dde750d8fe00fa2fe077c4045a1beffc32",
+      "actual": "e78beede9d5c5a84f37b334996a056dde750d8fe00fa2fe077c4045a1beffc32",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v1/lower-left.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v1/lower-left.png",
+      "status": 200,
+      "bytes": 555562,
+      "expected": "8e2516c687c0f037009a289cea0bb32a4ca7656cc713330782117c25bce312a5",
+      "actual": "8e2516c687c0f037009a289cea0bb32a4ca7656cc713330782117c25bce312a5",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v1/lower-right.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v1/lower-right.png",
+      "status": 200,
+      "bytes": 701095,
+      "expected": "f3e0500d8a66cff6f0fc9bbe6f7222c6991858e87570af4dc57168c93caf6d60",
+      "actual": "f3e0500d8a66cff6f0fc9bbe6f7222c6991858e87570af4dc57168c93caf6d60",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v1/master-reference.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v1/master-reference.png",
+      "status": 200,
+      "bytes": 1273204,
+      "expected": "4a83585139ce20763c310681cf4f663776ab55ec9e486df4e4f9525a3d5111e7",
+      "actual": "4a83585139ce20763c310681cf4f663776ab55ec9e486df4e4f9525a3d5111e7",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v1/mouth-calm.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v1/mouth-calm.png",
+      "status": 200,
+      "bytes": 440173,
+      "expected": "194668a5847c7bea573c7185d828c1fdf7bbc6793232f5f3ffd4f2111bf0d25e",
+      "actual": "194668a5847c7bea573c7185d828c1fdf7bbc6793232f5f3ffd4f2111bf0d25e",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v1/mouth-open.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v1/mouth-open.png",
+      "status": 200,
+      "bytes": 456561,
+      "expected": "6e8e72fb0b9f681c7436d385142278142b58775b55e570df059b2c378189f996",
+      "actual": "6e8e72fb0b9f681c7436d385142278142b58775b55e570df059b2c378189f996",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v1/upper-left.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v1/upper-left.png",
+      "status": 200,
+      "bytes": 520618,
+      "expected": "d245f28e0efaba7bde06ff49fd5268e4787ec12a2c1b24808e0ce723b42abe54",
+      "actual": "d245f28e0efaba7bde06ff49fd5268e4787ec12a2c1b24808e0ce723b42abe54",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v1/upper-right.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v1/upper-right.png",
+      "status": 200,
+      "bytes": 581186,
+      "expected": "4ffd09adb5df66fe5cd863b72d049bde6fe6bf5aba9222e47652c0acbd1ec125",
+      "actual": "4ffd09adb5df66fe5cd863b72d049bde6fe6bf5aba9222e47652c0acbd1ec125",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v2/arms-alpha-review.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v2/arms-alpha-review.png",
+      "status": 200,
+      "bytes": 941666,
+      "expected": "107679646e63dc9d2bfa00e263ca080575a08182212a50e2518ae5ce8d4a2920",
+      "actual": "107679646e63dc9d2bfa00e263ca080575a08182212a50e2518ae5ce8d4a2920",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v2/arms-candidate.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v2/arms-candidate.png",
+      "status": 200,
+      "bytes": 954438,
+      "expected": "157a79c51bfba86063f9f3b4cb1926f0e5d5f72367b1a20a65f18e9374d11eec",
+      "actual": "157a79c51bfba86063f9f3b4cb1926f0e5d5f72367b1a20a65f18e9374d11eec",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/arm-left-prepare.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/arm-left-prepare.png",
+      "status": 200,
+      "bytes": 63602,
+      "expected": "43dbfdb0e7cfb0cf75910d20875715113c30e44e6d8bd98bf2d0cbe26725f225",
+      "actual": "43dbfdb0e7cfb0cf75910d20875715113c30e44e6d8bd98bf2d0cbe26725f225",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/arm-right-prepare.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/arm-right-prepare.png",
+      "status": 200,
+      "bytes": 74910,
+      "expected": "cc7ce843843c03f1fc28a89a865ad80b51565609b4396af90c4697ab47909c74",
+      "actual": "cc7ce843843c03f1fc28a89a865ad80b51565609b4396af90c4697ab47909c74",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/body-luggage.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/body-luggage.png",
+      "status": 200,
+      "bytes": 573102,
+      "expected": "e4053b7e51bb0c44bae267500a768fb28b17c4bcb37fe07794cd17b55521f0f2",
+      "actual": "e4053b7e51bb0c44bae267500a768fb28b17c4bcb37fe07794cd17b55521f0f2",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/body-prepare.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/body-prepare.png",
+      "status": 200,
+      "bytes": 527887,
+      "expected": "55806596d9bd67125a9cdbba35b679094f5b5d1523505ee41cbeff2a86db6bfe",
+      "actual": "55806596d9bd67125a9cdbba35b679094f5b5d1523505ee41cbeff2a86db6bfe",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/body-stand.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/body-stand.png",
+      "status": 200,
+      "bytes": 560417,
+      "expected": "71103e58cd5276c0f36ac1ad9cd687c6d6352225e95b0faa64a7918e52edd2fd",
+      "actual": "71103e58cd5276c0f36ac1ad9cd687c6d6352225e95b0faa64a7918e52edd2fd",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/eyes-calm-closed.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-calm-closed.png",
+      "status": 200,
+      "bytes": 31179,
+      "expected": "7358dd1a1c0dcb17ac82ce3f021a3a0c0318147502e1a41e62991380609c6404",
+      "actual": "7358dd1a1c0dcb17ac82ce3f021a3a0c0318147502e1a41e62991380609c6404",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/eyes-calm-half.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-calm-half.png",
+      "status": 200,
+      "bytes": 31337,
+      "expected": "ac267f07316c591f287ffcdcc1d421bad9fa638ff3947f9d317c2deb1ee7c4f1",
+      "actual": "ac267f07316c591f287ffcdcc1d421bad9fa638ff3947f9d317c2deb1ee7c4f1",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/eyes-calm.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-calm.png",
+      "status": 200,
+      "bytes": 31432,
+      "expected": "0a157ccffa964873f721690e5de16e321aec069733c1ccf7f281517f4014a45f",
+      "actual": "0a157ccffa964873f721690e5de16e321aec069733c1ccf7f281517f4014a45f",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/eyes-nervous-closed.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous-closed.png",
+      "status": 200,
+      "bytes": 30605,
+      "expected": "3c6d74bfb400eaa76e6589b432bb38a985dfad7ce0dcf92433127af52dcaf971",
+      "actual": "3c6d74bfb400eaa76e6589b432bb38a985dfad7ce0dcf92433127af52dcaf971",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/eyes-nervous-half.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous-half.png",
+      "status": 200,
+      "bytes": 30764,
+      "expected": "014e0882b2b286c2c7b82fde01d145e351d5f8574d0e0163a463f8aba5059838",
+      "actual": "014e0882b2b286c2c7b82fde01d145e351d5f8574d0e0163a463f8aba5059838",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/eyes-nervous.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous.png",
+      "status": 200,
+      "bytes": 31851,
+      "expected": "af68cb9460271a7b8ccbe2094eeb9b0cecc4367357cb1493b7c94d7d42af3d4e",
+      "actual": "af68cb9460271a7b8ccbe2094eeb9b0cecc4367357cb1493b7c94d7d42af3d4e",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/eyes-proud-closed.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-proud-closed.png",
+      "status": 200,
+      "bytes": 31456,
+      "expected": "f3ba29cf993c7c176122bda85f46d3b9b4d082f2907f9ace64183159816a3fe5",
+      "actual": "f3ba29cf993c7c176122bda85f46d3b9b4d082f2907f9ace64183159816a3fe5",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/eyes-proud-half.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-proud-half.png",
+      "status": 200,
+      "bytes": 31586,
+      "expected": "604d687d4880bab8871ebd20769c5302e8361dbf6325f42a256fff86b0bac430",
+      "actual": "604d687d4880bab8871ebd20769c5302e8361dbf6325f42a256fff86b0bac430",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/eyes-proud.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-proud.png",
+      "status": 200,
+      "bytes": 31988,
+      "expected": "1488424e7dc19fa163525bd743f71c11d4336c0e097e660e162740a73b2e72fe",
+      "actual": "1488424e7dc19fa163525bd743f71c11d4336c0e097e660e162740a73b2e72fe",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/eyes-puzzled-closed.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-puzzled-closed.png",
+      "status": 200,
+      "bytes": 31107,
+      "expected": "416884d1c993469eeadf23a25763867b4a65fc728dd86ebda70ffcfc847d866e",
+      "actual": "416884d1c993469eeadf23a25763867b4a65fc728dd86ebda70ffcfc847d866e",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/eyes-puzzled-half.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-puzzled-half.png",
+      "status": 200,
+      "bytes": 31231,
+      "expected": "2803c9e8ef4015b516fdff728a978af1415a7eeb8a0dd46aa35fa3a483ec71e2",
+      "actual": "2803c9e8ef4015b516fdff728a978af1415a7eeb8a0dd46aa35fa3a483ec71e2",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/eyes-puzzled.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-puzzled.png",
+      "status": 200,
+      "bytes": 32110,
+      "expected": "9823a2f4c93c37fb23227823f3bb15bd8928ae664098abc33502b60ee3b6c791",
+      "actual": "9823a2f4c93c37fb23227823f3bb15bd8928ae664098abc33502b60ee3b6c791",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/eyes-relaxed-closed.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-relaxed-closed.png",
+      "status": 200,
+      "bytes": 30790,
+      "expected": "49db4b5aa06e4449019a3a669472126abef4eb14507f390775a7be0a50273888",
+      "actual": "49db4b5aa06e4449019a3a669472126abef4eb14507f390775a7be0a50273888",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/eyes-relaxed-half.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-relaxed-half.png",
+      "status": 200,
+      "bytes": 30955,
+      "expected": "24cb5219bf0d48474473a69f619cc9fbdb572454da322d5847448684ddd03521",
+      "actual": "24cb5219bf0d48474473a69f619cc9fbdb572454da322d5847448684ddd03521",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/eyes-relaxed.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-relaxed.png",
+      "status": 200,
+      "bytes": 31946,
+      "expected": "e3d768c72e9edfc39568444524a1a77514a64f139363931d9c99cf9bf2cdbdda",
+      "actual": "e3d768c72e9edfc39568444524a1a77514a64f139363931d9c99cf9bf2cdbdda",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/hair-front.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/hair-front.png",
+      "status": 200,
+      "bytes": 51349,
+      "expected": "3f507d6ae3a9903775042eb1d64489a18b06a91f599dd0c89bd641587187a0b5",
+      "actual": "3f507d6ae3a9903775042eb1d64489a18b06a91f599dd0c89bd641587187a0b5",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/head.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/head.png",
+      "status": 200,
+      "bytes": 56406,
+      "expected": "32669d1c02ce13940767fbe127f9354a679acf1f98b9068336274075ddf411de",
+      "actual": "32669d1c02ce13940767fbe127f9354a679acf1f98b9068336274075ddf411de",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/luggage-grip.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/luggage-grip.png",
+      "status": 200,
+      "bytes": 189383,
+      "expected": "f47de864c9b612e7b50b5cb358d21754941724fd5e5d93fef5dcb076201ae9d9",
+      "actual": "f47de864c9b612e7b50b5cb358d21754941724fd5e5d93fef5dcb076201ae9d9",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/mouth-calm-speech.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-calm-speech.png",
+      "status": 200,
+      "bytes": 13877,
+      "expected": "105755fea08c05fa271c86c25f009ce3f344195bee8833b876a4a87fee3c7fe6",
+      "actual": "105755fea08c05fa271c86c25f009ce3f344195bee8833b876a4a87fee3c7fe6",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/mouth-calm.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-calm.png",
+      "status": 200,
+      "bytes": 13347,
+      "expected": "c7ebc8a132c93bf2318ac9737d7d3cafab8ca83f1b19cb924701ecee1ee2e94d",
+      "actual": "c7ebc8a132c93bf2318ac9737d7d3cafab8ca83f1b19cb924701ecee1ee2e94d",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/mouth-nervous-speech.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-nervous-speech.png",
+      "status": 200,
+      "bytes": 13910,
+      "expected": "a89de7d06b24f33562c76b447bc5e3e78cd22d3d7dbc982db08787a9b9630678",
+      "actual": "a89de7d06b24f33562c76b447bc5e3e78cd22d3d7dbc982db08787a9b9630678",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/mouth-nervous.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-nervous.png",
+      "status": 200,
+      "bytes": 13424,
+      "expected": "52960ea3bfcc800c21253d6dff3cb3424fd3ae58b372c58980681b8cd2702208",
+      "actual": "52960ea3bfcc800c21253d6dff3cb3424fd3ae58b372c58980681b8cd2702208",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/mouth-proud-speech.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-proud-speech.png",
+      "status": 200,
+      "bytes": 15041,
+      "expected": "7be89628d2957c7491fbe5e300b97b528924c85cff38afcaa5e63bc86ed3a432",
+      "actual": "7be89628d2957c7491fbe5e300b97b528924c85cff38afcaa5e63bc86ed3a432",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/mouth-proud.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-proud.png",
+      "status": 200,
+      "bytes": 14461,
+      "expected": "baaf1898109df8178e053e7b1da3592c77f6a7e77a1bf79d5d7f770d812e60ba",
+      "actual": "baaf1898109df8178e053e7b1da3592c77f6a7e77a1bf79d5d7f770d812e60ba",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/mouth-puzzled-speech.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-puzzled-speech.png",
+      "status": 200,
+      "bytes": 14033,
+      "expected": "2b887191aef75ded6c854dc272f161225e9a13facf5f1d279f3ed7126ae58fca",
+      "actual": "2b887191aef75ded6c854dc272f161225e9a13facf5f1d279f3ed7126ae58fca",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/mouth-puzzled.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-puzzled.png",
+      "status": 200,
+      "bytes": 13719,
+      "expected": "726ab48c41e8f0c1c97009821b9d9670c1607b9f14a787f67b8608aad3fe649a",
+      "actual": "726ab48c41e8f0c1c97009821b9d9670c1607b9f14a787f67b8608aad3fe649a",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/mouth-relaxed-speech.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-relaxed-speech.png",
+      "status": 200,
+      "bytes": 14449,
+      "expected": "d5872ded7acdd5ea1510b3758c2f05b56bd696cdb7c6525401418ea1d7c95b83",
+      "actual": "d5872ded7acdd5ea1510b3758c2f05b56bd696cdb7c6525401418ea1d7c95b83",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/mouth-relaxed.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-relaxed.png",
+      "status": 200,
+      "bytes": 13514,
+      "expected": "0f7b8da6daea330193dbb23d2c672bf5415663eae7c142e5f52ad82dcc739e4e",
+      "actual": "0f7b8da6daea330193dbb23d2c672bf5415663eae7c142e5f52ad82dcc739e4e",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero-layered-v3/registration.json",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero-layered-v3/registration.json",
+      "status": 200,
+      "bytes": 31503,
+      "expected": "43a01289fb97f8b5fbd14f9e36e1e6b69e7c0bc015307a9e0353c1a4f8871e93",
+      "actual": "43a01289fb97f8b5fbd14f9e36e1e6b69e7c0bc015307a9e0353c1a4f8871e93",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/hero.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/hero.png",
+      "status": 200,
+      "bytes": 2774655,
+      "expected": "4d0a2884c88a31808289400f30ecc38edaa2e38cf6f5bc2ad2a3167905aee8b3",
+      "actual": "4d0a2884c88a31808289400f30ecc38edaa2e38cf6f5bc2ad2a3167905aee8b3",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/prologue-v2/deoxys-defense.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/prologue-v2/deoxys-defense.png",
+      "status": 200,
+      "bytes": 1539558,
+      "expected": "066d18c9b36952c40ba380f311d58ec903a6040ae5a696b4ab92387d68e66684",
+      "actual": "066d18c9b36952c40ba380f311d58ec903a6040ae5a696b4ab92387d68e66684",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/prologue-v2/deoxys-normal.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/prologue-v2/deoxys-normal.png",
+      "status": 200,
+      "bytes": 1960553,
+      "expected": "27b0671f8f9766e0096ad4033b4eb8dd6ad6d7f60c0c53c64bd1e76f96c25af7",
+      "actual": "27b0671f8f9766e0096ad4033b4eb8dd6ad6d7f60c0c53c64bd1e76f96c25af7",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/prologue-v2/hero-seated-alert.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/prologue-v2/hero-seated-alert.png",
+      "status": 200,
+      "bytes": 1562868,
+      "expected": "63850a10de235c49510f8a6c95a3228b67f7f834ca0619529b3f170a5c11fd09",
+      "actual": "63850a10de235c49510f8a6c95a3228b67f7f834ca0619529b3f170a5c11fd09",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/prologue-v2/hero-seated-calm.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/prologue-v2/hero-seated-calm.png",
+      "status": 200,
+      "bytes": 1564887,
+      "expected": "5d11c3055f87e492d1e581f2474071860a552ccde6babb73e4cb347595959ccf",
+      "actual": "5d11c3055f87e492d1e581f2474071860a552ccde6babb73e4cb347595959ccf",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/prologue-v2/hero-seated-proud.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/prologue-v2/hero-seated-proud.png",
+      "status": 200,
+      "bytes": 1625876,
+      "expected": "75b807f3fca52a3f1def65787db0711ee6ba60ca7c22790333b3eb606d08c6c7",
+      "actual": "75b807f3fca52a3f1def65787db0711ee6ba60ca7c22790333b3eb606d08c6c7",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/prologue-v2/hero-sword-guard.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/prologue-v2/hero-sword-guard.png",
+      "status": 200,
+      "bytes": 1992247,
+      "expected": "21c85bd60522950a28408ce0eb3cb5cb5e4588eed0ebe15740d41bd0f78ffe85",
+      "actual": "21c85bd60522950a28408ce0eb3cb5cb5e4588eed0ebe15740d41bd0f78ffe85",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/prologue-v2/link-calm.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/prologue-v2/link-calm.png",
+      "status": 200,
+      "bytes": 2104463,
+      "expected": "cd9343533e2e616b60b96d5b1e9f6caf381b671df01212427d76798117f5c0c0",
+      "actual": "cd9343533e2e616b60b96d5b1e9f6caf381b671df01212427d76798117f5c0c0",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/prologue-v2/link-guard.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/prologue-v2/link-guard.png",
+      "status": 200,
+      "bytes": 2263050,
+      "expected": "a370cd7b8c522efa0c6205df931b936a7d3c2a4cefcea10b43a5c9628ead6cd0",
+      "actual": "a370cd7b8c522efa0c6205df931b936a7d3c2a4cefcea10b43a5c9628ead6cd0",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/prologue-v2/link-wrapped.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/prologue-v2/link-wrapped.png",
+      "status": 200,
+      "bytes": 2027136,
+      "expected": "de804ea91c9c60e3066198a6ba9337c171597389b27877b29bb17b809312fc8f",
+      "actual": "de804ea91c9c60e3066198a6ba9337c171597389b27877b29bb17b809312fc8f",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/prologue-v2/saber-alert.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/prologue-v2/saber-alert.png",
+      "status": 200,
+      "bytes": 2187907,
+      "expected": "dded6b11aa92a6595637f82c02de85ea93b7ce5880b3930db3d6dfd2ba51161c",
+      "actual": "dded6b11aa92a6595637f82c02de85ea93b7ce5880b3930db3d6dfd2ba51161c",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/prologue-v2/saber-calm.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/prologue-v2/saber-calm.png",
+      "status": 200,
+      "bytes": 2188966,
+      "expected": "af8361ca6656c658c37f67de61c4760a9ce5bfd79d23634d1345a51ad5d9edbf",
+      "actual": "af8361ca6656c658c37f67de61c4760a9ce5bfd79d23634d1345a51ad5d9edbf",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/prologue-v2/saber-impatient.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/prologue-v2/saber-impatient.png",
+      "status": 200,
+      "bytes": 2174622,
+      "expected": "57c8e5ca3646f048217c13e922e3a40b35fa2eade4b2756b5beacee498f46b2b",
+      "actual": "57c8e5ca3646f048217c13e922e3a40b35fa2eade4b2756b5beacee498f46b2b",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/prologue-v2/thief-action.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/prologue-v2/thief-action.png",
+      "status": 200,
+      "bytes": 1415189,
+      "expected": "271c17ca8b077039a29c58dcca2b60929489557fced1d6b5deb40b6e96aca318",
+      "actual": "271c17ca8b077039a29c58dcca2b60929489557fced1d6b5deb40b6e96aca318",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/prologue-v2/thief-daily-alert.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/prologue-v2/thief-daily-alert.png",
+      "status": 200,
+      "bytes": 1466402,
+      "expected": "37d4f325d44c57db0ded8625063a675475181419de9118fdbba1793f4c5c6eee",
+      "actual": "37d4f325d44c57db0ded8625063a675475181419de9118fdbba1793f4c5c6eee",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/prologue-v2/thief-daily-serious.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/prologue-v2/thief-daily-serious.png",
+      "status": 200,
+      "bytes": 1507137,
+      "expected": "3b24dddbeba1f1995fe0f552c5441f12877fac808af4b46282dd4ea28fbc9ef6",
+      "actual": "3b24dddbeba1f1995fe0f552c5441f12877fac808af4b46282dd4ea28fbc9ef6",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/prologue-v2/thief-daily-smile.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/prologue-v2/thief-daily-smile.png",
+      "status": 200,
+      "bytes": 1521810,
+      "expected": "c43d5c9eb8e1f4c223f7543c857241c4e93ff38f8235960a788618ec43009e9f",
+      "actual": "c43d5c9eb8e1f4c223f7543c857241c4e93ff38f8235960a788618ec43009e9f",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/prologue-v2/thief-unmasked-action-serious.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/prologue-v2/thief-unmasked-action-serious.png",
+      "status": 200,
+      "bytes": 1414701,
+      "expected": "ef4537d262d19deb7695fe3c6c99e0f15414638881efc680898a113616a6fbad",
+      "actual": "ef4537d262d19deb7695fe3c6c99e0f15414638881efc680898a113616a6fbad",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/prologue-v2/thief-unmasked-action-smile.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/prologue-v2/thief-unmasked-action-smile.png",
+      "status": 200,
+      "bytes": 1423293,
+      "expected": "cb9b5b45921a3ccb5fc6ef8d8191ef684aa1d7638f3509f4615f7a4a1045ec46",
+      "actual": "cb9b5b45921a3ccb5fc6ef8d8191ef684aa1d7638f3509f4615f7a4a1045ec46",
+      "match": true
+    },
+    {
+      "file": "dist/assets/portraits/thief.png",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/assets/portraits/thief.png",
+      "status": 200,
+      "bytes": 1405360,
+      "expected": "dd9cc178984660fee4eb49997d3242b8fdee35d5e92d577ffc45436f32e66f63",
+      "actual": "dd9cc178984660fee4eb49997d3242b8fdee35d5e92d577ffc45436f32e66f63",
+      "match": true
+    },
+    {
+      "file": "dist/index.html",
+      "url": "http://127.0.0.1:43923/dimensional-war-game-source/index.html",
+      "status": 200,
+      "bytes": 493,
+      "expected": "9965741dca65618e3d4fde06d7288520d1602182afca60f3690cfb9a4f3582f7",
+      "actual": "9965741dca65618e3d4fde06d7288520d1602182afca60f3690cfb9a4f3582f7",
+      "match": true
+    }
+  ]
+}

@@ -28,6 +28,7 @@ audio { display: none; }
   cursor: pointer;
 }
 .backdrop, .portraits, .player-content { position: absolute; inset: 0; }
+.portraits { z-index: 1; isolation: isolate; pointer-events: none; mask-image: linear-gradient(#000 0 550px, transparent 620px); }
 .backdrop::after {
   content: "";
   position: absolute;
@@ -49,6 +50,7 @@ audio { display: none; }
   text-shadow: 0 2px 14px #0b0e14;
 }
 .hud {
+  z-index: 3;
   position: absolute;
   top: 24px;
   left: 36px;
@@ -61,11 +63,8 @@ audio { display: none; }
 .portrait {
   position: absolute;
   top: 0;
-  height: 1152px;
-  width: 768px;
-  transform: translateX(-50%);
-  transform-origin: bottom center;
-  transition: left .18s ease;
+  height: 510px;
+  width: 180px;
   z-index: 1;
   pointer-events: none;
 }
@@ -75,17 +74,17 @@ audio { display: none; }
   object-fit: contain;
   object-position: center bottom;
 }
-.portrait { filter: brightness(.8); transition: left .18s ease, filter .18s ease; }
+.portrait { filter: brightness(.8); transition: filter .18s ease; }
 .portrait[data-rear="true"] { opacity: .7; z-index: 0; }
 .portrait[data-speaking="true"] { z-index: 4; filter: brightness(1); }
-.portrait[data-visual="static"] { top: 45px; width: 420px; height: 650px; }
-.portrait[data-visual="static"][data-frame="waist"] { top: 0; width: 768px; height: 1152px; }
-.portrait[data-visual="static"][data-frame="bust"] { top: 0; width: 600px; height: 900px; }
+.portrait[data-phase="out"] { opacity: 0; transition: opacity .15s linear, filter .18s ease; }
+.portrait[data-phase="in"] { animation: portrait-enter .15s linear; }
+@keyframes portrait-enter { from { opacity: 0; } to { opacity: 1; } }
 .story-props { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
 .story-prop-placeholder { position: absolute; top: 180px; transform: translateX(-50%); width: 230px; min-height: 140px; padding: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px dashed #c8b77a; background: #141827dd; color: #e5d7ad; border-radius: 6px; }
 .story-prop-title { font-size: 24px; }
 .story-prop-placeholder small { font-size: 13px; opacity: .7; }
-.portrait-layered { position: absolute; left: 0; top: 0; transform: scale(.75); transform-origin: 0 0; }
+.portrait-layered { position: absolute; left: 0; top: 0; transform: scale(var(--portrait-scale, .47)); transform-origin: 0 0; }
 .portrait-layer { position: absolute; inset: 0; }
 .portrait-layer img { position: absolute; inset: 0; width: 100%; height: 100%; }
 .portrait-placeholder {

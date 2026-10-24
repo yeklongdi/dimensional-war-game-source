@@ -1,0 +1,96 @@
+{
+  "before": {
+    "lab": {},
+    "layout": {
+      "displayRevision": "1",
+      "displayScope": "4/prologue/p001",
+      "displaySlots": "男高",
+      "lastSpoken": "{}"
+    },
+    "portraits": [
+      {
+        "actor": "男高",
+        "asset": "char_male_high_normal",
+        "center": "640",
+        "displayed": "true",
+        "expression": "紧张、期待",
+        "frame": "layered",
+        "headHeight": "136.76999999999998",
+        "headTop": "210",
+        "hidden": false,
+        "metric": "hero-layered",
+        "phase": "steady",
+        "pose": "携带行李、站立",
+        "position": "center",
+        "rear": "false",
+        "rect": {
+          "h": 721.9125366210938,
+          "w": 481.2749938964844,
+          "x": 399.3500061035156,
+          "y": 187.4375
+        },
+        "safeWidth": "338.4",
+        "scale": "0.47",
+        "slot": "center",
+        "speaking": "false",
+        "talking": "false",
+        "visual": "layered"
+      }
+    ],
+    "size": {
+      "h": 720,
+      "w": 1280
+    },
+    "stage": {
+      "actId": "prologue",
+      "activeRunId": "db43f255-a3b3-4abe-9dc0-9968452dc337",
+      "bgmId": "bgm_homecoming_warm",
+      "fastForward": "false",
+      "nodeIndex": "3",
+      "optionIndex": "",
+      "optionNodeIndex": "",
+      "paused": "false",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792834504733}",
+      "saveRequest": "1",
+      "saveStatus": "saved",
+      "sceneId": "p001",
+      "session": "4",
+      "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+      "testid": "story-stage",
+      "typingComplete": "true",
+      "vaultJson": "{\"version\":3,\"activeRunId\":\"db43f255-a3b3-4abe-9dc0-9968452dc337\",\"revision\":2,\"auto\":{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792834504733}},\"manual\":[null,null,null,null,null,null]}",
+      "vaultStatus": "valid",
+      "waitKind": "text",
+      "waitToken": "4:1"
+    },
+    "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。"
+  },
+  "afterReload": {
+    "lab": {},
+    "layout": {},
+    "portraits": [],
+    "size": {
+      "h": 720,
+      "w": 1280
+    },
+    "stage": {
+      "activeRunId": "db43f255-a3b3-4abe-9dc0-9968452dc337",
+      "bgmId": "",
+      "fastForward": "false",
+      "paused": "false",
+      "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792834504733}",
+      "saveRequest": "0",
+      "saveStatus": "ready",
+      "screen": "menu",
+      "session": "1",
+      "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+      "testid": "main-menu",
+      "vaultJson": "{\"version\":3,\"activeRunId\":\"db43f255-a3b3-4abe-9dc0-9968452dc337\",\"revision\":2,\"auto\":{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792834504733}},\"manual\":[null,null,null,null,null,null]}",
+      "vaultStatus": "valid"
+    }
+  },
+  "scripts": [
+    "http://127.0.0.1:43923/dimensional-war-game-source/assets/index-DJx5Vb64.js"
+  ],
+  "errors": []
+}

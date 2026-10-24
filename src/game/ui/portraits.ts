@@ -1,5 +1,5 @@
 import type { Action, ActorState, GameState } from '../state.js';
-import { actorColor, displayName, placement, slotX } from '../story/config.js';
+import { actorColor, displayName, placement } from '../story/config.js';
 import { decodeImage, loadLayers, VisualLease } from '../visual/loading.js';
 import type { ImagePort } from '../visual/loading.js';
 import { resolveVisual } from '../visual/resolve.js';
@@ -9,6 +9,13 @@ import { element } from './elements.js';
 import { LayeredFigure, visualClock } from './layered-figure.js';
 import type { FigureClock } from './layered-figure.js';
 import { isStoryProp } from './props.js';
+import { portraitEntries } from '../visual/entrances.js';
+import { planPortraits, portraitCenters } from '../visual/portrait-layout.js';
+import type { PortraitLayout } from '../visual/portrait-layout.js';
+import { portraitMetric, portraitTransform, placeholderMetric } from '../visual/portrait-metrics.js';
+import type { PortraitMetric } from '../visual/portrait-metrics.js';
+import { DisplayTransition } from '../visual/display-transition.js';
+import type { DisplaySlot } from '../visual/display-transition.js';
 
 export type PortraitPorts = { candidates?: boolean; image?: ImagePort<HTMLImageElement>; clock?: FigureClock; fixedTime?: () => number | undefined };
 class ActorPortrait {
@@ -24,6 +31,9 @@ class ActorPortrait {
   private readonly clock: FigureClock;
   private readonly dispatch: (action: Action) => void;
   private readonly ports: PortraitPorts;
+  private presented = false;
+  private center = 640;
+  private metric: PortraitMetric = placeholderMetric;
   constructor(dispatch: (action: Action) => void, ports: PortraitPorts) {
     this.dispatch = dispatch; this.ports = ports;
     this.image = ports.image ?? decodeImage; this.clock = ports.clock ?? visualClock;
@@ -36,7 +46,6 @@ class ActorPortrait {
     Object.assign(this.root.dataset, { actor: actor.actor, asset: actor.asset ?? '', position: actor.position, slot,
       pose: actor.pose ?? '', expression: actor.expression ?? '',
       speaking: String(state.waiting?.kind === 'text' && state.waiting.speaker === actor.actor), rear: String(rear) });
-    this.root.hidden = !actor.visible;
     this.root.setAttribute('aria-label', name);
     this.root.style.setProperty('--actor-color', actorColor(actor.actor));
     if (!this.root.hasChildNodes()) this.placeholder(name);
@@ -44,7 +53,7 @@ class ActorPortrait {
     if (plan.diagnostic) this.warn(`mapping:${actor.pose}:${actor.expression}`, plan.diagnostic);
     this.plan = plan;
     const requestTime = this.clock.now();
-    const actionStart = previousPose !== undefined && previousPose !== actor.pose ? requestTime : undefined;
+    const actionStart = this.presented && !this.paused() && !state.fastForward && previousPose !== undefined && previousPose !== actor.pose ? requestTime : undefined;
     this.lease.request(plan.key, async () => {
       if (plan.kind === 'layered' && !this.failed.has(plan.key)) return { kind: 'layered' as const, images: await loadLayers(plan.recipe, this.image) };
       const fallback = plan.kind === 'static' ? plan.url : plan.kind === 'layered' ? plan.fallback : undefined;
@@ -52,18 +61,20 @@ class ActorPortrait {
     }, loaded => {
       this.root.classList.remove('portrait-placeholder');
       if (loaded.kind === 'layered' && plan.kind === 'layered') {
-        const start = actionStart !== undefined && this.clock.now() - requestTime < 300 ? actionStart : undefined;
+        const start = this.presented && !this.paused() && !this.state?.fastForward && actionStart !== undefined && this.clock.now() - requestTime < 300 ? actionStart : undefined;
         if (this.figure) this.figure.updateRecipe(plan.recipe, loaded.images, start);
         else this.figure = new LayeredFigure(plan.recipe, loaded.images, this.clock, start);
         if (this.root.firstElementChild !== this.figure.root) this.root.replaceChildren(this.figure.root);
         this.root.dataset.visual = 'layered';
         this.root.dataset.frame = 'layered';
+        this.setMetric(portraitMetric(plan, 'layered'));
       } else if (loaded.kind === 'static') {
         this.figure?.dispose(); this.figure = undefined;
         const image = loaded.image.cloneNode() as HTMLImageElement;
         image.className = 'portrait-image'; image.alt = name;
         this.root.replaceChildren(image); this.root.dataset.visual = 'static';
         this.root.dataset.frame = plan.kind === 'static' ? plan.frame ?? 'legacy' : plan.kind === 'layered' ? plan.fallbackFrame ?? 'legacy' : 'legacy';
+        this.setMetric(portraitMetric(plan, 'static', loaded.image.src));
       } else { this.figure?.dispose(); this.figure = undefined; this.placeholder(name); }
       this.syncSpeech();
     }, error => {
@@ -82,6 +93,7 @@ class ActorPortrait {
         const copy = image.cloneNode() as HTMLImageElement;
         copy.className = 'portrait-image'; copy.alt = name;
         this.root.classList.remove('portrait-placeholder'); this.root.replaceChildren(copy); this.root.dataset.visual = 'static'; this.root.dataset.frame = plan.fallbackFrame ?? 'legacy';
+        this.setMetric(portraitMetric(plan, 'static', image.src));
       } else this.placeholder(name);
     }, () => this.staticFailure(this.actor!, name));
   }
@@ -95,6 +107,7 @@ class ActorPortrait {
     this.root.classList.add('portrait-placeholder'); this.root.dataset.visual = 'placeholder';
     this.root.replaceChildren(element('span', 'portrait-initial', Array.from(name)[0] ?? '?'),
       element('span', 'portrait-name', name), element('span', 'placeholder-label', '立绘占位'));
+    this.setMetric(placeholderMetric);
   }
   private warn(key: string, message: string): void {
     const id = `visual:${this.actor!.actor}:${key}`;
@@ -104,10 +117,27 @@ class ActorPortrait {
   private syncSpeech(): void {
     if (!this.actor || !this.state) return;
     const plan = this.plan;
-    const talking = isTalking({ ...this.actor, supported: !!this.figure,
+    const talking = this.presented && isTalking({ ...this.actor, supported: !!this.figure,
       mouthAllowed: plan?.kind === 'layered' && plan.recipe.limits.mouth, prop: this.actor.actor === '大师之剑' },
-    this.state.waiting?.kind === 'text' && !this.state.progress?.confirming && !this.state.system?.panel && !this.state.system?.stale ? this.state.waiting : null);
-    this.figure?.sync(talking, this.actor.visible, this.ports.fixedTime?.());
+    this.state.waiting?.kind === 'text' && !this.paused() ? this.state.waiting : null);
+    this.figure?.sync(talking, this.presented && this.actor.visible && !this.paused(), this.ports.fixedTime?.());
+  }
+  private paused(): boolean { return !!(this.state?.progress?.confirming || this.state?.system?.panel || this.state?.system?.stale); }
+  display(slot?: DisplaySlot): void {
+    this.presented = !!slot && slot.phase !== 'out';
+    this.root.hidden = !slot || (!this.actor?.visible && slot.phase !== 'out');
+    this.root.dataset.displayed = String(!!slot);
+    this.root.dataset.phase = slot?.phase ?? 'hidden';
+    if (slot) { this.center = slot.x; this.setMetric(this.metric); }
+    this.syncSpeech();
+  }
+  private setMetric(metric: PortraitMetric): void {
+    this.metric = metric;
+    const transform = portraitTransform(metric, this.center);
+    Object.assign(this.root.style, { left: `${transform.left}px`, top: `${transform.top}px`, width: `${transform.width}px`, height: `${transform.height}px` });
+    this.root.style.setProperty('--portrait-scale', String(transform.scale));
+    Object.assign(this.root.dataset, { metric: metric.group, center: String(this.center), scale: String(transform.scale), headTop: String(metric.headTop),
+      headHeight: String((metric.head[1] - metric.head[0]) * metric.scale), safeWidth: String((metric.safety[1] - metric.safety[0]) * metric.scale) });
   }
   dispose(): void { this.lease.dispose(); this.figure?.dispose(); this.root.remove(); }
 }
@@ -117,29 +147,38 @@ export class PortraitsView {
   private readonly instances = new Map<string, ActorPortrait>();
   private session?: number;
   private disposed = false;
+  private layout?: PortraitLayout;
+  private shown: readonly DisplaySlot[] = [];
+  private readonly transition: DisplayTransition;
   private readonly root: HTMLElement;
   private readonly dispatch: (action: Action) => void;
   private readonly ports: PortraitPorts;
   constructor(root: HTMLElement, dispatch: (action: Action) => void, ports: PortraitPorts = {}) {
     this.root = root; this.dispatch = dispatch; this.ports = ports;
+    this.transition = new DisplayTransition({ later: (work, ms) => window.setTimeout(work, ms), cancel: id => window.clearTimeout(id) }, slots => {
+      this.shown = slots; this.applyDisplay();
+    });
   }
   render(state: GameState): void {
     if (this.disposed) return;
     if (this.session !== undefined && this.session !== state.run) this.clear();
     this.session = state.run;
     const people = Object.values(state.actors).filter(actor => !isStoryProp(actor));
-    const visible = people.filter(actor => actor.visible);
+    this.layout = planPortraits({ ...state, actors: people, entries: portraitEntries(state) }, this.layout);
     for (const actor of people) {
       let instance = this.instances.get(actor.actor);
       if (!instance) { instance = new ActorPortrait(this.dispatch, this.ports); this.instances.set(actor.actor, instance); this.root.append(instance.root); }
-      const { slot } = placement(actor.position), peers = visible.filter(other => placement(other.position).slot === slot);
-      // 半身图比旧首字占位宽；同槽拉开脸部间距，避免占位遮住同伴面部。
-      const offset = (peers.findIndex(other => other.actor === actor.actor) - (peers.length - 1) / 2) * 320;
-      instance.root.style.left = `${Math.max(180, Math.min(1100, slotX[slot] + offset))}px`;
       instance.update(state, actor);
     }
     for (const [key, instance] of this.instances) if (!state.actors[key] || isStoryProp(state.actors[key]!)) { instance.dispose(); this.instances.delete(key); }
+    const centers = portraitCenters(this.layout.slots.length);
+    this.transition.update(this.layout.scope, this.layout.slots.map((actor, index) => ({ actor, x: centers[index]! })),
+      !!state.fastForward || !!state.system?.panel || !!state.system?.stale || !!state.progress?.confirming);
+    this.applyDisplay();
+    Object.assign(this.root.dataset, { displayScope: this.layout.scope, displayRevision: String(this.layout.revision),
+      displaySlots: this.layout.slots.join(','), lastSpoken: JSON.stringify(this.layout.lastSpoken) });
   }
-  private clear(): void { for (const instance of this.instances.values()) instance.dispose(); this.instances.clear(); }
-  dispose(): void { this.disposed = true; this.clear(); }
+  private applyDisplay(): void { for (const [key, instance] of this.instances) instance.display(this.shown.find(slot => slot.actor === key)); }
+  private clear(): void { for (const instance of this.instances.values()) instance.dispose(); this.instances.clear(); this.layout = undefined; }
+  dispose(): void { this.disposed = true; this.transition.dispose(); this.clear(); }
 }

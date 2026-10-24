@@ -1,0 +1,4290 @@
+[
+  {
+    "case": "c009-initial-masked",
+    "data": {
+      "lab": {
+        "requests": "6",
+        "state": "{\"scene\":\"c009\",\"run\":801,\"token\":\"801:1\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"left\",\"asset\":\"char_male_high_normal\",\"pose\":\"扶墙调整呼吸，望向蒙面人\",\"expression\":\"疑惑\"},\"金发青年\":{\"actor\":\"金发青年\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_link_silent_placeholder\",\"pose\":\"守在巷口附近\",\"expression\":\"观察\"},\"黑衣队员\":{\"actor\":\"黑衣队员\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_member_placeholder\",\"pose\":\"招呼同伴围上\",\"expression\":\"急躁\"},\"黑衣干部甲\":{\"actor\":\"黑衣干部甲\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_officer_a_placeholder\",\"pose\":\"停步，观察两人\",\"expression\":\"克制，审视\"},\"不明生物·普通型\":{\"actor\":\"不明生物·普通型\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_deoxys_normal_placeholder\",\"pose\":\"悬浮，触臂展开\",\"expression\":\"锁定目标\"},\"不明生物·防御型\":{\"actor\":\"不明生物·防御型\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_deoxys_defense_placeholder\",\"pose\":\"展开屏障，护住普通型\",\"expression\":\"稳定\"},\"黑衣干部乙\":{\"actor\":\"黑衣干部乙\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_officer_b_placeholder\",\"pose\":\"走入侧巷口，指挥部队\",\"expression\":\"冷静\"},\"蒙面人\":{\"actor\":\"蒙面人\",\"visible\":true,\"position\":\"right\",\"asset\":\"char_thief_masked_black_placeholder\",\"pose\":\"抬手准备摘下面罩\",\"expression\":\"轻松\"},\"女剑士\":{\"actor\":\"女剑士\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_saber_traveler_placeholder\",\"pose\":\"站在外侧留意来路\",\"expression\":\"警戒\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "801/prologue_4/c009",
+        "displaySlots": "男高,女剑士,蒙面人",
+        "lastSpoken": "{}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "256",
+          "displayed": "true",
+          "expression": "疑惑",
+          "frame": "bust",
+          "headHeight": "141.4",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-half",
+          "phase": "steady",
+          "pose": "扶墙调整呼吸，望向蒙面人",
+          "position": "left",
+          "rear": "false",
+          "rect": {
+            "h": 537.59375,
+            "w": 358.390625,
+            "x": 300.796875,
+            "y": 252
+          },
+          "safeWidth": "286.72",
+          "scale": "0.28",
+          "slot": "left",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "观察",
+          "frame": "waist",
+          "headHeight": "132.66",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "link",
+          "phase": "hidden",
+          "pose": "守在巷口附近",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "黑衣队员",
+          "asset": "char_organization_member_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "急躁",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "招呼同伴围上",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "黑衣干部甲",
+          "asset": "char_organization_officer_a_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "克制，审视",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "停步，观察两人",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "不明生物·普通型",
+          "asset": "char_deoxys_normal_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "锁定目标",
+          "frame": "waist",
+          "headHeight": "144",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "deoxys",
+          "phase": "hidden",
+          "pose": "悬浮，触臂展开",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "327.68",
+          "scale": "0.32",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "不明生物·防御型",
+          "asset": "char_deoxys_defense_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "稳定",
+          "frame": "waist",
+          "headHeight": "144",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "deoxys",
+          "phase": "hidden",
+          "pose": "展开屏障，护住普通型",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "327.68",
+          "scale": "0.32",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "黑衣干部乙",
+          "asset": "char_organization_officer_b_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "冷静",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "走入侧巷口，指挥部队",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "蒙面人",
+          "asset": "char_thief_masked_black_placeholder",
+          "center": "1024",
+          "displayed": "true",
+          "expression": "轻松",
+          "frame": "waist",
+          "headHeight": "132.6",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "thief-masked",
+          "phase": "steady",
+          "pose": "抬手准备摘下面罩",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 748.796875,
+            "w": 499.1875,
+            "x": 1174.3125,
+            "y": 243
+          },
+          "safeWidth": "323.7",
+          "scale": "0.39",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "女剑士",
+          "asset": "char_saber_traveler_placeholder",
+          "center": "640",
+          "displayed": "true",
+          "expression": "警戒",
+          "frame": "waist",
+          "headHeight": "129.36",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "saber",
+          "phase": "steady",
+          "pose": "站在外侧留意来路",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 633.59375,
+            "w": 422.390625,
+            "x": 748.796875,
+            "y": 259.1875
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        }
+      ],
+      "size": {
+        "h": 900,
+        "w": 1920
+      },
+      "stage": {
+        "actId": "prologue_4",
+        "nodeIndex": "10",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "c009",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "text",
+        "waitToken": "801:1"
+      },
+      "text": "确认这段路暂时没有追兵，蒙面人才停在墙边，长长吐出一口气。"
+    }
+  },
+  {
+    "case": "c009-unmasked-original-hide-show",
+    "data": {
+      "lab": {
+        "requests": "7",
+        "state": "{\"scene\":\"c009\",\"run\":801,\"token\":\"801:4\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"left\",\"asset\":\"char_male_high_normal\",\"pose\":\"扶墙调整呼吸，望向蒙面人\",\"expression\":\"疑惑\"},\"金发青年\":{\"actor\":\"金发青年\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_link_silent_placeholder\",\"pose\":\"守在巷口附近\",\"expression\":\"观察\"},\"黑衣队员\":{\"actor\":\"黑衣队员\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_member_placeholder\",\"pose\":\"招呼同伴围上\",\"expression\":\"急躁\"},\"黑衣干部甲\":{\"actor\":\"黑衣干部甲\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_officer_a_placeholder\",\"pose\":\"停步，观察两人\",\"expression\":\"克制，审视\"},\"不明生物·普通型\":{\"actor\":\"不明生物·普通型\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_deoxys_normal_placeholder\",\"pose\":\"悬浮，触臂展开\",\"expression\":\"锁定目标\"},\"不明生物·防御型\":{\"actor\":\"不明生物·防御型\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_deoxys_defense_placeholder\",\"pose\":\"展开屏障，护住普通型\",\"expression\":\"稳定\"},\"黑衣干部乙\":{\"actor\":\"黑衣干部乙\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_officer_b_placeholder\",\"pose\":\"走入侧巷口，指挥部队\",\"expression\":\"冷静\"},\"蒙面人\":{\"actor\":\"蒙面人\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_thief_masked_black_placeholder\",\"pose\":\"抬手准备摘下面罩\",\"expression\":\"轻松\"},\"女剑士\":{\"actor\":\"女剑士\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_saber_traveler_placeholder\",\"pose\":\"站在外侧留意来路\",\"expression\":\"警戒\"},\"怪盗\":{\"actor\":\"怪盗\",\"visible\":true,\"position\":\"right\",\"asset\":\"char_thief_smile\",\"pose\":\"收起面罩\",\"expression\":\"带笑，观察男高\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "2",
+        "displayScope": "801/prologue_4/c009",
+        "displaySlots": "男高,女剑士,怪盗",
+        "lastSpoken": "{\"蒙面人\":1,\"男高\":2}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "256",
+          "displayed": "true",
+          "expression": "疑惑",
+          "frame": "bust",
+          "headHeight": "141.4",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-half",
+          "phase": "steady",
+          "pose": "扶墙调整呼吸，望向蒙面人",
+          "position": "left",
+          "rear": "false",
+          "rect": {
+            "h": 537.59375,
+            "w": 358.390625,
+            "x": 300.796875,
+            "y": 252
+          },
+          "safeWidth": "286.72",
+          "scale": "0.28",
+          "slot": "left",
+          "speaking": "true",
+          "visual": "static"
+        },
+        {
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "观察",
+          "frame": "waist",
+          "headHeight": "132.66",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "link",
+          "phase": "hidden",
+          "pose": "守在巷口附近",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "黑衣队员",
+          "asset": "char_organization_member_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "急躁",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "招呼同伴围上",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "黑衣干部甲",
+          "asset": "char_organization_officer_a_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "克制，审视",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "停步，观察两人",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "不明生物·普通型",
+          "asset": "char_deoxys_normal_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "锁定目标",
+          "frame": "waist",
+          "headHeight": "144",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "deoxys",
+          "phase": "hidden",
+          "pose": "悬浮，触臂展开",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "327.68",
+          "scale": "0.32",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "不明生物·防御型",
+          "asset": "char_deoxys_defense_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "稳定",
+          "frame": "waist",
+          "headHeight": "144",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "deoxys",
+          "phase": "hidden",
+          "pose": "展开屏障，护住普通型",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "327.68",
+          "scale": "0.32",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "黑衣干部乙",
+          "asset": "char_organization_officer_b_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "冷静",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "走入侧巷口，指挥部队",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "蒙面人",
+          "asset": "char_thief_masked_black_placeholder",
+          "center": "1024",
+          "displayed": "false",
+          "expression": "轻松",
+          "frame": "waist",
+          "headHeight": "132.6",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "thief-masked",
+          "phase": "hidden",
+          "pose": "抬手准备摘下面罩",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "323.7",
+          "scale": "0.39",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "女剑士",
+          "asset": "char_saber_traveler_placeholder",
+          "center": "640",
+          "displayed": "true",
+          "expression": "警戒",
+          "frame": "waist",
+          "headHeight": "129.36",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "saber",
+          "phase": "steady",
+          "pose": "站在外侧留意来路",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 633.59375,
+            "w": 422.390625,
+            "x": 748.796875,
+            "y": 259.1875
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "怪盗",
+          "asset": "char_thief_smile",
+          "center": "1024",
+          "displayed": "true",
+          "expression": "带笑，观察男高",
+          "frame": "waist",
+          "headHeight": "131.1",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "thief-unmasked",
+          "phase": "in",
+          "pose": "收起面罩",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 1094.390625,
+            "w": 729.59375,
+            "x": 1069.5,
+            "y": 184.125
+          },
+          "safeWidth": "336.29999999999995",
+          "scale": "0.57",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        }
+      ],
+      "size": {
+        "h": 900,
+        "w": 1920
+      },
+      "stage": {
+        "actId": "prologue_4",
+        "nodeIndex": "15",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "c009",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "waitKind": "text",
+        "waitToken": "801:4"
+      },
+      "text": ""
+    }
+  },
+  {
+    "case": "c010-three-priority",
+    "data": {
+      "lab": {
+        "requests": "14",
+        "state": "{\"scene\":\"c010\",\"run\":802,\"token\":\"802:1\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"left\",\"asset\":\"char_male_high_normal\",\"pose\":\"站直，认真追问\",\"expression\":\"困惑，警惕\"},\"金发青年\":{\"actor\":\"金发青年\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_link_silent_placeholder\",\"pose\":\"留意巷口与男高\",\"expression\":\"安静\"},\"黑衣队员\":{\"actor\":\"黑衣队员\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_member_placeholder\",\"pose\":\"招呼同伴围上\",\"expression\":\"急躁\"},\"黑衣干部甲\":{\"actor\":\"黑衣干部甲\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_officer_a_placeholder\",\"pose\":\"停步，观察两人\",\"expression\":\"克制，审视\"},\"不明生物·普通型\":{\"actor\":\"不明生物·普通型\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_deoxys_normal_placeholder\",\"pose\":\"悬浮，触臂展开\",\"expression\":\"锁定目标\"},\"不明生物·防御型\":{\"actor\":\"不明生物·防御型\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_deoxys_defense_placeholder\",\"pose\":\"展开屏障，护住普通型\",\"expression\":\"稳定\"},\"黑衣干部乙\":{\"actor\":\"黑衣干部乙\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_officer_b_placeholder\",\"pose\":\"走入侧巷口，指挥部队\",\"expression\":\"冷静\"},\"蒙面人\":{\"actor\":\"蒙面人\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_thief_masked_black_placeholder\",\"pose\":\"抬手准备摘下面罩\",\"expression\":\"轻松\"},\"女剑士\":{\"actor\":\"女剑士\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_saber_traveler_placeholder\",\"pose\":\"观察外侧，偶尔看向两人\",\"expression\":\"耐心有限\"},\"怪盗\":{\"actor\":\"怪盗\",\"visible\":true,\"position\":\"right\",\"asset\":\"char_thief_smile\",\"pose\":\"靠墙简短解释\",\"expression\":\"认真\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "802/prologue_4/c010",
+        "displaySlots": "男高,女剑士,怪盗",
+        "lastSpoken": "{\"男高\":1}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "256",
+          "displayed": "true",
+          "expression": "困惑，警惕",
+          "frame": "bust",
+          "headHeight": "141.4",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-half",
+          "phase": "steady",
+          "pose": "站直，认真追问",
+          "position": "left",
+          "rear": "false",
+          "rect": {
+            "h": 537.59375,
+            "w": 358.390625,
+            "x": 300.796875,
+            "y": 252
+          },
+          "safeWidth": "286.72",
+          "scale": "0.28",
+          "slot": "left",
+          "speaking": "true",
+          "visual": "static"
+        },
+        {
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "安静",
+          "frame": "waist",
+          "headHeight": "132.66",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "link",
+          "phase": "hidden",
+          "pose": "留意巷口与男高",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "黑衣队员",
+          "asset": "char_organization_member_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "急躁",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "招呼同伴围上",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "黑衣干部甲",
+          "asset": "char_organization_officer_a_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "克制，审视",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "停步，观察两人",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "不明生物·普通型",
+          "asset": "char_deoxys_normal_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "锁定目标",
+          "frame": "waist",
+          "headHeight": "144",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "deoxys",
+          "phase": "hidden",
+          "pose": "悬浮，触臂展开",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "327.68",
+          "scale": "0.32",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "不明生物·防御型",
+          "asset": "char_deoxys_defense_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "稳定",
+          "frame": "waist",
+          "headHeight": "144",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "deoxys",
+          "phase": "hidden",
+          "pose": "展开屏障，护住普通型",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "327.68",
+          "scale": "0.32",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "黑衣干部乙",
+          "asset": "char_organization_officer_b_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "冷静",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "走入侧巷口，指挥部队",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "蒙面人",
+          "asset": "char_thief_masked_black_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "轻松",
+          "frame": "waist",
+          "headHeight": "132.6",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "thief-masked",
+          "phase": "hidden",
+          "pose": "抬手准备摘下面罩",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "323.7",
+          "scale": "0.39",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "女剑士",
+          "asset": "char_saber_traveler_placeholder",
+          "center": "640",
+          "displayed": "true",
+          "expression": "耐心有限",
+          "frame": "waist",
+          "headHeight": "129.36",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "saber",
+          "phase": "steady",
+          "pose": "观察外侧，偶尔看向两人",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 633.59375,
+            "w": 422.390625,
+            "x": 748.796875,
+            "y": 259.1875
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "怪盗",
+          "asset": "char_thief_smile",
+          "center": "1024",
+          "displayed": "true",
+          "expression": "认真",
+          "frame": "waist",
+          "headHeight": "131.1",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "thief-unmasked",
+          "phase": "steady",
+          "pose": "靠墙简短解释",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 1094.390625,
+            "w": 729.59375,
+            "x": 1069.5,
+            "y": 184.125
+          },
+          "safeWidth": "336.29999999999995",
+          "scale": "0.57",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        }
+      ],
+      "size": {
+        "h": 900,
+        "w": 1920
+      },
+      "stage": {
+        "actId": "prologue_4",
+        "nodeIndex": "10",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "c010",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "text",
+        "waitToken": "802:1"
+      },
+      "text": "先告诉我，他们是什么人？刚才那两个东西又是什么？还有他——"
+    }
+  },
+  {
+    "case": "c011-before-name-reveal",
+    "data": {
+      "lab": {
+        "requests": "21",
+        "state": "{\"scene\":\"c011\",\"run\":803,\"token\":\"803:1\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"left\",\"asset\":\"char_male_high_normal\",\"pose\":\"看向女剑士\",\"expression\":\"认真\"},\"金发青年\":{\"actor\":\"金发青年\",\"visible\":false,\"position\":\"center\",\"asset\":\"char_link_silent_placeholder\",\"pose\":\"留意巷口与男高\",\"expression\":\"安静\"},\"黑衣队员\":{\"actor\":\"黑衣队员\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_member_placeholder\",\"pose\":\"招呼同伴围上\",\"expression\":\"急躁\"},\"黑衣干部甲\":{\"actor\":\"黑衣干部甲\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_officer_a_placeholder\",\"pose\":\"停步，观察两人\",\"expression\":\"克制，审视\"},\"不明生物·普通型\":{\"actor\":\"不明生物·普通型\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_deoxys_normal_placeholder\",\"pose\":\"悬浮，触臂展开\",\"expression\":\"锁定目标\"},\"不明生物·防御型\":{\"actor\":\"不明生物·防御型\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_deoxys_defense_placeholder\",\"pose\":\"展开屏障，护住普通型\",\"expression\":\"稳定\"},\"黑衣干部乙\":{\"actor\":\"黑衣干部乙\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_officer_b_placeholder\",\"pose\":\"走入侧巷口，指挥部队\",\"expression\":\"冷静\"},\"蒙面人\":{\"actor\":\"蒙面人\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_thief_masked_black_placeholder\",\"pose\":\"抬手准备摘下面罩\",\"expression\":\"轻松\"},\"女剑士\":{\"actor\":\"女剑士\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_saber_traveler_placeholder\",\"pose\":\"走近半步，仍留意来路\",\"expression\":\"沉着\"},\"怪盗\":{\"actor\":\"怪盗\",\"visible\":true,\"position\":\"right\",\"asset\":\"char_thief_smile\",\"pose\":\"侧身介绍同伴\",\"expression\":\"郑重\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "803/prologue_4/c011",
+        "displaySlots": "男高,女剑士,怪盗",
+        "lastSpoken": "{\"怪盗\":1}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "256",
+          "displayed": "true",
+          "expression": "认真",
+          "frame": "bust",
+          "headHeight": "141.4",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-half",
+          "phase": "steady",
+          "pose": "看向女剑士",
+          "position": "left",
+          "rear": "false",
+          "rect": {
+            "h": 537.59375,
+            "w": 358.390625,
+            "x": 300.796875,
+            "y": 252
+          },
+          "safeWidth": "286.72",
+          "scale": "0.28",
+          "slot": "left",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "安静",
+          "frame": "waist",
+          "headHeight": "132.66",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "link",
+          "phase": "hidden",
+          "pose": "留意巷口与男高",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "黑衣队员",
+          "asset": "char_organization_member_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "急躁",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "招呼同伴围上",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "黑衣干部甲",
+          "asset": "char_organization_officer_a_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "克制，审视",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "停步，观察两人",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "不明生物·普通型",
+          "asset": "char_deoxys_normal_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "锁定目标",
+          "frame": "waist",
+          "headHeight": "144",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "deoxys",
+          "phase": "hidden",
+          "pose": "悬浮，触臂展开",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "327.68",
+          "scale": "0.32",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "不明生物·防御型",
+          "asset": "char_deoxys_defense_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "稳定",
+          "frame": "waist",
+          "headHeight": "144",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "deoxys",
+          "phase": "hidden",
+          "pose": "展开屏障，护住普通型",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "327.68",
+          "scale": "0.32",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "黑衣干部乙",
+          "asset": "char_organization_officer_b_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "冷静",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "走入侧巷口，指挥部队",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "蒙面人",
+          "asset": "char_thief_masked_black_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "轻松",
+          "frame": "waist",
+          "headHeight": "132.6",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "thief-masked",
+          "phase": "hidden",
+          "pose": "抬手准备摘下面罩",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "323.7",
+          "scale": "0.39",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "女剑士",
+          "asset": "char_saber_traveler_placeholder",
+          "center": "640",
+          "displayed": "true",
+          "expression": "沉着",
+          "frame": "waist",
+          "headHeight": "129.36",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "saber",
+          "phase": "steady",
+          "pose": "走近半步，仍留意来路",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 633.59375,
+            "w": 422.390625,
+            "x": 748.796875,
+            "y": 259.1875
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "怪盗",
+          "asset": "char_thief_smile",
+          "center": "1024",
+          "displayed": "true",
+          "expression": "郑重",
+          "frame": "waist",
+          "headHeight": "131.1",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "thief-unmasked",
+          "phase": "steady",
+          "pose": "侧身介绍同伴",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 1094.390625,
+            "w": 729.59375,
+            "x": 1069.5,
+            "y": 184.125
+          },
+          "safeWidth": "336.29999999999995",
+          "scale": "0.57",
+          "slot": "right",
+          "speaking": "true",
+          "visual": "static"
+        }
+      ],
+      "size": {
+        "h": 900,
+        "w": 1920
+      },
+      "stage": {
+        "actId": "prologue_4",
+        "nodeIndex": "9",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "c011",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "text",
+        "waitToken": "803:1"
+      },
+      "text": "还有，这位是我的从者。你叫她 Saber 就好。"
+    }
+  },
+  {
+    "case": "c011-original-hide-show-Saber",
+    "data": {
+      "lab": {
+        "requests": "22",
+        "state": "{\"scene\":\"c011\",\"run\":803,\"token\":\"803:2\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"left\",\"asset\":\"char_male_high_normal\",\"pose\":\"看向女剑士\",\"expression\":\"认真\"},\"金发青年\":{\"actor\":\"金发青年\",\"visible\":false,\"position\":\"center\",\"asset\":\"char_link_silent_placeholder\",\"pose\":\"留意巷口与男高\",\"expression\":\"安静\"},\"黑衣队员\":{\"actor\":\"黑衣队员\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_member_placeholder\",\"pose\":\"招呼同伴围上\",\"expression\":\"急躁\"},\"黑衣干部甲\":{\"actor\":\"黑衣干部甲\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_officer_a_placeholder\",\"pose\":\"停步，观察两人\",\"expression\":\"克制，审视\"},\"不明生物·普通型\":{\"actor\":\"不明生物·普通型\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_deoxys_normal_placeholder\",\"pose\":\"悬浮，触臂展开\",\"expression\":\"锁定目标\"},\"不明生物·防御型\":{\"actor\":\"不明生物·防御型\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_deoxys_defense_placeholder\",\"pose\":\"展开屏障，护住普通型\",\"expression\":\"稳定\"},\"黑衣干部乙\":{\"actor\":\"黑衣干部乙\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_officer_b_placeholder\",\"pose\":\"走入侧巷口，指挥部队\",\"expression\":\"冷静\"},\"蒙面人\":{\"actor\":\"蒙面人\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_thief_masked_black_placeholder\",\"pose\":\"抬手准备摘下面罩\",\"expression\":\"轻松\"},\"女剑士\":{\"actor\":\"女剑士\",\"visible\":false,\"position\":\"center\",\"asset\":\"char_saber_traveler_placeholder\",\"pose\":\"走近半步，仍留意来路\",\"expression\":\"沉着\"},\"怪盗\":{\"actor\":\"怪盗\",\"visible\":true,\"position\":\"right\",\"asset\":\"char_thief_smile\",\"pose\":\"侧身介绍同伴\",\"expression\":\"郑重\"},\"Saber\":{\"actor\":\"Saber\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_saber_traveler_placeholder\",\"pose\":\"向男高颔首\",\"expression\":\"平静\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "2",
+        "displayScope": "803/prologue_4/c011",
+        "displaySlots": "男高,Saber,怪盗",
+        "lastSpoken": "{\"怪盗\":1,\"男高\":2}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "256",
+          "displayed": "true",
+          "expression": "认真",
+          "frame": "bust",
+          "headHeight": "141.4",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-half",
+          "phase": "steady",
+          "pose": "看向女剑士",
+          "position": "left",
+          "rear": "false",
+          "rect": {
+            "h": 537.59375,
+            "w": 358.390625,
+            "x": 300.796875,
+            "y": 252
+          },
+          "safeWidth": "286.72",
+          "scale": "0.28",
+          "slot": "left",
+          "speaking": "true",
+          "visual": "static"
+        },
+        {
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "安静",
+          "frame": "waist",
+          "headHeight": "132.66",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "link",
+          "phase": "hidden",
+          "pose": "留意巷口与男高",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "黑衣队员",
+          "asset": "char_organization_member_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "急躁",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "招呼同伴围上",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "黑衣干部甲",
+          "asset": "char_organization_officer_a_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "克制，审视",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "停步，观察两人",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "不明生物·普通型",
+          "asset": "char_deoxys_normal_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "锁定目标",
+          "frame": "waist",
+          "headHeight": "144",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "deoxys",
+          "phase": "hidden",
+          "pose": "悬浮，触臂展开",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "327.68",
+          "scale": "0.32",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "不明生物·防御型",
+          "asset": "char_deoxys_defense_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "稳定",
+          "frame": "waist",
+          "headHeight": "144",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "deoxys",
+          "phase": "hidden",
+          "pose": "展开屏障，护住普通型",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "327.68",
+          "scale": "0.32",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "黑衣干部乙",
+          "asset": "char_organization_officer_b_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "冷静",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "走入侧巷口，指挥部队",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "蒙面人",
+          "asset": "char_thief_masked_black_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "轻松",
+          "frame": "waist",
+          "headHeight": "132.6",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "thief-masked",
+          "phase": "hidden",
+          "pose": "抬手准备摘下面罩",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "323.7",
+          "scale": "0.39",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "女剑士",
+          "asset": "char_saber_traveler_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "沉着",
+          "frame": "waist",
+          "headHeight": "129.36",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "saber",
+          "phase": "hidden",
+          "pose": "走近半步，仍留意来路",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "怪盗",
+          "asset": "char_thief_smile",
+          "center": "1024",
+          "displayed": "true",
+          "expression": "郑重",
+          "frame": "waist",
+          "headHeight": "131.1",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "thief-unmasked",
+          "phase": "steady",
+          "pose": "侧身介绍同伴",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 1094.390625,
+            "w": 729.59375,
+            "x": 1069.5,
+            "y": 184.125
+          },
+          "safeWidth": "336.29999999999995",
+          "scale": "0.57",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "Saber",
+          "asset": "char_saber_traveler_placeholder",
+          "center": "640",
+          "displayed": "true",
+          "expression": "平静",
+          "frame": "waist",
+          "headHeight": "129.36",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "saber",
+          "phase": "in",
+          "pose": "向男高颔首",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 633.59375,
+            "w": 422.390625,
+            "x": 748.796875,
+            "y": 259.1875
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        }
+      ],
+      "size": {
+        "h": 900,
+        "w": 1920
+      },
+      "stage": {
+        "actId": "prologue_4",
+        "nodeIndex": "12",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "c011",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "text",
+        "waitToken": "803:2"
+      },
+      "text": "刚才也谢谢你。要不是你在那边接着，我们还真不好出来。"
+    }
+  },
+  {
+    "case": "c012-priority-and-identity",
+    "data": {
+      "lab": {
+        "requests": "30",
+        "state": "{\"scene\":\"c012\",\"run\":804,\"token\":\"804:1\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"left\",\"asset\":\"char_male_high_normal\",\"pose\":\"望向回家方向\",\"expression\":\"担忧，坚定\"},\"金发青年\":{\"actor\":\"金发青年\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_link_silent_placeholder\",\"pose\":\"站到男高身边\",\"expression\":\"专注\"},\"黑衣队员\":{\"actor\":\"黑衣队员\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_member_placeholder\",\"pose\":\"招呼同伴围上\",\"expression\":\"急躁\"},\"黑衣干部甲\":{\"actor\":\"黑衣干部甲\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_officer_a_placeholder\",\"pose\":\"停步，观察两人\",\"expression\":\"克制，审视\"},\"不明生物·普通型\":{\"actor\":\"不明生物·普通型\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_deoxys_normal_placeholder\",\"pose\":\"悬浮，触臂展开\",\"expression\":\"锁定目标\"},\"不明生物·防御型\":{\"actor\":\"不明生物·防御型\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_deoxys_defense_placeholder\",\"pose\":\"展开屏障，护住普通型\",\"expression\":\"稳定\"},\"黑衣干部乙\":{\"actor\":\"黑衣干部乙\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_officer_b_placeholder\",\"pose\":\"走入侧巷口，指挥部队\",\"expression\":\"冷静\"},\"蒙面人\":{\"actor\":\"蒙面人\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_thief_masked_black_placeholder\",\"pose\":\"抬手准备摘下面罩\",\"expression\":\"轻松\"},\"女剑士\":{\"actor\":\"女剑士\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_saber_traveler_placeholder\",\"pose\":\"准备带路离开\",\"expression\":\"警戒\"},\"怪盗\":{\"actor\":\"怪盗\",\"visible\":true,\"position\":\"right\",\"asset\":\"char_thief_smile\",\"pose\":\"放低声音，提出约定\",\"expression\":\"认真\"},\"Saber\":{\"actor\":\"Saber\",\"visible\":false,\"position\":\"center\",\"asset\":\"char_saber_traveler_placeholder\",\"pose\":\"向男高颔首\",\"expression\":\"平静\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "804/prologue_4/c012",
+        "displaySlots": "男高,女剑士,怪盗",
+        "lastSpoken": "{\"男高\":1}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "256",
+          "displayed": "true",
+          "expression": "担忧，坚定",
+          "frame": "bust",
+          "headHeight": "141.4",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-half",
+          "phase": "steady",
+          "pose": "望向回家方向",
+          "position": "left",
+          "rear": "false",
+          "rect": {
+            "h": 537.59375,
+            "w": 358.390625,
+            "x": 300.796875,
+            "y": 252
+          },
+          "safeWidth": "286.72",
+          "scale": "0.28",
+          "slot": "left",
+          "speaking": "true",
+          "visual": "static"
+        },
+        {
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "专注",
+          "frame": "waist",
+          "headHeight": "132.66",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "link",
+          "phase": "hidden",
+          "pose": "站到男高身边",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "黑衣队员",
+          "asset": "char_organization_member_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "急躁",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "招呼同伴围上",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "黑衣干部甲",
+          "asset": "char_organization_officer_a_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "克制，审视",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "停步，观察两人",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "不明生物·普通型",
+          "asset": "char_deoxys_normal_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "锁定目标",
+          "frame": "waist",
+          "headHeight": "144",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "deoxys",
+          "phase": "hidden",
+          "pose": "悬浮，触臂展开",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "327.68",
+          "scale": "0.32",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "不明生物·防御型",
+          "asset": "char_deoxys_defense_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "稳定",
+          "frame": "waist",
+          "headHeight": "144",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "deoxys",
+          "phase": "hidden",
+          "pose": "展开屏障，护住普通型",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "327.68",
+          "scale": "0.32",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "黑衣干部乙",
+          "asset": "char_organization_officer_b_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "冷静",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "走入侧巷口，指挥部队",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "蒙面人",
+          "asset": "char_thief_masked_black_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "轻松",
+          "frame": "waist",
+          "headHeight": "132.6",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "thief-masked",
+          "phase": "hidden",
+          "pose": "抬手准备摘下面罩",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "323.7",
+          "scale": "0.39",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "女剑士",
+          "asset": "char_saber_traveler_placeholder",
+          "center": "640",
+          "displayed": "true",
+          "expression": "警戒",
+          "frame": "waist",
+          "headHeight": "129.36",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "saber",
+          "phase": "steady",
+          "pose": "准备带路离开",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 633.59375,
+            "w": 422.390625,
+            "x": 748.796875,
+            "y": 259.1875
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "怪盗",
+          "asset": "char_thief_smile",
+          "center": "1024",
+          "displayed": "true",
+          "expression": "认真",
+          "frame": "waist",
+          "headHeight": "131.1",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "thief-unmasked",
+          "phase": "steady",
+          "pose": "放低声音，提出约定",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 1094.390625,
+            "w": 729.59375,
+            "x": 1069.5,
+            "y": 184.125
+          },
+          "safeWidth": "336.29999999999995",
+          "scale": "0.57",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "Saber",
+          "asset": "char_saber_traveler_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "平静",
+          "frame": "waist",
+          "headHeight": "129.36",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "saber",
+          "phase": "hidden",
+          "pose": "向男高颔首",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        }
+      ],
+      "size": {
+        "h": 900,
+        "w": 1920
+      },
+      "stage": {
+        "actId": "prologue_4",
+        "nodeIndex": "9",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "c012",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "text",
+        "waitToken": "804:1"
+      },
+      "text": "要是我不想争那个愿望呢？能不能就当没这回事？"
+    }
+  },
+  {
+    "case": "controlled-fourth-speaker-replacement",
+    "data": {
+      "lab": {
+        "requests": "30",
+        "state": "{\"scene\":\"c012\",\"run\":804,\"token\":\"lab:805\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"left\",\"asset\":\"char_male_high_normal\",\"pose\":\"望向回家方向\",\"expression\":\"担忧，坚定\"},\"金发青年\":{\"actor\":\"金发青年\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_link_silent_placeholder\",\"pose\":\"站到男高身边\",\"expression\":\"专注\"},\"黑衣队员\":{\"actor\":\"黑衣队员\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_member_placeholder\",\"pose\":\"招呼同伴围上\",\"expression\":\"急躁\"},\"黑衣干部甲\":{\"actor\":\"黑衣干部甲\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_officer_a_placeholder\",\"pose\":\"停步，观察两人\",\"expression\":\"克制，审视\"},\"不明生物·普通型\":{\"actor\":\"不明生物·普通型\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_deoxys_normal_placeholder\",\"pose\":\"悬浮，触臂展开\",\"expression\":\"锁定目标\"},\"不明生物·防御型\":{\"actor\":\"不明生物·防御型\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_deoxys_defense_placeholder\",\"pose\":\"展开屏障，护住普通型\",\"expression\":\"稳定\"},\"黑衣干部乙\":{\"actor\":\"黑衣干部乙\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_officer_b_placeholder\",\"pose\":\"走入侧巷口，指挥部队\",\"expression\":\"冷静\"},\"蒙面人\":{\"actor\":\"蒙面人\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_thief_masked_black_placeholder\",\"pose\":\"抬手准备摘下面罩\",\"expression\":\"轻松\"},\"女剑士\":{\"actor\":\"女剑士\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_saber_traveler_placeholder\",\"pose\":\"准备带路离开\",\"expression\":\"警戒\"},\"怪盗\":{\"actor\":\"怪盗\",\"visible\":true,\"position\":\"right\",\"asset\":\"char_thief_smile\",\"pose\":\"放低声音，提出约定\",\"expression\":\"认真\"},\"Saber\":{\"actor\":\"Saber\",\"visible\":false,\"position\":\"center\",\"asset\":\"char_saber_traveler_placeholder\",\"pose\":\"向男高颔首\",\"expression\":\"平静\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "2",
+        "displayScope": "804/prologue_4/c012",
+        "displaySlots": "男高,女剑士,金发青年",
+        "lastSpoken": "{\"男高\":1,\"金发青年\":2}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "256",
+          "displayed": "true",
+          "expression": "担忧，坚定",
+          "frame": "bust",
+          "headHeight": "141.4",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-half",
+          "phase": "steady",
+          "pose": "望向回家方向",
+          "position": "left",
+          "rear": "false",
+          "rect": {
+            "h": 537.59375,
+            "w": 358.390625,
+            "x": 300.796875,
+            "y": 252
+          },
+          "safeWidth": "286.72",
+          "scale": "0.28",
+          "slot": "left",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "center": "1024",
+          "displayed": "true",
+          "expression": "专注",
+          "frame": "waist",
+          "headHeight": "132.66",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "link",
+          "phase": "in",
+          "pose": "站到男高身边",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 633.59375,
+            "w": 422.390625,
+            "x": 1228.796875,
+            "y": 255.0625
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "true",
+          "visual": "static"
+        },
+        {
+          "actor": "黑衣队员",
+          "asset": "char_organization_member_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "急躁",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "招呼同伴围上",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "黑衣干部甲",
+          "asset": "char_organization_officer_a_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "克制，审视",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "停步，观察两人",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "不明生物·普通型",
+          "asset": "char_deoxys_normal_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "锁定目标",
+          "frame": "waist",
+          "headHeight": "144",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "deoxys",
+          "phase": "hidden",
+          "pose": "悬浮，触臂展开",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "327.68",
+          "scale": "0.32",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "不明生物·防御型",
+          "asset": "char_deoxys_defense_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "稳定",
+          "frame": "waist",
+          "headHeight": "144",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "deoxys",
+          "phase": "hidden",
+          "pose": "展开屏障，护住普通型",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "327.68",
+          "scale": "0.32",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "黑衣干部乙",
+          "asset": "char_organization_officer_b_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "冷静",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "走入侧巷口，指挥部队",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "蒙面人",
+          "asset": "char_thief_masked_black_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "轻松",
+          "frame": "waist",
+          "headHeight": "132.6",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "thief-masked",
+          "phase": "hidden",
+          "pose": "抬手准备摘下面罩",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "323.7",
+          "scale": "0.39",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "女剑士",
+          "asset": "char_saber_traveler_placeholder",
+          "center": "640",
+          "displayed": "true",
+          "expression": "警戒",
+          "frame": "waist",
+          "headHeight": "129.36",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "saber",
+          "phase": "steady",
+          "pose": "准备带路离开",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 633.59375,
+            "w": 422.390625,
+            "x": 748.796875,
+            "y": 259.1875
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "怪盗",
+          "asset": "char_thief_smile",
+          "center": "1024",
+          "displayed": "false",
+          "expression": "认真",
+          "frame": "waist",
+          "headHeight": "131.1",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "thief-unmasked",
+          "phase": "hidden",
+          "pose": "放低声音，提出约定",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "336.29999999999995",
+          "scale": "0.57",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "Saber",
+          "asset": "char_saber_traveler_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "平静",
+          "frame": "waist",
+          "headHeight": "129.36",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "saber",
+          "phase": "hidden",
+          "pose": "向男高颔首",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        }
+      ],
+      "size": {
+        "h": 900,
+        "w": 1920
+      },
+      "stage": {
+        "actId": "prologue_4",
+        "nodeIndex": "0",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "c012",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "text",
+        "waitToken": "lab:805"
+      },
+      "text": "仅受控换入测试，不添加正式台词。"
+    }
+  },
+  {
+    "case": "warehouse-four-present-three-drawn",
+    "data": {
+      "lab": {
+        "requests": "31",
+        "state": "{\"scene\":\"p005\",\"run\":806,\"token\":\"806:1\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"left\",\"asset\":\"char_male_high_normal\",\"pose\":\"散步、观察四周\",\"expression\":\"好奇\"},\"奶奶\":{\"actor\":\"奶奶\",\"visible\":false,\"position\":\"kitchen\",\"asset\":\"char_grandmother_warm\",\"pose\":\"坐在男高旁边、仔细打量\",\"expression\":\"关心\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "806/prologue/p005",
+        "displaySlots": "男高",
+        "lastSpoken": "{}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "640",
+          "displayed": "true",
+          "expression": "好奇",
+          "frame": "bust",
+          "headHeight": "141.4",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-half",
+          "phase": "steady",
+          "pose": "散步、观察四周",
+          "position": "left",
+          "rear": "false",
+          "rect": {
+            "h": 537.59375,
+            "w": 358.390625,
+            "x": 780.796875,
+            "y": 252
+          },
+          "safeWidth": "286.72",
+          "scale": "0.28",
+          "slot": "left",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "奶奶",
+          "asset": "char_grandmother_warm",
+          "center": "640",
+          "displayed": "false",
+          "expression": "关心",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "坐在男高旁边、仔细打量",
+          "position": "kitchen",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "placeholder"
+        }
+      ],
+      "size": {
+        "h": 900,
+        "w": 1920
+      },
+      "stage": {
+        "actId": "prologue",
+        "nodeIndex": "3",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "p005",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "text",
+        "waitToken": "806:1"
+      },
+      "text": "商业街的霓虹灯还亮着，但行人已经不多。\n男高沿街认路，不知不觉走进旧街区。\n背景切换为昏暗路灯、关闭的店铺和高墙围住的仓库区。"
+    }
+  },
+  {
+    "case": "classroom-three-drawn-placeholder",
+    "data": {
+      "lab": {
+        "requests": "33",
+        "state": "{\"scene\":\"a004\",\"run\":807,\"token\":\"807:1\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_male_high_normal\",\"pose\":\"站在讲台前、拿着白板笔\",\"expression\":\"自信、兴奋\"},\"奶奶\":{\"actor\":\"奶奶\",\"visible\":false,\"position\":\"door\",\"asset\":\"char_grandmother_warm\",\"pose\":\"端着早饭、站在门口\",\"expression\":\"催促、关心\"},\"虚拟主播\":{\"actor\":\"虚拟主播\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_virtual_streamer_shy\",\"pose\":\"背着书包、站在隔壁门口\",\"expression\":\"疑惑\"},\"怪盗\":{\"actor\":\"怪盗\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_thief_smile\",\"pose\":\"从路口拐出\",\"expression\":\"意外\"},\"老师\":{\"actor\":\"老师\",\"visible\":true,\"position\":\"left\",\"asset\":\"char_teacher_placeholder\",\"pose\":\"站在教室门口\",\"expression\":\"平静\"},\"反派\":{\"actor\":\"反派\",\"visible\":false,\"position\":\"left\",\"asset\":\"char_villain_calm\",\"pose\":\"靠在栏杆边、拿着饮料\",\"expression\":\"玩味\"},\"偶像\":{\"actor\":\"偶像\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_idol_neutral\",\"pose\":\"站在反派身旁\",\"expression\":\"疑惑、不安\"},\"黑色结晶\":{\"actor\":\"黑色结晶\",\"visible\":false,\"position\":\"center\",\"asset\":\"prop_dark_god_crystal_placeholder\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "807/act1/a004",
+        "displaySlots": "老师,男高",
+        "lastSpoken": "{}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "896",
+          "displayed": "true",
+          "expression": "自信、兴奋",
+          "frame": "bust",
+          "headHeight": "141.4",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-half",
+          "phase": "steady",
+          "pose": "站在讲台前、拿着白板笔",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 537.59375,
+            "w": 358.390625,
+            "x": 1100.796875,
+            "y": 252
+          },
+          "safeWidth": "286.72",
+          "scale": "0.28",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "奶奶",
+          "asset": "char_grandmother_warm",
+          "center": "640",
+          "displayed": "false",
+          "expression": "催促、关心",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "端着早饭、站在门口",
+          "position": "door",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "虚拟主播",
+          "asset": "char_virtual_streamer_shy",
+          "center": "640",
+          "displayed": "false",
+          "expression": "疑惑",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "背着书包、站在隔壁门口",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "怪盗",
+          "asset": "char_thief_smile",
+          "center": "640",
+          "displayed": "false",
+          "expression": "意外",
+          "frame": "waist",
+          "headHeight": "136.95000000000002",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "thief-daily",
+          "phase": "hidden",
+          "pose": "从路口拐出",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "老师",
+          "asset": "char_teacher_placeholder",
+          "center": "384",
+          "displayed": "true",
+          "expression": "平静",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "placeholder",
+          "phase": "steady",
+          "pose": "站在教室门口",
+          "position": "left",
+          "rear": "false",
+          "rect": {
+            "h": 637.5,
+            "w": 225,
+            "x": 527.5,
+            "y": 262.5
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "left",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "反派",
+          "asset": "char_villain_calm",
+          "center": "640",
+          "displayed": "false",
+          "expression": "玩味",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "靠在栏杆边、拿着饮料",
+          "position": "left",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "left",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "偶像",
+          "asset": "char_idol_neutral",
+          "center": "640",
+          "displayed": "false",
+          "expression": "疑惑、不安",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "站在反派身旁",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        }
+      ],
+      "size": {
+        "h": 900,
+        "w": 1920
+      },
+      "stage": {
+        "actId": "act1",
+        "nodeIndex": "4",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "a004",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "text",
+        "waitToken": "807:1"
+      },
+      "text": "上课铃响起时，男高正好赶到教室门口。\n他走到讲台前，从讲台上拿起笔，在白板上写下自己的名字。"
+    }
+  },
+  {
+    "case": "hero-sample-0",
+    "data": {
+      "lab": {
+        "frames": "1",
+        "requests": "14",
+        "state": "{\"scene\":\"sample\",\"run\":802,\"token\":\"sample:802\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_male_high_normal\",\"pose\":\"普通站姿\",\"expression\":\"默认平静\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "802/prologue/sample",
+        "displaySlots": "男高",
+        "lastSpoken": "{\"男高\":1}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "640",
+          "displayed": "true",
+          "expression": "默认平静",
+          "frame": "layered",
+          "headHeight": "136.76999999999998",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-layered",
+          "phase": "steady",
+          "pose": "普通站姿",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 902.390625,
+            "w": 601.59375,
+            "x": 659.1875,
+            "y": 234.296875
+          },
+          "safeWidth": "338.4",
+          "scale": "0.47",
+          "slot": "center",
+          "speaking": "true",
+          "talking": "true",
+          "visual": "layered"
+        }
+      ],
+      "size": {
+        "h": 900,
+        "w": 1920
+      },
+      "stage": {
+        "actId": "prologue",
+        "nodeIndex": "0",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "sample",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "waitKind": "text",
+        "waitToken": "sample:802"
+      },
+      "text": "受控画面验"
+    }
+  },
+  {
+    "case": "hero-sample-1",
+    "data": {
+      "lab": {
+        "frames": "2",
+        "requests": "22",
+        "state": "{\"scene\":\"sample\",\"run\":803,\"token\":\"sample:803\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_male_high_normal\",\"pose\":\"普通站姿\",\"expression\":\"得意\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "803/prologue/sample",
+        "displaySlots": "男高",
+        "lastSpoken": "{\"男高\":1}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "640",
+          "displayed": "true",
+          "expression": "得意",
+          "frame": "layered",
+          "headHeight": "136.76999999999998",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-layered",
+          "phase": "steady",
+          "pose": "普通站姿",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 902.390625,
+            "w": 601.59375,
+            "x": 659.1875,
+            "y": 234.296875
+          },
+          "safeWidth": "338.4",
+          "scale": "0.47",
+          "slot": "center",
+          "speaking": "true",
+          "talking": "true",
+          "visual": "layered"
+        }
+      ],
+      "size": {
+        "h": 900,
+        "w": 1920
+      },
+      "stage": {
+        "actId": "prologue",
+        "nodeIndex": "0",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "sample",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "waitKind": "text",
+        "waitToken": "sample:803"
+      },
+      "text": "受控画面验"
+    }
+  },
+  {
+    "case": "hero-sample-2",
+    "data": {
+      "lab": {
+        "frames": "3",
+        "requests": "31",
+        "state": "{\"scene\":\"sample\",\"run\":804,\"token\":\"sample:804\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_male_high_normal\",\"pose\":\"携带行李、站立\",\"expression\":\"紧张、期待\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "804/prologue/sample",
+        "displaySlots": "男高",
+        "lastSpoken": "{\"男高\":1}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "640",
+          "displayed": "true",
+          "expression": "紧张、期待",
+          "frame": "layered",
+          "headHeight": "136.76999999999998",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-layered",
+          "phase": "steady",
+          "pose": "携带行李、站立",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 902.390625,
+            "w": 601.59375,
+            "x": 659.1875,
+            "y": 234.296875
+          },
+          "safeWidth": "338.4",
+          "scale": "0.47",
+          "slot": "center",
+          "speaking": "true",
+          "talking": "true",
+          "visual": "layered"
+        }
+      ],
+      "size": {
+        "h": 900,
+        "w": 1920
+      },
+      "stage": {
+        "actId": "prologue",
+        "nodeIndex": "0",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "sample",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "waitKind": "text",
+        "waitToken": "sample:804"
+      },
+      "text": "受控画面验"
+    }
+  },
+  {
+    "case": "hero-sample-3",
+    "data": {
+      "lab": {
+        "frames": "4",
+        "requests": "40",
+        "state": "{\"scene\":\"sample\",\"run\":805,\"token\":\"sample:805\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_male_high_normal\",\"pose\":\"携带行李、站立\",\"expression\":\"放松、微笑\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "805/prologue/sample",
+        "displaySlots": "男高",
+        "lastSpoken": "{\"男高\":1}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "640",
+          "displayed": "true",
+          "expression": "放松、微笑",
+          "frame": "layered",
+          "headHeight": "136.76999999999998",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-layered",
+          "phase": "steady",
+          "pose": "携带行李、站立",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 902.390625,
+            "w": 601.59375,
+            "x": 659.1875,
+            "y": 234.296875
+          },
+          "safeWidth": "338.4",
+          "scale": "0.47",
+          "slot": "center",
+          "speaking": "true",
+          "talking": "true",
+          "visual": "layered"
+        }
+      ],
+      "size": {
+        "h": 900,
+        "w": 1920
+      },
+      "stage": {
+        "actId": "prologue",
+        "nodeIndex": "0",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "sample",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "waitKind": "text",
+        "waitToken": "sample:805"
+      },
+      "text": "受控画面验"
+    }
+  },
+  {
+    "case": "hero-sample-4",
+    "data": {
+      "lab": {
+        "frames": "5",
+        "requests": "50",
+        "state": "{\"scene\":\"sample\",\"run\":806,\"token\":\"sample:806\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_male_high_normal\",\"pose\":\"准备伸懒腰\",\"expression\":\"疑惑\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "806/prologue/sample",
+        "displaySlots": "男高",
+        "lastSpoken": "{\"男高\":1}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "640",
+          "displayed": "true",
+          "expression": "疑惑",
+          "frame": "layered",
+          "headHeight": "136.76999999999998",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-layered",
+          "phase": "steady",
+          "pose": "准备伸懒腰",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 902.390625,
+            "w": 601.59375,
+            "x": 659.1875,
+            "y": 234.296875
+          },
+          "safeWidth": "338.4",
+          "scale": "0.47",
+          "slot": "center",
+          "speaking": "true",
+          "talking": "true",
+          "visual": "layered"
+        }
+      ],
+      "size": {
+        "h": 900,
+        "w": 1920
+      },
+      "stage": {
+        "actId": "prologue",
+        "nodeIndex": "0",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "sample",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "waitKind": "text",
+        "waitToken": "sample:806"
+      },
+      "text": "受控画面验"
+    }
+  },
+  {
+    "case": "sample-mouth-frame",
+    "data": {
+      "lab": {
+        "frames": "5",
+        "requests": "50",
+        "state": "{\"scene\":\"sample\",\"run\":806,\"token\":\"sample:806\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_male_high_normal\",\"pose\":\"准备伸懒腰\",\"expression\":\"疑惑\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "806/prologue/sample",
+        "displaySlots": "男高",
+        "lastSpoken": "{\"男高\":1}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "640",
+          "displayed": "true",
+          "expression": "疑惑",
+          "frame": "layered",
+          "headHeight": "136.76999999999998",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-layered",
+          "phase": "steady",
+          "pose": "准备伸懒腰",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 902.390625,
+            "w": 601.59375,
+            "x": 659.1875,
+            "y": 234.296875
+          },
+          "safeWidth": "338.4",
+          "scale": "0.47",
+          "slot": "center",
+          "speaking": "true",
+          "talking": "true",
+          "visual": "layered"
+        }
+      ],
+      "size": {
+        "h": 900,
+        "w": 1920
+      },
+      "stage": {
+        "actId": "prologue",
+        "nodeIndex": "0",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "sample",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "waitKind": "text",
+        "waitToken": "sample:806"
+      },
+      "text": "受控画面验"
+    }
+  },
+  {
+    "case": "dedicated-seated",
+    "data": {
+      "lab": {
+        "requests": "7",
+        "state": "{\"scene\":\"p003\",\"run\":802,\"token\":\"802:1\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"left\",\"asset\":\"char_male_high_normal\",\"pose\":\"坐在沙发上\",\"expression\":\"得意\"},\"奶奶\":{\"actor\":\"奶奶\",\"visible\":true,\"position\":\"right\",\"asset\":\"char_grandmother_warm\",\"pose\":\"坐在男高旁边、仔细打量\",\"expression\":\"欣慰、感伤\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "802/prologue/p003",
+        "displaySlots": "男高,奶奶",
+        "lastSpoken": "{}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "384",
+          "displayed": "true",
+          "expression": "得意",
+          "frame": "waist",
+          "headHeight": "132.60000000000002",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-seated",
+          "phase": "steady",
+          "pose": "坐在沙发上",
+          "position": "left",
+          "rear": "false",
+          "rect": {
+            "h": 652.796875,
+            "w": 435.1875,
+            "x": 422.390625,
+            "y": 241.25
+          },
+          "safeWidth": "333.20000000000005",
+          "scale": "0.34",
+          "slot": "left",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "奶奶",
+          "asset": "char_grandmother_warm",
+          "center": "896",
+          "displayed": "true",
+          "expression": "欣慰、感伤",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "placeholder",
+          "phase": "steady",
+          "pose": "坐在男高旁边、仔细打量",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 637.5,
+            "w": 225,
+            "x": 1167.5,
+            "y": 262.5
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        }
+      ],
+      "size": {
+        "h": 900,
+        "w": 1920
+      },
+      "stage": {
+        "actId": "prologue",
+        "nodeIndex": "4",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "p003",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "text",
+        "waitToken": "802:1"
+      },
+      "text": "客厅还是记忆里的旧木柜、茶壶和满墙老照片。\n奶奶拉着男高坐下，一会儿看他的脸，一会儿又捏捏他的手臂，像是要把错过的几年一次看回来。"
+    }
+  },
+  {
+    "case": "dedicated-sword",
+    "data": {
+      "lab": {
+        "requests": "9",
+        "state": "{\"scene\":\"a013\",\"run\":803,\"token\":\"803:1\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"bottom_center\",\"asset\":\"char_male_high_normal\",\"pose\":\"持剑、准备保护虚拟主播\",\"expression\":\"震惊、警戒\"},\"奶奶\":{\"actor\":\"奶奶\",\"visible\":false,\"position\":\"door\",\"asset\":\"char_grandmother_warm\",\"pose\":\"端着早饭、站在门口\",\"expression\":\"催促、关心\"},\"虚拟主播\":{\"actor\":\"虚拟主播\",\"visible\":true,\"position\":\"top_right\",\"asset\":\"char_virtual_streamer_shy\",\"pose\":\"趴在坑边、即将失去意识\",\"expression\":\"恐惧\"},\"怪盗\":{\"actor\":\"怪盗\",\"visible\":false,\"position\":\"window\",\"asset\":\"char_thief_smile\",\"pose\":\"托腮看向男高\",\"expression\":\"有趣、微笑\"},\"老师\":{\"actor\":\"老师\",\"visible\":false,\"position\":\"front\",\"asset\":\"char_teacher_placeholder\",\"pose\":\"朝男高招手\",\"expression\":\"平常\"},\"反派\":{\"actor\":\"反派\",\"visible\":false,\"position\":\"back\",\"asset\":\"char_villain_calm\",\"pose\":\"靠在栏杆边、拿着饮料\",\"expression\":\"玩味\"},\"偶像\":{\"actor\":\"偶像\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_idol_neutral\",\"pose\":\"站在反派身旁\",\"expression\":\"疑惑、不安\"},\"黑色结晶\":{\"actor\":\"黑色结晶\",\"visible\":false,\"position\":\"center\",\"asset\":\"prop_dark_god_crystal_placeholder\"},\"大师之剑\":{\"actor\":\"大师之剑\",\"visible\":true,\"position\":\"bottom_center\",\"asset\":\"prop_master_sword_corrupted_placeholder\",\"pose\":\"悬浮、下半段被黑绿色污秽覆盖\"},\"黑色人形\":{\"actor\":\"黑色人形\",\"visible\":true,\"position\":\"bottom_left\",\"asset\":\"char_black_humanoid_placeholder\",\"pose\":\"由污秽聚合、站起\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "803/act1/a013",
+        "displaySlots": "黑色人形,男高,虚拟主播",
+        "lastSpoken": "{}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "640",
+          "displayed": "true",
+          "expression": "震惊、警戒",
+          "frame": "waist",
+          "headHeight": "130.35",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-sword",
+          "phase": "steady",
+          "pose": "持剑、准备保护虚拟主播",
+          "position": "bottom_center",
+          "rear": "false",
+          "rect": {
+            "h": 633.59375,
+            "w": 422.390625,
+            "x": 748.796875,
+            "y": 250.125
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "奶奶",
+          "asset": "char_grandmother_warm",
+          "center": "640",
+          "displayed": "false",
+          "expression": "催促、关心",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "端着早饭、站在门口",
+          "position": "door",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "虚拟主播",
+          "asset": "char_virtual_streamer_shy",
+          "center": "1024",
+          "displayed": "true",
+          "expression": "恐惧",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "placeholder",
+          "phase": "steady",
+          "pose": "趴在坑边、即将失去意识",
+          "position": "top_right",
+          "rear": "false",
+          "rect": {
+            "h": 637.5,
+            "w": 225,
+            "x": 1327.5,
+            "y": 262.5
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "怪盗",
+          "asset": "char_thief_smile",
+          "center": "640",
+          "displayed": "false",
+          "expression": "有趣、微笑",
+          "frame": "waist",
+          "headHeight": "136.95000000000002",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "thief-daily",
+          "phase": "hidden",
+          "pose": "托腮看向男高",
+          "position": "window",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "far-left",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "老师",
+          "asset": "char_teacher_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "平常",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "朝男高招手",
+          "position": "front",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "反派",
+          "asset": "char_villain_calm",
+          "center": "640",
+          "displayed": "false",
+          "expression": "玩味",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "靠在栏杆边、拿着饮料",
+          "position": "back",
+          "rear": "true",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "far-right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "偶像",
+          "asset": "char_idol_neutral",
+          "center": "640",
+          "displayed": "false",
+          "expression": "疑惑、不安",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "站在反派身旁",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "黑色人形",
+          "asset": "char_black_humanoid_placeholder",
+          "center": "256",
+          "displayed": "true",
+          "expression": "",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "placeholder",
+          "phase": "steady",
+          "pose": "由污秽聚合、站起",
+          "position": "bottom_left",
+          "rear": "false",
+          "rect": {
+            "h": 637.5,
+            "w": 225,
+            "x": 367.5,
+            "y": 262.5
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "left",
+          "speaking": "false",
+          "visual": "placeholder"
+        }
+      ],
+      "size": {
+        "h": 900,
+        "w": 1920
+      },
+      "stage": {
+        "actId": "act1",
+        "nodeIndex": "5",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "a013",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "text",
+        "waitToken": "803:1"
+      },
+      "text": "黑绿色污秽沿坑底向中央爬行，聚成一团扭曲阴影。\n阴影逐渐长出双腿、躯干、手臂和头颅。\n它的脸上没有五官，只有两点暗红色光芒。"
+    }
+  },
+  {
+    "case": "dedicated-bed",
+    "data": {
+      "lab": {
+        "requests": "10",
+        "state": "{\"scene\":\"a001\",\"run\":804,\"token\":\"804:1\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_male_high_normal\",\"pose\":\"躺在床上、刚醒\",\"expression\":\"困倦、慌张\"},\"奶奶\":{\"actor\":\"奶奶\",\"visible\":true,\"position\":\"door\",\"asset\":\"char_grandmother_warm\",\"pose\":\"端着早饭、站在门口\",\"expression\":\"催促、关心\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "804/act1/a001",
+        "displaySlots": "男高,奶奶",
+        "lastSpoken": "{}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "384",
+          "displayed": "true",
+          "expression": "困倦、慌张",
+          "frame": "bust",
+          "headHeight": "132",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-bed",
+          "phase": "steady",
+          "pose": "躺在床上、刚醒",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 576,
+            "w": 384,
+            "x": 448,
+            "y": 251.25
+          },
+          "safeWidth": "307.2",
+          "scale": "0.3",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "奶奶",
+          "asset": "char_grandmother_warm",
+          "center": "896",
+          "displayed": "true",
+          "expression": "催促、关心",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "placeholder",
+          "phase": "steady",
+          "pose": "端着早饭、站在门口",
+          "position": "door",
+          "rear": "false",
+          "rect": {
+            "h": 637.5,
+            "w": 225,
+            "x": 1167.5,
+            "y": 262.5
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "placeholder"
+        }
+      ],
+      "size": {
+        "h": 900,
+        "w": 1920
+      },
+      "stage": {
+        "actId": "act1",
+        "nodeIndex": "4",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "a001",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "text",
+        "waitToken": "804:1"
+      },
+      "text": "闹钟已经响过几遍，男高仍把半张脸埋在被子里。\n昨晚的金属装置、蒙面人的背影和仓库区重新亮起的灯，在断续的梦里转了一夜。"
+    }
+  },
+  {
+    "case": "actual-900x620",
+    "data": {
+      "lab": {
+        "requests": "16",
+        "state": "{\"scene\":\"c009\",\"run\":805,\"token\":\"805:1\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"left\",\"asset\":\"char_male_high_normal\",\"pose\":\"扶墙调整呼吸，望向蒙面人\",\"expression\":\"疑惑\"},\"金发青年\":{\"actor\":\"金发青年\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_link_silent_placeholder\",\"pose\":\"守在巷口附近\",\"expression\":\"观察\"},\"黑衣队员\":{\"actor\":\"黑衣队员\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_member_placeholder\",\"pose\":\"招呼同伴围上\",\"expression\":\"急躁\"},\"黑衣干部甲\":{\"actor\":\"黑衣干部甲\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_officer_a_placeholder\",\"pose\":\"停步，观察两人\",\"expression\":\"克制，审视\"},\"不明生物·普通型\":{\"actor\":\"不明生物·普通型\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_deoxys_normal_placeholder\",\"pose\":\"悬浮，触臂展开\",\"expression\":\"锁定目标\"},\"不明生物·防御型\":{\"actor\":\"不明生物·防御型\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_deoxys_defense_placeholder\",\"pose\":\"展开屏障，护住普通型\",\"expression\":\"稳定\"},\"黑衣干部乙\":{\"actor\":\"黑衣干部乙\",\"visible\":false,\"position\":\"right\",\"asset\":\"char_organization_officer_b_placeholder\",\"pose\":\"走入侧巷口，指挥部队\",\"expression\":\"冷静\"},\"蒙面人\":{\"actor\":\"蒙面人\",\"visible\":true,\"position\":\"right\",\"asset\":\"char_thief_masked_black_placeholder\",\"pose\":\"抬手准备摘下面罩\",\"expression\":\"轻松\"},\"女剑士\":{\"actor\":\"女剑士\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_saber_traveler_placeholder\",\"pose\":\"站在外侧留意来路\",\"expression\":\"警戒\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "805/prologue_4/c009",
+        "displaySlots": "男高,女剑士,蒙面人",
+        "lastSpoken": "{}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "256",
+          "displayed": "true",
+          "expression": "疑惑",
+          "frame": "bust",
+          "headHeight": "141.4",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-half",
+          "phase": "steady",
+          "pose": "扶墙调整呼吸，望向蒙面人",
+          "position": "left",
+          "rear": "false",
+          "rect": {
+            "h": 302.396484375,
+            "w": 201.5947265625,
+            "x": 79.1982421875,
+            "y": 198.625
+          },
+          "safeWidth": "286.72",
+          "scale": "0.28",
+          "slot": "left",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "观察",
+          "frame": "waist",
+          "headHeight": "132.66",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "link",
+          "phase": "hidden",
+          "pose": "守在巷口附近",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "黑衣队员",
+          "asset": "char_organization_member_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "急躁",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "招呼同伴围上",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "黑衣干部甲",
+          "asset": "char_organization_officer_a_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "克制，审视",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "停步，观察两人",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "不明生物·普通型",
+          "asset": "char_deoxys_normal_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "锁定目标",
+          "frame": "waist",
+          "headHeight": "144",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "deoxys",
+          "phase": "hidden",
+          "pose": "悬浮，触臂展开",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "327.68",
+          "scale": "0.32",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "不明生物·防御型",
+          "asset": "char_deoxys_defense_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "稳定",
+          "frame": "waist",
+          "headHeight": "144",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "deoxys",
+          "phase": "hidden",
+          "pose": "展开屏障，护住普通型",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "327.68",
+          "scale": "0.32",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "黑衣干部乙",
+          "asset": "char_organization_officer_b_placeholder",
+          "center": "640",
+          "displayed": "false",
+          "expression": "冷静",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "走入侧巷口，指挥部队",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "蒙面人",
+          "asset": "char_thief_masked_black_placeholder",
+          "center": "1024",
+          "displayed": "true",
+          "expression": "轻松",
+          "frame": "waist",
+          "headHeight": "132.6",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "thief-masked",
+          "phase": "steady",
+          "pose": "抬手准备摘下面罩",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 421.1982421875,
+            "w": 280.79296875,
+            "x": 570.55078125,
+            "y": 193.5625
+          },
+          "safeWidth": "323.7",
+          "scale": "0.39",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "static"
+        },
+        {
+          "actor": "女剑士",
+          "asset": "char_saber_traveler_placeholder",
+          "center": "640",
+          "displayed": "true",
+          "expression": "警戒",
+          "frame": "waist",
+          "headHeight": "129.36",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "saber",
+          "phase": "steady",
+          "pose": "站在外侧留意来路",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 356.396484375,
+            "w": 237.5947265625,
+            "x": 331.1982421875,
+            "y": 202.66796875
+          },
+          "safeWidth": "337.92",
+          "scale": "0.33",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "static"
+        }
+      ],
+      "size": {
+        "h": 620,
+        "w": 900
+      },
+      "stage": {
+        "actId": "prologue_4",
+        "nodeIndex": "10",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "c009",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "text",
+        "waitToken": "805:1"
+      },
+      "text": "确认这段路暂时没有追兵，蒙面人才停在墙边，长长吐出一口气。"
+    }
+  },
+  {
+    "case": "hero-present-but-not-displayed-stops-animation",
+    "data": {
+      "lab": {
+        "frames": "1",
+        "requests": "24",
+        "state": "{\"scene\":\"hidden-fixture\",\"run\":806,\"flags\":{},\"actors\":{\"一\":{\"actor\":\"一\",\"visible\":true,\"position\":\"left\"},\"二\":{\"actor\":\"二\",\"visible\":true,\"position\":\"center\"},\"三\":{\"actor\":\"三\",\"visible\":true,\"position\":\"right\"},\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_male_high_normal\",\"pose\":\"普通站姿\",\"expression\":\"默认平静\"}},\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "2",
+        "displayScope": "806/prologue/hidden-fixture",
+        "displaySlots": "一,二,三",
+        "lastSpoken": "{}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "640",
+          "displayed": "false",
+          "expression": "默认平静",
+          "frame": "layered",
+          "headHeight": "136.76999999999998",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "hero-layered",
+          "phase": "hidden",
+          "pose": "普通站姿",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "338.4",
+          "scale": "0.47",
+          "slot": "center",
+          "speaking": "false",
+          "talking": "false",
+          "visual": "layered"
+        },
+        {
+          "actor": "一",
+          "asset": "",
+          "center": "256",
+          "displayed": "true",
+          "expression": "",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "placeholder",
+          "phase": "steady",
+          "pose": "",
+          "position": "left",
+          "rear": "false",
+          "rect": {
+            "h": 510,
+            "w": 180,
+            "x": 166,
+            "y": 210
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "left",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "二",
+          "asset": "",
+          "center": "640",
+          "displayed": "true",
+          "expression": "",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "placeholder",
+          "phase": "steady",
+          "pose": "",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 510,
+            "w": 180,
+            "x": 550,
+            "y": 210
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "三",
+          "asset": "",
+          "center": "1024",
+          "displayed": "true",
+          "expression": "",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "placeholder",
+          "phase": "steady",
+          "pose": "",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 510,
+            "w": 180,
+            "x": 934,
+            "y": 210
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        }
+      ],
+      "size": {
+        "h": 720,
+        "w": 1280
+      },
+      "stage": {
+        "actId": "prologue",
+        "nodeIndex": "0",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "hidden-fixture",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "",
+        "waitToken": ""
+      }
+    }
+  },
+  {
+    "case": "hidden-hero-latest-pose",
+    "data": {
+      "lab": {
+        "frames": "1",
+        "requests": "34",
+        "state": "{\"scene\":\"hidden-fixture\",\"run\":806,\"flags\":{},\"actors\":{\"一\":{\"actor\":\"一\",\"visible\":true,\"position\":\"left\"},\"二\":{\"actor\":\"二\",\"visible\":true,\"position\":\"center\"},\"三\":{\"actor\":\"三\",\"visible\":true,\"position\":\"right\"},\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_male_high_normal\",\"pose\":\"准备伸懒腰\",\"expression\":\"疑惑\"}},\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "2",
+        "displayScope": "806/prologue/hidden-fixture",
+        "displaySlots": "一,二,三",
+        "lastSpoken": "{}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "640",
+          "displayed": "false",
+          "expression": "疑惑",
+          "frame": "layered",
+          "headHeight": "136.76999999999998",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "hero-layered",
+          "phase": "hidden",
+          "pose": "准备伸懒腰",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "338.4",
+          "scale": "0.47",
+          "slot": "center",
+          "speaking": "false",
+          "talking": "false",
+          "visual": "layered"
+        },
+        {
+          "actor": "一",
+          "asset": "",
+          "center": "256",
+          "displayed": "true",
+          "expression": "",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "placeholder",
+          "phase": "steady",
+          "pose": "",
+          "position": "left",
+          "rear": "false",
+          "rect": {
+            "h": 510,
+            "w": 180,
+            "x": 166,
+            "y": 210
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "left",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "二",
+          "asset": "",
+          "center": "640",
+          "displayed": "true",
+          "expression": "",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "placeholder",
+          "phase": "steady",
+          "pose": "",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 510,
+            "w": 180,
+            "x": 550,
+            "y": 210
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "三",
+          "asset": "",
+          "center": "1024",
+          "displayed": "true",
+          "expression": "",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "placeholder",
+          "phase": "steady",
+          "pose": "",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 510,
+            "w": 180,
+            "x": 934,
+            "y": 210
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        }
+      ],
+      "size": {
+        "h": 720,
+        "w": 1280
+      },
+      "stage": {
+        "actId": "prologue",
+        "nodeIndex": "0",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "hidden-fixture",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "waitKind": "",
+        "waitToken": ""
+      }
+    }
+  },
+  {
+    "case": "hidden-hero-speaks-and-uses-latest-without-replay",
+    "data": {
+      "lab": {
+        "frames": "14",
+        "requests": "34",
+        "state": "{\"scene\":\"hidden-fixture\",\"run\":806,\"token\":\"lab:807\",\"flags\":{},\"actors\":{\"一\":{\"actor\":\"一\",\"visible\":true,\"position\":\"left\"},\"二\":{\"actor\":\"二\",\"visible\":true,\"position\":\"center\"},\"三\":{\"actor\":\"三\",\"visible\":true,\"position\":\"right\"},\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_male_high_normal\",\"pose\":\"准备伸懒腰\",\"expression\":\"疑惑\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "3",
+        "displayScope": "806/prologue/hidden-fixture",
+        "displaySlots": "男高,二,三",
+        "lastSpoken": "{\"男高\":1}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "256",
+          "displayed": "true",
+          "expression": "疑惑",
+          "frame": "layered",
+          "headHeight": "136.76999999999998",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-layered",
+          "phase": "in",
+          "pose": "准备伸懒腰",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 721.9125366210938,
+            "w": 481.2749938964844,
+            "x": 15.350000381469728,
+            "y": 187.4375
+          },
+          "safeWidth": "338.4",
+          "scale": "0.47",
+          "slot": "center",
+          "speaking": "true",
+          "talking": "true",
+          "visual": "layered"
+        },
+        {
+          "actor": "一",
+          "asset": "",
+          "center": "256",
+          "displayed": "false",
+          "expression": "",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "",
+          "position": "left",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "left",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "二",
+          "asset": "",
+          "center": "640",
+          "displayed": "true",
+          "expression": "",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "placeholder",
+          "phase": "steady",
+          "pose": "",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 510,
+            "w": 180,
+            "x": 550,
+            "y": 210
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "三",
+          "asset": "",
+          "center": "1024",
+          "displayed": "true",
+          "expression": "",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "placeholder",
+          "phase": "steady",
+          "pose": "",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 510,
+            "w": 180,
+            "x": 934,
+            "y": 210
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        }
+      ],
+      "size": {
+        "h": 720,
+        "w": 1280
+      },
+      "stage": {
+        "actId": "prologue",
+        "nodeIndex": "0",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "hidden-fixture",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "waitKind": "text",
+        "waitToken": "lab:807"
+      },
+      "text": "仅受控换入"
+    }
+  },
+  {
+    "case": "paused-layered-animation",
+    "data": {
+      "lab": {
+        "frames": "21",
+        "requests": "34",
+        "state": "{\"scene\":\"hidden-fixture\",\"run\":806,\"token\":\"lab:807\",\"flags\":{},\"actors\":{\"一\":{\"actor\":\"一\",\"visible\":true,\"position\":\"left\"},\"二\":{\"actor\":\"二\",\"visible\":true,\"position\":\"center\"},\"三\":{\"actor\":\"三\",\"visible\":true,\"position\":\"right\"},\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_male_high_normal\",\"pose\":\"准备伸懒腰\",\"expression\":\"疑惑\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "3",
+        "displayScope": "806/prologue/hidden-fixture",
+        "displaySlots": "男高,二,三",
+        "lastSpoken": "{\"男高\":1}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "256",
+          "displayed": "true",
+          "expression": "疑惑",
+          "frame": "layered",
+          "headHeight": "136.76999999999998",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-layered",
+          "phase": "in",
+          "pose": "准备伸懒腰",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 721.9125366210938,
+            "w": 481.2749938964844,
+            "x": 15.350000381469728,
+            "y": 187.4375
+          },
+          "safeWidth": "338.4",
+          "scale": "0.47",
+          "slot": "center",
+          "speaking": "true",
+          "talking": "false",
+          "visual": "layered"
+        },
+        {
+          "actor": "一",
+          "asset": "",
+          "center": "256",
+          "displayed": "false",
+          "expression": "",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": true,
+          "metric": "placeholder",
+          "phase": "hidden",
+          "pose": "",
+          "position": "left",
+          "rear": "false",
+          "rect": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "left",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "二",
+          "asset": "",
+          "center": "640",
+          "displayed": "true",
+          "expression": "",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "placeholder",
+          "phase": "steady",
+          "pose": "",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 510,
+            "w": 180,
+            "x": 550,
+            "y": 210
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "placeholder"
+        },
+        {
+          "actor": "三",
+          "asset": "",
+          "center": "1024",
+          "displayed": "true",
+          "expression": "",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "placeholder",
+          "phase": "steady",
+          "pose": "",
+          "position": "right",
+          "rear": "false",
+          "rect": {
+            "h": 510,
+            "w": 180,
+            "x": 934,
+            "y": 210
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "right",
+          "speaking": "false",
+          "visual": "placeholder"
+        }
+      ],
+      "size": {
+        "h": 720,
+        "w": 1280
+      },
+      "stage": {
+        "actId": "prologue",
+        "nodeIndex": "0",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "hidden-fixture",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "waitKind": "text",
+        "waitToken": "lab:807"
+      },
+      "text": "仅受控换入"
+    }
+  },
+  {
+    "case": "rapid-update-delayed-lease-pending",
+    "data": {
+      "lab": {
+        "delay": "true",
+        "frames": "78",
+        "requests": "60",
+        "state": "{\"scene\":\"sample\",\"run\":810,\"token\":\"sample:810\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_male_high_normal\",\"pose\":\"准备伸懒腰\",\"expression\":\"疑惑\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "810/prologue/sample",
+        "displaySlots": "男高",
+        "lastSpoken": "{\"男高\":1}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "640",
+          "displayed": "true",
+          "expression": "疑惑",
+          "headHeight": "140",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "placeholder",
+          "phase": "steady",
+          "pose": "准备伸懒腰",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 510,
+            "w": 180,
+            "x": 550,
+            "y": 210
+          },
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "center",
+          "speaking": "true",
+          "visual": "placeholder"
+        }
+      ],
+      "size": {
+        "h": 720,
+        "w": 1280
+      },
+      "stage": {
+        "actId": "prologue",
+        "nodeIndex": "0",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "sample",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "waitKind": "text",
+        "waitToken": "sample:810"
+      },
+      "text": "受控画面验"
+    }
+  },
+  {
+    "case": "delayed-last-visual-only",
+    "data": {
+      "lab": {
+        "delay": "true",
+        "frames": "1352",
+        "requests": "60",
+        "state": "{\"scene\":\"sample\",\"run\":810,\"token\":\"sample:810\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_male_high_normal\",\"pose\":\"准备伸懒腰\",\"expression\":\"疑惑\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "810/prologue/sample",
+        "displaySlots": "男高",
+        "lastSpoken": "{\"男高\":1}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "640",
+          "displayed": "true",
+          "expression": "疑惑",
+          "frame": "layered",
+          "headHeight": "136.76999999999998",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-layered",
+          "phase": "steady",
+          "pose": "准备伸懒腰",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 721.9125366210938,
+            "w": 481.2749938964844,
+            "x": 399.3500061035156,
+            "y": 187.4375
+          },
+          "safeWidth": "338.4",
+          "scale": "0.47",
+          "slot": "center",
+          "speaking": "true",
+          "talking": "true",
+          "visual": "layered"
+        }
+      ],
+      "size": {
+        "h": 720,
+        "w": 1280
+      },
+      "stage": {
+        "actId": "prologue",
+        "nodeIndex": "0",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "sample",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "waitKind": "text",
+        "waitToken": "sample:810"
+      },
+      "text": "受控画面验"
+    }
+  },
+  {
+    "case": "single-layer-failure-static-fallback-metrics",
+    "data": {
+      "lab": {
+        "delay": "false",
+        "fail": "true",
+        "frames": "1395",
+        "requests": "69",
+        "state": "{\"scene\":\"sample\",\"run\":811,\"token\":\"sample:811\",\"flags\":{},\"actors\":{\"男高\":{\"actor\":\"男高\",\"visible\":true,\"position\":\"center\",\"asset\":\"char_male_high_normal\",\"pose\":\"普通站姿\",\"expression\":\"默认平静\"}},\"kind\":\"text\",\"fast\":false}",
+        "testid": "layout-tools"
+      },
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "811/prologue/sample",
+        "displaySlots": "男高",
+        "lastSpoken": "{\"男高\":1}"
+      },
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "640",
+          "displayed": "true",
+          "expression": "默认平静",
+          "frame": "bust",
+          "headHeight": "141.4",
+          "headTop": "210",
+          "hidden": false,
+          "metric": "hero-half",
+          "phase": "steady",
+          "pose": "普通站姿",
+          "position": "center",
+          "rear": "false",
+          "rect": {
+            "h": 430.0750122070313,
+            "w": 286.7124938964844,
+            "x": 496.6375122070313,
+            "y": 201.6000061035156
+          },
+          "safeWidth": "286.72",
+          "scale": "0.28",
+          "slot": "center",
+          "speaking": "true",
+          "visual": "static"
+        }
+      ],
+      "size": {
+        "h": 720,
+        "w": 1280
+      },
+      "stage": {
+        "actId": "prologue",
+        "nodeIndex": "0",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "sceneId": "sample",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "waitKind": "text",
+        "waitToken": "sample:811"
+      },
+      "text": "受控画面验"
+    }
+  }
+]

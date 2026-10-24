@@ -1,0 +1,423 @@
+{
+  "threshold": 128,
+  "textWindowTop": 540,
+  "measurements": [
+    {
+      "asset": "public\\assets\\portraits\\prologue-v2\\deoxys-defense.png",
+      "group": "deoxys",
+      "headTopSource": 20.0,
+      "scale": 0.32,
+      "windowAlpha128Box": [
+        72,
+        98,
+        990,
+        1052
+      ],
+      "windowOpaqueWidth": 293.76
+    },
+    {
+      "asset": "public\\assets\\portraits\\prologue-v2\\deoxys-normal.png",
+      "group": "deoxys",
+      "headTopSource": 20.0,
+      "scale": 0.32,
+      "windowAlpha128Box": [
+        6,
+        60,
+        1023,
+        1052
+      ],
+      "windowOpaqueWidth": 325.44
+    },
+    {
+      "asset": "public\\assets\\portraits\\prologue-v2\\hero-seated-alert.png",
+      "group": "hero-seated",
+      "headTopSource": 50.0,
+      "scale": 0.34,
+      "windowAlpha128Box": [
+        58,
+        86,
+        993,
+        1021
+      ],
+      "windowOpaqueWidth": 317.9
+    },
+    {
+      "asset": "public\\assets\\portraits\\prologue-v2\\hero-seated-calm.png",
+      "group": "hero-seated",
+      "headTopSource": 50.0,
+      "scale": 0.34,
+      "windowAlpha128Box": [
+        58,
+        85,
+        993,
+        1021
+      ],
+      "windowOpaqueWidth": 317.9
+    },
+    {
+      "asset": "public\\assets\\portraits\\prologue-v2\\hero-seated-proud.png",
+      "group": "hero-seated",
+      "headTopSource": 50.0,
+      "scale": 0.34,
+      "windowAlpha128Box": [
+        58,
+        86,
+        992,
+        1021
+      ],
+      "windowOpaqueWidth": 317.56
+    },
+    {
+      "asset": "public\\assets\\portraits\\prologue-v2\\hero-sword-guard.png",
+      "group": "hero-sword",
+      "headTopSource": 30.0,
+      "scale": 0.33,
+      "windowAlpha128Box": [
+        80,
+        46,
+        977,
+        1030
+      ],
+      "windowOpaqueWidth": 296.01
+    },
+    {
+      "asset": "public\\assets\\portraits\\prologue-v2\\link-calm.png",
+      "group": "link",
+      "headTopSource": 18.0,
+      "scale": 0.33,
+      "windowAlpha128Box": [
+        174,
+        43,
+        955,
+        1018
+      ],
+      "windowOpaqueWidth": 257.73
+    },
+    {
+      "asset": "public\\assets\\portraits\\prologue-v2\\link-guard.png",
+      "group": "link",
+      "headTopSource": 18.0,
+      "scale": 0.33,
+      "windowAlpha128Box": [
+        0,
+        39,
+        1007,
+        1018
+      ],
+      "windowOpaqueWidth": 332.31
+    },
+    {
+      "asset": "public\\assets\\portraits\\prologue-v2\\link-wrapped.png",
+      "group": "link",
+      "headTopSource": 18.0,
+      "scale": 0.33,
+      "windowAlpha128Box": [
+        174,
+        43,
+        957,
+        1018
+      ],
+      "windowOpaqueWidth": 258.39
+    },
+    {
+      "asset": "public\\assets\\portraits\\prologue-v2\\saber-alert.png",
+      "group": "saber",
+      "headTopSource": 8.0,
+      "scale": 0.33,
+      "windowAlpha128Box": [
+        40,
+        12,
+        1019,
+        1008
+      ],
+      "windowOpaqueWidth": 323.07
+    },
+    {
+      "asset": "public\\assets\\portraits\\prologue-v2\\saber-calm.png",
+      "group": "saber",
+      "headTopSource": 8.0,
+      "scale": 0.33,
+      "windowAlpha128Box": [
+        40,
+        12,
+        1018,
+        1008
+      ],
+      "windowOpaqueWidth": 322.74
+    },
+    {
+      "asset": "public\\assets\\portraits\\prologue-v2\\saber-impatient.png",
+      "group": "saber",
+      "headTopSource": 8.0,
+      "scale": 0.33,
+      "windowAlpha128Box": [
+        41,
+        16,
+        1019,
+        1008
+      ],
+      "windowOpaqueWidth": 322.74
+    },
+    {
+      "asset": "public\\assets\\portraits\\prologue-v2\\thief-action.png",
+      "group": "thief-masked",
+      "headTopSource": 40.0,
+      "scale": 0.39,
+      "windowAlpha128Box": [
+        289,
+        47,
+        740,
+        887
+      ],
+      "windowOpaqueWidth": 175.89
+    },
+    {
+      "asset": "public\\assets\\portraits\\prologue-v2\\thief-daily-alert.png",
+      "group": "thief-daily",
+      "headTopSource": 40.0,
+      "scale": 0.33,
+      "windowAlpha128Box": [
+        209,
+        43,
+        910,
+        1040
+      ],
+      "windowOpaqueWidth": 231.33
+    },
+    {
+      "asset": "public\\assets\\portraits\\prologue-v2\\thief-daily-serious.png",
+      "group": "thief-daily",
+      "headTopSource": 40.0,
+      "scale": 0.33,
+      "windowAlpha128Box": [
+        210,
+        43,
+        911,
+        1040
+      ],
+      "windowOpaqueWidth": 231.33
+    },
+    {
+      "asset": "public\\assets\\portraits\\prologue-v2\\thief-daily-smile.png",
+      "group": "thief-daily",
+      "headTopSource": 40.0,
+      "scale": 0.33,
+      "windowAlpha128Box": [
+        210,
+        43,
+        910,
+        1040
+      ],
+      "windowOpaqueWidth": 231.0
+    },
+    {
+      "asset": "public\\assets\\portraits\\prologue-v2\\thief-unmasked-action-serious.png",
+      "group": "thief-unmasked",
+      "headTopSource": 110.0,
+      "scale": 0.57,
+      "windowAlpha128Box": [
+        307,
+        100,
+        718,
+        689
+      ],
+      "windowOpaqueWidth": 234.27
+    },
+    {
+      "asset": "public\\assets\\portraits\\prologue-v2\\thief-unmasked-action-smile.png",
+      "group": "thief-unmasked",
+      "headTopSource": 110.0,
+      "scale": 0.57,
+      "windowAlpha128Box": [
+        305,
+        109,
+        711,
+        689
+      ],
+      "windowOpaqueWidth": 231.42
+    },
+    {
+      "asset": "public\\assets\\portraits\\hero-half-v1\\hero-half-alert.png",
+      "group": "hero-half",
+      "headTopSource": 30.0,
+      "scale": 0.28,
+      "windowAlpha128Box": [
+        97,
+        54,
+        974,
+        1209
+      ],
+      "windowOpaqueWidth": 245.56
+    },
+    {
+      "asset": "public\\assets\\portraits\\hero-half-v1\\hero-half-angry.png",
+      "group": "hero-half",
+      "headTopSource": 30.0,
+      "scale": 0.28,
+      "windowAlpha128Box": [
+        98,
+        55,
+        974,
+        1209
+      ],
+      "windowOpaqueWidth": 245.28
+    },
+    {
+      "asset": "public\\assets\\portraits\\hero-half-v1\\hero-half-bed-awake.png",
+      "group": "hero-bed",
+      "headTopSource": 30.0,
+      "scale": 0.3,
+      "windowAlpha128Box": [
+        0,
+        107,
+        1024,
+        1130
+      ],
+      "windowOpaqueWidth": 307.2
+    },
+    {
+      "asset": "public\\assets\\portraits\\hero-half-v1\\hero-half-bed-sleepy.png",
+      "group": "hero-bed",
+      "headTopSource": 30.0,
+      "scale": 0.3,
+      "windowAlpha128Box": [
+        0,
+        107,
+        1024,
+        1130
+      ],
+      "windowOpaqueWidth": 307.2
+    },
+    {
+      "asset": "public\\assets\\portraits\\hero-half-v1\\hero-half-excited.png",
+      "group": "hero-half",
+      "headTopSource": 30.0,
+      "scale": 0.28,
+      "windowAlpha128Box": [
+        97,
+        53,
+        974,
+        1209
+      ],
+      "windowOpaqueWidth": 245.56
+    },
+    {
+      "asset": "public\\assets\\portraits\\hero-half-v1\\hero-half-friendly.png",
+      "group": "hero-half",
+      "headTopSource": 30.0,
+      "scale": 0.28,
+      "windowAlpha128Box": [
+        97,
+        54,
+        974,
+        1209
+      ],
+      "windowOpaqueWidth": 245.56
+    },
+    {
+      "asset": "public\\assets\\portraits\\hero-half-v1\\hero-half-pained.png",
+      "group": "hero-half",
+      "headTopSource": 30.0,
+      "scale": 0.28,
+      "windowAlpha128Box": [
+        97,
+        54,
+        975,
+        1209
+      ],
+      "windowOpaqueWidth": 245.84
+    },
+    {
+      "asset": "public\\assets\\portraits\\hero-half-v1\\hero-half-surprised.png",
+      "group": "hero-half",
+      "headTopSource": 30.0,
+      "scale": 0.28,
+      "windowAlpha128Box": [
+        97,
+        54,
+        974,
+        1209
+      ],
+      "windowOpaqueWidth": 245.56
+    },
+    {
+      "asset": "public\\assets\\portraits\\hero-half-v1\\hero-half-tired.png",
+      "group": "hero-half",
+      "headTopSource": 30.0,
+      "scale": 0.28,
+      "windowAlpha128Box": [
+        97,
+        54,
+        974,
+        1209
+      ],
+      "windowOpaqueWidth": 245.56
+    },
+    {
+      "asset": "public\\assets\\portraits\\hero-half-v1\\hero-half-worried.png",
+      "group": "hero-half",
+      "headTopSource": 30.0,
+      "scale": 0.28,
+      "windowAlpha128Box": [
+        97,
+        54,
+        974,
+        1209
+      ],
+      "windowOpaqueWidth": 245.56
+    },
+    {
+      "asset": "layered/stand/0deg",
+      "group": "hero-layered",
+      "headTopSource": 48.0,
+      "scale": 0.47,
+      "windowAlpha128Box": [
+        244,
+        48,
+        765,
+        751
+      ],
+      "windowOpaqueWidth": 244.87
+    },
+    {
+      "asset": "layered/luggage/0deg",
+      "group": "hero-layered",
+      "headTopSource": 48.0,
+      "scale": 0.47,
+      "windowAlpha128Box": [
+        165,
+        48,
+        836,
+        751
+      ],
+      "windowOpaqueWidth": 315.37
+    },
+    {
+      "asset": "layered/prepare/0deg",
+      "group": "hero-layered",
+      "headTopSource": 48.0,
+      "scale": 0.47,
+      "windowAlpha128Box": [
+        173,
+        48,
+        821,
+        751
+      ],
+      "windowOpaqueWidth": 304.56
+    },
+    {
+      "asset": "layered/prepare/7deg",
+      "group": "hero-layered",
+      "headTopSource": 48.0,
+      "scale": 0.47,
+      "windowAlpha128Box": [
+        180,
+        48,
+        809,
+        751
+      ],
+      "windowOpaqueWidth": 295.63
+    }
+  ],
+  "over340": []
+}
