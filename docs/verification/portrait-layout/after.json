@@ -69,7 +69,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "497fa09051ff8f7ed404ff7005ad3c4cff6db956037049ac05a8d7e63a22f536"
+      "sha256": "2bac8cfd30b0c0b01998a6af20e0429e95de37fcb895e0d05becc76996f9aac9"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -349,7 +349,7 @@
     },
     {
       "path": "docs/portrait-layout-verification.md",
-      "sha256": "8a54ce4607b107896b81bc0f1109ca51761786ef0525e4707cd668de7791579f"
+      "sha256": "d32a476474f3d4db2c0c7a463b9b050aba3e5b8af1a1b0050da888989d8fdeb6"
     },
     {
       "path": "docs/prologue-v2-file-changes.md",

@@ -1,0 +1,23 @@
+{
+  "featureCommit": "c0d64e8d767461ab12a0c8e28821d49356f8e422",
+  "actionsRun": 40083243754,
+  "actionsUrl": "https://github.com/yeklongdi/dimensional-war-game-source/actions/runs/40083243754",
+  "url": "https://yeklongdi.github.io/dimensional-war-game-source/",
+  "result": "success",
+  "onlineFiles": 88,
+  "allHashesMatch": true,
+  "script": "index-DJx5Vb64.js",
+  "css": "index-TLRgB-2k.css",
+  "onlineScope": [
+    "匿名菜单",
+    "地图与首关",
+    "P001新动态尺度",
+    "ESC菜单",
+    "刷新读取"
+  ],
+  "notVerifiedOnline": [
+    "C009-C012完整交互",
+    "完整九关",
+    "两场战斗"
+  ]
+}

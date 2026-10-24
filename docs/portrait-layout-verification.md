@@ -69,3 +69,14 @@
 修改程序仅src/game/ui/portraits.ts和src/styles/player.css；同步AGENTS、README、任务书、decisions、dialogue-presentation-spec、portrait-layout-spec以及已授权的工程外策划说明。接收并保留文档窗口已经新建的portrait-layout-spec、交接提示词和selected-reference.png，提交清单会包含这些已完成交接文件，不把它们重新算作本轮制作的新参考图。删除0；未提交服务日志、dist或无关临时文件。
 
 按工程已确认流程在本地验收后正常提交推送现有main，核对Actions与真实Pages；发布回执在获得实际结果后追加，不预先宣称成功。不创建Sites，不改仓库可见性。
+
+## 已获得的发布回执
+
+- 正常提交并推送`c0d64e8d767461ab12a0c8e28821d49356f8e422`，在别窗a281953之后保留历史，无force或重置。
+- [Actions 40083243754](https://github.com/yeklongdi/dimensional-war-game-source/actions/runs/40083243754)明确completed／success，build与deploy均成功；CI再次通过38文件566项及正式base构建，发布`index-DJx5Vb64.js`／`index-TLRgB-2k.css`。原JSON见release-build.json。
+- [真实正式网址](https://yeklongdi.github.io/dimensional-war-game-source/)无需GitHub登录。88个发布文件HTTP200且SHA与本地逐一匹配，见online-http.json；没有上传测试页、证据、原稿或文档到dist。
+- 实际浏览器主菜单显示无新版自动档，存在旧版本记录提示，按原新游戏确认流程仅新建v4验收进度，未载入或清理旧进度。经地图与首关卡片进入P001，男高行李紧张配方9图层全解码，center640／scale0.47／头基准136.77px；ESC菜单覆盖人物层，刷新读取仍从P001头开始，控制台无error。在线首次读取资源期间保留了显式占位，待实际解码后重新截图；没有把占位当作最终立绘通过。
+- 线上实测仅覆盖入口、地图、P001、菜单和刷新读取，不声称在线全通九关、C009–C012或两战。正式域名和localhost存档隔离，不自动同步。
+- 后续仅补交验收文档／截图回执，不再修改游戏代码；该回执提交与Actions编号在最终交付消息中给出，避免文档自引用提交号。
+
+![正式站新比例动态立绘](verification/portrait-layout/online-p001.jpg)

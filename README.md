@@ -8,6 +8,8 @@
 
 本轮typecheck、38文件566项测试、根路径及正式子路径build通过；原523项断言保留。实际检查C009–C012、仓库／教室、五组合和特殊姿态、候补停口型、受控延迟／失败、1920×900及900×620真实内容视口。正常新档观察P001→P002；A006→A008及C009→C013使用隔离检查点，分别记证，不冒充新档完整九关或实打两战。前后截图、保护哈希、范围与发布回执见[独立验收](docs/portrait-layout-verification.md)，接口见[规格](docs/portrait-layout-spec.md)，[交接提示词](prompts/立绘构图与三人显示.md)和[参考图](docs/design/portrait-layout/selected-reference.png)保留文档阶段来源。
 
+功能提交`c0d64e8`已推送，[Actions 40083243754](https://github.com/yeklongdi/dimensional-war-game-source/actions/runs/40083243754)的build／deploy均成功。[正式网站](https://yeklongdi.github.io/dimensional-war-game-source/)已实际检查主菜单→地图→首关新构图、ESC及新建验收档的刷新读取；88个线上文件与本地正式base产物SHA一致。不称线上C009–C012或九关已完整实走，细节见本轮验收。
+
 ## 本轮：ESC菜单、剧情快进与战斗跳过
 
 剧情／正式战斗按ESC打开系统菜单，首项【跳过】：正文每句完整显示0.3秒，遇选项、战斗或关末停止；停止按钮、正文、空格或回车只停止，ESC停止并开菜单。两场真实战斗及失败后可按胜利返回原CALL后，战后正常阅读，不额外掷骰或伪造击败日志。

@@ -1,0 +1,144 @@
+[
+  {
+    "case": "anonymous-main-menu-no-existing-auto",
+    "scripts": [
+      "https://yeklongdi.github.io/dimensional-war-game-source/assets/index-DJx5Vb64.js"
+    ],
+    "summary": "尚无自动档 · 手动档与设置独立保留"
+  },
+  {
+    "case": "fresh-online-P001-new-layout",
+    "data": {
+      "images": [],
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "640",
+          "displayed": "true",
+          "expression": "紧张、期待",
+          "headHeight": "140",
+          "headTop": "210",
+          "metric": "placeholder",
+          "phase": "steady",
+          "pose": "携带行李、站立",
+          "position": "center",
+          "rear": "false",
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "placeholder"
+        }
+      ],
+      "saveStatus": "saved",
+      "scene": "p001"
+    }
+  },
+  {
+    "case": "online-ESC-menu-and-no-console-errors",
+    "errors": []
+  },
+  {
+    "case": "online-P001-after-all-images-decoded",
+    "data": {
+      "images": [
+        {
+          "ready": true,
+          "src": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/body-luggage.png"
+        },
+        {
+          "ready": true,
+          "src": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/luggage-grip.png"
+        },
+        {
+          "ready": true,
+          "src": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/head.png"
+        },
+        {
+          "ready": true,
+          "src": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous.png"
+        },
+        {
+          "ready": true,
+          "src": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous-half.png"
+        },
+        {
+          "ready": true,
+          "src": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous-closed.png"
+        },
+        {
+          "ready": true,
+          "src": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-nervous.png"
+        },
+        {
+          "ready": true,
+          "src": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-nervous-speech.png"
+        },
+        {
+          "ready": true,
+          "src": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-layered-v3/hair-front.png"
+        }
+      ],
+      "portraits": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "640",
+          "displayed": "true",
+          "expression": "紧张、期待",
+          "frame": "layered",
+          "headHeight": "136.76999999999998",
+          "headTop": "210",
+          "metric": "hero-layered",
+          "phase": "steady",
+          "pose": "携带行李、站立",
+          "position": "center",
+          "rear": "false",
+          "safeWidth": "338.4",
+          "scale": "0.47",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "layered"
+        }
+      ],
+      "saveStatus": "saved"
+    },
+    "errors": []
+  },
+  {
+    "case": "online-refresh-and-scene-head-load",
+    "data": {
+      "heroes": [
+        {
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "center": "640",
+          "displayed": "true",
+          "expression": "紧张、期待",
+          "headHeight": "140",
+          "headTop": "210",
+          "metric": "placeholder",
+          "phase": "steady",
+          "pose": "携带行李、站立",
+          "position": "center",
+          "rear": "false",
+          "safeWidth": "180",
+          "scale": "1",
+          "slot": "center",
+          "speaking": "false",
+          "visual": "placeholder"
+        }
+      ],
+      "layout": {
+        "displayRevision": "1",
+        "displayScope": "3/prologue/p001",
+        "displaySlots": "男高",
+        "lastSpoken": "{}"
+      },
+      "saveStatus": "saved",
+      "scene": "p001"
+    },
+    "errors": []
+  }
+]

@@ -69,3 +69,9 @@ A	tests/portrait-layout.html
 A	tools/check-portrait-layout.mjs
 A	tools/measure-portrait-layout.py
 A	tools/verify-portrait-publish.mjs
+A	docs/verification/portrait-layout/online-browser.json
+A	docs/verification/portrait-layout/online-http.json
+A	docs/verification/portrait-layout/online-menu.jpg
+A	docs/verification/portrait-layout/online-p001.jpg
+A	docs/verification/portrait-layout/release-build.json
+A	docs/verification/portrait-layout/release.json
