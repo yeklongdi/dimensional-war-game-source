@@ -1,6 +1,6 @@
 {
   "baseline": "3fcd64b659047c944241ac96432380e9525eebd3",
-  "generated": 119,
+  "generated": 124,
   "modified": 44,
   "deleted": 0,
   "files": {
@@ -30,8 +30,11 @@
       "docs/verification/prologue-v2/known-portrait-states-browser.json",
       "docs/verification/prologue-v2/layout-browser.json",
       "docs/verification/prologue-v2/local-resources.json",
+      "docs/verification/prologue-v2/online-browser.json",
+      "docs/verification/prologue-v2/online-resources.json",
       "docs/verification/prologue-v2/portrait-browser.json",
       "docs/verification/prologue-v2/production-browser.json",
+      "docs/verification/prologue-v2/release.json",
       "docs/verification/prologue-v2/screenshots/a001-half-bed.png",
       "docs/verification/prologue-v2/screenshots/a008-half-fixed.png",
       "docs/verification/prologue-v2/screenshots/a010-return-branch.png",
@@ -58,6 +61,8 @@
       "docs/verification/prologue-v2/screenshots/hero-half-dark.png",
       "docs/verification/prologue-v2/screenshots/hero-half-light.png",
       "docs/verification/prologue-v2/screenshots/menu-900.png",
+      "docs/verification/prologue-v2/screenshots/online-archives.png",
+      "docs/verification/prologue-v2/screenshots/online-main.png",
       "docs/verification/prologue-v2/screenshots/p003-seated.png",
       "docs/verification/prologue-v2/screenshots/production-p001.png",
       "docs/verification/prologue-v2/screenshots/six-slots.png",

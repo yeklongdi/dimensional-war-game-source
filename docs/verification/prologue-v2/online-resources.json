@@ -1,0 +1,179 @@
+{
+  "base": "https://yeklongdi.github.io/dimensional-war-game-source/",
+  "checkedAt": "2026-10-24T02:58:25.653Z",
+  "html": 200,
+  "module": "https://yeklongdi.github.io/dimensional-war-game-source/assets/index-BZAiJ9zB.js",
+  "jsBytes": 286638,
+  "css": 200,
+  "contentVersion": "prologue_four_parts_v1",
+  "portraits": [
+    {
+      "id": "thief-daily-smile",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/prologue-v2/thief-daily-smile.png",
+      "status": 200,
+      "sha256": "c43d5c9eb8e1f4c223f7543c857241c4e93ff38f8235960a788618ec43009e9f"
+    },
+    {
+      "id": "thief-daily-serious",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/prologue-v2/thief-daily-serious.png",
+      "status": 200,
+      "sha256": "3b24dddbeba1f1995fe0f552c5441f12877fac808af4b46282dd4ea28fbc9ef6"
+    },
+    {
+      "id": "thief-daily-alert",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/prologue-v2/thief-daily-alert.png",
+      "status": 200,
+      "sha256": "37d4f325d44c57db0ded8625063a675475181419de9118fdbba1793f4c5c6eee"
+    },
+    {
+      "id": "link-calm",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/prologue-v2/link-calm.png",
+      "status": 200,
+      "sha256": "cd9343533e2e616b60b96d5b1e9f6caf381b671df01212427d76798117f5c0c0"
+    },
+    {
+      "id": "saber-calm",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/prologue-v2/saber-calm.png",
+      "status": 200,
+      "sha256": "af8361ca6656c658c37f67de61c4760a9ce5bfd79d23634d1345a51ad5d9edbf"
+    },
+    {
+      "id": "deoxys-normal",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/prologue-v2/deoxys-normal.png",
+      "status": 200,
+      "sha256": "27b0671f8f9766e0096ad4033b4eb8dd6ad6d7f60c0c53c64bd1e76f96c25af7"
+    },
+    {
+      "id": "deoxys-defense",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/prologue-v2/deoxys-defense.png",
+      "status": 200,
+      "sha256": "066d18c9b36952c40ba380f311d58ec903a6040ae5a696b4ab92387d68e66684"
+    },
+    {
+      "id": "thief-action",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/prologue-v2/thief-action.png",
+      "status": 200,
+      "sha256": "271c17ca8b077039a29c58dcca2b60929489557fced1d6b5deb40b6e96aca318"
+    },
+    {
+      "id": "link-guard",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/prologue-v2/link-guard.png",
+      "status": 200,
+      "sha256": "a370cd7b8c522efa0c6205df931b936a7d3c2a4cefcea10b43a5c9628ead6cd0"
+    },
+    {
+      "id": "saber-alert",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/prologue-v2/saber-alert.png",
+      "status": 200,
+      "sha256": "dded6b11aa92a6595637f82c02de85ea93b7ce5880b3930db3d6dfd2ba51161c"
+    },
+    {
+      "id": "saber-impatient",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/prologue-v2/saber-impatient.png",
+      "status": 200,
+      "sha256": "57c8e5ca3646f048217c13e922e3a40b35fa2eade4b2756b5beacee498f46b2b"
+    },
+    {
+      "id": "hero-seated-proud",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/prologue-v2/hero-seated-proud.png",
+      "status": 200,
+      "sha256": "75b807f3fca52a3f1def65787db0711ee6ba60ca7c22790333b3eb606d08c6c7"
+    },
+    {
+      "id": "hero-sword-guard",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/prologue-v2/hero-sword-guard.png",
+      "status": 200,
+      "sha256": "21c85bd60522950a28408ce0eb3cb5cb5e4588eed0ebe15740d41bd0f78ffe85"
+    },
+    {
+      "id": "link-wrapped",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/prologue-v2/link-wrapped.png",
+      "status": 200,
+      "sha256": "de804ea91c9c60e3066198a6ba9337c171597389b27877b29bb17b809312fc8f"
+    },
+    {
+      "id": "hero-seated-calm",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/prologue-v2/hero-seated-calm.png",
+      "status": 200,
+      "sha256": "5d11c3055f87e492d1e581f2474071860a552ccde6babb73e4cb347595959ccf"
+    },
+    {
+      "id": "hero-seated-alert",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/prologue-v2/hero-seated-alert.png",
+      "status": 200,
+      "sha256": "63850a10de235c49510f8a6c95a3228b67f7f834ca0619529b3f170a5c11fd09"
+    },
+    {
+      "id": "thief-unmasked-action-smile",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/prologue-v2/thief-unmasked-action-smile.png",
+      "status": 200,
+      "sha256": "cb9b5b45921a3ccb5fc6ef8d8191ef684aa1d7638f3509f4615f7a4a1045ec46"
+    },
+    {
+      "id": "thief-unmasked-action-serious",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/prologue-v2/thief-unmasked-action-serious.png",
+      "status": 200,
+      "sha256": "ef4537d262d19deb7695fe3c6c99e0f15414638881efc680898a113616a6fbad"
+    },
+    {
+      "id": "hero-half-friendly",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-friendly.png",
+      "status": 200,
+      "sha256": "9f4dc1b84787154f9360b8497f72c92f9c6b4f97bc094f0333989e9ae09cf5df"
+    },
+    {
+      "id": "hero-half-alert",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-alert.png",
+      "status": 200,
+      "sha256": "db219ab7b206e6cbbe63c60da226074fe0ca609a7c18afe5f789784f130add4e"
+    },
+    {
+      "id": "hero-half-worried",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-worried.png",
+      "status": 200,
+      "sha256": "d6ba425414a3664f2855e52b98e165966bfb964ef1fc220e44151c90d3bb9fe9"
+    },
+    {
+      "id": "hero-half-tired",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-tired.png",
+      "status": 200,
+      "sha256": "8b2cb1e9081ea125b278f2883dc90e267f1f808884b0dd7197f45e8a9192c3dd"
+    },
+    {
+      "id": "hero-half-pained",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-pained.png",
+      "status": 200,
+      "sha256": "dfdd8c66a80624a1e6241b686401a3dc592cbcbe9ad39f9ba60e2c2dfcca73ac"
+    },
+    {
+      "id": "hero-half-angry",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-angry.png",
+      "status": 200,
+      "sha256": "4dfd4d31319409e4f083fb2fbe2dda94063fbe78df97e459fe32b3adcaf66ca8"
+    },
+    {
+      "id": "hero-half-surprised",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-surprised.png",
+      "status": 200,
+      "sha256": "35d02f2490d77d187071539ef7333c631be9710d4ed4c0eea3bdc1d719e3eca9"
+    },
+    {
+      "id": "hero-half-excited",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-excited.png",
+      "status": 200,
+      "sha256": "83f0de67aa48809e45d7bca7c35b63e61ef0eb61019baeadf86e5b7686a755ae"
+    },
+    {
+      "id": "hero-half-bed-sleepy",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-bed-sleepy.png",
+      "status": 200,
+      "sha256": "fd37038403a0f909bd52367e5117517f2f6160a0bc9b6a0a8fc7ffff27de5830"
+    },
+    {
+      "id": "hero-half-bed-awake",
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/portraits/hero-half-v1/hero-half-bed-awake.png",
+      "status": 200,
+      "sha256": "9bec477d43572fae0a98c8c8e3dde3719265c9e0130f8d64b79e6d065678ac33"
+    }
+  ]
+}

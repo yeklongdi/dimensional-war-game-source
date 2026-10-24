@@ -1,0 +1,38 @@
+{
+  "url": "https://yeklongdi.github.io/dimensional-war-game-source/",
+  "checkedAt": "2026-10-24T02:58:58.253Z",
+  "scope": "正式站只读：主菜单、读取面板、设置面板；未开始新游戏、未读取或覆盖存档、未调整设置。",
+  "archives": {
+    "disabledSlots": [
+      "自动档空槽",
+      "手动槽1空槽",
+      "手动槽2空槽",
+      "手动槽3空槽",
+      "手动槽4空槽",
+      "手动槽5空槽",
+      "手动槽6空槽"
+    ],
+    "modules": [
+      "https://yeklongdi.github.io/dimensional-war-game-source/assets/index-BZAiJ9zB.js"
+    ],
+    "text": "读取进度\n\n读取后从当前场景开头继续；战斗会重新开始。\n\n自动档\n空槽\n手动槽1\n空槽\n手动槽2\n空槽\n手动槽3\n空槽\n手动槽4\n空槽\n手动槽5\n空槽\n手动槽6\n空槽\n旧版本存档 · 只读保留\n\ndw.save.v2：旧剧情版本，原档已保留；新版请开始新游戏。\n\ndw.save.v3：旧剧情版本，原档已保留；新版请开始新游戏。\n\n返回\n\n垂直切片\n\n次元战争\n开始新游戏\n读取\n设置\nv0.0.0\n\n尚无自动档 · 手动档与设置独立保留"
+  },
+  "settings": {
+    "controls": [
+      {
+        "label": "BGM音量",
+        "value": "65"
+      },
+      {
+        "label": "音效音量",
+        "value": "100"
+      },
+      {
+        "label": "文字速度",
+        "value": "30"
+      }
+    ],
+    "text": "设置\nBGM音量\n65%\n音效音量\n100%\n文字速度\n很慢 · 100毫秒／字\n慢 · 60毫秒／字\n标准 · 30毫秒／字\n快 · 20毫秒／字\n很快 · 10毫秒／字\n恢复默认设置\n返回\n\n垂直切片\n\n次元战争\n开始新游戏\n读取\n设置\nv0.0.0\n\n尚无自动档 · 手动档与设置独立保留"
+  },
+  "errors": []
+}

@@ -69,7 +69,11 @@ DEV页默认在C005第二个新CALL阻断，截图见[c005-blocked-dev.png](veri
 
 正式子路径预览已从新游戏进入首关，原动态图层全部加载，保存反馈成功，无error日志。[首关](verification/prologue-v2/screenshots/production-p001.png)。[资源核对](verification/prologue-v2/local-resources.json)验证入口、JS／CSS、v4／四段标记，以及28张PNG的HTTP类型与逐文件SHA。
 
-发布在本地检查通过后按用户已有授权执行，沿用`yeklongdi/dimensional-war-game-source` main与Pages；实际提交、Actions、线上资源及只读存档核对在本节后续补记。不会在维护者正式站演示新游戏或覆盖既有进度。
+功能提交为`a0cf8d950e9018ce3d0b90d1e681b34827fe6bae`，已推送现有`yeklongdi/dimensional-war-game-source` main。[Actions 40056188643](https://github.com/yeklongdi/dimensional-war-game-source/actions/runs/40056188643)的类型检查、测试、正式子路径构建及Pages部署均成功，部署于2026-10-24 10:56（北京时间）完成；完整作业信息见[release.json](verification/prologue-v2/release.json)。初次推送曾等待默认凭据管理器，取消后使用本机已登录GitHub CLI的临时凭据helper正常推送，没有改全局设置、权限或强制推送。
+
+正式网址为[次元战争](https://yeklongdi.github.io/dimensional-war-game-source/)。[线上资源核对](verification/prologue-v2/online-resources.json)确认入口、JS／CSS的HTTP状态和类型、v4／四段标记，以及28张PNG的逐文件SHA均与本地登记一致。正式模块为`assets/index-BZAiJ9zB.js`，与本地正式base产物一致。
+
+正式站通过真实浏览器只读打开主菜单、读取与设置，未开始新游戏、未读取或覆盖档案、未调整设置。新版七槽均为空；读取面板明确列出原有`dw.save.v2`、`dw.save.v3`为旧剧情版本，只读保留并提示新版新开。设置可用，控制值为BGM65%、音效100%、文字30毫秒，页面error日志为0。该检查验证线上展示，不冒称逐字读取维护者localStorage或在正式站重跑全流程；字节保护和新版存储语义另由前述自动测试与独立本地浏览器验证。[正式主菜单](verification/prologue-v2/screenshots/online-main.png)、[旧档只读面板](verification/prologue-v2/screenshots/online-archives.png)、[浏览器记录](verification/prologue-v2/online-browser.json)。
 
 完整新增／修改／删除见[实际文件清单](prologue-v2-file-changes.md)，不包含忽略的dist、node_modules及工程外生成缓存。没有修改vault原件、历史验收、旧source或旧剧情JSON。
 

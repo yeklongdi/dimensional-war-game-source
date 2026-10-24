@@ -1,10 +1,10 @@
 # 四段序幕实际文件变更
 
-相对开工提交`3fcd64b659047c944241ac96432380e9525eebd3`；新增119、修改44、删除0。
+相对开工提交`3fcd64b659047c944241ac96432380e9525eebd3`；新增124、修改44、删除0。
 
 仅列当前工程相对基线的实际成果，不含被忽略的dist／node_modules与工程外原始生成缓存。旧source、旧剧情JSON、vault和已批准男高素材未改。
 
-## 新增（119）
+## 新增（124）
 
 - [art/hero-half-v1/README.md](../art/hero-half-v1/README.md)
 - [art/hero-half-v1/jobs.json](../art/hero-half-v1/jobs.json)
@@ -31,8 +31,11 @@
 - [docs/verification/prologue-v2/known-portrait-states-browser.json](../docs/verification/prologue-v2/known-portrait-states-browser.json)
 - [docs/verification/prologue-v2/layout-browser.json](../docs/verification/prologue-v2/layout-browser.json)
 - [docs/verification/prologue-v2/local-resources.json](../docs/verification/prologue-v2/local-resources.json)
+- [docs/verification/prologue-v2/online-browser.json](../docs/verification/prologue-v2/online-browser.json)
+- [docs/verification/prologue-v2/online-resources.json](../docs/verification/prologue-v2/online-resources.json)
 - [docs/verification/prologue-v2/portrait-browser.json](../docs/verification/prologue-v2/portrait-browser.json)
 - [docs/verification/prologue-v2/production-browser.json](../docs/verification/prologue-v2/production-browser.json)
+- [docs/verification/prologue-v2/release.json](../docs/verification/prologue-v2/release.json)
 - [docs/verification/prologue-v2/screenshots/a001-half-bed.png](../docs/verification/prologue-v2/screenshots/a001-half-bed.png)
 - [docs/verification/prologue-v2/screenshots/a008-half-fixed.png](../docs/verification/prologue-v2/screenshots/a008-half-fixed.png)
 - [docs/verification/prologue-v2/screenshots/a010-return-branch.png](../docs/verification/prologue-v2/screenshots/a010-return-branch.png)
@@ -59,6 +62,8 @@
 - [docs/verification/prologue-v2/screenshots/hero-half-dark.png](../docs/verification/prologue-v2/screenshots/hero-half-dark.png)
 - [docs/verification/prologue-v2/screenshots/hero-half-light.png](../docs/verification/prologue-v2/screenshots/hero-half-light.png)
 - [docs/verification/prologue-v2/screenshots/menu-900.png](../docs/verification/prologue-v2/screenshots/menu-900.png)
+- [docs/verification/prologue-v2/screenshots/online-archives.png](../docs/verification/prologue-v2/screenshots/online-archives.png)
+- [docs/verification/prologue-v2/screenshots/online-main.png](../docs/verification/prologue-v2/screenshots/online-main.png)
 - [docs/verification/prologue-v2/screenshots/p003-seated.png](../docs/verification/prologue-v2/screenshots/p003-seated.png)
 - [docs/verification/prologue-v2/screenshots/production-p001.png](../docs/verification/prologue-v2/screenshots/production-p001.png)
 - [docs/verification/prologue-v2/screenshots/six-slots.png](../docs/verification/prologue-v2/screenshots/six-slots.png)
