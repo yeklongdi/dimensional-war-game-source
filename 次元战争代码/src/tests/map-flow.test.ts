@@ -19,9 +19,10 @@ describe('九关配置、显现与反向回访', () => {
   it('新档仅奶奶家；按前缀显现，回访复用五节点及四条线', () => {
     expect(visibleLevels([]).map(level => level.id)).toEqual(['prologue_01']);
     const counts = levelIds.map((_, index) => new Set(visibleLevels(levelIds.slice(0, index)).map(level => level.locationId)).size);
-    expect(counts).toEqual([1, 2, 2, 3, 4, 5, 5, 5, 5]);
+    expect(counts).toEqual([1, 2, 2, 2, 3, 4, 4, 4, 5]);
     const edges = progressEdges(levelIds);
-    expect(edges).toHaveLength(5);
+    expect(edges).toHaveLength(4);
+    expect(edges.every(edge => edge.from !== edge.to)).toBe(true);
     expect(edges.find(edge => [edge.from, edge.to].includes('old_warehouse'))).toMatchObject({ from: 'old_warehouse', to: 'grandma_home' });
     expect(edges.find(edge => [edge.from, edge.to].includes('construction_site'))).toMatchObject({ from: 'construction_site', to: 'high_school', latest: false });
     expect(edges.find(edge => edge.latest)).toMatchObject({ from: 'grandma_home', to: 'school_road' });
@@ -35,7 +36,7 @@ describe('九关配置、显现与反向回访', () => {
   });
 });
 describe('真实规则整条主线与关卡边界', () => {
-  it('八次返回地图后在C003真实阻断，新增正文与战后SET完整', () => {
+  it('序幕一连续播完后逐个返图六次，在C003真实阻断，新增正文与战后SET完整', () => {
     let state = freshApp(); const seen = new Set<string>(), scenes: string[] = [], texts: { scene: string; node: string; text: string }[] = [], completed: string[] = [];
     for (let step = 0; step < 2400; step++) {
       const wait = state.waiting;
@@ -54,7 +55,7 @@ describe('真实规则整条主线与关卡边界', () => {
       if (wait?.kind === 'text' && wait.revealed < Array.from(wait.text).length) expect(next.progress!.completedLevelIds).toEqual(state.progress!.completedLevelIds);
       state = next;
     }
-    expect(completed).toEqual(levelIds.slice(0, 8));
+    expect(completed).toEqual(['prologue_03', 'act1_01', 'act1_02', 'act1_03', 'act1_04', 'prologue3_01']);
     const mainScenes = [...new Set(scenes)].filter(id => !id.includes('_return_'));
     expect(mainScenes).toEqual(levels.flatMap(level => level.sceneIds).slice(0, 38));
     expect(texts.some(text => text.scene === 'a015_retrieve')).toBe(true);
@@ -71,23 +72,28 @@ describe('真实规则整条主线与关卡边界', () => {
     for (const node of sets) if (node.kind === 'set') expect(state.flags[node.flag]).toBe(true);
     expect(state.flags.flag_battle_prologue_tutorial_won).toBe(true); expect(state.flags.flag_battle_black_humanoid_won).toBe(true);
   });
-  it('最后一句先补全，再执行随后SET并停在下一关首节点之前', () => {
+  it('最后一句先补全，再结算第一关并直接开始P005，旧token不重复结算', () => {
     const library = structuredClone(storyLibrary);
     library.prologue!.scenes.find(scene => scene.id === 'p004')!.nodes = [
       { kind: 'stage', text: '边界前正文' }, { kind: 'set', flag: 'flag_prologue_p005_01', note: '单测：边界前自动记录', meta: true }, { kind: 'jump', target: 'p005' },
     ];
     library.prologue!.scenes.find(scene => scene.id === 'p005')!.nodes = [
-      { kind: 'set', flag: 'flag_prologue_p006_01', note: '不应提前执行' }, { kind: 'sfx', name: '不应播放' }, { kind: 'stage', text: '不应提前显示' },
+      { kind: 'set', flag: 'flag_prologue_p006_01', note: '下一场自己的开场SET' }, { kind: 'sfx', name: '下一场音效' }, { kind: 'stage', text: '下一场第一句' },
     ];
     const menu = startApp(0, { kind: 'valid', data: sampleV2('prologue', 'p004') }).state;
     const begun = reduceApp(menu, { type: 'resume', token: navigationToken(menu) }, library, 100).state;
     const reveal = reduceApp(begun, { type: 'play', run: begun.run, action: { type: 'advance', token: begun.waiting!.token } }, library, 101);
     expect(reveal.state.screen).toBe('story'); expect(reveal.state.progress!.completedLevelIds).toHaveLength(0);
-    const finish = reduceApp(reveal.state, { type: 'play', run: reveal.state.run, action: { type: 'advance', token: reveal.state.waiting!.token } }, library, 102);
-    expect(finish.state).toMatchObject({ screen: 'map', sceneId: 'p004', flags: { flag_prologue_p005_01: true } });
-    expect(finish.state.flags.flag_prologue_p006_01).toBeUndefined(); expect(finish.effects.some(effect => effect.kind === 'sfx')).toBe(false);
+    expect(reveal.state.flags.flag_prologue_p005_01).toBeUndefined(); expect(reveal.state.flags.flag_prologue_p006_01).toBeUndefined();
+    expect(reveal.effects.some(effect => effect.kind === 'sfx')).toBe(false);
+    const oldAction = { type: 'play' as const, run: begun.run, action: { type: 'advance' as const, token: begun.waiting!.token } };
+    const finish = reduceApp(reveal.state, oldAction, library, 102);
+    expect(finish.state).toMatchObject({ screen: 'story', sceneId: 'p005', flags: { flag_prologue_p005_01: true } });
+    expect(finish.state.flags.flag_prologue_p006_01).toBe(true);
     expect(finish.state.progress!.completedLevelIds).toEqual(['prologue_01']);
-    expect(appAction(finish.state, { type: 'play', run: begun.run, action: { type: 'advance', token: begun.waiting!.token } })).toBe(finish.state);
+    expect(finish.state.waiting).toMatchObject({ kind: 'text', text: '下一场第一句' });
+    expect(finish.effects.some(effect => effect.kind === 'sfx')).toBe(true);
+    expect(appAction(finish.state, oldAction)).toBe(finish.state);
   });
   it('未配置跨关跳转拒绝并诊断，不能算通关', () => {
     const library = structuredClone(storyLibrary);

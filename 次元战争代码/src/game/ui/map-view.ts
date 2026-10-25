@@ -1,4 +1,4 @@
-import { currentLevel, levels, progressEdges, visibleLevels } from '../../content/levels.js';
+import { currentLevel, levelMapTitle, levels, progressEdges, visibleLevels } from '../../content/levels.js';
 import { locationById, mapLocations } from '../../content/map-locations.js';
 import { coverScale, mapSize, projectLocation } from '../map-camera.js';
 import type { LocationId } from '../../content/map-locations.js';
@@ -125,15 +125,17 @@ export class MapView {
     Object.assign(this.stage.dataset, { screen: 'map', completedLevels: p.completedLevelIds.join(','), currentLevel: current?.id ?? '',
       selectedLocation: map.selected, popupOpen: String(map.popupOpen), camera: JSON.stringify(camera), viewport: JSON.stringify(map.viewport),
       visibleNodes: String(locations.size), sliceComplete: String(!current) });
-    this.subtitle.textContent = current ? `主线进度 ${p.completedLevelIds.length} / ${levels.length} · ${current.name}` : `垂直切片已完成 · ${levels.length} / ${levels.length}`;
+    this.subtitle.textContent = current ? `主线进度 ${p.completedLevelIds.length} / ${levels.length} · ${levelMapTitle(current)}` : `垂直切片已完成 · ${levels.length} / ${levels.length}`;
     const nodesKey = `${p.completedLevelIds.join(',')}:${state.run}`;
     if (this.nodesKey !== nodesKey) {
       this.nodesKey = nodesKey; this.pins.replaceChildren(); this.drawLines(state);
       for (const location of mapLocations) if (locations.has(location.id)) {
         const pin = element('button', 'map-pin'); pin.type = 'button'; pin.dataset.testid = `location-${location.id}`; pin.dataset.locationId = location.id;
         pin.style.left = `${location.position.x * mapSize.width}px`; pin.style.top = `${location.position.y * mapSize.height}px`;
-        pin.setAttribute('aria-label', `查看${location.name}的关卡`); pin.setAttribute('aria-controls', this.popup.root.id); pin.setAttribute('aria-haspopup', 'dialog');
+        const chapter = current?.locationId === location.id ? current.mapTitle : undefined;
+        pin.setAttribute('aria-label', `查看${location.name}的关卡${chapter ? `，当前：${chapter}` : ''}`); pin.setAttribute('aria-controls', this.popup.root.id); pin.setAttribute('aria-haspopup', 'dialog');
         pin.append(element('span', 'pin-dot', location.name[0]), element('span', 'pin-label', location.name));
+        if (chapter) pin.append(element('span', 'pin-chapter', chapter));
         pin.addEventListener('focus', () => {
           const rect = pin.getBoundingClientRect(), viewport = this.viewport.getBoundingClientRect();
           if (pin.matches(':focus-visible') && (rect.left < viewport.left || rect.right > viewport.right || rect.top < viewport.top || rect.bottom > viewport.bottom)) {

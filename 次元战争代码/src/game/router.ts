@@ -8,7 +8,7 @@ import type { SaveOutcome, SaveRequest } from './save-storage.js';
 import { mergeV2, normalizedCheckpoint } from './save-v2.js';
 import type { Checkpoint, SaveReadV2, SaveV2 } from './save-v2.js';
 import { resumeScene } from './story/restore.js';
-import { currentLevel, levelById, levelIds, levels } from '../content/levels.js';
+import { currentLevel, levelById, levelContinuations, levelIds, levels } from '../content/levels.js';
 import { locationById } from '../content/map-locations.js';
 import { focusCamera, mapViewport } from './map-camera.js';
 import { reduceMapNavigation } from './map-navigation.js';
@@ -89,7 +89,7 @@ function begin(previous: GameState, library: StoryLibrary, levelId: string, scen
   const saved = save(transition.state, now);
   return { ...saved, effects: transition.effects };
 }
-function complete(transition: AppTransition, now: number): AppTransition {
+function complete(transition: AppTransition, library: StoryLibrary, now: number): AppTransition {
   const state = transition.state, p = state.progress!, id = transition.completedLevelId!;
   const index = levelIds.indexOf(id), accepted = index === p.completedLevelIds.length;
   if (index > p.completedLevelIds.length) return { state, effects: transition.effects, rejectedReason: '不能越过当前关卡结算' };
@@ -97,7 +97,14 @@ function complete(transition: AppTransition, now: number): AppTransition {
   const flags = { ...state.flags };
   if (id === 'prologue_03') flags[completionFlags.prologue] = true;
   if (id === 'act1_04') flags[completionFlags.act1] = true;
-  const next = destination({ ...state, flags, progress: { ...p, completedLevelIds } }, 'map', accepted && completedLevelIds.length < levels.length);
+  const completed = { ...state, flags, progress: { ...p, completedLevelIds } };
+  const successor = currentLevel(completedLevelIds);
+  if (accepted && successor && levelContinuations[id] === successor.id) {
+    const continued = begin(completed, library, successor.id, successor.sceneIds[0]!, now);
+    return { ...continued, effects: [...transition.effects, ...continued.effects] };
+  }
+  const next = destination(completed, 'map', accepted && completedLevelIds.length < levels.length);
+  if (accepted && id === 'prologue_03') next.map = { ...next.map!, popupOpen: true };
   const saved = save(next, now, { kind: 'map' });
   return { ...saved, effects: [...transition.effects, { kind: 'bgm', id: '' }] };
 }
@@ -130,11 +137,12 @@ export function reduceApp(previous: GameState, action: AppAction, library: Story
   }
   if (action.type === 'play') {
     if (action.run !== previous.run || !previous.activeLevelId || (previous.screen !== 'story' && previous.screen !== 'battle') || p.confirming) return same();
+    if (previous.activeLevelId !== currentLevel(p.completedLevelIds)?.id) return same();
     if (action.action.type === 'enter-act1' || (action.action.type === 'restart' && previous.screen === 'story')) return same();
     const transition = reduceCampaign(previous, action.action, library);
     if (transition.state === previous) return transition;
     const state = transition.state; state.progress = { ...p };
-    if (transition.completedLevelId) return complete(transition, now);
+    if (transition.completedLevelId) return complete(transition, library, now);
     const moved = state.actId !== previous.actId || state.sceneId !== previous.sceneId;
     const resolved = state.screen === 'battle' && state.battle?.result && !previous.battle?.result;
     if (!(moved || resolved || ['choose', 'continue-story', 'skip-battle', 'skip-call'].includes(action.action.type))) return transition;

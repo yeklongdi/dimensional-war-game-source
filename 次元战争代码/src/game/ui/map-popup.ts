@@ -1,4 +1,4 @@
-import { currentLevel, levels, visibleLevels } from '../../content/levels.js';
+import { currentLevel, levelMapTitle, levels, visibleLevels } from '../../content/levels.js';
 import { locationById } from '../../content/map-locations.js';
 import { navigationToken } from '../router.js';
 import type { NavigationAction } from '../router.js';
@@ -43,11 +43,14 @@ export class MapPopup {
       for (const level of visibleLevels(p.completedLevelIds).filter(item => item.locationId === map.selected)) {
         const completed = p.completedLevelIds.includes(level.id), continuing = !completed && point?.kind === 'level' && point.levelId === level.id;
         const label = completed ? '已完成 · 不可重玩' : continuing ? '继续关卡' : '开始关卡';
+        const title = levelMapTitle(level), description = title === level.name ? '' : level.name;
         const card = button('', `enter-${level.id}`, () => this.dispatch({ type: 'enter-level', token: this.token, levelId: level.id }));
         card.classList.add('map-level-card'); card.classList.toggle('completed', completed); card.dataset.levelId = level.id;
-        card.setAttribute('aria-label', `${level.name}，${label}`);
+        card.setAttribute('aria-label', `${title}${description ? ` · ${description}` : ''}，${label}`);
         card.append(element('span', 'map-level-number', `第 ${levels.indexOf(level) + 1} 关 · ${chapterTitles[level.actId]}`),
-          element('strong', 'map-level-title', level.name), element('span', 'map-level-status', label));
+          element('strong', 'map-level-title', title));
+        if (description) card.append(element('span', 'map-level-description', description));
+        card.append(element('span', 'map-level-status', label));
         this.cards.set(level.id, card); this.content.append(card);
       }
     }

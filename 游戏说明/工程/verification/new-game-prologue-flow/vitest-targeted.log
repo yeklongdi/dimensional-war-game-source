@@ -1,0 +1,11 @@
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.0.5 [39m[90mE:/笔记/次元战争设定/次元战争代码[39m
+
+ [32m✓[39m src/tests/new-game-prologue-flow.test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 134[2mms[22m[39m
+ [32m✓[39m src/tests/new-game-prologue-map.test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 150[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[32m19 passed[39m[22m[90m (19)[39m
+[2m   Start at [22m 21:25:39
+[2m   Duration [22m 951ms[2m (transform 44%, import 31%, tests 22%, worker 2%)[22m
+

@@ -135,7 +135,8 @@ function systemAction(state: GameState, a: SystemAction, library: StoryLibrary, 
   if (a.intent === 'confirm') return s.confirmation ? request(state, s.confirmation, newId) : same;
   if (a.intent === 'new') {
     if (state.screen !== 'menu') return same;
-    const snapshot: SaveV2 = { version: 2, flags: {}, completedLevelIds: [], checkpoint: { kind: 'map' }, savedAt: now };
+    const snapshot: SaveV2 = { version: 2, flags: {}, completedLevelIds: [],
+      checkpoint: { kind: 'level', levelId: 'prologue_01', sceneId: 'p001' }, savedAt: now };
     const confirmation: Confirmation = { kind: 'new', slot: -1, expected: s.read.kind === 'valid' ? fingerprint(s.read.data.auto) : 'null', snapshot,
       replaceRaw: s.read.kind === 'invalid' ? s.read.raw : undefined };
     if (s.read.kind === 'empty' && !s.read.legacy?.length) return request(state, confirmation, newId);

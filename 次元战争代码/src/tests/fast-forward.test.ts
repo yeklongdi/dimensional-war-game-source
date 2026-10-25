@@ -42,7 +42,7 @@ describe('高速逐句的计时计划与停止', () => {
   });
 });
 describe('真实脚本的快进停点与执行顺序', () => {
-  it('跨场景按顺序处理演出和SET，meta隐藏；关末不进入下一关', async () => {
+  it('跨场景按顺序处理演出和SET，meta隐藏；关末转入下一内部关并在P005正常停等', async () => {
     const h = await skipHarness(); await forward(h); const scenes = new Set<string>(), text: string[] = [];
     for (let i = 0; i < 150 && h.state.fastForward; i++) {
       scenes.add(h.state.sceneId); if (h.state.waiting?.kind === 'text') text.push(h.state.waiting.text);
@@ -50,8 +50,9 @@ describe('真实脚本的快进停点与执行顺序', () => {
     }
     expect([...scenes]).toEqual(['p001', 'p002', 'p003', 'p004']);
     expect(text.join('')).not.toMatch(/【待确认】|【不可执行】|CHECK:/);
-    expect(h.state.screen).toBe('map'); expect(h.state.progress!.completedLevelIds).toEqual(['prologue_01']);
-    expect(h.state.fastForward).toBeUndefined(); expect(h.state.sceneId).toBe('p004');
+    expect(h.state.screen).toBe('story'); expect(h.state.progress!.completedLevelIds).toEqual(['prologue_01']);
+    expect(h.state.sceneId).toBe('p005'); expect(h.state.activeLevelId).toBe('prologue_02');
+    expect(h.state.fastForward).toBeUndefined(); expect(h.state.waiting).toMatchObject({ kind: 'text', revealed: 0 });
   });
   it('A007选择不自动决定，只有主播启用；选完后不自动续快进', async () => {
     const h = await skipHarness('a006'); await forward(h); await ticks(h, s => s.waiting?.kind === 'choice');

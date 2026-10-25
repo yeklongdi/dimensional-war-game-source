@@ -1,0 +1,14 @@
+== 02 system-runtime: 空档新游戏 ==
+[2m      Tests [22m [1m[32m1 passed[39m[22m[2m | [22m[33m17 skipped[39m[90m (18)[39m
+== 03 system-runtime: 已有进度 ==
+[2m      Tests [22m [1m[32m1 passed[39m[22m[2m | [22m[33m17 skipped[39m[90m (18)[39m
+== 04 router: p009 ==
+[2m      Tests [22m [1m[32m1 passed[39m[22m[2m | [22m[33m20 skipped[39m[90m (21)[39m
+== 05 fast-forward ==
+[2m      Tests [22m [1m[32m1 passed[39m[22m[2m | [22m[33m9 skipped[39m[90m (10)[39m
+== 06 map-flow: 前缀 ==
+[2m      Tests [22m [1m[32m1 passed[39m[22m[2m | [22m[33m9 skipped[39m[90m (10)[39m
+== 07 map-flow: 六次返图 ==
+[2m      Tests [22m [1m[32m1 passed[39m[22m[2m | [22m[33m9 skipped[39m[90m (10)[39m
+== 08 map-flow: 边界 ==
+[2m      Tests [22m [1m[32m1 passed[39m[22m[2m | [22m[33m9 skipped[39m[90m (10)[39m

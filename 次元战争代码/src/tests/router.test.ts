@@ -27,7 +27,7 @@ describe('地图导航与累计通关', () => {
     const map = reachApp(state => state.screen === 'map' && state.progress!.completedLevelIds.length === 3, returned);
     expect(map.flags[completionFlags.prologue]).toBe(true);
     expect(map.progress!.checkpoint!.flags[completionFlags.prologue]).toBe(true);
-    expect(map.map!.selected).toBe('school_road');
+    expect(map.map).toMatchObject({ selected: 'grandma_home', popupOpen: true });
   });
   it('黑色人形胜利不提前完成第六关，序幕二结束开放第八关，已完成入口不可重玩', () => {
     const won = reachApp(state => state.battle?.id === 'battle_black_humanoid' && state.battle.result?.outcome === 'win');

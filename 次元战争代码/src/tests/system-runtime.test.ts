@@ -16,9 +16,12 @@ async function reachBattle(h: ReturnType<typeof menuHarness>) {
 }
 
 describe('真正新游戏与独立恢复', () => {
-  it('空档成功写入后才进地图，生成持久身份，只开放第一关', async () => {
-    const h = menuHarness(); await h.system('new'); expect(h.state.screen).toBe('map');
+  it('空档新游戏写入成功后直入序幕一P001，生成持久身份，初始检查点为关内', async () => {
+    const h = menuHarness(); await h.system('new'); expect(h.state.screen).toBe('story');
+    expect(h.state.activeLevelId).toBe('prologue_01'); expect(h.state.sceneId).toBe('p001');
     expect(h.state.progress!.completedLevelIds).toEqual([]); expect(h.state.flags).toEqual({}); expect(h.state.system!.activeRunId).toContain('new-run');
+    const auto = JSON.parse(h.m.values.get(saveKeyV3)!).auto.data;
+    expect(auto.checkpoint).toEqual({ kind: 'level', levelId: 'prologue_01', sceneId: 'p001' });
     expect(h.m.values.has(saveKeyV3)).toBe(true);
   });
   it('已有进度的新游戏取消不变；确认清空进度但保留六槽和设置', async () => {
@@ -27,7 +30,8 @@ describe('真正新游戏与独立恢复', () => {
     const before = JSON.parse(h.m.values.get(saveKeyV3)!), identity = h.state.system!.activeRunId;
     await h.system('new'); expect(h.state.system!.panel).toBe('confirm'); await h.system('cancel'); expect(h.m.values.get(saveKeyV3)).toBe(JSON.stringify(before));
     await h.system('new'); await h.system('confirm'); const after = JSON.parse(h.m.values.get(saveKeyV3)!);
-    expect(h.state.screen).toBe('map'); expect(h.state.flags).toEqual({}); expect(h.state.progress!.completedLevelIds).toEqual([]);
+    expect(h.state.screen).toBe('story'); expect(h.state.sceneId).toBe('p001'); expect(h.state.flags).toEqual({}); expect(h.state.progress!.completedLevelIds).toEqual([]);
+    expect(after.auto.data.checkpoint).toEqual({ kind: 'level', levelId: 'prologue_01', sceneId: 'p001' });
     expect(after.manual).toEqual(before.manual); expect(h.state.settings).toEqual({ version: 1, bgm: 17, sfx: 42, textMs: 60 }); expect(h.state.system!.activeRunId).not.toBe(identity);
   });
   it('激活写失败保留旧活动状态和原档，取消不丢当前等待', async () => {
