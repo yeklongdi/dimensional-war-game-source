@@ -1,0 +1,23 @@
+{
+  "base": "https://yeklongdi.github.io/dimensional-war-game-source/",
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "f700e878afa0f58dce1539350aeb9b80f981159f34f53823a1c117440b6e7e35",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DnlGFsrX.js",
+      "status": 200,
+      "sha256": "270106880035ad7d0565a8aad5a0fdaa0268a904fee24b2e8655ee44f5846e40",
+      "matches": true
+    },
+    {
+      "path": "assets/index-DOng4DgN.css",
+      "status": 200,
+      "sha256": "f7727f84d07431b0177ece5597311c263b7655ef8e96095586cf1d19c02742db",
+      "matches": true
+    }
+  ]
+}

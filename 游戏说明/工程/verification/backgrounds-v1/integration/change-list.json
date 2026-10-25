@@ -1,0 +1,885 @@
+{
+  "base": "aea1d9625b16dcfcfea11336b653961aa228923b",
+  "codeCommit": "3a3e97d752d65ccaf784914321a13cae2c594088",
+  "files": [
+    {
+      "status": "M",
+      "path": "README.md"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_dream_dining_fog_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_dream_dining_fog_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_dream_house_fracture_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_dream_house_fracture_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_dream_house_loop_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_dream_house_loop_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_dining_evening_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_dining_evening_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_bedroom_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_bedroom_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_bedroom_morning_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_bedroom_morning_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_bedroom_night_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_bedroom_night_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_dusk_candidate_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_dusk_candidate_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_entrance_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_entrance_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_entrance_night_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_entrance_night_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_kitchen_night_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_kitchen_night_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_living_room_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_living_room_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_living_room_night_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_living_room_night_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_old_district_access_night_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_old_district_access_night_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_old_district_battle_street_night_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_old_district_battle_street_night_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_old_district_escape_alley_night_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_old_district_escape_alley_night_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_candidate_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_candidate_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_old_residential_search_night_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_old_residential_search_night_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_residential_junction_night_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_residential_junction_night_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_cafeteria_day_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_cafeteria_day_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_classroom_day_candidate_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_classroom_day_candidate_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_classroom_morning_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_classroom_morning_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_construction_pit_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_construction_pit_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_construction_zone_day_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_construction_zone_day_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_construction_zone_dusk_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_construction_zone_dusk_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_gate_morning_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_gate_morning_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_gym_day_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_gym_day_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_hallway_day_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_hallway_day_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_infirmary_day_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_infirmary_day_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_library_day_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_library_day_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_underground_dark_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_underground_dark_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_sun_city_old_street_night_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_sun_city_old_street_night_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_sun_city_school_road_morning_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_sun_city_school_road_morning_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_warehouse_area_night_master_v001.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_warehouse_area_night_master_v001_16x9.png"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/preview.html"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/art/backgrounds/galgame-v1/preview.mjs"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_dream_dining_fog_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_dream_house_fracture_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_dream_house_loop_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_grandmother_dining_evening_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_grandmother_house_bedroom_morning_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_grandmother_house_bedroom_night_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_grandmother_house_bedroom_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_grandmother_house_dusk_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_grandmother_house_entrance_night_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_grandmother_house_entrance_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_grandmother_house_kitchen_night_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_grandmother_house_living_room_night_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_grandmother_house_living_room_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_old_district_access_night_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_old_district_battle_street_night_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_old_district_escape_alley_night_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_old_residential_search_night_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_residential_junction_night_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_school_cafeteria_day_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_school_classroom_day_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_school_classroom_morning_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_school_construction_pit_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_school_construction_zone_day_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_school_construction_zone_dusk_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_school_gate_morning_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_school_gym_day_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_school_hallway_day_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_school_infirmary_day_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_school_library_day_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_school_underground_dark_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_sun_city_old_street_night_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_sun_city_school_road_morning_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/public/assets/backgrounds/galgame-v1/bg_warehouse_area_night_v1.webp"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/src/game/story/backgrounds.ts"
+    },
+    {
+      "status": "M",
+      "path": "次元战争代码/src/game/story/config.ts"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/src/game/ui/background.ts"
+    },
+    {
+      "status": "M",
+      "path": "次元战争代码/src/game/ui/player-view.ts"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/src/game/visual/background-loading.ts"
+    },
+    {
+      "status": "M",
+      "path": "次元战争代码/src/styles/player.css"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/src/tests/background-assets.test.mjs"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/src/tests/backgrounds.test.ts"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/src/tests/fixtures/background-browser.ts"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/tests/backgrounds.html"
+    },
+    {
+      "status": "A",
+      "path": "次元战争代码/tests/fixtures/not-an-image.txt"
+    },
+    {
+      "status": "M",
+      "path": "游戏说明/README.md"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/交接提示词/场景背景批量制作与正式发布.md"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/交接提示词/场景背景绘制与接入.md"
+    },
+    {
+      "status": "M",
+      "path": "游戏说明/工程/01-任务书.md"
+    },
+    {
+      "status": "M",
+      "path": "游戏说明/工程/README.md"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/backgrounds-v1-verification.md"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/after.json"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/backgrounds-v1-overview.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/before.json"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/bg_grandmother_house_dusk_clean.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/bg_grandmother_house_dusk_one.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/bg_grandmother_house_dusk_three.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/bg_old_district_quiet_alley_night_clean.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/bg_old_district_quiet_alley_night_one.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/bg_old_district_quiet_alley_night_three.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/bg_school_classroom_day_clean.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/bg_school_classroom_day_one.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/bg_school_classroom_day_three.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/browser-preview.json"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/engineering-checks.txt"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/finish-samples.py"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/generation-manifest.json"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/all-backgrounds-contact.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/assets.json"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/before.json"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/browser-dev.json"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/browser-game.json"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/commit-files.json"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-a001.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-a004.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-a007.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-a008-1.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-a008-2.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-a008-3.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-a009.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-a012.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-a015_recovery.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-a015_retrieve.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-b003.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-b004.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-b005.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-b006-1.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-b006-2.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-b006-3.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-b007.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-b008.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-c001-1.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-c001-2.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-c001-3.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-c008-1.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-c008-2.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-c009.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-c010.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-c011.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-c012.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-c013-1.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-c013-2.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-c013-3.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-p001.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-p002.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-p003.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-p004-1.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-p004-2.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-p008.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-p009-1.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/dev-p009-2.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/engineering-checks.txt"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/fault-404-gradient.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/fault-decode-gradient.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/fault-slow-gradient.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/final-display-classroom.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/game-new-p001.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/game-p001-bg_grandmother_house_dusk.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/game-p002-bg_grandmother_house_entrance.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/game-p003-bg_grandmother_house_living_room.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/game-p004-bg_grandmother_house_bedroom.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/game-p004-bg_grandmother_house_kitchen_night.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/game-p006-after-skip.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/game-p007-bg_warehouse_area_night.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/generated.json"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/prepare-runtime.py"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/production-base-p001.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/protection.json"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/resources-local.json"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/verify-resources.py"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/viewport-1920x900-a007.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/viewport-1920x900-c009.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/viewport-900x620-a007.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/viewport-900x620-c009.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/write-records.py"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/prepare-candidates.py"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/素材制作/场景背景制作规范.md"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/素材制作/场景背景清单.md"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/素材制作/场景背景生成记录.md"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/browser-online.json"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/deployment.json"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/online-classroom.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/online-grandmother-house.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/online-quiet-alley.png"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/production-app.json"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/resources-online.json"
+    },
+    {
+      "status": "A",
+      "path": "游戏说明/工程/verification/backgrounds-v1/integration/change-list.json"
+    }
+  ],
+  "note": "相对开工Git HEAD的完整发布清单，包括此前未提交的批准样张及相关说明；本清单自身亦列入。",
+  "counts": {
+    "A": 211,
+    "M": 7,
+    "D": 0,
+    "R": 0
+  }
+}

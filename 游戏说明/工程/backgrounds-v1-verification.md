@@ -67,7 +67,15 @@ source、剧情JSON、导出器、自动问题清单、原批准立绘、三张�
 
 正式网址：https://yeklongdi.github.io/dimensional-war-game-source/
 
-发布状态在获得对应提交的Actions build／deploy及正式资源检查后补记。当前本记录不把本地通过或推送排队称为已上线。
+代码及美术发布提交：`3a3e97d752d65ccaf784914321a13cae2c594088`，已正常推送现有main。[Actions 40180794337](https://github.com/yeklongdi/dimensional-war-game-source/actions/runs/40180794337)的build／deploy均completed、success，见[原始回执](verification/backgrounds-v1/integration/deployment.json)。未使用Sites、未改网址或仓库可见性。
+
+正式HTTPS无需登录即可访问。线上34张WebP均HTTP 200、真实解码、尺寸及SHA与本地一致，见[线上资源核验](verification/backgrounds-v1/integration/resources-online.json)。入口HTML、JS、CSS三文件同样与本地正式base产物SHA一致，见[产物核验](verification/backgrounds-v1/integration/production-app.json)。
+
+正式浏览器已直接打开住宅、教室、夜巷三个真实HTTPS图片地址，均正常显示，控制台无error。[线上浏览器证据](verification/backgrounds-v1/integration/browser-online.json)区分该检查和本地真实PlayerView显示。正式主菜单发现维护者已有自动档，未点击读取或开始新游戏，未写入／覆盖其进度。因此不声称本轮在线进入其剧情或完成九关；这也遵守用户后续“只验证背景显示”的范围。
+
+![正式站教室图片实际显示（直接图片地址，不冒称游戏内截图）](verification/backgrounds-v1/integration/online-classroom.png)
+
+本条及线上证据作为发布后说明补记，代码发布提交仍为上述哈希；后续补记提交不会改变游戏背景或规则。逐文件发布清单见[文件变更](verification/backgrounds-v1/integration/change-list.json)。
 
 ## 剩余镜头限制
 

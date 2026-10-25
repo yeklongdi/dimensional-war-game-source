@@ -1,0 +1,42 @@
+{
+  "officialSite": "https://yeklongdi.github.io/dimensional-war-game-source/",
+  "existingOfficialSaveDetected": true,
+  "officialSaveLoadedOrReplaced": false,
+  "scope": "按用户后续要求，仅验证背景显示；正式游戏内演出不另行进入。",
+  "images": [
+    {
+      "image": [
+        {
+          "height": 936,
+          "loaded": true,
+          "src": "https://yeklongdi.github.io/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_school_classroom_day_v1.webp",
+          "width": 1664
+        }
+      ],
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_school_classroom_day_v1.webp"
+    },
+    {
+      "image": [
+        {
+          "height": 936,
+          "loaded": true,
+          "src": "https://yeklongdi.github.io/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_grandmother_house_dusk_v1.webp",
+          "width": 1664
+        }
+      ],
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_grandmother_house_dusk_v1.webp"
+    },
+    {
+      "image": [
+        {
+          "height": 936,
+          "loaded": true,
+          "src": "https://yeklongdi.github.io/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_v1.webp",
+          "width": 1664
+        }
+      ],
+      "url": "https://yeklongdi.github.io/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_v1.webp"
+    }
+  ],
+  "errors": []
+}
