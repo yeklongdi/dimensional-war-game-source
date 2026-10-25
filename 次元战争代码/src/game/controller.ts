@@ -26,6 +26,9 @@ import { chooseAi } from './battle/ai.js';
 import { battleToken } from './battle/state-helpers.js';
 import type { Command, Envelope } from './battle/types.js';
 import { readSeed } from './battle/controller.js';
+import { decodeImage } from './visual/loading.js';
+import { ImageCache } from './visual/image-cache.js';
+import { StoryImageWarmup } from './visual/story-images.js';
 
 export type PlayerPorts = { vault?: VaultStore; settingsStore?: SettingsStore; now?: () => number; randomSeed?: () => number; randomId?: () => string };
 /** 单个状态、活动视图与音频实例；时钟、存储和随机源均是 IO 边界。 */
@@ -44,9 +47,11 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
   const audio = new AudioController((id, message) => play({ type: 'asset-failed', id, message }, audioScope));
   root.append(audio.element);
   const systemView = new SystemView(root, dispatch);
+  const images = new ImageCache(decodeImage);
+  const warmup = new StoryImageWarmup(images.load);
 
   function syncClock() {
-    const plan = textClockPlan(state), nextToken = plan?.key ?? '';
+    const plan = view instanceof PlayerView && view.isLoading ? undefined : textClockPlan(state), nextToken = plan?.key ?? '';
     if (timerToken === nextToken) return;
     if (timer !== undefined) window.clearInterval(timer);
     timerToken = nextToken; timer = undefined;
@@ -97,15 +102,16 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
       const scope = state.run;
       if (state.screen === 'story') view = new PlayerView(root, action => play(action, scope), () => audio.unlock(), () => {
         if (state.run === scope) navigate({ type: 'open-map', token: navigationToken(state) });
-      }, undefined, intent => {
+      }, { image: images.load }, intent => {
         if (state.run === scope) dispatch({ type: 'system', intent, token: `${state.run}:system:${state.system!.uiRevision}` });
-      });
+      }, { decode: images.load, peek: images.peek }, () => { if (!disposed && state.run === scope) syncClock(); });
       else if (state.screen === 'battle') view = new BattleView(root, action => play(action, scope));
       else if (state.screen === 'map') view = new MapView(root, navigate);
       else view = new MenuView(root, dispatch);
       chrome = new AppChrome(view.stage, dispatch);
     }
     view!.render(state); chrome!.render(state); systemView.render(state); syncClock(); syncBattleClock();
+    warmup.update(state, storyLibrary);
     for (const effect of transition.effects) {
       if (effect.kind === 'bgm') audio.setBgm(effect.id);
       else if (effect.kind === 'sfx') audio.playSfx(effect.id);
@@ -153,6 +159,7 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
     if (event.target instanceof Element && event.target.closest('.app-chrome, .dev-overlay, button')) return;
     if (event.code === 'Backquote' || event.key === '~') { event.preventDefault(); play({ type: 'toggle-debug' }); return; }
     if (event.code !== 'Space' && event.key !== 'Enter') return;
+    if (view instanceof PlayerView && view.isLoading) { event.preventDefault(); return; }
     if (state.waiting?.kind === 'choice') { event.preventDefault(); return; }
     audio.unlock();
     if (state.waiting?.kind === 'text') { event.preventDefault(); play({ type: 'advance', token: state.waiting.token }); }
@@ -172,6 +179,6 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
     if (battleTimer !== undefined) window.clearTimeout(battleTimer);
     document.removeEventListener('keydown', keydown, true); window.removeEventListener('storage', storageChanged);
     window.removeEventListener('blur', stopFast); document.removeEventListener('visibilitychange', visibilityChanged);
-    view?.dispose(); systemView.dispose(); audio.dispose();
+    view?.dispose(); systemView.dispose(); audio.dispose(); images.dispose();
   };
 }

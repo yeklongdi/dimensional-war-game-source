@@ -77,6 +77,7 @@ audio { display: none; }
   object-position: center bottom;
 }
 .portrait { filter: brightness(.8); transition: filter .18s ease; }
+.portrait[data-visual="loading"] { visibility: hidden; }
 .portrait[data-rear="true"] { opacity: .7; z-index: 0; }
 .portrait[data-speaking="true"] { z-index: 4; filter: brightness(1); }
 .portrait[data-phase="out"] { opacity: 0; transition: opacity .15s linear, filter .18s ease; }
@@ -106,6 +107,8 @@ audio { display: none; }
 .portrait-name { margin-top: 24px; font-size: 18px; }
 .placeholder-label { font-size: 12px; letter-spacing: .2em; color: #e8e6e36b; margin-top: 6px; }
 .player-content { z-index: 5; pointer-events: none; }
+.scene-loading { position: absolute; inset: 0; z-index: 6; display: grid; place-content: center; color: #eadfbd; font-size: 18px; letter-spacing: .12em; background: #0b0e1438; cursor: progress; }
+.stage[data-scene-loading="true"] .player-content { visibility: hidden; }
 .text-box {
   position: absolute;
   bottom: 0;

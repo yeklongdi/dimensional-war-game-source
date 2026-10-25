@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-26",
+  "scope": "仅图片加载与快速场景切换；受控开发页不冒充新档通关",
+  "origins": [
+    "http://127.0.0.1:44026/",
+    "http://127.0.0.1:44027/dimensional-war-game-source/"
+  ],
+  "continuousFrame": {
+    "background": "ready",
+    "hero": "static",
+    "image": "/assets/backgrounds/galgame-v1/bg_sun_city_old_street_night_v1.webp",
+    "level": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p005\"},\"savedAt\":1792945317489}",
+    "loading": "false",
+    "scene": "p005"
+  },
+  "prefixFrame": {
+    "background": "ready",
+    "backgroundUrl": "/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_grandmother_house_dusk_v1.webp",
+    "hero": "layered",
+    "layerUrls": [
+      "/dimensional-war-game-source/assets/portraits/hero-layered-v3/body-luggage.png",
+      "/dimensional-war-game-source/assets/portraits/hero-layered-v3/luggage-grip.png",
+      "/dimensional-war-game-source/assets/portraits/hero-layered-v3/head.png",
+      "/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous.png",
+      "/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous-half.png",
+      "/dimensional-war-game-source/assets/portraits/hero-layered-v3/eyes-nervous-closed.png",
+      "/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-nervous.png",
+      "/dimensional-war-game-source/assets/portraits/hero-layered-v3/mouth-nervous-speech.png",
+      "/dimensional-war-game-source/assets/portraits/hero-layered-v3/hair-front.png"
+    ],
+    "loading": "false",
+    "scene": "p001"
+  },
+  "layerFallback": {
+    "before": {
+      "completed": "56",
+      "loading": "false",
+      "pending": "0",
+      "visual": "static"
+    },
+    "after": {
+      "completed": "56",
+      "loading": "false",
+      "pending": "0",
+      "visual": "static"
+    }
+  },
+  "errors": {
+    "normal": [],
+    "projectBase": [],
+    "portraitControlled": [],
+    "backgroundFaultInjection": []
+  },
+  "note": "backgroundFaultInjection中的不存在图片404是主动故障；批量跨场景工具调用曾超时，未保留其逐帧数组，仅记录重新观察到的P005最终状态。",
+  "finalProjectBaseRestore": {
+    "background": "ready",
+    "expression": "紧张、期待",
+    "hero": "layered",
+    "loading": "false",
+    "pose": "携带行李、站立",
+    "scene": "p002",
+    "src": "/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_grandmother_house_entrance_v1.webp"
+  }
+}

@@ -18,6 +18,11 @@ export class PlayerView {
   private readonly hud = element('div', 'hud');
   private readonly content = element('div', 'player-content');
   private readonly debug = element('aside', 'dev-overlay');
+  private readonly loading = element('div', 'scene-loading', '正在准备场景…');
+  private disposed = false;
+  private rendering = false;
+  private readonly visualChanged: () => void;
+  get isLoading(): boolean { return this.background.loading || this.portraits.loading; }
   private text: HTMLElement | undefined;
   private hint: HTMLElement | undefined;
   private waitToken = '';
@@ -31,13 +36,15 @@ export class PlayerView {
   private readonly systemNavigation?: (intent: 'load' | 'go-menu') => void;
 
   constructor(root: HTMLElement, dispatch: (action: Action) => void, gesture: () => void, endNavigation?: () => void, portraitPorts?: PortraitPorts,
-    systemNavigation?: (intent: 'load' | 'go-menu') => void, backgroundPorts?: BackgroundPorts) {
+    systemNavigation?: (intent: 'load' | 'go-menu') => void, backgroundPorts?: BackgroundPorts, visualChanged: () => void = () => {}) {
     this.dispatch = dispatch;
     this.gesture = gesture;
     this.endNavigation = endNavigation;
     this.systemNavigation = systemNavigation;
-    this.portraits = new PortraitsView(this.actors, dispatch, portraitPorts);
-    this.background = new BackgroundView(this.backdrop, this.title, dispatch, backgroundPorts);
+    this.visualChanged = visualChanged;
+    const changed = () => { if (!this.disposed && !this.rendering) { this.syncLoading(); this.visualChanged(); } };
+    this.portraits = new PortraitsView(this.actors, dispatch, portraitPorts, changed);
+    this.background = new BackgroundView(this.backdrop, this.title, dispatch, backgroundPorts, changed);
     this.stage.id = 'stage';
     this.stage.tabIndex = 0;
     this.stage.setAttribute('aria-label', '剧情播放器');
@@ -45,12 +52,13 @@ export class PlayerView {
     this.content.dataset.testid = 'player-content';
     this.debug.dataset.testid = 'dev-overlay';
     this.debug.hidden = true;
-    this.stage.append(this.backdrop, this.title, this.actors, this.props, this.hud, this.content, this.debug);
+    this.loading.hidden = true; this.loading.setAttribute('role', 'status');
+    this.stage.append(this.backdrop, this.title, this.actors, this.props, this.hud, this.content, this.loading, this.debug);
     root.append(this.stage);
     this.debug.addEventListener('click', event => event.stopPropagation());
     this.stage.addEventListener('click', event => {
       this.gesture();
-      if (event.detail > 1 || this.stage.dataset.waitKind !== 'text') return;
+      if (this.isLoading || event.detail > 1 || this.stage.dataset.waitKind !== 'text') return;
       this.dispatch({ type: 'advance', token: this.stage.dataset.waitToken ?? '' });
     });
     const resize = () => {
@@ -62,9 +70,17 @@ export class PlayerView {
     resize();
   }
 
-  dispose() { this.background.dispose(); this.portraits.dispose(); this.resizeObserver.disconnect(); this.stage.remove(); }
+  dispose() { this.disposed = true; this.background.dispose(); this.portraits.dispose(); this.resizeObserver.disconnect(); this.stage.remove(); }
+
+  private syncLoading(): void {
+    const loading = this.isLoading;
+    this.loading.hidden = !loading;
+    this.stage.dataset.sceneLoading = String(loading);
+    this.stage.setAttribute('aria-busy', String(loading));
+  }
 
   render(state: GameState) {
+    this.rendering = true;
     const waiting = state.waiting;
     const origin = waiting?.origin;
     Object.assign(this.stage.dataset, {
@@ -94,6 +110,7 @@ export class PlayerView {
       renderDebug(this.debug, state);
       this.debugKey = debugKey;
     }
+    this.rendering = false; this.syncLoading();
   }
 
   private createWait(state: GameState) {

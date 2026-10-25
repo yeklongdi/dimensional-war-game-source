@@ -34,8 +34,12 @@ class ActorPortrait {
   private presented = false;
   private center = 640;
   private metric: PortraitMetric = placeholderMetric;
-  constructor(dispatch: (action: Action) => void, ports: PortraitPorts) {
+  private pending = false;
+  private readonly changed: () => void;
+  get loading(): boolean { return this.presented && this.pending; }
+  constructor(dispatch: (action: Action) => void, ports: PortraitPorts, changed: () => void) {
     this.dispatch = dispatch; this.ports = ports;
+    this.changed = changed;
     this.image = ports.image ?? decodeImage; this.clock = ports.clock ?? visualClock;
   }
   update(state: GameState, actor: ActorState): void {
@@ -48,13 +52,17 @@ class ActorPortrait {
       speaking: String(state.waiting?.kind === 'text' && state.waiting.speaker === actor.actor), rear: String(rear) });
     this.root.setAttribute('aria-label', name);
     this.root.style.setProperty('--actor-color', actorColor(actor.actor));
-    if (!this.root.hasChildNodes()) this.placeholder(name);
     const plan = resolveVisual(actor, state.failedAssets, this.ports.candidates);
     if (plan.diagnostic) this.warn(`mapping:${actor.pose}:${actor.expression}`, plan.diagnostic);
     this.plan = plan;
+    if (!this.root.hasChildNodes() || this.root.dataset.visual === 'placeholder') {
+      this.root.dataset.visual = plan.kind === 'placeholder' ? 'placeholder' : 'loading';
+    }
     const requestTime = this.clock.now();
     const actionStart = this.presented && !this.paused() && !state.fastForward && previousPose !== undefined && previousPose !== actor.pose ? requestTime : undefined;
-    this.lease.request(plan.key, async () => {
+    const requestKey = plan.kind === 'layered' && this.failed.has(plan.key) ? `${plan.key}:fallback` : plan.key;
+    this.lease.request(requestKey, async () => {
+      this.pending = plan.kind !== 'placeholder';
       if (plan.kind === 'layered' && !this.failed.has(plan.key)) return { kind: 'layered' as const, images: await loadLayers(plan.recipe, this.image) };
       const fallback = plan.kind === 'static' ? plan.url : plan.kind === 'layered' ? plan.fallback : undefined;
       return fallback ? { kind: 'static' as const, image: await this.image(fallback) } : { kind: 'placeholder' as const };
@@ -76,7 +84,7 @@ class ActorPortrait {
         this.root.dataset.frame = plan.kind === 'static' ? plan.frame ?? 'legacy' : plan.kind === 'layered' ? plan.fallbackFrame ?? 'legacy' : 'legacy';
         this.setMetric(portraitMetric(plan, 'static', loaded.image.src));
       } else { this.figure?.dispose(); this.figure = undefined; this.placeholder(name); }
-      this.syncSpeech();
+      this.pending = false; this.syncSpeech(); this.changed();
     }, error => {
       if (plan.kind === 'layered' && !this.failed.has(plan.key)) {
         this.failed.add(plan.key);
@@ -95,10 +103,11 @@ class ActorPortrait {
         this.root.classList.remove('portrait-placeholder'); this.root.replaceChildren(copy); this.root.dataset.visual = 'static'; this.root.dataset.frame = plan.fallbackFrame ?? 'legacy';
         this.setMetric(portraitMetric(plan, 'static', image.src));
       } else this.placeholder(name);
+      this.pending = false; this.syncSpeech(); this.changed();
     }, () => this.staticFailure(this.actor!, name));
   }
   private staticFailure(actor: ActorState, name: string): void {
-    this.figure?.dispose(); this.figure = undefined; this.placeholder(name);
+    this.figure?.dispose(); this.figure = undefined; this.placeholder(name); this.pending = false; this.changed();
     if (actor.asset && !this.state?.failedAssets[actor.asset]) this.dispatch({ type: 'asset-failed', id: actor.asset,
       message: `立绘 ${actor.asset} 无法读取，使用色块占位。` });
   }
@@ -119,7 +128,7 @@ class ActorPortrait {
     const plan = this.plan;
     const talking = this.presented && isTalking({ ...this.actor, supported: !!this.figure,
       mouthAllowed: plan?.kind === 'layered' && plan.recipe.limits.mouth, prop: this.actor.actor === '大师之剑' },
-    this.state.waiting?.kind === 'text' && !this.paused() ? this.state.waiting : null);
+    this.state.waiting?.kind === 'text' && !this.pending && !this.paused() ? this.state.waiting : null);
     this.figure?.sync(talking, this.presented && this.actor.visible && !this.paused(), this.ports.fixedTime?.());
   }
   private paused(): boolean { return !!(this.state?.progress?.confirming || this.state?.system?.panel || this.state?.system?.stale); }
@@ -153,8 +162,11 @@ export class PortraitsView {
   private readonly root: HTMLElement;
   private readonly dispatch: (action: Action) => void;
   private readonly ports: PortraitPorts;
-  constructor(root: HTMLElement, dispatch: (action: Action) => void, ports: PortraitPorts = {}) {
+  private readonly changed: () => void;
+  get loading(): boolean { return [...this.instances.values()].some(instance => instance.loading); }
+  constructor(root: HTMLElement, dispatch: (action: Action) => void, ports: PortraitPorts = {}, changed: () => void = () => {}) {
     this.root = root; this.dispatch = dispatch; this.ports = ports;
+    this.changed = changed;
     this.transition = new DisplayTransition({ later: (work, ms) => window.setTimeout(work, ms), cancel: id => window.clearTimeout(id) }, slots => {
       this.shown = slots; this.applyDisplay();
     });
@@ -167,7 +179,7 @@ export class PortraitsView {
     this.layout = planPortraits({ ...state, actors: people, entries: portraitEntries(state) }, this.layout);
     for (const actor of people) {
       let instance = this.instances.get(actor.actor);
-      if (!instance) { instance = new ActorPortrait(this.dispatch, this.ports); this.instances.set(actor.actor, instance); this.root.append(instance.root); }
+      if (!instance) { instance = new ActorPortrait(this.dispatch, this.ports, this.changed); this.instances.set(actor.actor, instance); this.root.append(instance.root); }
       instance.update(state, actor);
     }
     for (const [key, instance] of this.instances) if (!state.actors[key] || isStoryProp(state.actors[key]!)) { instance.dispose(); this.instances.delete(key); }
@@ -178,7 +190,10 @@ export class PortraitsView {
     Object.assign(this.root.dataset, { displayScope: this.layout.scope, displayRevision: String(this.layout.revision),
       displaySlots: this.layout.slots.join(','), lastSpoken: JSON.stringify(this.layout.lastSpoken) });
   }
-  private applyDisplay(): void { for (const [key, instance] of this.instances) instance.display(this.shown.find(slot => slot.actor === key)); }
+  private applyDisplay(): void {
+    for (const [key, instance] of this.instances) instance.display(this.shown.find(slot => slot.actor === key));
+    this.changed();
+  }
   private clear(): void { for (const instance of this.instances.values()) instance.dispose(); this.instances.clear(); this.layout = undefined; }
   dispose(): void { this.disposed = true; this.transition.dispose(); this.clear(); }
 }

@@ -1,0 +1,33 @@
+
+> dimensional-war-web@0.0.0 typecheck
+> tsc --noEmit
+
+
+> dimensional-war-web@0.0.0 test
+> vitest run src/tests/scene-image-loading.test.ts src/tests/backgrounds.test.ts src/tests/visual-loading.test.ts
+
+
+ RUN  v5.0.5 E:/笔记/次元战争设定/次元战争代码
+
+
+ Test Files  3 passed (3)
+      Tests  37 passed (37)
+   Start at  00:26:59
+   Duration  2.68s (transform 41%, import 32%, worker 16%, tests 10%, environment 1%)
+
+
+> dimensional-war-web@0.0.0 typecheck
+> tsc --noEmit
+
+
+> dimensional-war-web@0.0.0 test
+> vitest run src/tests/scene-image-loading.test.ts src/tests/backgrounds.test.ts src/tests/visual-loading.test.ts
+
+
+ RUN  v5.0.5 E:/笔记/次元战争设定/次元战争代码
+
+
+ Test Files  3 passed (3)
+      Tests  37 passed (37)
+   Start at  00:31:17
+   Duration  324ms (transform 49%, import 35%, tests 12%, worker 4%)
