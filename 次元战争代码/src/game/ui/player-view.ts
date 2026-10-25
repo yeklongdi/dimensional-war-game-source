@@ -1,11 +1,13 @@
 import type { Action, GameState } from '../state.js';
-import { backgroundBindings, displayName, timeGradient } from '../story/config.js';
+import { displayName } from '../story/config.js';
 import { button, element } from './elements.js';
 import { renderDebug } from './dev-overlay.js';
 import { PortraitsView } from './portraits.js';
 import type { PortraitPorts } from './portraits.js';
-import { chapterTitles, displaySceneTitle } from '../story/chapter-policy.js';
+import { chapterTitles } from '../story/chapter-policy.js';
 import { renderProps } from './props.js';
+import { BackgroundView } from './background.js';
+import type { BackgroundPorts } from './background.js';
 
 export class PlayerView {
   readonly stage = element('main', 'stage');
@@ -20,6 +22,7 @@ export class PlayerView {
   private hint: HTMLElement | undefined;
   private waitToken = '';
   private readonly portraits: PortraitsView;
+  private readonly background: BackgroundView;
   private debugKey = '';
   private readonly dispatch: (action: Action) => void;
   private readonly gesture: () => void;
@@ -28,12 +31,13 @@ export class PlayerView {
   private readonly systemNavigation?: (intent: 'load' | 'go-menu') => void;
 
   constructor(root: HTMLElement, dispatch: (action: Action) => void, gesture: () => void, endNavigation?: () => void, portraitPorts?: PortraitPorts,
-    systemNavigation?: (intent: 'load' | 'go-menu') => void) {
+    systemNavigation?: (intent: 'load' | 'go-menu') => void, backgroundPorts?: BackgroundPorts) {
     this.dispatch = dispatch;
     this.gesture = gesture;
     this.endNavigation = endNavigation;
     this.systemNavigation = systemNavigation;
     this.portraits = new PortraitsView(this.actors, dispatch, portraitPorts);
+    this.background = new BackgroundView(this.backdrop, this.title, dispatch, backgroundPorts);
     this.stage.id = 'stage';
     this.stage.tabIndex = 0;
     this.stage.setAttribute('aria-label', '剧情播放器');
@@ -58,7 +62,7 @@ export class PlayerView {
     resize();
   }
 
-  dispose() { this.portraits.dispose(); this.resizeObserver.disconnect(); this.stage.remove(); }
+  dispose() { this.background.dispose(); this.portraits.dispose(); this.resizeObserver.disconnect(); this.stage.remove(); }
 
   render(state: GameState) {
     const waiting = state.waiting;
@@ -69,9 +73,7 @@ export class PlayerView {
       waitKind: waiting?.kind ?? '', waitToken: waiting?.token ?? '',
       typingComplete: String(waiting?.kind !== 'text' || waiting.revealed >= Array.from(waiting.text).length),
     });
-    const background = !state.failedAssets[state.backgroundId] && backgroundBindings[state.backgroundId];
-    this.backdrop.style.background = background ? `url("${background}") center / cover` : timeGradient(state.time);
-    this.title.textContent = background ? '' : displaySceneTitle(state.sceneTitle);
+    this.background.render(state);
     this.hud.textContent = `${chapterTitles[state.actId] ?? state.actId}　 /　 次元战争`;
     this.portraits.render(state);
     renderProps(this.props, state);

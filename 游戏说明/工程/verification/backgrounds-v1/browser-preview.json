@@ -1,0 +1,903 @@
+{
+  "checks": [
+    {
+      "asset": "bg_grandmother_house_dusk",
+      "mode": "clean",
+      "data": {
+        "images": [
+          {
+            "height": 936,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/art/backgrounds/galgame-v1/bg_grandmother_house_dusk_candidate_v001_16x9.png",
+            "width": 1664
+          }
+        ],
+        "portraits": [],
+        "size": {
+          "h": 720,
+          "w": 1280
+        },
+        "textWindow": null,
+        "view": {
+          "background": "bg_grandmother_house_dusk",
+          "backgroundUrl": "http://127.0.0.1:43930/art/backgrounds/galgame-v1/bg_grandmother_house_dusk_candidate_v001_16x9.png",
+          "mode": "clean",
+          "rawDisplaySize": "1664x936",
+          "ready": "true",
+          "revision": "1",
+          "scope": "isolated-composite-not-integrated"
+        }
+      }
+    },
+    {
+      "asset": "bg_grandmother_house_dusk",
+      "mode": "one",
+      "data": {
+        "images": [
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/body-stand.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/head.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/eyes-calm.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/eyes-calm-half.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/eyes-calm-closed.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/mouth-calm.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/mouth-calm-speech.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/hair-front.png",
+            "width": 1024
+          }
+        ],
+        "portraits": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "box": {
+              "h": 721.9125366210938,
+              "w": 481.2749938964844,
+              "x": 399.3500061035156,
+              "y": 187.4375
+            },
+            "center": "640",
+            "displayed": "true",
+            "expression": "默认平静",
+            "frame": "layered",
+            "headHeight": "136.76999999999998",
+            "headTop": "210",
+            "metric": "hero-layered",
+            "phase": "steady",
+            "pose": "普通站姿",
+            "position": "center",
+            "rear": "false",
+            "safeWidth": "338.4",
+            "scale": "0.47",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "layered"
+          }
+        ],
+        "previewLabel": "构图合成 · 未接入　 /　 次元战争",
+        "size": {
+          "h": 720,
+          "w": 1280
+        },
+        "textWindow": {
+          "h": 180,
+          "x": 24,
+          "y": 540
+        },
+        "view": {
+          "background": "bg_grandmother_house_dusk",
+          "backgroundUrl": "http://127.0.0.1:43930/art/backgrounds/galgame-v1/bg_grandmother_house_dusk_candidate_v001_16x9.png",
+          "mode": "one",
+          "rawDisplaySize": "1664x936",
+          "ready": "true",
+          "revision": "2",
+          "scope": "isolated-composite-not-integrated"
+        }
+      }
+    },
+    {
+      "asset": "bg_grandmother_house_dusk",
+      "mode": "three",
+      "data": {
+        "images": [
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/body-stand.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/head.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/eyes-calm.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/eyes-calm-half.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/eyes-calm-closed.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/mouth-calm.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/mouth-calm-speech.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/hair-front.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/prologue-v2/saber-calm.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/prologue-v2/thief-unmasked-action-smile.png",
+            "width": 1024
+          }
+        ],
+        "portraits": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "box": {
+              "h": 721.9125366210938,
+              "w": 481.2749938964844,
+              "x": 15.350000381469728,
+              "y": 187.4375
+            },
+            "center": "256",
+            "displayed": "true",
+            "expression": "默认平静",
+            "frame": "layered",
+            "headHeight": "136.76999999999998",
+            "headTop": "210",
+            "metric": "hero-layered",
+            "phase": "steady",
+            "pose": "普通站姿",
+            "position": "left",
+            "rear": "false",
+            "safeWidth": "338.4",
+            "scale": "0.47",
+            "slot": "left",
+            "speaking": "false",
+            "visual": "layered"
+          },
+          {
+            "actor": "女剑士",
+            "asset": "char_saber_traveler_placeholder",
+            "box": {
+              "h": 506.875,
+              "w": 337.9125061035156,
+              "x": 471.0375061035156,
+              "y": 207.3500061035156
+            },
+            "center": "640",
+            "displayed": "true",
+            "expression": "平静",
+            "frame": "waist",
+            "headHeight": "129.36",
+            "headTop": "210",
+            "metric": "saber",
+            "phase": "steady",
+            "pose": "站在外侧留意来路",
+            "position": "center",
+            "rear": "false",
+            "safeWidth": "337.92",
+            "scale": "0.33",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "static"
+          },
+          {
+            "actor": "怪盗",
+            "asset": "char_thief_smile",
+            "box": {
+              "h": 875.5125122070312,
+              "w": 583.6749877929688,
+              "x": 727.6000366210938,
+              "y": 147.3000030517578
+            },
+            "center": "1024",
+            "displayed": "true",
+            "expression": "带笑，观察男高",
+            "frame": "waist",
+            "headHeight": "131.1",
+            "headTop": "210",
+            "metric": "thief-unmasked",
+            "phase": "steady",
+            "pose": "收起面罩",
+            "position": "right",
+            "rear": "false",
+            "safeWidth": "336.29999999999995",
+            "scale": "0.57",
+            "slot": "right",
+            "speaking": "false",
+            "visual": "static"
+          }
+        ],
+        "previewLabel": "构图合成 · 未接入　 /　 次元战争",
+        "size": {
+          "h": 720,
+          "w": 1280
+        },
+        "textWindow": {
+          "h": 180,
+          "x": 24,
+          "y": 540
+        },
+        "view": {
+          "background": "bg_grandmother_house_dusk",
+          "backgroundUrl": "http://127.0.0.1:43930/art/backgrounds/galgame-v1/bg_grandmother_house_dusk_candidate_v001_16x9.png",
+          "mode": "three",
+          "rawDisplaySize": "1664x936",
+          "ready": "true",
+          "revision": "3",
+          "scope": "isolated-composite-not-integrated"
+        }
+      }
+    },
+    {
+      "asset": "bg_school_classroom_day",
+      "mode": "clean",
+      "data": {
+        "images": [
+          {
+            "height": 936,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/art/backgrounds/galgame-v1/bg_school_classroom_day_candidate_v001_16x9.png",
+            "width": 1664
+          }
+        ],
+        "portraits": [],
+        "size": {
+          "h": 720,
+          "w": 1280
+        },
+        "textWindow": null,
+        "view": {
+          "background": "bg_school_classroom_day",
+          "backgroundUrl": "http://127.0.0.1:43930/art/backgrounds/galgame-v1/bg_school_classroom_day_candidate_v001_16x9.png",
+          "mode": "clean",
+          "rawDisplaySize": "1664x936",
+          "ready": "true",
+          "revision": "5",
+          "scope": "isolated-composite-not-integrated"
+        }
+      }
+    },
+    {
+      "asset": "bg_school_classroom_day",
+      "mode": "one",
+      "data": {
+        "images": [
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/body-stand.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/head.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/eyes-calm.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/eyes-calm-half.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/eyes-calm-closed.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/mouth-calm.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/mouth-calm-speech.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/hair-front.png",
+            "width": 1024
+          }
+        ],
+        "portraits": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "box": {
+              "h": 721.9125366210938,
+              "w": 481.2749938964844,
+              "x": 399.3500061035156,
+              "y": 187.4375
+            },
+            "center": "640",
+            "displayed": "true",
+            "expression": "默认平静",
+            "frame": "layered",
+            "headHeight": "136.76999999999998",
+            "headTop": "210",
+            "metric": "hero-layered",
+            "phase": "steady",
+            "pose": "普通站姿",
+            "position": "center",
+            "rear": "false",
+            "safeWidth": "338.4",
+            "scale": "0.47",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "layered"
+          }
+        ],
+        "previewLabel": "构图合成 · 未接入　 /　 次元战争",
+        "size": {
+          "h": 720,
+          "w": 1280
+        },
+        "textWindow": {
+          "h": 180,
+          "x": 24,
+          "y": 540
+        },
+        "view": {
+          "background": "bg_school_classroom_day",
+          "backgroundUrl": "http://127.0.0.1:43930/art/backgrounds/galgame-v1/bg_school_classroom_day_candidate_v001_16x9.png",
+          "mode": "one",
+          "rawDisplaySize": "1664x936",
+          "ready": "true",
+          "revision": "6",
+          "scope": "isolated-composite-not-integrated"
+        }
+      }
+    },
+    {
+      "asset": "bg_school_classroom_day",
+      "mode": "three",
+      "data": {
+        "images": [
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/body-stand.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/head.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/eyes-calm.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/eyes-calm-half.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/eyes-calm-closed.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/mouth-calm.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/mouth-calm-speech.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/hair-front.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/prologue-v2/saber-calm.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/prologue-v2/thief-unmasked-action-smile.png",
+            "width": 1024
+          }
+        ],
+        "portraits": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "box": {
+              "h": 721.9125366210938,
+              "w": 481.2749938964844,
+              "x": 15.350000381469728,
+              "y": 187.4375
+            },
+            "center": "256",
+            "displayed": "true",
+            "expression": "默认平静",
+            "frame": "layered",
+            "headHeight": "136.76999999999998",
+            "headTop": "210",
+            "metric": "hero-layered",
+            "phase": "steady",
+            "pose": "普通站姿",
+            "position": "left",
+            "rear": "false",
+            "safeWidth": "338.4",
+            "scale": "0.47",
+            "slot": "left",
+            "speaking": "false",
+            "visual": "layered"
+          },
+          {
+            "actor": "女剑士",
+            "asset": "char_saber_traveler_placeholder",
+            "box": {
+              "h": 506.875,
+              "w": 337.9125061035156,
+              "x": 471.0375061035156,
+              "y": 207.3500061035156
+            },
+            "center": "640",
+            "displayed": "true",
+            "expression": "平静",
+            "frame": "waist",
+            "headHeight": "129.36",
+            "headTop": "210",
+            "metric": "saber",
+            "phase": "steady",
+            "pose": "站在外侧留意来路",
+            "position": "center",
+            "rear": "false",
+            "safeWidth": "337.92",
+            "scale": "0.33",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "static"
+          },
+          {
+            "actor": "怪盗",
+            "asset": "char_thief_smile",
+            "box": {
+              "h": 875.5125122070312,
+              "w": 583.6749877929688,
+              "x": 727.6000366210938,
+              "y": 147.3000030517578
+            },
+            "center": "1024",
+            "displayed": "true",
+            "expression": "带笑，观察男高",
+            "frame": "waist",
+            "headHeight": "131.1",
+            "headTop": "210",
+            "metric": "thief-unmasked",
+            "phase": "steady",
+            "pose": "收起面罩",
+            "position": "right",
+            "rear": "false",
+            "safeWidth": "336.29999999999995",
+            "scale": "0.57",
+            "slot": "right",
+            "speaking": "false",
+            "visual": "static"
+          }
+        ],
+        "previewLabel": "构图合成 · 未接入　 /　 次元战争",
+        "size": {
+          "h": 720,
+          "w": 1280
+        },
+        "textWindow": {
+          "h": 180,
+          "x": 24,
+          "y": 540
+        },
+        "view": {
+          "background": "bg_school_classroom_day",
+          "backgroundUrl": "http://127.0.0.1:43930/art/backgrounds/galgame-v1/bg_school_classroom_day_candidate_v001_16x9.png",
+          "mode": "three",
+          "rawDisplaySize": "1664x936",
+          "ready": "true",
+          "revision": "7",
+          "scope": "isolated-composite-not-integrated"
+        }
+      }
+    },
+    {
+      "asset": "bg_old_district_quiet_alley_night",
+      "mode": "clean",
+      "data": {
+        "images": [
+          {
+            "height": 936,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/art/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_candidate_v001_16x9.png",
+            "width": 1664
+          }
+        ],
+        "portraits": [],
+        "size": {
+          "h": 720,
+          "w": 1280
+        },
+        "textWindow": null,
+        "view": {
+          "background": "bg_old_district_quiet_alley_night",
+          "backgroundUrl": "http://127.0.0.1:43930/art/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_candidate_v001_16x9.png",
+          "mode": "clean",
+          "rawDisplaySize": "1664x936",
+          "ready": "true",
+          "revision": "9",
+          "scope": "isolated-composite-not-integrated"
+        }
+      }
+    },
+    {
+      "asset": "bg_old_district_quiet_alley_night",
+      "mode": "one",
+      "data": {
+        "images": [
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/body-stand.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/head.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/eyes-calm.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/eyes-calm-half.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/eyes-calm-closed.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/mouth-calm.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/mouth-calm-speech.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/hair-front.png",
+            "width": 1024
+          }
+        ],
+        "portraits": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "box": {
+              "h": 721.9125366210938,
+              "w": 481.2749938964844,
+              "x": 399.3500061035156,
+              "y": 187.4375
+            },
+            "center": "640",
+            "displayed": "true",
+            "expression": "默认平静",
+            "frame": "layered",
+            "headHeight": "136.76999999999998",
+            "headTop": "210",
+            "metric": "hero-layered",
+            "phase": "steady",
+            "pose": "普通站姿",
+            "position": "center",
+            "rear": "false",
+            "safeWidth": "338.4",
+            "scale": "0.47",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "layered"
+          }
+        ],
+        "previewLabel": "构图合成 · 未接入　 /　 次元战争",
+        "size": {
+          "h": 720,
+          "w": 1280
+        },
+        "textWindow": {
+          "h": 180,
+          "x": 24,
+          "y": 540
+        },
+        "view": {
+          "background": "bg_old_district_quiet_alley_night",
+          "backgroundUrl": "http://127.0.0.1:43930/art/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_candidate_v001_16x9.png",
+          "mode": "one",
+          "rawDisplaySize": "1664x936",
+          "ready": "true",
+          "revision": "10",
+          "scope": "isolated-composite-not-integrated"
+        }
+      }
+    },
+    {
+      "asset": "bg_old_district_quiet_alley_night",
+      "mode": "three",
+      "data": {
+        "images": [
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/body-stand.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/head.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/eyes-calm.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/eyes-calm-half.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/eyes-calm-closed.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/mouth-calm.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/mouth-calm-speech.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/hero-layered-v3/hair-front.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/prologue-v2/saber-calm.png",
+            "width": 1024
+          },
+          {
+            "height": 1536,
+            "loaded": true,
+            "src": "http://127.0.0.1:43930/assets/portraits/prologue-v2/thief-unmasked-action-smile.png",
+            "width": 1024
+          }
+        ],
+        "portraits": [
+          {
+            "actor": "男高",
+            "asset": "char_male_high_normal",
+            "box": {
+              "h": 721.9125366210938,
+              "w": 481.2749938964844,
+              "x": 15.350000381469728,
+              "y": 187.4375
+            },
+            "center": "256",
+            "displayed": "true",
+            "expression": "默认平静",
+            "frame": "layered",
+            "headHeight": "136.76999999999998",
+            "headTop": "210",
+            "metric": "hero-layered",
+            "phase": "steady",
+            "pose": "普通站姿",
+            "position": "left",
+            "rear": "false",
+            "safeWidth": "338.4",
+            "scale": "0.47",
+            "slot": "left",
+            "speaking": "false",
+            "visual": "layered"
+          },
+          {
+            "actor": "女剑士",
+            "asset": "char_saber_traveler_placeholder",
+            "box": {
+              "h": 506.875,
+              "w": 337.9125061035156,
+              "x": 471.0375061035156,
+              "y": 207.3500061035156
+            },
+            "center": "640",
+            "displayed": "true",
+            "expression": "平静",
+            "frame": "waist",
+            "headHeight": "129.36",
+            "headTop": "210",
+            "metric": "saber",
+            "phase": "steady",
+            "pose": "站在外侧留意来路",
+            "position": "center",
+            "rear": "false",
+            "safeWidth": "337.92",
+            "scale": "0.33",
+            "slot": "center",
+            "speaking": "false",
+            "visual": "static"
+          },
+          {
+            "actor": "怪盗",
+            "asset": "char_thief_smile",
+            "box": {
+              "h": 875.5125122070312,
+              "w": 583.6749877929688,
+              "x": 727.6000366210938,
+              "y": 147.3000030517578
+            },
+            "center": "1024",
+            "displayed": "true",
+            "expression": "带笑，观察男高",
+            "frame": "waist",
+            "headHeight": "131.1",
+            "headTop": "210",
+            "metric": "thief-unmasked",
+            "phase": "steady",
+            "pose": "收起面罩",
+            "position": "right",
+            "rear": "false",
+            "safeWidth": "336.29999999999995",
+            "scale": "0.57",
+            "slot": "right",
+            "speaking": "false",
+            "visual": "static"
+          }
+        ],
+        "previewLabel": "构图合成 · 未接入　 /　 次元战争",
+        "size": {
+          "h": 720,
+          "w": 1280
+        },
+        "textWindow": {
+          "h": 180,
+          "x": 24,
+          "y": 540
+        },
+        "view": {
+          "background": "bg_old_district_quiet_alley_night",
+          "backgroundUrl": "http://127.0.0.1:43930/art/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_candidate_v001_16x9.png",
+          "mode": "three",
+          "rawDisplaySize": "1664x936",
+          "ready": "true",
+          "revision": "11",
+          "scope": "isolated-composite-not-integrated"
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

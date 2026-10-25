@@ -1,0 +1,297 @@
+{
+  "normalFirstLevel": [
+    {
+      "background": {
+        "backgroundId": "bg_grandmother_house_dusk",
+        "backgroundStatus": "ready"
+      },
+      "feedback": "自动档：搬入奶奶家 · 奶奶家门前 · 2026/10/25 14:54:52",
+      "image": "/assets/backgrounds/galgame-v1/bg_grandmother_house_dusk_v1.webp",
+      "stage": {
+        "actId": "prologue",
+        "activeRunId": "5fb191e0-c981-497c-a7ab-856116e67a1e",
+        "bgmId": "bgm_homecoming_warm",
+        "fastForward": "false",
+        "nodeIndex": "3",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792911292283}",
+        "saveRequest": "1",
+        "saveStatus": "saved",
+        "sceneId": "p001",
+        "session": "4",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"5fb191e0-c981-497c-a7ab-856116e67a1e\",\"revision\":2,\"auto\":{\"revision\":2,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p001\"},\"savedAt\":1792911292283}},\"manual\":[null,null,null,null,null,null]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "4:1"
+      },
+      "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。"
+    },
+    {
+      "background": {
+        "backgroundId": "bg_grandmother_house_entrance",
+        "backgroundStatus": "ready"
+      },
+      "feedback": "自动档：搬入奶奶家 · 奶奶家·进门 · 2026/10/25 14:55:49",
+      "image": "/assets/backgrounds/galgame-v1/bg_grandmother_house_entrance_v1.webp",
+      "stage": {
+        "actId": "prologue",
+        "activeRunId": "5fb191e0-c981-497c-a7ab-856116e67a1e",
+        "bgmId": "bgm_homecoming_warm",
+        "fastForward": "false",
+        "nodeIndex": "3",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p002\"},\"savedAt\":1792911349529}",
+        "saveRequest": "2",
+        "saveStatus": "saved",
+        "sceneId": "p002",
+        "session": "4",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"5fb191e0-c981-497c-a7ab-856116e67a1e\",\"revision\":3,\"auto\":{\"revision\":3,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p002\"},\"savedAt\":1792911349529}},\"manual\":[null,null,null,null,null,null]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "4:5"
+      },
+      "text": "门内很快传来拖"
+    },
+    {
+      "background": {
+        "backgroundId": "bg_grandmother_house_living_room",
+        "backgroundStatus": "ready"
+      },
+      "feedback": "自动档：搬入奶奶家 · 奶奶家·客厅 · 2026/10/25 14:55:51",
+      "image": "/assets/backgrounds/galgame-v1/bg_grandmother_house_living_room_v1.webp",
+      "stage": {
+        "actId": "prologue",
+        "activeRunId": "5fb191e0-c981-497c-a7ab-856116e67a1e",
+        "bgmId": "bgm_homecoming_warm",
+        "fastForward": "false",
+        "nodeIndex": "4",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p003\"},\"savedAt\":1792911351141}",
+        "saveRequest": "3",
+        "saveStatus": "saved",
+        "sceneId": "p003",
+        "session": "4",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"5fb191e0-c981-497c-a7ab-856116e67a1e\",\"revision\":4,\"auto\":{\"revision\":4,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p003\"},\"savedAt\":1792911351141}},\"manual\":[null,null,null,null,null,null]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "4:11"
+      },
+      "text": "客厅还是记忆里的"
+    },
+    {
+      "background": {
+        "backgroundId": "bg_grandmother_house_bedroom",
+        "backgroundStatus": "ready"
+      },
+      "feedback": "自动档：搬入奶奶家 · 奶奶家·整理房间与出门 · 2026/10/25 14:55:53",
+      "image": "/assets/backgrounds/galgame-v1/bg_grandmother_house_bedroom_v1.webp",
+      "stage": {
+        "actId": "prologue",
+        "activeRunId": "5fb191e0-c981-497c-a7ab-856116e67a1e",
+        "bgmId": "bgm_homecoming_warm",
+        "fastForward": "false",
+        "nodeIndex": "3",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p004\"},\"savedAt\":1792911353559}",
+        "saveRequest": "4",
+        "saveStatus": "saved",
+        "sceneId": "p004",
+        "session": "4",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"5fb191e0-c981-497c-a7ab-856116e67a1e\",\"revision\":5,\"auto\":{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p004\"},\"savedAt\":1792911353559}},\"manual\":[null,null,null,null,null,null]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "4:21"
+      },
+      "text": "男高把行李搬进"
+    },
+    {
+      "background": {
+        "backgroundId": "bg_grandmother_house_kitchen_night",
+        "backgroundStatus": "ready"
+      },
+      "feedback": "自动档：搬入奶奶家 · 奶奶家·整理房间与出门 · 2026/10/25 14:55:53",
+      "image": "/assets/backgrounds/galgame-v1/bg_grandmother_house_kitchen_night_v1.webp",
+      "stage": {
+        "actId": "prologue",
+        "activeRunId": "5fb191e0-c981-497c-a7ab-856116e67a1e",
+        "bgmId": "bgm_homecoming_warm",
+        "fastForward": "false",
+        "nodeIndex": "9",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p004\"},\"savedAt\":1792911353559}",
+        "saveRequest": "4",
+        "saveStatus": "saved",
+        "sceneId": "p004",
+        "session": "4",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "story-stage",
+        "typingComplete": "false",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"5fb191e0-c981-497c-a7ab-856116e67a1e\",\"revision\":5,\"auto\":{\"revision\":5,\"data\":{\"version\":2,\"flags\":{},\"completedLevelIds\":[],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_01\",\"sceneId\":\"p004\"},\"savedAt\":1792911353559}},\"manual\":[null,null,null,null,null,null]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "4:25"
+      },
+      "text": "奶奶，我想出"
+    },
+    {
+      "background": {
+        "backgroundId": "bg_warehouse_area_night",
+        "backgroundStatus": "ready"
+      },
+      "feedback": "自动档：仓库区事件 · 仓库区外围·蒙面人离开 · 2026/10/25 17:05:51",
+      "image": "/assets/backgrounds/galgame-v1/bg_warehouse_area_night_v1.webp",
+      "stage": {
+        "actId": "prologue",
+        "activeRunId": "bfe3eb26-e3e2-44c5-ba82-9bf1a7918363",
+        "bgmId": "bgm_first_battle_after",
+        "fastForward": "false",
+        "nodeIndex": "3",
+        "optionIndex": "",
+        "optionNodeIndex": "",
+        "paused": "false",
+        "saveJson": "{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_battle_prologue_tutorial_skipped\":true,\"flag_prologue_p006_01\":true},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p007\"},\"savedAt\":1792919151827}",
+        "saveRequest": "3",
+        "saveStatus": "saved",
+        "sceneId": "p007",
+        "session": "4",
+        "settingsJson": "{\"version\":1,\"bgm\":65,\"sfx\":100,\"textMs\":30}",
+        "testid": "story-stage",
+        "typingComplete": "true",
+        "vaultJson": "{\"version\":3,\"activeRunId\":\"bfe3eb26-e3e2-44c5-ba82-9bf1a7918363\",\"revision\":10,\"auto\":{\"revision\":10,\"data\":{\"version\":2,\"flags\":{\"flag_prologue_p005_01\":true,\"flag_battle_prologue_tutorial_won\":true,\"flag_battle_prologue_tutorial_skipped\":true,\"flag_prologue_p006_01\":true},\"completedLevelIds\":[\"prologue_01\"],\"checkpoint\":{\"kind\":\"level\",\"levelId\":\"prologue_02\",\"sceneId\":\"p007\"},\"savedAt\":1792919151827}},\"manual\":[null,null,null,null,null,null]}",
+        "vaultStatus": "valid",
+        "waitKind": "text",
+        "waitToken": "4:12"
+      },
+      "text": "几个黑衣人倒在地上，另一些黑衣人退回仓库区阴影。\n男高转头看向墙角。"
+    }
+  ],
+  "scopeUpdate": "用户随后要求仅验证背景显示，因此停止额外通关和战斗／存档专项；仓库战使用已有明确跳过，未称实打胜利。",
+  "productionBase": {
+    "background": {
+      "backgroundId": "bg_grandmother_house_dusk",
+      "backgroundStatus": "ready"
+    },
+    "image": {
+      "height": 936,
+      "loaded": true,
+      "src": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_grandmother_house_dusk_v1.webp",
+      "width": 1664
+    },
+    "url": "http://127.0.0.1:43933/dimensional-war-game-source/"
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:sfx_door_knock] 音频 sfx_door_knock 尚未绑定，静默处理。",
+      "timestamp": "2026-10-25T06:55:49.331Z",
+      "url": "http://127.0.0.1:43931/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:char_grandmother_warm] 立绘 char_grandmother_warm 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-25T06:55:49.531Z",
+      "url": "http://127.0.0.1:43931/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:visual:男高:mapping:坐在沙发上:得意] 男高「坐在沙发上／得意」尚无合格分层，使用明确静态回退。",
+      "timestamp": "2026-10-25T06:55:51.144Z",
+      "url": "http://127.0.0.1:43931/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:visual:男高:mapping:坐在沙发上:热血、得意] 男高「坐在沙发上／热血、得意」尚无合格分层，使用明确静态回退。",
+      "timestamp": "2026-10-25T06:55:51.785Z",
+      "url": "http://127.0.0.1:43931/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:visual:男高:mapping:整理行李:怀念、轻松] 男高「整理行李／怀念、轻松」尚无合格分层，使用明确静态回退。 男高「整理行李」的完整动作尚未制作，当前使用对应透明半身表情回退。",
+      "timestamp": "2026-10-25T06:55:53.562Z",
+      "url": "http://127.0.0.1:43931/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:visual:男高:mapping:整理行李:轻松、准备出门] 男高「整理行李／轻松、准备出门」尚无合格分层，使用明确静态回退。 男高「整理行李」的完整动作尚未制作，当前使用对应透明半身表情回退。",
+      "timestamp": "2026-10-25T06:55:55.052Z",
+      "url": "http://127.0.0.1:43931/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:visual:男高:mapping:散步、观察四周:好奇] 男高「散步、观察四周／好奇」尚无合格分层，使用明确静态回退。 男高「散步、观察四周」的完整动作尚未制作，当前使用对应透明半身表情回退。",
+      "timestamp": "2026-10-25T09:02:56.990Z",
+      "url": "http://127.0.0.1:43931/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:sfx_metal_collision] 音频 sfx_metal_collision 尚未绑定，静默处理。",
+      "timestamp": "2026-10-25T09:03:30.237Z",
+      "url": "http://127.0.0.1:43931/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:char_organization_member_placeholder] 立绘 char_organization_member_placeholder 尚未绑定，使用色块占位。",
+      "timestamp": "2026-10-25T09:03:30.237Z",
+      "url": "http://127.0.0.1:43931/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:visual:男高:mapping:散步、观察四周:认真、出头] 男高「散步、观察四周／认真、出头」尚无合格分层，使用明确静态回退。 男高「散步、观察四周」的完整动作尚未制作，当前使用对应透明半身表情回退。",
+      "timestamp": "2026-10-25T09:03:31.172Z",
+      "url": "http://127.0.0.1:43931/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bgm_first_battle] 音频 bgm_first_battle 尚未绑定，静默处理。",
+      "timestamp": "2026-10-25T09:03:32.093Z",
+      "url": "http://127.0.0.1:43931/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:skip:battle_prologue_tutorial] 已主动跳过战斗 battle_prologue_tutorial，按胜利返回原剧情。",
+      "timestamp": "2026-10-25T09:05:51.840Z",
+      "url": "http://127.0.0.1:43931/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:bgm_first_battle_after] 音频 bgm_first_battle_after 尚未绑定，静默处理。",
+      "timestamp": "2026-10-25T09:05:51.840Z",
+      "url": "http://127.0.0.1:43931/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:visual:男高:mapping:战斗后喘息:疑惑、警惕] 男高「战斗后喘息／疑惑、警惕」尚无合格分层，使用明确静态回退。 男高「战斗后喘息」的完整动作尚未制作，当前使用对应透明半身表情回退。",
+      "timestamp": "2026-10-25T09:05:51.840Z",
+      "url": "http://127.0.0.1:43931/@vite/client"
+    },
+    {
+      "level": "warn",
+      "message": "[次元战争:asset:sfx_distant_warehouse_noise] 音频 sfx_distant_warehouse_noise 尚未绑定，静默处理。",
+      "timestamp": "2026-10-25T09:06:51.549Z",
+      "url": "http://127.0.0.1:43931/@vite/client"
+    }
+  ]
+}

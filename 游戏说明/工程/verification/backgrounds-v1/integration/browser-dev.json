@@ -1,0 +1,3231 @@
+{
+  "checks": [
+    {
+      "name": "dev-p001",
+      "data": {
+        "actors": [
+          {
+            "center": "640",
+            "name": "男高",
+            "scale": "0.47"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_house_dusk",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_dusk_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue",
+          "backgroundId": "bg_grandmother_house_dusk",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "3",
+          "pending": "0",
+          "sceneId": "p001",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "p001",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "101:1"
+        },
+        "text": "",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-p001",
+      "data": {
+        "actors": [
+          {
+            "center": "640",
+            "name": "男高",
+            "scale": "0.47"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_house_dusk",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_dusk_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue",
+          "backgroundId": "bg_grandmother_house_dusk",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "3",
+          "pending": "0",
+          "sceneId": "p001",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "p001",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "101:1"
+        },
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-p004-1",
+      "data": {
+        "actors": [
+          {
+            "center": "640",
+            "name": "男高",
+            "scale": "0.28"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_house_bedroom",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_bedroom_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue",
+          "backgroundId": "bg_grandmother_house_bedroom",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "3",
+          "pending": "0",
+          "sceneId": "p004",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "p004",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "102:1"
+        },
+        "text": "男高把行李搬进自己的房间。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-p004-2",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "896",
+            "name": "奶奶",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_house_kitchen_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_kitchen_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue",
+          "backgroundId": "bg_grandmother_house_kitchen_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "9",
+          "pending": "0",
+          "sceneId": "p004",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "9",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "p004",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "102:5"
+        },
+        "text": "奶奶，我想出去走走，认认路。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-p009-1",
+      "data": {
+        "actors": [
+          {
+            "center": "640",
+            "name": "男高",
+            "scale": "0.3"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_house_bedroom_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_bedroom_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue",
+          "backgroundId": "bg_grandmother_house_bedroom_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "3",
+          "pending": "0",
+          "sceneId": "p009",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "p009",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "103:1"
+        },
+        "text": "枕边放着明天报到要用的书包。\n窗台上的铁皮机器人被月光照出一道暗亮的边，像仍在替这个房间守着什么。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-p009-2",
+      "data": {
+        "actors": [
+          {
+            "center": "640",
+            "name": "男高",
+            "scale": "0.3"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_school_underground_dark",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_school_underground_dark_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue",
+          "backgroundId": "bg_school_underground_dark",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "12",
+          "pending": "0",
+          "sceneId": "p009",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "12",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "p009",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "103:6"
+        },
+        "text": "黑色结晶像心脏一样，极轻微地跳动了一下。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-a008-1",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "896",
+            "name": "虚拟主播",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_school_library_day",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_school_library_day_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "act1",
+          "backgroundId": "bg_school_library_day",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "4",
+          "pending": "0",
+          "sceneId": "a008",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "act1",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "a008",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "104:1"
+        },
+        "text": "老师的话音落下后，虚拟主播发现所有人都看向她。\n她下意识把怀里的书抱紧，过了两秒才放下东西，走到离男高半步远的位置。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-a008-2",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "896",
+            "name": "虚拟主播",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_school_cafeteria_day",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_school_cafeteria_day_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "act1",
+          "backgroundId": "bg_school_cafeteria_day",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "14",
+          "pending": "0",
+          "sceneId": "a008",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "act1",
+          "nodeIndex": "14",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "a008",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "104:9"
+        },
+        "text": "两人从图书馆出来，绕到主教学楼后方。\n隔着操场可以看到食堂。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-a008-3",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "896",
+            "name": "虚拟主播",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_school_gym_day",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_school_gym_day_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "act1",
+          "backgroundId": "bg_school_gym_day",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "22",
+          "pending": "0",
+          "sceneId": "a008",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "act1",
+          "nodeIndex": "22",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "a008",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "104:16"
+        },
+        "text": "体育馆。一楼是篮球场和羽毛球场，二楼是观众席。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-b006-1",
+      "data": {
+        "actors": [
+          {
+            "center": "640",
+            "name": "男高",
+            "scale": "0.28"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_dream_house_loop",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_dream_house_loop_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_3",
+          "backgroundId": "bg_dream_house_loop",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "4",
+          "pending": "0",
+          "sceneId": "b006",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_3",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "b006",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "105:1"
+        },
+        "text": "一阵灼热从手上传来。男高猛地睁开一点眼睛，看见袖口下的剑形灼痕正在发光。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-b006-2",
+      "data": {
+        "actors": [],
+        "background": {
+          "backgroundId": "bg_grandmother_bedroom_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_bedroom_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_3",
+          "backgroundId": "bg_grandmother_bedroom_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "10",
+          "pending": "0",
+          "sceneId": "b006",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_3",
+          "nodeIndex": "10",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "b006",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "105:4"
+        },
+        "text": "现实中，床边的大师之剑轻轻震动。沿剑刃亮起的金色纹路，与男高手上的光连在一起。白天触剑时建立的联系，在这一刻终于得到了清晰的回应。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-b006-3",
+      "data": {
+        "actors": [
+          {
+            "center": "640",
+            "name": "男高",
+            "scale": "0.28"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_dream_house_loop",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_dream_house_loop_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_3",
+          "backgroundId": "bg_dream_house_loop",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "13",
+          "pending": "0",
+          "sceneId": "b006",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_3",
+          "nodeIndex": "13",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "b006",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "105:5"
+        },
+        "text": "男高咬住牙，抬头望向雾中透进来的一线亮光。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-c001-1",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.34"
+          },
+          {
+            "center": "896",
+            "name": "金发青年",
+            "scale": "0.33"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_bedroom_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_bedroom_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_4",
+          "backgroundId": "bg_grandmother_bedroom_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "6",
+          "pending": "0",
+          "sceneId": "c001",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_4",
+          "nodeIndex": "6",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "c001",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "106:1"
+        },
+        "text": "一阵短促的电子警报打破了房间里的安静。男高刚想继续问话，便看见窗帘边缘扫过一道白光。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-c001-2",
+      "data": {
+        "actors": [],
+        "background": {
+          "backgroundId": "bg_old_residential_search_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_old_residential_search_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_4",
+          "backgroundId": "bg_old_residential_search_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "14",
+          "pending": "0",
+          "sceneId": "c001",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_4",
+          "nodeIndex": "14",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "c001",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "106:6"
+        },
+        "text": "街口，队员按住耳机，盯着装置上迅速变淡的反应。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-c001-3",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "896",
+            "name": "金发青年",
+            "scale": "0.33"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_bedroom_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_bedroom_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_4",
+          "backgroundId": "bg_grandmother_bedroom_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "21",
+          "pending": "0",
+          "sceneId": "c001",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_4",
+          "nodeIndex": "21",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "c001",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "106:10"
+        },
+        "text": "男高松开窗帘，回头看了一眼通向楼下的房门。\n奶奶的房间没有亮灯。要是那些人一路查到这扇门，他不能让她什么都不知道地卷进来。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-c008-1",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "896",
+            "name": "金发青年",
+            "scale": "0.33"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_old_district_battle_street_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_old_district_battle_street_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_4",
+          "backgroundId": "bg_old_district_battle_street_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "6",
+          "pending": "0",
+          "sceneId": "c008",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_4",
+          "nodeIndex": "6",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "c008",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "107:1"
+        },
+        "text": "两位，夜路可不是这么逛的。\n再退一步，可就真撞墙了。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-c008-2",
+      "data": {
+        "actors": [
+          {
+            "center": "256",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "1024",
+            "name": "金发青年",
+            "scale": "0.33"
+          },
+          {
+            "center": "640",
+            "name": "蒙面人",
+            "scale": "0.39"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_old_district_escape_alley_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_old_district_escape_alley_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_4",
+          "backgroundId": "bg_old_district_escape_alley_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "15",
+          "pending": "0",
+          "sceneId": "c008",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_4",
+          "nodeIndex": "15",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "c008",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "107:7"
+        },
+        "text": "青年紧随其后。有人试图从入口追来，少女立即挥剑，将伸进来的装置打落；一阵风卷起碎屑，逼得追兵掩面退开。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-c013-1",
+      "data": {
+        "actors": [
+          {
+            "center": "256",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "640",
+            "name": "金发青年",
+            "scale": "0.33"
+          },
+          {
+            "center": "1024",
+            "name": "奶奶",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_house_entrance_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_entrance_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_4",
+          "backgroundId": "bg_grandmother_house_entrance_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "9",
+          "pending": "0",
+          "sceneId": "c013",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_4",
+          "nodeIndex": "9",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "c013",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "108:1"
+        },
+        "text": "回到老住宅区后，两人又停了一次。青年沿街口看过，确认没有尾随的身影，才陪男高走向院门。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-c013-2",
+      "data": {
+        "actors": [
+          {
+            "center": "256",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "640",
+            "name": "金发青年",
+            "scale": "0.33"
+          },
+          {
+            "center": "1024",
+            "name": "奶奶",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_living_room_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_living_room_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_4",
+          "backgroundId": "bg_grandmother_living_room_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "19",
+          "pending": "0",
+          "sceneId": "c013",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_4",
+          "nodeIndex": "19",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "c013",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "108:10"
+        },
+        "text": "奶奶让出门，把两人领进客厅。她看见男高手背蹭出的红痕，又取来干净毛巾，让他自己把脸和手擦一擦。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-c013-3",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "896",
+            "name": "金发青年",
+            "scale": "0.33"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_bedroom_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_bedroom_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_4",
+          "backgroundId": "bg_grandmother_bedroom_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "25",
+          "pending": "0",
+          "sceneId": "c013",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_4",
+          "nodeIndex": "25",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "c013",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "108:14"
+        },
+        "text": "回到房间，男高给青年铺好临时的被褥，把书包挪到一旁。大师之剑放在两人都能看见的地方。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-p002",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.47"
+          },
+          {
+            "center": "896",
+            "name": "奶奶",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_house_entrance",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_entrance_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue",
+          "backgroundId": "bg_grandmother_house_entrance",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "3",
+          "pending": "0",
+          "sceneId": "p002",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "p002",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "102:1"
+        },
+        "text": "门内很快传来拖鞋声。\n奶奶一只手里还攥着抹布，开门看见他，先笑了起来，目光却在他脸上停了好一会儿。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-p003",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.34"
+          },
+          {
+            "center": "896",
+            "name": "奶奶",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_house_living_room",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_living_room_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue",
+          "backgroundId": "bg_grandmother_house_living_room",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "4",
+          "pending": "0",
+          "sceneId": "p003",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "p003",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "103:1"
+        },
+        "text": "客厅还是记忆里的旧木柜、茶壶和满墙老照片。\n奶奶拉着男高坐下，一会儿看他的脸，一会儿又捏捏他的手臂，像是要把错过的几年一次看回来。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-p008",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "896",
+            "name": "奶奶",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_house_living_room_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_living_room_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue",
+          "backgroundId": "bg_grandmother_house_living_room_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "4",
+          "pending": "0",
+          "sceneId": "p008",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "p008",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "104:1"
+        },
+        "text": "男高一路小跑回到老房子。\n客厅的灯还亮着，奶奶从藤椅上站起。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-a001",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.3"
+          },
+          {
+            "center": "896",
+            "name": "奶奶",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_house_bedroom_morning",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_bedroom_morning_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "act1",
+          "backgroundId": "bg_grandmother_house_bedroom_morning",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "4",
+          "pending": "0",
+          "sceneId": "a001",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "act1",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "a001",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "105:1"
+        },
+        "text": "闹钟已经响过几遍，男高仍把半张脸埋在被子里。\n昨晚的金属装置、蒙面人的背影和仓库区重新亮起的灯，在断续的梦里转了一夜。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-a004",
+      "data": {
+        "actors": [
+          {
+            "center": "896",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "384",
+            "name": "老师",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_school_classroom_morning",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_school_classroom_morning_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "act1",
+          "backgroundId": "bg_school_classroom_morning",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "4",
+          "pending": "0",
+          "sceneId": "a004",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "act1",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "a004",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "106:1"
+        },
+        "text": "上课铃响起时，男高正好赶到教室门口。\n他走到讲台前，从讲台上拿起笔，在白板上写下自己的名字。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-a007",
+      "data": {
+        "actors": [
+          {
+            "center": "640",
+            "name": "男高",
+            "scale": "0.47"
+          },
+          {
+            "center": "256",
+            "name": "怪盗",
+            "scale": "0.33"
+          },
+          {
+            "center": "1024",
+            "name": "老师",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_school_classroom_day",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_school_classroom_day_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "act1",
+          "backgroundId": "bg_school_classroom_day",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "2",
+          "pending": "0",
+          "sceneId": "a007",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "act1",
+          "nodeIndex": "2",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "a007",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "choice",
+          "waitToken": "107:1"
+        },
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-a009",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "896",
+            "name": "虚拟主播",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_school_construction_zone_day",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_school_construction_zone_day_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "act1",
+          "backgroundId": "bg_school_construction_zone_day",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "4",
+          "pending": "0",
+          "sceneId": "a009",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "act1",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "a009",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "108:1"
+        },
+        "text": "两人沿操场边小路往回走，来到操场与围墙之间的东北角。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-a012",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "896",
+            "name": "虚拟主播",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_school_construction_pit",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_school_construction_pit_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "act1",
+          "backgroundId": "bg_school_construction_pit",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "2",
+          "pending": "0",
+          "sceneId": "a012",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "act1",
+          "nodeIndex": "2",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "a012",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "109:1"
+        },
+        "text": "男高的手指触碰到剑柄。\n整座大坑忽然安静下来，连风声都像被截断。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-a015_recovery",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "896",
+            "name": "虚拟主播",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_school_infirmary_day",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_school_infirmary_day_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "act1",
+          "backgroundId": "bg_school_infirmary_day",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "4",
+          "pending": "0",
+          "sceneId": "a015_recovery",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "act1",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "a015_recovery",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "110:1"
+        },
+        "text": "男高没有在走廊停留，径直把虚拟主播送到保健室。老师接过人，指挥他把她放到床上，又让他去通知班主任。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-a015_retrieve",
+      "data": {
+        "actors": [
+          {
+            "center": "640",
+            "name": "男高",
+            "scale": "0.28"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_school_construction_zone_dusk",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_school_construction_zone_dusk_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "act1",
+          "backgroundId": "bg_school_construction_zone_dusk",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "4",
+          "pending": "0",
+          "sceneId": "a015_retrieve",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "act1",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "a015_retrieve",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "111:1"
+        },
+        "text": "放学的人群朝校门涌去，男高走到半路，却又停下脚步。剑还留在施工区里，白天那一幕也没有真正从脑海中消失。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-b003",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.34"
+          },
+          {
+            "center": "896",
+            "name": "奶奶",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_dining_evening",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_dining_evening_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_3",
+          "backgroundId": "bg_grandmother_dining_evening",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "5",
+          "pending": "0",
+          "sceneId": "b003",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_3",
+          "nodeIndex": "5",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "b003",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "112:1"
+        },
+        "text": "男高再抬起头时，面前还是那碗热汤。筷子正握在手里，奶奶坐在桌对面，笑着看他。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-b004",
+      "data": {
+        "actors": [
+          {
+            "center": "640",
+            "name": "男高",
+            "scale": "0.28"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_dream_dining_fog",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_dream_dining_fog_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_3",
+          "backgroundId": "bg_dream_dining_fog",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "5",
+          "pending": "0",
+          "sceneId": "b004",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_3",
+          "nodeIndex": "5",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "b004",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "113:1"
+        },
+        "text": "白雾漫过饭桌，桌对面的奶奶逐渐看不清了。一个陌生的声音从那个方向响起，故意拖长尾音，像在郑重念出某句排练过的话。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-b005",
+      "data": {
+        "actors": [
+          {
+            "center": "640",
+            "name": "男高",
+            "scale": "0.28"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_dream_house_loop",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_dream_house_loop_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_3",
+          "backgroundId": "bg_dream_house_loop",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "4",
+          "pending": "0",
+          "sceneId": "b005",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_3",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "b005",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "114:1"
+        },
+        "text": "男高没有再等回答。他绕开饭桌，冲到门口，拧开门把。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-b007",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "896",
+            "name": "金发青年",
+            "scale": "0.33"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_dream_house_fracture",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_dream_house_fracture_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_3",
+          "backgroundId": "bg_dream_house_fracture",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "6",
+          "pending": "0",
+          "sceneId": "b007",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_3",
+          "nodeIndex": "6",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "b007",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "115:1"
+        },
+        "text": "这里是我的——",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-b008",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.34"
+          },
+          {
+            "center": "896",
+            "name": "金发青年",
+            "scale": "0.33"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_bedroom_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_bedroom_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_3",
+          "backgroundId": "bg_grandmother_bedroom_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "6",
+          "pending": "0",
+          "sceneId": "b008",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_3",
+          "nodeIndex": "6",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "b008",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "116:1"
+        },
+        "text": "男高猛地坐起来，差点撞上床边的人。那人及时后退半步，空着的手仍护在他肩旁。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-c009",
+      "data": {
+        "actors": [
+          {
+            "center": "256",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "1024",
+            "name": "蒙面人",
+            "scale": "0.39"
+          },
+          {
+            "center": "640",
+            "name": "女剑士",
+            "scale": "0.33"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_old_district_quiet_alley_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_4",
+          "backgroundId": "bg_old_district_quiet_alley_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "10",
+          "pending": "0",
+          "sceneId": "c009",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_4",
+          "nodeIndex": "10",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "c009",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "117:1"
+        },
+        "text": "确认这段路暂时没有追兵，蒙面人才停在墙边，长长吐出一口气。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-c010",
+      "data": {
+        "actors": [
+          {
+            "center": "256",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "640",
+            "name": "女剑士",
+            "scale": "0.33"
+          },
+          {
+            "center": "1024",
+            "name": "怪盗",
+            "scale": "0.57"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_old_district_quiet_alley_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_4",
+          "backgroundId": "bg_old_district_quiet_alley_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "10",
+          "pending": "0",
+          "sceneId": "c010",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_4",
+          "nodeIndex": "10",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "c010",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "118:1"
+        },
+        "text": "先告诉我，他们是什么人？刚才那两个东西又是什么？还有他——",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-c011",
+      "data": {
+        "actors": [
+          {
+            "center": "256",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "640",
+            "name": "女剑士",
+            "scale": "0.33"
+          },
+          {
+            "center": "1024",
+            "name": "怪盗",
+            "scale": "0.57"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_old_district_quiet_alley_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_4",
+          "backgroundId": "bg_old_district_quiet_alley_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "9",
+          "pending": "0",
+          "sceneId": "c011",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_4",
+          "nodeIndex": "9",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "c011",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "119:1"
+        },
+        "text": "还有，这位是我的从者。你叫她 Saber 就好。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "dev-c012",
+      "data": {
+        "actors": [
+          {
+            "center": "256",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "640",
+            "name": "女剑士",
+            "scale": "0.33"
+          },
+          {
+            "center": "1024",
+            "name": "怪盗",
+            "scale": "0.57"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_old_district_quiet_alley_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_4",
+          "backgroundId": "bg_old_district_quiet_alley_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "9",
+          "pending": "0",
+          "sceneId": "c012",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_4",
+          "nodeIndex": "9",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "c012",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "120:1"
+        },
+        "text": "要是我不想争那个愿望呢？能不能就当没这回事？",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "fault-slow-gradient",
+      "data": {
+        "actors": [
+          {
+            "center": "256",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "640",
+            "name": "女剑士",
+            "scale": "0.33"
+          },
+          {
+            "center": "1024",
+            "name": "怪盗",
+            "scale": "0.57"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_old_district_quiet_alley_night",
+          "backgroundStatus": "loading"
+        },
+        "image": null,
+        "scene": {
+          "actId": "prologue_4",
+          "backgroundId": "bg_old_district_quiet_alley_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "9",
+          "pending": "1",
+          "sceneId": "c012",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_4",
+          "nodeIndex": "9",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "c012",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "121:1"
+        },
+        "text": "要是我不想争那个愿望呢？能不能就当没这回事？",
+        "title": "暂时合作",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "fault-404-gradient",
+      "data": {
+        "actors": [
+          {
+            "center": "640",
+            "name": "男高",
+            "scale": "0.47"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_house_dusk",
+          "backgroundStatus": "failed"
+        },
+        "image": null,
+        "scene": {
+          "actId": "prologue",
+          "backgroundId": "bg_grandmother_house_dusk",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "3",
+          "pending": "0",
+          "sceneId": "p001",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "p001",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "123:1"
+        },
+        "text": "男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。",
+        "title": "奶奶家门前",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "fault-decode-gradient",
+      "data": {
+        "actors": [
+          {
+            "center": "896",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "384",
+            "name": "老师",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_school_classroom_morning",
+          "backgroundStatus": "failed"
+        },
+        "image": null,
+        "scene": {
+          "actId": "act1",
+          "backgroundId": "bg_school_classroom_morning",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "4",
+          "pending": "0",
+          "sceneId": "a004",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "act1",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "a004",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "127:1"
+        },
+        "text": "上课铃响起时，男高正好赶到教室门口。\n他走到讲台前，从讲台上拿起笔，在白板上写下自己的名字。",
+        "title": "教室·自我介绍",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "viewport-1920x900-a007",
+      "data": {
+        "actors": [
+          {
+            "center": "640",
+            "name": "男高",
+            "scale": "0.47"
+          },
+          {
+            "center": "256",
+            "name": "怪盗",
+            "scale": "0.33"
+          },
+          {
+            "center": "1024",
+            "name": "老师",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_school_classroom_day",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_school_classroom_day_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "act1",
+          "backgroundId": "bg_school_classroom_day",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "2",
+          "pending": "0",
+          "sceneId": "a007",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "act1",
+          "nodeIndex": "2",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "a007",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "choice",
+          "waitToken": "130:1"
+        },
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "viewport-1920x900-c009",
+      "data": {
+        "actors": [
+          {
+            "center": "256",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "1024",
+            "name": "蒙面人",
+            "scale": "0.39"
+          },
+          {
+            "center": "640",
+            "name": "女剑士",
+            "scale": "0.33"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_old_district_quiet_alley_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_4",
+          "backgroundId": "bg_old_district_quiet_alley_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "10",
+          "pending": "0",
+          "sceneId": "c009",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_4",
+          "nodeIndex": "10",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "c009",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "131:1"
+        },
+        "text": "确认这段路暂时没有追兵，蒙面人才停在墙边，长长吐出一口气。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "viewport-900x620-c009",
+      "data": {
+        "actors": [
+          {
+            "center": "256",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "1024",
+            "name": "蒙面人",
+            "scale": "0.39"
+          },
+          {
+            "center": "640",
+            "name": "女剑士",
+            "scale": "0.33"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_old_district_quiet_alley_night",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue_4",
+          "backgroundId": "bg_old_district_quiet_alley_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "10",
+          "pending": "0",
+          "sceneId": "c009",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_4",
+          "nodeIndex": "10",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "c009",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "131:1"
+        },
+        "text": "确认这段路暂时没有追兵，蒙面人才停在墙边，长长吐出一口气。",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "viewport-900x620-a007",
+      "data": {
+        "actors": [
+          {
+            "center": "640",
+            "name": "男高",
+            "scale": "0.47"
+          },
+          {
+            "center": "256",
+            "name": "怪盗",
+            "scale": "0.33"
+          },
+          {
+            "center": "1024",
+            "name": "老师",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_school_classroom_day",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_school_classroom_day_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "act1",
+          "backgroundId": "bg_school_classroom_day",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "2",
+          "pending": "0",
+          "sceneId": "a007",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "act1",
+          "nodeIndex": "2",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "a007",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "choice",
+          "waitToken": "132:1"
+        },
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    }
+  ],
+  "sequences": [
+    {
+      "act": "prologue",
+      "scene": "p004",
+      "keys": [
+        "bg_grandmother_house_bedroom",
+        "bg_grandmother_house_kitchen_night"
+      ]
+    },
+    {
+      "act": "prologue",
+      "scene": "p009",
+      "keys": [
+        "bg_grandmother_house_bedroom_night",
+        "bg_school_underground_dark"
+      ]
+    },
+    {
+      "act": "act1",
+      "scene": "a008",
+      "keys": [
+        "bg_school_library_day",
+        "bg_school_cafeteria_day",
+        "bg_school_gym_day"
+      ]
+    },
+    {
+      "act": "prologue_3",
+      "scene": "b006",
+      "keys": [
+        "bg_dream_house_loop",
+        "bg_grandmother_bedroom_night",
+        "bg_dream_house_loop"
+      ]
+    },
+    {
+      "act": "prologue_4",
+      "scene": "c001",
+      "keys": [
+        "bg_grandmother_bedroom_night",
+        "bg_old_residential_search_night",
+        "bg_grandmother_bedroom_night"
+      ]
+    },
+    {
+      "act": "prologue_4",
+      "scene": "c008",
+      "keys": [
+        "bg_old_district_battle_street_night",
+        "bg_old_district_escape_alley_night"
+      ]
+    },
+    {
+      "act": "prologue_4",
+      "scene": "c013",
+      "keys": [
+        "bg_grandmother_house_entrance_night",
+        "bg_grandmother_living_room_night",
+        "bg_grandmother_bedroom_night"
+      ]
+    }
+  ],
+  "decoded": [
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_dream_dining_fog_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_dream_house_fracture_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_dream_house_loop_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_grandmother_house_bedroom_night_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_grandmother_dining_evening_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_grandmother_house_bedroom_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_grandmother_house_bedroom_morning_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_grandmother_house_dusk_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_grandmother_house_entrance_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_grandmother_house_entrance_night_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_grandmother_house_kitchen_night_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_grandmother_house_living_room_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_grandmother_house_living_room_night_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_old_district_access_night_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_old_district_battle_street_night_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_old_district_escape_alley_night_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_old_residential_search_night_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_residential_junction_night_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_school_cafeteria_day_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_school_classroom_day_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_school_classroom_morning_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_school_construction_pit_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_school_construction_zone_day_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_school_construction_zone_dusk_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_school_gate_morning_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_school_gym_day_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_school_hallway_day_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_school_infirmary_day_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_school_library_day_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_school_underground_dark_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_sun_city_old_street_night_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_sun_city_school_road_morning_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    },
+    {
+      "url": "/assets/backgrounds/galgame-v1/bg_warehouse_area_night_v1.webp",
+      "width": 1664,
+      "height": 936,
+      "loaded": true
+    }
+  ],
+  "faults": [
+    {
+      "name": "slow-current",
+      "data": {
+        "actors": [
+          {
+            "center": "256",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "640",
+            "name": "女剑士",
+            "scale": "0.33"
+          },
+          {
+            "center": "1024",
+            "name": "怪盗",
+            "scale": "0.57"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_old_district_quiet_alley_night",
+          "backgroundStatus": "loading"
+        },
+        "image": null,
+        "scene": {
+          "actId": "prologue_4",
+          "backgroundId": "bg_old_district_quiet_alley_night",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "9",
+          "pending": "1",
+          "sceneId": "c012",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue_4",
+          "nodeIndex": "9",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "c012",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "121:1"
+        },
+        "text": "",
+        "title": "暂时合作",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "old-success-after-new",
+      "before": {
+        "actors": [
+          {
+            "center": "640",
+            "name": "男高",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_house_dusk",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_dusk_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue",
+          "backgroundId": "bg_grandmother_house_dusk",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "3",
+          "pending": "1",
+          "sceneId": "p001",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "p001",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "122:1"
+        },
+        "text": "",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      },
+      "after": {
+        "actors": [
+          {
+            "center": "640",
+            "name": "男高",
+            "scale": "0.47"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_house_dusk",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_dusk_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue",
+          "backgroundId": "bg_grandmother_house_dusk",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "3",
+          "pending": "0",
+          "sceneId": "p001",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "p001",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "122:1"
+        },
+        "text": "",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "404-once",
+      "data": {
+        "actors": [
+          {
+            "center": "384",
+            "name": "男高",
+            "scale": "0.47"
+          },
+          {
+            "center": "896",
+            "name": "奶奶",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_house_entrance",
+          "backgroundStatus": "failed"
+        },
+        "image": null,
+        "scene": {
+          "actId": "prologue",
+          "backgroundId": "bg_grandmother_house_entrance",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "3",
+          "pending": "0",
+          "sceneId": "p002",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "p002",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "123:5"
+        },
+        "text": "门内很快传来拖鞋声。\n奶奶一只手里还攥着抹布，开门看见他，先笑了起来，目光却在他脸上停了好一会儿。",
+        "title": "奶奶家·进门",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      },
+      "diagnostic": "背景接入验收 · 开发专用\nprologue/p001 奶奶家门前\nprologue/p002 奶奶家·进门\nprologue/p003 奶奶家·客厅\nprologue/p004 奶奶家·整理房间与出门\nprologue/p005 旧街区·仓库区外围\nprologue/p006 仓库区外围·第一次战斗\nprologue/p007 仓库区外围·蒙面人离开\nprologue/p008 奶奶家·回家\nprologue/p009 男高房间·睡前\nact1/a001 清晨睡过头\nact1/a002 上学途中·路口相撞\nact1/a003 学校门口\nact1/a004 教室·自我介绍\nact1/a005 教室·座位安排\nact1/a006 课间·带路的人选\nact1/a007 课间·选择校园向导\nact1/a008 虚拟主播带路参观校园\nact1/a009 废弃施工区外围\nact1/a010 是否进入施工区域\nact1/a011 施工区域·坑底与腐蚀之剑\nact1/a012 大师之剑·触碰与幻象\nact1/a013 施工区域·黑色人形\nact1/a014 黑色人形战斗\nact1/a015 回到学校\nact1/a015_recovery 保健室与照顾交接\nact1/a015_retrieve 放学返回施工区取剑\nact1/a016 序幕（二）取剑主线结束\nprologue_3/b001 晚饭与新同学\nprologue_3/b002 床边的大师之剑\nprologue_3/b003 没有尽头的晚饭\nprologue_3/b004 雾中的邀请\nprologue_3/b005 男高拒绝留下\nprologue_3/b006 梦外的剑鸣\nprologue_3/b007 一剑斩断噩梦\nprologue_3/b008 醒来后的陌生人\nprologue_4/c001 警报与搜捕队\nprologue_4/c002 出门与认出\nprologue_4/c003 第一次配合\nprologue_4/c004 第一名干部到场\nprologue_4/c005 林克明显占优\nprologue_4/c006 防御型与第二名干部加入\nprologue_4/c007 局势转为棘手\nprologue_4/c008 怪盗与女剑士接应\nprologue_4/c009 小巷中的真实身份\nprologue_4/c010 圣杯战争的最低限度说明\nprologue_4/c011 介绍 Saber\nprologue_4/c012 暂时合作\nprologue_4/c013 夜归与新的同伴\n正常解码\n等待手动释放后真实解码\n请求不存在的图片\n真实请求非图片文件并解码\n等待释放后解码失败\n重建视图并重试当前场景\n推进／补全文字\n释放等待中的真实请求\n逐张真实解码全部34张运行图\n\n无存档、无音频、无正式跳关。故障仅替换图片IO，复用真实PlayerView和解码器。\n\n开发场景头预览，不是正式存档／完整通关\nprologue/p002\nbackground=bg_grandmother_house_entrance\n等待=text 节点=3\n未释放请求=0\nF2显示／隐藏工具\n男高「坐在沙发上／得意」尚无合格分层，使用明确静态回退。\n男高「刚跑回家、呼吸急促／装作平静」尚无合格分层，使用明确静态回退。 男高「刚跑回家、呼吸急促」的完整动作尚未制作，当前使用对应透明半身表情回退。\n男高「躺在床上、刚醒／困倦、慌张」尚无合格分层，使用明确静态回退。\n男高「站在讲台前、拿着白板笔／自信、兴奋」尚无合格分层，使用明确静态回退。 男高「站在讲台前、拿着白板笔」的完整动作尚未制作，当前使用对应透明半身表情回退。\n男高「停步观察围栏／好奇」尚无合格分层，使用明确静态回退。 男高「停步观察围栏」的完整动作尚未制作，当前使用对应透明半身表情回退。\n男高「推开铁皮小门、准备进入／被吸引、犹豫」尚无合格分层，使用明确静态回退。 男高「推开铁皮小门、准备进入」的完整动作尚未制作，当前使用对应透明半身表情回退。\n男高「站在病床边／担心，松一口气」尚无合格分层，使用明确静态回退。 男高「站在病床边」的完整动作尚未制作，当前使用对应透明半身表情回退。\n男高「取剑，抖开旧布包裹／犹豫，决定」尚无合格分层，使用明确静态回退。 男高「取剑，抖开旧布包裹」的完整动作尚未制作，当前使用对应透明半身表情回退。\n男高「重新坐在饭桌旁／茫然，逐渐警觉」尚无合格分层，使用明确静态回退。\n男高「站在椅子旁，望向雾中／警惕」尚无合格分层，使用明确静态回退。 男高「站在椅子旁，望向雾中」的完整动作尚未制作，当前使用对应透明半身表情回退。\n男高「推门，扶住门框保持站立／愤怒，困倦」尚无合格分层，使用明确静态回退。 男高「推门，扶住门框保持站立」的完整动作尚未制作，当前使用对应透明半身表情回退。\n男高「勉强站稳，跟住青年／震惊」尚无合格分层，使用明确静态回退。 男高「勉强站稳，跟住青年」的完整动作尚未制作，当前使用对应透明半身表情回退。\n男高「从床上坐起，扶着被子／惊魂未定，疑惑」尚无合格分层，使用明确静态回退。\n男高「扶墙调整呼吸，望向蒙面人／疑惑」尚无合格分层，使用明确静态回退。 男高「扶墙调整呼吸，望向蒙面人」的完整动作尚未制作，当前使用对应透明半身表情回退。\n男高「站直，认真追问／困惑，警惕」尚无合格分层，使用明确静态回退。 男高「站直，认真追问」的完整动作尚未制作，当前使用对应透明半身表情回退。\n男高「看向女剑士／认真」尚无合格分层，使用明确静态回退。 男高「看向女剑士」的完整动作尚未制作，当前使用对应透明半身表情回退。\n男高「望向回家方向／担忧，坚定」尚无合格分层，使用明确静态回退。 男高「望向回家方向」的完整动作尚未制作，当前使用对应透明半身表情回退。\n男高「望向回家方向／担忧，坚定」尚无合格分层，使用明确静态回退。 男高「望向回家方向」的完整动作尚未制作，当前使用对应透明半身表情回退。\n背景 bg_grandmother_house_dusk 加载或解码失败，使用当前场景渐变占位。\n背景 bg_grandmother_house_entrance 加载或解码失败，使用当前场景渐变占位。\n"
+    },
+    {
+      "name": "retry-after-404",
+      "data": {
+        "actors": [
+          {
+            "center": "640",
+            "name": "男高",
+            "scale": "0.47"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_grandmother_house_dusk",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_grandmother_house_dusk_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "prologue",
+          "backgroundId": "bg_grandmother_house_dusk",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "3",
+          "pending": "0",
+          "sceneId": "p001",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "prologue",
+          "nodeIndex": "3",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "p001",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "124:1"
+        },
+        "text": "",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "old-failure-after-new",
+      "before": {
+        "actors": [
+          {
+            "center": "896",
+            "name": "男高",
+            "scale": "1"
+          },
+          {
+            "center": "384",
+            "name": "老师",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_school_classroom_morning",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_school_classroom_morning_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "act1",
+          "backgroundId": "bg_school_classroom_morning",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "4",
+          "pending": "1",
+          "sceneId": "a004",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "act1",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "a004",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "126:1"
+        },
+        "text": "",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      },
+      "after": {
+        "actors": [
+          {
+            "center": "896",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "384",
+            "name": "老师",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_school_classroom_morning",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_school_classroom_morning_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "act1",
+          "backgroundId": "bg_school_classroom_morning",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "4",
+          "pending": "0",
+          "sceneId": "a004",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "act1",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "a004",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "126:1"
+        },
+        "text": "",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "invalid-image-decode",
+      "data": {
+        "actors": [
+          {
+            "center": "896",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "384",
+            "name": "老师",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_school_classroom_morning",
+          "backgroundStatus": "failed"
+        },
+        "image": null,
+        "scene": {
+          "actId": "act1",
+          "backgroundId": "bg_school_classroom_morning",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "4",
+          "pending": "0",
+          "sceneId": "a004",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "act1",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "a004",
+          "testid": "story-stage",
+          "typingComplete": "true",
+          "waitKind": "text",
+          "waitToken": "127:1"
+        },
+        "text": "上课铃响起时，男高正好赶到教室门口。\n他走到讲台前，从讲台上拿起笔，在白板上写下自己的名字。",
+        "title": "教室·自我介绍",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "name": "old-view-disposed",
+      "before": {
+        "actors": [
+          {
+            "center": "896",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "384",
+            "name": "老师",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_school_classroom_morning",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_school_classroom_morning_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "act1",
+          "backgroundId": "bg_school_classroom_morning",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "4",
+          "pending": "1",
+          "sceneId": "a004",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "act1",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "a004",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "129:1"
+        },
+        "text": "",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      },
+      "after": {
+        "actors": [
+          {
+            "center": "896",
+            "name": "男高",
+            "scale": "0.28"
+          },
+          {
+            "center": "384",
+            "name": "老师",
+            "scale": "1"
+          }
+        ],
+        "background": {
+          "backgroundId": "bg_school_classroom_morning",
+          "backgroundStatus": "ready"
+        },
+        "image": {
+          "complete": true,
+          "height": 936,
+          "rendering": "auto",
+          "src": "http://127.0.0.1:43931/assets/backgrounds/galgame-v1/bg_school_classroom_morning_v1.webp",
+          "width": 1664
+        },
+        "scene": {
+          "actId": "act1",
+          "backgroundId": "bg_school_classroom_morning",
+          "flags": "{\"has_master_sword\":true,\"link_summoned\":true,\"prologue_3_complete\":true}",
+          "node": "4",
+          "pending": "0",
+          "sceneId": "a004",
+          "scope": "dev-only-no-storage"
+        },
+        "stage": {
+          "actId": "act1",
+          "nodeIndex": "4",
+          "optionIndex": "",
+          "optionNodeIndex": "",
+          "sceneId": "a004",
+          "testid": "story-stage",
+          "typingComplete": "false",
+          "waitKind": "text",
+          "waitToken": "129:1"
+        },
+        "text": "",
+        "title": "",
+        "viewport": {
+          "height": 720,
+          "width": 1280
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

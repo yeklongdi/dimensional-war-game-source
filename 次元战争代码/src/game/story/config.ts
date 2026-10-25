@@ -14,7 +14,7 @@ type Overrides = {
 export const overrides: Overrides = { ...overridesJson, portraits: { ...assetBindings(overridesJson.portraits), ...staticBindings } };
 export const bgmBindings: Readonly<Record<string, string>> = assetBindings(audioMapJson);
 export const sfxBindings: Readonly<Record<string, string>> = {};
-export const backgroundBindings: Readonly<Record<string, string>> = {};
+export { backgroundBindings } from './backgrounds.js';
 export const textInterval = 30;
 export type Slot = 'far-left' | 'left' | 'center' | 'right' | 'far-right';
 const slots: Readonly<Record<string, Slot>> = {

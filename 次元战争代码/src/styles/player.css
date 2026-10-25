@@ -28,12 +28,14 @@ audio { display: none; }
   cursor: pointer;
 }
 .backdrop, .portraits, .player-content { position: absolute; inset: 0; }
+.backdrop { image-rendering: auto; pointer-events: none; }
+.background-image { display: block; width: 100%; height: 100%; object-fit: cover; image-rendering: auto; }
 .portraits { z-index: 1; isolation: isolate; pointer-events: none; mask-image: linear-gradient(#000 0 550px, transparent 620px); }
 .backdrop::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, #0b0e1422, transparent 40%, #0b0e1499);
+  background: linear-gradient(180deg, #0b0e14b3, #0b0e1466 75px, transparent 175px, transparent 65%, #0b0e1466);
 }
 .scene-title {
   position: absolute;

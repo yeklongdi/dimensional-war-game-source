@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-25",
+  "stage": "仅样张与构图预览，未接入",
+  "assets": [
+    {
+      "key": "bg_grandmother_house_dusk",
+      "source": "C:/Users/keefe/.codex/generated_images/01a15e78-f364-7431-a54b-9f614b54b279/exec-b84c19d0-bf4c-40d6-b958-a06537082eab.png",
+      "prompt": "用途：stylized-concept；原创视觉小说/Galgame游戏场景背景候选，不是海报，不含角色。请创作一张单幅横向16:9、目标1920×1080的完整不透明二维手绘背景。场景为当代中国普通内陆平原城市太阳市的老住宅区，奶奶家门前。核心必须清楚可辨：一栋两层老房子、门前一株桂花树、褪色的旧门板。平视略有斜角的中广景，门外有简洁可供前景半身角色站立的空间，房屋两层结构、树冠与门板均在画面中景及上部得到表现，不让地点识别只存在于画面最底部。不要擅自加入显著的独特建筑、庭院设施、路名、门牌、地标或房屋平面叙事。画风是精致的日式Galgame二维手绘环境：干净细腻的线与色块，柔和自然的光照，适度空气透视，可信的普通城市住宅材质和安静生活感；不是照片，不是3D渲染，不是像素画。时间为晚日下午至傍晚前，明亮温暖但不过度橘红，不是日落最后一刻或夜景。构图适配1280×720游戏逻辑画面：底部180像素未来会有文字窗，前景人物头顶约在y=210，最多人物中心x=256/640/1024。让人物上方和间隙仍可读出两层房屋、桂花树和门，人物背后别堆高对比杂物；保持空场景，不绘制人物。不要把太阳市变成日本小镇：禁止神社、鸟居、日文招牌、海岸、群山或山城。不要模仿或复制任何原作具体背景资源。禁止人物、敌人、尸体、行李、车辆、剑、黑色结晶、魔法标记、文字、UI、边框、箭头、水印、拼贴、分镜。整张图只有环境，边缘到边缘，保持16:9，不留黑边。",
+      "notes": [
+        "院门、小院及二楼栏杆是本张候选的视觉表现，尚未确认为正式房屋结构。"
+      ],
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_dusk_candidate_v001.png",
+      "tool": "image_gen.imagegen（内置）",
+      "transparent_background": false,
+      "referenceImages": [],
+      "referencePurpose": "文字描述参考已确认的Galgame构图与光影原则；未使用或提取原作图像。人物素材仅用于独立叠放预览。",
+      "status": "候选／待用户批准",
+      "approved": false,
+      "integrated": false,
+      "rawSize": [
+        1672,
+        941
+      ],
+      "rawMode": "RGB",
+      "rawSha256": "92eb92ac9282366b940208ca9205a3c175cc18116232aebec0d113fcb85341c2",
+      "selectedPath": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_dusk_candidate_v001_16x9.png",
+      "selectedSize": [
+        1664,
+        936
+      ],
+      "selectedSha256": "4dd2c32e0d881a9fab24c73ce77f52af3724df4ffd49f2d6fd4b3d7fd2d5a7f1",
+      "crop": [
+        4,
+        2,
+        1668,
+        938
+      ],
+      "cropNote": "仅裁左右各4px、上2px下3px；无拉伸、无放大、未改绘画内容。"
+    },
+    {
+      "key": "bg_school_classroom_day",
+      "source": "C:/Users/keefe/.codex/generated_images/01a15e78-f364-7431-a54b-9f614b54b279/exec-bb780fe4-321c-49da-a478-7b178318c5bc.png",
+      "prompt": "用途：stylized-concept；原创视觉小说/Galgame游戏场景背景候选，不是海报，不含角色。请创作一张单幅横向16:9、目标1920×1080的完整不透明二维手绘背景。场景为当代中国普通内陆平原城市太阳市第一高中的白天教室。必须表现讲台、空白白板、排列合理的课桌椅、侧面窗户和柔和窗光。采用适合前景半身人物的平视或轻微斜视中广景，能读出普通教室的结构和透视。白板与讲台位于可辨识的中后景，书桌分前中后层次，留有适当通行和对话前景，不画夸张的空旷大厅。只画普通现代高中设施，不加入独特建筑地标、课室名称、座位姓名标签、校徽或新设定。画风是精致的日式Galgame二维手绘环境：干净细腻的线与色块、柔和自然的光照、适度空气透视，温暖木色桌面与清爽低饱和墙面形成安静通透的白天校园感；不是照片，不是3D渲染，不是像素画。与同批住宅和小巷候选保持同一套手绘笔触、细节密度和柔和光影语言。构图适配1280×720游戏逻辑画面：底部180像素未来会有文字窗，前景人物头顶约在y=210，最多人物中心x=256/640/1024。讲台、白板、窗光与课桌结构不能全部被人物和底窗遮住；人物头部背后避免生硬的强光斑和过密高反差线条。不改变太阳市地理，不加海岸、山景、神社或日式标志。不要复制任何原作游戏素材。禁止人物、敌人、尸体、黑色结晶、剑、魔法、可阅读或乱码文字、数字、公式、UI、水印、边框、拼贴和分镜。白板完全空白，背景环境边缘到边缘，保持16:9，不留黑边。",
+      "notes": [
+        "窗在画面左侧、门在右侧及教室陈设仅为候选构图，不定义校园的绝对朝向或正式座位平面。"
+      ],
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_classroom_day_candidate_v001.png",
+      "tool": "image_gen.imagegen（内置）",
+      "transparent_background": false,
+      "referenceImages": [],
+      "referencePurpose": "文字描述参考已确认的Galgame构图与光影原则；未使用或提取原作图像。人物素材仅用于独立叠放预览。",
+      "status": "候选／待用户批准",
+      "approved": false,
+      "integrated": false,
+      "rawSize": [
+        1672,
+        941
+      ],
+      "rawMode": "RGB",
+      "rawSha256": "51784076fc317fcc6229b9fa024ca4c9c13a9d5941b09c69f6172008d51feb1f",
+      "selectedPath": "次元战争代码/art/backgrounds/galgame-v1/bg_school_classroom_day_candidate_v001_16x9.png",
+      "selectedSize": [
+        1664,
+        936
+      ],
+      "selectedSha256": "4666839be50ea1196d56af8c8b0682d5115fa0329d6d22093141ff85f8f80391",
+      "crop": [
+        4,
+        2,
+        1668,
+        938
+      ],
+      "cropNote": "仅裁左右各4px、上2px下3px；无拉伸、无放大、未改绘画内容。"
+    },
+    {
+      "key": "bg_old_district_quiet_alley_night",
+      "source": "C:/Users/keefe/.codex/generated_images/01a15e78-f364-7431-a54b-9f614b54b279/exec-ae388000-f511-44bc-9b4c-47d6bd10fd72.png",
+      "prompt": "用途：stylized-concept；原创视觉小说/Galgame游戏场景背景候选，不是海报，不含角色。请创作一张单幅横向16:9、目标1920×1080的完整不透明二维手绘背景。场景为当代中国普通内陆平原城市太阳市旧街区中一条夜间安静的小巷，供原剧情C009至C012连续对话使用。画面必须有可停靠交谈的墙边、一个可辨识的巷口，以及由巷口街灯照入的光线。平视中广景，朴素墙体围合出适合最多三名前景半身角色对话的空间，同时读得出巷内与巷口连通；不要画成广场、宽阔主干道或大型路口。只画安静空巷，不新增特殊地标、路牌、独特机关、雨天或剧情事件。画风是精致的日式Galgame二维手绘环境：干净细腻的线与色块、柔和光影、适度景深、可信的普通老街墙面与地面材质；不是照片，不是3D渲染，不是像素画。与同批住宅和教室候选保持同一套手绘笔触和适度细节。夜景以克制的蓝灰环境色与来自巷口的低饱和暖色街灯建立明暗层次，墙体、地面和转角均应可辨，不要整张过黑，不用浓雾或过度炫光。构图适配1280×720游戏逻辑画面：底部180像素未来会有文字窗，前景人物头顶约在y=210，三人中心x=256/640/1024。让墙体和巷口在人物上方或间隙仍可读，不用强光、复杂管线或招牌穿过人脸区域。不要把太阳市变成日本小镇，禁止神社、鸟居、日文招牌、海岸和山地。不要复制任何原作具体背景。禁止人物、追兵、敌人、尸体、警车、武器、剑、黑色结晶、魔法入口、身份暗示、文字、UI、水印、边框、拼贴和分镜。边缘到边缘，保持16:9，不留黑边。",
+      "notes": [
+        "巷口与尽头转向的连通感需要结合叠放预览确认，不以候选图规定新的道路方位。"
+      ],
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_candidate_v001.png",
+      "tool": "image_gen.imagegen（内置）",
+      "transparent_background": false,
+      "referenceImages": [],
+      "referencePurpose": "文字描述参考已确认的Galgame构图与光影原则；未使用或提取原作图像。人物素材仅用于独立叠放预览。",
+      "status": "候选／待用户批准",
+      "approved": false,
+      "integrated": false,
+      "rawSize": [
+        1672,
+        941
+      ],
+      "rawMode": "RGB",
+      "rawSha256": "f444c2e1df1e523164e6339ebadfc206dc325d03050a4f47da79a837aebf1e77",
+      "selectedPath": "次元战争代码/art/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_candidate_v001_16x9.png",
+      "selectedSize": [
+        1664,
+        936
+      ],
+      "selectedSha256": "ae475000b9f7c1fcd38c6b74e074bc009afaf026b404867c9bffcea6692b65de",
+      "crop": [
+        4,
+        2,
+        1668,
+        938
+      ],
+      "cropNote": "仅裁左右各4px、上2px下3px；无拉伸、无放大、未改绘画内容。"
+    }
+  ]
+}

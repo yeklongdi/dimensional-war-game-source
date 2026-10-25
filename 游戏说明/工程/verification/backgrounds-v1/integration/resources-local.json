@@ -1,0 +1,481 @@
+{
+  "base": "http://127.0.0.1:43933/dimensional-war-game-source",
+  "results": [
+    {
+      "key": "bg_grandmother_house_bedroom",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_grandmother_house_bedroom_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 240184,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "618ee0a878bbdd580704e0ac001550dc9827f3822c36acd919784285496594a7",
+      "matches": true
+    },
+    {
+      "key": "bg_grandmother_house_living_room",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_grandmother_house_living_room_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 342716,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "0eda1c28719f53423b4a0b2a307d4c5ce656d18d458c65f3a38eb7515654592e",
+      "matches": true
+    },
+    {
+      "key": "bg_grandmother_house_dusk",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_grandmother_house_dusk_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 587780,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "4e14b24b152cc41498a9d2d5beada92d2cf9cb655745e6d203e44080d05914c0",
+      "matches": true
+    },
+    {
+      "key": "bg_school_classroom_day",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_school_classroom_day_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 201620,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "75e7faf62c5dca3505f4e8daa65b405c8df81d63f4e8ce0f0a795e17b3293f4d",
+      "matches": true
+    },
+    {
+      "key": "bg_old_district_quiet_alley_night",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 338360,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "1ae5b5e4a9a56ecdb7574328a1371da7cc9030cb8dfaca484505074a0bdeb55d",
+      "matches": true
+    },
+    {
+      "key": "bg_grandmother_house_bedroom_night",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_grandmother_house_bedroom_night_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 201650,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "1fa10c4be408d10745c6e73212fe99334740dbac90f4f35568d2235404510525",
+      "matches": true
+    },
+    {
+      "key": "bg_grandmother_house_living_room_night",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_grandmother_house_living_room_night_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 275924,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "36019ec7737bae91c07e55d5dfd7095a9c07ade284ace2d4cd0b297f3f851b98",
+      "matches": true
+    },
+    {
+      "key": "bg_grandmother_house_bedroom_morning",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_grandmother_house_bedroom_morning_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 240796,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "3a3c325e04fa2346845c4e6c88a25e0d1b1c52d860066747e2b7ef3c9e5b0d11",
+      "matches": true
+    },
+    {
+      "key": "bg_grandmother_house_entrance",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_grandmother_house_entrance_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 361242,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "04f4fed5221fb37b563bc53f42da6b74b815240fe98744425f1e2045f4d80c53",
+      "matches": true
+    },
+    {
+      "key": "bg_grandmother_house_kitchen_night",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_grandmother_house_kitchen_night_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 228162,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "9855c4e4fb78b1b0e1602d85b4b31771651626271200d86c0712bf02fdab6b32",
+      "matches": true
+    },
+    {
+      "key": "bg_grandmother_dining_evening",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_grandmother_dining_evening_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 227760,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "f31868cffe5ead9a6f0b4e916d440f1ebebbab754cefca6a2bc023d719a4604d",
+      "matches": true
+    },
+    {
+      "key": "bg_school_library_day",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_school_library_day_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 227668,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "8b5c5a25b894d709e06b8dfba116767f07355afa09b3b66c620476349136bde5",
+      "matches": true
+    },
+    {
+      "key": "bg_sun_city_school_road_morning",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_sun_city_school_road_morning_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 491872,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "6332a0d38480ed43e3d382bfb10e603e855fa718a197da2f6327b00b2bcc98b6",
+      "matches": true
+    },
+    {
+      "key": "bg_school_gate_morning",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_school_gate_morning_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 402874,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "51dd3efc2d427b2cbce26ffee17a2655706df444ac6149d833dc66ba2ef8364a",
+      "matches": true
+    },
+    {
+      "key": "bg_school_hallway_day",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_school_hallway_day_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 187400,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "ad0d44f3eb9e435867cf2d41c57156ee8250830537e95381d9e08ce6e577df46",
+      "matches": true
+    },
+    {
+      "key": "bg_school_infirmary_day",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_school_infirmary_day_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 206094,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "90e7573bdbc04be39ba3c44bdc74e3b4fefa714b8e506957e012ac7803fdcef0",
+      "matches": true
+    },
+    {
+      "key": "bg_school_classroom_morning",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_school_classroom_morning_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 211442,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "26cc746856cd677bf41b379801bac33a45d193b5d4912265a2aca10f9201cd5b",
+      "matches": true
+    },
+    {
+      "key": "bg_school_gym_day",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_school_gym_day_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 484568,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "a747b4e38c961928d6dc2172b612cd6dec97c64c185c99ea130ae304ebfdc782",
+      "matches": true
+    },
+    {
+      "key": "bg_school_construction_zone_day",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_school_construction_zone_day_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 546710,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "ebec20083b7007629d7f8b4737cb2ca93f8a10143c296dd12d1abae0f2872144",
+      "matches": true
+    },
+    {
+      "key": "bg_school_cafeteria_day",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_school_cafeteria_day_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 469078,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "ab8099fa6d01e564e6b960f87a2dcc87ffeafb1812f03cf98004aafacab73af0",
+      "matches": true
+    },
+    {
+      "key": "bg_school_construction_pit",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_school_construction_pit_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 606824,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "f8d4435af9ac6dc2bc4d19b604f77b36cc1ed93fcbed4e22614d830c78c75e4e",
+      "matches": true
+    },
+    {
+      "key": "bg_school_construction_zone_dusk",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_school_construction_zone_dusk_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 471286,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "79c50506859210ddc668401d6937e46f09dd380b359d52ec314c9dac72a50169",
+      "matches": true
+    },
+    {
+      "key": "bg_grandmother_house_entrance_night",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_grandmother_house_entrance_night_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 262948,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "b02f8d4971ebe54e46d9f7308828667cea15309c13353b3c4b9ef98c94ee9ff9",
+      "matches": true
+    },
+    {
+      "key": "bg_dream_dining_fog",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_dream_dining_fog_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 152396,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "b9c7ee021c76b0602ae42616b5956c212227d5e1e53f2072b4e184d0941abfc8",
+      "matches": true
+    },
+    {
+      "key": "bg_school_underground_dark",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_school_underground_dark_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 229650,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "c240ea65f78d39c90be74551ddc0696dc170ab3ef8f026014d5708f77201acd7",
+      "matches": true
+    },
+    {
+      "key": "bg_dream_house_loop",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_dream_house_loop_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 189054,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "849ec7d3464dba09422d5cf903fe76bd408407a1924c3c4f7638f1f31b139515",
+      "matches": true
+    },
+    {
+      "key": "bg_sun_city_old_street_night",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_sun_city_old_street_night_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 360590,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "70cc3bc11013cc3679678b786fd8658f133523f5cc85e4978a0e4e19961ec98d",
+      "matches": true
+    },
+    {
+      "key": "bg_dream_house_fracture",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_dream_house_fracture_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 212530,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "2328e21606b6e9af806565d170a87eb8b69c0f251a276327116bd84a31d63956",
+      "matches": true
+    },
+    {
+      "key": "bg_warehouse_area_night",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_warehouse_area_night_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 346142,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "7098515af9d60098409d5fb26d6a6cf46b48ad98204b95a6f4f1956bcf3df1c8",
+      "matches": true
+    },
+    {
+      "key": "bg_old_residential_search_night",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_old_residential_search_night_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 457150,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "349e0d13442fcf7d91c2a97eafbec0d49c5b87d59bfacbb7a15c633372c32200",
+      "matches": true
+    },
+    {
+      "key": "bg_residential_junction_night",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_residential_junction_night_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 518592,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "e33188e206d59b77452b2c617dc686c617e05388eef6f194bdd403e1f54e7453",
+      "matches": true
+    },
+    {
+      "key": "bg_old_district_access_night",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_old_district_access_night_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 470374,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "263bf00bbafdf13b0ccbd3a03918915a6e8af8d37ef1f86ebb1d0b84c2868128",
+      "matches": true
+    },
+    {
+      "key": "bg_old_district_battle_street_night",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_old_district_battle_street_night_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 431468,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "56ef71e111ce8103e3a65307dd24066d8e41021215c302339d9f6e49ddbc2d91",
+      "matches": true
+    },
+    {
+      "key": "bg_old_district_escape_alley_night",
+      "url": "http://127.0.0.1:43933/dimensional-war-game-source/assets/backgrounds/galgame-v1/bg_old_district_escape_alley_night_v1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 422898,
+      "size": [
+        1664,
+        936
+      ],
+      "format": "WEBP",
+      "sha256": "a6d3109c57705b3b138235bbaa6e01bec90481d0e242e076d3d942c1ae04207f",
+      "matches": true
+    }
+  ]
+}

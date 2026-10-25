@@ -1,0 +1,289 @@
+{
+  "head": "aea1d9625b16dcfcfea11336b653961aa228923b",
+  "protectedChecked": 1007,
+  "protectedDifferences": [],
+  "contentCounts": {
+    "scenes": 52,
+    "backgroundNodes": 63,
+    "backgroundKeys": 36
+  },
+  "originalWorkspaceStatusPreserved": " M 游戏说明/README.md\n M 游戏说明/工程/01-任务书.md\n M 游戏说明/工程/README.md\n?? 游戏说明/交接提示词/场景背景绘制与接入.md\n?? 游戏说明/素材制作/场景背景制作规范.md\n?? 游戏说明/素材制作/场景背景清单.md\n",
+  "imageValidation": [
+    {
+      "key": "bg_grandmother_house_dusk",
+      "decoded": true,
+      "opaque": true,
+      "ratio": "16:9",
+      "cropMatchesRaw": true,
+      "status": "候选／待用户批准"
+    },
+    {
+      "key": "bg_school_classroom_day",
+      "decoded": true,
+      "opaque": true,
+      "ratio": "16:9",
+      "cropMatchesRaw": true,
+      "status": "候选／待用户批准"
+    },
+    {
+      "key": "bg_old_district_quiet_alley_night",
+      "decoded": true,
+      "opaque": true,
+      "ratio": "16:9",
+      "cropMatchesRaw": true,
+      "status": "候选／待用户批准"
+    }
+  ],
+  "browser": {
+    "previewCount": 9,
+    "errors": 0,
+    "warnings": 0,
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  "engineering": {
+    "typecheck": "passed",
+    "testFiles": 39,
+    "tests": 569,
+    "build": "passed"
+  },
+  "newFiles": [
+    {
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_dusk_candidate_v001.png",
+      "sha256": "92eb92ac9282366b940208ca9205a3c175cc18116232aebec0d113fcb85341c2",
+      "bytes": 3138030,
+      "role": "交付文件",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_grandmother_house_dusk_candidate_v001_16x9.png",
+      "sha256": "4dd2c32e0d881a9fab24c73ce77f52af3724df4ffd49f2d6fd4b3d7fd2d5a7f1",
+      "bytes": 2956900,
+      "role": "交付文件",
+      "size": [
+        1664,
+        936
+      ]
+    },
+    {
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_candidate_v001.png",
+      "sha256": "f444c2e1df1e523164e6339ebadfc206dc325d03050a4f47da79a837aebf1e77",
+      "bytes": 2521860,
+      "role": "交付文件",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_old_district_quiet_alley_night_candidate_v001_16x9.png",
+      "sha256": "ae475000b9f7c1fcd38c6b74e074bc009afaf026b404867c9bffcea6692b65de",
+      "bytes": 2420845,
+      "role": "交付文件",
+      "size": [
+        1664,
+        936
+      ]
+    },
+    {
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_classroom_day_candidate_v001.png",
+      "sha256": "51784076fc317fcc6229b9fa024ca4c9c13a9d5941b09c69f6172008d51feb1f",
+      "bytes": 1905171,
+      "role": "交付文件",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "path": "次元战争代码/art/backgrounds/galgame-v1/bg_school_classroom_day_candidate_v001_16x9.png",
+      "sha256": "4666839be50ea1196d56af8c8b0682d5115fa0329d6d22093141ff85f8f80391",
+      "bytes": 1808238,
+      "role": "交付文件",
+      "size": [
+        1664,
+        936
+      ]
+    },
+    {
+      "path": "次元战争代码/art/backgrounds/galgame-v1/preview.html",
+      "sha256": "988394b43661ace0118c77079b7474b2c08ff664055cb133359371e1854527a5",
+      "bytes": 925,
+      "role": "交付文件"
+    },
+    {
+      "path": "次元战争代码/art/backgrounds/galgame-v1/preview.mjs",
+      "sha256": "0f625b4eb601727ec0af328a42d7d7e17ed872e4b8bd6885b959ca3547b60b3c",
+      "bytes": 4405,
+      "role": "交付文件"
+    },
+    {
+      "path": "游戏说明/工程/verification/backgrounds-v1/backgrounds-v1-overview.png",
+      "sha256": "e90dbb0e88af56e7213165c53a9e723fccd6c4161d4e4e7db1cf5046b3d93091",
+      "bytes": 2598525,
+      "role": "交付文件",
+      "size": [
+        1920,
+        1290
+      ]
+    },
+    {
+      "path": "游戏说明/工程/verification/backgrounds-v1/before.json",
+      "sha256": "0470a3dc3787920f2679b30b0b6f2e65e0cc38a35c0f2b8e7f055daafadea60f",
+      "bytes": 179529,
+      "role": "交付文件"
+    },
+    {
+      "path": "游戏说明/工程/verification/backgrounds-v1/bg_grandmother_house_dusk_clean.png",
+      "sha256": "8d7fe6aba5034a1de6d24b793c8aa7fb6881718a8d1408f62ec861d3b19e4a65",
+      "bytes": 228296,
+      "role": "交付文件",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "游戏说明/工程/verification/backgrounds-v1/bg_grandmother_house_dusk_one.png",
+      "sha256": "362c92a4edff9c19669c1178158ca74eb0269f8e5e5b77b95f1e8fd25de2ceb8",
+      "bytes": 192154,
+      "role": "交付文件",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "游戏说明/工程/verification/backgrounds-v1/bg_grandmother_house_dusk_three.png",
+      "sha256": "a0d9cd3da1141db6f1ad499c8339062d05b730dea9daa356ddcf157f08c0f41a",
+      "bytes": 201295,
+      "role": "交付文件",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "游戏说明/工程/verification/backgrounds-v1/bg_old_district_quiet_alley_night_clean.png",
+      "sha256": "3cd8fd83cd7447f9d8012c012eb51be3e350ad03d348be22d6bb7eebcb723b56",
+      "bytes": 140745,
+      "role": "交付文件",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "游戏说明/工程/verification/backgrounds-v1/bg_old_district_quiet_alley_night_one.png",
+      "sha256": "cb90191719cbaf09bdf75b46f0f2bc8b4ac4549084268452c6f4f3b02b1cccc3",
+      "bytes": 126990,
+      "role": "交付文件",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "游戏说明/工程/verification/backgrounds-v1/bg_old_district_quiet_alley_night_three.png",
+      "sha256": "6e33fda9d05bcd7d482f2476c630c45f2a9f970791388040880c2a80576d9104",
+      "bytes": 146751,
+      "role": "交付文件",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "游戏说明/工程/verification/backgrounds-v1/bg_school_classroom_day_clean.png",
+      "sha256": "1b6c8860662b10bd83b1c4b99a33e22101646bbd55dd8a0e4736f3caaa1cb10a",
+      "bytes": 118588,
+      "role": "交付文件",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "游戏说明/工程/verification/backgrounds-v1/bg_school_classroom_day_one.png",
+      "sha256": "87b22292da818bd4486dc36e248e79198c94887df54e820221e1b0d118e1d862",
+      "bytes": 111858,
+      "role": "交付文件",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "游戏说明/工程/verification/backgrounds-v1/bg_school_classroom_day_three.png",
+      "sha256": "33f9b6175eef5325dd72aa00a1af965d60e474fd3a207e097a49255381134c2a",
+      "bytes": 129923,
+      "role": "交付文件",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "游戏说明/工程/verification/backgrounds-v1/browser-preview.json",
+      "sha256": "d633f506731aa20566e0f4a913026117c8b1373c5f6833a6a23b0991736269a2",
+      "bytes": 28199,
+      "role": "交付文件"
+    },
+    {
+      "path": "游戏说明/工程/verification/backgrounds-v1/dev-error.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "本地服务器日志（未纳入交付）"
+    },
+    {
+      "path": "游戏说明/工程/verification/backgrounds-v1/dev-output.log",
+      "sha256": "6499b544b3d1bb387a6edfdfc8175b7d55f1291de30935e5b098587c4b6e9df3",
+      "bytes": 186,
+      "role": "本地服务器日志（未纳入交付）"
+    },
+    {
+      "path": "游戏说明/工程/verification/backgrounds-v1/engineering-checks.txt",
+      "sha256": "0eab0472a3462de5f55bb3c0e51c7306e5bd127321851fc7135fd79b1158f229",
+      "bytes": 1018,
+      "role": "交付文件"
+    },
+    {
+      "path": "游戏说明/工程/verification/backgrounds-v1/finish-samples.py",
+      "sha256": "d023d8ce1c4f9289c1bb0d187b795d77b69206996a250c56341b6b7c05c9fd3a",
+      "bytes": 13857,
+      "role": "交付文件"
+    },
+    {
+      "path": "游戏说明/工程/verification/backgrounds-v1/generation-manifest.json",
+      "sha256": "d185d72de4aed27b22b0756450a090100904093411af3b0dd2e5f589734f6b5e",
+      "bytes": 9725,
+      "role": "交付文件"
+    },
+    {
+      "path": "游戏说明/工程/verification/backgrounds-v1/prepare-candidates.py",
+      "sha256": "56be7d4412adc8e1808eb29caf33783aab110af5364371ffe23e4e399a69ea33",
+      "bytes": 1899,
+      "role": "交付文件"
+    },
+    {
+      "path": "游戏说明/素材制作/场景背景生成记录.md",
+      "sha256": "bd643e696785186e837c2cb368bdeefd717c71fe62b16d1a4f32201dec211677",
+      "bytes": 16035,
+      "role": "交付文件"
+    }
+  ],
+  "self": "after.json为本清单本身，不纳入自身SHA；其余交付文件逐项登记。",
+  "changes": {
+    "newDeliverableFilesIncludingThisManifest": 26,
+    "modifiedExistingFiles": 0,
+    "moved": 0,
+    "deleted": 0,
+    "localServerLogs": 2
+  },
+  "status": "候选／待用户批准；未接入、未提交、未推送、未发布"
+}

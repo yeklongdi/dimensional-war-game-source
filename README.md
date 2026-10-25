@@ -19,6 +19,8 @@ npm run build
 
 正式子路径构建：`npm run build -- --base /dimensional-war-game-source/`。
 
+2026-10-25已接入四段序幕手绘背景：36个背景键由34张WebP覆盖，保留三张用户批准样张。实际显示、加载回退和正式发布结果见[背景验收](游戏说明/工程/backgrounds-v1-verification.md)。
+
 Git仓库根目录是本目录，沿用原提交历史和现有远程仓库。Actions从代码目录运行检查，只将其`dist`发布到[现有正式网站](https://yeklongdi.github.io/dimensional-war-game-source/)。
 
 剧情原稿在说明区，正式接入的只读副本在代码区`source`。改写原稿不会自动替换正式副本；导入、导出和剧情修改仍须遵守[工程规则](次元战争代码/AGENTS.md)及[任务书](游戏说明/工程/01-任务书.md)。
