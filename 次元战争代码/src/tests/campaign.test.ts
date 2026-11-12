@@ -124,7 +124,7 @@ describe('失败、重试与旧回调隔离', () => {
     expect(Object.keys(game.flags)).toHaveLength(15);
     expect(game.flags.has_master_sword).toBe(true);
     expect(texts.join('')).not.toMatch(/【待确认】|【不可执行】|\[变量名待定\]|CHECK:|CAMERA:|镜头/);
-    expect(texts).toContain('男高看见一座漂浮在云海之上的岛屿。');
+    expect(texts).toContain('一股微凉的气息顺着剑柄涌入掌心，眼前的景象随之天旋地转——\n他看见一座漂浮在无垠云海之上的古老空岛。');
     expect(game.actors['虚拟主播']!.visible).toBe(false);
     const restarted = campaignAction(game, { type: 'restart', token: game.waiting!.token });
     expect(restarted).toMatchObject({ sceneId: 'p001', flags: {}, campaignSeed: 0, battleSerial: game.battleSerial });

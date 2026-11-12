@@ -640,7 +640,7 @@ SHOW: 老师 asset=char_teacher_placeholder [占位符] position=left
 ````text
 DIALOGUE:
 同学甲：
-这自我介绍也太像动画主角了吧……
+噗，这自我介绍也太像热血漫男主角了吧……
 ````
 
 #### source/story/prologue-v2/act1.md:407 · 角色缺少素材
@@ -650,7 +650,7 @@ DIALOGUE:
 ````text
 DIALOGUE:
 同学乙：
-转学第一天就放出这种话，真有自信。
+刚转来第一天就敢大包大揽，还挺自来熟的。
 ````
 
 #### source/story/prologue-v2/act1.md:415 · 占位素材
@@ -1168,7 +1168,7 @@ BACKGROUND: bg_school_construction_pit [占位符]
 BGM: bgm_master_sword_vision [占位符，待绑定]
 ````
 
-#### source/story/prologue-v2/act1.md:891 · 占位素材
+#### source/story/prologue-v2/act1.md:890 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1176,7 +1176,7 @@ BGM: bgm_master_sword_vision [占位符，待绑定]
 SFX: sfx_master_sword_resonance [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:892 · 占位素材 / 制作备注 / 未知指令
+#### source/story/prologue-v2/act1.md:891 · 占位素材 / 制作备注 / 未知指令
 
 - 素材仍有原始占位 / 待绑定标记。
 - 制作备注完整保留；默认不向玩家展示。
@@ -1186,7 +1186,7 @@ SFX: sfx_master_sword_resonance [占位符]
 CG: cg_master_sword_vision_placeholder [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:893 · 制作备注
+#### source/story/prologue-v2/act1.md:892 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 - 已有处理依据：任务书 §3.3：镜头说明只供制作查看。
@@ -1195,7 +1195,7 @@ CG: cg_master_sword_vision_placeholder [占位符]
 CAMERA: 镜头从剑柄金色三角宝石推进至幻象。
 ````
 
-#### source/story/prologue-v2/act1.md:895 · 调用待接入
+#### source/story/prologue-v2/act1.md:894 · 调用待接入
 
 - 调用 event_master_sword_vision 尚未接入；保留原始调用。新增战斗在运行时阻断。
 
@@ -1203,7 +1203,7 @@ CAMERA: 镜头从剑柄金色三角宝石推进至幻象。
 CALL: event_master_sword_vision
 ````
 
-#### source/story/prologue-v2/act1.md:897 · 制作备注
+#### source/story/prologue-v2/act1.md:896 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 
@@ -1214,7 +1214,7 @@ NARRATION:
 
 ### a013 · 施工区域·黑色人形
 
-#### source/story/prologue-v2/act1.md:951 · 占位素材
+#### source/story/prologue-v2/act1.md:950 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1222,7 +1222,7 @@ NARRATION:
 BACKGROUND: bg_school_construction_pit [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:952 · 占位素材
+#### source/story/prologue-v2/act1.md:951 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1230,7 +1230,7 @@ BACKGROUND: bg_school_construction_pit [占位符]
 BGM: bgm_black_humanoid_appearance [占位符，待绑定]
 ````
 
-#### source/story/prologue-v2/act1.md:954 · 占位素材
+#### source/story/prologue-v2/act1.md:953 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1238,7 +1238,7 @@ BGM: bgm_black_humanoid_appearance [占位符，待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=bottom_center
 ````
 
-#### source/story/prologue-v2/act1.md:955 · 占位素材
+#### source/story/prologue-v2/act1.md:954 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1246,7 +1246,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=bottom_center
 SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=top_right
 ````
 
-#### source/story/prologue-v2/act1.md:956 · 占位素材
+#### source/story/prologue-v2/act1.md:955 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1254,7 +1254,7 @@ SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=top_righ
 SHOW: 黑色人形 asset=char_black_humanoid_placeholder [占位符] position=bottom_left
 ````
 
-#### source/story/prologue-v2/act1.md:978 · 占位素材
+#### source/story/prologue-v2/act1.md:976 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1264,7 +1264,7 @@ SFX: sfx_fainting [占位符]
 
 ### a014 · 黑色人形战斗
 
-#### source/story/prologue-v2/act1.md:1008 · 占位素材
+#### source/story/prologue-v2/act1.md:1006 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1272,7 +1272,7 @@ SFX: sfx_fainting [占位符]
 BACKGROUND: bg_school_construction_pit [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:1009 · 占位素材
+#### source/story/prologue-v2/act1.md:1007 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1280,7 +1280,7 @@ BACKGROUND: bg_school_construction_pit [占位符]
 BGM: bgm_black_humanoid_battle [占位符，待绑定]
 ````
 
-#### source/story/prologue-v2/act1.md:1016 · 制作备注
+#### source/story/prologue-v2/act1.md:1014 · 制作备注
 
 - 制作备注完整保留；默认不向玩家展示。
 - 已有处理依据：任务书 §5.6 / §5.9 已规定战斗数值、胜负和重试；战斗奖励尚未规定，M0 不补写。
@@ -1290,7 +1290,7 @@ NARRATION:
 【待确认】黑色人形的战斗数据、胜利条件、失败处理和战斗奖励。
 ````
 
-#### source/story/prologue-v2/act1.md:1024 · 占位素材
+#### source/story/prologue-v2/act1.md:1021 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1298,7 +1298,7 @@ NARRATION:
 SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 ````
 
-#### source/story/prologue-v2/act1.md:1025 · 占位素材
+#### source/story/prologue-v2/act1.md:1022 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1306,7 +1306,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right
 ````
 
-#### source/story/prologue-v2/act1.md:1043 · 制作备注 / 变量名待定
+#### source/story/prologue-v2/act1.md:1039 · 制作备注 / 变量名待定
 
 - 制作备注完整保留；默认不向玩家展示。
 - 原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。
@@ -1316,7 +1316,7 @@ SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right
 SET: [变量名待定] 记录虚拟主播目击黑色人形
 ````
 
-#### source/story/prologue-v2/act1.md:1044 · 制作备注 / 变量名待定
+#### source/story/prologue-v2/act1.md:1040 · 制作备注 / 变量名待定
 
 - 制作备注完整保留；默认不向玩家展示。
 - 原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。
@@ -1328,7 +1328,7 @@ SET: [变量名待定] 增加男高对学校地下异常的调查进度
 
 ### a015 · 回到学校
 
-#### source/story/prologue-v2/act1.md:1052 · 占位素材
+#### source/story/prologue-v2/act1.md:1048 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1336,7 +1336,7 @@ SET: [变量名待定] 增加男高对学校地下异常的调查进度
 BACKGROUND: bg_school_hallway_day [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:1053 · 占位素材
+#### source/story/prologue-v2/act1.md:1049 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1344,7 +1344,7 @@ BACKGROUND: bg_school_hallway_day [占位符]
 BGM: bgm_school_mystery [占位符，低音量]
 ````
 
-#### source/story/prologue-v2/act1.md:1055 · 占位素材
+#### source/story/prologue-v2/act1.md:1051 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1352,7 +1352,7 @@ BGM: bgm_school_mystery [占位符，低音量]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 ````
 
-#### source/story/prologue-v2/act1.md:1056 · 占位素材
+#### source/story/prologue-v2/act1.md:1052 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1360,7 +1360,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=center_front
 ````
 
-#### source/story/prologue-v2/act1.md:1065 · 占位素材
+#### source/story/prologue-v2/act1.md:1061 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1368,7 +1368,7 @@ SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=center_f
 SFX: sfx_school_bell [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:1070 · 制作备注 / 变量名待定
+#### source/story/prologue-v2/act1.md:1066 · 制作备注 / 变量名待定
 
 - 制作备注完整保留；默认不向玩家展示。
 - 原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。
@@ -1380,7 +1380,7 @@ SET: [变量名待定] 记录男高带虚拟主播返回学校
 
 ### a015_recovery · 保健室与照顾交接
 
-#### source/story/prologue-v2/act1.md:1078 · 占位素材
+#### source/story/prologue-v2/act1.md:1074 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1388,7 +1388,7 @@ SET: [变量名待定] 记录男高带虚拟主播返回学校
 BACKGROUND: bg_school_infirmary_day [制作占位]
 ````
 
-#### source/story/prologue-v2/act1.md:1079 · 占位素材
+#### source/story/prologue-v2/act1.md:1075 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1396,7 +1396,7 @@ BACKGROUND: bg_school_infirmary_day [制作占位]
 BGM: bgm_school_daily [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/act1.md:1081 · 占位素材
+#### source/story/prologue-v2/act1.md:1077 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1404,7 +1404,7 @@ BGM: bgm_school_daily [制作占位／待绑定]
 SHOW: 男高 asset=char_male_high_normal [占位符] position=left
 ````
 
-#### source/story/prologue-v2/act1.md:1085 · 占位素材
+#### source/story/prologue-v2/act1.md:1081 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1412,19 +1412,19 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=left
 SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符] position=right
 ````
 
-#### source/story/prologue-v2/act1.md:1092 · 角色缺少素材
+#### source/story/prologue-v2/act1.md:1088 · 角色缺少素材
 
 - 说话人“保健室老师”没有任何含 asset 的 SHOW 声明。
 
 ````text
 DIALOGUE:
 保健室老师：
-先把她交给我。你去叫班主任，回来再把经过说清楚。
+先把人平放到床上交给我。你赶紧去趟办公室叫你们班主任过来，待会儿再把怎么回事说清楚。
 ````
 
 ### a015_retrieve · 放学返回施工区取剑
 
-#### source/story/prologue-v2/act1.md:1149 · 占位素材
+#### source/story/prologue-v2/act1.md:1145 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1432,7 +1432,7 @@ DIALOGUE:
 BACKGROUND: bg_school_construction_zone_dusk [制作占位]
 ````
 
-#### source/story/prologue-v2/act1.md:1150 · 占位素材
+#### source/story/prologue-v2/act1.md:1146 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1440,7 +1440,7 @@ BACKGROUND: bg_school_construction_zone_dusk [制作占位]
 BGM: bgm_sword_quiet_mystery [制作占位／待绑定]
 ````
 
-#### source/story/prologue-v2/act1.md:1154 · 占位素材
+#### source/story/prologue-v2/act1.md:1150 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1450,7 +1450,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 
 ### a016 · 序幕（二）取剑主线结束
 
-#### source/story/prologue-v2/act1.md:1193 · 占位素材
+#### source/story/prologue-v2/act1.md:1190 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1458,7 +1458,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符] position=center
 BACKGROUND: bg_grandmother_house_dusk [制作占位]
 ````
 
-#### source/story/prologue-v2/act1.md:1194 · 占位素材
+#### source/story/prologue-v2/act1.md:1191 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1466,7 +1466,7 @@ BACKGROUND: bg_grandmother_house_dusk [制作占位]
 BGM: bgm_scene_transition [占位符，待绑定]
 ````
 
-#### source/story/prologue-v2/act1.md:1196 · 制作备注 / CHECK（只记录）
+#### source/story/prologue-v2/act1.md:1193 · 制作备注 / CHECK（只记录）
 
 - 制作备注完整保留；默认不向玩家展示。
 - CHECK 中的条件与嵌套 SET / JUMP 均不解释、不执行。
@@ -1475,7 +1475,7 @@ BGM: bgm_scene_transition [占位符，待绑定]
 CHECK: has_master_sword == true [仅取剑主线可进入此终点]
 ````
 
-#### source/story/prologue-v2/act1.md:1201 · 制作备注 / 变量名待定
+#### source/story/prologue-v2/act1.md:1198 · 制作备注 / 变量名待定
 
 - 制作备注完整保留；默认不向玩家展示。
 - 原文变量名尚未确定；仅为显式 SET 生成布尔 flag，CHECK 内指令不执行。
@@ -1487,7 +1487,7 @@ SET: [变量名待定] 记录序幕（二）主线结束
 
 ### a010_return_class · 返回班级·未完成支线
 
-#### source/story/prologue-v2/act1.md:1209 · 占位素材
+#### source/story/prologue-v2/act1.md:1206 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1495,7 +1495,7 @@ SET: [变量名待定] 记录序幕（二）主线结束
 BACKGROUND: bg_school_classroom_day [占位符]
 ````
 
-#### source/story/prologue-v2/act1.md:1210 · 占位素材
+#### source/story/prologue-v2/act1.md:1207 · 占位素材
 
 - 素材仍有原始占位 / 待绑定标记。
 
@@ -1658,7 +1658,7 @@ SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=
 ````text
 DIALOGUE:
 雾中的声音：
-欢迎来到……属于你的梦。
+欢迎来到——专属于你的美梦。
 ````
 
 ### b005 · 男高拒绝留下
@@ -1702,7 +1702,7 @@ SFX: sfx_door_loop [制作占位]
 ````text
 DIALOGUE:
 雾中的声音：
-你坐下就好了呀。坐下来，再睡一会儿。
+别白费力气跑啦。乖乖坐回椅子上，再安心睡一会儿就好了呀。
 ````
 
 ### b006 · 梦外的剑鸣
@@ -1812,7 +1812,7 @@ SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复�
 ````text
 DIALOGUE:
 雾中的声音：
-这里是我的——
+站住！这可是我的梦——
 ````
 
 #### source/story/prologue-v2/prologue_3.md:461 · 占位素材
@@ -1926,7 +1926,7 @@ BACKGROUND: bg_old_residential_search_night [制作占位，场内切镜]
 ````text
 DIALOGUE:
 搜捕通讯：
-梦境反应确认。位置在这片住宅区。
+已确认梦境波动反应，源头就在这片老住宅区附近。
 ````
 
 #### source/story/prologue-v2/prologue_4.md:113 · 占位素材
@@ -2002,7 +2002,7 @@ SHOW: 黑衣队员 asset=char_organization_member_placeholder [占位符／待�
 ````text
 DIALOGUE:
 搜捕通讯：
-路口小组控制现场。其余小组继续找实验体，不要全部离开搜索区域。
+路口小组先就地控制那两个人！其余小组继续搜捕实验体，不准擅自撤离搜索区！
 ````
 
 ### c003 · 第一次配合
@@ -2304,8 +2304,8 @@ SHOW: 金发青年 asset=char_link_silent_placeholder [占位符／待核对复�
 ````text
 DIALOGUE:
 墙侧的声音：
-两位，夜路可不是这么逛的。
-再退一步，可就真撞墙了。
+两位，大半夜压马路可不是这么个逛法。
+再往后退一步，可就真撞南墙了。
 ````
 
 #### source/story/prologue-v2/prologue_4.md:515 · 占位素材

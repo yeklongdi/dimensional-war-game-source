@@ -52,7 +52,7 @@ describe('M1 节点与制作备注', () => {
   it('混合 STAGE 的镜头原句完整进入制作记录，其余正文与 JSON 保真', () => {
     const raw = JSON.stringify(storyLibrary);
     const state = startGame(storyLibrary).state;
-    expect(state.waiting).toMatchObject({ text: '男高拎着行李箱和行李袋，站在奶奶家门前。\n背景为两层老房子、门前桂花树和褪色门板。' });
+    expect(state.waiting).toMatchObject({ text: '男高拎着沉甸甸的行李箱和旅行袋，停在奶奶家门前。\n眼前的两层小楼还是记忆里的模样，爷爷生前栽下的桂花树枝叶繁茂，傍晚的余晖将树影斜斜地映在褪色的门板上。' });
     expect(Object.values(state.hiddenNotes)).toContainEqual(expect.objectContaining({ kind: 'stage-camera', raw: '镜头从房屋和桂花树缓慢推进到男高。' }));
     expect(JSON.stringify(storyLibrary)).toBe(raw);
   });
@@ -215,7 +215,7 @@ describe('M1 两幕流程', () => {
     expect(battles).toEqual(['battle_prologue_tutorial', 'battle_black_humanoid']);
     expect(Object.keys(state.flags)).toHaveLength(13);
     expect(state.flags.has_master_sword).toBe(true);
-    expect(texts).toContain('男高看见一座漂浮在云海之上的岛屿。');
+    expect(texts).toContain('一股微凉的气息顺着剑柄涌入掌心，眼前的景象随之天旋地转——\n他看见一座漂浮在无垠云海之上的古老空岛。');
     expect(state.warnings['call:event_master_sword_vision']).toBeDefined();
     expect(state.actors['大师之剑']?.visible).toBe(false);
     expect(state.actors['虚拟主播']?.visible).toBe(false);
