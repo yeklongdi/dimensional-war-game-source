@@ -5,27 +5,34 @@ import type { NavigationAction } from '../router.js';
 import type { GameState } from '../state.js';
 import { button, element } from './elements.js';
 import { chapterTitles } from '../story/chapter-policy.js';
+import { locationActions } from './loop-view.js';
+import { loopToken } from '../loop/route.js';
+import type { LoopAction } from '../loop/types.js';
 
 /** 非模态地点浮窗；卡片本身即进入操作，地图始终可以拖缩。 */
 export class MapPopup {
   readonly root = element('section', 'map-location-popup');
   private readonly title = element('h2');
   private readonly content = element('div', 'map-popup-levels');
+  private readonly labels = element('p', 'eyebrow', '地点 / 关卡');
+  private readonly note = element('p', 'map-popup-note', '点击关卡开始或继续。已完成关卡仅供查看。');
   private readonly close: HTMLButtonElement;
   private readonly dispatch: (action: NavigationAction) => void;
+  private readonly dispatchLoop: (action: LoopAction) => void;
   private readonly cards = new Map<string, HTMLButtonElement>();
   private token = ''; private key = '';
-  constructor(dispatch: (action: NavigationAction) => void, close: () => void) {
+  constructor(dispatch: (action: NavigationAction) => void, close: () => void, dispatchLoop: (action: LoopAction) => void) {
     this.dispatch = dispatch;
+    this.dispatchLoop = dispatchLoop;
     this.root.hidden = true; this.root.tabIndex = -1; this.root.id = 'map-location-popup';
     this.root.dataset.testid = 'map-panel'; this.root.setAttribute('role', 'dialog');
     this.root.setAttribute('aria-modal', 'false'); this.root.setAttribute('aria-labelledby', 'map-popup-title');
     this.title.id = 'map-popup-title';
     this.close = button('×', 'map-popup-close', close); this.close.classList.add('map-popup-close'); this.close.setAttribute('aria-label', '关闭地点关卡');
     const heading = element('header', 'map-popup-heading');
-    const labels = element('div'); labels.append(element('p', 'eyebrow', '地点 / 关卡'), this.title);
+    const labels = element('div'); labels.append(this.labels, this.title);
     heading.append(labels, this.close);
-    this.root.append(heading, this.content, element('p', 'map-popup-note', '点击关卡开始或继续。已完成关卡仅供查看。'));
+    this.root.append(heading, this.content, this.note);
     this.root.addEventListener('click', event => event.stopPropagation());
   }
   render(state: GameState) {
@@ -34,10 +41,23 @@ export class MapPopup {
     this.token = navigationToken(state); this.root.hidden = !map.popupOpen;
     if (!map.popupOpen) return;
     if (opening) this.root.scrollTop = 0;
+    if (state.postPrologue) {
+      const key = loopToken(state) + ':' + map.selected + ':' + p.status;
+      if (this.key !== key) {
+        this.key = key; this.cards.clear();
+        this.title.textContent = locationById(map.selected).name;
+        this.labels.textContent = '地点 / 行动';
+        this.note.textContent = '演示暂定配置';
+        this.content.replaceChildren(locationActions(state, map.selected, this.dispatchLoop));
+      }
+      this.root.setAttribute('aria-busy', String(p.status === 'saving'));
+      return;
+    }
     const point = (p.status === 'blocked' || p.status === 'error' || p.status === 'saving' ? p.draft : undefined)?.checkpoint ?? p.checkpoint?.checkpoint;
     const key = JSON.stringify([this.token, map.selected, p.completedLevelIds, point?.kind === 'level' ? point.levelId : 'map']);
     if (key !== this.key) {
       this.key = key; this.cards.clear(); this.content.replaceChildren(); this.root.scrollTop = 0;
+      this.labels.textContent = '地点 / 关卡'; this.note.textContent = '点击关卡开始或继续。已完成关卡仅供查看。';
       this.title.textContent = locationById(map.selected).name;
       if (!current) this.content.append(element('p', 'map-complete', '垂直切片已完成'));
       for (const level of visibleLevels(p.completedLevelIds).filter(item => item.locationId === map.selected)) {
@@ -57,5 +77,5 @@ export class MapPopup {
     for (const [id, card] of this.cards) card.disabled = id !== current?.id || p.status === 'migrating' || p.status === 'saving';
     this.root.setAttribute('aria-busy', String(p.status === 'saving' || p.status === 'migrating'));
   }
-  focusFirst() { (this.root.querySelector<HTMLButtonElement>('.map-level-card:not(:disabled)') ?? this.close).focus({ preventScroll: true }); }
+  focusFirst() { (this.content.querySelector<HTMLElement>('button:not(:disabled), summary') ?? this.close).focus({ preventScroll: true }); }
 }

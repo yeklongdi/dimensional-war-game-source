@@ -1,6 +1,6 @@
 import type { StoryLibrary } from './state.js';
 import type { LevelId } from '../content/levels.js';
-import type { SaveV2 } from './save-v2.js';
+import type { RunSnapshot } from './save-run.js';
 import { skippedFlag } from './story/skip-policy.js';
 
 export const saveKey = 'dw.save.v1';
@@ -14,7 +14,7 @@ export type SaveRead =
   | { kind: 'invalid'; raw: string; message: string }
   | { kind: 'unavailable'; message: string };
 export type ProgressState = {
-  completedLevelIds: LevelId[]; checkpoint?: SaveV2; draft?: SaveV2;
+  completedLevelIds: LevelId[]; checkpoint?: RunSnapshot; draft?: RunSnapshot;
   status: 'empty' | 'ready' | 'migrating' | 'saving' | 'saved' | 'blocked' | 'error';
   message: string; blockedRaw?: string; blockedKey?: 'v1' | 'v2'; confirming: boolean; request: number; navigation: number;
   replacement?: { key: 'v1' | 'v2'; raw: string };

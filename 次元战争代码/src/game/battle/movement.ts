@@ -7,7 +7,7 @@ export function movementStep(state: BattleState): BattleState {
   const move = state.pendingMove;
   if (!move || state.pendingReaction || state.result) return state;
   const mover = getUnit(state, move.actor)!;
-  if (!active(mover) || move.index >= move.path.length) return { ...state, pendingMove: undefined, awaitingEnd: !active(mover) };
+  if (!active(mover) || move.index >= move.path.length || mover.resources.movement < 5) return { ...state, pendingMove: undefined, awaitingEnd: !active(mover) };
   const destination = move.path[move.index]!;
   const reactors = move.reactors ?? state.order.map(entry => entry.actor).filter(id => opportunityEligible(state, getUnit(state, id)!, mover, destination));
   if (reactors.length) {

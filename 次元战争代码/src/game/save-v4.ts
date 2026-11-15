@@ -27,7 +27,7 @@ export function decodeV4(raw: string | null): VaultRead {
   const parsed = decodeV3(JSON.stringify({ ...container, version: 3 }));
   return parsed.kind === 'valid' ? parsed : invalid();
 }
-function legacyArchives(storage: StoragePort): LegacyArchive[] {
+export function legacyArchives(storage: StoragePort): LegacyArchive[] {
   const items: LegacyArchive[] = [];
   for (const key of [saveKey, saveKeyV2, saveKeyV3]) {
     const raw = storage.getItem(key);

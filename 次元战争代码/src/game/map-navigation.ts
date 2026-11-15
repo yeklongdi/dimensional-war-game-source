@@ -17,7 +17,7 @@ export function reduceMapNavigation(previous: GameState, action: MapAction): Gam
   if (previous.screen !== 'map' || !previous.map || !previous.progress) return previous;
   const map = { ...previous.map, unlock: false }, viewport = map.viewport;
   if (action.type === 'select-location' || action.type === 'focus-location') {
-    if (!visibleLevels(previous.progress.completedLevelIds).some(level => level.locationId === action.locationId)) return previous;
+    if (!previous.postPrologue && !visibleLevels(previous.progress.completedLevelIds).some(level => level.locationId === action.locationId)) return previous;
     if (action.type === 'focus-location') map.camera = focusCamera(locationById(action.locationId).position, map.camera.zoom, viewport);
     else {
       if (map.selected === action.locationId && map.popupOpen) return previous;
@@ -40,8 +40,10 @@ export function reduceMapNavigation(previous: GameState, action: MapAction): Gam
     map.viewport = { ...action.viewport }; map.camera = resizeCamera(map.camera, viewport, map.viewport);
   } else {
     const target = currentLevel(previous.progress.completedLevelIds) ?? levels[levels.length - 1]!;
-    map.selected = target.locationId; map.popupOpen = false;
-    map.camera = focusCamera(locationById(target.locationId).position, map.camera.zoom, viewport);
+    const slot = previous.postPrologue?.slot;
+    map.selected = slot === 'night' ? 'grandma_home' : slot === 'evening' ? 'school_road' : slot === 'after_school' ? 'high_school' : target.locationId;
+    map.popupOpen = false;
+    map.camera = focusCamera(locationById(map.selected).position, map.camera.zoom, viewport);
   }
   if (map.popupOpen && !pointInViewport(projectLocation(map.camera, locationById(map.selected).position, map.viewport), map.viewport)) map.popupOpen = false;
   return { ...previous, map };

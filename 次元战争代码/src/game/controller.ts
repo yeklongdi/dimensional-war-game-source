@@ -1,5 +1,6 @@
 import { AudioController } from './audio.js';
 import '../styles/system.css';
+import '../styles/loop.css';
 import { storyLibrary } from './story/library.js';
 import type { CampaignAction } from './campaign.js';
 import { navigationToken } from './router.js';
@@ -8,7 +9,9 @@ import { hydrateRuntime, paused, reduceRuntime, systemToken } from './runtime.js
 import { currentForwardAction, textClockPlan } from './fast-forward.js';
 import type { GameAction, RuntimeTransition } from './runtime.js';
 import { browserStorage } from './vault-storage.js';
-import { browserStoryVaultStore, saveKeyV4 } from './save-v4.js';
+import { saveKeyV4 } from './save-v4.js';
+import { browserGameVaultStore, saveKeyV5 } from './save-v5.js';
+import { autoSlotRevision, hasPostPrologueAuto } from './save-run.js';
 import type { VaultStore } from './vault-storage.js';
 import { saveKeyV3 } from './save-v3.js';
 import { createSettingsStore, settingsKey } from './settings.js';
@@ -20,6 +23,8 @@ import { PlayerView } from './ui/player-view.js';
 import { BattleView } from './ui/battle-view.js';
 import { MenuView } from './ui/menu-view.js';
 import { MapView } from './ui/map-view.js';
+import { LoopView } from './ui/loop-view.js';
+import type { LoopAction } from './loop/types.js';
 import { AppChrome } from './ui/app-chrome.js';
 import { SystemView } from './ui/system-view.js';
 import { chooseAi } from './battle/ai.js';
@@ -33,7 +38,7 @@ import { StoryImageWarmup } from './visual/story-images.js';
 export type PlayerPorts = { vault?: VaultStore; settingsStore?: SettingsStore; now?: () => number; randomSeed?: () => number; randomId?: () => string };
 /** 单个状态、活动视图与音频实例；时钟、存储和随机源均是 IO 边界。 */
 export function mountPlayer(root: HTMLElement, search = new URLSearchParams(location.search), ports: PlayerPorts = {}) {
-  const store = ports.vault ?? browserStoryVaultStore(storyLibrary), now = ports.now ?? Date.now;
+  const store = ports.vault ?? browserGameVaultStore(storyLibrary), now = ports.now ?? Date.now;
   const settingsStore = ports.settingsStore ?? createSettingsStore(browserStorage), newId = ports.randomId ?? (() => crypto.randomUUID());
   const parsed = readSeed(search.get('seed'), ports.randomSeed ?? (() => crypto.getRandomValues(new Uint32Array(1))[0]!));
   if (parsed.warning) console.warn(`[次元战争:seed] ${parsed.warning}`);
@@ -41,7 +46,7 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
   let state = initial.state;
   let timer: number | undefined, battleTimer: number | undefined;
   let timerToken = '', dispatching = false, disposed = false, audioScope = state.run;
-  let view: PlayerView | BattleView | MenuView | MapView | undefined, chrome: AppChrome | undefined;
+  let view: PlayerView | BattleView | MenuView | MapView | LoopView | undefined, chrome: AppChrome | undefined;
   let viewKey = '';
   const queue: GameAction[] = [], printedWarnings = new Set<string>();
   const audio = new AudioController((id, message) => play({ type: 'asset-failed', id, message }, audioScope));
@@ -80,6 +85,7 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
     }, battle.opening ? 200 : battle.pendingMove ? 180 : 350);
   }
   function play(action: CampaignAction, run = state.run) { dispatch({ type: 'play', run, action }); }
+  function loopAction(action: LoopAction) { audio.unlock(); dispatch(action); }
   function navigate(action: NavigationAction) {
     if (action.token !== navigationToken(state)) return;
     const progress = state.progress;
@@ -105,8 +111,11 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
       }, { image: images.load }, intent => {
         if (state.run === scope) dispatch({ type: 'system', intent, token: `${state.run}:system:${state.system!.uiRevision}` });
       }, { decode: images.load, peek: images.peek }, () => { if (!disposed && state.run === scope) syncClock(); });
-      else if (state.screen === 'battle') view = new BattleView(root, action => play(action, scope));
-      else if (state.screen === 'map') view = new MapView(root, navigate);
+      else if (state.screen === 'battle') view = new BattleView(root, action => play(action, scope), () => {
+        if (state.run === scope) dispatch({ type: 'system', intent: 'load', token: systemToken(state) });
+      });
+      else if (state.screen === 'map') view = new MapView(root, navigate, loopAction);
+      else if (state.screen === 'loop') view = new LoopView(root, loopAction);
       else view = new MenuView(root, dispatch);
       chrome = new AppChrome(view.stage, dispatch);
     }
@@ -129,9 +138,12 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
   }
   function dispatch(action: GameAction) {
     if (disposed) return;
-    if (action.type === 'play' || action.type === 'fast-forward') {
+    if (action.type === 'play' || action.type === 'fast-forward' || action.type === 'loop') {
       const latest = store.read();
-      if (latest.kind === 'valid' && state.system!.activeRunId && latest.data.activeRunId !== state.system!.activeRunId) queue.push({ type: 'vault-external', read: latest });
+      const system = state.system!;
+      if (latest.kind === 'valid' && system.activeRunId && (latest.data.activeRunId !== system.activeRunId
+        || ((hasPostPrologueAuto(latest) || hasPostPrologueAuto(system.read)) && autoSlotRevision(latest) !== autoSlotRevision(system.read))))
+        queue.push({ type: 'vault-external', read: latest });
     }
     if (action.type === 'system') {
       audio.unlock();
@@ -145,13 +157,14 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
         const item = queue.shift()!;
         const transition = reduceRuntime(state, item, storyLibrary, now(), item.type === 'system' ? newId() : 'unused-identity');
         if (transition.rejectedReason && view instanceof BattleView) view.showHint(transition.rejectedReason);
+        if (transition.rejectedReason && view instanceof LoopView) view.showHint(transition.rejectedReason);
         commit(transition);
       }
     } finally { dispatching = false; }
   }
   const keydown = (event: KeyboardEvent) => {
     if (disposed || paused(state) || state.progress?.confirming || event.repeat || event.isComposing) return;
-    if (event.key === 'Escape' && (state.screen === 'story' || state.screen === 'battle')) {
+    if (event.key === 'Escape' && (state.screen === 'story' || state.screen === 'battle' || state.screen === 'loop')) {
       event.preventDefault(); event.stopImmediatePropagation();
       dispatch({ type: 'system', intent: 'open', token: systemToken(state) }); return;
     }
@@ -165,7 +178,8 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
     if (state.waiting?.kind === 'text') { event.preventDefault(); play({ type: 'advance', token: state.waiting.token }); }
   };
   const storageChanged = (event: StorageEvent) => {
-    if (event.key === saveKeyV4 || event.key === saveKeyV3 || event.key === saveKeyV2 || event.key === saveKey || event.key === null) dispatch({ type: 'vault-external', read: store.read() });
+    if (event.key === saveKeyV5 || event.key === saveKeyV4 || event.key === saveKeyV3 || event.key === saveKeyV2 || event.key === saveKey || event.key === null)
+      dispatch({ type: 'vault-external', read: store.read() });
     if (event.key === settingsKey) { /* 偏好不自动覆盖当前窗口正在调节的值，刷新时读取最新持久设置。 */ }
   };
   const stopFast = () => { const action = currentForwardAction(state, 'stop'); if (action) dispatch(action); };

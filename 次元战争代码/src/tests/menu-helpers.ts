@@ -2,18 +2,24 @@ import { hydrateRuntime, reduceRuntime, systemToken } from '../game/runtime.js';
 import type { GameAction, RuntimeTransition } from '../game/runtime.js';
 import type { SystemIntent } from '../game/system-types.js';
 import { newVault, saveKeyV3 } from '../game/save-v3.js';
+import { createGameVaultStore, encodeV5, saveKeyV5 } from '../game/save-v5.js';
 import type { SaveV2 } from '../game/save-v2.js';
 import { createVaultStore } from '../game/vault-storage.js';
 import { defaults, createSettingsStore } from '../game/settings.js';
 import { storyLibrary } from '../game/story/library.js';
 import { memory, serialLock } from './map-save-helpers.js';
 
-export function menuHarness(data?: SaveV2) {
+export function menuHarness(data?: SaveV2, format: 'v3' | 'v5' = 'v3') {
   const m = memory();
-  if (data) m.values.set(saveKeyV3, JSON.stringify(newVault('initial-run-identity', data)));
+  if (data) {
+    const vault = newVault('initial-run-identity', data);
+    m.values.set(format === 'v5' ? saveKeyV5 : saveKeyV3, format === 'v5' ? encodeV5(vault) : JSON.stringify(vault));
+  }
   let fail = false, sequence = 0, time = 1792540800000;
-  const port = { ...m.storage, setItem(key: string, value: string) { if (fail) throw new Error('配额故障'); m.storage.setItem(key, value); } };
-  const store = createVaultStore(port, serialLock(), storyLibrary), settingsStore = createSettingsStore(port);
+  const port = { ...m.storage, setItem(key: string, value: string) { if (fail) throw new Error('配额故障'); m.storage.setItem(key, value); },
+    removeItem(key: string) { m.values.delete(key); } };
+  const store = format === 'v5' ? createGameVaultStore(port, serialLock(), storyLibrary) : createVaultStore(port, serialLock(), storyLibrary);
+  const settingsStore = createSettingsStore(port);
   let state = hydrateRuntime(0, store.read(), { data: { ...defaults }, message: '' }, 'client-identity-1', storyLibrary).state;
   async function apply(transition: RuntimeTransition): Promise<void> {
     state = transition.state;

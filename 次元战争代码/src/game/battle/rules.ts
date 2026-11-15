@@ -13,6 +13,9 @@ export function attackContext(state: BattleState, attacker: Unit, target: Unit, 
   else if (!hasLineOfEffect(state.grid, attacker.position, target.position)) reason = '墙体阻挡攻击线';
   if (target.status === 'unconscious' || target.status === 'stable') advantages.push('目标昏迷');
   if (target.resources.dodging) disadvantages.push('目标回避');
+  if (attack.innateAdvantage) advantages.push('先天术法');
+  if (state.timed?.some(effect => effect.actor === attacker.id && effect.kind === 'sap')) disadvantages.push('削弱');
+  if (state.timed?.some(effect => effect.actor === attacker.id && effect.kind === 'vex' && effect.source === target.id)) advantages.push('侵扰');
   if (attack.kind === 'ranged') {
     if (range > (attack.range?.normal ?? 0)) disadvantages.push('超过常规射程');
     if (state.units.some(unit => unit.team !== attacker.team && active(unit) && distance(unit.position, attacker.position) <= 1 && hasLineOfEffect(state.grid, unit.position, attacker.position))) disadvantages.push('近身敌人');
@@ -74,6 +77,7 @@ export function resolveDeathSave(unit: Unit, roll: D20Roll) {
 export function opportunityEligible(state: BattleState, reactor: Unit, mover: Unit, to: Unit['position'], source: 'walk' | 'forced' | 'teleport' = 'walk') {
   const attack = reactor.attacks.find(item => item.kind === 'melee');
   return source === 'walk' && Boolean(attack) && active(reactor) && active(mover) && reactor.team !== mover.team && reactor.resources.reaction && !mover.resources.disengaged
+    && !state.timed?.some(effect => effect.kind === 'no_opportunity' && effect.actor === reactor.id)
     && distance(reactor.position, mover.position) <= (attack?.reach ?? 1) && distance(reactor.position, to) > (attack?.reach ?? 1)
     && hasLineOfEffect(state.grid, reactor.position, mover.position);
 }

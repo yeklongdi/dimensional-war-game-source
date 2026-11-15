@@ -7,6 +7,7 @@ import type { MapCamera, MapViewport } from './map-camera.js';
 import type { MovementDraft } from './battle/movement-preview.js';
 import type { SystemState } from './system-types.js';
 import type { Settings } from './settings.js';
+import type { LoopCheckpoint } from './loop/types.js';
 
 export type StoryLibrary = Readonly<Record<string, Act>>;
 export type TextKind = 'stage' | 'dialogue' | 'inner' | 'narration';
@@ -43,7 +44,10 @@ export type BattleReturn = {
 export type GameState = {
   fastForward?: { run: number; revision: number }; fastForwardSerial?: number;
   system?: SystemState; settings?: Settings;
-  screen: 'menu' | 'map' | 'story' | 'battle' | 'battle-debug'; battle?: BattleState; battleMode?: BattleMode;
+  screen: 'menu' | 'map' | 'story' | 'battle' | 'battle-debug' | 'loop'; battle?: BattleState; battleMode?: BattleMode;
+  postPrologue?: LoopCheckpoint;
+  postBattle?: { session: number; withLink: boolean };
+  loopNotice?: string;
   movementDraft?: MovementDraft;
   progress?: ProgressState;
   activeLevelId?: LevelId;

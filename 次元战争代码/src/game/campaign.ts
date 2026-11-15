@@ -45,7 +45,7 @@ export function reduceCampaign(previous: GameState, action: CampaignAction, libr
     return connectCall({ ...transition, state: { ...transition.state, campaignSeed: previous.campaignSeed, battleSerial: previous.battleSerial } });
   }
   const battle = previous.battle, context = previous.battleReturn;
-  if (previous.screen !== 'battle' || !battle || !context) return reject('当前没有正式战斗');
+  if (previous.screen !== 'battle' || !battle || (!context && !previous.postBattle)) return reject('当前没有正式战斗');
   if (action.type === 'plan') return { ...reducePlanning(previous, action), effects: [] };
   if (action.type === 'warning' || action.type === 'asset-failed') {
     const transition = reduceGame({ ...previous, screen: 'story' }, action, library);
@@ -60,12 +60,13 @@ export function reduceCampaign(previous: GameState, action: CampaignAction, libr
   if (action.type !== 'mode' && action.type !== 'restart' && action.type !== 'continue-story' && action.type !== 'skip-battle') return reject('战斗中不接受剧情输入');
   if (action.token !== battleToken(battle)) return reject('战斗操作已过期');
   if (action.type === 'restart') {
-    if (battle.result?.outcome !== 'lose') return reject('只有失败后可以重试本场');
+    if (!context || battle.result?.outcome !== 'lose') return reject('当前战斗通过读取存档重试');
     const attempt = (previous.battleSerial ?? 0) + 1;
     return { effects: [], state: { ...previous, battleSerial: attempt, battleMode: 'idle', movementDraft: undefined, battleReturn: { ...context, attempt },
       battle: createBattle(context.definition, context.combatants, structuredClone(context.initialRng), attempt) } };
   }
   if (action.type === 'continue-story' || action.type === 'skip-battle') {
+    if (!context) return reject('当前战斗没有序幕返回点');
     const wait = previous.waiting;
     const skipped = action.type === 'skip-battle' && battle.result?.outcome !== 'win';
     if ((!skipped && battle.result?.outcome !== 'win') || wait?.kind !== 'battle' || wait.token !== context.waitToken || wait.battleId !== battle.id || context.battleId !== battle.id

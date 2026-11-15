@@ -2,7 +2,7 @@ import type { BattleMode, BattleState } from './types.js';
 import { key, occupies } from './grid.js';
 import type { MovementOverlay } from './movement-preview.js';
 import { renderMovement } from './render-movement.js';
-import { actionReason } from './battle.js';
+import { playerAttack } from './battle.js';
 import { active, currentUnit } from './state-helpers.js';
 
 export function renderBoard(canvas: HTMLCanvasElement, state: BattleState, mode: BattleMode, overlay?: MovementOverlay) {
@@ -35,8 +35,7 @@ export function renderBoard(canvas: HTMLCanvasElement, state: BattleState, mode:
     ctx.globalAlpha = occupies(unit) ? 1 : .35;
     if (actor.id === unit.id) { ctx.strokeStyle = '#d8b45a'; ctx.lineWidth = 3; ctx.strokeRect(x + 4, y + 4, 88, 88); }
     const resource = mode === 'bonus' ? 'bonus' : 'action';
-    const attack = actor.attacks.find(item => resource === 'bonus' ? item.id === 'unarmed' : true);
-    if (playerReady && ['attack', 'bonus'].includes(mode) && attack && !actionReason(state, { kind: 'attack', actor: actor.id, target: unit.id, attackId: attack.id, resource }, 'player')) {
+    if (playerReady && ['attack', 'bonus'].includes(mode) && playerAttack(state, actor, unit, resource)) {
       ctx.strokeStyle = '#df6464'; ctx.lineWidth = 3; ctx.strokeRect(x + 7, y + 7, 82, 82);
     }
     ctx.fillStyle = unit.team === 'player' ? '#385b85' : '#773d46';

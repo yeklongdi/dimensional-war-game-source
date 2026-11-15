@@ -1,11 +1,12 @@
 import type { StoryLibrary } from './state.js';
 import { saveKey } from './save-format.js';
 import { decodeV2, encodeV2, mergeV2, readSaves, saveKeyV2 } from './save-v2.js';
-import type { SaveReadV2, SaveV2 } from './save-v2.js';
+import type { SaveReadV2 } from './save-v2.js';
+import type { RunSnapshot } from './save-run.js';
 
 export type SaveRequest = { run: number; revision: number } & ({ kind: 'migrate' }
-  | { kind: 'save'; data: SaveV2; replace?: { key: 'v1' | 'v2'; raw: string } });
-export type SaveOutcome = { kind: 'saved'; data: SaveV2; migrated?: boolean } | { kind: 'stale' } | { kind: 'read'; read: SaveReadV2 };
+  | { kind: 'save'; data: RunSnapshot; replace?: { key: 'v1' | 'v2'; raw: string } });
+export type SaveOutcome = { kind: 'saved'; data: RunSnapshot; migrated?: boolean } | { kind: 'stale' } | { kind: 'read'; read: SaveReadV2<RunSnapshot> };
 export type StoragePort = { getItem(key: string): string | null; setItem(key: string, value: string): void };
 export type LockPort = { run<T>(work: () => T | Promise<T>): Promise<T> };
 export type SaveStore = {

@@ -2,15 +2,24 @@ import type { GameState } from '../state.js';
 import type { GameAction } from '../runtime.js';
 import { paused, systemToken } from '../runtime.js';
 import { defaults, textSpeeds } from '../settings.js';
-import { readSlot, slotValue } from '../save-v3.js';
+import { readRunSlot } from '../save-run.js';
 import { storyLibrary } from '../story/library.js';
 import { displaySceneTitle } from '../story/chapter-policy.js';
 import { currentLevel, levelById, levels } from '../../content/levels.js';
-import type { SaveV2 } from '../save-v2.js';
+import type { RunSnapshot } from '../save-run.js';
 import { button, element } from './elements.js';
 import { skipReason } from '../fast-forward.js';
+import { canOpenCity } from '../loop/progress.js';
+import { encounterNames, slotNames } from '../loop/config.js';
 
-export function snapshotLabel(data: SaveV2): string {
+export function snapshotLabel(data: RunSnapshot): string {
+  const loop = data.postPrologue;
+  if (loop) {
+    const phase = loop.phase;
+    const summary = phase.kind === 'deploy' ? encounterNames[phase.encounter] + ' · 出战前'
+      : { intro: '序幕后入口', city: slotNames[loop.slot], interlude: '幕间剧', crisis: '截止日', safe: '安全点', settlement: '副本结算', complete: '演示完成' }[phase.kind];
+    return '第 ' + (loop.cycle + 1) + ' 周期 · 第 ' + loop.day + ' 天 · ' + summary;
+  }
   const point = data.checkpoint;
   if (point.kind === 'map') return `太阳市地图 · ${currentLevel(data.completedLevelIds)?.name ?? '垂直切片已完成'}`;
   const level = levelById(point.levelId)!;
@@ -88,13 +97,22 @@ export class SystemView {
             ? '跳过本场战斗，按胜利继续原剧情。' : state.waiting?.kind === 'blocked-call'
               ? '跳过此处尚未制作的战斗，继续原文。' : '每句0.3秒快进，遇选项、战斗或关末停止。')));
         }
-        for (const [title, intent] of [['存档', 'save'], ['读取', 'load'], ['设置', 'settings'], ['返回游戏', 'back'], ['返回地图', 'go-map'], ['返回主菜单', 'go-menu']] as const)
-          this.content.append(button(title, `system-${intent}`, this.act(intent)));
+        for (const [title, intent] of [['存档', 'save'], ['读取', 'load'], ['设置', 'settings'], ['返回游戏', 'back'], ['返回地图', 'go-map'], ['返回主菜单', 'go-menu']] as const) {
+          const control = button(title, `system-${intent}`, this.act(intent));
+          if (intent === 'go-map' && !canOpenCity(state.postPrologue)) { control.disabled = true; control.title = '当前流程已锁定'; }
+          this.content.append(control);
+        }
       } else if (s.panel === 'settings') this.buildSettings();
       else if (s.panel === 'confirm') {
         const c = s.confirmation!;
-        const title = c.kind === 'new' ? '开始新游戏？' : c.kind === 'load' ? `读取${c.slot === 0 ? '自动档' : `手动槽${c.slot}`}？` : `覆盖手动槽${c.slot}？`;
-        const description = c.kind === 'new' ? c.replaceRaw !== undefined
+        const title = c.kind === 'cleanup-v4' ? '清理旧 v4 存档？' : c.kind === 'new' ? '开始新游戏？'
+          : c.kind === 'load' ? `读取${c.slot === 0 ? '自动档' : `手动槽${c.slot}`}？` : `覆盖手动槽${c.slot}？`;
+        const description = c.kind === 'cleanup-v4' ? '清理旧 v4 的自动档与六个手动槽。当前 v5 存档和设置继续保留。'
+          : c.kind === 'new' && s.read.format === 5 ? c.removeV4 !== undefined
+            ? '成功建立 v5 的 P001 新档后，将删除旧 v4 的自动档与六个手动槽。v1–v3 和设置继续保留。'
+            : c.replaceRaw !== undefined ? '确认后用 P001 新档替换损坏的 v5 容器。旧档和设置继续保留。'
+              : '从 P001 开始新游戏，替换当前 v5 自动档，保留手动槽和设置。'
+          : c.kind === 'new' ? c.replaceRaw !== undefined
           ? '新版记录无法完整读取。确认后建立新的v4活动进度；当前损坏的v4容器将被替换，旧版v1／v2／v3原件与设置保留。'
           : s.read.kind === 'empty' && s.read.legacy?.length ? '新版剧情需要重新开始。旧版存档原件与设置保留，不迁移或覆盖旧进度。'
             : '当前新版自动进度将被新游戏替换，新版手动存档、旧版原件和设置保留。'
@@ -116,10 +134,11 @@ export class SystemView {
   private buildSlots(saving: boolean) {
     const s = this.state!.system!;
     this.content.append(element('h1', '', saving ? '手动存档' : '读取进度'),
-      element('p', 'save-granularity', '读取后从当前场景开头继续；战斗会重新开始。'));
+      element('p', 'save-granularity', s.read.format === 5
+        ? '序幕从场景开头继续。序幕后战斗存档恢复到出战选择。' : '读取后从当前场景开头继续；战斗会重新开始。'));
     const grid = element('div', 'save-slot-grid');
     for (let slot = saving ? 1 : 0; slot <= 6; slot++) {
-      const item = s.read.kind === 'valid' ? readSlot(slotValue(s.read.data, slot), storyLibrary, s.read.data.revision) : { kind: 'empty' as const };
+      const item = s.read.kind === 'valid' ? readRunSlot(s.read, slot, storyLibrary) : { kind: 'empty' as const };
       const label = slot === 0 ? '自动档' : `手动槽${slot}`;
       const b = button('', `slot-${slot}`, this.act(saving ? 'pick-save' : 'pick-load', slot));
       b.classList.add('save-slot'); if (slot === 0) b.classList.add('auto-slot');
@@ -131,6 +150,12 @@ export class SystemView {
       grid.append(b);
     }
     this.content.append(grid);
+    if (!saving && s.read.format === 5 && s.read.v4Raw !== undefined) {
+      if (s.read.kind === 'valid' && readRunSlot(s.read, 0, storyLibrary).kind === 'valid')
+        this.content.append(element('p', 'save-warning', '检测到仍保留的旧 v4 档，可单独确认清理。'),
+          button('清理旧 v4 存档', 'system-cleanup-v4', this.act('cleanup-v4')));
+      else this.content.append(element('p', '', '旧 v4 档仍在。首次成功新建 v5 后会按确认内容清理。'));
+    }
     if (!saving && s.read.legacy?.length) {
       const archive = element('section', 'legacy-archives'); archive.dataset.testid = 'legacy-archives';
       archive.append(element('h2', '', '旧版本存档 · 只读保留'));

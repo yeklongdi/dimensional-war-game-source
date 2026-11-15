@@ -22,22 +22,28 @@ export function walkable(grid: Grid, p: Point, units: readonly Unit[], mover: st
   return tile(grid, p) === 'floor' && !units.some(unit => unit.id !== mover && occupies(unit) && same(unit.position, p));
 }
 const directions = [[0, -1], [1, -1], [1, 0], [1, 1], [0, 1], [-1, 1], [-1, 0], [-1, -1]] as const;
-export function neighbors(grid: Grid, p: Point, units: readonly Unit[], mover: string): Point[] {
-  return directions.filter(([dx, dy]) => walkable(grid, { col: p.col + dx, row: p.row + dy }, units, mover)
-    && (!dx || !dy || (walkable(grid, { col: p.col + dx, row: p.row }, units, mover) && walkable(grid, { col: p.col, row: p.row + dy }, units, mover))))
+export function neighbors(grid: Grid, p: Point, units: readonly Unit[], mover: string, flying = false): Point[] {
+  const pass = (point: Point) => flying ? inside(grid, point) && tile(grid, point) !== 'wall' : walkable(grid, point, units, mover);
+  return directions.filter(([dx, dy]) => pass({ col: p.col + dx, row: p.row + dy })
+    && (!dx || !dy || (pass({ col: p.col + dx, row: p.row }) && pass({ col: p.col, row: p.row + dy }))))
     .map(([dx, dy]) => ({ col: p.col + dx, row: p.row + dy }));
 }
 export function pathsFrom(grid: Grid, from: Point, units: readonly Unit[], mover: string, budget = Infinity): Map<string, Point[]> {
   const paths = new Map<string, Point[]>([[key(from), []]]);
   const queue = [from];
+  const flying = !!units.find(unit => unit.id === mover)?.flightSpeed;
   for (let index = 0; index < queue.length; index++) {
     const current = queue[index]!;
     const path = paths.get(key(current))!;
     if (path.length >= budget) continue;
-    for (const next of neighbors(grid, current, units, mover)) {
+    for (const next of neighbors(grid, current, units, mover, flying)) {
       if (paths.has(key(next))) continue;
       paths.set(key(next), [...path, next]); queue.push(next);
     }
+  }
+  if (flying) for (const [id, route] of paths) {
+    const end = route.at(-1);
+    if (end && !walkable(grid, end, units, mover)) paths.delete(id);
   }
   return paths;
 }

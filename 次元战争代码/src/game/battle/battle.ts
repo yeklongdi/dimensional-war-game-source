@@ -1,4 +1,4 @@
-import type { BattleDefinition, BattleState, BattleTransition, Combatant, Command, Envelope, Point, RngState, Unit } from './types.js';
+import type { BattleDefinition, BattleState, BattleTransition, Combatant, Command, Envelope, LoopCombat, Point, RngState, Unit } from './types.js';
 import { parseMap, walkable } from './grid.js';
 import { resolveMovePath } from './move-path.js';
 import { completeInitiative, initiative } from './initiative.js';
@@ -9,24 +9,29 @@ import { active, battleToken, currentUnit, emit, getUnit, replaceUnit } from './
 import { endTurn } from './turn.js';
 import { inspirationReason, resolveInspiration } from './inspiration.js';
 import { updateTutorial } from './tutorial.js';
+import { abilityReason, resolveAbility } from './loop-abilities.js';
+import { movementSpeed } from './timed.js';
 
-export function createBattle(definition: BattleDefinition, templates: readonly Combatant[], rng: RngState, session = 1, positions?: Readonly<Record<string, Point>>): BattleState {
+export function createBattle(definition: BattleDefinition, templates: readonly Combatant[], rng: RngState, session = 1,
+  positions?: Readonly<Record<string, Point>>, loop?: LoopCombat): BattleState {
   const { grid, hero, enemies } = parseMap(definition.map);
   const units: Unit[] = definition.spawnOrder.map((id, index) => {
     const template = templates.find(item => item.id === id);
     const position = positions?.[id] ?? (index === 0 ? hero[0] : enemies[index - 1]);
     if (!template || !position) throw new Error(`缺少单位或出生点 ${id}`);
-    return { ...structuredClone(template), position: { ...position }, hp: template.maxHp, tempHp: template.team === 'player' ? definition.heroLoadout?.tempHp ?? 0 : 0, status: 'active', prone: false, saves: { successes: 0, failures: 0 },
+    const carry = id === 'hero' ? loop?.hero : undefined;
+    return { ...structuredClone(template), position: { ...position }, hp: carry?.hp ?? template.maxHp, tempHp: carry?.tempHp ?? (template.team === 'player' ? definition.heroLoadout?.tempHp ?? 0 : 0), status: 'active', prone: false, saves: { successes: 0, failures: 0 },
       resources: { movement: 0, action: false, bonus: false, reaction: true, martialAttack: false, disengaged: false, dodging: false } };
   });
   if (units.some(unit => !walkable(grid, unit.position, units, unit.id))) throw new Error('出生点必须为空地且不能重叠');
   const rolled = initiative(units, rng);
   let state: BattleState = { id: definition.id, title: definition.title, session, revision: 0, seed: rng.kind === 'seeded' ? rng.seed : 0,
     grid, units, order: rolled.order, turnIndex: 0, round: 1, rng: rolled.rng, initialRng: structuredClone(rng), aiMoved: false, awaitingEnd: false, log: [] };
-  const player = units.find(unit => unit.team === 'player')!;
+  if (loop) state = { ...state, loop: structuredClone(loop), timed: [], turns: {} };
+  const player = units.find(unit => unit.id === 'hero') ?? units.find(unit => unit.team === 'player')!;
   if (definition.opening) state.opening = definition.opening;
   if (definition.tutorial) state.tutorial = { seen: [] };
-  if (player.tempHp > 0) state = emit(state, { kind: 'temp-hp', actor: player.id, amount: player.tempHp });
+  if (!loop && player.tempHp > 0) state = emit(state, { kind: 'temp-hp', actor: player.id, amount: player.tempHp });
   if (definition.heroLoadout?.inspiration) {
     state.inspiration = { [player.id]: definition.heroLoadout.inspiration };
     const entry = rolled.entries.find(item => item.actor === player.id)!;
@@ -50,16 +55,28 @@ export function actionReason(state: BattleState, command: Command, origin: Envel
   if (origin !== (unit.team === 'player' ? 'player' : 'ai')) return '当前不能操作该阵营';
   if (!active(unit)) return '行动者已失去战斗能力';
   if (command.kind === 'end') return '';
+  if (command.kind === 'ability') return origin === 'player' ? abilityReason(state, unit, command) : '只有玩家可使用此能力';
   if (command.kind === 'move') {
     return resolveMovePath(state, unit, command.to, command.path).reason;
   }
   if (command.kind !== 'attack') return unit.resources.action ? '' : '动作已用完';
   const target = getUnit(state, command.target), attack = unit.attacks.find(item => item.id === command.attackId);
   if (!attack || !target) return '找不到攻击或目标';
-  if (unit.team === 'player' && command.resource === 'action' && attack.id !== unit.attacks[0]?.id) return '动作攻击使用本场主手';
+  if (!state.loop && unit.team === 'player' && command.resource === 'action' && attack.id !== unit.attacks[0]?.id) return '动作攻击使用本场主手';
   if (command.resource === 'action' && !unit.resources.action) return '动作已用完';
-  if (command.resource === 'bonus' && (!unit.resources.bonus || !unit.resources.martialAttack || !unit.features.includes('martial_arts') || attack.id !== 'unarmed')) return '附赠徒手需要先执行符合条件的攻击动作，且附赠动作尚未使用';
+  if (command.resource === 'bonus' && (!unit.resources.bonus || !unit.features.includes('martial_arts') || attack.id !== 'unarmed'
+    || (!unit.resources.martialAttack && !unit.features.includes('martial_arts_2024'))))
+    return state.loop ? '当前不能使用附赠徒手' : '附赠徒手需要先执行符合条件的攻击动作，且附赠动作尚未使用';
   return attackContext(state, unit, target, attack).reason;
+}
+
+export function playerAttack(state: BattleState, actor: Unit, target: Unit, resource: 'action' | 'bonus'): Extract<Command, { kind: 'attack' }> | undefined {
+  const attacks = resource === 'bonus' ? actor.attacks.filter(attack => attack.id === 'unarmed') : state.loop ? actor.attacks : actor.attacks.slice(0, 1);
+  for (const attack of attacks) {
+    const command = { kind: 'attack', actor: actor.id, target: target.id, attackId: attack.id, resource } as const;
+    if (!actionReason(state, command, 'player')) return command;
+  }
+  return undefined;
 }
 
 export function reduceBattle(state: BattleState, envelope: Envelope): BattleTransition {
@@ -76,6 +93,7 @@ export function reduceBattle(state: BattleState, envelope: Envelope): BattleTran
   else if (command.kind === 'step') next = movementStep(next);
   else if (command.kind === 'react') next = respondReaction(next, command.take);
   else if (command.kind === 'advance-turn' || command.kind === 'end') next = endTurn(next);
+  else if (command.kind === 'ability') next = resolveAbility(next, getUnit(next, command.actor)!, command);
   else {
     const unit = getUnit(next, command.actor)!;
     if (command.kind === 'move') {
@@ -88,7 +106,7 @@ export function reduceBattle(state: BattleState, envelope: Envelope): BattleTran
       next = strike(next, unit.id, command.target, attack, command.resource);
     } else {
       next = replaceUnit(next, { ...unit, resources: { ...unit.resources, action: false,
-        movement: unit.resources.movement + (command.kind === 'dash' ? unit.speed : 0),
+        movement: unit.resources.movement + (command.kind === 'dash' ? movementSpeed(next, unit) : 0),
         disengaged: unit.resources.disengaged || command.kind === 'disengage', dodging: unit.resources.dodging || command.kind === 'dodge' } });
       next = emit(next, { kind: 'resource', actor: unit.id, action: command.kind });
     }

@@ -5,7 +5,8 @@ import { battleToken } from '../battle/state-helpers.js';
 import { getBattleDefinition } from '../battle/definitions.js';
 import { button, element } from './elements.js';
 
-export function renderBattleDialog(root: HTMLElement, game: GameState, send: (command: Command) => void, dispatch: (action: BattleAction) => void) {
+export function renderBattleDialog(root: HTMLElement, game: GameState, send: (command: Command) => void,
+  dispatch: (action: BattleAction) => void, load?: () => void) {
   const state = game.battle!, pending = state.pendingRoll, token = battleToken(state);
   root.replaceChildren(); root.hidden = !state.pendingReaction && !state.result && !pending;
   if (root.hidden) return;
@@ -19,12 +20,15 @@ export function renderBattleDialog(root: HTMLElement, game: GameState, send: (co
     pending.roll.dice.forEach((value, index) => panel.append(button(`重掷第${index + 1}颗（${value}）`, `inspiration-die-${index}`, () => send({ kind: 'inspire', dieIndex: index }))));
     panel.append(button('保留激励，采用原骰', 'inspiration-decline', () => send({ kind: 'inspire', dieIndex: null })));
   } else if (state.pendingReaction) {
-    panel.append(element('h2', '', '男高 · 借机攻击'), element('p', '', `${state.units.find(unit => unit.id === state.pendingReaction!.moving)!.name}将离开近战触及。选择攻击会消耗一次反应。`),
+    const reactor = state.units.find(unit => unit.id === state.pendingReaction!.reactor)!;
+    panel.append(element('h2', '', reactor.name + ' · 借机攻击'), element('p', '', `${state.units.find(unit => unit.id === state.pendingReaction!.moving)!.name}将离开近战触及。选择攻击会消耗一次反应。`),
       button('借机攻击', 'reaction-attack', () => send({ kind: 'react', take: true })), button('放弃', 'reaction-decline', () => send({ kind: 'react', take: false })));
   } else if (state.result) {
     const formal = game.screen === 'battle', won = state.result.outcome === 'win';
-    panel.append(element('h2', '', won ? '战斗胜利' : '战斗失败'), element('p', '', state.result.reason === 'stable' ? '男高已稳定，但失去战斗能力（未死亡）。' : state.result.reason === 'dead' ? '男高死亡。' : getBattleDefinition(state.id).victoryText ?? '两个黑衣人均已被击败。'));
-    panel.append(formal && won ? button('继续剧情', 'battle-continue-story', () => dispatch({ type: 'continue-story', token }))
+    const winText = state.loop ? '已完成本场战斗，确认后结算并保存。' : won ? getBattleDefinition(state.id).victoryText ?? '两个黑衣人均已被击败。' : '';
+    panel.append(element('h2', '', won ? '战斗胜利' : '战斗失败'), element('p', '', state.result.reason === 'stable' ? '男高已稳定，但失去战斗能力（未死亡）。' : state.result.reason === 'dead' ? '男高死亡。' : winText));
+    if (state.loop && !won) panel.append(button('读取存档重试', 'battle-load-retry', () => load?.()));
+    else panel.append(formal && won ? button(state.loop ? '结算并继续' : '继续剧情', 'battle-continue-story', () => dispatch({ type: 'continue-story', token }))
       : button(formal ? '重试' : '重新开始', formal ? 'battle-retry' : 'battle-result-restart', () => dispatch({ type: 'restart', token })));
   }
   root.append(panel);

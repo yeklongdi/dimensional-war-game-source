@@ -2,8 +2,9 @@ import type { GameState, StoryLibrary } from './state.js';
 import { navigationToken, reduceApp, startApp } from './router.js';
 import type { AppAction, AppTransition } from './router.js';
 import { normalizedCheckpoint } from './save-v2.js';
-import type { SaveV2 } from './save-v2.js';
-import { fingerprint, readSlot, slotValue } from './save-v3.js';
+import type { RunSnapshot } from './save-run.js';
+import { autoSlotRevision, hasPostPrologueAuto, readRunSlot } from './save-run.js';
+import { fingerprint, slotValue } from './save-v3.js';
 import type { VaultRead } from './save-v3.js';
 import type { VaultRequest } from './vault-storage.js';
 import { defaults, validSettings } from './settings.js';
@@ -27,7 +28,7 @@ export function runtimeStart(seed: number, read: VaultRead, settings: SettingsRe
 export function hydrateRuntime(seed: number, read: VaultRead, settings: SettingsRead, clientId: string, library: StoryLibrary): RuntimeTransition {
   const result = runtimeStart(seed, read, settings, clientId), s = result.state.system!;
   if (read.kind === 'valid') {
-    const auto = readSlot(read.data.auto, library, read.data.revision);
+    const auto = readRunSlot(read, 0, library);
     if (auto.kind === 'valid') result.state = { ...startApp(seed, { kind: 'valid', data: auto.record.data }).state, system: s, settings: settings.data };
     else { s.message = auto.kind === 'invalid' ? '自动档损坏；有效手动槽仍可读取，原槽未覆盖。' : ''; }
   } else if (read.kind === 'migration') {
@@ -36,24 +37,28 @@ export function hydrateRuntime(seed: number, read: VaultRead, settings: Settings
   } else if ('message' in read) s.message = read.message;
   return result;
 }
-export function progressSnapshot(state: GameState, now: number): SaveV2 {
+export function progressSnapshot(state: GameState, now: number): RunSnapshot {
   const p = state.progress!;
   const checkpoint = state.activeLevelId ? { kind: 'level' as const, levelId: state.activeLevelId, sceneId: checkpointScene(state) }
     : (p.draft ?? p.checkpoint)?.checkpoint ?? { kind: 'map' as const };
   return { version: 2, flags: { ...state.flags }, completedLevelIds: [...p.completedLevelIds],
-    checkpoint: normalizedCheckpoint(checkpoint, p.completedLevelIds), savedAt: now };
+    checkpoint: normalizedCheckpoint(checkpoint, p.completedLevelIds), savedAt: now,
+    ...(state.postPrologue ? { postPrologue: state.postPrologue } : {}) };
 }
 function wrap(t: AppTransition, system: SystemState, settings: Settings): RuntimeTransition {
   const { saves, ...rest } = t;
   return { ...rest, state: { ...t.state, system, settings }, vaults: saves?.map(r => ({ kind: 'auto', data: r.kind === 'save' ? r.data : t.state.progress!.draft!,
-    id: `${system.clientId}:${system.activeRunId}:${r.run}:${r.revision}`, runId: system.activeRunId, session: r.run, revision: r.revision })) };
+    id: `${system.clientId}:${system.activeRunId}:${r.run}:${r.revision}`, runId: system.activeRunId, session: r.run, revision: r.revision,
+    ...(system.read.format === 5 ? { expectedAutoRevision: autoSlotRevision(system.read) } : {}) })) };
 }
 function request(state: GameState, confirmation: Confirmation, newId: string): RuntimeTransition {
   const s = state.system!, revision = s.revision + 1;
   const base = { id: `${s.clientId}:${s.activeRunId}:${state.run}:operation:${revision}`, runId: s.activeRunId, session: state.run, revision };
-  const op: VaultRequest = confirmation.kind === 'manual' ? { ...base, kind: 'manual', slot: confirmation.slot,
+  const op: VaultRequest = confirmation.kind === 'cleanup-v4' ? { ...base, kind: 'cleanup-v4', expectedRaw: confirmation.removeV4! }
+    : confirmation.kind === 'manual' ? { ...base, kind: 'manual', slot: confirmation.slot,
     expected: confirmation.expected, data: confirmation.snapshot }
-    : { ...base, kind: 'activate', slot: confirmation.slot, expected: confirmation.expected, data: confirmation.snapshot, newId, replaceRaw: confirmation.replaceRaw };
+    : { ...base, kind: 'activate', slot: confirmation.slot, expected: confirmation.expected, data: confirmation.snapshot, newId,
+      replaceRaw: confirmation.replaceRaw, removeV4: confirmation.removeV4 };
   return { state: { ...state, system: { ...s, confirmation, pending: op, revision, uiRevision: s.uiRevision + 1, message: '' } }, effects: [], vaults: [op] };
 }
 function result(state: GameState, action: Extract<RuntimeAction, { type: 'vault-result' }>, library: StoryLibrary, now: number): RuntimeTransition {
@@ -67,18 +72,25 @@ function result(state: GameState, action: Extract<RuntimeAction, { type: 'vault-
     progress: automatic ? { ...p, status: 'error', message: outcome.message } : p,
     system: { ...s, pending: undefined, message: outcome.message, uiRevision: s.uiRevision + 1 } }, effects: [] };
   if (outcome.kind === 'conflict') {
-    const foreign = outcome.read.kind === 'valid' && s.activeRunId !== outcome.read.data.activeRunId;
+    const foreign = outcome.read.kind === 'valid' && (s.activeRunId !== outcome.read.data.activeRunId
+      || (op.kind === 'auto' && (op.data.postPrologue || hasPostPrologueAuto(outcome.read)) && op.expectedAutoRevision !== autoSlotRevision(outcome.read)));
     const updated = { ...s, read: outcome.read, pending: undefined, message: outcome.message, stale: foreign, uiRevision: s.uiRevision + 1 };
     if (!foreign && s.confirmation && outcome.read.kind === 'valid') {
       updated.confirmation = { ...s.confirmation, expected: fingerprint(slotValue(outcome.read.data, s.confirmation.slot < 0 ? 0 : s.confirmation.slot)) };
     }
-    return { state: { ...state, system: updated }, effects: [] };
+    if (s.confirmation?.kind === 'new' && outcome.read.format === 5 && outcome.read.kind !== 'valid')
+      updated.confirmation = { ...s.confirmation, removeV4: outcome.read.v4Raw, replaceRaw: outcome.read.kind === 'invalid' ? outcome.read.raw : undefined };
+    if (s.confirmation?.kind === 'cleanup-v4') { updated.confirmation = undefined; updated.panel = 'load'; }
+    return { state: { ...state, system: updated,
+      progress: automatic && !foreign ? { ...p, status: 'error', message: outcome.message } : p }, effects: [] };
   }
-  const nextSystem: SystemState = { ...s, read: { kind: 'valid', data: outcome.data, legacy: s.read.legacy }, pending: undefined,
-    message: '', uiRevision: s.uiRevision + Number(!automatic) };
+  const nextSystem: SystemState = { ...s, read: outcome.read ?? { kind: 'valid', data: outcome.data, legacy: s.read.legacy }, pending: undefined,
+    message: outcome.message ?? '', uiRevision: s.uiRevision + Number(!automatic) };
+  if (op.kind === 'cleanup-v4') return { state: { ...state, system: { ...nextSystem, panel: 'load', confirmation: undefined,
+    message: outcome.message ?? '旧 v4 存档已清理。' } }, effects: [] };
   if (op.kind === 'activate' || op.kind === 'migrate') {
-    const auto = readSlot(outcome.data.auto, library, outcome.data.revision);
-    if (auto.kind !== 'valid') return { state: { ...state, system: { ...nextSystem, activeRunId: outcome.data.activeRunId, panel: undefined,
+    const auto = nextSystem.read.kind === 'valid' ? readRunSlot(nextSystem.read, 0, library) : undefined;
+    if (auto?.kind !== 'valid') return { state: { ...state, system: { ...nextSystem, activeRunId: outcome.data.activeRunId, panel: undefined,
       message: '自动档损坏，请读取有效手动槽或确认新游戏。' } }, effects: [] };
     nextSystem.activeRunId = outcome.data.activeRunId; nextSystem.confirmation = undefined;
     nextSystem.panel = undefined; nextSystem.parent = undefined; nextSystem.stale = false;
@@ -88,8 +100,8 @@ function result(state: GameState, action: Extract<RuntimeAction, { type: 'vault-
     return wrap(reduceApp(base, { type: 'resume', token: navigationToken(base) }, library, now), nextSystem, state.settings!);
   }
   if (op.kind === 'manual') return { state: { ...state, system: { ...nextSystem, panel: 'save', confirmation: undefined, message: `手动槽${op.slot}已保存。` } }, effects: [] };
-  const auto = readSlot(outcome.data.auto, library, outcome.data.revision);
-  if (auto.kind !== 'valid') return same;
+  const auto = nextSystem.read.kind === 'valid' ? readRunSlot(nextSystem.read, 0, library) : undefined;
+  if (auto?.kind !== 'valid') return same;
   const t = reduceApp(state, { type: 'save-result', run: op.session, revision: op.revision, outcome: { kind: 'saved', data: auto.record.data } }, library, now);
   const read = s.read.kind === 'valid' && s.read.data.revision > outcome.data.revision ? s.read : nextSystem.read;
   return wrap(t, { ...nextSystem, read }, state.settings!);
@@ -135,18 +147,25 @@ function systemAction(state: GameState, a: SystemAction, library: StoryLibrary, 
   if (a.intent === 'confirm') return s.confirmation ? request(state, s.confirmation, newId) : same;
   if (a.intent === 'new') {
     if (state.screen !== 'menu') return same;
-    const snapshot: SaveV2 = { version: 2, flags: {}, completedLevelIds: [],
+    const snapshot: RunSnapshot = { version: 2, flags: {}, completedLevelIds: [],
       checkpoint: { kind: 'level', levelId: 'prologue_01', sceneId: 'p001' }, savedAt: now };
     const confirmation: Confirmation = { kind: 'new', slot: -1, expected: s.read.kind === 'valid' ? fingerprint(s.read.data.auto) : 'null', snapshot,
-      replaceRaw: s.read.kind === 'invalid' ? s.read.raw : undefined };
-    if (s.read.kind === 'empty' && !s.read.legacy?.length) return request(state, confirmation, newId);
+      replaceRaw: s.read.kind === 'invalid' ? s.read.raw : undefined, removeV4: s.read.kind !== 'valid' ? s.read.v4Raw : undefined };
+    if (s.read.kind === 'empty' && !s.read.legacy?.length && s.read.v4Raw === undefined) return request(state, confirmation, newId);
+    return { state: { ...state, system: { ...s, panel: 'confirm', confirmation, uiRevision: s.uiRevision + 1 } }, effects: [] };
+  }
+  if (a.intent === 'cleanup-v4') {
+    if (s.panel !== 'load' || s.read.kind !== 'valid' || s.read.format !== 5 || s.read.v4Raw === undefined) return same;
+    const auto = readRunSlot(s.read, 0, library);
+    if (auto.kind !== 'valid') return same;
+    const confirmation: Confirmation = { kind: 'cleanup-v4', slot: 0, expected: '', snapshot: auto.record.data, removeV4: s.read.v4Raw, returnPanel: 'load' };
     return { state: { ...state, system: { ...s, panel: 'confirm', confirmation, uiRevision: s.uiRevision + 1 } }, effects: [] };
   }
   if (a.intent === 'pick-load' || a.intent === 'pick-save') {
     const slot = a.slot;
     if (slot === undefined || !Number.isInteger(slot) || slot < 0 || slot > 6 || s.read.kind !== 'valid'
       || (a.intent === 'pick-save' && (slot === 0 || state.screen === 'menu')) || s.panel !== (a.intent === 'pick-save' ? 'save' : 'load')) return same;
-    const raw = slotValue(s.read.data, slot), read = readSlot(raw, library, s.read.data.revision);
+    const raw = slotValue(s.read.data, slot), read = readRunSlot(s.read, slot, library);
     if (a.intent === 'pick-load' && read.kind !== 'valid') return same;
     const confirmation: Confirmation = { kind: a.intent === 'pick-save' ? 'manual' : 'load', slot, expected: fingerprint(raw),
       snapshot: a.intent === 'pick-save' ? progressSnapshot(state, now) : read.kind === 'valid' ? read.record.data : progressSnapshot(state, now),
@@ -177,18 +196,23 @@ function runtimeCore(state: GameState, action: GameAction, library: StoryLibrary
   if (action.type === 'settings-result') return action.revision === s.settingsRevision
     ? { state: { ...state, system: { ...s, settingsMessage: action.message } }, effects: [] } : { state, effects: [] };
   if (action.type === 'vault-external') {
-    const foreign = action.read.kind === 'valid' && !!s.activeRunId && action.read.data.activeRunId !== s.activeRunId;
+    const foreign = action.read.kind === 'valid' && !!s.activeRunId && (action.read.data.activeRunId !== s.activeRunId
+      || ((hasPostPrologueAuto(action.read) || hasPostPrologueAuto(s.read)) && autoSlotRevision(action.read) !== autoSlotRevision(s.read)));
     const nextSystem = { ...s, read: action.read, stale: s.stale || foreign,
       message: foreign ? '其他窗口已切换活动进度。当前游玩已暂停，请重新载入。' : s.message };
     if (foreign || s.stale || action.read.kind !== 'valid') return { state: { ...state, system: nextSystem }, effects: [] };
-    const auto = readSlot(action.read.data.auto, library, action.read.data.revision);
+    const auto = readRunSlot(action.read, 0, library);
     return auto.kind === 'valid' ? wrap(reduceApp(state, { type: 'external-save', read: { kind: 'valid', data: auto.record.data } }, library, now), nextSystem, state.settings!)
       : { state: { ...state, system: nextSystem }, effects: [] };
   }
   const diagnostic = action.type === 'play' && ['warning', 'asset-failed'].includes(action.action.type);
   if ((paused(state) && !diagnostic && action.type !== 'resize-map') || (state.screen === 'menu' && (action.type === 'resume' || action.type === 'open-map'))) return { state, effects: [], rejectedReason: '系统菜单已暂停底层操作' };
   const t = reduceApp(state, action, library, now);
-  return t.state === state ? t : wrap(t, s, state.settings ?? { ...defaults });
+  if (t.state === state) return t;
+  const lost = t.state.postBattle && !state.battle?.result && t.state.battle?.result?.outcome === 'lose';
+  const system = lost ? { ...s, panel: 'load' as const, parent: 'system' as const, uiRevision: s.uiRevision + 1,
+    message: '战斗失败。读取自动档可回到本场出战选择。' } : s;
+  return wrap(t, system, state.settings ?? { ...defaults });
 }
 
 export function reduceRuntime(state: GameState, action: GameAction, library: StoryLibrary, now: number, newId = 'test-run-identity'): RuntimeTransition {

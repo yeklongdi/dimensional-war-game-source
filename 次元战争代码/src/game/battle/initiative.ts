@@ -11,7 +11,7 @@ export function initiative(units: readonly Unit[], initial: RngState) {
   let rng = initial;
   const entries: InitiativeEntry[] = units.map((unit, stableIndex) => {
     const result = rollD20(rng); rng = result.rng;
-    const bonus = Math.floor((unit.abilities.dex - 10) / 2);
+    const bonus = unit.initiativeBonus ?? Math.floor((unit.abilities.dex - 10) / 2);
     return { actor: unit.id, roll: result.roll, bonus, total: result.roll.chosen + bonus, dex: unit.abilities.dex, team: unit.team, stableIndex };
   });
   const order = sortInitiative(entries);

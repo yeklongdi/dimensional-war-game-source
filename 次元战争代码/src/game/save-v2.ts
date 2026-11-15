@@ -8,8 +8,8 @@ import { lateSceneError, patrolSkipped, encounterSkipped } from './story/skip-po
 export const saveKeyV2 = 'dw.save.v2';
 export type Checkpoint = { kind: 'map' } | { kind: 'level'; levelId: LevelId; sceneId: string };
 export type SaveV2 = { version: 2; flags: Record<string, boolean>; completedLevelIds: LevelId[]; checkpoint: Checkpoint; savedAt: number };
-export type SaveReadV2 = { kind: 'empty' } | { kind: 'valid'; data: SaveV2 }
-  | { kind: 'migration'; data: SaveV2; raw: string }
+export type SaveReadV2<Snapshot extends SaveV2 = SaveV2> = { kind: 'empty' } | { kind: 'valid'; data: Snapshot }
+  | { kind: 'migration'; data: Snapshot; raw: string }
   | { kind: 'invalid'; raw: string; key: 'v1' | 'v2'; message: string }
   | { kind: 'unavailable'; message: string };
 const isRecord = (value: unknown): value is Record<string, unknown> => typeof value === 'object' && value !== null && !Array.isArray(value);

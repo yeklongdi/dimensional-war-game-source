@@ -1,21 +1,22 @@
 import type { StoryLibrary } from './state.js';
 import type { StoragePort, LockPort } from './save-storage.js';
 import { saveKey } from './save-format.js';
-import { decodeV2, mergeV2, saveKeyV2 } from './save-v2.js';
-import type { SaveV2 } from './save-v2.js';
-import { fingerprint, newVault, readSlot, readVault, saveKeyV3, slotValue } from './save-v3.js';
-import type { SaveV3, VaultRead } from './save-v3.js';
+import { mergeV2, saveKeyV2 } from './save-v2.js';
+import type { RunSnapshot } from './save-run.js';
+import { fingerprint, newVault, readPrologueSnapshot, readSlot, readVault, saveKeyV3, slotValue } from './save-v3.js';
+import type { SaveV3, SnapshotReader, VaultRead } from './save-v3.js';
 
 type Base = { id: string; runId: string; session: number; revision: number };
 export type VaultRequest = Base & ({ kind: 'migrate'; newId: string }
-  | { kind: 'auto'; data: SaveV2 }
-  | { kind: 'manual'; slot: number; data: SaveV2; expected: string }
-  | { kind: 'activate'; slot: number; expected: string; newId: string; data: SaveV2; replaceRaw?: string });
-export type VaultOutcome = { kind: 'ok'; data: SaveV3 } | { kind: 'stale' }
+  | { kind: 'auto'; data: RunSnapshot; expectedAutoRevision?: number }
+  | { kind: 'manual'; slot: number; data: RunSnapshot; expected: string }
+  | { kind: 'activate'; slot: number; expected: string; newId: string; data: RunSnapshot; replaceRaw?: string; removeV4?: string }
+  | { kind: 'cleanup-v4'; expectedRaw: string });
+export type VaultOutcome = { kind: 'ok'; data: SaveV3; read?: Extract<VaultRead, { kind: 'valid' }>; message?: string } | { kind: 'stale' }
   | { kind: 'conflict'; read: VaultRead; message: string } | { kind: 'error'; message: string };
 export type VaultStore = { read(): VaultRead; write(request: VaultRequest, current: () => boolean): Promise<VaultOutcome> };
 
-export function createVaultStore(storage: StoragePort, lock: LockPort, library: StoryLibrary): VaultStore {
+export function createVaultStore(storage: StoragePort, lock: LockPort, library: StoryLibrary, decode: SnapshotReader = readPrologueSnapshot): VaultStore {
   const seen = new Set<string>();
   const read = (): VaultRead => {
     try { return readVault(storage.getItem(saveKeyV3), () => storage.getItem(saveKeyV2), () => storage.getItem(saveKey), library); }
@@ -28,7 +29,8 @@ export function createVaultStore(storage: StoragePort, lock: LockPort, library: 
         const latest = read();
         const conflict = (message: string): VaultOutcome => ({ kind: 'conflict', read: latest, message });
         if (latest.kind === 'unavailable') return { kind: 'error', message: latest.message };
-        if (request.kind !== 'migrate' && decodeV2(JSON.stringify(request.data), library).kind !== 'valid') return { kind: 'error', message: '进度未通过保存校验，原记录未修改。' };
+        if (request.kind === 'cleanup-v4') return { kind: 'error', message: '当前版本没有旧档清理入口。' };
+        if (request.kind !== 'migrate' && !decode(request.data, library)) return { kind: 'error', message: '进度未通过保存校验，原记录未修改。' };
         if (request.kind === 'activate' && (!Number.isInteger(request.slot) || request.slot < -1 || request.slot > 6)) return { kind: 'error', message: '无效读取槽位' };
         let data: SaveV3;
         if (request.kind === 'migrate') {
@@ -46,7 +48,7 @@ export function createVaultStore(storage: StoragePort, lock: LockPort, library: 
             if (latest.data.activeRunId !== request.runId) return conflict('其他窗口已切换活动进度，请重新载入。');
             const target = slotValue(latest.data, request.slot < 0 ? 0 : request.slot);
             if (fingerprint(target) !== request.expected) return conflict('目标槽位已被其他窗口更新，请重新确认。');
-            const slot = readSlot(target, library, latest.data.revision);
+            const slot = readSlot(target, library, latest.data.revision, decode);
             if (request.slot >= 0 && slot.kind !== 'valid') return conflict('该槽位不能读取。');
             const value = request.slot < 0 ? request.data : slot.kind === 'valid' ? slot.record.data : request.data;
             data = { ...latest.data, activeRunId: request.newId, revision: latest.data.revision + 1,
@@ -60,13 +62,18 @@ export function createVaultStore(storage: StoragePort, lock: LockPort, library: 
             if (fingerprint(slotValue(data, request.slot)) !== request.expected) return conflict('目标槽位已被其他窗口更新，请重新确认。');
             data.manual[request.slot - 1] = { revision: data.revision, data: structuredClone(request.data) };
           } else {
-            const auto = readSlot(data.auto, library, latest.data.revision);
+            const auto = readSlot(data.auto, library, latest.data.revision, decode);
             if (auto.kind === 'invalid') return conflict('自动档损坏，已停止自动覆盖；可读取有效手动档或确认新游戏。');
-            data.auto = { revision: data.revision, data: mergeV2(auto.kind === 'valid' ? auto.record.data : undefined, request.data) };
+            const previous = auto.kind === 'valid' ? auto.record : undefined;
+            const postPrologue = previous?.data.postPrologue || request.data.postPrologue;
+            if (postPrologue && (previous?.revision !== request.expectedAutoRevision || !request.data.postPrologue))
+              return conflict('其他窗口已更新自动档，请重新载入后继续。');
+            data.auto = { revision: data.revision, data: postPrologue
+              ? structuredClone(request.data) : mergeV2(previous?.data, request.data) };
           }
         }
-        const auto = readSlot(data.auto, library, data.revision);
-        if (request.kind !== 'manual' && (auto.kind !== 'valid' || decodeV2(JSON.stringify(auto.record.data), library).kind !== 'valid')) return { kind: 'error', message: '进度未通过保存校验，原记录未修改。' };
+        const auto = readSlot(data.auto, library, data.revision, decode);
+        if (request.kind !== 'manual' && auto.kind !== 'valid') return { kind: 'error', message: '进度未通过保存校验，原记录未修改。' };
         if (!current()) return { kind: 'stale' };
         storage.setItem(saveKeyV3, JSON.stringify(data)); seen.add(request.id);
         return { kind: 'ok', data };

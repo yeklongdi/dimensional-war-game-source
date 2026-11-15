@@ -2,10 +2,13 @@ import type { BattleState, D20Roll } from './types.js';
 import { resolveDeathSave } from './rules.js';
 import { rollD20 } from './dice.js';
 import { active, currentUnit, emit, getUnit, replaceUnit, settle } from './state-helpers.js';
+import { movementSpeed, turnEnd, turnStart } from './timed.js';
 
 export function startTurn(state: BattleState): BattleState {
+  state = turnStart(state, currentUnit(state).id);
   let unit = currentUnit(state);
-  unit = { ...unit, resources: { movement: unit.speed, action: true, bonus: unit.features.includes('martial_arts'), reaction: true, martialAttack: false, disengaged: false, dodging: false } };
+  unit = { ...unit, resources: { movement: movementSpeed(state, unit), action: true,
+    bonus: unit.features.includes('martial_arts') || unit.features.includes('loop_bonus'), reaction: true, martialAttack: false, disengaged: false, dodging: false } };
   let next = emit(replaceUnit({ ...state, aiMoved: false, awaitingEnd: false }, unit), { kind: 'turn', actor: unit.id });
   if (unit.status === 'unconscious') {
     const rolled = rollD20(next.rng);
@@ -22,6 +25,7 @@ export function completeDeathSave(state: BattleState, actor: string, roll: D20Ro
 }
 export function endTurn(state: BattleState): BattleState {
   if (state.result) return state;
+  state = turnEnd(state);
   let index = state.turnIndex, round = state.round;
   for (let count = 0; count < state.order.length; count++) {
     index = (index + 1) % state.order.length;

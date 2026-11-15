@@ -6,7 +6,8 @@ import { completionFlags, mergeFlags } from './save-format.js';
 import type { ProgressState } from './save-format.js';
 import type { SaveOutcome, SaveRequest } from './save-storage.js';
 import { mergeV2, normalizedCheckpoint } from './save-v2.js';
-import type { Checkpoint, SaveReadV2, SaveV2 } from './save-v2.js';
+import type { Checkpoint, SaveReadV2 } from './save-v2.js';
+import type { RunSnapshot } from './save-run.js';
 import { resumeScene } from './story/restore.js';
 import { currentLevel, levelById, levelContinuations, levelIds, levels } from '../content/levels.js';
 import { locationById } from '../content/map-locations.js';
@@ -14,18 +15,21 @@ import { focusCamera, mapViewport } from './map-camera.js';
 import { reduceMapNavigation } from './map-navigation.js';
 import type { MapAction } from './map-navigation.js';
 import { chapterEntryError, checkpointScene, sceneEntryError } from './story/chapter-policy.js';
+import { canOpenCity, startLoop } from './loop/progress.js';
+import { finishLoopBattle, reduceLoopRoute, showLoop } from './loop/route.js';
+import type { LoopAction } from './loop/types.js';
 
 type SimpleNavigation = 'open-map' | 'main-menu' | 'resume' | 'ask-replace' | 'cancel-replace' | 'confirm-replace';
 export type NavigationAction = { [T in SimpleNavigation]: { type: T; token: string } }[SimpleNavigation]
   | { type: 'enter-level'; token: string; levelId: string }
   | MapAction;
-export type AppAction = NavigationAction | { type: 'play'; run: number; action: CampaignAction }
+export type AppAction = NavigationAction | LoopAction | { type: 'play'; run: number; action: CampaignAction }
   | { type: 'save-result'; run: number; revision: number; outcome: SaveOutcome }
-  | { type: 'external-save'; read: SaveReadV2 };
+  | { type: 'external-save'; read: SaveReadV2<RunSnapshot> };
 export type AppTransition = CampaignTransition & { saves?: SaveRequest[] };
 export function navigationToken(state: GameState) { return `${state.run}:${state.progress?.navigation ?? 0}:${state.screen}`; }
 
-function absorb(state: GameState, read: SaveReadV2): GameState {
+function absorb(state: GameState, read: SaveReadV2<RunSnapshot>): GameState {
   const p = state.progress!;
   if (read.kind === 'migration') return { ...state, flags: mergeFlags(state.flags, read.data.flags), progress: { ...p,
     completedLevelIds: [...read.data.completedLevelIds], draft: read.data, status: 'migrating', confirming: false,
@@ -45,7 +49,7 @@ function migration(state: GameState): AppTransition {
   const revision = state.progress!.request + 1;
   return { state: { ...state, progress: { ...state.progress!, request: revision } }, effects: [], saves: [{ kind: 'migrate', run: state.run, revision }] };
 }
-export function startApp(seed: number, read: SaveReadV2): AppTransition {
+export function startApp(seed: number, read: SaveReadV2<RunSnapshot>): AppTransition {
   const progress: ProgressState = { completedLevelIds: [], status: 'empty', message: '', confirming: false, request: 0, navigation: 0 };
   const state = absorb({ ...emptyState(), screen: 'menu', campaignSeed: seed >>> 0, battleSerial: 0, progress }, read);
   return read.kind === 'migration' ? migration(state) : { state, effects: [] };
@@ -58,7 +62,8 @@ function memoryPoint(state: GameState): Checkpoint {
 function save(state: GameState, now: number, point?: Checkpoint, replace?: { key: 'v1' | 'v2'; raw: string }): AppTransition {
   const p = state.progress!;
   const checkpoint = normalizedCheckpoint(point ?? (state.activeLevelId ? { kind: 'level', levelId: state.activeLevelId, sceneId: checkpointScene(state) } : memoryPoint(state)), p.completedLevelIds);
-  const data: SaveV2 = { version: 2, flags: { ...state.flags }, completedLevelIds: [...p.completedLevelIds], checkpoint, savedAt: now };
+  const data: RunSnapshot = { version: 2, flags: { ...state.flags }, completedLevelIds: [...p.completedLevelIds], checkpoint, savedAt: now,
+    ...(state.postPrologue ? { postPrologue: state.postPrologue } : {}) };
   const revision = p.request + 1, blocked = p.status === 'blocked' && replace === undefined;
   return { effects: [], state: { ...state, progress: { ...p, draft: data, request: revision, confirming: false,
     status: blocked ? 'blocked' : 'saving', message: blocked ? p.message : '', replacement: replace } },
@@ -67,14 +72,15 @@ function save(state: GameState, now: number, point?: Checkpoint, replace?: { key
 function destination(previous: GameState, screen: 'menu' | 'map', unlock = false): GameState {
   const p = previous.progress!, target = currentLevel(p.completedLevelIds) ?? levels[levels.length - 1]!;
   return { ...previous, screen, run: previous.run + 1, activeLevelId: undefined, waiting: null, branch: undefined,
-    battle: undefined, battleReturn: undefined, battleMode: undefined, movementDraft: undefined, actors: {}, backgroundId: '', bgmId: '',
+    battle: undefined, battleReturn: undefined, postBattle: undefined, postPrologue: undefined, loopNotice: undefined,
+    battleMode: undefined, movementDraft: undefined, actors: {}, backgroundId: '', bgmId: '',
     map: { selected: target.locationId, camera: focusCamera(locationById(target.locationId).position), viewport: { ...mapViewport }, popupOpen: false, unlock },
     progress: { ...p, navigation: p.navigation + 1 } };
 }
 function handoff(previous: GameState, next: GameState): AppTransition {
   const p = previous.progress!;
   if (p.status === 'saving' && p.draft) {
-    const data = mergeV2({ ...p.draft, flags: next.flags, completedLevelIds: next.progress!.completedLevelIds }, p.draft);
+    const data = p.draft.postPrologue ? p.draft : mergeV2({ ...p.draft, flags: next.flags, completedLevelIds: next.progress!.completedLevelIds }, p.draft);
     next.progress = { ...next.progress!, draft: data, request: p.request + 1 };
     return { state: next, effects: [{ kind: 'bgm', id: '' }], saves: [{ kind: 'save', run: next.run, revision: p.request + 1, data, replace: p.replacement }] };
   }
@@ -98,6 +104,10 @@ function complete(transition: AppTransition, library: StoryLibrary, now: number)
   if (id === 'prologue_03') flags[completionFlags.prologue] = true;
   if (id === 'act1_04') flags[completionFlags.act1] = true;
   const completed = { ...state, flags, progress: { ...p, completedLevelIds } };
+  if (accepted && id === 'prologue4_01' && state.system?.read.format === 5) {
+    const started = showLoop(completed, startLoop(state.campaignSeed ?? 0));
+    return { ...save(started.state, now, { kind: 'map' }), effects: [...transition.effects, ...started.effects] };
+  }
   const successor = currentLevel(completedLevelIds);
   if (accepted && successor && levelContinuations[id] === successor.id) {
     const continued = begin(completed, library, successor.id, successor.sceneIds[0]!, now);
@@ -135,7 +145,17 @@ export function reduceApp(previous: GameState, action: AppAction, library: Story
     }
     return { state, effects: [] };
   }
+  if (action.type === 'loop') {
+    const transition = reduceLoopRoute(previous, action);
+    return transition.state.postPrologue !== previous.postPrologue
+      ? { ...save(transition.state, now, { kind: 'map' }), effects: transition.effects } : transition;
+  }
   if (action.type === 'play') {
+    if (previous.postBattle && previous.screen === 'battle' && action.run === previous.run) {
+      if (action.action.type !== 'continue-story') return reduceCampaign(previous, action.action, library);
+      const transition = finishLoopBattle(previous, action.action.token);
+      return transition.state === previous ? transition : { ...save(transition.state, now, { kind: 'map' }), effects: transition.effects };
+    }
     if (action.run !== previous.run || !previous.activeLevelId || (previous.screen !== 'story' && previous.screen !== 'battle') || p.confirming) return same();
     if (previous.activeLevelId !== currentLevel(p.completedLevelIds)?.id) return same();
     if (action.action.type === 'enter-act1' || (action.action.type === 'restart' && previous.screen === 'story')) return same();
@@ -168,12 +188,14 @@ export function reduceApp(previous: GameState, action: AppAction, library: Story
   }
   if (action.type === 'resume') {
     if (previous.screen !== 'menu' || !p.checkpoint || p.status === 'blocked' || p.status === 'saving') return same();
+    if (p.checkpoint.postPrologue) return showLoop(previous, p.checkpoint.postPrologue);
     const point = normalizedCheckpoint(p.checkpoint.checkpoint, p.completedLevelIds), level = currentLevel(p.completedLevelIds);
     return point.kind === 'level' && point.levelId === level?.id ? begin(previous, library, level.id, point.sceneId, now)
       : handoff(previous, destination(previous, 'map'));
   }
   if (action.type === 'open-map' || action.type === 'main-menu') {
     if ((action.type === 'main-menu' && previous.screen === 'menu') || (action.type === 'open-map' && previous.screen === 'map')) return same();
+    if (action.type === 'open-map' && !canOpenCity(previous.postPrologue)) return same();
     const next = destination(previous, action.type === 'open-map' ? 'map' : 'menu');
     if (action.type === 'open-map' && !p.checkpoint && !p.draft) {
       const saved = save(next, now, { kind: 'map' }); return { ...saved, effects: [{ kind: 'bgm', id: '' }] };

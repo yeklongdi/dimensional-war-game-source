@@ -3,7 +3,7 @@ import { tutorialText } from './tutorial.js';
 
 const statusNames = { active: '苏醒', unconscious: '昏迷、倒地、失能', stable: '稳定（尚未苏醒）', dead: '死亡', defeated: '被击败' };
 const actionNames = { dash: '疾走：动作已消耗，增加等于速度的移动力', disengage: '撤离：动作已消耗，本回合移动不引发借机', dodge: '回避：动作已消耗，持续到下次自身回合开始' };
-const typeNames = { bludgeoning: '钝击', slashing: '挥砍', piercing: '穿刺', acid: '酸', cold: '冷', fire: '火', lightning: '闪电', thunder: '雷鸣', necrotic: '暗蚀', poison: '毒素', radiant: '光耀' };
+const typeNames = { bludgeoning: '钝击', slashing: '挥砍', piercing: '穿刺', acid: '酸', cold: '冷', fire: '火', lightning: '闪电', thunder: '雷鸣', necrotic: '暗蚀', poison: '毒素', radiant: '光耀', force: '力场', psychic: '心灵' };
 function d20(roll: D20Roll) {
   const mode = roll.mode === 'advantage' ? '优势' : roll.mode === 'disadvantage' ? '劣势' : '普通';
   return `d20(${roll.dice.join(',')})${roll.dice.length > 1 ? `取${roll.chosen}` : ''} [${mode}]`;
@@ -29,6 +29,9 @@ export function formatEvent(state: BattleState, event: BattleEvent): string {
     case 'resource': return `${name(event.actor)} ${actionNames[event.action]}`;
     case 'ai': return `AI ${name(event.actor)}：${event.decision === 'move' ? `移动至(${event.destination?.col},${event.destination?.row})` : event.decision === 'attack' ? `攻击${name(event.target ?? '')}` : '结束回合'}`;
     case 'temp-hp': return `剑形灼痕共鸣：获得${event.amount}点临时生命值`;
+    case 'ability': return name(event.actor) + ' · ' + event.name + ' · ' + event.detail;
+    case 'ability-save': return name(event.target) + ' · ' + event.ability + ' · ' + d20(event.roll) + '+' + event.bonus
+      + '=' + (event.roll.chosen + event.bonus) + ' vs DC' + event.dc + (event.success ? '，成功' : '，失败');
     case 'tutorial': return `教学：${tutorialText[event.notice]}`;
     case 'inspiration': return `${name(event.actor)} 英雄激励·${({ initiative: '先攻', attack: '攻击', damage: '伤害', 'death-save': '死亡豁免' })[event.purpose]}：原骰(${event.original.join(',')})；${event.replacement === undefined ? '保留，不掷新骰' : `替换第${event.dieIndex! + 1}颗→${event.replacement}，必须采用新骰`}；最终骰(${event.adopted.join(',')})，采用值${event.chosen}；剩余${event.remaining}点`;
     case 'result': return event.outcome === 'win' ? '胜利：敌人全部被击败' : event.reason === 'stable' ? '失败：男高已稳定，但失去战斗能力（未死亡）' : '失败：男高死亡';

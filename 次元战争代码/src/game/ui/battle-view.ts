@@ -1,7 +1,7 @@
 import type { GameState } from '../state.js';
 import type { BattleAction } from '../battle/actions.js';
 import type { BattleState, Command } from '../battle/types.js';
-import { actionReason } from '../battle/battle.js';
+import { actionReason, playerAttack } from '../battle/battle.js';
 import { renderBoard } from '../battle/render.js';
 import { battleToken, currentUnit } from '../battle/state-helpers.js';
 import { canvasCell, occupies, same } from '../battle/grid.js';
@@ -13,6 +13,7 @@ import { tutorialText } from '../battle/tutorial.js';
 import { movementOverlay } from '../battle/movement-preview.js';
 import { MovementControls, planningInput } from './movement-controls.js';
 import { chapterTitles } from '../story/chapter-policy.js';
+import { renderAbilityPanel } from './battle-abilities.js';
 
 const statusLabels = { active: '可行动', unconscious: '昏迷·倒地·失能', stable: '稳定·失去战斗能力', dead: '死亡', defeated: '被击败' };
 export class BattleView {
@@ -27,6 +28,7 @@ export class BattleView {
   private readonly log = element('div', 'battle-log');
   private readonly footer = element('footer', 'battle-footer');
   private readonly modal = element('div', 'battle-modal');
+  private readonly abilities = element('section', 'battle-ability-panel');
   private readonly hint = element('p', 'battle-hint');
   private readonly tutorial = element('div', 'battle-tutorial');
   private readonly opening = element('div', 'battle-opening');
@@ -42,9 +44,11 @@ export class BattleView {
   private logSession = -1;
   private logCount = 0;
   private readonly dispatch: (action: BattleAction) => void;
+  private readonly load?: () => void;
 
-  constructor(root: HTMLElement, dispatch: (action: BattleAction) => void) {
+  constructor(root: HTMLElement, dispatch: (action: BattleAction) => void, load?: () => void) {
     this.dispatch = dispatch;
+    this.load = load;
     this.movement = new MovementControls(dispatch);
     this.stage.id = 'stage'; this.stage.dataset.testid = 'battle-stage'; this.stage.setAttribute('aria-label', '战棋调试场');
     this.canvas.setAttribute('aria-label', '7×5 战棋棋盘'); this.canvas.style.width = '672px'; this.canvas.style.height = '480px';
@@ -61,7 +65,8 @@ export class BattleView {
     this.log.tabIndex = 0; this.log.dataset.testid = 'battle-log';
     this.logPanel.append(element('h2', '', '战斗记录'), this.log);
     this.modal.dataset.testid = 'battle-modal'; this.modal.hidden = true;
-    this.stage.append(this.heading, this.roster, this.board, this.controls, this.logPanel, this.footer, this.movement.root, this.tutorial, this.modal);
+    this.abilities.hidden = true;
+    this.stage.append(this.heading, this.roster, this.board, this.controls, this.logPanel, this.footer, this.movement.root, this.tutorial, this.abilities, this.modal);
     root.append(this.stage);
     const resize = () => { this.stage.style.transform = `translate(-50%, -50%) scale(${Math.min(root.clientWidth / 1280, root.clientHeight / 720)})`; };
     this.resizeObserver = new ResizeObserver(resize); this.resizeObserver.observe(root); resize();
@@ -99,12 +104,16 @@ export class BattleView {
     resources.append(element('h2', '', state.pendingRoll?.kind === 'initiative' ? '先攻等待确认' : `${actor.name}的回合`), element('p', '', `移动 ${actor.resources.movement}尺　动作 ${Number(actor.resources.action)}`),
       element('p', '', `附赠 ${Number(actor.resources.bonus)}　反应 ${Number(actor.resources.reaction)}`));
     if (state.inspiration) resources.append(element('p', '', `男高英雄激励 ${state.inspiration.hero ?? 0}点`));
+    if (game.postBattle && game.postPrologue) resources.append(element('p', '', '金发青年剩余出战 ' + (game.postPrologue.linkUses - Number(game.postBattle.withLink))));
     const cards = state.units.map(unit => {
       const card = element('div', 'unit-summary');
       Object.assign(card.dataset, { testid: `unit-${unit.id}`, hp: String(unit.hp), tempHp: String(unit.tempHp), status: unit.status, col: String(unit.position.col), row: String(unit.position.row), reaction: String(unit.resources.reaction), action: String(unit.resources.action), bonus: String(unit.resources.bonus), savesSuccess: String(unit.saves.successes), savesFailure: String(unit.saves.failures), primaryAttack: unit.attacks[0]!.id });
       card.append(element('strong', '', unit.name), element('p', '', `HP ${unit.hp}/${unit.maxHp} · 临时 ${unit.tempHp}`), element('p', '', `${statusLabels[unit.status]} · (${unit.position.col},${unit.position.row})`));
       if (unit.status === 'unconscious') card.append(element('p', '', `死亡豁免：成功 ${unit.saves.successes} / 失败 ${unit.saves.failures}`));
-      if (formal && unit.team === 'player') card.append(element('p', '', `主手：${unit.attacks[0]!.name} ${unit.attacks[0]!.damage}`), element('p', '', '附赠：徒手 1d4+2'));
+      if (formal && unit.team === 'player') {
+        card.append(element('p', '', `主手：${unit.attacks[0]!.name} ${unit.attacks[0]!.damage}`));
+        if (unit.features.includes('martial_arts')) card.append(element('p', '', '附赠：徒手 ' + unit.attacks.find(attack => attack.id === 'unarmed')?.damage));
+      }
       return card;
     });
     this.roster.replaceChildren(resources, ...cards);
@@ -122,8 +131,12 @@ export class BattleView {
       if (mode === 'attack' || mode === 'bonus') {
         const target = state.units.find(unit => occupies(unit) && same(unit.position, point));
         if (!target) return this.showHint('此格没有可攻击目标');
-        const attack = actor.attacks.find(item => mode === 'bonus' ? item.id === 'unarmed' : true)!;
-        const command: Command = { kind: 'attack', actor: actor.id, target: target.id, attackId: attack.id, resource: mode === 'bonus' ? 'bonus' : 'action' };
+        const resource = mode === 'bonus' ? 'bonus' : 'action';
+        const available = playerAttack(state, actor, target, resource);
+        if (available) { send(available); return; }
+        const attack = actor.attacks.find(item => mode === 'bonus' ? item.id === 'unarmed' : true);
+        if (!attack) return this.showHint('当前角色没有此攻击');
+        const command: Command = { kind: 'attack', actor: actor.id, target: target.id, attackId: attack.id, resource };
         const reason = actionReason(state, command, 'player');
         if (reason) return this.showHint(reason);
         send(command);
@@ -149,6 +162,7 @@ export class BattleView {
       if (action) { event.preventDefault(); if (!event.repeat) this.dispatch(action); }
     };
     renderControls(this.controls, state, mode, setMode, send);
+    renderAbilityPanel(this.abilities, state, mode === 'abilities', send, () => setMode('skills'));
     if (fixtureDone) this.controls.hidden = true;
     this.renderLogs(game);
     this.renderPresentation(game);
@@ -156,7 +170,7 @@ export class BattleView {
     this.footer.replaceChildren(element('p', '', label), this.hint);
     this.hint.textContent = '';
     if (['attack', 'bonus'].includes(mode) && !state.pendingMove && !state.result) this.footer.append(button('取消选择', 'battle-cancel', () => setMode('idle')));
-    renderBattleDialog(this.modal, game, send, this.dispatch);
+    renderBattleDialog(this.modal, game, send, this.dispatch, this.load);
   }
 
   private renderMovement(game: GameState) {

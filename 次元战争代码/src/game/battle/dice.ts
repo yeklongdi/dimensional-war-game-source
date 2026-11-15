@@ -21,16 +21,18 @@ export function rollD20(rng: RngState, advantage = false, disadvantage = false):
   const second = die(20, first.rng);
   return { roll: { dice: [first.value, second.value], chosen: advantage ? Math.max(first.value, second.value) : Math.min(first.value, second.value), mode: advantage ? 'advantage' : 'disadvantage' }, rng: second.rng };
 }
-export function rollDamage(expression: string, rng: RngState, critical = false): { roll: DamageRoll; rng: RngState } {
+export function rollDamage(expression: string, rng: RngState, critical = false, explode = 0): { roll: DamageRoll; rng: RngState } {
   const match = /^(\d+)d(\d+)([+-]\d+)?$/.exec(expression);
   if (!match || Number(match[1]) < 1) throw new Error(`无效伤害骰：${expression}`);
   const sides = Number(match[2]);
   const modifier = Number(match[3] ?? 0);
   const dice: number[] = [];
   let next = rng;
-  for (let i = 0; i < Number(match[1]) * (critical ? 2 : 1); i++) {
+  let count = Number(match[1]) * (critical ? 2 : 1);
+  for (let i = 0; i < count; i++) {
     const result = die(sides, next);
     dice.push(result.value); next = result.rng;
+    if (result.value === sides && explode > 0) { count++; explode--; }
   }
   return { roll: { expression, dice, sides, modifier, total: Math.max(0, dice.reduce((a, b) => a + b, 0) + modifier), critical }, rng: next };
 }

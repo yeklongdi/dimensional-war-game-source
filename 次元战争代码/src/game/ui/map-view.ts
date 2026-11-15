@@ -9,6 +9,9 @@ import type { NavigationAction } from '../router.js';
 import type { GameState } from '../state.js';
 import { button, element } from './elements.js';
 import { MapPopup } from './map-popup.js';
+import { calendarLabel, LoopMapHud } from './loop-view.js';
+import { demoTitle } from '../loop/config.js';
+import type { LoopAction } from '../loop/types.js';
 
 export class MapView {
   readonly stage = element('main', 'stage map-stage');
@@ -16,6 +19,8 @@ export class MapView {
   private readonly world = element('div', 'city-map-world');
   private readonly pins = element('div', 'city-map-pins');
   private readonly heading = element('header', 'map-heading');
+  private readonly eyebrow = element('p', 'eyebrow', '次元战争 · 主线地图');
+  private readonly loopHud: LoopMapHud;
   private readonly controls = element('nav', 'map-controls');
   private readonly popup: MapPopup;
   private readonly lines = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -23,14 +28,16 @@ export class MapView {
   private readonly resizeObserver: ResizeObserver;
   private readonly dispatch: (action: NavigationAction) => void;
   private token = ''; private nodesKey = ''; private selected: LocationId = 'grandma_home';
+  private state?: GameState;
   private popupOpen = false; private focusPopup = false; private disposed = false;
   private measured?: { width: number; height: number };
   private drag?: { id: number; startX: number; startY: number; lastX: number; lastY: number; active: boolean };
   private suppressClick = false;
-  constructor(root: HTMLElement, dispatch: (action: NavigationAction) => void) {
+  constructor(root: HTMLElement, dispatch: (action: NavigationAction) => void, dispatchLoop: (action: LoopAction) => void = () => {}) {
     this.dispatch = dispatch; this.stage.id = 'stage'; this.stage.dataset.testid = 'city-map';
-    this.popup = new MapPopup(dispatch, () => this.closePopup(true));
-    this.heading.append(element('p', 'eyebrow', '次元战争 · 主线地图'), element('h1', '', '太阳市'), this.subtitle);
+    this.popup = new MapPopup(dispatch, () => this.closePopup(true), dispatchLoop);
+    this.loopHud = new LoopMapHud(dispatchLoop, () => this.closePopup(false));
+    this.heading.append(this.eyebrow, element('h1', '', '太阳市'), this.subtitle, this.loopHud.root);
     this.viewport.dataset.testid = 'map-viewport'; this.viewport.tabIndex = -1;
     this.viewport.setAttribute('aria-label', '太阳市地图，可拖动和缩放，点击地点查看关卡');
     const image = element('img', 'city-map-image'); image.src = assetUrl('/assets/maps/sun-city-painted-v1.png'); image.alt = '北朝上的太阳市彩绘俯视地图'; image.draggable = false;
@@ -59,9 +66,12 @@ export class MapView {
       if (!this.disposed && this.token && this.viewport.clientWidth > 0 && this.viewport.clientHeight > 0) {
         this.measured = { width: this.viewport.clientWidth, height: this.viewport.clientHeight };
         this.send({ type: 'resize-map', token: this.token, viewport: this.measured });
+        if (this.popupOpen && this.state) this.positionPopup(this.state);
       }
     });
     this.resizeObserver.observe(this.viewport);
+    this.resizeObserver.observe(this.popup.root);
+    this.resizeObserver.observe(this.heading);
   }
   dispose() {
     this.disposed = true; this.pointerCancel(); window.removeEventListener('pointerup', this.pointerUp);
@@ -116,24 +126,33 @@ export class MapView {
     if (returnFocus) this.pins.querySelector<HTMLButtonElement>(`[data-location-id="${this.selected}"]`)?.focus({ preventScroll: true });
   }
   render(state: GameState) {
+    this.state = state;
     const map = state.map!, p = state.progress!, current = currentLevel(p.completedLevelIds);
+    const loop = state.postPrologue;
     const wasOpen = this.popupOpen; this.popupOpen = map.popupOpen; this.selected = map.selected; this.token = navigationToken(state);
-    const visible = visibleLevels(p.completedLevelIds), locations = new Set(visible.map(level => level.locationId));
+    const visible = visibleLevels(p.completedLevelIds), locations = new Set(loop ? mapLocations.map(location => location.id) : visible.map(level => level.locationId));
     const camera = map.camera, scale = coverScale(map.viewport) * camera.zoom;
     this.world.style.transform = `translate(${camera.x}px, ${camera.y}px) scale(${scale})`;
     this.world.style.setProperty('--pin-scale', String(1 / scale));
     Object.assign(this.stage.dataset, { screen: 'map', completedLevels: p.completedLevelIds.join(','), currentLevel: current?.id ?? '',
       selectedLocation: map.selected, popupOpen: String(map.popupOpen), camera: JSON.stringify(camera), viewport: JSON.stringify(map.viewport),
       visibleNodes: String(locations.size), sliceComplete: String(!current) });
-    this.subtitle.textContent = current ? `主线进度 ${p.completedLevelIds.length} / ${levels.length} · ${levelMapTitle(current)}` : `垂直切片已完成 · ${levels.length} / ${levels.length}`;
-    const nodesKey = `${p.completedLevelIds.join(',')}:${state.run}`;
+    this.eyebrow.textContent = loop ? demoTitle : '次元战争 · 主线地图';
+    this.heading.classList.toggle('loop-map-heading', Boolean(loop));
+    this.subtitle.textContent = loop ? calendarLabel(loop)
+      : current ? `主线进度 ${p.completedLevelIds.length} / ${levels.length} · ${levelMapTitle(current)}` : `垂直切片已完成 · ${levels.length} / ${levels.length}`;
+    this.controls.querySelector('[data-testid="map-focus"]')!.textContent = loop ? '定位推荐地点' : '定位当前关卡';
+    this.viewport.setAttribute('aria-label', loop ? '太阳市地图，可拖动和缩放，点击地点查看行动' : '太阳市地图，可拖动和缩放，点击地点查看关卡');
+    this.loopHud.render(state);
+    if (loop) Object.assign(this.stage.dataset, { day: String(loop.day), cycle: String(loop.cycle + 1), slot: loop.slot, linkUses: String(loop.linkUses) });
+    const nodesKey = `${p.completedLevelIds.join(',')}:${state.run}:${Boolean(loop)}`;
     if (this.nodesKey !== nodesKey) {
       this.nodesKey = nodesKey; this.pins.replaceChildren(); this.drawLines(state);
       for (const location of mapLocations) if (locations.has(location.id)) {
         const pin = element('button', 'map-pin'); pin.type = 'button'; pin.dataset.testid = `location-${location.id}`; pin.dataset.locationId = location.id;
         pin.style.left = `${location.position.x * mapSize.width}px`; pin.style.top = `${location.position.y * mapSize.height}px`;
         const chapter = current?.locationId === location.id ? current.mapTitle : undefined;
-        pin.setAttribute('aria-label', `查看${location.name}的关卡${chapter ? `，当前：${chapter}` : ''}`); pin.setAttribute('aria-controls', this.popup.root.id); pin.setAttribute('aria-haspopup', 'dialog');
+        pin.setAttribute('aria-label', loop ? '查看' + location.name + '的行动' : `查看${location.name}的关卡${chapter ? `，当前：${chapter}` : ''}`); pin.setAttribute('aria-controls', this.popup.root.id); pin.setAttribute('aria-haspopup', 'dialog');
         pin.append(element('span', 'pin-dot', location.name[0]), element('span', 'pin-label', location.name));
         if (chapter) pin.append(element('span', 'pin-chapter', chapter));
         pin.addEventListener('focus', () => {
@@ -144,6 +163,7 @@ export class MapView {
         });
         pin.addEventListener('click', event => {
           event.stopPropagation(); if (event.detail > 1 || (event.detail > 0 && this.suppressClick)) return;
+          this.loopHud.close();
           this.focusPopup = event.detail === 0;
           this.send({ type: 'select-location', token: this.token, locationId: location.id });
           if (this.focusPopup && this.popupOpen) { this.popup.focusFirst(); this.focusPopup = false; }
@@ -180,6 +200,7 @@ export class MapView {
   }
   private drawLines(state: GameState) {
     const ns = 'http://www.w3.org/2000/svg'; this.lines.replaceChildren();
+    if (state.postPrologue) return;
     const defs = document.createElementNS(ns, 'defs'), marker = document.createElementNS(ns, 'marker');
     marker.id = 'map-arrow'; marker.setAttribute('viewBox', '0 0 10 10'); marker.setAttribute('refX', '9'); marker.setAttribute('refY', '5');
     marker.setAttribute('markerWidth', '6'); marker.setAttribute('markerHeight', '6'); marker.setAttribute('orient', 'auto-start-reverse');

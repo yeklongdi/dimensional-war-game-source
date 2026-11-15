@@ -12,8 +12,9 @@ export function emit(state: BattleState, event: EventData): BattleState {
 }
 export function settle(state: BattleState): BattleState {
   if (state.result) return state;
-  const hero = state.units.find(unit => unit.team === 'player');
-  const reason = hero?.status === 'dead' ? 'dead' : hero?.status === 'stable' ? 'stable'
+  const hero = getUnit(state, 'hero') ?? state.units.find(unit => unit.team === 'player');
+  const assisted = !!state.loop && state.units.some(unit => unit.id !== hero?.id && unit.team === 'player' && active(unit));
+  const reason = hero?.status === 'dead' ? 'dead' : hero?.status === 'stable' && !assisted ? 'stable'
     : state.units.filter(unit => unit.team === 'enemy').every(unit => unit.status === 'defeated' || unit.status === 'dead') ? 'eliminated' : undefined;
   if (!reason) return state;
   const outcome = reason === 'eliminated' ? 'win' : 'lose';

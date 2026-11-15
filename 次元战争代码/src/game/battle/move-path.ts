@@ -15,12 +15,14 @@ export function resolveMovePath(state: BattleState, actor: Unit, to: Point, supp
   if (!supplied.length) return fail('路线至少需要一步');
   if (!same(supplied[supplied.length - 1]!, to)) return fail('路线末格与目标不一致');
   if (supplied.length * 5 > actor.resources.movement) return fail('整条路线超出剩余移动力');
+  const flying = !!actor.flightSpeed;
+  if (flying && !walkable(state.grid, to, state.units, actor.id)) return fail('飞行必须在未被占用的空地结束');
   let previous = actor.position;
   for (const point of supplied) {
     if (!inside(state.grid, point)) return fail('路线包含越界或无效坐标');
-    if (tile(state.grid, point) !== 'floor') return fail('墙或箱子不可进入');
-    if (!walkable(state.grid, point, state.units, actor.id)) return fail('该格被在场单位占用');
-    if (!neighbors(state.grid, previous, state.units, actor.id).some(next => same(next, point))) return fail('路线必须逐格相邻，且不能斜穿墙角或单位');
+    if (!flying && tile(state.grid, point) !== 'floor') return fail('墙或箱子不可进入');
+    if (!flying && !walkable(state.grid, point, state.units, actor.id)) return fail('该格被在场单位占用');
+    if (!neighbors(state.grid, previous, state.units, actor.id, flying).some(next => same(next, point))) return fail(flying ? '飞行路线必须逐格相邻，墙体阻挡' : '路线必须逐格相邻，且不能斜穿墙角或单位');
     previous = point;
   }
   return { path: supplied.map(point => ({ ...point })), reason: '' };

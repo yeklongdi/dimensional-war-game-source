@@ -1,6 +1,8 @@
+import type { CantripId, HeroProgress, ItemId, SpellId } from '../loop/types.js';
+
 export type Point = { col: number; row: number };
 export type Grid = { width: number; height: number; tiles: ('floor' | 'wall' | 'crate')[] };
-export type DamageType = 'bludgeoning' | 'slashing' | 'piercing' | 'acid' | 'cold' | 'fire' | 'lightning' | 'thunder' | 'necrotic' | 'poison' | 'radiant';
+export type DamageType = 'bludgeoning' | 'slashing' | 'piercing' | 'acid' | 'cold' | 'fire' | 'lightning' | 'thunder' | 'necrotic' | 'poison' | 'radiant' | 'force' | 'psychic';
 export type RngState = { kind: 'seeded'; seed: number; value: number; draws: number }
   | { kind: 'sequence'; values: readonly number[]; index: number; draws: number };
 export type D20Roll = { dice: number[]; chosen: number; mode: 'normal' | 'advantage' | 'disadvantage' };
@@ -9,11 +11,18 @@ export type Attack = {
   id: string; name: string; kind: 'melee' | 'ranged'; bonus: number;
   damage: string; damageType: DamageType; reach?: number;
   range?: { normal: number; max: number }; martial?: boolean; finesse?: boolean; magical?: boolean;
+  extraDamage?: { damage: string; damageType: DamageType };
+  mastery?: 'sap' | 'vex' | 'slow';
+  onHit?: 'frost' | 'no_opportunity';
+  innateAdvantage?: boolean;
+  explode?: number;
 };
 export type Combatant = {
   id: string; name: string; team: 'player' | 'enemy';
   abilities: { str: number; dex: number; con: number; int: number | null; wis: number; cha: number };
   ac: number; maxHp: number; speed: number; attacks: Attack[]; features: string[];
+  initiativeBonus?: number; flightSpeed?: number;
+  saveProficiencies?: readonly (keyof Combatant['abilities'])[];
   resistances: DamageType[]; immunities: DamageType[]; vulnerabilities: DamageType[];
 };
 export type Resources = { movement: number; action: boolean; bonus: boolean; reaction: boolean; martialAttack: boolean; disengaged: boolean; dodging: boolean };
@@ -39,6 +48,8 @@ export type EventData =
   | { kind: 'resource'; actor: string; action: 'dash' | 'disengage' | 'dodge' }
   | { kind: 'ai'; actor: string; decision: 'move' | 'attack' | 'end'; target?: string; destination?: Point }
   | { kind: 'temp-hp'; actor: string; amount: number }
+  | { kind: 'ability'; actor: string; name: string; detail: string }
+  | { kind: 'ability-save'; actor: string; target: string; ability: string; roll: D20Roll; bonus: number; dc: number; success: boolean }
   | { kind: 'tutorial'; notice: TutorialNotice }
   | { kind: 'inspiration'; actor: string; purpose: PendingRoll['kind']; original: number[]; replacement?: number; dieIndex?: number; adopted: number[]; chosen: number; remaining: number }
   | { kind: 'result'; outcome: 'win' | 'lose'; reason: 'eliminated' | 'dead' | 'stable' };
@@ -49,6 +60,17 @@ export type BattleDefinition = {
   opening?: 'sword'; tutorial?: boolean; victoryText?: string;
 };
 export type TutorialNotice = 'move' | 'attack' | 'bonus';
+export type LoopCombat = {
+  hero: HeroProgress; items: Record<ItemId, number>; divineAid: number; sync: number; innateUntilTurn?: number;
+};
+export type AbilityId = CantripId | Exclude<SpellId, 'detect_magic'> | ItemId
+  | 'second_wind' | 'innate_sorcery' | 'divine_aid' | 'slaying_bow' | 'multiattack' | 'multiattack_bow';
+export type BurstDamage = Extract<DamageType, 'acid' | 'cold' | 'fire' | 'lightning' | 'poison' | 'psychic' | 'thunder'>;
+export type AbilityCommand = { kind: 'ability'; actor: string; ability: AbilityId; target?: string; point?: Point; burstDamage?: BurstDamage };
+export type TimedEffect = {
+  kind: 'sap' | 'vex' | 'slow' | 'frost' | 'no_opportunity';
+  actor: string; source: string; expires: number;
+};
 export type PendingRoll =
   | { kind: 'initiative'; actor: string; roll: D20Roll; entries: InitiativeEntry[] }
   | { kind: 'attack'; actor: string; target: string; attack: Attack; source: 'action' | 'bonus' | 'reaction'; roll: D20Roll }
@@ -62,6 +84,7 @@ export type BattleState = {
   pendingReaction?: { reactor: string; moving: string };
   inspiration?: Record<string, number>; pendingRoll?: PendingRoll;
   opening?: 'sword'; tutorial?: { seen: TutorialNotice[]; notice?: TutorialNotice };
+  loop?: LoopCombat; timed?: TimedEffect[]; turns?: Record<string, number>;
   result?: { outcome: 'win' | 'lose'; reason: 'eliminated' | 'dead' | 'stable' };
   log: BattleEvent[];
 };
@@ -71,7 +94,8 @@ export type Command =
   | { kind: 'dash' | 'disengage' | 'dodge' | 'end'; actor: string }
   | { kind: 'step' } | { kind: 'advance-turn' }
   | { kind: 'react'; take: boolean }
-  | { kind: 'inspire'; dieIndex: number | null } | { kind: 'finish-opening' };
+  | { kind: 'inspire'; dieIndex: number | null } | { kind: 'finish-opening' }
+  | AbilityCommand;
 export type Envelope = { token: string; origin: 'player' | 'ai' | 'system'; command: Command };
 export type BattleTransition = { state: BattleState; events: BattleEvent[]; rejectedReason?: string };
-export type BattleMode = 'idle' | 'move' | 'attack' | 'bonus' | 'skills';
+export type BattleMode = 'idle' | 'move' | 'attack' | 'bonus' | 'skills' | 'abilities';
