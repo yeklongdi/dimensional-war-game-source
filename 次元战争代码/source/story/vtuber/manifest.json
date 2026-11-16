@@ -1,0 +1,15 @@
+{
+  "contentVersion": "vtuber_bond1_v1",
+  "files": [
+    {
+      "id": "vtuber_bond1",
+      "title": "虚拟主播·羁绊一",
+      "part": "虚拟主播线",
+      "script": "羁绊一_Galgame脚本.md",
+      "count": 2,
+      "sourceFile": "source/story/vtuber/vtuber_bond1.md",
+      "from": "../游戏说明/剧情/虚拟主播线/羁绊一_Galgame脚本.md",
+      "sha256": "024a636c66a82cca239de6047d122f93996b7f18e133a749c94bf98010274f2f"
+    }
+  ]
+}

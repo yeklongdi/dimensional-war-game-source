@@ -1,4 +1,4 @@
-import type { StoryLibrary } from './state.js';
+import type { FlagValue, StoryLibrary } from './state.js';
 import type { LevelId } from '../content/levels.js';
 import type { RunSnapshot } from './save-run.js';
 import { skippedFlag } from './story/skip-policy.js';
@@ -6,7 +6,7 @@ import { skippedFlag } from './story/skip-policy.js';
 export const saveKey = 'dw.save.v1';
 export type ActId = 'prologue' | 'act1';
 export type SaveData = {
-  actId: ActId; sceneId: string; flags: Record<string, boolean>; savedAt: number; unlockedActs: ActId[];
+  actId: ActId; sceneId: string; flags: Record<string, FlagValue>; savedAt: number; unlockedActs: ActId[];
 };
 export type SaveRead =
   | { kind: 'empty' }
@@ -24,12 +24,18 @@ export const openScenes: Readonly<Record<ActId, readonly string[]>> = {
   prologue: Array.from({ length: 9 }, (_, i) => `p${String(i + 1).padStart(3, '0')}`),
   act1: Array.from({ length: 16 }, (_, i) => `a${String(i + 1).padStart(3, '0')}`),
 };
-export function unlockedFrom(flags: Readonly<Record<string, boolean>>): ActId[] {
-  return flags[completionFlags.prologue] ? ['prologue', 'act1'] : ['prologue'];
+export function unlockedFrom(flags: Readonly<Record<string, FlagValue>>): ActId[] {
+  return flags[completionFlags.prologue] === true ? ['prologue', 'act1'] : ['prologue'];
 }
-export function mergeFlags(...records: Readonly<Record<string, boolean>>[]): Record<string, boolean> {
-  const merged: Record<string, boolean> = {};
-  for (const record of records) for (const [key, value] of Object.entries(record)) merged[key] = merged[key] === true || value;
+/** 布尔取并集；数值型 flag（如亲密度等级）取较大值，避免旧档回退。 */
+export function mergeFlags(...records: Readonly<Record<string, FlagValue>>[]): Record<string, FlagValue> {
+  const merged: Record<string, FlagValue> = {};
+  for (const record of records) for (const [key, value] of Object.entries(record)) {
+    const previous = merged[key];
+    if (typeof value === 'number') merged[key] = typeof previous === 'number' ? Math.max(previous, value) : value;
+    else if (value === true) merged[key] = true;
+    else if (previous === undefined) merged[key] = false;
+  }
   return merged;
 }
 export function allowedFlags(library: StoryLibrary): ReadonlySet<string> {
@@ -53,8 +59,8 @@ export function decodeSave(raw: string | null, library: StoryLibrary): SaveRead 
     || !library[value.actId]?.scenes.some(scene => scene.id === value.sceneId)) return invalid('场景不可用');
   const known = allowedFlags(library);
   if (!record(value.flags) || Object.entries(value.flags).some(([key, flag]) => !known.has(key) || typeof flag !== 'boolean')) return invalid('进度记录不符');
-  const flags = value.flags as Record<string, boolean>;
-  if (flags[completionFlags.act1] && !flags[completionFlags.prologue]) return invalid('通关顺序不符');
+  const flags = value.flags as Record<string, FlagValue>;
+  if (flags[completionFlags.act1] === true && flags[completionFlags.prologue] !== true) return invalid('通关顺序不符');
   const unlocked = unlockedFrom(flags);
   if (!Array.isArray(value.unlockedActs) || JSON.stringify(value.unlockedActs) !== JSON.stringify(unlocked)
     || !unlocked.includes(value.actId)) return invalid('解锁记录不符');

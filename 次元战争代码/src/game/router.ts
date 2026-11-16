@@ -19,7 +19,7 @@ import { canOpenCity, startLoop } from './loop/progress.js';
 import { finishLoopBattle, reduceLoopRoute, showLoop } from './loop/route.js';
 import type { LoopAction } from './loop/types.js';
 
-type SimpleNavigation = 'open-map' | 'main-menu' | 'resume' | 'ask-replace' | 'cancel-replace' | 'confirm-replace';
+type SimpleNavigation = 'open-map' | 'main-menu' | 'resume' | 'ask-replace' | 'cancel-replace' | 'confirm-replace' | 'return-loop';
 export type NavigationAction = { [T in SimpleNavigation]: { type: T; token: string } }[SimpleNavigation]
   | { type: 'enter-level'; token: string; levelId: string }
   | MapAction;
@@ -146,15 +146,30 @@ export function reduceApp(previous: GameState, action: AppAction, library: Story
     return { state, effects: [] };
   }
   if (action.type === 'loop') {
-    const transition = reduceLoopRoute(previous, action);
-    return transition.state.postPrologue !== previous.postPrologue
-      ? { ...save(transition.state, now, { kind: 'map' }), effects: transition.effects } : transition;
+    const transition = reduceLoopRoute(previous, action, library);
+    return transition.state === previous ? transition
+      : { ...save(transition.state, now, { kind: 'map' }), effects: transition.effects };
   }
   if (action.type === 'play') {
     if (previous.postBattle && previous.screen === 'battle' && action.run === previous.run) {
       if (action.action.type !== 'continue-story') return reduceCampaign(previous, action.action, library);
       const transition = finishLoopBattle(previous, action.action.token);
       return transition.state === previous ? transition : { ...save(transition.state, now, { kind: 'map' }), effects: transition.effects };
+    }
+    if (!previous.activeLevelId && previous.screen === 'story' && previous.postPrologue) {
+      if (action.run !== previous.run || p.confirming
+        || action.action.type === 'restart' || action.action.type === 'enter-act1') return same();
+      const transition = reduceCampaign(previous, action.action, library);
+      if (transition.state === previous) return transition;
+      const state = transition.state; state.progress = { ...p };
+      const moved = state.actId !== previous.actId || state.sceneId !== previous.sceneId;
+      const reachedEnd = state.waiting?.kind === 'end' && previous.waiting?.kind !== 'end';
+      const flagsChanged = Object.keys(state.flags).length !== Object.keys(previous.flags).length
+        || Object.entries(state.flags).some(([key, value]) => previous.flags[key] !== value);
+      if (!(moved || reachedEnd || flagsChanged || ['choose', 'continue-story', 'skip-battle', 'skip-call'].includes(action.action.type))) {
+        return transition;
+      }
+      return { ...save(state, now), effects: transition.effects };
     }
     if (action.run !== previous.run || !previous.activeLevelId || (previous.screen !== 'story' && previous.screen !== 'battle') || p.confirming) return same();
     if (previous.activeLevelId !== currentLevel(p.completedLevelIds)?.id) return same();
@@ -180,6 +195,11 @@ export function reduceApp(previous: GameState, action: AppAction, library: Story
     return save({ ...previous, progress: { ...p, navigation: p.navigation + 1 } }, now, memoryPoint(previous), { key: p.blockedKey, raw: p.blockedRaw });
   }
   if (p.confirming) return same();
+  if (action.type === 'return-loop') {
+    if (previous.screen !== 'story' || !previous.postPrologue) return same();
+    const transition = showLoop(previous, previous.postPrologue);
+    return { ...save(transition.state, now, { kind: 'map' }), effects: transition.effects };
+  }
   if (action.type === 'enter-level') {
     const level = currentLevel(p.completedLevelIds);
     if (previous.screen !== 'map' || !level || action.levelId !== level.id) return same();
@@ -196,6 +216,10 @@ export function reduceApp(previous: GameState, action: AppAction, library: Story
   if (action.type === 'open-map' || action.type === 'main-menu') {
     if ((action.type === 'main-menu' && previous.screen === 'menu') || (action.type === 'open-map' && previous.screen === 'map')) return same();
     if (action.type === 'open-map' && !canOpenCity(previous.postPrologue)) return same();
+    if (action.type === 'open-map' && previous.postPrologue) {
+      const transition = showLoop(previous, previous.postPrologue);
+      return { ...save(transition.state, now, { kind: 'map' }), effects: transition.effects };
+    }
     const next = destination(previous, action.type === 'open-map' ? 'map' : 'menu');
     if (action.type === 'open-map' && !p.checkpoint && !p.draft) {
       const saved = save(next, now, { kind: 'map' }); return { ...saved, effects: [{ kind: 'bgm', id: '' }] };

@@ -107,7 +107,11 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
       view?.dispose(); audio.stopSfx(); viewKey = nextView;
       const scope = state.run;
       if (state.screen === 'story') view = new PlayerView(root, action => play(action, scope), () => audio.unlock(), () => {
-        if (state.run === scope) navigate({ type: 'open-map', token: navigationToken(state) });
+        if (state.run !== scope) return;
+        // 序幕后独立剧情结束时回到保存的循环节点，而不是清空 postPrologue 的地图。
+        navigate(state.postPrologue
+          ? { type: 'return-loop', token: navigationToken(state) }
+          : { type: 'open-map', token: navigationToken(state) });
       }, { image: images.load }, intent => {
         if (state.run === scope) dispatch({ type: 'system', intent, token: `${state.run}:system:${state.system!.uiRevision}` });
       }, { decode: images.load, peek: images.peek }, () => { if (!disposed && state.run === scope) syncClock(); });

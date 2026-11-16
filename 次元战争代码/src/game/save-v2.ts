@@ -2,12 +2,12 @@ import { levelById, levelForScene, levelIds, levels } from '../content/levels.js
 import type { LevelId } from '../content/levels.js';
 import { allowedFlags, completionFlags, decodeSave, mergeFlags } from './save-format.js';
 import type { SaveData } from './save-format.js';
-import type { StoryLibrary } from './state.js';
+import type { FlagValue, StoryLibrary } from './state.js';
 import { lateSceneError, patrolSkipped, encounterSkipped } from './story/skip-policy.js';
 
 export const saveKeyV2 = 'dw.save.v2';
 export type Checkpoint = { kind: 'map' } | { kind: 'level'; levelId: LevelId; sceneId: string };
-export type SaveV2 = { version: 2; flags: Record<string, boolean>; completedLevelIds: LevelId[]; checkpoint: Checkpoint; savedAt: number };
+export type SaveV2 = { version: 2; flags: Record<string, FlagValue>; completedLevelIds: LevelId[]; checkpoint: Checkpoint; savedAt: number };
 export type SaveReadV2<Snapshot extends SaveV2 = SaveV2> = { kind: 'empty' } | { kind: 'valid'; data: Snapshot }
   | { kind: 'migration'; data: Snapshot; raw: string }
   | { kind: 'invalid'; raw: string; key: 'v1' | 'v2'; message: string }
@@ -26,10 +26,12 @@ export function decodeV2(raw: string | null, library: StoryLibrary): SaveReadV2 
   try { value = JSON.parse(raw); } catch { return invalid('格式损坏'); }
   if (!isRecord(value) || Object.keys(value).sort().join(',') !== 'checkpoint,completedLevelIds,flags,savedAt,version' || value.version !== 2) return invalid('版本或字段不符');
   const known = allowedFlags(library);
-  if (!isRecord(value.flags) || Object.entries(value.flags).some(([key, flag]) => !known.has(key) || typeof flag !== 'boolean')) return invalid('事件记录不符');
+  const validFlag = (flag: unknown) => typeof flag === 'boolean'
+    || (typeof flag === 'number' && Number.isSafeInteger(flag) && flag >= 0);
+  if (!isRecord(value.flags) || Object.entries(value.flags).some(([key, flag]) => !known.has(key) || !validFlag(flag))) return invalid('事件记录不符');
   if (!Array.isArray(value.completedLevelIds) || value.completedLevelIds.length > levels.length
     || value.completedLevelIds.some((id, index) => id !== levelIds[index])) return invalid('完成关卡不是连续前缀');
-  const completed = value.completedLevelIds as LevelId[], flags = value.flags as Record<string, boolean>;
+  const completed = value.completedLevelIds as LevelId[], flags = value.flags as Record<string, FlagValue>;
   if (Boolean(flags[completionFlags.prologue]) !== (completed.length >= 3) || Boolean(flags[completionFlags.act1]) !== (completed.length >= 7)) return invalid('幕完成记录不符');
   if (library.prologue_3 && ((completed.length >= 7 && !flags.has_master_sword)
     || (completed.length >= 8 && (!flags.prologue_3_complete || !flags.link_summoned))

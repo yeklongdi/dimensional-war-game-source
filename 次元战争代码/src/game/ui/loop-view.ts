@@ -41,7 +41,7 @@ function summary(loop: LoopCheckpoint) {
 
 export function locationActions(state: GameState, location: LocationId, dispatch: Dispatch): HTMLElement {
   const loop = state.postPrologue!, content = element('div', 'loop-location-actions');
-  for (const event of visibleEvents(loop, location)) {
+  for (const event of visibleEvents(loop, location, state.flags)) {
     const label = event.label + ' · 1 时段' + (event.reward ? ' · +' + event.reward + ' 资金' : '');
     content.append(actionButton(state, dispatch, label, 'loop-event-' + event.id, { kind: 'event', id: event.id }));
   }

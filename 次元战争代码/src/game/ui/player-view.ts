@@ -157,9 +157,11 @@ export class PlayerView {
           button('返回主菜单', 'blocked-menu', () => this.systemNavigation!('go-menu')));
       } else if (waiting.kind === 'end') {
         const prologue = state.actId === 'prologue';
+        // 循环内的独立剧情返回已保存的循环节点，其余关卡仍回地图。
+        const back = state.postPrologue ? '返回日程' : '返回地图';
         panel.dataset.testid = 'act-end';
         panel.append(element('div', 'eyebrow', '次元战争'), element('h1', '', `${chapterTitles[state.actId] ?? state.actId}结束`),
-          this.endNavigation ? button('返回地图', 'end-levels', this.endNavigation)
+          this.endNavigation ? button(back, 'end-levels', this.endNavigation)
             : button(prologue ? '进入第一幕' : '重新开始', prologue ? 'enter-act1' : 'restart', activate({ type: prologue ? 'enter-act1' : 'restart', token })));
       } else {
         panel.append(element('h1', '', '剧情暂时无法继续'), element('p', '', waiting.message),

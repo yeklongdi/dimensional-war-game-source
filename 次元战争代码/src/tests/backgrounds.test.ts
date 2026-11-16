@@ -17,13 +17,18 @@ const flush = async () => { for (let i = 0; i < 12; ++i) await Promise.resolve()
 const input = (id: string, sceneId = 'p001', run = 1): BackgroundInput => ({ run, sceneId, actId: 'prologue', id, url: id });
 
 describe('手绘背景覆盖与路径', () => {
-  it('36个真实键全部绑定，63条指令及52个场景不删改', () => {
-    const acts = Object.values(storyLibrary), scenes = acts.flatMap(a => a.scenes);
+  it('36个真实键全部绑定，63条指令及52个序幕场景不删改', () => {
+    const prologueActs = ['prologue', 'act1', 'prologue_3', 'prologue_4'];
+    const acts = Object.values(storyLibrary).filter(act => prologueActs.includes(act.id));
+    const scenes = acts.flatMap(a => a.scenes);
     const nodes = scenes.flatMap(s => s.nodes.flatMap(n => n.kind === 'background' ? [n.name] : []));
     expect(scenes).toHaveLength(52); expect(nodes).toHaveLength(63);
     expect(Object.keys(rawBackgroundBindings).sort()).toEqual([...new Set(nodes)].sort());
     expect(Object.keys(rawBackgroundBindings)).toHaveLength(36);
     expect(new Set(Object.values(rawBackgroundBindings)).size).toBe(34);
+    const bonded = (storyLibrary.vtuber_bond1?.scenes ?? []).flatMap(s => s.nodes.flatMap(n => n.kind === 'background' ? [n.name] : []));
+    expect(bonded).toHaveLength(2);
+    expect(bonded.every(name => Object.hasOwn(rawBackgroundBindings, name))).toBe(true);
   });
   it('卧室及客厅夜景仅按明确异名复用，昼夜与梦境仍不同', () => {
     expect(rawBackgroundBindings.bg_grandmother_bedroom_night).toBe(rawBackgroundBindings.bg_grandmother_house_bedroom_night);

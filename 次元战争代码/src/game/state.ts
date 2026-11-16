@@ -10,6 +10,8 @@ import type { Settings } from './settings.js';
 import type { LoopCheckpoint } from './loop/types.js';
 
 export type StoryLibrary = Readonly<Record<string, Act>>;
+/** 布尔开关，或少数表示等级／计数的非负整数。v1 存档仍只接受布尔。 */
+export type FlagValue = boolean | number;
 export type TextKind = 'stage' | 'dialogue' | 'inner' | 'narration';
 export type Origin = { nodeIndex: number; optionIndex?: number; optionNodeIndex?: number };
 export type ActorState = {
@@ -54,7 +56,7 @@ export type GameState = {
   map?: { selected: LocationId; camera: MapCamera; viewport: MapViewport; popupOpen: boolean; unlock: boolean };
   battleReturn?: BattleReturn; battleSerial?: number; campaignSeed?: number;
   run: number; sequence: number; actId: string; sceneId: string; nodeIndex: number;
-  branch?: Branch; waiting: Waiting | null; flags: Record<string, boolean>;
+  branch?: Branch; waiting: Waiting | null; flags: Record<string, FlagValue>;
   actors: Record<string, ActorState>; backgroundId: string; bgmId: string;
   sceneTitle: string; time: string; debugOpen: boolean;
   hiddenNotes: Record<string, HiddenNote>; warnings: Record<string, string>;

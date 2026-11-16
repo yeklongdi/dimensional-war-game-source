@@ -139,9 +139,11 @@ export function parseStory(markdown, options) {
       case 'SET': {
         setCount++;
         const sequence = String(setCount).padStart(2, '0');
-        const explicit = /^([a-z][a-z0-9_]*)\s*=\s*(true|false)$/.exec(token.value.trim());
+        const explicit = /^([a-z][a-z0-9_]*)\s*=\s*(-?\d+|true|false)$/.exec(token.value.trim());
+        const raw = explicit?.[2];
+        const value = raw === undefined ? undefined : raw === 'true' ? true : raw === 'false' ? false : Number(raw);
         append({ kind: 'set', flag: explicit?.[1] ?? `flag_${act.id}_${scene.id}_${sequence}`,
-          ...(explicit ? { value: explicit[2] === 'true' } : {}), note: token.raw }, token);
+          ...(value === undefined ? {} : { value }), note: token.raw }, token);
         break;
       }
       case 'CALL': {

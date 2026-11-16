@@ -9,7 +9,7 @@ export function skippedFlag(id: string): string | undefined {
 }
 export const patrolSkipped = skippedFlag('battle_prologue4_patrol')!;
 export const encounterSkipped = skippedFlag('battle_prologue4_deoxys_encounter')!;
-export function lateSceneError(scene: string, flags: Readonly<Record<string, boolean>>): string | undefined {
+export function lateSceneError(scene: string, flags: Readonly<Record<string, boolean | number>>): string | undefined {
   const index = /^c\d{3}$/.test(scene) ? Number(scene.slice(1)) : 0;
   if (index >= 4 && !flags[patrolSkipped]) return '尚未明确跳过巡逻队战斗，不能进入其后场景。';
   if (index >= 6 && !flags[encounterSkipped]) return '尚未明确跳过遭遇战，不能进入其后场景。';

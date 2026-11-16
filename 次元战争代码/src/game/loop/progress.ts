@@ -1,8 +1,10 @@
 import type { LocationId } from '../../content/map-locations.js';
 import { die, seeded } from '../battle/dice.js';
+import type { FlagValue } from '../state.js';
 import { constitution, hitDie, initialHero, maxHp, respec, validBuild } from './characters.js';
 import { demo, events, interludeId, items, slots } from './config.js';
-import type { EncounterId, LoopCheckpoint, LoopIntent } from './types.js';
+import type { CityEvent } from './config.js';
+import type { EncounterId, LoopCheckpoint, LoopIntent, Slot } from './types.js';
 
 export function startLoop(seed: number): LoopCheckpoint {
   return {
@@ -53,17 +55,29 @@ export function advanceSlot(loop: LoopCheckpoint): LoopCheckpoint {
   return { ...loop, slot: slots[slots.indexOf(loop.slot) + 1]!, phase: { kind: 'city' } };
 }
 
-export function visibleEvents(loop: LoopCheckpoint, location: LocationId) {
-  return events.filter(event => event.location === location && event.slot === loop.slot
+/** 事件的可用时段：多数事件只有一段，剧情入口可覆盖两段。 */
+export function eventSlots(event: CityEvent): readonly Slot[] {
+  return event.slots ?? [event.slot];
+}
+
+export function visibleEvents(
+  loop: LoopCheckpoint, location: LocationId, flags: Readonly<Record<string, FlagValue>> = {},
+) {
+  return events.filter(event => event.location === location && eventSlots(event).includes(loop.slot)
     && (!event.once || !loop.completed.includes(event.id))
     && (!event.requires || loop.completed.includes(event.requires))
+    && (!event.story?.requires || event.story.requires.every(flag => flags[flag] === true))
+    && (!event.story?.hiddenWhen || event.story.hiddenWhen.every(flag => flags[flag] !== true))
     && (event.id !== 'ritual' || loop.hero.classId === 'wizard'));
 }
 
 export function canOpenCity(loop: LoopCheckpoint | undefined): boolean { return !loop || loop.phase.kind === 'city'; }
 export const canShop = (loop: LoopCheckpoint) => loop.phase.kind === 'city' || loop.phase.kind === 'safe';
 
-export function advanceLoop(loop: LoopCheckpoint, intent: LoopIntent, location?: LocationId): LoopCheckpoint | undefined {
+export function advanceLoop(
+  loop: LoopCheckpoint, intent: LoopIntent, location?: LocationId,
+  flags: Readonly<Record<string, FlagValue>> = {},
+): LoopCheckpoint | undefined {
   const phase = loop.phase;
   if (intent.kind === 'ack') {
     switch (phase.kind) {
@@ -91,8 +105,8 @@ export function advanceLoop(loop: LoopCheckpoint, intent: LoopIntent, location?:
   if (phase.kind !== 'city') return undefined;
   if (intent.kind === 'skip_day') return endDay(loop);
   if (intent.kind === 'event' && location) {
-    const event = visibleEvents(loop, location).find(candidate => candidate.id === intent.id);
-    if (!event) return undefined;
+    const event = visibleEvents(loop, location, flags).find(candidate => candidate.id === intent.id);
+    if (!event || event.story) return undefined;
     if (event.battle) return { ...loop, phase: { kind: 'deploy', encounter: event.battle } };
     return advanceSlot({ ...loop, gold: loop.gold + (event.reward ?? 0), xp: loop.xp + 1,
       completed: event.once ? [...loop.completed, event.id] : loop.completed,

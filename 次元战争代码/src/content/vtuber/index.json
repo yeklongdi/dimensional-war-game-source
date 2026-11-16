@@ -1,0 +1,230 @@
+{
+  "contentVersion": "vtuber_bond1_v1",
+  "acts": [
+    {
+      "id": "vtuber_bond1",
+      "title": "虚拟主播·羁绊一",
+      "file": "vtuber_bond1.json",
+      "sceneCount": 2
+    }
+  ],
+  "warningCount": 15,
+  "warnings": [
+    {
+      "actId": "vtuber_bond1",
+      "sceneId": "v101",
+      "sourceFile": "source/story/vtuber/vtuber_bond1.md",
+      "line": 45,
+      "raw": "BGM: bgm_library_quiet_dusk [制作占位／待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "vtuber_bond1",
+      "sceneId": "v101",
+      "sourceFile": "source/story/vtuber/vtuber_bond1.md",
+      "line": 47,
+      "raw": "CHECK: prologue_4_complete == true [章节入口约束；男高需已从怪盗处得知圣杯战争]",
+      "categories": [
+        "meta",
+        "check"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "CHECK 中的条件与嵌套 SET / JUMP 均不解释、不执行。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "vtuber_bond1",
+      "sceneId": "v101",
+      "sourceFile": "source/story/vtuber/vtuber_bond1.md",
+      "line": 49,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "vtuber_bond1",
+      "sceneId": "v101",
+      "sourceFile": "source/story/vtuber/vtuber_bond1.md",
+      "line": 65,
+      "raw": "SHOW: 虚拟主播 asset=char_virtual_streamer_shy [占位符／待核对复用] position=right",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "vtuber_bond1",
+      "sceneId": "v101",
+      "sourceFile": "source/story/vtuber/vtuber_bond1.md",
+      "line": 82,
+      "raw": "SFX: sfx_laptop_shut_snap [制作占位]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "vtuber_bond1",
+      "sceneId": "v101",
+      "sourceFile": "source/story/vtuber/vtuber_bond1.md",
+      "line": 114,
+      "raw": "SFX: sfx_chair_pull_sit [制作占位]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "vtuber_bond1",
+      "sceneId": "v101",
+      "sourceFile": "source/story/vtuber/vtuber_bond1.md",
+      "line": 204,
+      "raw": "SFX: sfx_book_slide_table [制作占位]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "vtuber_bond1",
+      "sceneId": "v101",
+      "sourceFile": "source/story/vtuber/vtuber_bond1.md",
+      "line": 217,
+      "raw": "SFX: sfx_page_turn [制作占位]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "vtuber_bond1",
+      "sceneId": "v101",
+      "sourceFile": "source/story/vtuber/vtuber_bond1.md",
+      "line": 246,
+      "raw": "SFX: sfx_footsteps_run_away [制作占位]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "vtuber_bond1",
+      "sceneId": "v101",
+      "sourceFile": "source/story/vtuber/vtuber_bond1.md",
+      "line": 270,
+      "raw": "---",
+      "categories": [
+        "meta",
+        "unknown"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "未定义的指令 UNRECOGNIZED；保留原文并隐藏，不中断导出。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "vtuber_bond1",
+      "sceneId": "v102",
+      "sourceFile": "source/story/vtuber/vtuber_bond1.md",
+      "line": 278,
+      "raw": "BGM: bgm_night_room_stream_lively [制作占位／待绑定]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "vtuber_bond1",
+      "sceneId": "v102",
+      "sourceFile": "source/story/vtuber/vtuber_bond1.md",
+      "line": 280,
+      "raw": "CHECK: vtuber_bond1_library_done == true [过夜触发条件]",
+      "categories": [
+        "meta",
+        "check"
+      ],
+      "details": [
+        "制作备注完整保留；默认不向玩家展示。",
+        "CHECK 中的条件与嵌套 SET / JUMP 均不解释、不执行。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "vtuber_bond1",
+      "sceneId": "v102",
+      "sourceFile": "source/story/vtuber/vtuber_bond1.md",
+      "line": 282,
+      "raw": "SHOW: 男高 asset=char_male_high_normal [占位符／待核对复用] position=left",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "vtuber_bond1",
+      "sceneId": "v102",
+      "sourceFile": "source/story/vtuber/vtuber_bond1.md",
+      "line": 300,
+      "raw": "DIALOGUE:\n直播间里的虚拟主播：\n哎等一下等一下，刚才那个陷阱我明明跳过去了呀！弹幕不许刷“下饭”——这叫战略性踩雷探路懂不懂！",
+      "categories": [
+        "missing_asset"
+      ],
+      "details": [
+        "说话人“直播间里的虚拟主播”没有任何含 asset 的 SHOW 声明。"
+      ],
+      "resolutions": []
+    },
+    {
+      "actId": "vtuber_bond1",
+      "sceneId": "v102",
+      "sourceFile": "source/story/vtuber/vtuber_bond1.md",
+      "line": 310,
+      "raw": "SFX: sfx_game_monster_jumpscare [制作占位]",
+      "categories": [
+        "placeholder"
+      ],
+      "details": [
+        "素材仍有原始占位 / 待绑定标记。"
+      ],
+      "resolutions": []
+    }
+  ]
+}

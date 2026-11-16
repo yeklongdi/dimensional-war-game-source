@@ -1,15 +1,34 @@
 import { locationById } from '../../content/map-locations.js';
 import { focusCamera, mapViewport } from '../map-camera.js';
 import { battleToken } from '../battle/state-helpers.js';
-import { warning } from '../state.js';
-import type { GameState, Transition } from '../state.js';
+import { emptyState, warning } from '../state.js';
+import type { FlagValue, GameState, StoryLibrary, Transition } from '../state.js';
 import { openEncounter, settleEncounter } from './encounters.js';
-import { advanceLoop } from './progress.js';
+import { advanceLoop, advanceSlot, visibleEvents } from './progress.js';
 import { events, items } from './config.js';
 import type { LoopAction, LoopCheckpoint, LoopIntent } from './types.js';
+import { startScene } from '../story/player.js';
 
 export const loopToken = (state: GameState) => state.run + ':loop:' + state.sequence;
 export type LoopTransition = Transition & { rejectedReason?: string };
+
+/** V102 的过夜触发条件：读完羁绊一的图书馆场景，但还没有完成深夜直播幕。 */
+export const vtuberNightPending = (flags: Readonly<Record<string, FlagValue>>) =>
+  flags.vtuber_bond1_library_done === true && flags.vtuber_bond1_complete !== true;
+
+/**
+ * 进入循环内的独立剧情幕。postPrologue 保留为剧情结束后的循环检查点，
+ * 因此 V102 结束后直接回到已经结算过的过夜节点。
+ */
+export function enterLoopStory(
+  state: GameState, checkpoint: LoopCheckpoint, actId: string, sceneId: string, library: StoryLibrary,
+): LoopTransition {
+  const next: GameState = { ...state, ...emptyState(state.run + 1), screen: 'story', actId, sceneId,
+    flags: { ...state.flags }, warnings: { ...state.warnings }, failedAssets: { ...state.failedAssets },
+    postPrologue: checkpoint, activeLevelId: undefined, waiting: null };
+  const transition = startScene(next, library);
+  return { ...transition, state: { ...transition.state, postPrologue: checkpoint } };
+}
 
 export function showLoop(state: GameState, checkpoint: LoopCheckpoint, intent?: LoopIntent): LoopTransition {
   const phase = checkpoint.phase, screen = phase.kind === 'city' ? 'map' : 'loop';
@@ -39,7 +58,7 @@ export function showLoop(state: GameState, checkpoint: LoopCheckpoint, intent?: 
   return { state: next, effects };
 }
 
-export function reduceLoopRoute(state: GameState, action: LoopAction): LoopTransition {
+export function reduceLoopRoute(state: GameState, action: LoopAction, library: StoryLibrary): LoopTransition {
   const reject = (rejectedReason: string) => ({ state, effects: [], rejectedReason });
   const loop = state.postPrologue;
   if (!loop || (state.screen !== 'map' && state.screen !== 'loop') || action.token !== loopToken(state)) return reject('行动已过期');
@@ -53,8 +72,16 @@ export function reduceLoopRoute(state: GameState, action: LoopAction): LoopTrans
       postBattle: { session, withLink: intent.withLink }, battle: openEncounter(loop, loop.phase.encounter, intent.withLink, session) }, effects: [] };
   }
   const location = state.map?.popupOpen ? state.map.selected : undefined;
-  const next = advanceLoop(loop, intent, location);
-  return next ? showLoop(state, next, intent) : reject('当前无法执行该行动');
+  if (intent.kind === 'event' && location) {
+    const event = visibleEvents(loop, location, state.flags).find(candidate => candidate.id === intent.id);
+    // 剧情入口按一次行动结算：先推进时段，结束后回到已经消耗过时段的循环节点。
+    if (event?.story) return enterLoopStory(state, advanceSlot(loop), event.story.actId, event.story.sceneId, library);
+  }
+  const next = advanceLoop(loop, intent, location, state.flags);
+  if (!next) return reject('当前无法执行该行动');
+  if ((intent.kind === 'sleep' || intent.kind === 'sync' || intent.kind === 'skip_day') && vtuberNightPending(state.flags))
+    return enterLoopStory(state, next, 'vtuber_bond1', 'v102', library);
+  return showLoop(state, next, intent);
 }
 
 export function finishLoopBattle(state: GameState, token: string): LoopTransition {

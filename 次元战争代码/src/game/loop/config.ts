@@ -34,9 +34,14 @@ export const casterOptions = {
   sorcerer: { cantrips: [...commonCantrips, 'sorcerous_burst'], prepared: battleSpells, cantripCount: 4, spellCount: 2 },
 } as const;
 
+/** 进入独立剧情幕的城市事件入口；requires 与 hiddenWhen 均针对剧情 flag。 */
+export type StoryGate = {
+  actId: string; sceneId: string;
+  requires?: readonly string[]; hiddenWhen?: readonly string[];
+};
 export type CityEvent = {
-  id: EventId; label: string; location: LocationId; slot: Slot;
-  once?: true; reward?: number; clue?: true; battle?: 'patrol'; requires?: EventId;
+  id: EventId; label: string; location: LocationId; slot: Slot; slots?: readonly Slot[];
+  once?: true; reward?: number; clue?: true; battle?: 'patrol'; requires?: EventId; story?: StoryGate;
 };
 export const events: readonly CityEvent[] = [
   { id: 'social', label: '角色日常', location: 'high_school', slot: 'after_school', once: true },
@@ -45,6 +50,8 @@ export const events: readonly CityEvent[] = [
   { id: 'school_request', label: '校内委托', location: 'high_school', slot: 'after_school', once: true, reward: demo.requestReward },
   { id: 'school_patrol', label: '校内清怪', location: 'high_school', slot: 'after_school', battle: 'patrol' },
   { id: 'ritual', label: '仪式调查 · 侦测魔法', location: 'high_school', slot: 'after_school', once: true, clue: true },
+  { id: 'vtuber_bond1', label: '图书馆角落的偶遇', location: 'high_school', slot: 'after_school', slots: ['after_school', 'evening'],
+    story: { actId: 'vtuber_bond1', sceneId: 'v101', requires: ['prologue_4_complete'], hiddenWhen: ['vtuber_bond1_library_done'] } },
   { id: 'job', label: '傍晚打工', location: 'school_road', slot: 'evening', reward: demo.jobReward },
   { id: 'street_request', label: '街区委托', location: 'school_road', slot: 'evening', once: true, reward: demo.requestReward },
   { id: 'street_patrol', label: '旧街区巡逻', location: 'old_warehouse', slot: 'evening', battle: 'patrol' },
