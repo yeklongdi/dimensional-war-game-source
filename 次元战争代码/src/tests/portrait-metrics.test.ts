@@ -5,11 +5,11 @@ import { heroRecipes } from '../game/visual/hero.js';
 import { assetUrl } from '../game/asset-url.js';
 
 describe('原素材坐标的外层等比度量', () => {
-  it.each(Object.values(portraitMetricGroups))('$group 安全轮廓≤340、三人间隙≥24；头顶固定210', metric => {
+  it.each(Object.values(portraitMetricGroups))('$group 安全轮廓≤340、三人间隙≥24；头顶遵循独立姿态基准', metric => {
     const width = (metric.safety[1] - metric.safety[0]) * metric.scale;
     expect(width).toBeLessThanOrEqual(340); expect(384 - width).toBeGreaterThanOrEqual(24);
     const transform = portraitTransform(metric, 640);
-    expect(transform.top + metric.head[0] * transform.scale).toBe(210);
+    expect(transform.top + metric.head[0] * transform.scale).toBe(metric.headTop);
     expect(transform.height).toBe(metric.canvas[1] * transform.scale);
   });
   it('一／二／三人尺度不变，中心／发言只改平移', () => {

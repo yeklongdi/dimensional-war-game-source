@@ -1,0 +1,234 @@
+{
+  "passedAssets": 12,
+  "failedAssets": 0,
+  "assets": [
+    {
+      "id": "vtuber_shy",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-shy.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "2dd68e51803fee6982df1d507f660791d9c3331ae239b11da87908a4336726d4",
+      "checks": {
+        "decodes": true,
+        "rgba": true,
+        "registeredSize": true,
+        "registeredHash": true,
+        "originalBytes": true,
+        "transparentBackground": true,
+        "subjectNearOpaque": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_smile",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-smile.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "fa16d000282c131f86a45fb4b526a2f63119e6bcc6ace07c9964c55e5bf1eb11",
+      "checks": {
+        "decodes": true,
+        "rgba": true,
+        "registeredSize": true,
+        "registeredHash": true,
+        "originalBytes": true,
+        "transparentBackground": true,
+        "subjectNearOpaque": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_embarrassed",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-embarrassed.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "51b2cd35a5aeca5e1c94be2ad4d3d7c4675a555f2bcbf223480548ed7925357e",
+      "checks": {
+        "decodes": true,
+        "rgba": true,
+        "registeredSize": true,
+        "registeredHash": true,
+        "originalBytes": true,
+        "transparentBackground": true,
+        "subjectNearOpaque": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_startled",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-startled.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "a8beed571347d4a1fa7c697069ac50143d7e6008166d79dfef2783cf34f4ebda",
+      "checks": {
+        "decodes": true,
+        "rgba": true,
+        "registeredSize": true,
+        "registeredHash": true,
+        "originalBytes": true,
+        "transparentBackground": true,
+        "subjectNearOpaque": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_tense",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-tense.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "9a6464e69b90ca6c49a7e3b37468988828878bbcef1001b1e2e586a4c49553e9",
+      "checks": {
+        "decodes": true,
+        "rgba": true,
+        "registeredSize": true,
+        "registeredHash": true,
+        "originalBytes": true,
+        "transparentBackground": true,
+        "subjectNearOpaque": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_laptop_focus",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-laptop-focus.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "37ae89290c2700c4bb785ca0dc29e61b7d98461de9d7d8aab3377e99e8dc5642",
+      "checks": {
+        "decodes": true,
+        "rgba": true,
+        "registeredSize": true,
+        "registeredHash": true,
+        "originalBytes": true,
+        "transparentBackground": true,
+        "subjectNearOpaque": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_laptop_guard",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-laptop-guard.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "1ec41cd5b63b4140938db7e386368e2aa5d311b6fd56ab993f03b0ebff24daba",
+      "checks": {
+        "decodes": true,
+        "rgba": true,
+        "registeredSize": true,
+        "registeredHash": true,
+        "originalBytes": true,
+        "transparentBackground": true,
+        "subjectNearOpaque": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_book_offer",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-book-offer.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "341843b39d53d871ca5ce13f02a37d4f917a373f389753ca7c9996337e20db52",
+      "checks": {
+        "decodes": true,
+        "rgba": true,
+        "registeredSize": true,
+        "registeredHash": true,
+        "originalBytes": true,
+        "transparentBackground": true,
+        "subjectNearOpaque": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_reminder",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-reminder.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "fef895b1e2839668511ef8de1df5a3034c64c77b2063dea9dcf6c10e817d04e4",
+      "checks": {
+        "decodes": true,
+        "rgba": true,
+        "registeredSize": true,
+        "registeredHash": true,
+        "originalBytes": true,
+        "transparentBackground": true,
+        "subjectNearOpaque": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_pit_collapse",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-pit-collapse.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "f95bd87f218f4b666f417526335de108b0f5b3b5a56b3c7eb66418124df4cd5d",
+      "checks": {
+        "decodes": true,
+        "rgba": true,
+        "registeredSize": true,
+        "registeredHash": true,
+        "originalBytes": true,
+        "transparentBackground": true,
+        "subjectNearOpaque": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_bed_awake",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-bed-awake.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "b83bf2bfc22af7e62b341eea1a4796897eaec12ae8685442ca0cbed43de41606",
+      "checks": {
+        "decodes": true,
+        "rgba": true,
+        "registeredSize": true,
+        "registeredHash": true,
+        "originalBytes": true,
+        "transparentBackground": true,
+        "subjectNearOpaque": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_unconscious",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-unconscious.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "1e5d7879a240d2cb316db9a9aaaceba646b91fba35bca599c0a4970d3d7231a9",
+      "checks": {
+        "decodes": true,
+        "rgba": true,
+        "registeredSize": true,
+        "registeredHash": true,
+        "originalBytes": true,
+        "transparentBackground": true,
+        "subjectNearOpaque": true
+      },
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "assets": [
+    {
+      "case": "shy",
+      "visual": "static",
+      "headHeight": 138.75
+    },
+    {
+      "case": "smile",
+      "visual": "static",
+      "headHeight": 138.75
+    },
+    {
+      "case": "embarrassed",
+      "visual": "static",
+      "headHeight": 138.75
+    },
+    {
+      "case": "startled",
+      "visual": "static",
+      "headHeight": 138.75
+    },
+    {
+      "case": "tense",
+      "visual": "static",
+      "headHeight": 138.75
+    },
+    {
+      "case": "laptop-focus",
+      "visual": "static",
+      "headHeight": 139.2
+    },
+    {
+      "case": "laptop-guard",
+      "visual": "static",
+      "headHeight": 137.5
+    },
+    {
+      "case": "book-offer",
+      "visual": "static",
+      "headHeight": 139.65
+    },
+    {
+      "case": "reminder",
+      "visual": "static",
+      "headHeight": 138.75
+    },
+    {
+      "case": "pit-collapse",
+      "visual": "static",
+      "headHeight": 139.75
+    },
+    {
+      "case": "unconscious",
+      "visual": "static",
+      "headHeight": 139.75
+    },
+    {
+      "case": "bed-awake",
+      "visual": "static",
+      "headHeight": 140.8
+    }
+  ],
+  "storySequence": [
+    "vtuber-laptop-focus.png",
+    "vtuber-laptop-guard.png",
+    "vtuber-book-offer.png",
+    "vtuber-reminder.png"
+  ],
+  "oneTwoThreeSameScale": "0.25",
+  "missingImageFallback": "explicit_placeholder",
+  "consoleErrors": [],
+  "savedGameUsed": false
+}

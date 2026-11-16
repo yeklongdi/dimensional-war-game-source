@@ -1,0 +1,312 @@
+{
+  "createdDate": "2026-11-16",
+  "scope": "仅本批9张静态立绘；未测试游戏内显示、表情选择与动作切换",
+  "passedAssets": 9,
+  "failedAssets": 0,
+  "checks": [
+    {
+      "id": "vtuber_shy",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-shy.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "2dd68e51803fee6982df1d507f660791d9c3331ae239b11da87908a4336726d4",
+      "bytes": 1908135,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.548447,
+      "subjectBoundsAlpha128": [
+        194,
+        19,
+        839,
+        1536
+      ],
+      "checks": {
+        "png_decodes": true,
+        "rgba": true,
+        "size": true,
+        "true_transparency": true,
+        "subject_near_opaque": true,
+        "corners_clear": true,
+        "head_and_sides_inside": true,
+        "original_bytes_preserved": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_smile",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-smile.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "fa16d000282c131f86a45fb4b526a2f63119e6bcc6ace07c9964c55e5bf1eb11",
+      "bytes": 1785097,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.540343,
+      "subjectBoundsAlpha128": [
+        194,
+        13,
+        840,
+        1536
+      ],
+      "checks": {
+        "png_decodes": true,
+        "rgba": true,
+        "size": true,
+        "true_transparency": true,
+        "subject_near_opaque": true,
+        "corners_clear": true,
+        "head_and_sides_inside": true,
+        "original_bytes_preserved": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_embarrassed",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-embarrassed.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "51b2cd35a5aeca5e1c94be2ad4d3d7c4675a555f2bcbf223480548ed7925357e",
+      "bytes": 1837560,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.551056,
+      "subjectBoundsAlpha128": [
+        193,
+        18,
+        839,
+        1536
+      ],
+      "checks": {
+        "png_decodes": true,
+        "rgba": true,
+        "size": true,
+        "true_transparency": true,
+        "subject_near_opaque": true,
+        "corners_clear": true,
+        "head_and_sides_inside": true,
+        "original_bytes_preserved": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_startled",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-startled.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "a8beed571347d4a1fa7c697069ac50143d7e6008166d79dfef2783cf34f4ebda",
+      "bytes": 1794625,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.544287,
+      "subjectBoundsAlpha128": [
+        193,
+        16,
+        839,
+        1536
+      ],
+      "checks": {
+        "png_decodes": true,
+        "rgba": true,
+        "size": true,
+        "true_transparency": true,
+        "subject_near_opaque": true,
+        "corners_clear": true,
+        "head_and_sides_inside": true,
+        "original_bytes_preserved": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_tense",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-tense.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "9a6464e69b90ca6c49a7e3b37468988828878bbcef1001b1e2e586a4c49553e9",
+      "bytes": 1807336,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.532958,
+      "subjectBoundsAlpha128": [
+        192,
+        18,
+        840,
+        1536
+      ],
+      "checks": {
+        "png_decodes": true,
+        "rgba": true,
+        "size": true,
+        "true_transparency": true,
+        "subject_near_opaque": true,
+        "corners_clear": true,
+        "head_and_sides_inside": true,
+        "original_bytes_preserved": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_laptop_focus",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-laptop-focus.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "37ae89290c2700c4bb785ca0dc29e61b7d98461de9d7d8aab3377e99e8dc5642",
+      "bytes": 2135755,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.414503,
+      "subjectBoundsAlpha128": [
+        8,
+        18,
+        983,
+        1536
+      ],
+      "checks": {
+        "png_decodes": true,
+        "rgba": true,
+        "size": true,
+        "true_transparency": true,
+        "subject_near_opaque": true,
+        "corners_clear": true,
+        "head_and_sides_inside": true,
+        "original_bytes_preserved": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_laptop_guard",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-laptop-guard.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "1ec41cd5b63b4140938db7e386368e2aa5d311b6fd56ab993f03b0ebff24daba",
+      "bytes": 1935448,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.519607,
+      "subjectBoundsAlpha128": [
+        179,
+        16,
+        842,
+        1536
+      ],
+      "checks": {
+        "png_decodes": true,
+        "rgba": true,
+        "size": true,
+        "true_transparency": true,
+        "subject_near_opaque": true,
+        "corners_clear": true,
+        "head_and_sides_inside": true,
+        "original_bytes_preserved": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_book_offer",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-book-offer.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "341843b39d53d871ca5ce13f02a37d4f917a373f389753ca7c9996337e20db52",
+      "bytes": 2160553,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.469038,
+      "subjectBoundsAlpha128": [
+        96,
+        16,
+        956,
+        1536
+      ],
+      "checks": {
+        "png_decodes": true,
+        "rgba": true,
+        "size": true,
+        "true_transparency": true,
+        "subject_near_opaque": true,
+        "corners_clear": true,
+        "head_and_sides_inside": true,
+        "original_bytes_preserved": true
+      },
+      "passed": true
+    },
+    {
+      "id": "vtuber_reminder",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-reminder.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "fef895b1e2839668511ef8de1df5a3034c64c77b2063dea9dcf6c10e817d04e4",
+      "bytes": 1957001,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.53042,
+      "subjectBoundsAlpha128": [
+        96,
+        17,
+        851,
+        1536
+      ],
+      "checks": {
+        "png_decodes": true,
+        "rgba": true,
+        "size": true,
+        "true_transparency": true,
+        "subject_near_opaque": true,
+        "corners_clear": true,
+        "head_and_sides_inside": true,
+        "original_bytes_preserved": true
+      },
+      "passed": true
+    }
+  ],
+  "referencesOriginalBytesPreserved": 4,
+  "standingGroupMaxBoundsDeltaPixels": 6,
+  "previewFiles": [
+    "base-alpha-preview.png",
+    "contact-sheet.png"
+  ],
+  "runtimeBound": false
+}

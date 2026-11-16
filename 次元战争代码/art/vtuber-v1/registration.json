@@ -1,0 +1,346 @@
+{
+  "generator": "built-in image_gen",
+  "createdDate": "2026-11-16",
+  "status": "approved_runtime_bound",
+  "runtimeBound": true,
+  "character": "虚拟主播（线下）",
+  "assetType": "static_half_body_rgba_png",
+  "baseAsset": "vtuber_shy",
+  "references": [
+    {
+      "file": "art/vtuber-v1/references/reference-01.jpg",
+      "role": "人物外貌与服装参考",
+      "sha256": "393ff224ba1e96dd8615c75c95892c84ec059d787b04d087f3c6f7cb51846350",
+      "originalBytesPreserved": true
+    },
+    {
+      "file": "art/vtuber-v1/references/reference-02.jpg",
+      "role": "人物外貌与服装参考",
+      "sha256": "31487cc7b1a3fcbad6a89ba3007d56fb1b3e18b2f851a2c15fd42f3e5ae2ba82",
+      "originalBytesPreserved": true
+    },
+    {
+      "file": "art/vtuber-v1/references/reference-03.jpg",
+      "role": "完整服装比例参考",
+      "sha256": "560f457d3d59e152da4e0b4e56c6f768ed6996e4699551221532cf59749054b5",
+      "originalBytesPreserved": true
+    },
+    {
+      "file": "art/vtuber-v1/references/reference-04.jpg",
+      "role": "角色外观参考；文字与背景不用于立绘",
+      "sha256": "a7c8d3051a301274ea73898a7606f9140e6e96e924d3c8cdcafc4a38e3bb11fd",
+      "originalBytesPreserved": true
+    }
+  ],
+  "assets": [
+    {
+      "id": "vtuber_shy",
+      "title": "日常害羞待机",
+      "group": "standing",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-shy.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a1e223-8553-7260-921b-51f63d0dd080\\exec-a91c69e6-b280-420a-b91f-d2303a412ffc.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "2dd68e51803fee6982df1d507f660791d9c3331ae239b11da87908a4336726d4",
+      "bytes": 1908135,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.548447,
+      "subjectBoundsAlpha128": [
+        194,
+        19,
+        839,
+        1536
+      ]
+    },
+    {
+      "id": "vtuber_smile",
+      "title": "放松浅笑",
+      "group": "standing",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-smile.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a1e223-8553-7260-921b-51f63d0dd080\\exec-b6f14cc8-d9f6-4fd9-a8f3-6db893bd247a.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "fa16d000282c131f86a45fb4b526a2f63119e6bcc6ace07c9964c55e5bf1eb11",
+      "bytes": 1785097,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.540343,
+      "subjectBoundsAlpha128": [
+        194,
+        13,
+        840,
+        1536
+      ]
+    },
+    {
+      "id": "vtuber_embarrassed",
+      "title": "害羞脸红",
+      "group": "standing",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-embarrassed.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a1e223-8553-7260-921b-51f63d0dd080\\exec-dbc497fe-3ff6-4c25-8c09-17dfb9d51fa7.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "51b2cd35a5aeca5e1c94be2ad4d3d7c4675a555f2bcbf223480548ed7925357e",
+      "bytes": 1837560,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.551056,
+      "subjectBoundsAlpha128": [
+        193,
+        18,
+        839,
+        1536
+      ]
+    },
+    {
+      "id": "vtuber_startled",
+      "title": "突然受惊",
+      "group": "standing",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-startled.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a1e223-8553-7260-921b-51f63d0dd080\\exec-b7c0036f-d06c-4e0b-9aec-bd39cd64cddd.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "a8beed571347d4a1fa7c697069ac50143d7e6008166d79dfef2783cf34f4ebda",
+      "bytes": 1794625,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.544287,
+      "subjectBoundsAlpha128": [
+        193,
+        16,
+        839,
+        1536
+      ]
+    },
+    {
+      "id": "vtuber_tense",
+      "title": "紧张掩饰与认真回应",
+      "group": "standing",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-tense.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a1e223-8553-7260-921b-51f63d0dd080\\exec-b619af8e-3dd0-489d-9a0a-1a1e4edfe233.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "9a6464e69b90ca6c49a7e3b37468988828878bbcef1001b1e2e586a4c49553e9",
+      "bytes": 1807336,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.532958,
+      "subjectBoundsAlpha128": [
+        192,
+        18,
+        840,
+        1536
+      ]
+    },
+    {
+      "id": "vtuber_laptop_focus",
+      "title": "坐姿专注操作电脑",
+      "group": "seated_laptop",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-laptop-focus.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a1e223-8553-7260-921b-51f63d0dd080\\exec-ccca9a6c-cea0-461f-9366-a54750a706c7.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "37ae89290c2700c4bb785ca0dc29e61b7d98461de9d7d8aab3377e99e8dc5642",
+      "bytes": 2135755,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.414503,
+      "subjectBoundsAlpha128": [
+        8,
+        18,
+        983,
+        1536
+      ]
+    },
+    {
+      "id": "vtuber_laptop_guard",
+      "title": "受惊抱紧合上的电脑",
+      "group": "laptop_guard",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-laptop-guard.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a1e223-8553-7260-921b-51f63d0dd080\\exec-229631b3-b171-4ec0-831b-bccc0a334fe4.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "1ec41cd5b63b4140938db7e386368e2aa5d311b6fd56ab993f03b0ebff24daba",
+      "bytes": 1935448,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.519607,
+      "subjectBoundsAlpha128": [
+        179,
+        16,
+        842,
+        1536
+      ]
+    },
+    {
+      "id": "vtuber_book_offer",
+      "title": "双手递出旧书",
+      "group": "book_offer",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-book-offer.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a1e223-8553-7260-921b-51f63d0dd080\\exec-e6a4368d-ae1f-4819-83ba-1732449874b7.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "341843b39d53d871ca5ce13f02a37d4f917a373f389753ca7c9996337e20db52",
+      "bytes": 2160553,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.469038,
+      "subjectBoundsAlpha128": [
+        96,
+        16,
+        956,
+        1536
+      ]
+    },
+    {
+      "id": "vtuber_reminder",
+      "title": "抬半只手小声提醒",
+      "group": "hand_raise",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-reminder.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a1e223-8553-7260-921b-51f63d0dd080\\exec-4aac6ee8-b8b9-4a01-bdd4-27aea3536aff.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "fef895b1e2839668511ef8de1df5a3034c64c77b2063dea9dcf6c10e817d04e4",
+      "bytes": 1957001,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.53042,
+      "subjectBoundsAlpha128": [
+        96,
+        17,
+        851,
+        1536
+      ]
+    },
+    {
+      "id": "vtuber_pit_collapse",
+      "title": "趴在坑边即将失去意识",
+      "group": "pit_collapse",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-pit-collapse.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a1e223-8553-7260-921b-51f63d0dd080\\exec-ecb0cce9-8cba-4469-b6b2-5d91b80e9483.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "f95bd87f218f4b666f417526335de108b0f5b3b5a56b3c7eb66418124df4cd5d",
+      "bytes": 2202393,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.480594,
+      "subjectBoundsAlpha128": [
+        13,
+        10,
+        1524,
+        1013
+      ]
+    },
+    {
+      "id": "vtuber_bed_awake",
+      "title": "病床上疲惫苏醒",
+      "group": "bed_awake",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-bed-awake.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a1e223-8553-7260-921b-51f63d0dd080\\exec-5862f907-8303-4648-a4e7-d924df241bf5.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "b83bf2bfc22af7e62b341eea1a4796897eaec12ae8685442ca0cbed43de41606",
+      "bytes": 1963280,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.494016,
+      "subjectBoundsAlpha128": [
+        133,
+        5,
+        1536,
+        1024
+      ]
+    },
+    {
+      "id": "vtuber_unconscious",
+      "title": "昏迷无力的侧躺姿态",
+      "group": "unconscious",
+      "file": "public/assets/portraits/vtuber-v1/vtuber-unconscious.png",
+      "generatedSource": "C:\\Users\\keefe\\.codex\\generated_images\\01a1e223-8553-7260-921b-51f63d0dd080\\exec-c1c4c48e-c26b-4c10-8775-ad16aa4d32ce.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "1e5d7879a240d2cb316db9a9aaaceba646b91fba35bca599c0a4970d3d7231a9",
+      "bytes": 2134659,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "zeroAlphaRatio": 0.458365,
+      "subjectBoundsAlpha128": [
+        33,
+        18,
+        1536,
+        1024
+      ]
+    }
+  ],
+  "verification": "../游戏说明/工程/verification/vtuber-v1/asset-checks.json",
+  "canvasPolicy": "日常与道具动作1024×1536；趴伏、昏迷与病床姿态1536×1024，使用各自原画布度量。",
+  "approvedDate": "2026-11-16",
+  "defaultCanvas": [
+    1024,
+    1536
+  ],
+  "runtimeModule": "src/game/visual/vtuber-portraits.ts",
+  "runtimeMetrics": "src/game/visual/portrait-metrics.ts"
+}

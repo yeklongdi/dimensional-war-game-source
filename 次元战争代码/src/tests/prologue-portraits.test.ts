@@ -7,6 +7,7 @@ import { isStoryProp } from '../game/ui/props.js';
 import inventory from '../../../游戏说明/工程/verification/prologue-v2/visual-inventory.json';
 import registration from '../../art/prologue-v2/registration.json';
 import halfRegistration from '../../art/hero-half-v1/registration.json';
+import vtuberRegistration from '../../art/vtuber-v1/registration.json';
 import { heroExpressionPortraits } from '../game/visual/hero-half.js';
 import { displaySceneTitle } from '../game/story/chapter-policy.js';
 import { storyLibrary } from '../game/story/library.js';
@@ -19,14 +20,14 @@ describe('按已有图和官方参考制作的新版静态立绘', () => {
     expect(title).toBe('林克明显占优'); expect(displaySceneTitle(title)).toBe('金发青年明显占优');
   });
   it('所有新静态映射均指向登记素材；未知人物按用户最新决定保留占位', () => {
-    const urls = new Set([...registration.assets, ...halfRegistration.assets].map(item => item.file.replace(/^public/, '')));
+    const urls = new Set([...registration.assets, ...halfRegistration.assets, ...vtuberRegistration.assets].map(item => item.file.replace(/^public/, '')));
     for (const row of inventory) {
       const plan = staticPortrait(actor(row.asset, row.pose, row.expression));
       if (row.asset in staticPortraits) expect(plan, row.asset).toBeDefined();
       if (plan) expect(urls.has(plan.url), plan.url).toBe(true);
     }
     expect(resolveVisual(actor('char_grandmother_warm')).kind).toBe('placeholder');
-    expect(resolveVisual(actor('char_virtual_streamer_shy')).kind).toBe('placeholder');
+    expect(resolveVisual(actor('char_virtual_streamer_shy'))).toMatchObject({ kind: 'static', url: expect.stringContaining('/vtuber-v1/vtuber-shy.png') });
   });
   it('日常三表情不同素材，蒙面与夜间摘面罩有独立衣装，不在摘面罩时换日常服', () => {
     const states = [actor('char_thief_smile', '从路口拐出', '意外'), actor('char_thief_smile', '托腮看向男高', '有趣、微笑'),

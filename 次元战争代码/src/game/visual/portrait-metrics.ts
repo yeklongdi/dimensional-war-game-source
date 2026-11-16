@@ -19,6 +19,14 @@ export const portraitMetricGroups = {
   masked: metric('thief-masked', [40, 380], .39, [180, 1010], 545, '头部基准含礼帽，保持行动形态'),
   unmasked: metric('thief-unmasked', [110, 340], .57, [270, 860], 520, '全身行动服，按窗上肩／披风轮廓校准'),
   creature: metric('deoxys', [20, 470], .32, [0, 1024], 512, '非人形：主体基准，不当作人类头部'),
+  vtuber: metric('vtuber-standing', [20, 575], .25, [185, 850]),
+  vtuberLaptop: metric('vtuber-laptop', [20, 600], .24, [0, 1024], 512, '坐姿与打开的电脑独立校准'),
+  vtuberGuard: metric('vtuber-guard', [20, 570], .25, [180, 850]),
+  vtuberBook: metric('vtuber-book', [20, 590], .245, [80, 960]),
+  vtuberReminder: metric('vtuber-reminder', [20, 575], .25, [80, 850]),
+  vtuberPit: { ...metric('vtuber-pit', [10, 660], .215, [0, 1536], 768, '横向趴伏，头顶330以保持低姿态并使下沿进入文字窗'), canvas: [1536, 1024], headTop: 330 },
+  vtuberUnconscious: { ...metric('vtuber-unconscious', [20, 670], .215, [0, 1536], 768, '横向昏迷侧躺，头顶330以使下沿进入文字窗'), canvas: [1536, 1024], headTop: 330 },
+  vtuberBed: { ...metric('vtuber-bed', [10, 650], .22, [0, 1536], 768, '横向病床苏醒，头顶330；枕头和棉被随专用立绘显示'), canvas: [1536, 1024], headTop: 330 },
 } satisfies Record<string, PortraitMetric>;
 export const placeholderMetric: PortraitMetric = { group: 'placeholder', canvas: [180, 510], head: [0, 140],
   anchor: [90, 0], safety: [0, 180], scale: 1, headTop: 210 };
@@ -27,6 +35,14 @@ export function portraitMetric(plan: VisualPlan, actual: 'layered' | 'static' | 
   if (actual === 'placeholder') return placeholderMetric;
   if (actual === 'layered') return portraitMetricGroups.layered;
   const file = (url || (plan.kind === 'static' ? plan.url : plan.kind === 'layered' ? plan.fallback ?? '' : '')).split('/').pop() ?? '';
+  if (file.startsWith('vtuber-laptop-focus')) return portraitMetricGroups.vtuberLaptop;
+  if (file.startsWith('vtuber-laptop-guard')) return portraitMetricGroups.vtuberGuard;
+  if (file.startsWith('vtuber-book-offer')) return portraitMetricGroups.vtuberBook;
+  if (file.startsWith('vtuber-reminder')) return portraitMetricGroups.vtuberReminder;
+  if (file.startsWith('vtuber-pit-collapse')) return portraitMetricGroups.vtuberPit;
+  if (file.startsWith('vtuber-unconscious')) return portraitMetricGroups.vtuberUnconscious;
+  if (file.startsWith('vtuber-bed-awake')) return portraitMetricGroups.vtuberBed;
+  if (file.startsWith('vtuber-')) return portraitMetricGroups.vtuber;
   if (file.startsWith('hero-half-bed')) return portraitMetricGroups.bed;
   if (file.startsWith('hero-half')) return portraitMetricGroups.half;
   if (file.startsWith('hero-seated')) return portraitMetricGroups.seated;

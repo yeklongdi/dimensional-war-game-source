@@ -1,6 +1,7 @@
 import type { ActorState } from '../state.js';
 import { assetUrl } from '../asset-url.js';
 import { heroHalfPortrait } from './hero-half.js';
+import { vtuberBindings, vtuberPortrait } from './vtuber-portraits.js';
 
 const folder = '/assets/portraits/prologue-v2/';
 type StaticEntry = { base: string; expressions?: Readonly<Record<string, string>>; poses?: Readonly<Record<string, string>> };
@@ -29,6 +30,8 @@ const heroSeated: Readonly<Record<string, string>> = {
 const heroSeats = new Set(['坐在沙发上', '坐在餐桌旁，校服袖口挽起', '坐在床沿，解开旧布',
   '重新坐在饭桌旁', '从床上坐起，扶着被子', '坐在床沿，侧耳倾听']);
 export function staticPortrait(actor: ActorState): { url: string; key: string; frame: 'waist' | 'bust'; diagnostic?: string } | undefined {
+  const vtuber = vtuberPortrait(actor);
+  if (vtuber) return vtuber;
   let file: string | undefined;
   if (actor.asset === 'char_male_high_normal') {
     if (heroSeats.has(actor.pose ?? '')) file = heroSeated[actor.expression ?? ''];
@@ -39,6 +42,7 @@ export function staticPortrait(actor: ActorState): { url: string; key: string; f
   }
   return file ? { url: assetUrl(`${folder}${file}.png`), key: `static-v2:${file}`, frame: 'waist' } : heroHalfPortrait(actor);
 }
-export const staticBindings: Readonly<Record<string, string>> = Object.fromEntries(
-  Object.entries(staticPortraits).map(([asset, entry]) => [asset, assetUrl(`${folder}${entry.base}.png`)]),
-);
+export const staticBindings: Readonly<Record<string, string>> = {
+  ...Object.fromEntries(Object.entries(staticPortraits).map(([asset, entry]) => [asset, assetUrl(`${folder}${entry.base}.png`)])),
+  ...vtuberBindings,
+};
