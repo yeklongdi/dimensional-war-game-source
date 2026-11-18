@@ -1,5 +1,5 @@
 import type { LocationId } from '../../content/map-locations.js';
-import { classNames, demo, demoTitle, encounterNames, events, items, slotNames } from '../loop/config.js';
+import { classNames, demo, demoTitle, encounterNames, events, firstCycle, items, slotNames } from '../loop/config.js';
 import { assembleHero } from '../loop/characters.js';
 import { visibleEvents } from '../loop/progress.js';
 import { loopToken } from '../loop/route.js';
@@ -14,7 +14,7 @@ export function sendLoop(state: GameState, dispatch: Dispatch, intent: LoopInten
 }
 export function calendarLabel(loop: LoopCheckpoint): string {
   const days = demo.days[loop.cycle]!;
-  return '第 ' + (loop.cycle + 1) + ' 周期 · 第 ' + loop.day + '/' + days + ' 天 · ' + slotNames[loop.slot] + ' · 剩余 ' + (days - loop.day + 1) + ' 天';
+  return '第 ' + (loop.cycle + 1) + ' 周期 · 第 ' + loop.day + '/' + days + ' 天 · ' + slotNames[loop.slot];
 }
 function actionButton(state: GameState, dispatch: Dispatch, title: string, id: string, intent: LoopIntent, disabled = false) {
   const node = button(title, id, sendLoop(state, dispatch, intent));
@@ -63,6 +63,7 @@ export class LoopMapHud {
   private readonly controls = element('nav', 'loop-hud-controls');
   private readonly panel = element('section', 'loop-hud-panel');
   private readonly status = element('p', 'loop-hud-status');
+  private readonly deadline = element('p', 'loop-hud-status');
   private selected?: 'shop' | 'status' | 'intel' | 'skip';
   private state?: GameState;
   private renderKey = '';
@@ -78,7 +79,8 @@ export class LoopMapHud {
       }));
     }
     this.status.setAttribute('aria-live', 'polite');
-    this.root.append(this.controls, this.status, this.panel);
+    this.deadline.dataset.testid = 'loop-deadline';
+    this.root.append(this.controls, this.status, this.deadline, this.panel);
     this.root.addEventListener('click', event => event.stopPropagation());
   }
   close() {
@@ -95,6 +97,12 @@ export class LoopMapHud {
     if (key === this.renderKey) return;
     this.renderKey = key;
     this.status.textContent = state.loopNotice ?? summary(loop);
+    const appointment = loop.cycle === 0 && state.flags.thief_invitation_received === true && state.flags.thief_bond1_complete !== true;
+    const knowsDeadline = loop.cycle === 0 && state.flags.aptx4869_model_known === true;
+    this.deadline.textContent = knowsDeadline
+      ? `据点行动截止第 ${firstCycle.raidDeadline} 天 · 危机第 ${firstCycle.releaseDay} 天 · 据点战待制作`
+      : appointment ? `旧仓库邀约 · 第 1～${firstCycle.meetingDay - 1} 天夜晚可赴约` : '';
+    this.deadline.hidden = this.deadline.textContent === '';
     this.panel.replaceChildren();
     this.panel.hidden = !this.selected;
     if (this.selected === 'shop') this.panel.append(shop(state, this.dispatch));
@@ -107,13 +115,15 @@ export class LoopMapHud {
     }
     if (this.selected === 'intel') {
       this.panel.append(element('h3', '', '男高的情报日志'));
-      if (loop.clues.length === 0) this.panel.append(element('p', '', '暂无新情报。'));
+      if (knowsDeadline) this.panel.append(element('p', '', 'APTX-4869 · 实验室资料记载了怪物释放计划。'));
+      else if (appointment) this.panel.append(element('p', '', '怪盗留下了去旧街区仓库碰面的便签。'));
+      else if (loop.clues.length === 0) this.panel.append(element('p', '', '暂无新情报。'));
       for (const event of events) if (loop.clues.includes(event.id)) this.panel.append(element('p', '', event.label + ' · 内容待接入'));
     }
     if (this.selected === 'skip') {
       const go = actionButton(state, this.dispatch, '确认跳过今日', 'loop-skip-confirm', { kind: 'skip_day' });
       go.addEventListener('click', () => this.close());
-      this.panel.append(element('h3', '', '结束今天？'), element('p', '', '执行当晚长休和排定幕间剧。今日余下时段的行动收益会略过。'), go);
+      this.panel.append(element('h3', '', '结束今天？'), element('p', '', '余下行动会略过。先处理当晚剧情，再结算长休。'), go);
     }
     if (this.selected) this.panel.append(button('关闭', 'loop-panel-close', () => this.close()));
   }
@@ -144,7 +154,7 @@ export class LoopView {
       case 'intro': this.panel.append(element('h1', '', '第 1 周期'), element('p', '', '第五幕剧情待接入。'), ack('开始备战')); break;
       case 'interlude': this.panel.append(element('h1', '', phase.moment === 'night' ? '夜末幕间剧' : '清晨幕间剧'),
         element('p', '', '其他视角剧情待接入。'), ack('继续日程')); break;
-      case 'crisis': this.panel.append(element('h1', '', '截止日 · 大副本'), element('p', '', '危机剧情待接入。接下来进入副本流程。'), ack('进入副本')); break;
+      case 'crisis': this.panel.append(element('h1', '', '截止日 · 大副本'), element('p', '', '正式危机剧情待制作，可进入演示副本。'), ack('进入副本')); break;
       case 'deploy': this.panel.append(element('h1', '', encounterNames[phase.encounter]),
         element('p', '', '演示战斗 · ' + summary(loop)),
         actionButton(state, this.dispatch, '男高独自出战', 'loop-deploy-solo', { kind: 'deploy', withLink: false }),

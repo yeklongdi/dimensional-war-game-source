@@ -1,5 +1,5 @@
 {
-  "displayNames": { "prologue": { "怪盗": "蒙面人" } },
+  "displayNames": { "prologue": { "怪盗": "蒙面人" }, "act1": { "怪盗": "前排同学" } },
   "portraits": {
     "char_male_high_normal": "/assets/portraits/hero.png",
     "char_thief_smile": "/assets/portraits/thief.png"

@@ -10,6 +10,14 @@ import { simulate } from './battle-simulation.js';
 import m2Replay from '../../../游戏说明/工程/verification/m2/rule-replays.json';
 import { startTurn } from '../game/battle/turn.js';
 
+/** 剥离表现层新增字段，只保留 M2 历史日志已有的规则字段。 */
+const stripPresentation = (events: readonly unknown[]) => events.map(raw => {
+  const event = { ...(raw as Record<string, unknown>) };
+  if (event.kind === 'attack') { delete event.attackId; delete event.attackKind; delete event.damageType; }
+  if (event.kind === 'ability') { delete event.target; delete event.abilityId; delete event.amount; }
+  return event;
+});
+
 describe('M3正式数据与装备隔离', () => {
   it('三个定义按id查找，调试场保持原图与原配置', () => {
     expect(debugBattle).toEqual({ id: 'battle_debug_core', title: 'M2 · 战棋核心调试场', map: ['.......', '..X....', 'H...X..', '.....E.', '......E'], spawnOrder: ['hero', 'black_a', 'black_b'] });
@@ -74,7 +82,8 @@ describe('M3正式数据与装备隔离', () => {
   });
   it('M2 seed42原合法重放仍为第3轮10HP、17次骰子，日志与既有记录相同', () => {
     const result = simulate(42).state;
-    expect(result.log).toEqual(m2Replay.attack42.log);
+    // 命中表现层新增的结构化字段（攻击类型、法术/治疗结算）不属于 M2 历史验收记录，比较前两侧一并剥离，原 fixture 保持不变。
+    expect(stripPresentation(result.log)).toEqual(stripPresentation(m2Replay.attack42.log));
     expect(result).toMatchObject({ round: 3, rng: { draws: 17 }, result: { outcome: 'win' } });
     expect(getUnit(result, 'hero')!.hp).toBe(10);
   });

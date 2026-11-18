@@ -28,10 +28,3 @@
 .loop-checks { border: 1px solid #78899e55; border-radius: 5px; margin: 6px 0; padding: 4px 6px; }
 .loop-checkbox { display: inline-flex; align-items: center; padding-right: 8px; }
 .loop-hint { color: #ffcf9c; }
-.battle-ability-panel { position: absolute; z-index: 12; right: 32px; bottom: 82px; width: 370px; max-height: 430px; overflow: auto;
-  padding: 15px 18px; background: #131e2ef5; border: 1px solid #d8b45a7a; border-radius: 9px; box-shadow: 0 10px 30px #0009; }
-.battle-ability-panel h2 { margin: 0 0 8px; font-size: 21px; }
-.battle-ability-panel .loop-field { font-size: 13px; }
-.battle-ability-panel select { max-width: 248px; }
-.battle-ability-panel .action-button { display: inline-flex; width: auto; margin: 3px 8px 3px 0; min-height: 36px; font-size: 15px; }
-.battle-ability-note { min-height: 19px; margin: 6px 0; font-size: 13px; color: #e8d3a8; }

@@ -17,6 +17,8 @@
 .battle-header > .action-button { width: 128px; min-height: 42px; justify-content: center; font-size: 16px; }
 .battle-board { position: absolute; left: 304px; top: 116px; width: 672px; height: 480px; box-shadow: 0 12px 40px #0005; }
 .battle-board canvas { display: block; }
+.battle-fx { position: absolute; inset: 0; width: 672px; height: 480px; pointer-events: none; z-index: 3; }
+.battle-board > canvas:first-child { transition: transform 60ms linear; }
 .battle-hit-grid { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(7, 1fr); grid-template-rows: repeat(5, 1fr); }
 .battle-cell { background: transparent; border: 0; padding: 0; border-radius: 0; color: transparent; cursor: pointer; }
 .battle-cell:hover { background: #ffffff0b; }
@@ -39,16 +41,10 @@
 .battle-log .event-death-save, .battle-log .event-condition { color: #f0b2a6; }
 .battle-log .event-result { color: #f4d993; font-weight: 600; }
 .battle-log .event-reaction { color: #91cbed; }
-.battle-actions { position: absolute; width: 280px; z-index: 4; padding: 5px; background: #0b0e14ed; border: 1px solid #d8b45a66; border-radius: 8px; }
-.battle-main-buttons { display: flex; gap: 4px; }
-.battle-actions .action-button { min-height: 43px; padding: 6px 8px; font-size: 16px; justify-content: center; }
-.battle-actions .action-button:disabled { opacity: .4; }
-.battle-skill-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin-top: 7px; }
-.battle-skill-buttons .action-button:last-child { grid-column: 1 / -1; }
-.battle-footer { position: absolute; left: 304px; top: 608px; width: 672px; padding: 8px 12px; min-height: 88px; border-left: 2px solid #d8b45a70; }
-.battle-footer p { font-size: 15px; color: #c2cedb; line-height: 1.6; margin: 0; padding-right: 112px; }
+.battle-footer { position: absolute; left: 16px; top: 522px; width: 272px; padding: 8px 10px; height: 74px; border-left: 2px solid #d8b45a70; overflow: auto; }
+.battle-footer p { font-size: 13px; color: #c2cedb; line-height: 1.5; margin: 0; }
 .battle-footer .battle-hint { font-size: 13px; color: #e8bc82; }
-.battle-footer .action-button { position: absolute; right: 8px; top: 12px; width: 100px; min-height: 38px; font-size: 14px; padding: 6px; justify-content: center; }
+.battle-footer .action-button { margin-top: 4px; width: 100px; min-height: 28px; font-size: 12px; padding: 2px 6px; justify-content: center; }
 .battle-modal { position: absolute; inset: 0; z-index: 15; background: #0b0e149e; display: grid; place-items: center; }
 .battle-dialog { width: 530px; padding: 32px 40px; background: #161a23; border: 1px solid #d8b45a; border-radius: 14px; box-shadow: 0 20px 80px #0009; }
 .battle-dialog h2 { color: #d8b45a; font-size: 28px; font-weight: 500; margin: 0 0 16px; }

@@ -16,7 +16,7 @@ import { reduceMapNavigation } from './map-navigation.js';
 import type { MapAction } from './map-navigation.js';
 import { chapterEntryError, checkpointScene, sceneEntryError } from './story/chapter-policy.js';
 import { canOpenCity, startLoop } from './loop/progress.js';
-import { finishLoopBattle, reduceLoopRoute, showLoop } from './loop/route.js';
+import { finishLoopBattle, finishLoopStory, recordLoopStoryScene, reduceLoopRoute, resumeLoop } from './loop/route.js';
 import type { LoopAction } from './loop/types.js';
 
 type SimpleNavigation = 'open-map' | 'main-menu' | 'resume' | 'ask-replace' | 'cancel-replace' | 'confirm-replace' | 'return-loop';
@@ -105,7 +105,7 @@ function complete(transition: AppTransition, library: StoryLibrary, now: number)
   if (id === 'act1_04') flags[completionFlags.act1] = true;
   const completed = { ...state, flags, progress: { ...p, completedLevelIds } };
   if (accepted && id === 'prologue4_01' && state.system?.read.format === 5) {
-    const started = showLoop(completed, startLoop(state.campaignSeed ?? 0));
+    const started = resumeLoop(completed, startLoop(state.campaignSeed ?? 0), library);
     return { ...save(started.state, now, { kind: 'map' }), effects: [...transition.effects, ...started.effects] };
   }
   const successor = currentLevel(completedLevelIds);
@@ -153,7 +153,7 @@ export function reduceApp(previous: GameState, action: AppAction, library: Story
   if (action.type === 'play') {
     if (previous.postBattle && previous.screen === 'battle' && action.run === previous.run) {
       if (action.action.type !== 'continue-story') return reduceCampaign(previous, action.action, library);
-      const transition = finishLoopBattle(previous, action.action.token);
+      const transition = finishLoopBattle(previous, action.action.token, library);
       return transition.state === previous ? transition : { ...save(transition.state, now, { kind: 'map' }), effects: transition.effects };
     }
     if (!previous.activeLevelId && previous.screen === 'story' && previous.postPrologue) {
@@ -163,6 +163,7 @@ export function reduceApp(previous: GameState, action: AppAction, library: Story
       if (transition.state === previous) return transition;
       const state = transition.state; state.progress = { ...p };
       const moved = state.actId !== previous.actId || state.sceneId !== previous.sceneId;
+      if (moved) recordLoopStoryScene(state);
       const reachedEnd = state.waiting?.kind === 'end' && previous.waiting?.kind !== 'end';
       const flagsChanged = Object.keys(state.flags).length !== Object.keys(previous.flags).length
         || Object.entries(state.flags).some(([key, value]) => previous.flags[key] !== value);
@@ -197,7 +198,8 @@ export function reduceApp(previous: GameState, action: AppAction, library: Story
   if (p.confirming) return same();
   if (action.type === 'return-loop') {
     if (previous.screen !== 'story' || !previous.postPrologue) return same();
-    const transition = showLoop(previous, previous.postPrologue);
+    const transition = finishLoopStory(previous, library);
+    if (transition.state === previous) return transition;
     return { ...save(transition.state, now, { kind: 'map' }), effects: transition.effects };
   }
   if (action.type === 'enter-level') {
@@ -208,7 +210,11 @@ export function reduceApp(previous: GameState, action: AppAction, library: Story
   }
   if (action.type === 'resume') {
     if (previous.screen !== 'menu' || !p.checkpoint || p.status === 'blocked' || p.status === 'saving') return same();
-    if (p.checkpoint.postPrologue) return showLoop(previous, p.checkpoint.postPrologue);
+    if (p.checkpoint.postPrologue) {
+      const resumed = resumeLoop(previous, p.checkpoint.postPrologue, library);
+      return resumed.state.postPrologue?.storyScene !== p.checkpoint.postPrologue.storyScene
+        ? { ...save(resumed.state, now, { kind: 'map' }), effects: resumed.effects } : resumed;
+    }
     const point = normalizedCheckpoint(p.checkpoint.checkpoint, p.completedLevelIds), level = currentLevel(p.completedLevelIds);
     return point.kind === 'level' && point.levelId === level?.id ? begin(previous, library, level.id, point.sceneId, now)
       : handoff(previous, destination(previous, 'map'));
@@ -217,7 +223,7 @@ export function reduceApp(previous: GameState, action: AppAction, library: Story
     if ((action.type === 'main-menu' && previous.screen === 'menu') || (action.type === 'open-map' && previous.screen === 'map')) return same();
     if (action.type === 'open-map' && !canOpenCity(previous.postPrologue)) return same();
     if (action.type === 'open-map' && previous.postPrologue) {
-      const transition = showLoop(previous, previous.postPrologue);
+      const transition = resumeLoop(previous, previous.postPrologue, library);
       return { ...save(transition.state, now, { kind: 'map' }), effects: transition.effects };
     }
     const next = destination(previous, action.type === 'open-map' ? 'map' : 'menu');

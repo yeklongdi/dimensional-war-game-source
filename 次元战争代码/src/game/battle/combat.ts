@@ -17,7 +17,7 @@ export function completeAttack(state: BattleState, actor: string, targetId: stri
   const attacker = getUnit(state, actor)!, target = getUnit(state, targetId)!;
   const context = attackContext(state, attacker, target, attack);
   const result = attackOutcome(roll, attack.bonus, context.ac, ['unconscious', 'stable'].includes(target.status) && context.range <= 1);
-  let next = emit(consumeAttackEffects(state, actor, targetId), { kind: 'attack', actor, target: targetId, attack: attack.name, source, roll, bonus: attack.bonus, total: result.total,
+  let next = emit(consumeAttackEffects(state, actor, targetId), { kind: 'attack', actor, target: targetId, attack: attack.name, attackId: attack.id, attackKind: attack.kind, damageType: attack.damageType, source, roll, bonus: attack.bonus, total: result.total,
     ac: context.ac, cover: context.cover, advantages: context.advantages, disadvantages: context.disadvantages, hit: result.hit, critical: result.critical });
   if (!result.hit) return next;
   const damage = rollDamage(attack.damage, next.rng, result.critical, attack.explode);

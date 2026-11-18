@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "frameWidth": 64,
+  "frameHeight": 64,
+  "frames": 4,
+  "footY": 60,
+  "states": [
+    "appear",
+    "idle",
+    "attack",
+    "cast",
+    "hurt",
+    "down"
+  ],
+  "subjects": {
+    "hero": "男高，沿既有形象",
+    "black": "普通黑衣人，类型共用"
+  },
+  "source": "内置 image_gen；原图保留在 artwork/battle-chess-v1"
+}

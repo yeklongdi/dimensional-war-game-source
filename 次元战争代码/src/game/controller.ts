@@ -117,7 +117,7 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
       }, { decode: images.load, peek: images.peek }, () => { if (!disposed && state.run === scope) syncClock(); });
       else if (state.screen === 'battle') view = new BattleView(root, action => play(action, scope), () => {
         if (state.run === scope) dispatch({ type: 'system', intent: 'load', token: systemToken(state) });
-      });
+      }, id => audio.playSfx(id));
       else if (state.screen === 'map') view = new MapView(root, navigate, loopAction);
       else if (state.screen === 'loop') view = new LoopView(root, loopAction);
       else view = new MenuView(root, dispatch);

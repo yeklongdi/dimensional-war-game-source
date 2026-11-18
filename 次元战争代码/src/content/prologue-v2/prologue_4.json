@@ -136,8 +136,8 @@
         }
       ],
       "meta": {
-        "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 60
+        "sourceFile": "source/story/prologue-v2/prologue_4_r2.md",
+        "line": 61
       },
       "background": "bg_grandmother_bedroom_night",
       "bgm": "bgm_after_dream_quiet"
@@ -257,8 +257,8 @@
         }
       ],
       "meta": {
-        "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 133
+        "sourceFile": "source/story/prologue-v2/prologue_4_r2.md",
+        "line": 134
       },
       "background": "bg_residential_junction_night",
       "bgm": "bgm_organization_tension"
@@ -370,8 +370,8 @@
         }
       ],
       "meta": {
-        "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 205
+        "sourceFile": "source/story/prologue-v2/prologue_4_r2.md",
+        "line": 206
       },
       "background": "bg_old_district_access_night",
       "bgm": "bgm_first_partners_battle"
@@ -485,8 +485,8 @@
         }
       ],
       "meta": {
-        "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 266
+        "sourceFile": "source/story/prologue-v2/prologue_4_r2.md",
+        "line": 267
       },
       "background": "bg_old_district_battle_street_night",
       "bgm": "bgm_foreigner_approach"
@@ -597,8 +597,8 @@
         }
       ],
       "meta": {
-        "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 327
+        "sourceFile": "source/story/prologue-v2/prologue_4_r2.md",
+        "line": 328
       },
       "background": "bg_old_district_battle_street_night",
       "bgm": "bgm_link_advantage"
@@ -712,8 +712,8 @@
         }
       ],
       "meta": {
-        "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 383
+        "sourceFile": "source/story/prologue-v2/prologue_4_r2.md",
+        "line": 384
       },
       "background": "bg_old_district_battle_street_night",
       "bgm": "bgm_organization_reinforcements"
@@ -816,8 +816,8 @@
         }
       ],
       "meta": {
-        "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 439
+        "sourceFile": "source/story/prologue-v2/prologue_4_r2.md",
+        "line": 440
       },
       "background": "bg_old_district_battle_street_night",
       "bgm": "bgm_encirclement_pressure"
@@ -936,15 +936,15 @@
         }
       ],
       "meta": {
-        "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 493
+        "sourceFile": "source/story/prologue-v2/prologue_4_r2.md",
+        "line": 494
       },
       "background": "bg_old_district_battle_street_night",
       "bgm": "bgm_thief_escape"
     },
     {
       "id": "c009",
-      "title": "小巷中的真实身份",
+      "title": "小巷中的“怪盗”",
       "time": "脱离包围后",
       "nodes": [
         {
@@ -997,7 +997,7 @@
           "asset": "char_thief_masked_black_placeholder",
           "position": "right",
           "placeholder": true,
-          "pose": "抬手准备摘下面罩",
+          "pose": "抬手扶了扶黑色面罩",
           "expression": "轻松"
         },
         {
@@ -1020,7 +1020,7 @@
         },
         {
           "kind": "stage",
-          "text": "说话间，他抬手扯下了脸上的黑色面罩。巷口斜斜投进来的街灯光晕下，露出了一张男高白天才在教室里见过的熟悉面孔。"
+          "text": "他抬手扶了扶脸上的黑色面罩，却没有摘下来的意思。昏暗的巷口微光下，只能看见对方弯起眼角、带着几分从容笑意的神情。"
         },
         {
           "kind": "hide",
@@ -1029,35 +1029,25 @@
         {
           "kind": "show",
           "actor": "怪盗",
-          "asset": "char_thief_smile",
+          "asset": "char_thief_masked_black_placeholder",
           "position": "right",
           "placeholder": true,
-          "pose": "收起面罩",
+          "pose": "保持蒙面，靠墙抱胸",
           "expression": "带笑，观察男高"
         },
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "……怎么是你？！"
+          "text": "等一下……那身黑衣，还有那股动静……昨晚被那帮家伙堵在仓库墙角的蒙面人，真的是你？！"
         },
         {
           "kind": "dialogue",
           "speaker": "怪盗",
-          "text": "礼尚往来，今晚换我捞你一把。先小点声，外头的追兵还没走远呢。"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "男高",
-          "text": "等一下……早上路口撞到的、教室里坐我前排的……还有昨晚被那帮黑衣人堵在墙角的蒙面人，全都是你？！"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "怪盗",
-          "text": "再怎么说我也还是个高中生，白天总得按时上课吧？至于昨晚那档子事……麻烦压低点嗓门，我可不想明天一早登上校园头条。"
+          "text": "礼尚往来，今晚换我捞你一把。叫我“怪盗”就行——先小点声，外头的追兵还没走远呢。"
         },
         {
           "kind": "stage",
-          "text": "男高瞪大眼睛盯着他，努力想把白天那个在座位上转着笔打招呼的同班同学，跟眼前这个神出鬼没的黑衣蒙面人重叠到一块儿。怪盗看着他呆滞的表情，脸上的玩笑之色也渐渐收敛了几分。"
+          "text": "男高愣了一下，挠着后脑勺上下打量了眼前这位神出鬼没的黑衣人两眼，总觉得这人说话的调侃劲儿莫名有点耳熟，可偏偏隔着严实的面罩和夜色，怎么也猜不出对方的底细。"
         },
         {
           "kind": "dialogue",
@@ -1067,12 +1057,7 @@
         {
           "kind": "dialogue",
           "speaker": "男高",
-          "text": "既、既然记着，白天在班里你倒是偷偷给我提个醒啊！害我今晚又稀里糊涂撞进这帮人的包围圈里！"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "怪盗",
-          "text": "天地良心，我哪能料到才过了一天，你就能惹上这么大阵仗？"
+          "text": "举手之劳而已，谁让那帮家伙大晚上鬼鬼祟祟堵人呢！倒是你——怎么会刚好在这片住宅区里出现？"
         },
         {
           "kind": "dialogue",
@@ -1090,13 +1075,19 @@
           "note": "SET: thief_identity_known = true"
         },
         {
+          "kind": "set",
+          "flag": "thief_classmate_identity_known",
+          "value": false,
+          "note": "SET: thief_classmate_identity_known = false"
+        },
+        {
           "kind": "jump",
           "target": "c010"
         }
       ],
       "meta": {
-        "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 559
+        "sourceFile": "source/story/prologue-v2/prologue_4_r2.md",
+        "line": 560
       },
       "background": "bg_old_district_quiet_alley_night",
       "bgm": "bgm_thief_reveal_quiet"
@@ -1144,10 +1135,10 @@
         {
           "kind": "show",
           "actor": "怪盗",
-          "asset": "char_thief_smile",
+          "asset": "char_thief_masked_black_placeholder",
           "position": "right",
           "placeholder": true,
-          "pose": "靠墙简短解释",
+          "pose": "保持蒙面，靠墙简短解释",
           "expression": "认真"
         },
         {
@@ -1257,8 +1248,8 @@
         }
       ],
       "meta": {
-        "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 648
+        "sourceFile": "source/story/prologue-v2/prologue_4_r2.md",
+        "line": 638
       },
       "background": "bg_old_district_quiet_alley_night",
       "bgm": "bgm_holy_grail_explanation"
@@ -1306,10 +1297,10 @@
         {
           "kind": "show",
           "actor": "怪盗",
-          "asset": "char_thief_smile",
+          "asset": "char_thief_masked_black_placeholder",
           "position": "right",
           "placeholder": true,
-          "pose": "侧身介绍同伴",
+          "pose": "保持蒙面，侧身介绍同伴",
           "expression": "郑重"
         },
         {
@@ -1379,15 +1370,15 @@
         }
       ],
       "meta": {
-        "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 743
+        "sourceFile": "source/story/prologue-v2/prologue_4_r2.md",
+        "line": 733
       },
       "background": "bg_old_district_quiet_alley_night",
       "bgm": "bgm_temporary_companions"
     },
     {
       "id": "c012",
-      "title": "暂时合作",
+      "title": "避战嘱托与暂时分别",
       "time": "同一夜，分别前",
       "nodes": [
         {
@@ -1424,10 +1415,10 @@
         {
           "kind": "show",
           "actor": "怪盗",
-          "asset": "char_thief_smile",
+          "asset": "char_thief_masked_black_placeholder",
           "position": "right",
           "placeholder": true,
-          "pose": "放低声音，提出约定",
+          "pose": "保持蒙面，站直叮嘱",
           "expression": "认真"
         },
         {
@@ -1441,7 +1432,7 @@
         },
         {
           "kind": "show",
-          "actor": "女剑士",
+          "actor": "Saber",
           "asset": "char_saber_traveler_placeholder",
           "position": "center",
           "placeholder": true,
@@ -1474,35 +1465,60 @@
         {
           "kind": "dialogue",
           "speaker": "怪盗",
-          "text": "行，那今晚就先散了。明天学校见。"
+          "text": "行，那今晚就先散了。不过分别前，还有件事得给你提个醒。"
         },
         {
-          "kind": "dialogue",
-          "speaker": "男高",
-          "text": "喂，你肯定还有不少事儿没跟我交底呢。"
+          "kind": "stage",
+          "text": "怪盗站直身子，隔着面罩认真地看向男高。"
         },
         {
           "kind": "dialogue",
           "speaker": "怪盗",
-          "text": "那是自然，我也有一肚子问题想问你呢。等明天找个不会随时冒出追兵的清静地方，咱们再敞开了互通有无。"
-        },
-        {
-          "kind": "dialogue",
-          "speaker": "男高",
-          "text": "一言为定！先把情报对清楚，我可不想再像今晚这样，两眼一抹黑就撞进枪口里。"
+          "text": "按这阵子查到的动静，这场仪式早就不止咱们几个参与者了。这城市里，肯定还藏着其他不知什么时候被卷进来的御主。"
         },
         {
           "kind": "dialogue",
           "speaker": "怪盗",
-          "text": "哈哈，这话我记下了。"
+          "text": "你以后在市里也好、在平时生活里也好，多长个心眼——想办法找出其他御主都是谁、都在哪儿。记住，找到人之后心里有数就行，能避开就尽量避开，千万别和他们发生争斗，明白吗？"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "pose": "眼睛一亮，重重点头拍胸口",
+          "expression": "振奋，误解"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "放心吧，怪盗！你的意思我完全明白了！\n我一定会想办法把其他御主找出来——放心，我绝对不会和他们打起来的！"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "让我去找其他御主，还特意叮嘱绝对不要跟他们打起来……这不明摆着是让我去联系大家、彼此别内斗，一起结盟联手对抗那个黑衣神秘组织嘛！\n就像《勇者斗恶龙》里孤身一人打不过魔王，必须先把散落在各地的同伴找齐一样……怪盗这家伙虽然蒙着脸，想得可真周到啊！"
         },
         {
           "kind": "stage",
-          "text": "Saber率先探出巷口观察片刻，确认另一侧的小路没有搜捕队驻守。怪盗指向与来路相反的背街，领着众人又七拐八拐地绕过了一段街区。"
+          "text": "巷子另一头的怪盗隔着面罩，只当眼前的少年是听懂了“摸清位置后老实绕道避险”的劝告，顿时满意地点了点头。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "你心里有数就好。外头巡逻的人还没撤远，咱们各自挑不同的路撤，回头要是有什么要紧事，我再想办法联系你。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "嗯！你也多加小心！"
         },
         {
           "kind": "stage",
-          "text": "直到抵达岔路口的分别处，四人停步屏息观察了一阵。确认四周再无任何尾随的动静后，男高才与金发青年转身踏上回家的路。"
+          "text": "Saber率先探出巷口观察片刻，确认另一侧的小路没有搜捕队驻守。怪盗指向与来路相反的背街，朝男高挥了挥手，随即带着 Saber 率先隐入夜色之中。"
+        },
+        {
+          "kind": "stage",
+          "text": "直到确认四周再无任何尾随的动静后，男高才与金发青年转身踏上回家的路。"
         },
         {
           "kind": "set",
@@ -1511,13 +1527,19 @@
           "note": "SET: temporary_cooperation = true"
         },
         {
+          "kind": "set",
+          "flag": "misunderstood_alliance_promise",
+          "value": true,
+          "note": "SET: misunderstood_alliance_promise = true"
+        },
+        {
           "kind": "jump",
           "target": "c013"
         }
       ],
       "meta": {
-        "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 805
+        "sourceFile": "source/story/prologue-v2/prologue_4_r2.md",
+        "line": 795
       },
       "background": "bg_old_district_quiet_alley_night",
       "bgm": "bgm_temporary_companions"
@@ -1690,8 +1712,8 @@
         }
       ],
       "meta": {
-        "sourceFile": "source/story/prologue-v2/prologue_4.md",
-        "line": 882
+        "sourceFile": "source/story/prologue-v2/prologue_4_r2.md",
+        "line": 892
       },
       "background": "bg_grandmother_house_entrance_night",
       "bgm": "bgm_homecoming_warm_low"

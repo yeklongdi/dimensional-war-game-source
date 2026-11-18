@@ -11,6 +11,7 @@ import { button, element } from './elements.js';
 import { MapPopup } from './map-popup.js';
 import { calendarLabel, LoopMapHud } from './loop-view.js';
 import { demoTitle } from '../loop/config.js';
+import { visibleEvents } from '../loop/progress.js';
 import type { LoopAction } from '../loop/types.js';
 
 export class MapView {
@@ -176,6 +177,14 @@ export class MapView {
       pin.classList.toggle('selected', pin.dataset.locationId === map.selected);
       pin.classList.toggle('current', pin.dataset.locationId === current?.locationId);
       pin.setAttribute('aria-expanded', String(map.popupOpen && pin.dataset.locationId === map.selected));
+      if (loop) {
+        const location = locationById(pin.dataset.locationId as LocationId);
+        const available = location.id === 'grandma_home' || visibleEvents(loop, location.id, state.flags).length > 0;
+        pin.classList.toggle('has-city-action', available);
+        const hint = location.name + (available ? '，本时段可行动' : '，本时段无行动');
+        pin.title = hint;
+        pin.setAttribute('aria-label', hint);
+      }
     }
     const containedFocus = this.popup.root.contains(document.activeElement);
     this.popup.render(state);

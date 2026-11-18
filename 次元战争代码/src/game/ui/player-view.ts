@@ -1,5 +1,5 @@
 import type { Action, GameState } from '../state.js';
-import { displayName } from '../story/config.js';
+import { displayName, displayStoryText } from '../story/config.js';
 import { button, element } from './elements.js';
 import { renderDebug } from './dev-overlay.js';
 import { PortraitsView } from './portraits.js';
@@ -137,7 +137,7 @@ export class PlayerView {
         const optionButton = button('', `option-${option.index}`, activate({ type: 'choose', token, index: option.index }));
         optionButton.dataset.optionIndex = String(option.index);
         optionButton.disabled = !option.enabled;
-        optionButton.append(element('span', '', option.text));
+        optionButton.append(element('span', '', displayStoryText(state.actId, option.text)));
         if (!option.enabled) optionButton.append(element('span', 'unavailable', '暂未开放'));
         panel.append(optionButton);
       }
@@ -152,15 +152,16 @@ export class PlayerView {
           element('p', '', waiting.message));
         if (waiting.kind === 'unfinished' && state.sceneId === 'a010_return_class')
           panel.append(button('重新选择', 'reselect-choice', activate({ type: 'reselect', token })));
-        if (this.endNavigation) panel.append(button('返回地图', 'blocked-map', this.endNavigation));
+        if (this.endNavigation && !state.postPrologue?.storyScene) panel.append(button('返回地图', 'blocked-map', this.endNavigation));
         if (this.systemNavigation) panel.append(button('读取存档', 'blocked-load', () => this.systemNavigation!('load')),
           button('返回主菜单', 'blocked-menu', () => this.systemNavigation!('go-menu')));
       } else if (waiting.kind === 'end') {
         const prologue = state.actId === 'prologue';
         // 循环内的独立剧情返回已保存的循环节点，其余关卡仍回地图。
-        const back = state.postPrologue ? '返回日程' : '返回地图';
+        const back = state.sceneId === 'm102' ? '开始第 1 天日程' : state.postPrologue ? '返回日程' : '返回地图';
         panel.dataset.testid = 'act-end';
-        panel.append(element('div', 'eyebrow', '次元战争'), element('h1', '', `${chapterTitles[state.actId] ?? state.actId}结束`),
+        const chapter = state.sceneId === 't103' ? '怪盗·羁绊一' : chapterTitles[state.actId] ?? state.actId;
+        panel.append(element('div', 'eyebrow', '次元战争'), element('h1', '', `${chapter}结束`),
           this.endNavigation ? button(back, 'end-levels', this.endNavigation)
             : button(prologue ? '进入第一幕' : '重新开始', prologue ? 'enter-act1' : 'restart', activate({ type: prologue ? 'enter-act1' : 'restart', token })));
       } else {

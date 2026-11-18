@@ -1,10 +1,13 @@
 import type { LocationId } from '../../content/map-locations.js';
 import type { AbilityId } from '../battle/types.js';
-import type { CantripId, ClassId, EventId, FighterStyle, ItemId, Slot, SpellId, WeaponId } from './types.js';
+import type { CantripId, ClassId, EventId, FighterStyle, ItemId, LoopStoryScene, Slot, SpellId, WeaponId } from './types.js';
 
-/** 演示暂定配置，供实测调参。正式周期、报酬和商店定价待确认。 */
+export const firstCycle = { actId: 'first_cycle', meetingDay: 7, raidDeadline: 9, releaseDay: 10 } as const;
+export const loopStoryActId = (scene: LoopStoryScene) => scene === 'v102' ? 'vtuber_bond1' : firstCycle.actId;
+
+/** 演示暂定配置，供实测调参。 */
 export const demo = {
-  days: [10, 10], gold: 20, linkInitial: 2, linkAfterShort: 1, linkAfterLong: 2,
+  days: [firstCycle.releaseDay, 10], gold: 20, linkInitial: 2, linkAfterShort: 1, linkAfterLong: 2,
   divineAid: 3, jobReward: 10, requestReward: 16, battleReward: 12, bossReward: 25,
 } as const;
 export const demoTitle = '序幕后玩法演示';
@@ -38,6 +41,7 @@ export const casterOptions = {
 export type StoryGate = {
   actId: string; sceneId: string;
   requires?: readonly string[]; hiddenWhen?: readonly string[];
+  cycle?: number; lastDay?: number;
 };
 export type CityEvent = {
   id: EventId; label: string; location: LocationId; slot: Slot; slots?: readonly Slot[];
@@ -55,6 +59,9 @@ export const events: readonly CityEvent[] = [
   { id: 'job', label: '傍晚打工', location: 'school_road', slot: 'evening', reward: demo.jobReward },
   { id: 'street_request', label: '街区委托', location: 'school_road', slot: 'evening', once: true, reward: demo.requestReward },
   { id: 'street_patrol', label: '旧街区巡逻', location: 'old_warehouse', slot: 'evening', battle: 'patrol' },
+  { id: 'thief_bond1', label: '到旧仓库赴约', location: 'old_warehouse', slot: 'night',
+    story: { actId: firstCycle.actId, sceneId: 't101', cycle: 0, lastDay: firstCycle.meetingDay - 1,
+      requires: ['thief_invitation_received'], hiddenWhen: ['thief_bond1_complete'] } },
 ];
 export const interludeId = (cycle: number, moment: 'night' | 'dawn') => 'cycle_' + (cycle + 1) + '_' + moment;
 export const encounterNames = { patrol: '日常遭遇', first: '第一战 · 近战', second: '第二战 · 远程', boss: '关底战' } as const;

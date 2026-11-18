@@ -2,6 +2,69 @@
 
 > 2026-10-24目录整理：程序位于`E:\笔记\次元战争设定\次元战争代码`，本文件及原docs已移至说明区。当前路径与旧位置对照见[说明入口](../README.md)；后续终端命令均在代码目录运行。历史阶段结论仍按当时记录理解。
 
+## 2026-11-18：首个十日周期
+
+- **路线**。序幕（三）后的夜战沿用显式跳过入口。序幕（四）C009 至 C012 使用新版蒙面与避战剧本。C013 结束进入 M101、M102，读完来信从第 1 天放学后开始日程。
+- **赴约**。第 1～6 天夜晚可在旧街区仓库主动赴约。第 7 天进入夜晚或选择跳过今日时，尚未赴约则先播 M103，再合流到 T101–T103。若同夜待播 V102，先完成赴约，再播直播并进入次日。
+- **待制作**。T102 会等玩家在系统菜单明确跳过，保存跳过标记后继续 T103。第 9 天据点战和第 10 天正式剧情、敌阵与结算待补。第 10 天夜末进入原演示副本。
+- **存档**。新增场景头随 v5 循环检查点保存。旧 v5 日程档保留原天数和资源。已看过旧版摘面罩的存档保留该知情标记；新版仍以金发青年、前排同学、蒙面怪盗等场合称呼显示。
+- **导入**。在代码区执行 `node tools/import-prologue.mjs` 登记已确认来源，再用 `npm run export-story` 生成运行数据。已登记的正文快照按哈希保护。虚拟主播线用 `node tools/export-vtuber.mjs` 单独导出。
+- **验收**。用 `python -B tools/check-first-cycle.py --url <试玩地址> --output <截图目录>` 复查两条赴约路线、实验室停等、同夜直播、断点恢复和第十天三战结算。[验收结果](verification/first-cycle/results.json) · [副本结算](verification/first-cycle/05-dungeon-settlement.jpg)
+
+## 2026-11-17：雕塑棋子与棋上像素人物交战样例
+
+用户已确认先制作男高与一种普通黑衣人的样例，审阅材质、比例和打击感后再覆盖当前可上场角色。当前实现位于开发入口`次元战争代码/dev-chess.html`（开发服务打开`/dev-chess.html`）。[离线交互样例](verification/chess-sample/chess-sample.html)内嵌图片与音效，可直接打开；宽窗口保留技能栏、单位资料与战斗日志，窄窗口集中展示棋盘、场景切换和演出速度。正式入口仍沿用原显示方式，没有自动切换为棋子模式；本阶段未提交推送或发布。
+
+男高采用红色珐琅、黑色金属、金边与白领口纹样的定制棋子；黑衣人采用黑曜石／枪灰金属与兜帽形轮廓。底座边缘区分敌我，角色本体配色与棋型固定，不随样例中的武僧／法师构筑变化。普通黑衣人甲、乙共用同一套类型素材，以名字区分个体。角色像素形象与棋子分开绘制，选中单位时显现人物，回合开始自动跟随行动者；点击敌方棋子或用键盘点选单位资料可以查看，不改变行动权。交战者及范围效果的全部受影响者临时同时显现，演出结束后保留最近选中的查看对象。
+
+内置`image_gen.imagegen`生成两枚透明雕塑棋子及两人共48帧动作图集。男高以既有`hero-half-alert.png`为身份参考，保留发型、黑校服、红内衫与吊牌。两人各有显现、待机、攻击、施法／远程、受击、倒地6组动作，每组4帧；不是用一张静态立绘平移冒充动作。原始图集与完整提示词保留在代码区`artwork/battle-chess-v1/`，`prepare-chess-sample.py`仅裁切、缩放、统一画格与透明通道，运行图集为64×64画格。仍需用户审阅美术结果，不视为其他角色或所有技能专属动画已完成。
+
+演出从真实战斗事件生成只读计划：挥击、法术起手、弹道／斩击、命中、后仰、闪白、飘字和音效使用同一虚拟时钟。命中时更新棋盘生命条，免疫保留站立与免疫反馈，范围内的豁免和受击同刻发生。倒地4帧完成后才释放演出锁，棋子逐渐倾倒、变暗并保留状态；再次点选可以看倒地人物。人物始终依附自己的棋子，不改变实际格位。1×／2×／4×可在演出中切换，不重播、不改掷骰或结算；下一次战斗动作在本组演出结束后才接受，音效播放同步采用对应倍率并保留音高。后台时暂停演出时钟，返回后继续。
+
+“徒手／法术／范围／倒地”四种样例使用正式规则reducer及临时内存战斗配置；倒地场景把测试黑衣人耐久设为1以便重复观察，不覆盖正式敌人数据。样例不调用存档或设置Storage接口，原稿、source输入副本、战斗规则数值和资源许可未修改。旧音效与受击反馈的工作区改动保留；正常战斗继续使用原事件调度，仅棋子样例启用新的同步演出方式。
+
+验证：类型检查通过；`npm test -- src/tests/chess-performance.test.ts src/tests/battle-feedback.test.ts`通过2文件34项；`python tools/check-chess-sample.py`通过15个浏览器场景、控制台错误0。覆盖素材延迟解码、点选与键盘查看、重复动作拦截、音效去重、中途改速、真实施法、范围友伤反馈、完整倒地、回合跟随、移动与借机、顶行空间、切换场景清理、Storage零调用、离线728px交互与无外部网络请求，以及旧调试入口显示。普通与Pages子路径构建通过，正式构建不输出开发样例页。未进行无关剧情、完整九关或其他角色的动画验收。
+
+本阶段文件清单：
+
+| 类别 | 文件 |
+|---|---|
+| 修改 | `次元战争代码/src/game/ui/battle-view.ts`、`battle-fx.ts`、`src/game/battle/render.ts`、`src/game/audio.ts`及本README |
+| 新增演出与渲染 | `次元战争代码/src/game/battle/presentation-clock.ts`、`chess-performance.ts`、`chess-assets.ts`、`render-chess.ts`、`src/game/ui/battle-choreography.ts`、`src/styles/battle-chess.css` |
+| 新增样例入口 | `次元战争代码/dev-chess.html`、`src/dev/chess-sample.ts`、`src/dev/chess-sample-state.ts` |
+| 新增测试与工具 | `次元战争代码/src/tests/chess-performance.test.ts`、`tools/prepare-chess-sample.py`、`tools/build-chess-preview.mjs`、`tools/check-chess-sample.py` |
+| 新增原始素材 | `次元战争代码/artwork/battle-chess-v1/pieces-source.png`、`poses-source.png`、`prompts.json`；从默认生图目录复制，默认原图保留 |
+| 新增运行素材 | `次元战争代码/public/assets/battle/chess-v1/hero-piece.png`、`black-piece.png`、`hero-poses.png`、`black-poses.png`、`manifest.json` |
+| 新增验收证据 | 本节下列13张截图、离线交互`chess-sample.html`、[results.json](verification/chess-sample/results.json) |
+| 生成构建产物 | 代码区`dist`由普通与Pages构建重新生成，保持本机；不计入正式源文件变更 |
+| 移动／删除正式项目文件 | 无 |
+
+截图位于`游戏说明/工程/verification/chess-sample/`：[01-idle.png](verification/chess-sample/01-idle.png)、[02-impact.png](verification/chess-sample/02-impact.png)、[03-inspect-enemy.png](verification/chess-sample/03-inspect-enemy.png)、[04-speed-four.png](verification/chess-sample/04-speed-four.png)、[05-cast.png](verification/chess-sample/05-cast.png)、[06-area.png](verification/chess-sample/06-area.png)、[07-falling.png](verification/chess-sample/07-falling.png)、[08-fallen-piece.png](verification/chess-sample/08-fallen-piece.png)、[09-inspect-fallen.png](verification/chess-sample/09-inspect-fallen.png)、[10-next-turn.png](verification/chess-sample/10-next-turn.png)、[11-top-row.png](verification/chess-sample/11-top-row.png)、[12-inline-preview.png](verification/chess-sample/12-inline-preview.png)、[13-existing-battle.png](verification/chess-sample/13-existing-battle.png)。
+
+## 2026-11-17：战斗底部技能／法术操作栏
+
+战斗操作从角色脚下的浮动菜单改为固定底栏：左侧显示当前行动者、生命与回合资源，攻击／移动直接可见，结束回合独立显示。右侧按“全部／技能／戏法／一环／道具”排列图标与名称，每页最多14项，支持名称搜索和翻页。零数量、资源耗尽与不满足目标条件的能力保留位置并变暗，仍可点开详情查看原因；确认使用按钮会禁用。图形为本地SVG，没有新增运行时依赖。
+
+悬停／键盘聚焦图标可读效果、动作消耗、射程和剩余次数。点选职业能力、法术或道具后，左侧展示详情与目标；可点目标按钮，也可点棋盘上的金色格。范围／锥形法术通过棋盘选择中心／方向并提示可能波及友方；术法爆发直接展开伤害类型。选项、目标与筛选保存在当前视图，确认前不扣资源、不掷骰；换回合、换角色及离开选择模式时清理未提交目标。正式战斗ESC仍打开系统菜单；关闭详情可取消技能选择，独立调试场支持ESC取消。
+
+数值、命中、伤害和可选条件继续使用现有战斗规则；说明只解释当前已实现效果。本轮没有改写剧情、设定原稿、`source`输入副本、角色构筑、存档格式或资源许可。工作区原有战斗音效与受击反馈改动保留。
+
+专项验证：`npm test -- src/tests/battle-actions.test.ts src/tests/post-prologue-battle.test.ts`通过2文件17项；`python tools/check-battle-actions.py`通过16个场景、控制台错误0。浏览器覆盖分类／搜索／中文输入法、14项分页、法术与卷轴各自扣资源、附赠药水、耗尽原因、棋盘目标／取消、范围方向、术法爆发类型、换角色清理、移动取消，以及1280×720、1920×1080、1024×768三个桌面视口。能力专项使用真实BattleView与规则reducer的隔离夹具；正式入口另用隔离v5测试档验证恢复出战、选法术、系统菜单、取消与确认。多页压力夹具临时组合项目已有能力，不改变正式构筑上限。类型检查、普通及Pages子路径构建通过；按用户范围没有运行全量或无关剧情测试。本轮完成本地实现与验证，尚未提交推送或上线。
+
+本轮实际文件清单（原有未提交改动不计为本轮成果）：
+
+| 类别 | 文件 |
+|---|---|
+| 修改 | `次元战争代码/src/game/ui/battle-controls.ts`、`battle-abilities.ts`、`battle-view.ts` |
+| 修改 | `次元战争代码/src/styles/battle.css`、`loop.css`及本README |
+| 新增 | `次元战争代码/src/game/ui/battle-action-icons.ts`、`battle-action-copy.ts`、`battle-action-model.ts` |
+| 新增 | `次元战争代码/src/styles/battle-actions.css`、`src/tests/battle-actions.test.ts`、`tools/check-battle-actions.py` |
+| 新增验收证据 | [results.json](verification/battle-actionbar/results.json)及下列13张截图 |
+| 生成构建产物 | 代码区`dist/index.html`与`dist/assets/index-*.css`、`dist/assets/index-*.js`，按既有规则保持本机 |
+| 移动／删除 | 无 |
+
+截图位于`游戏说明/工程/verification/battle-actionbar/`：[01-debug.png](verification/battle-actionbar/01-debug.png)、[02-wizard-all.png](verification/battle-actionbar/02-wizard-all.png)、[03-scroll-tooltip.png](verification/battle-actionbar/03-scroll-tooltip.png)、[04-level-one.png](verification/battle-actionbar/04-level-one.png)、[05-spell-target.png](verification/battle-actionbar/05-spell-target.png)、[06-unavailable.png](verification/battle-actionbar/06-unavailable.png)、[07-burst-damage.png](verification/battle-actionbar/07-burst-damage.png)、[08-area-direction.png](verification/battle-actionbar/08-area-direction.png)、[09-pagination.png](verification/battle-actionbar/09-pagination.png)、[10-monk-return.png](verification/battle-actionbar/10-monk-return.png)、[11-smaller-window.png](verification/battle-actionbar/11-smaller-window.png)、[12-runtime-spell-target.png](verification/battle-actionbar/12-runtime-spell-target.png)、[13-runtime-after-use.png](verification/battle-actionbar/13-runtime-after-use.png)。
+
 ## 2026-10-26：快速推进时的图片加载修复与GitHub同步
 
 背景不再因同图换场景或新图仍在解码而主动清屏；图片缓存由单控制器共享，并预热首场、当前场景与明确下一场开头。已绑定立绘首次加载用准备状态，不冒充缺素材占位；准备期间暂停正文推进，避免连点丢句。真实缺图与加载失败仍保留明确回退，旧请求不可覆盖新画面。类型检查及3文件37项加载相关测试通过，正常P001→P002、快速推进至P005、读档、延迟／失败与正式子路径开发预览已检查。初次交付仅本地；用户随后明确要求更新GitHub，发布准备已再次通过类型检查、37项定向测试及正式子路径生产构建（99模块）。沿用现有main、Actions与[Pages网址](https://yeklongdi.github.io/dimensional-war-game-source/)，不纳入其他窗口的角色卡改动，不增加无关玩法实测。具体范围、截图与文件清单见[修复记录](scene-image-loading-fix.md)；提交和部署回执以本次交付及实际Actions为准。
@@ -110,7 +173,7 @@
 
 localhost 与正式网站的存档相互独立，不会自动迁移或跨设备同步。两首 WAV 保留原音质，较大的音乐文件可能使首次加载变慢。
 
-当前工程保留M0–M4、大地图、移动规划、对话／分层及菜单／多档／设置能力。正常流程仍为主菜单→地图→地点浮窗→关卡→返回地图；内容已按顶部说明扩为九关，正式最大进度8／9并在C003阻断。旧七关25场是历史稿，不用旧数量验收新稿。
+该历史阶段的流程为主菜单→地图→地点浮窗→关卡→返回地图，当时最大进度 8／9。当前入口、九关之后的日程和两处序幕战斗跳过规则见本页顶部。
 
 工程目录：`E:\笔记\次元战争设定\次元战争代码`。任务依据为 `../游戏说明/工程/01-任务书.md` §12 与 `../游戏说明/工程/map-selection-spec.md`；M4 三卡、整幕重玩和 v1 唯一格式已被替代，历史验收不改写。
 

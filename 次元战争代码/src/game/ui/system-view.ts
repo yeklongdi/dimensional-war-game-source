@@ -10,7 +10,7 @@ import type { RunSnapshot } from '../save-run.js';
 import { button, element } from './elements.js';
 import { skipReason } from '../fast-forward.js';
 import { canOpenCity } from '../loop/progress.js';
-import { encounterNames, slotNames } from '../loop/config.js';
+import { encounterNames, loopStoryActId, slotNames } from '../loop/config.js';
 
 export function snapshotLabel(data: RunSnapshot): string {
   const loop = data.postPrologue;
@@ -18,7 +18,9 @@ export function snapshotLabel(data: RunSnapshot): string {
     const phase = loop.phase;
     const summary = phase.kind === 'deploy' ? encounterNames[phase.encounter] + ' · 出战前'
       : { intro: '序幕后入口', city: slotNames[loop.slot], interlude: '幕间剧', crisis: '截止日', safe: '安全点', settlement: '副本结算', complete: '演示完成' }[phase.kind];
-    return '第 ' + (loop.cycle + 1) + ' 周期 · 第 ' + loop.day + ' 天 · ' + summary;
+    const scene = loop.storyScene;
+    const storyTitle = scene && storyLibrary[loopStoryActId(scene)]?.scenes.find(item => item.id === scene)?.title;
+    return '第 ' + (loop.cycle + 1) + ' 周期 · 第 ' + loop.day + ' 天 · ' + (storyTitle ? displaySceneTitle(storyTitle) : summary);
   }
   const point = data.checkpoint;
   if (point.kind === 'map') return `太阳市地图 · ${currentLevel(data.completedLevelIds)?.name ?? '垂直切片已完成'}`;

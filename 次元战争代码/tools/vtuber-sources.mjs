@@ -13,4 +13,4 @@ export const vtuberSources = [
   },
 ];
 
-export const vtuberVault = ['游戏说明', '剧情'];
+export const vtuberVault = ['游戏说明', '剧情', '个人'];

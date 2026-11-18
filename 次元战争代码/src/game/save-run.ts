@@ -1,5 +1,6 @@
 import { levels } from '../content/levels.js';
 import { decodeLoop } from './loop/checkpoint.js';
+import { loopStoryActId } from './loop/config.js';
 import type { LoopCheckpoint } from './loop/types.js';
 import { decodeV2 } from './save-v2.js';
 import type { SaveV2 } from './save-v2.js';
@@ -31,9 +32,16 @@ export function decodeRunSnapshot(value: unknown, library: StoryLibrary): RunSna
   const { postPrologue, ...base } = value;
   const prologue = decodeV2(JSON.stringify(base), library);
   if (prologue.kind !== 'valid') return undefined;
+  const flags = prologue.data.flags;
+  if (flags.thief_identity_known === true && flags.thief_classmate_identity_known === undefined) {
+    flags.thief_classmate_identity_known = true;
+  }
   if (!Object.hasOwn(value, 'postPrologue')) return prologue.data;
   const loop = decodeLoop(postPrologue);
   if (!loop || prologue.data.completedLevelIds.length !== levels.length || !prologue.data.flags.prologue_4_complete
     || prologue.data.checkpoint.kind !== 'map') return undefined;
+  const scene = loop.storyScene;
+  if (scene && !library[loopStoryActId(scene)]?.scenes.some(item => item.id === scene)) return undefined;
+  if (scene?.startsWith('t') && flags.thief_invitation_received !== true) return undefined;
   return { ...prologue.data, postPrologue: loop };
 }

@@ -1,0 +1,8 @@
+{
+  "checks": [
+    "active_visit",
+    "forced_visit_and_dungeon"
+  ],
+  "errors": [],
+  "url": "http://127.0.0.1:5188/?seed=0"
+}

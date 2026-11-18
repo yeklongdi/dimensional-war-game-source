@@ -4,7 +4,7 @@
 //   node tools/export-vtuber.mjs            仅导出（读取 source 快照）
 //   node tools/export-vtuber.mjs --import   先把原稿从游戏说明复制到 source 快照，再导出
 import { createHash } from 'node:crypto';
-import { copyFile, mkdir, readFile, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseStory } from './story-parser.mjs';
@@ -15,12 +15,17 @@ const outDir = resolve(root, 'src', 'content', 'vtuber');
 const hash = buffer => createHash('sha256').update(buffer).digest('hex');
 const importMode = process.argv.includes('--import');
 
-async function snapshot(item) {
+async function snapshot(item, expectedHash) {
   const from = resolve(root, '..', ...vtuberVault, item.part, item.script);
   const to = resolve(root, item.sourceFile);
   if (importMode) {
+    const bytes = await readFile(from);
+    if (hash(bytes) !== expectedHash) throw new Error(`${item.script} 与已登记版本不同，须先建立修订清单。`);
     await mkdir(dirname(to), { recursive: true });
-    await copyFile(from, to);
+    try { await writeFile(to, bytes, { flag: 'wx' }); }
+    catch (error) {
+      if (error.code !== 'EEXIST' || hash(await readFile(to)) !== expectedHash) throw error;
+    }
     console.log(`导入原稿：${item.script} → ${item.sourceFile}`);
   }
   return to;
@@ -39,7 +44,7 @@ async function main() {
     if (!entry || entry.sourceFile !== item.sourceFile || entry.count !== item.count) {
       throw new Error(`manifest 缺少 ${item.id} 的匹配条目。`);
     }
-    const file = await snapshot(item);
+    const file = await snapshot(item, entry.sha256);
     const before = hash(await readFile(file));
     if (before !== entry.sha256) {
       throw new Error(`${item.sourceFile} 的 sha256 与 manifest 不一致，请确认是否更新了原稿。`);

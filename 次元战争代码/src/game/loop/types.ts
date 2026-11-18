@@ -4,7 +4,7 @@ export type Slot = 'after_school' | 'evening' | 'night';
 export type ClassId = 'monk' | 'fighter' | 'wizard' | 'sorcerer';
 export type ItemId = 'healing_potion' | 'missile_scroll' | 'acid';
 export type EncounterId = 'patrol' | 'first' | 'second' | 'boss';
-export type EventId = 'social' | 'intel' | 'joint' | 'school_request' | 'street_request' | 'job' | 'school_patrol' | 'street_patrol' | 'ritual' | 'vtuber_bond1';
+export type EventId = 'social' | 'intel' | 'joint' | 'school_request' | 'street_request' | 'job' | 'school_patrol' | 'street_patrol' | 'ritual' | 'vtuber_bond1' | 'thief_bond1';
 export type CantripId = 'fire_bolt' | 'ray_of_frost' | 'shocking_grasp' | 'poison_spray' | 'acid_splash' | 'sorcerous_burst';
 export type SpellId = 'magic_missile' | 'burning_hands' | 'mage_armor' | 'false_life' | 'detect_magic';
 export type FighterStyle = 'defense' | 'archery' | 'dueling';
@@ -20,6 +20,9 @@ export type Phase = { kind: 'intro' | 'city' | 'crisis' | 'settlement' | 'comple
   | { kind: 'safe'; rested: boolean }
   | { kind: 'deploy'; encounter: EncounterId };
 
+export const loopStoryScenes = ['m101', 'm102', 'm103', 't101', 't102', 't103', 'v102'] as const;
+export type LoopStoryScene = (typeof loopStoryScenes)[number];
+
 export type HeroProgress = {
   classId: ClassId; hp: number; tempHp: number; mageArmor: boolean; hitDie: number;
   fighter: FighterBuild; wizard: CasterBuild; sorcerer: CasterBuild;
@@ -27,6 +30,7 @@ export type HeroProgress = {
 };
 export type LoopCheckpoint = {
   cycle: number; day: number; slot: Slot; phase: Phase; rng: RngState;
+  storyScene?: LoopStoryScene;
   gold: number; xp: number; sync: number; linkUses: number; divineAid: number;
   hero: HeroProgress; items: Record<ItemId, number>;
   completed: EventId[]; clues: EventId[]; interludes: string[];

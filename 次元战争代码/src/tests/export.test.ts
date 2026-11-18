@@ -2,14 +2,17 @@ import { describe, expect, it } from 'vitest';
 import prologueRaw from '../../source/story/prologue-v2/prologue.md?raw';
 import act1Raw from '../../source/story/prologue-v2/act1.md?raw';
 import part3Raw from '../../source/story/prologue-v2/prologue_3.md?raw';
-import part4Raw from '../../source/story/prologue-v2/prologue_4.md?raw';
+import part4Raw from '../../source/story/prologue-v2/prologue_4_r2.md?raw';
+import firstMainRaw from '../../source/story/first-cycle/main.md?raw';
+import thiefRaw from '../../source/story/first-cycle/thief_bond1.md?raw';
 import prologueJson from '../content/prologue-v2/prologue.json';
 import act1Json from '../content/prologue-v2/act1.json';
 import part3Json from '../content/prologue-v2/prologue_3.json';
 import part4Json from '../content/prologue-v2/prologue_4.json';
 import indexJson from '../content/prologue-v2/index.json';
+import firstCycleJson from '../content/first-cycle.json';
 import questions from '../../../游戏说明/工程/open-questions.md?raw';
-import { createPrologueBundle } from '../../tools/prologue-bundle.mjs';
+import { createReleaseBundle } from '../../tools/prologue-bundle.mjs';
 import type { Act, ContentIndex } from '../content/types.js';
 import { allNodes, choiceOf, exportedTextBlocks, originalTextBlocks, sceneOf, sourceScene } from './export-helpers.js';
 
@@ -17,6 +20,9 @@ const prologue = prologueJson as Act;
 const act1 = act1Json as Act;
 const index = indexJson as ContentIndex;
 const acts = [prologue, act1, part3Json as Act, part4Json as Act];
+const buildRelease = () => createReleaseBundle({
+  prologue: prologueRaw, act1: act1Raw, prologue_3: part3Raw, prologue_4: part4Raw,
+}, { main: firstMainRaw, thief_bond1: thiefRaw });
 
 describe('真实剧本导出回归', () => {
   it('四段9/22/8/13场，保留四个未完成场景', () => {
@@ -127,18 +133,19 @@ describe('真实剧本导出回归', () => {
     expect(sceneOf(act1, 'a012').nodes.find(node => node.kind === 'unknown')).toEqual({
       kind: 'unknown', raw: 'CG: cg_master_sword_vision_placeholder [占位符]', meta: true, placeholder: true,
     });
-    expect(questions).toContain(`warning 共 **${index.warningCount} 条**`);
-    expect(questions.match(/^#### /gm)).toHaveLength(index.warningCount);
+    const count = index.warningCount + buildRelease().firstCycleWarnings.length;
+    expect(questions).toContain(`warning 共 **${count} 条**`);
+    expect(questions.match(/^#### /gm)).toHaveLength(count);
     expect(questions).toContain('random_rd3');
   });
 
   it('重新解析得到相同产物，连续导出无时间戳或随机差异', () => {
-    const sources = { prologue: prologueRaw, act1: act1Raw, prologue_3: part3Raw, prologue_4: part4Raw };
-    const first = createPrologueBundle(sources);
-    const second = createPrologueBundle(sources);
+    const first = buildRelease();
+    const second = buildRelease();
     expect(first).toEqual(second);
     expect(first.acts).toEqual(acts);
     expect(first.index).toEqual(index);
+    expect(first.firstCycle).toEqual(firstCycleJson);
     expect(first.questions).toBe(questions);
   });
 });

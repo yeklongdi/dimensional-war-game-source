@@ -40,7 +40,7 @@ export type EventData =
   | { kind: 'initiative'; actor: string; roll: D20Roll; bonus: number; total: number; rank: number }
   | { kind: 'turn'; actor: string }
   | { kind: 'move'; actor: string; from: Point; to: Point; remaining: number }
-  | { kind: 'attack'; actor: string; target: string; attack: string; source: 'action' | 'bonus' | 'reaction'; roll: D20Roll; bonus: number; total: number; ac: number; cover: number; advantages: string[]; disadvantages: string[]; hit: boolean; critical: boolean }
+  | { kind: 'attack'; actor: string; target: string; attack: string; attackId: string; attackKind: Attack['kind']; damageType?: DamageType; source: 'action' | 'bonus' | 'reaction'; roll: D20Roll; bonus: number; total: number; ac: number; cover: number; advantages: string[]; disadvantages: string[]; hit: boolean; critical: boolean }
   | { kind: 'damage'; actor: string; target: string; roll: DamageRoll; damageType: DamageType; report: DamageReport }
   | { kind: 'condition'; actor: string; status: Unit['status'] }
   | { kind: 'death-save'; actor: string; roll: D20Roll; successes: number; failures: number; outcome: string }
@@ -48,7 +48,7 @@ export type EventData =
   | { kind: 'resource'; actor: string; action: 'dash' | 'disengage' | 'dodge' }
   | { kind: 'ai'; actor: string; decision: 'move' | 'attack' | 'end'; target?: string; destination?: Point }
   | { kind: 'temp-hp'; actor: string; amount: number }
-  | { kind: 'ability'; actor: string; name: string; detail: string }
+  | { kind: 'ability'; actor: string; target?: string; name: string; detail: string; abilityId?: AbilityId; amount?: number }
   | { kind: 'ability-save'; actor: string; target: string; ability: string; roll: D20Roll; bonus: number; dc: number; success: boolean }
   | { kind: 'tutorial'; notice: TutorialNotice }
   | { kind: 'inspiration'; actor: string; purpose: PendingRoll['kind']; original: number[]; replacement?: number; dieIndex?: number; adopted: number[]; chosen: number; remaining: number }

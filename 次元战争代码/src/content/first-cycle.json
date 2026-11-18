@@ -1,0 +1,1178 @@
+{
+  "id": "first_cycle",
+  "title": "第一幕（一）",
+  "scenes": [
+    {
+      "id": "m101",
+      "title": "清晨的掩护与随行",
+      "time": "Day 1 清晨",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_grandmother_house_living_room"
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_morning_home_warm",
+          "placeholder": true
+        },
+        {
+          "kind": "check",
+          "raw": "CHECK: prologue_4_complete == true [章节入口约束，承接序幕四 C013]",
+          "meta": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "顶着黑眼圈坐在餐桌旁，端起水杯干咳圆场",
+          "expression": "困倦，强装镇定"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "站在窗边收好地铺，随后在桌旁端正静候",
+          "expression": "安静，沉稳"
+        },
+        {
+          "kind": "show",
+          "actor": "奶奶",
+          "asset": "char_grandmother_warm",
+          "position": "right",
+          "placeholder": true,
+          "pose": "端着咸菜摆好碗筷，目光落在青年身上询问",
+          "expression": "温和，略带关切"
+        },
+        {
+          "kind": "stage",
+          "text": "天刚蒙蒙亮，客厅的木桌上已经摆好了温热的早饭。\n男高顶着一双睡意还没消干净的黑眼圈下楼时，金发青年早已把昨晚借宿的地铺叠得方方正正，正安静地站在窗边，手边那柄裹着旧帆布的长剑也收拾得一丝不苟。"
+        },
+        {
+          "kind": "stage",
+          "text": "奶奶端着最后一碟咸菜从厨房走出来，目光在青年身上打了个转，终究还是没把话说太重，只把两副碗筷摆好，顺口追问起昨夜答应“一早说清楚”的那句交代。"
+        },
+        {
+          "kind": "stage",
+          "text": "男高早有准备，端起水杯干咳两声，把夜里在被窝里现编好的说辞顺溜地搬了出来——只说这是自己在老家那边认识的远房朋友，前阵子家里长辈外出办事不太方便照看，偏偏昨夜在太阳市刚下车又撞见外头闹腾腾的，自己实在不好意思让人露宿街头，才先领回家里暂住几天。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "奶奶",
+          "text": "家里真没人能照应，先在楼上空屋多住两天倒也没什么。不过小伙子要是方便，还是早点给家里捎个信报个平安，免得大人在外头干着急。"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "update": true,
+          "pose": "放下筷子，朝奶奶郑重地微微欠身行礼",
+          "expression": "礼貌，领意"
+        },
+        {
+          "kind": "stage",
+          "text": "金发青年听懂了话里的善意，放下筷子朝奶奶郑重地微微欠身，算是应下。"
+        },
+        {
+          "kind": "hide",
+          "actor": "奶奶"
+        },
+        {
+          "kind": "background",
+          "name": "bg_grandmother_house_entrance"
+        },
+        {
+          "kind": "stage",
+          "text": "吃过早饭，男高背起书包走到院门外侧，确认奶奶已经回厨房收拾碗筷后，才赶紧回身压低声音朝门里的金发青年招了招手。"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "pose": "探头往街口张望，压低声音叮嘱",
+          "expression": "紧张，小声"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "喂，我待会儿还得照常去学校上课。你先别急着跟出大门口啊——万一真顶着这身打扮、背着一把剑大摇大摆逛大街，别说奶奶会吓一跳，半条街的人都得围过来报警！"
+        },
+        {
+          "kind": "stage",
+          "text": "他一边说着，一边紧张地往街口方向张望了两眼，正琢磨着白天该把这位沉默寡言的“勇者同伴”怎么安置在家里才不露馅。"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "update": true,
+          "pose": "站在檐下阴影里，轻轻点头"
+        },
+        {
+          "kind": "unknown",
+          "raw": "FX: fx_servant_spirit_form [制作占位：金发青年化作微光隐去身形]",
+          "meta": true,
+          "placeholder": true
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_spirit_dissolve_soft",
+          "placeholder": true
+        },
+        {
+          "kind": "hide",
+          "actor": "金发青年"
+        },
+        {
+          "kind": "stage",
+          "text": "谁知站在檐下阴影里的金发青年只是朝他轻轻点了点头。\n下一瞬，青年周身的轮廓在晨光里微微一晃，整个人连同那柄裹布长剑竟化作一缕极淡的微光，悄无声息地隐去身形——没有声响，也没有惊动屋里的奶奶，只有男高右手手背上那道尚未消退的剑形灼痕微微一暖，隐约传来某种“就在身侧”的安心感。"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "pose": "眨眼愣住，试着伸手朝空气里晃半下",
+          "expression": "惊喜，暗暗得意"
+        },
+        {
+          "kind": "stage",
+          "text": "男高愣在原地眨了眨眼，试着伸手朝空气里晃了半下，虽碰不到实处，却能清晰感觉到那股稳重可靠的同行气息正安静跟在自己身旁。"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "哦……原来还可以这样隐身跟着走啊！不愧是传说里的从者，真厉害！"
+        },
+        {
+          "kind": "stage",
+          "text": "他顿时放下大半颗心，压着嘴角暗暗偷笑一声，抓紧书包肩带小跑着赶往太阳市第一高中。"
+        },
+        {
+          "kind": "set",
+          "flag": "link_spirit_follow_unlocked",
+          "value": true,
+          "note": "SET: link_spirit_follow_unlocked = true"
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "jump",
+          "target": "m102"
+        },
+        {
+          "kind": "unknown",
+          "raw": "---",
+          "meta": true
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/first-cycle/main.md",
+        "line": 44
+      },
+      "background": "bg_grandmother_house_living_room",
+      "bgm": "bgm_morning_home_warm"
+    },
+    {
+      "id": "m102",
+      "title": "白天教室：抽屉里的来信",
+      "time": "Day 1 白天（早读至放学前）",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_school_classroom_day"
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_school_afternoon_lazy",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "双臂枕在桌面趴着熟睡",
+          "expression": "疲惫沉睡"
+        },
+        {
+          "kind": "show",
+          "actor": "前排同学",
+          "asset": "char_thief_smile",
+          "position": "right",
+          "pose": "端坐前排，侧耳留意身后动静",
+          "expression": "无奈，戏谑"
+        },
+        {
+          "kind": "stage",
+          "text": "这天上午的教室里阳光正好，粉笔在黑板上刷刷作响，男高却从早读课起就把脑袋埋在两臂之间，整个人几乎焊死在了课桌上。\n昨晚半夜惊醒破梦、跟着金发青年在大街小巷逃了一路、同神秘组织硬碰硬打了两场，好不容易摸回屋里躺下，脑子里又翻来覆去琢磨着“圣杯战争”“怎么尽快变强”“到底该怎么找到其他御主组队”这一堆乱七八糟的念头，几乎彻夜没怎么合眼。眼下一坐进温暖安稳的教室，困意立刻铺天盖地压了下来。"
+        },
+        {
+          "kind": "stage",
+          "text": "课间铃响了一轮又一轮，他硬是从第一节数学课一路睡到了下午临近放学。\n坐在男高正前方的同学，早在上午第一节课前就趁着他趴在桌上补觉的工夫，悄无声息地往他桌肚里塞进了一封折得整整齐齐的信。原本想着这人睡一两节课总该伸手掏书、顺便看见那封信，谁料从早读一直熬到下午最后半堂自习，身后传来的依旧是均匀无比的呼吸声。"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_pen_drop_floor",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "前排同学",
+          "update": true,
+          "pose": "故意松手掉笔，弯腰捡笔时抬指节敲两下男高课桌边沿",
+          "expression": "打趣，笑意"
+        },
+        {
+          "kind": "stage",
+          "text": "前排同学终于没了耐心。他借着低头翻书的动作侧耳听了下背后的动静，确认讲台上的老师正背身写板书，索性指尖一松，故意让手里的中性笔“啪嗒”一声掉在地上，顺着桌脚骨碌碌滚到了男高椅子底下。\n他借势弯腰去捡笔，顺手抬起指节，在男高的课桌边沿不轻不重地敲了两下。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "前排同学",
+          "text": "喂，转学生，快下课了。再这么一路睡到放学，口水都要流进作业本里了。"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "pose": "迷迷糊糊抬头，抬手胡乱蹭蹭脸颊",
+          "expression": "睡眼惺忪"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "……唔，已经快放学了吗？"
+        },
+        {
+          "kind": "stage",
+          "text": "前排同学把笔捡回手里转了一圈，压低嗓门朝他桌下偏了偏下巴，唇角带着点漫不经心的笑意。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "前排同学",
+          "text": "可不嘛。顺便提一句，我刚才低头找笔的时候好像瞅见……你桌肚最里头，是不是被人塞了封信啊？"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "pose": "猛地坐直身子",
+          "expression": "吃惊，随即微红"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "啊？信？"
+        },
+        {
+          "kind": "stage",
+          "text": "男高刚清醒一半的脑子瞬间卡了一下，紧接着像是忽然想到了什么了不得的青春校园桥段，脸颊“腾”地一下悄悄泛起一层热意。\n他下意识左右飞快瞄了两眼教室里埋头写题的同学们，心跳莫名漏了半拍，赶紧坐直身子伸手往桌肚里一摸——指尖果然碰到了一个叠得平整干净的纸信封。"
+        },
+        {
+          "kind": "inner",
+          "speaker": "男高",
+          "text": "不会吧……我才刚转学过来没几天，怎么突然在抽屉里收到信了？！难不成是班里哪个女生……还是隔壁班……"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_paper_unfold",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "怪盗邀约信件",
+          "asset": "prop_thief_invitation_letter",
+          "position": "center",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "pose": "躲在课桌后小心拆开信封展开便签",
+          "expression": "期待，压不住笑意"
+        },
+        {
+          "kind": "stage",
+          "text": "他压着止不住上扬的嘴角，假装镇定地低着头，躲在课桌遮挡后小心翼翼拆开信封，展开里头那张简洁得不能再简洁的便签——\n上面只写着两行字：“转学生：这几天得空的话，挑个晚上来旧街区老仓库外头找我。——怪盗”"
+        },
+        {
+          "kind": "hide",
+          "actor": "怪盗邀约信件"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "pose": "盯着信纸愣住两秒，随即肩膀一垮垂头丧气",
+          "expression": "期望落空，无语"
+        },
+        {
+          "kind": "stage",
+          "text": "男高盯着纸面上龙飞凤舞的那两行字足足愣了两秒。\n下一刻，他脸上那点刚升起来的期待、羞涩和纯情幻想“啪嚓”一声碎了个干干净净，肩膀瞬间垮成一团，忍不住在座位里小声咕哝出一句大失所望的吐槽。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "……切，搞了半天居然是那家伙啊！"
+        },
+        {
+          "kind": "show",
+          "actor": "前排同学",
+          "update": true,
+          "pose": "肩膀轻抖憋笑，偏过半张脸挑眉打趣",
+          "expression": "促狭，忍笑"
+        },
+        {
+          "kind": "stage",
+          "text": "话音刚落，前排背对着他的同学肩膀忽然极轻地抖了一下，像是在竭力憋住什么快要满出来的笑意。他慢悠悠偏过半张脸，眉梢挑起一个促狭的弧度。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "前排同学",
+          "text": "怎么着，看你刚才拆信前紧张成那样，还以为是什么女孩子写的情书？结果拆开一看大失所望啊？"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "pose": "把便签揉成一团塞进裤兜，急忙收拾书本遮掩",
+          "expression": "脸红，嘴硬心虚"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "哪、哪有的事！谁指望那种东西了！\n没什么啦，就一张乱七八糟的传单广告！谁这么无聊连校园桌肚都塞这种东西……"
+        },
+        {
+          "kind": "stage",
+          "text": "前排同学挑了挑眉，没再继续拆穿他，只意味深长地顺着他的话头轻轻“哦”了一声，慢条斯理转回身去收拾桌面。"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_school_dismissal_bell",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "几秒后，悠长的放学铃声顺着走廊响彻整个教学楼。"
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "前排同学"
+        },
+        {
+          "kind": "set",
+          "flag": "thief_invitation_received",
+          "value": true,
+          "note": "SET: thief_invitation_received = true"
+        },
+        {
+          "kind": "set",
+          "flag": "free_action_unlocked",
+          "value": true,
+          "note": "SET: free_action_unlocked = true"
+        },
+        {
+          "kind": "set",
+          "flag": "current_day",
+          "value": 1,
+          "note": "SET: current_day = 1"
+        },
+        {
+          "kind": "set",
+          "flag": "cycle_total_days",
+          "value": 10,
+          "note": "SET: cycle_total_days = 10"
+        },
+        {
+          "kind": "set",
+          "flag": "monster_release_day",
+          "value": 10,
+          "note": "SET: monster_release_day = 10"
+        },
+        {
+          "kind": "set",
+          "flag": "flag_first_cycle_m102_06",
+          "note": "SET: current_period = after_school"
+        },
+        {
+          "kind": "end"
+        },
+        {
+          "kind": "unknown",
+          "raw": "---",
+          "meta": true
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/first-cycle/main.md",
+        "line": 130
+      },
+      "background": "bg_school_classroom_day",
+      "bgm": "bgm_school_afternoon_lazy"
+    },
+    {
+      "id": "m103",
+      "title": "第七夜的登门催约",
+      "time": "Day 7 夜晚（未触发怪盗线羁绊一时强制锁定该时段）",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_residential_junction_night"
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_thief_night_visit",
+          "placeholder": true
+        },
+        {
+          "kind": "check",
+          "raw": "CHECK: current_day == 7 && current_period == night && thief_bond1_complete == false [方案 B 强制保底条件]",
+          "meta": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "拎着补给袋沿路灯走回家，突然停步警戒",
+          "expression": "警觉"
+        },
+        {
+          "kind": "stage",
+          "text": "一连过去六天，男高放学后不是忙着在市里打听动静、跑去兼职赚补给钱，就是埋头研究自己那点新觉醒的本事，竟把裤兜里那张揉成一团的约见便签彻底抛在了脑后。\n这天入夜后，男高拎着刚买好的几样补给品沿着老住宅区路灯往回走。拐过熟悉的路口墙角时，前方的空气忽然毫无征兆地像水面般泛起一圈波纹。"
+        },
+        {
+          "kind": "unknown",
+          "raw": "FX: fx_thief_spatial_passage [制作占位／沿用序幕四通道演出]",
+          "meta": true,
+          "placeholder": true
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_spatial_rift_open",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "在男高身侧凝实半步，手按剑柄戒备",
+          "expression": "警觉"
+        },
+        {
+          "kind": "stage",
+          "text": "男高脚步一顿，手背灼痕随之微热；身侧虚空中金发青年的身影几乎在同时凝实半步，手已按在了剑柄上。"
+        },
+        {
+          "kind": "show",
+          "actor": "怪盗",
+          "asset": "char_thief_masked_black_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "从阴影裂隙里从容踏出，保持蒙面",
+          "expression": "调侃，从容"
+        },
+        {
+          "kind": "show",
+          "actor": "Saber",
+          "asset": "char_saber_traveler_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "提剑静立在怪盗身侧观察四周",
+          "expression": "警戒，稳重"
+        },
+        {
+          "kind": "stage",
+          "text": "下一秒，两道人影自裂开的阴影缝隙里从容踏出。黑风衣、礼帽、脸上依旧严严实实地覆着那副只露笑意的面罩，身旁跟着提剑静立的 Saber。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "晚上好啊，转学生。一连七天没在仓库外头见着你人影——我还以为你当真把我的信当成广告传单，顺手扔进垃圾桶了呢。"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "pose": "尴尬挠头干笑",
+          "expression": "尴尬，心虚"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "呃……怪盗？！你怎么直接找上门来了！\n咳、不是故意放你鸽子的！这几天又是熟悉环境又是琢磨怎么找其他御主、还想着攒点装备，一忙起来就给忘了……"
+        },
+        {
+          "kind": "show",
+          "actor": "怪盗",
+          "update": true,
+          "pose": "收敛调侃，侧身指向身后的空间通道",
+          "expression": "认真，催促"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "行了，这趟亲自过来可不是为了听你赔礼道歉的。外头情况变了，我刚盯上一桩十万火急的大麻烦，今晚缺个信得过的帮手——你现在有空，还是得跟我们走一趟？"
+        },
+        {
+          "kind": "stage",
+          "text": "他说着侧过身，背后尚未散去的空间通道仍泛着微弱幽光；一旁的 Saber 朝男高与金发青年略微颔首，示意通道那一端暂且安全。"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "pose": "眼神一亮，一把拍上胸口",
+          "expression": "干劲十足，痛快"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "没问题！既然是同伴开口求援，哪有推辞的道理——走，现在就出发！"
+        },
+        {
+          "kind": "stage",
+          "text": "怪盗隔着面罩微不可察地挑了下眉，侧身朝通道内一抬手，四人随即一同踏入空间通道。"
+        },
+        {
+          "kind": "set",
+          "flag": "thief_bond1_forced_entry",
+          "value": true,
+          "note": "SET: thief_bond1_forced_entry = true"
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "金发青年"
+        },
+        {
+          "kind": "hide",
+          "actor": "怪盗"
+        },
+        {
+          "kind": "hide",
+          "actor": "Saber"
+        },
+        {
+          "kind": "jump",
+          "target": "t101"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/first-cycle/main.md",
+        "line": 255
+      },
+      "background": "bg_residential_junction_night",
+      "bgm": "bgm_thief_night_visit"
+    },
+    {
+      "id": "t101",
+      "title": "旧街区老仓库汇合",
+      "time": "Day 1～6 夜晚（自由赴约）或 Day 7 夜晚（承接 M103）",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_warehouse_area_night"
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_night_alley_stealth",
+          "placeholder": true
+        },
+        {
+          "kind": "check",
+          "raw": "CHECK: thief_invitation_received == true && thief_bond1_complete == false [入口约束]",
+          "meta": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "站在仓库外围空地，朝黑漆漆的铁门方向张望",
+          "expression": "好奇，轻微戒备"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "站在男高身侧，忽然偏头望向仓库顶檐暗影",
+          "expression": "警觉，沉静"
+        },
+        {
+          "kind": "stage",
+          "text": "夜风贴着旧街区高耸的砖墙掠过，废弃仓库前方的空地一片冷清，只有街口那盏昏黄的路灯拉出长长的影子。\n【若 `thief_bond1_forced_entry == false`（Day 1～6 主动赴约）】男高按照裤兜里那张便签上的地址摸到仓库外围，正踮着脚张望，身侧的金发青年忽然微微偏头，视线直直落向仓库顶檐的暗影处。\n【若 `thief_bond1_forced_entry == true`（承接 `M103`）】伴随着幽暗水波般的空气裂隙在墙角悄然合拢，男高与金发青年随怪盗、Saber 一同踏出通道，稳稳落在仓库外围阴影中。"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_roof_landing_light",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "怪盗",
+          "asset": "char_thief_masked_black_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "从仓库二层铁皮檐沿轻巧翻身落地，保持蒙面",
+          "expression": "从容，带笑"
+        },
+        {
+          "kind": "show",
+          "actor": "Saber",
+          "asset": "char_saber_traveler_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "提剑落在怪盗身侧，先扫视空地四周再朝男高颔首",
+          "expression": "冷静，警戒"
+        },
+        {
+          "kind": "stage",
+          "text": "仓库二层生锈的铁皮檐沿上发出一声极轻的鞋底磕碰声。下一秒，黑衣礼帽、面上依旧严严实实戴着微笑面罩的怪盗轻巧翻身落地，风衣下摆在夜风里划出一道利落的弧线；半步之外，提剑而立的 Saber 也随之落在他身侧，先是扫视了一圈空地确认没有埋伏，才朝男高略微颔首。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "行，人齐了。还以为你白天看了信会犯嘀咕不敢来呢——看来胆子比我想象的还大点。"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "pose": "抱胸昂首，随即凑上前追问",
+          "expression": "干劲十足，好奇"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "少啰嗦！既然都是同一条船上的同伴，喊我帮忙哪有缩在家里不露面的道理！\n不过……大晚上的特意叫我跑这一趟，你到底是查到什么了？"
+        },
+        {
+          "kind": "show",
+          "actor": "手绘街区草图",
+          "asset": "prop_thief_district_sketch",
+          "position": "center",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "怪盗",
+          "update": true,
+          "pose": "收敛调侃，摸出手绘街区草图指尖点向偏僻厂房区",
+          "expression": "认真"
+        },
+        {
+          "kind": "stage",
+          "text": "怪盗收敛起几分调侃的语气，从怀里摸出一张折得棱角分明的手绘街区草图，指尖点在仓库区更深处的一片偏僻厂房区轮廓上。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "这几天我顺着上次那帮搜捕队的车辙印往回摸，终于盯上一处不对劲的落脚点。\n表面上看只是城南一间早该停产的旧仓储厂房，可一到后半夜就会有人按点轮换外围暗哨，还往里头运过好几批封得严严实实的重型设备。"
+        },
+        {
+          "kind": "hide",
+          "actor": "手绘街区草图"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Saber",
+          "text": "外围结界和巡逻的规格都不像普通仓库。单靠我们两个人硬闯，一旦被里头的警报拖住，退路很容易被封死。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "所以才来找你和这位沉默的剑士搭把手。我负责找盲区开道进去摸情报，真撞上人了，就得靠你们顶在前面帮着撕开口子——怎么样，这单干不干？"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "pose": "眼睛一亮，干脆利落一拍拳头",
+          "expression": "兴奋，坚定"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "update": true,
+          "pose": "将手轻搭剑柄向前跨出半步",
+          "expression": "专注，无声表态"
+        },
+        {
+          "kind": "stage",
+          "text": "男高听完眼睛瞬间亮了起来。在他心里，这不正是自己盼了好几天的“勇者小队正式出动讨伐反派秘密基地”么！他当即干脆利落地一拍拳头，身侧的金发青年也同时将手轻搭上背后的剑柄，向前跨出半步，无声表态。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "干！当然干！废话少说，带路吧！"
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "金发青年"
+        },
+        {
+          "kind": "hide",
+          "actor": "怪盗"
+        },
+        {
+          "kind": "hide",
+          "actor": "Saber"
+        },
+        {
+          "kind": "jump",
+          "target": "t102"
+        },
+        {
+          "kind": "unknown",
+          "raw": "---",
+          "meta": true
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/first-cycle/thief_bond1.md",
+        "line": 51
+      },
+      "background": "bg_warehouse_area_night",
+      "bgm": "bgm_night_alley_stealth"
+    },
+    {
+      "id": "t102",
+      "title": "潜入外部实验室与遭遇战",
+      "time": "同夜",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_organization_outer_lab_night",
+          "placeholder": true
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_lab_infiltration_tension",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "怪盗",
+          "asset": "char_thief_masked_black_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "环顾冷光走廊与深处厚重的合金隔离门，压低声音示意终端",
+          "expression": "警惕，盘算"
+        },
+        {
+          "kind": "show",
+          "actor": "Saber",
+          "asset": "char_saber_traveler_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "提剑守在通道侧翼，紧盯走廊拐角",
+          "expression": "警戒"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "猫着腰贴着墙根往里打量",
+          "expression": "紧张，惊讶"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "紧随男高身侧警戒四周动静",
+          "expression": "专注"
+        },
+        {
+          "kind": "stage",
+          "text": "避开外墙明面上的照明死角后，四人顺着怪盗提前踩好点的通风管道与一处偏僻侧窗，在空间裂隙的短暂掩护下悄无声息地翻进了据点内部。\n脚尖落地时，扑面而来的却不是什么废旧厂房的灰尘味，而是一股刺鼻的消毒药剂与臭氧混杂的冰冷气息。"
+        },
+        {
+          "kind": "stage",
+          "text": "头顶一排排苍白的冷光灯沿着金属走廊延伸过去，两侧摆满闪烁着绿色指示灯的监控机柜和密封玻璃器皿——这分明是一座伪装在旧厂房壳子底下的秘密外部实验室。走廊最深处，一扇厚重得近乎夸张的合金隔离门紧闭着，门锁旁亮着一道暗红色的权限红灯，将里头的核心区域彻底隔绝开来。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "啧，果然把里外隔得严严实实。那扇合金门后头多半才是他们真正藏东西的核心区……咱们先别硬撞门，把外围这几台终端里的数据扒下来再说！"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_flashlight_alert_footsteps",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "组织巡逻队员",
+          "asset": "char_organization_member_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "手电光柱扫过走廊，举枪示警并开启隔离栅栏",
+          "expression": "惊喝，戒备"
+        },
+        {
+          "kind": "stage",
+          "text": "话音刚落，男高刚刚顺着墙根往前猫了两步，转角走廊尽头忽然响起几声沉重的军靴踏地声，手电光柱瞬间扫了过来！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "组织巡逻队员",
+          "text": "什么人？！怎么混进外部实验区的——快拉响隔离警报，把备战笼里的实验体放出来拦住他们！"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_cage_open_roar",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "畸变实验体",
+          "asset": "char_aberration_monster_placeholder",
+          "position": "center",
+          "placeholder": true
+        },
+        {
+          "kind": "stage",
+          "text": "铁栅栏“哐当”一声弹开，两头浑身缠绕着黑紫色畸变脉络的实验怪物嘶吼着扑出阴影，连同几名全副武装的组织队员瞬间堵住了走廊中段！"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "pose": "直起身握紧拳头向前迈步",
+          "expression": "斗志昂扬"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "切，还是被发现了！不过正好，正愁没地方活动筋骨呢——上吧！"
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_first_partners_battle",
+          "placeholder": true
+        },
+        {
+          "kind": "call",
+          "name": "battle_thief_bond1_outer_lab"
+        },
+        {
+          "kind": "hide",
+          "actor": "组织巡逻队员"
+        },
+        {
+          "kind": "hide",
+          "actor": "畸变实验体"
+        },
+        {
+          "kind": "jump",
+          "target": "t103"
+        },
+        {
+          "kind": "unknown",
+          "raw": "---",
+          "meta": true
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/first-cycle/thief_bond1.md",
+        "line": 141
+      },
+      "background": "bg_organization_outer_lab_night",
+      "bgm": "bgm_lab_infiltration_tension"
+    },
+    {
+      "id": "t103",
+      "title": "APTX-4869 资料与十日死线",
+      "time": "战后，同夜",
+      "nodes": [
+        {
+          "kind": "background",
+          "name": "bg_organization_outer_lab_night"
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_lab_secret_discovery",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "asset": "char_male_high_normal",
+          "position": "left",
+          "placeholder": true,
+          "pose": "翻看金属工作台上的纸面记录",
+          "expression": "疑惑，认真"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "asset": "char_link_silent_placeholder",
+          "position": "center",
+          "placeholder": true,
+          "pose": "在工作台与走廊间保持警戒",
+          "expression": "警觉"
+        },
+        {
+          "kind": "show",
+          "actor": "怪盗",
+          "asset": "char_thief_masked_black_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "在主终端前插上解码器飞快操作",
+          "expression": "专注，急促"
+        },
+        {
+          "kind": "show",
+          "actor": "Saber",
+          "asset": "char_saber_traveler_placeholder",
+          "position": "right",
+          "placeholder": true,
+          "pose": "提剑守在合金隔离门前方中段",
+          "expression": "警戒"
+        },
+        {
+          "kind": "stage",
+          "text": "一番交锋后，最后一只畸变实验体在剑光与交错掩护下倒地消散，几名巡逻队员也陆续失去战斗力。\n怪盗没有半刻耽搁，立刻踩着倒地的机柜跃到主终端前，拔出一枚改装过的解码器插进接口，飞快敲起键盘；Saber 则守在走廊中段警戒那扇厚重的合金隔离门，男高与金发青年迅速散开，顺手翻检起旁边金属工作台上的纸面记录。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "喂，这桌子上乱七八糟写的是什么……“实验体模型编号：APTX-4869”？"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "先全拍下来带走！等等……终端里的总控简报我解开了，你赶紧过来看一眼这段时间表！"
+        },
+        {
+          "kind": "show",
+          "actor": "终端机密简报",
+          "asset": "prop_terminal_aptx4869_report",
+          "position": "center",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "pose": "凑到终端屏幕前阅读加粗标红的工程摘要",
+          "expression": "震惊，怒火上涌"
+        },
+        {
+          "kind": "stage",
+          "text": "男高凑到终端屏幕前。冷白的光映在两人面前，几行加粗标红的工程摘要赫然跳入眼帘——\n【终端简报】：依托高活性样本 `APTX-4869` 的模型数据，核心隔离区内正培育高阶吞噬类异变个体；目前载体已入最终阶段，预定于**本周期第 10 天**于太阳市全城释放。"
+        },
+        {
+          "kind": "hide",
+          "actor": "终端机密简报"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "什、什么玩意儿？！“本周期第 10 天于全城释放”？！他们疯了吧，要放一只怪物把整座太阳市都吞掉？！"
+        },
+        {
+          "kind": "show",
+          "actor": "怪盗",
+          "update": true,
+          "pose": "盯着屏幕上剩余倒计时数字，语气沉下",
+          "expression": "凝重"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "看来那帮人根本没打算只暗地里抢个圣杯就算完……他们手里还攥着另一张掀桌子的底牌。算算日子，今天已经是第 {current_day} 天了，距离第 10 天满打满算也就只剩 {10 - current_day} 天。\n【若为第 7 夜触发追加】而且咱们今晚才刚摸到这儿——算下来，真正能留给咱们动手破局的，也就只剩明天第 8 天和后天第 9 天这两天了。"
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_heavy_door_alarm_red",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "pose": "拳头攥得咯吱作响，猛地抬头望向走廊深处",
+          "expression": "咬牙，紧张"
+        },
+        {
+          "kind": "stage",
+          "text": "男高脸色一沉，拳头瞬间攥得咯吱作响。可还没等他再往后翻那份资料，走廊尽头那扇厚重的合金隔离门突然亮起刺目的红光，低沉急促的机械警报声陡然响彻整间实验室！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "Saber",
+          "text": "门后的高能反应正在迅速聚集，大批武装增援也快赶到外围通道了——不能再拖，立刻撤！"
+        },
+        {
+          "kind": "unknown",
+          "raw": "FX: fx_thief_spatial_passage [复用序幕四空间通道演出]",
+          "meta": true
+        },
+        {
+          "kind": "sfx",
+          "name": "sfx_spatial_rift_open",
+          "placeholder": true
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "资料已经拷贝完了！再留下来只会把人全折在这儿——跟我进通道！"
+        },
+        {
+          "kind": "stage",
+          "text": "怪盗一把拔出解码器与桌面上那叠写着 `APTX-4869` 的纸质残页塞进风衣内袋，反手划开一道幽暗的空间裂隙。男高咬了咬牙，回头死死盯了一眼那扇缓缓开启重型门锁的合金隔离门，随即和金发青年、Saber 一同退入空间通道之中。"
+        },
+        {
+          "kind": "background",
+          "name": "bg_old_district_quiet_alley_night"
+        },
+        {
+          "kind": "bgm",
+          "name": "bgm_alley_resolve_night",
+          "placeholder": true
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "pose": "一拳砸在砖墙上，胸口剧烈起伏",
+          "expression": "不甘，懊恼"
+        },
+        {
+          "kind": "stage",
+          "text": "下一秒，空间通道在旧街区一条僻静小巷的阴影里合拢。四人各自稳住呼吸，确认没有追兵跟出，男高一拳砸在身旁的砖墙上，胸口还剧烈起伏着。"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "可恶……就差那么一扇门！要不是后头增援来得太快，刚才真想直接把那鬼地方给砸个稀巴烂！"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "冷静点，刚才那种规模的隔离门靠蛮力硬撞是撞不开的，里头指不定还藏着什么级别的干部和怪物。今天能抢出这批第一手情报、摸清第 10 天这个死线，已经不算白跑了。"
+        },
+        {
+          "kind": "show",
+          "actor": "怪盗",
+          "update": true,
+          "pose": "转身隔着面罩认真望向男高",
+          "expression": "严肃，叮嘱"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "怪盗",
+          "text": "不过有一点你说得没错——绝不能真等到第 10 天让那东西放出来祸害全城。\n这几天我再把刚抢出来的加密路径摸一遍，看怎么绕开外头那层防护；你和你的从者也抓紧把状态练起来、备齐补给——咱们务必赶在第 10 天怪物放出前，最晚第 9 天结束前，杀回来端掉这座据点！"
+        },
+        {
+          "kind": "show",
+          "actor": "男高",
+          "update": true,
+          "pose": "抬头眼神亮起滚烫战意，重重一点头",
+          "expression": "坚定，热血"
+        },
+        {
+          "kind": "dialogue",
+          "speaker": "男高",
+          "text": "一言为定！你尽管查路线，准备功夫交给我——第 10 天之前，咱们一定把那个老巢给掀了！"
+        },
+        {
+          "kind": "show",
+          "actor": "金发青年",
+          "update": true,
+          "pose": "在旁安静垂目颔首",
+          "expression": "沉稳"
+        },
+        {
+          "kind": "stage",
+          "text": "金发青年在旁安静地垂目颔首，手背上的剑形灼痕与男高的共鸣微微一闪。\n怪盗轻轻笑了一声，朝男高抬手挥了挥，随后带着 Saber 转身隐入夜色深处。"
+        },
+        {
+          "kind": "hide",
+          "actor": "男高"
+        },
+        {
+          "kind": "hide",
+          "actor": "金发青年"
+        },
+        {
+          "kind": "hide",
+          "actor": "怪盗"
+        },
+        {
+          "kind": "hide",
+          "actor": "Saber"
+        },
+        {
+          "kind": "set",
+          "flag": "thief_bond_level",
+          "value": 1,
+          "note": "SET: thief_bond_level = 1"
+        },
+        {
+          "kind": "set",
+          "flag": "thief_bond1_complete",
+          "value": true,
+          "note": "SET: thief_bond1_complete = true"
+        },
+        {
+          "kind": "set",
+          "flag": "aptx4869_model_known",
+          "value": true,
+          "note": "SET: aptx4869_model_known = true"
+        },
+        {
+          "kind": "set",
+          "flag": "base_raid_deadline_day",
+          "value": 9,
+          "note": "SET: base_raid_deadline_day = 9"
+        },
+        {
+          "kind": "set",
+          "flag": "monster_release_day",
+          "value": 10,
+          "note": "SET: monster_release_day = 10"
+        },
+        {
+          "kind": "end"
+        }
+      ],
+      "meta": {
+        "sourceFile": "source/story/first-cycle/thief_bond1.md",
+        "line": 210
+      },
+      "background": "bg_organization_outer_lab_night",
+      "bgm": "bgm_lab_secret_discovery"
+    }
+  ]
+}

@@ -132,7 +132,7 @@ function heal(state: BattleState, actor: Unit, target: Unit, ability: AbilityId,
   const hp = Math.min(target.maxHp, target.hp + roll.total);
   const next = replaceUnit({ ...state, rng }, { ...target, hp, status: 'active', prone: target.hp === 0 ? false : target.prone,
     saves: target.hp === 0 ? { successes: 0, failures: 0 } : target.saves });
-  return emit(next, { kind: 'ability', actor: actor.id, name: specs[ability].name,
+  return emit(next, { kind: 'ability', actor: actor.id, target: target.id, name: specs[ability].name, abilityId: ability, amount: hp - target.hp,
     detail: target.name + ' HP ' + target.hp + ' → ' + hp + '（' + expression + '，掷出 ' + roll.dice.join('、') + '）' });
 }
 
@@ -175,7 +175,7 @@ export function resolveAbility(state: BattleState, actor: Unit, command: Ability
   const data = { ...loop, hero, items: inventory, divineAid: loop.divineAid - Number(id === 'divine_aid') };
   if (id === 'innate_sorcery') data.innateUntilTurn = turnCount(state, actor.id) + 10;
   const used = { ...actor, resources: { ...actor.resources, [spec.resource]: false } };
-  const next = emit(replaceUnit({ ...state, loop: data }, used), { kind: 'ability', actor: actor.id, name: spec.name,
+  const next = emit(replaceUnit({ ...state, loop: data }, used), { kind: 'ability', actor: actor.id, name: spec.name, abilityId: id,
     detail: (spec.resource === 'action' ? '主动作' : '附赠动作') + (isItem(id) ? '，剩余 ' + inventory[id] + ' 件' : '') });
   const target = command.target ? getUnit(next, command.target)! : used;
   const spellAttack = makeSpellAttack(next, used, command);
@@ -186,11 +186,12 @@ export function resolveAbility(state: BattleState, actor: Unit, command: Ability
     case 'second_wind': return heal(next, used, used, id, '1d10+1');
     case 'innate_sorcery': return next;
     case 'mage_armor':
-      return replaceUnit({ ...next, loop: { ...data, hero: { ...hero, mageArmor: true } } }, { ...used, ac: 13 + modifier(used.abilities.dex) });
+      return emit(replaceUnit({ ...next, loop: { ...data, hero: { ...hero, mageArmor: true } } }, { ...used, ac: 13 + modifier(used.abilities.dex) }),
+        { kind: 'ability', actor: used.id, target: used.id, name: spec.name, abilityId: id, detail: '防护生效，护甲等级提升' });
     case 'false_life': {
       const { roll, rng } = rollDamage('2d4+4', next.rng);
       const tempHp = Math.max(used.tempHp, roll.total);
-      return emit(replaceUnit({ ...next, rng }, { ...used, tempHp }), { kind: 'ability', actor: used.id, name: spec.name,
+      return emit(replaceUnit({ ...next, rng }, { ...used, tempHp }), { kind: 'ability', actor: used.id, target: used.id, name: spec.name, abilityId: id, amount: tempHp - used.tempHp,
         detail: '临时 HP ' + used.tempHp + ' → ' + tempHp });
     }
     case 'acid': return savingDamage(next, used, used, [target], id, 10 + modifier(used.abilities.dex), 'acid', '2d6', false, false);

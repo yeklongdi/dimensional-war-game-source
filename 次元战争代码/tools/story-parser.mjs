@@ -157,7 +157,7 @@ export function parseStory(markdown, options) {
         append({ kind: 'check', raw: token.raw }, token);
         collector.add(scene.id, token, 'check', 'CHECK 中的条件与嵌套 SET / JUMP 均不解释、不执行。', policyResolution(scene.id, token));
         break;
-      case 'JUMP': append({ kind: 'jump', target: token.value.trim().toLowerCase() }, token); break;
+      case 'JUMP': append({ kind: 'jump', target: token.value.replace(/\s+\[[^\]]*\]$/, '').trim().toLowerCase() }, token); break;
       case 'END': append({ kind: 'end' }, token); break;
       case 'CAMERA': append({ kind: 'meta', directive: 'CAMERA', raw: token.raw, meta: true }, token); break;
       default:
@@ -171,6 +171,6 @@ export function parseStory(markdown, options) {
       collector.add(entry.sceneId, entry.token, 'missing_asset', `说话人“${entry.actor}”没有任何含 asset 的 SHOW 声明。`);
     }
   }
-  normalizeChoices(act, locations, collector);
+  normalizeChoices(act, locations, collector, options.additionalScenes);
   return { act, warnings: collector.finish() };
 }

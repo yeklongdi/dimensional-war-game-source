@@ -4,6 +4,7 @@ import { lateSceneError } from './skip-policy.js';
 export const chapterTitles: Readonly<Record<string, string>> = {
   prologue: '序幕（一）', act1: '序幕（二）', prologue_3: '序幕（三）', prologue_4: '序幕（四）',
   vtuber_bond1: '虚拟主播·羁绊一',
+  first_cycle: '第一幕（一）',
 };
 /** 场景原题保留在数据中；玩家界面的制作标题也遵守已确认的身份隐藏。 */
 export const displaySceneTitle = (title: string): string => title.replaceAll('林克', '金发青年');

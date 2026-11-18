@@ -66,12 +66,14 @@ export function visibleEvents(
   return events.filter(event => event.location === location && eventSlots(event).includes(loop.slot)
     && (!event.once || !loop.completed.includes(event.id))
     && (!event.requires || loop.completed.includes(event.requires))
+    && (event.story?.cycle === undefined || event.story.cycle === loop.cycle)
+    && (event.story?.lastDay === undefined || loop.day <= event.story.lastDay)
     && (!event.story?.requires || event.story.requires.every(flag => flags[flag] === true))
     && (!event.story?.hiddenWhen || event.story.hiddenWhen.every(flag => flags[flag] !== true))
     && (event.id !== 'ritual' || loop.hero.classId === 'wizard'));
 }
 
-export function canOpenCity(loop: LoopCheckpoint | undefined): boolean { return !loop || loop.phase.kind === 'city'; }
+export function canOpenCity(loop: LoopCheckpoint | undefined): boolean { return !loop || (loop.phase.kind === 'city' && !loop.storyScene); }
 export const canShop = (loop: LoopCheckpoint) => loop.phase.kind === 'city' || loop.phase.kind === 'safe';
 
 export function advanceLoop(

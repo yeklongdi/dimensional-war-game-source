@@ -8,7 +8,7 @@
       "script": "序幕_Galgame脚本.md",
       "count": 9,
       "sourceFile": "source/story/prologue-v2/prologue.md",
-      "from": "../游戏说明/剧情/序幕/序幕（一）/序幕_Galgame脚本.md",
+      "from": "../游戏说明/剧情/主线/序幕/序幕（一）/序幕_Galgame脚本.md",
       "sha256": "fb2ec555b9c9b427e84d4553f3f82823711bf85473df771eef7477715198a7be"
     },
     {
@@ -18,7 +18,7 @@
       "script": "序幕（二）_Galgame脚本.md",
       "count": 22,
       "sourceFile": "source/story/prologue-v2/act1.md",
-      "from": "../游戏说明/剧情/序幕/序幕（二）/序幕（二）_Galgame脚本.md",
+      "from": "../游戏说明/剧情/主线/序幕/序幕（二）/序幕（二）_Galgame脚本.md",
       "sha256": "2fa482762fec4216099a2d23034ab7faaaaf8291ffc88d09862fe349ad5efa63"
     },
     {
@@ -28,7 +28,7 @@
       "script": "序幕（三）_Galgame脚本.md",
       "count": 8,
       "sourceFile": "source/story/prologue-v2/prologue_3.md",
-      "from": "../游戏说明/剧情/序幕/序幕（三）/序幕（三）_Galgame脚本.md",
+      "from": "../游戏说明/剧情/主线/序幕/序幕（三）/序幕（三）_Galgame脚本.md",
       "sha256": "8f6a2c7c7d082e7ad770579c6a07ee738d7dbcda147eae0f8ec80c09ae2786b2"
     },
     {
@@ -37,9 +37,9 @@
       "part": "序幕（四）",
       "script": "序幕（四）_Galgame脚本.md",
       "count": 13,
-      "sourceFile": "source/story/prologue-v2/prologue_4.md",
-      "from": "../游戏说明/剧情/序幕/序幕（四）/序幕（四）_Galgame脚本.md",
-      "sha256": "2b4e6c0966e3d07c3ee1f28626823f5319028ed475a0e79edd419e7d094ba347"
+      "sourceFile": "source/story/prologue-v2/prologue_4_r2.md",
+      "from": "../游戏说明/剧情/主线/序幕/序幕（四）/序幕（四）_Galgame脚本.md",
+      "sha256": "6ccf804b8036331b77ac77e80cc91bb1c059903c46ae5db429c8074bc65a64c0"
     }
   ]
 }

@@ -1,6 +1,7 @@
 import { record } from '../save-v3.js';
 import { maxHp, validBuild } from './characters.js';
-import { classNames, demo, events, interludeId, items, slots } from './config.js';
+import { classNames, demo, events, firstCycle, interludeId, items, slots } from './config.js';
+import { loopStoryScenes } from './types.js';
 import type { CasterBuild, ClassId, FighterBuild, LoopCheckpoint, Phase } from './types.js';
 
 function integer(value: unknown, min = 0, max = Number.MAX_SAFE_INTEGER): value is number {
@@ -49,10 +50,19 @@ function validHero(value: unknown) {
 
 export function decodeLoop(value: unknown): LoopCheckpoint | undefined {
   if (!record(value) || !hasKeys(value, ['cycle', 'day', 'slot', 'phase', 'rng', 'gold', 'xp', 'sync', 'linkUses', 'divineAid', 'hero',
-    'items', 'completed', 'clues', 'interludes'])) return undefined;
-  const { cycle, day, slot, phase, rng, interludes, completed, clues } = value;
+    'items', 'completed', 'clues', 'interludes', ...(Object.hasOwn(value, 'storyScene') ? ['storyScene'] : [])])) return undefined;
+  const { cycle, day, slot, phase, rng, interludes, completed, clues, storyScene } = value;
   if (!integer(cycle, 0, demo.days.length - 1) || !integer(day, 1, demo.days[cycle])
     || typeof slot !== 'string' || !slots.some(id => id === slot) || !validPhase(phase, cycle, day, slot)) return undefined;
+  if (Object.hasOwn(value, 'storyScene')) {
+    if (!loopStoryScenes.some(scene => scene === storyScene)) return undefined;
+    const meeting = cycle === 0 && phase.kind === 'city' && slot === 'night';
+    const validStory = storyScene === 'v102'
+      ? (phase.kind === 'city' && slot === 'after_school' && day > 1) || phase.kind === 'interlude' || phase.kind === 'crisis'
+      : storyScene === 'm101' || storyScene === 'm102' ? phase.kind === 'intro'
+        : meeting && (storyScene === 'm103' ? day === firstCycle.meetingDay : day <= firstCycle.meetingDay);
+    if (!validStory) return undefined;
+  }
   if (!record(rng) || !hasKeys(rng, ['kind', 'seed', 'value', 'draws']) || rng.kind !== 'seeded'
     || !integer(rng.seed, 0, 0xffffffff) || !integer(rng.value, 0, 0xffffffff) || !integer(rng.draws)) return undefined;
   const bag = value.items;

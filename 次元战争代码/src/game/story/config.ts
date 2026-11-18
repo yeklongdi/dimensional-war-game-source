@@ -13,7 +13,18 @@ type Overrides = {
 };
 export const overrides: Overrides = { ...overridesJson, portraits: { ...assetBindings(overridesJson.portraits), ...staticBindings } };
 export const bgmBindings: Readonly<Record<string, string>> = assetBindings(audioMapJson);
-export const sfxBindings: Readonly<Record<string, string>> = {};
+/** 战斗打击反馈音效：本地程序合成，缺失时 AudioController 静默跳过。 */
+export const sfxBindings: Readonly<Record<string, string>> = assetBindings({
+  fx_whiff: '/assets/audio/sfx/fx_whiff.wav', fx_punch: '/assets/audio/sfx/fx_punch.wav',
+  fx_blade: '/assets/audio/sfx/fx_blade.wav', fx_arrow: '/assets/audio/sfx/fx_arrow.wav',
+  fx_cast: '/assets/audio/sfx/fx_cast.wav', fx_fire: '/assets/audio/sfx/fx_fire.wav',
+  fx_frost: '/assets/audio/sfx/fx_frost.wav', fx_spark: '/assets/audio/sfx/fx_spark.wav',
+  fx_acid: '/assets/audio/sfx/fx_acid.wav', fx_force: '/assets/audio/sfx/fx_force.wav',
+  fx_necrotic: '/assets/audio/sfx/fx_necrotic.wav', fx_radiant: '/assets/audio/sfx/fx_radiant.wav',
+  fx_crit: '/assets/audio/sfx/fx_crit.wav', fx_save: '/assets/audio/sfx/fx_save.wav',
+  fx_fail: '/assets/audio/sfx/fx_fail.wav', fx_heal: '/assets/audio/sfx/fx_heal.wav',
+  fx_ward: '/assets/audio/sfx/fx_ward.wav', fx_down: '/assets/audio/sfx/fx_down.wav',
+});
 export { backgroundBindings } from './backgrounds.js';
 export const textInterval = 30;
 export type Slot = 'far-left' | 'left' | 'center' | 'right' | 'far-right';
@@ -32,6 +43,9 @@ export function placement(position: string) {
 }
 export function displayName(actId: string, actor: string) {
   return overrides.displayNames[actId]?.[actor] ?? actor;
+}
+export function displayStoryText(actId: string, text: string) {
+  return actId === 'act1' ? text.replace(/前排的怪盗|怪盗/g, displayName(actId, '怪盗')) : text;
 }
 export function actorColor(actor: string) {
   const hash = Array.from(actor).reduce((value, char) => ((value * 31) + char.codePointAt(0)!) >>> 0, 0);

@@ -1,59 +1,42 @@
-import { actionReason } from '../battle/battle.js';
-import { abilityBudget, abilityOptions, burstNames } from '../battle/loop-abilities.js';
-import { currentUnit } from '../battle/state-helpers.js';
-import type { AbilityCommand, AbilityId, BattleState, BurstDamage, Command } from '../battle/types.js';
+import { burstNames } from '../battle/loop-abilities.js';
+import type { BurstDamage } from '../battle/types.js';
+import { actionIcon } from './battle-action-icons.js';
+import type { AbilityChoice, ActionEntry } from './battle-action-model.js';
 import { button, element } from './elements.js';
 
-/** 回合内选定能力与目标，提交时沿用现有 battle token。 */
-export function renderAbilityPanel(root: HTMLElement, state: BattleState, open: boolean, send: (command: Command) => void, close: () => void) {
-  root.hidden = !open || !state.loop;
-  root.replaceChildren();
-  if (root.hidden) return;
-  const actor = currentUnit(state), abilities = abilityOptions(state, actor);
-  const picker = element('select'), target = element('select'), damage = element('select');
-  picker.dataset.testid = 'battle-ability-select'; target.dataset.testid = 'battle-ability-target';
-  damage.setAttribute('aria-label', '术法爆发伤害类型');
-  for (const { id, spec } of abilities) {
-    const label = spec.name + ' · ' + (spec.resource === 'action' ? '主动作' : '附赠动作') + abilityBudget(state, actor, id);
-    const option = element('option', '', label); option.value = id; picker.append(option);
-  }
-  for (const [id, name] of Object.entries(burstNames)) {
-    const option = element('option', '', name); option.value = id; damage.append(option);
-  }
-  damage.value = 'fire';
-  let choices: { label: string; action: AbilityCommand }[] = [];
-  const feedback = element('p', 'battle-ability-note');
-  const submit = button('使用', 'battle-ability-use', () => {
-    const selected = choices[Number(target.value)]?.action;
-    if (selected) send(selected.ability === 'sorcerous_burst' ? { ...selected, burstDamage: damage.value as BurstDamage } : selected);
-  });
-  const targetLabel = element('label', 'loop-field', '目标'), damageLabel = element('label', 'loop-field', '伤害类型');
-  const abilityLabel = element('label', 'loop-field', '能力或道具');
-  abilityLabel.append(picker); targetLabel.append(target); damageLabel.append(damage);
-  function update() {
-    const id = picker.value as AbilityId, spec = abilities.find(item => item.id === id)?.spec;
-    choices = [];
-    const command: AbilityCommand = { kind: 'ability', actor: actor.id, ability: id };
-    const push = (label: string, action: AbilityCommand) => {
-      if (!actionReason(state, action, 'player')) choices.push({ label, action });
-    };
-    if (spec?.aim === 'self') push(actor.name, command);
-    else if (spec?.aim === 'area' || spec?.aim === 'cone') {
-      for (let row = 0; row < state.grid.height; row++) for (let col = 0; col < state.grid.width; col++)
-        push('格 ' + col + ',' + row, { ...command, point: { col, row } });
-    } else if (spec) for (const unit of state.units) push(unit.name + ' · HP ' + unit.hp + '/' + unit.maxHp,
-      { ...command, target: unit.id });
-    target.replaceChildren();
-    for (const [index, candidate] of choices.entries()) {
-      const option = element('option', '', candidate.label); option.value = String(index); target.append(option);
+export type AbilitySelection = { choice?: AbilityChoice; damage: BurstDamage };
+
+/** 目标与伤害类型都直接展开；选择只更新界面，确认时才提交命令。 */
+export function renderAbilityPanel(root: HTMLElement, entry: ActionEntry | undefined, choices: readonly AbilityChoice[], selection: AbilitySelection,
+  pick: (choice: AbilityChoice) => void, damage: (type: BurstDamage) => void, use: () => void, close: () => void) {
+  root.hidden = !entry; root.replaceChildren();
+  if (!entry) return;
+  const heading = element('div', 'ability-detail-heading');
+  const icon = element('span', 'ability-detail-icon'); icon.dataset.tone = entry.tone; icon.append(actionIcon(entry.icon));
+  const cancel = button('关闭', 'battle-ability-close', close); cancel.setAttribute('aria-label', '关闭技能详情');
+  heading.append(icon, element('h2', '', entry.name), cancel);
+  root.append(heading, element('p', 'ability-detail-cost', entry.cost), element('p', 'ability-detail-description', entry.description));
+  if (entry.budget) root.append(element('p', 'ability-detail-budget', '剩余：' + entry.budget));
+  if (entry.ability === 'sorcerous_burst') {
+    const group = element('div', 'ability-damage-options'); group.setAttribute('role', 'group'); group.setAttribute('aria-label', '术法爆发伤害类型');
+    for (const [id, name] of Object.entries(burstNames)) {
+      const option = button(name, 'burst-' + id, () => damage(id as BurstDamage));
+      option.setAttribute('aria-pressed', String(selection.damage === id)); group.append(option);
     }
-    targetLabel.hidden = spec?.aim === 'self' || !choices.length; damageLabel.hidden = id !== 'sorcerous_burst';
-    submit.disabled = !choices.length;
-    feedback.textContent = !choices.length ? actionReason(state, command, 'player') || '当前没有符合条件的目标'
-      : (spec?.aim === 'area' || spec?.aim === 'cone') ? '范围效果也会影响范围内的友方单位。' : '';
+    root.append(element('h3', '', '伤害类型'), group);
   }
-  picker.addEventListener('change', update);
-  root.append(element('h2', '', '能力与道具'), abilityLabel, targetLabel, damageLabel, feedback, submit,
-    button('取消', 'battle-ability-close', close));
-  update();
+  const aimed = choices.some(choice => choice.command.point);
+  root.append(element('h3', '', aimed ? '选择施放位置' : '选择目标'));
+  const targets = element('div', 'ability-target-options'); targets.setAttribute('role', 'group'); targets.setAttribute('aria-label', '技能目标');
+  if (!aimed) for (const choice of choices) {
+    const target = button(choice.label, 'ability-target-' + (choice.command.target ?? 'self'), () => pick(choice));
+    target.setAttribute('aria-pressed', String(selection.choice === choice)); targets.append(target);
+  }
+  root.append(targets);
+  const note = element('p', 'battle-ability-note', entry.reason || (selection.choice ? '已选：' + selection.choice.label
+    : aimed ? '点击棋盘上有金色边框的格子，选择方向或范围中心。' : '点击棋盘上的金色目标，或在上方选择目标。'));
+  note.dataset.testid = 'battle-ability-feedback'; note.setAttribute('role', 'status'); root.append(note);
+  const submit = button('确认使用', 'battle-ability-use', use);
+  submit.disabled = Boolean(entry.reason || !selection.choice);
+  root.append(submit);
 }

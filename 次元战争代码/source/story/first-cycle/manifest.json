@@ -1,0 +1,27 @@
+{
+  "contentVersion": "first_cycle_v1",
+  "files": [
+    {
+      "id": "main",
+      "sceneIds": [
+        "m101",
+        "m102",
+        "m103"
+      ],
+      "from": "../游戏说明/剧情/主线/第一幕/第一幕（一）_Galgame脚本.md",
+      "sourceFile": "source/story/first-cycle/main.md",
+      "sha256": "8b05c65d970433278fa707ec8aafbf7e65992fbabbf90283f99b7c150609f7a1"
+    },
+    {
+      "id": "thief_bond1",
+      "sceneIds": [
+        "t101",
+        "t102",
+        "t103"
+      ],
+      "from": "../游戏说明/剧情/个人/怪盗线/羁绊一_Galgame脚本.md",
+      "sourceFile": "source/story/first-cycle/thief_bond1.md",
+      "sha256": "5ba580387c22afb1fbfab5ed4bb28a8fad9388fb19b95d634fa0f8b94f1c1d55"
+    }
+  ]
+}

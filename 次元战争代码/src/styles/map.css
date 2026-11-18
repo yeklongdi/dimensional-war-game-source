@@ -19,6 +19,7 @@
 .pin-label { padding: 4px 10px; background: #121a24ed; border: 1px solid #d8b45a80; border-radius: 5px; font-size: 16px; white-space: nowrap; box-shadow: 0 2px 6px #0007; }
 .pin-chapter { padding: 2px 10px; border: 1px solid #f1cf8b; border-radius: 5px; background: #514326f5; color: #fff1d2; font-size: 14px; line-height: 1.5; white-space: nowrap; }
 .map-pin.current .pin-dot { background: #9d7731; border-color: #ffe7a8; }
+.map-pin.has-city-action .pin-dot { background: #24433d; border-color: #ade3c0; box-shadow: 0 0 0 3px #ade3c055, 0 3px 12px #0009; }
 .map-pin.selected .pin-label { background: #514326f5; border-color: #fff1c2; }
 .map-pin:focus-visible { outline: 3px solid #f7d384; outline-offset: 7px; border-radius: 8px; }
 .map-pin:hover .pin-dot { filter: brightness(1.3); }

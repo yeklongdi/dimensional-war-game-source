@@ -5,7 +5,11 @@ import { renderMovement } from './render-movement.js';
 import { playerAttack } from './battle.js';
 import { active, currentUnit } from './state-helpers.js';
 
-export function renderBoard(canvas: HTMLCanvasElement, state: BattleState, mode: BattleMode, overlay?: MovementOverlay) {
+export type UnitReaction = { dx: number; dy: number; squash: number; flash: number };
+export type UnitPainter = (ctx: CanvasRenderingContext2D, unit: BattleState['units'][number]) => void;
+
+export function renderBoard(canvas: HTMLCanvasElement, state: BattleState, mode: BattleMode, overlay?: MovementOverlay,
+  reactions?: ReadonlyMap<string, UnitReaction>, painter?: UnitPainter) {
   const ctx = canvas.getContext('2d');
   if (!ctx) throw new Error('当前浏览器无法创建 Canvas 2D');
   const ratio = window.devicePixelRatio || 1;
@@ -32,11 +36,20 @@ export function renderBoard(canvas: HTMLCanvasElement, state: BattleState, mode:
   renderMovement(ctx, state, overlay);
   for (const unit of [...state.units].sort((a, b) => Number(occupies(a)) - Number(occupies(b)))) {
     const x = unit.position.col * 96, y = unit.position.row * 96;
+    const reaction = reactions?.get(unit.id);
     ctx.globalAlpha = occupies(unit) ? 1 : .35;
     if (actor.id === unit.id) { ctx.strokeStyle = '#d8b45a'; ctx.lineWidth = 3; ctx.strokeRect(x + 4, y + 4, 88, 88); }
     const resource = mode === 'bonus' ? 'bonus' : 'action';
     if (playerReady && ['attack', 'bonus'].includes(mode) && playerAttack(state, actor, unit, resource)) {
       ctx.strokeStyle = '#df6464'; ctx.lineWidth = 3; ctx.strokeRect(x + 7, y + 7, 82, 82);
+    }
+    if (painter) { ctx.globalAlpha = 1; painter(ctx, unit); continue; }
+    // 受击后仰：整枚棋子沿击退方向位移并压扁，命中瞬间再叠一层闪白。
+    if (reaction) {
+      ctx.save();
+      ctx.translate(x + 48 + reaction.dx, y + 37 + reaction.dy);
+      ctx.scale(1, reaction.squash);
+      ctx.translate(-(x + 48), -(y + 37));
     }
     ctx.fillStyle = unit.team === 'player' ? '#385b85' : '#773d46';
     ctx.beginPath(); ctx.arc(x + 48, y + 37, 23, 0, Math.PI * 2); ctx.fill();
@@ -45,6 +58,13 @@ export function renderBoard(canvas: HTMLCanvasElement, state: BattleState, mode:
     ctx.fillStyle = '#09101b'; ctx.fillRect(x + 14, y + 76, 68, 7); ctx.fillStyle = '#74a78a'; ctx.fillRect(x + 14, y + 76, 68 * unit.hp / unit.maxHp, 7);
     if (unit.tempHp) { ctx.fillStyle = '#6fbfdd'; ctx.fillRect(x + 14, y + 85, Math.min(68, unit.tempHp / unit.maxHp * 68), 3); }
     if (unit.status !== 'active') { ctx.fillStyle = '#f2c79a'; ctx.font = '11px "Microsoft YaHei", sans-serif'; ctx.fillText(unit.status === 'unconscious' ? '昏迷·倒地' : unit.status === 'dead' ? '死亡' : unit.status === 'stable' ? '稳定' : '击败', x + 48, y + 14); }
+    if (reaction) {
+      ctx.restore();
+      if (reaction.flash > 0) {
+        ctx.save(); ctx.globalAlpha = reaction.flash; ctx.fillStyle = '#ffffff';
+        ctx.beginPath(); ctx.arc(x + 48 + reaction.dx, y + 37 + reaction.dy, 23, 0, Math.PI * 2); ctx.fill(); ctx.restore();
+      }
+    }
   }
   ctx.globalAlpha = 1;
 }

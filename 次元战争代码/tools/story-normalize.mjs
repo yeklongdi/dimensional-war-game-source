@@ -7,7 +7,7 @@ export function* walkNodes(nodes) {
   }
 }
 
-export function normalizeChoices(act, locations, collector) {
+export function normalizeChoices(act, locations, collector, additionalScenes = []) {
   const scenes = new Map(act.scenes.map(scene => [scene.id, scene]));
   for (const scene of act.scenes) {
     for (let index = 0; index + 1 < scene.nodes.length; index++) {
@@ -29,7 +29,7 @@ export function normalizeChoices(act, locations, collector) {
       if (node.kind === 'choice' && (!node.prompt || !node.options.length)) {
         collector.add(scene.id, token, 'missing_prompt', '选择节点缺少提示语或选项；保留原文，等待确认。');
       }
-      if (node.kind === 'jump' && !scenes.has(node.target)) {
+      if (node.kind === 'jump' && !scenes.has(node.target) && !additionalScenes.includes(node.target)) {
         collector.add(scene.id, token, 'unresolved_jump', `找不到跳转目标 ${node.target}；未补写场景。`);
       }
     }

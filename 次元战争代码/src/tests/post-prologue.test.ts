@@ -22,13 +22,18 @@ describe('序幕后日程与副本', () => {
   it('C013 真正结束后开场，冻结旧输入，自动档恢复相同日程', async () => {
     const h = menuHarness(tail(), 'v5'); await loadAuto(h);
     expect(h.state.postPrologue).toBeUndefined();
-    await forward(h); await ticks(h, state => state.screen === 'loop');
+    await forward(h); await ticks(h, state => state.sceneId === 'm101');
     expect(h.state.flags.prologue_4_complete).toBe(true);
     expect(h.state.progress!.completedLevelIds).toEqual(levelIds);
-    expect(h.state.postPrologue).toMatchObject({ day: 1, cycle: 0, phase: { kind: 'intro' } });
+    expect(h.state.postPrologue).toMatchObject({ day: 1, cycle: 0, phase: { kind: 'intro' }, storyScene: 'm101' });
     const token = loopToken(h.state);
     const dispatch = (intent: LoopIntent, actionToken = loopToken(h.state)) => h.action({ type: 'loop', token: actionToken, intent });
-    await dispatch({ kind: 'ack' });
+    await forward(h); await ticks(h, state => state.sceneId === 'm102');
+    await loadAuto(h);
+    expect(h.state.sceneId).toBe('m102');
+    await forward(h); await ticks(h, state => state.waiting?.kind === 'end');
+    await h.action({ type: 'return-loop', token: navigationToken(h.state) });
+    expect(h.state.flags.thief_invitation_received).toBe(true);
     await dispatch({ kind: 'skip_day' }, token);
     expect(h.state.postPrologue).toMatchObject({ day: 1, slot: 'after_school', phase: { kind: 'city' } });
     await dispatch({ kind: 'skip_day' });

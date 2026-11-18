@@ -1,11 +1,12 @@
 import type { Scene, StoryNode } from '../../content/types.js';
 import type { Action, Effect, GameState, Origin, StoryLibrary, Transition } from '../state.js';
 import { emptyState, warning } from '../state.js';
-import { overrides, sfxBindings } from './config.js';
+import { displayStoryText, overrides, sfxBindings } from './config.js';
 import { applyPresentation, hideActors, stageText } from './presentation.js';
 import { levelById, levelExits, levelHasScene } from '../../content/levels.js';
 import { chapterEntryError, unfinishedScene, sceneEntryError } from './chapter-policy.js';
 import { skippedFlag, unbuiltBattles } from './skip-policy.js';
+import { firstCycle } from '../loop/config.js';
 
 function getScene(state: GameState, library: StoryLibrary): Scene {
   const scene = library[state.actId]?.scenes.find(item => item.id === state.sceneId);
@@ -31,6 +32,15 @@ function note(state: GameState, node: StoryNode, origin: Origin) {
 }
 
 function token(state: GameState) { return `${state.run}:${++state.sequence}`; }
+
+function playerText(state: GameState, text: string): string {
+  if (state.actId !== firstCycle.actId || state.sceneId !== 't103') return displayStoryText(state.actId, text);
+  const day = state.postPrologue?.day ?? 1;
+  const forced = day === firstCycle.meetingDay && state.flags.thief_bond1_forced_entry === true;
+  return text.replace(/\n【若为第 7 夜触发追加】([^\n]*)/, forced ? '\n$1' : '')
+    .replaceAll('{current_day}', String(day))
+    .replaceAll('{10 - current_day}', String(firstCycle.releaseDay - day));
+}
 
 function drive(state: GameState, library: StoryLibrary, effects: Effect[]): Transition {
   state.waiting = null;
@@ -66,7 +76,7 @@ function drive(state: GameState, library: StoryLibrary, effects: Effect[]): Tran
           if (!text) continue;
           state.waiting = {
             kind: 'text', token: token(state), origin, textKind: node.kind,
-            text, speaker: 'speaker' in node ? node.speaker : undefined, revealed: 0,
+            text: playerText(state, text), speaker: 'speaker' in node ? node.speaker : undefined, revealed: 0,
           };
           return { state, effects };
         }

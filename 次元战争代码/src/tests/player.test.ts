@@ -104,7 +104,7 @@ describe('M1 立绘状态', () => {
       later = next(later);
     }
     expect(displayName('prologue', '怪盗')).toBe('蒙面人');
-    expect(displayName('act1', '怪盗')).toBe('怪盗');
+    expect(displayName('act1', '怪盗')).toBe('前排同学');
   });
 });
 

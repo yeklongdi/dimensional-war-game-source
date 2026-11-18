@@ -104,10 +104,11 @@ export class AudioController {
     });
   }
 
-  playSfx(id: string) {
+  playSfx(id: string, speed = 1) {
     const url = sfxBindings[id];
     if (!url || !this.unlocked || this.disposed) return;
     const sound = new Audio(url);
+    sound.playbackRate = speed; sound.preservesPitch = true;
     sound.volume = this.sfxGain / 100;
     const generation = this.generation;
     this.sounds.add(sound);

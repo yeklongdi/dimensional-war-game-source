@@ -4,6 +4,7 @@ import { currentLevel, levels, levelIds, progressEdges, visibleLevels } from '..
 import { mapLocations } from '../content/map-locations.js';
 import { startApp, reduceApp, navigationToken } from '../game/router.js';
 import { storyLibrary } from '../game/story/library.js';
+import { displayStoryText } from '../game/story/config.js';
 import { clampCamera, fitScale, focusCamera, mapSize, mapViewport, zoomCamera } from '../game/map-camera.js';
 import { appAction, appStep, freshApp, enterLevel, navigate, sampleV2 } from './m4-helpers.js';
 
@@ -62,8 +63,9 @@ describe('真实规则整条主线与关卡边界', () => {
     expect(texts.some(text => text.scene === 'b008')).toBe(true);
     expect(texts.map(item => item.text).join('')).not.toMatch(/【待确认】|【不可执行】|【分支占位】|CHECK:/);
     for (const item of texts) {
-      const node = Object.values(storyLibrary).flatMap(act => act.scenes).find(scene => scene.id === item.scene)!.nodes[Number(item.node)];
-      expect(node && 'text' in node && node.text.includes(item.text), item.scene).toBe(true);
+      const act = Object.values(storyLibrary).find(act => act.scenes.some(scene => scene.id === item.scene))!;
+      const node = act.scenes.find(scene => scene.id === item.scene)!.nodes[Number(item.node)];
+      expect(node && 'text' in node && displayStoryText(act.id, node.text).includes(item.text), item.scene).toBe(true);
     }
     expect(state.waiting).toMatchObject({ kind: 'blocked-call', callId: 'battle_prologue4_patrol' });
     const a014 = storyLibrary.act1!.scenes.find(scene => scene.id === 'a014')!, call = a014.nodes.findIndex(node => node.kind === 'call');

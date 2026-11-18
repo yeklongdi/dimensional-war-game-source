@@ -17,10 +17,11 @@ describe('工程与说明分区的路径兼容', () => {
     expect(resolve(repositoryRoot, '剧情/序幕')).toBe(nativePath.join(repositoryRoot, '游戏说明/剧情/序幕'));
     expect(resolve(repositoryRoot, '地图')).toBe(nativePath.join(codeRoot, '素材原件/地图'));
   });
-  it('四份可移植来源路径可读取，正式副本保持原SHA而不自动覆盖原稿', () => {
-    const manifest = JSON.parse(readFileSync(nativePath.join(codeRoot, 'source/story/prologue-v2/manifest.json'), 'utf8'));
-    expect(manifest.files).toHaveLength(4);
-    for (const file of manifest.files) {
+  it('七份正式来源路径可读取，快照匹配清单哈希', () => {
+    const manifests = ['prologue-v2', 'first-cycle', 'vtuber'].map(group =>
+      JSON.parse(readFileSync(nativePath.join(codeRoot, 'source/story', group, 'manifest.json'), 'utf8')));
+    expect(manifests.map(item => item.files.length)).toEqual([4, 2, 1]);
+    for (const file of manifests.flatMap(item => item.files)) {
       const original = readFileSync(resolve(codeRoot, file.from));
       const snapshot = readFileSync(resolve(codeRoot, file.sourceFile));
       expect(nativePath.relative(repositoryRoot, resolve(codeRoot, file.from)).replaceAll('\\', '/').startsWith('游戏说明/剧情/')).toBe(true);
