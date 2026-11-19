@@ -80,6 +80,7 @@ function reset(next: ChessScenario) {
   if (timer !== undefined) window.clearTimeout(timer);
   view?.dispose(); audio.stopSfx(); sounds = []; scenario = next; game = chessSampleGame(next, ++serial);
   view = new BattleView(root, dispatch, undefined, id => {
+    audio.unlock();
     sounds.push({ id, speed: view.presentationSpeed });
     view.stage.dataset.sampleSounds = JSON.stringify(sounds); audio.playSfx(id, view.presentationSpeed);
   }, { chess: true, title: '棋子 · 交战样例', assets: urls, onPresentationIdle: () => { draw(); schedule(); } });

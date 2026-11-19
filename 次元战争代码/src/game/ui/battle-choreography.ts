@@ -140,16 +140,19 @@ export class BattleChoreography {
   }
 
   readonly painter: UnitPainter = (ctx, unit) => {
-    const elapsed = this.clock.now() - this.started;
+    const now = this.clock.now(), elapsed = now - this.started;
     const falling = this.plan?.poses.find(pose => pose.actor === unit.id && pose.pose === 'down');
     const collapse = falling ? Math.max(0, Math.min(1, (elapsed - falling.at) / falling.length)) : 1;
-    drawChessPiece(ctx, displayedUnit(unit, this.before?.units.find(item => item.id === unit.id), this.plan, elapsed), this.assets, unit.id === this.selected, collapse);
+    const revealAge = unit.id === this.selected ? now - this.selectedAt : Infinity;
+    drawChessPiece(ctx, displayedUnit(unit, this.before?.units.find(item => item.id === unit.id), this.plan, elapsed),
+      this.assets, unit.id === this.selected, collapse, revealAge, now);
   };
 
   paintPeople() {
     const ctx = this.people.getContext('2d'), state = this.state;
     if (!ctx || !state || this.disposed) return;
-    const now = this.fx.poseTime(this.clock.now()), elapsed = now - this.started;
+    const clockNow = this.clock.now();
+    const now = this.fx.poseTime(clockNow), elapsed = now - this.started;
     ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, this.boardW, this.boardH + TOP_PAD); ctx.translate(0, TOP_PAD);
     const visible = state.units.filter(unit => unit.id === this.selected || Boolean(this.plan?.participants.includes(unit.id)));
     const poses: Record<string, { pose: ChessPose; frame: number }> = {};
@@ -159,15 +162,18 @@ export class BattleChoreography {
       const shown = displayedUnit(unit, this.before?.units.find(item => item.id === unit.id), this.plan, elapsed);
       const fallen = shown.status !== 'active';
       const fallback = fallen ? 'down' : 'idle';
-      const pose = this.plan?.participants.includes(unit.id) ? poseAt(this.plan, unit.id, elapsed, fallback)
-        : now - this.selectedAt < 200 && !fallen ? { pose: 'appear' as const, frame: Math.max(0, Math.min(3, Math.floor((now - this.selectedAt) / 50))) }
-          : poseAt(undefined, unit.id, now - this.selectedAt, fallback);
+      const inPlan = Boolean(this.plan?.participants.includes(unit.id));
+      const selectAge = clockNow - this.selectedAt;
+      const pose = inPlan ? poseAt(this.plan, unit.id, elapsed, fallback)
+        : selectAge < 220 && !fallen ? { pose: 'appear' as const, frame: Math.max(0, Math.min(3, Math.floor(selectAge / 55))) }
+          : poseAt(undefined, unit.id, selectAge, fallback);
       const toward = 'facing' in pose && pose.facing ? state.units.find(item => item.id === pose.facing) : undefined;
       const left = toward ? toward.position.col < unit.position.col : unit.team === 'enemy';
       const fading = unit.id !== this.selected && this.plan ? Math.min(1, Math.max(0, (this.plan.length - elapsed) / 180)) : 1;
-      const alpha = (pose.pose === 'appear' ? Math.min(1, (this.plan ? elapsed : now - this.selectedAt) / 100) : 1) * fading;
+      const alpha = (pose.pose === 'appear' ? Math.min(1, (inPlan ? elapsed : selectAge) / 110) : 1) * fading;
+      const revealAge = inPlan ? elapsed : unit.id === this.selected ? selectAge : Infinity;
       drawChessPerson(ctx, unit, this.assets, pose.pose, reduced && pose.pose === 'idle' ? 0 : pose.frame,
-        left, Math.max(0, alpha), reactions?.get(unit.id));
+        left, Math.max(0, alpha), reactions?.get(unit.id), revealAge, clockNow, reduced);
       poses[unit.id] = { pose: pose.pose, frame: pose.frame };
     }
     Object.assign(this.stage.dataset, { chessSelected: this.selected, chessVisible: visible.map(unit => unit.id).join(','),
@@ -195,12 +201,14 @@ export class BattleChoreography {
         queueMicrotask(() => { if (!this.disposed) this.idle(); });
       } else this.fx.paintAt(now);
       this.repaint();
+    } else if (this.selected && now - this.selectedAt < 380) {
+      this.repaint();
     }
     this.paintPeople();
     const selected = this.state?.units.find(unit => unit.id === this.selected);
-    if (this.plan || (selected?.status === 'active' && now - this.selectedAt < 200)) this.requestFrame();
-    else if (selected?.status === 'active' && this.material(selected) === 'sprite' && !reducedMotion()) {
-      this.idleTimer = window.setTimeout(() => this.requestFrame(), 180 / this.clock.speed);
+    if (this.plan || (selected?.status === 'active' && now - this.selectedAt < 380)) this.requestFrame();
+    else if (selected?.status === 'active' && !reducedMotion()) {
+      this.idleTimer = window.setTimeout(() => { this.repaint(); this.requestFrame(); }, 100 / this.clock.speed);
     }
   };
 

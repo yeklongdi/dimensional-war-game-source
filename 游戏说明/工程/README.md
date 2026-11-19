@@ -2,6 +2,21 @@
 
 > 2026-10-24目录整理：程序位于`E:\笔记\次元战争设定\次元战争代码`，本文件及原docs已移至说明区。当前路径与旧位置对照见[说明入口](../README.md)；后续终端命令均在代码目录运行。历史阶段结论仍按当时记录理解。
 
+## 2026-11-20（三）：战斗滚轮缩放、选中音效与显现质感增强
+
+- **鼠标滚轮以指针为中心缩放**：将 `.battle-board` 内的鼠标滚轮行为由视野平移改为光标锚点缩放（`14×10` 棋盘缩放范围 `0.50×–2.00×`，`7×5` 棋盘 `1.00×–2.00×`，接近 `1.00×` 自动吸附归位），并保持左键拖拽平移、`.battle-world` 与 `.battle-overlay-world` 在全倍率下像素级同步对齐；右下角视野栏新增缩放读数／点击复位按钮（`[data-testid="camera-zoom"]`）。
+- **选中棋子 `click~` 音效**：在 `tools/make-sfx.mjs` 合成并生成 `public/assets/audio/sfx/fx_select.wav`（短促清脆触击+轻玻璃余韵），接入 `src/game/story/config.ts` 的 `sfxBindings`；仅在玩家主动点选或查看棋子（`inspect`）时触发 `fx_select`，系统自动换回合跟随不额外鸣响，并在战斗舞台与棋子样例中补充首次交互音频解锁。
+- **角色显现光感与悬停质感**：在 `render-chess.ts` 与 `battle-choreography.ts` 中强化 `appear` 阶段与选中常驻光效——新增底座投射光束、360ms 显现光柱与扩散底座波纹、缓动升起与瞬时高光闪耀、双层召唤光环、上升微光粒子与待机轻缓悬浮；`appear` 动作框同步延长至 `220ms`（完整显现循环 `380ms`）。
+- **验收**：`npm run typecheck` 通过；`npm test` 通过 54 文件 727 项（含 `chess-performance.test.ts` 的 `fx_select` 绑定校验）；`node tools/build-chess-preview.mjs`（132 模块正式构建 + 离线 `chess-sample.html`）通过；Playwright 浏览器验收全通且控制台错误 0：`check-chess-release.py` 4/4（含滚轮缩放与读数复位检查，[zoomed](verification/chess-release/01c-warehouse-zoomed.jpg)）、`check-chess-sample.py` 15/15（含 `fx_select` 音效序列验证）、`check-battle-actions.py` 16/16 与 `check-first-cycle.py` 双路线。
+
+本轮实际文件清单：
+
+| 类别 | 文件 |
+|---|---|
+| 新增音频与工具 | `次元战争代码/tools/make-sfx.mjs`、`public/assets/audio/sfx/fx_select.wav`、`src/game/story/config.ts` |
+| 修改渲染与视野 | `次元战争代码/src/game/battle/render-chess.ts`、`src/game/ui/battle-choreography.ts`、`battle-view.ts`、`src/styles/battle.css`、`src/game/controller.ts`、`src/dev/chess-sample.ts` |
+| 修改测试与验收 | `次元战争代码/src/tests/chess-performance.test.ts`、`tools/check-chess-release.py`、`tools/check-chess-sample.py`、本 README 及验收截图 |
+
 ## 2026-11-20（二）：4K 动态战斗地图、拖动视野、放大悬浮棋子与空白取消选中
 
 - **4K 动态战斗地图**：将 `E:\地图` 下四套 4K 动态地图素材转码为静音循环 WebM（VP9 CRF 34）与 WebP 首帧海报，放进 `次元战争代码/public/assets/battle/maps-v1/`（`warehouse`、`alley`、`lab`、`facility`），分别接入序幕仓库／巷道战与循环 4 场演示战斗；`battle_debug_core` 与 `dev-chess.html` 维持原 `7×5` 调试棋盘与网格。

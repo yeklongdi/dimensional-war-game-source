@@ -66,4 +66,9 @@ write('fx_fail', tone(0.24, t => 420 - 240 * t, 2.6), 0.45);
 write('fx_heal', mix(tone(0.2, () => 523, 1.2), gain(tone(0.22, () => 784, 1.6), 0.8), gain(tone(0.26, () => 1046, 1.8), 0.6)), 0.45);
 write('fx_ward', chord(0.4, [330, 440, 550], 1.8), 0.45);
 write('fx_down', tone(0.44, t => 300 - 200 * t, 1.6), 0.5);
+write('fx_select', mix(
+  gain(noise(0.014, 4), 0.55),
+  gain(tone(0.028, t => 1950 - 950 * (t / 0.028), 3.2), 0.7),
+  gain(track(0.11, t => (0.65 * sine(t, 1320 + 440 * Math.min(1, t / 0.06)) + 0.35 * sine(t, 2200)) * env(t, 0.11, 0.004, 2.2)), 0.65),
+), 0.46);
 console.log(`已生成 ${out}`);

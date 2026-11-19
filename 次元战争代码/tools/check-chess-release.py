@@ -126,6 +126,18 @@ def tutorial(browser, url, errors, output):
     assert pan_after != pan_before, (pan_before, pan_after)
     expect(game.stage).to_have_attribute("data-chess-selected", "black_a")
     game.shot(output, "01a-warehouse-panned")
+
+    # 滚轮缩放战斗视野，不触发上下平移；点击百分比重置为 100%。
+    expect(board).to_have_attribute("data-zoom", "1.00")
+    game.page.mouse.move(box["x"] + box["width"] / 2, box["y"] + box["height"] / 2)
+    game.page.mouse.wheel(0, 480)
+    assert float(board.get_attribute("data-zoom")) < 1.0, board.get_attribute("data-zoom")
+    game.shot(output, "01c-warehouse-zoomed")
+    game.page.mouse.wheel(0, -400)
+    game.page.mouse.wheel(0, -400)
+    assert float(board.get_attribute("data-zoom")) > 1.0, board.get_attribute("data-zoom")
+    game.click("camera-zoom")
+    expect(board).to_have_attribute("data-zoom", "1.00")
     game.click("camera-recenter")
 
     # 点击棋盘空白格与面板外空白背景，均彻底取消选中。

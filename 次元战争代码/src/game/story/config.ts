@@ -24,6 +24,7 @@ export const sfxBindings: Readonly<Record<string, string>> = assetBindings({
   fx_crit: '/assets/audio/sfx/fx_crit.wav', fx_save: '/assets/audio/sfx/fx_save.wav',
   fx_fail: '/assets/audio/sfx/fx_fail.wav', fx_heal: '/assets/audio/sfx/fx_heal.wav',
   fx_ward: '/assets/audio/sfx/fx_ward.wav', fx_down: '/assets/audio/sfx/fx_down.wav',
+  fx_select: '/assets/audio/sfx/fx_select.wav',
 });
 export { backgroundBindings } from './backgrounds.js';
 export const textInterval = 30;

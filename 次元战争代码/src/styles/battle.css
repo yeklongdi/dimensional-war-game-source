@@ -21,12 +21,12 @@
 .battle-board[data-dragging="true"],
 .battle-board[data-dragging="true"] .battle-cell { cursor: grabbing !important; }
 .battle-viewport { position: absolute; inset: 0; overflow: hidden; background: #0f1620; }
-.battle-world { position: relative; will-change: transform; }
+.battle-world { position: relative; will-change: transform; transform-origin: 0 0; }
 .battle-map-poster, .battle-map-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; z-index: 0; }
 .battle-board canvas { display: block; }
 .battle-world > canvas:not(.battle-fx) { position: relative; z-index: 1; transition: transform 60ms linear; }
 .battle-overlay-viewport { position: absolute; left: 0; top: -84px; width: 672px; height: 576px; overflow: hidden; pointer-events: none; z-index: 2; }
-.battle-overlay-world { position: relative; will-change: transform; }
+.battle-overlay-world { position: relative; will-change: transform; transform-origin: 0 0; }
 .battle-fx { position: absolute; left: 0; top: 0; pointer-events: none; z-index: 3; }
 .battle-hit-grid { position: absolute; inset: 0; display: grid; z-index: 2; }
 .battle-cell { background: transparent; border: 0; padding: 0; border-radius: 0; color: transparent; cursor: pointer; }

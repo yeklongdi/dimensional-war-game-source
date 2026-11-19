@@ -140,16 +140,20 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
       }, { image: images.load }, intent => {
         if (state.run === scope) dispatch({ type: 'system', intent, token: `${state.run}:system:${state.system!.uiRevision}` });
       }, { decode: images.load, peek: images.peek }, () => { if (!disposed && state.run === scope) syncClock(); });
-      else if (state.screen === 'battle') view = new BattleView(root, action => play(action, scope), () => {
-        if (state.run === scope) dispatch({ type: 'system', intent: 'load', token: systemToken(state) });
-      }, id => audio.playSfx(id, view instanceof BattleView ? view.presentationSpeed : 1), {
-        chess: true,
-        onPresentationIdle: () => {
-          if (disposed || state.run !== scope || state.screen !== 'battle') return;
-          if (defeatMenuRevision !== undefined) renderScreen();
-          syncBattleClock();
-        },
-      });
+      else if (state.screen === 'battle') {
+        view = new BattleView(root, action => play(action, scope), () => {
+          if (state.run === scope) dispatch({ type: 'system', intent: 'load', token: systemToken(state) });
+        }, id => audio.playSfx(id, view instanceof BattleView ? view.presentationSpeed : 1), {
+          chess: true,
+          onPresentationIdle: () => {
+            if (disposed || state.run !== scope || state.screen !== 'battle') return;
+            if (defeatMenuRevision !== undefined) renderScreen();
+            syncBattleClock();
+          },
+        });
+        view.stage.addEventListener('pointerdown', () => audio.unlock(), { once: true });
+        view.stage.addEventListener('keydown', () => audio.unlock(), { once: true });
+      }
       else if (state.screen === 'map') view = new MapView(root, navigate, loopAction);
       else if (state.screen === 'loop') view = new LoopView(root, loopAction);
       else view = new MenuView(root, dispatch);

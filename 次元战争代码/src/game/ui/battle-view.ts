@@ -72,8 +72,10 @@ export class BattleView {
   private gridKey = '';
   private boardW = VIEW_W;
   private boardH = VIEW_H;
+  private zoom = 1;
   private panX = 0;
   private panY = 0;
+  private readonly cameraZoom: HTMLButtonElement;
   private drag?: { id: number; startX: number; startY: number; startPanX: number; startPanY: number; moved: boolean };
   private suppressBoardClickUntil = 0;
   private paintGame?: GameState;
@@ -82,10 +84,12 @@ export class BattleView {
   private lastFixtureDone = false;
   private readonly dispatch: (action: BattleAction) => void;
   private readonly load?: () => void;
+  private readonly playSfx?: (id: string) => void;
 
   constructor(root: HTMLElement, dispatch: (action: BattleAction) => void, load?: () => void, sfx?: (id: string) => void, options: BattleViewOptions = {}) {
     this.root = root;
     this.options = options;
+    this.playSfx = sfx;
     this.dispatch = action => {
       if (this.isPerforming && action.type !== 'restart') { this.showHint('请等当前演出结束，可使用右上方按钮加速'); return; }
       dispatch(action);
@@ -105,9 +109,11 @@ export class BattleView {
     this.viewport.append(this.world);
     this.overlayViewport.append(this.overlayWorld);
 
+    this.cameraZoom = button('100%', 'camera-zoom', () => this.resetCameraZoom());
+    this.cameraZoom.setAttribute('aria-label', '重置地图缩放为 100%');
     const recenter = button('居中', 'camera-recenter', () => this.recenterCamera());
     recenter.setAttribute('aria-label', '将视角重新居中到当前行动单位');
-    this.cameraBar.append(element('span', 'battle-camera-tip', '拖动地图查看四周'), recenter);
+    this.cameraBar.append(element('span', 'battle-camera-tip', '滚轮缩放 · 拖动看四周'), this.cameraZoom, recenter);
     this.cameraBar.hidden = true;
 
     this.fxLayer.width = VIEW_W; this.fxLayer.height = VIEW_H;
@@ -144,8 +150,10 @@ export class BattleView {
     this.resizeObserver = new ResizeObserver(resize); this.resizeObserver.observe(root); resize();
   }
 
-  private get maxPanX() { return Math.max(0, this.boardW - VIEW_W); }
-  private get maxPanY() { return Math.max(0, this.boardH - VIEW_H); }
+  private get minZoom() { return Math.min(1, Math.max(VIEW_W / this.boardW, VIEW_H / this.boardH)); }
+  private readonly maxZoom = 2;
+  private get maxPanX() { return Math.max(0, Math.round(this.boardW * this.zoom - VIEW_W)); }
+  private get maxPanY() { return Math.max(0, Math.round(this.boardH * this.zoom - VIEW_H)); }
 
   private rebuildGrid(cols: number, rows: number) {
     const gridKey = `${cols}x${rows}`;
@@ -174,46 +182,59 @@ export class BattleView {
       const hit = element('button', 'battle-cell'); hit.type = 'button'; hit.dataset.testid = `cell-${col}-${row}`;
       hit.dataset.col = String(col); hit.dataset.row = String(row); this.hitGrid.append(hit);
     }
-    this.board.dataset.maxPanX = String(this.maxPanX);
-    this.board.dataset.maxPanY = String(this.maxPanY);
-    this.cameraBar.hidden = this.maxPanX === 0 && this.maxPanY === 0;
-    this.setPan(this.panX, this.panY);
+    this.setCamera(this.zoom, this.panX, this.panY);
   }
 
-  private setPan(x: number, y: number) {
+  private setCamera(zoom: number, x: number, y: number) {
+    const clampedZoom = Math.max(this.minZoom, Math.min(this.maxZoom, zoom));
+    this.zoom = Math.abs(clampedZoom - 1) < 0.015 ? 1 : Math.round(clampedZoom * 1000) / 1000;
     this.panX = Math.max(0, Math.min(this.maxPanX, Math.round(x)));
     this.panY = Math.max(0, Math.min(this.maxPanY, Math.round(y)));
-    const transform = `translate3d(${-this.panX}px, ${-this.panY}px, 0)`;
-    this.world.style.transform = transform;
-    this.overlayWorld.style.transform = transform;
+    this.world.style.transform = `translate3d(${-this.panX}px, ${-this.panY}px, 0) scale(${this.zoom})`;
+    const overlayTy = -this.panY + OVERLAY_TOP_PAD * (1 - this.zoom);
+    this.overlayWorld.style.transform = `translate3d(${-this.panX}px, ${overlayTy}px, 0) scale(${this.zoom})`;
+    this.board.dataset.zoom = this.zoom.toFixed(2);
     this.board.dataset.panX = String(this.panX);
     this.board.dataset.panY = String(this.panY);
+    this.board.dataset.maxPanX = String(this.maxPanX);
+    this.board.dataset.maxPanY = String(this.maxPanY);
+    this.cameraZoom.textContent = `${Math.round(this.zoom * 100)}%`;
+    this.cameraBar.hidden = this.maxPanX === 0 && this.maxPanY === 0 && Math.abs(this.zoom - 1) < 0.01;
     this.updateTutorialPosition();
   }
 
   private centerCameraOn(points: readonly Point[]) {
-    if (!points.length || (this.maxPanX === 0 && this.maxPanY === 0)) { this.setPan(0, 0); return; }
+    if (!points.length || (this.maxPanX === 0 && this.maxPanY === 0)) { this.setCamera(this.zoom, 0, 0); return; }
     const cols = points.map(p => p.col), rows = points.map(p => p.row);
     const centerX = ((Math.min(...cols) + Math.max(...cols)) / 2) * 96 + 48;
     const centerY = ((Math.min(...rows) + Math.max(...rows)) / 2) * 96 + 48;
-    this.setPan(centerX - VIEW_W / 2, centerY - VIEW_H / 2);
+    this.setCamera(this.zoom, centerX * this.zoom - VIEW_W / 2, centerY * this.zoom - VIEW_H / 2);
   }
 
   private ensureCellVisible(point: Point, margin = 96) {
     if (this.maxPanX === 0 && this.maxPanY === 0) return;
-    const left = point.col * 96, right = left + 96;
-    const top = point.row * 96, bottom = top + 96;
+    const left = point.col * 96 * this.zoom, right = (point.col + 1) * 96 * this.zoom;
+    const top = point.row * 96 * this.zoom, bottom = (point.row + 1) * 96 * this.zoom;
+    const pad = margin * this.zoom;
     let nextX = this.panX, nextY = this.panY;
-    if (left - margin < nextX) nextX = left - margin;
-    else if (right + margin > nextX + VIEW_W) nextX = right + margin - VIEW_W;
-    if (top - margin < nextY) nextY = top - margin;
-    else if (bottom + margin > nextY + VIEW_H) nextY = bottom + margin - VIEW_H;
-    this.setPan(nextX, nextY);
+    if (left - pad < nextX) nextX = left - pad;
+    else if (right + pad > nextX + VIEW_W) nextX = right + pad - VIEW_W;
+    if (top - pad < nextY) nextY = top - pad;
+    else if (bottom + pad > nextY + VIEW_H) nextY = bottom + pad - VIEW_H;
+    this.setCamera(this.zoom, nextX, nextY);
   }
 
   private recenterCamera() {
     const state = this.paintGame?.battle;
     if (!state) return;
+    const target = state.units.find(u => u.id === this.choreography?.selectedId) ?? currentUnit(state);
+    this.centerCameraOn([target.position]);
+  }
+
+  private resetCameraZoom() {
+    this.zoom = 1;
+    const state = this.paintGame?.battle;
+    if (!state) { this.setCamera(1, 0, 0); return; }
     const target = state.units.find(u => u.id === this.choreography?.selectedId) ?? currentUnit(state);
     this.centerCameraOn([target.position]);
   }
@@ -229,11 +250,19 @@ export class BattleView {
     window.addEventListener('pointerup', this.handleWindowPointerUp);
     window.addEventListener('pointercancel', this.handleWindowPointerUp);
     this.board.addEventListener('wheel', event => {
-      if (this.maxPanX === 0 && this.maxPanY === 0) return;
       event.preventDefault();
-      const dx = event.shiftKey && !event.deltaX ? event.deltaY : event.deltaX;
-      const dy = event.shiftKey && !event.deltaX ? 0 : event.deltaY;
-      this.setPan(this.panX + dx, this.panY + dy);
+      const raw = event.deltaMode === 1 ? event.deltaY * 16 : event.deltaMode === 2 ? event.deltaY * 240 : event.deltaY;
+      if (!raw) return;
+      const factor = Math.max(0.5, Math.min(2, Math.exp(-raw * 0.0014)));
+      const nextZoom = Math.max(this.minZoom, Math.min(this.maxZoom, this.zoom * factor));
+      const rect = this.board.getBoundingClientRect();
+      const scale = rect.width > 0 ? rect.width / VIEW_W : 1;
+      const cx = Math.max(0, Math.min(VIEW_W, (event.clientX - rect.left) / scale));
+      const cy = Math.max(0, Math.min(VIEW_H, (event.clientY - rect.top) / scale));
+      const worldX = (cx + this.panX) / this.zoom;
+      const worldY = (cy + this.panY) / this.zoom;
+      const appliedZoom = Math.abs(nextZoom - 1) < 0.015 ? 1 : Math.round(nextZoom * 1000) / 1000;
+      this.setCamera(appliedZoom, worldX * appliedZoom - cx, worldY * appliedZoom - cy);
     }, { passive: false });
   }
 
@@ -247,7 +276,7 @@ export class BattleView {
       drag.moved = true;
       this.board.dataset.dragging = 'true';
     }
-    if (drag.moved) this.setPan(drag.startPanX - dx, drag.startPanY - dy);
+    if (drag.moved) this.setCamera(this.zoom, drag.startPanX - dx, drag.startPanY - dy);
   };
 
   private handleWindowPointerUp = (event: PointerEvent) => {
@@ -339,6 +368,7 @@ export class BattleView {
     this.cameraSession = state.session;
     this.cameraTurnId = actor.id;
     if (isNewSession) {
+      this.zoom = 1;
       const activeUnits = state.units.filter(occupies);
       this.centerCameraOn((activeUnits.length ? activeUnits : state.units).map(u => u.position));
     } else if (actorChanged) {
@@ -486,7 +516,12 @@ export class BattleView {
     this.updateInspection();
   }
 
-  private inspect(id: string) { this.choreography?.inspect(id); this.updateInspection(); }
+  private inspect(id: string) {
+    if (!this.choreography) return;
+    this.choreography.inspect(id);
+    this.updateInspection();
+    if (this.choreography.selectedId === id) this.playSfx?.('fx_select');
+  }
   private clearInspection() { this.choreography?.clearInspection(); this.updateInspection(); }
 
   private updateInspection() {
@@ -537,8 +572,8 @@ export class BattleView {
     const state = this.paintGame?.battle;
     if (!state) return;
     const hero = state.units.find(unit => unit.team === 'player')!;
-    this.tutorial.style.left = `${Math.max(130, Math.min(900, 304 + hero.position.col * 96 + 48 - this.panX))}px`;
-    this.tutorial.style.top = `${Math.max(100, 116 + hero.position.row * 96 - 46 - this.panY)}px`;
+    this.tutorial.style.left = `${Math.max(130, Math.min(900, 304 + (hero.position.col * 96 + 48) * this.zoom - this.panX))}px`;
+    this.tutorial.style.top = `${Math.max(100, 116 + hero.position.row * 96 * this.zoom - 46 - this.panY)}px`;
   }
 
   private renderPresentation(game: GameState) {

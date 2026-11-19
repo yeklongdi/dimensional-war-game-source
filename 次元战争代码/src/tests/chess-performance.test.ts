@@ -96,4 +96,8 @@ describe('棋上人物与现有打击反馈同步', () => {
     expect(poseAt(plan, 'hero', impact.at).pose).toBe('cast');
     expect(poseAt(plan, 'black_b', impact.at).pose).toBe('hurt');
   });
+  it('选中音效 fx_select 已登记为本地战斗音效', async () => {
+    const { sfxBindings } = await import('../game/story/config.js');
+    expect(sfxBindings.fx_select).toMatch(/\/assets\/audio\/sfx\/fx_select\.wav$/);
+  });
 });

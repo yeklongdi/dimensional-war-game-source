@@ -34,15 +34,55 @@ function drawPlaceholderPiece(ctx: CanvasRenderingContext2D, unit: Unit) {
   ctx.stroke(new Path2D(design.engraving));
 }
 
-export function drawChessPiece(ctx: CanvasRenderingContext2D, unit: Unit, assets: ChessAssets, selected: boolean, collapse = 1) {
+function unitSeed(id: string) {
+  let hash = 0;
+  for (let i = 0; i < id.length; i++) hash = (hash * 31 + id.charCodeAt(i)) >>> 0;
+  return (hash % 100) / 100 * Math.PI * 2;
+}
+
+export function drawChessPiece(ctx: CanvasRenderingContext2D, unit: Unit, assets: ChessAssets, selected: boolean, collapse = 1,
+  revealAge = Infinity, clockNow = 0) {
   const x = unit.position.col * 96 + 48, y = unit.position.row * 96, subject = chessSubject(unit);
   const piece = subject && assets.image(subject, 'Piece'), down = unit.status !== 'active';
+  const pulse = selected ? 0.8 + 0.2 * Math.sin(clockNow / 240) : 1;
   ctx.save(); ctx.imageSmoothingEnabled = true;
   ctx.fillStyle = '#0007'; ctx.beginPath(); ctx.ellipse(x, y + 80, 32, 9, 0, 0, Math.PI * 2); ctx.fill();
+  if (selected) {
+    const beam = ctx.createLinearGradient(x, y + 76, x, y - 4);
+    beam.addColorStop(0, unit.team === 'player' ? 'rgba(114, 201, 230, 0.28)' : 'rgba(223, 131, 144, 0.28)');
+    beam.addColorStop(0.55, 'rgba(242, 214, 141, 0.14)');
+    beam.addColorStop(1, 'rgba(242, 214, 141, 0)');
+    ctx.fillStyle = beam;
+    ctx.beginPath();
+    ctx.moveTo(x - 24, y + 74);
+    ctx.lineTo(x - 18, y - 4);
+    ctx.lineTo(x + 18, y - 4);
+    ctx.lineTo(x + 24, y + 74);
+    ctx.closePath();
+    ctx.fill();
+  }
   ctx.fillStyle = unit.team === 'player' ? '#244e69' : '#6e3038';
   ctx.strokeStyle = unit.team === 'player' ? '#72c9e6' : '#df8390'; ctx.lineWidth = 2;
   ctx.beginPath(); ctx.ellipse(x, y + 76, 30, 9, 0, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
-  if (selected) { ctx.strokeStyle = '#f2d68d'; ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(x, y + 78, 34, 11, 0, 0, Math.PI * 2); ctx.stroke(); }
+  if (selected) {
+    ctx.save();
+    ctx.globalAlpha = 0.45 * pulse;
+    ctx.strokeStyle = unit.team === 'player' ? '#9be0f7' : '#f2a4ae';
+    ctx.lineWidth = 4;
+    ctx.beginPath(); ctx.ellipse(x, y + 78, 36, 12, 0, 0, Math.PI * 2); ctx.stroke();
+    ctx.restore();
+    ctx.strokeStyle = '#f2d68d'; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.ellipse(x, y + 78, 34, 11, 0, 0, Math.PI * 2); ctx.stroke();
+  }
+  if (revealAge >= 0 && revealAge < 360) {
+    const t = revealAge / 360;
+    ctx.save();
+    ctx.globalAlpha = (1 - t) * 0.85;
+    ctx.strokeStyle = unit.team === 'player' ? '#aef0ff' : '#ffb8c2';
+    ctx.lineWidth = 2.4 - t * 1.4;
+    ctx.beginPath(); ctx.ellipse(x, y + 77, 30 + t * 24, 9 + t * 8, 0, 0, Math.PI * 2); ctx.stroke();
+    ctx.restore();
+  }
   ctx.save(); ctx.translate(x, y + 74);
   if (down) { ctx.rotate(Math.PI / 2.8 * collapse); ctx.globalAlpha = 1 - .48 * collapse; ctx.filter = `saturate(${1 - .75 * collapse})`; }
   if (piece) ctx.drawImage(piece, -28, -68, 56, 68);
@@ -58,21 +98,58 @@ export function drawChessPiece(ctx: CanvasRenderingContext2D, unit: Unit, assets
 }
 
 export function drawChessPerson(ctx: CanvasRenderingContext2D, unit: Unit, assets: ChessAssets, pose: ChessPose, frame: number,
-  faceLeft: boolean, alpha: number, reaction?: UnitReaction) {
+  faceLeft: boolean, alpha: number, reaction?: UnitReaction, revealAge = Infinity, clockNow = 0, reduced = false) {
   const subject = chessSubject(unit), sheet = subject && assets.image(subject, 'Poses');
+  const seed = unitSeed(unit.id);
+  const revealing = revealAge >= 0 && revealAge < 360 && !reduced && pose !== 'down';
+  const r = revealing ? revealAge / 360 : 1;
+  const pop = revealing ? 1 - Math.pow(1 - Math.min(1, r / 0.65), 3) : 1;
+  const riseY = revealing ? (1 - pop) * 12 : 0;
+  const bobY = !reduced && pose === 'idle' && alpha > 0.5 ? Math.sin(clockNow / 380 + seed) * 2.2 : 0;
+  const popScaleY = revealing ? (r < 0.45 ? 0.8 + (r / 0.45) * 0.25 : 1.05 - ((r - 0.45) / 0.55) * 0.05) : 1;
+  const popScaleX = revealing ? (r < 0.45 ? 1.12 - (r / 0.45) * 0.14 : 0.98 + ((r - 0.45) / 0.55) * 0.02) : 1;
   const x = unit.position.col * 96 + 48, foot = unit.position.row * 96 - 2 + (pose === 'down' ? 40 * frame / 3 : 0);
-  ctx.save(); ctx.translate(x + (reaction?.dx ?? 0), foot + (reaction?.dy ?? 0));
-  ctx.globalAlpha = alpha; ctx.imageSmoothingEnabled = false;
+
+  ctx.save(); ctx.translate(x + (reaction?.dx ?? 0), foot + riseY + bobY + (reaction?.dy ?? 0));
+  ctx.globalAlpha = alpha;
   if (alpha > 0.05 && pose !== 'down') {
+    const isPlayer = unit.team === 'player';
+    const glow = 0.82 + 0.18 * Math.sin(clockNow / 280 + seed);
     ctx.save();
-    ctx.fillStyle = unit.team === 'player' ? '#244e695a' : '#6e30385a';
-    ctx.strokeStyle = unit.team === 'player' ? '#72c9e6be' : '#df8390be';
+    ctx.imageSmoothingEnabled = true;
+    if (revealing) {
+      const pillar = ctx.createLinearGradient(0, 2, 0, -82);
+      pillar.addColorStop(0, isPlayer ? `rgba(114, 201, 230, ${(1 - r) * 0.45})` : `rgba(223, 131, 144, ${(1 - r) * 0.45})`);
+      pillar.addColorStop(0.55, `rgba(242, 214, 141, ${(1 - r) * 0.25})`);
+      pillar.addColorStop(1, 'rgba(255, 255, 255, 0)');
+      ctx.fillStyle = pillar;
+      ctx.fillRect(-22, -82, 44, 84);
+      ctx.strokeStyle = isPlayer ? `rgba(174, 240, 255, ${(1 - r) * 0.85})` : `rgba(255, 184, 194, ${(1 - r) * 0.85})`;
+      ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.ellipse(0, 0, 24 + r * 24, 6 + r * 7, 0, 0, Math.PI * 2); ctx.stroke();
+    }
+    ctx.fillStyle = isPlayer ? `rgba(36, 78, 105, ${0.38 * glow})` : `rgba(110, 48, 56, ${0.38 * glow})`;
+    ctx.strokeStyle = isPlayer ? `rgba(114, 201, 230, ${0.85 * glow})` : `rgba(223, 131, 144, ${0.85 * glow})`;
     ctx.lineWidth = 2;
-    ctx.beginPath(); ctx.ellipse(0, 0, 24, 6, 0, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+    ctx.beginPath(); ctx.ellipse(0, 0, 25, 6.5, 0, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+    ctx.strokeStyle = isPlayer ? `rgba(242, 214, 141, ${0.42 * glow})` : `rgba(242, 180, 141, ${0.42 * glow})`;
+    ctx.lineWidth = 1.2;
+    ctx.beginPath(); ctx.ellipse(0, 0, 29, 8.2, 0, 0, Math.PI * 2); ctx.stroke();
+    if (!reduced) {
+      for (let i = 0; i < 3; i++) {
+        const phase = ((clockNow / 1100 + seed + i / 3) % 1 + 1) % 1;
+        const mx = Math.sin(seed + i * 2.1 + phase * 4) * 19;
+        const my = -4 - phase * 42;
+        ctx.fillStyle = isPlayer ? `rgba(175, 235, 255, ${(1 - phase) * 0.75})` : `rgba(255, 190, 175, ${(1 - phase) * 0.75})`;
+        ctx.beginPath(); ctx.arc(mx, my, 1.5, 0, Math.PI * 2); ctx.fill();
+      }
+    }
     ctx.restore();
   }
-  ctx.scale(sheet && faceLeft ? -1 : 1, reaction?.squash ?? 1);
-  if (reaction?.flash) ctx.filter = `brightness(${1 + reaction.flash * 2})`;
+  ctx.imageSmoothingEnabled = false;
+  ctx.scale((sheet && faceLeft ? -1 : 1) * popScaleX, (reaction?.squash ?? 1) * popScaleY);
+  const flashBoost = reaction?.flash ? reaction.flash * 2 : revealing && r < 0.35 ? (1 - r / 0.35) * 0.45 : 0;
+  if (flashBoost > 0) ctx.filter = `brightness(${1 + flashBoost})`;
   if (sheet) ctx.drawImage(sheet, frame * 64, poseRows[pose] * 64, 64, 64, -40, -75, 80, 80);
   else {
     ctx.beginPath(); ctx.roundRect(-24, -52, 48, 46, 6);

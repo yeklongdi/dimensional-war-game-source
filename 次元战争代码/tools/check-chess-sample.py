@@ -92,9 +92,9 @@ def run(origin, output):
             assert snapshot()["units"][0]["position"] == before["units"][0]["position"]
             assert snapshot()["units"][1]["position"] == before["units"][1]["position"]
             sounds = json.loads(stage.get_attribute("data-sample-sounds"))
-            assert [sound["id"] for sound in sounds] == ["fx_punch", "fx_blade"]
+            assert [sound["id"] for sound in sounds] == ["fx_select", "fx_select", "fx_punch", "fx_blade"]
             checks.append("双方交战时临时显现，演出锁拦截重复动作，结束后恢复查看对象且不改变格位")
-            checks.append("真实挥击与命中音效各播放一次")
+            checks.append("选中音效与真实挥击／命中音效均按预期播放")
 
             reset()
             click("sample-play")
