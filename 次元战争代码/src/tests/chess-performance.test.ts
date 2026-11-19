@@ -82,5 +82,18 @@ describe('棋上人物与现有打击反馈同步', () => {
   it('进入已有战斗不会为先攻、移动和回合记录播放攻击动画', () => {
     const state = chessSampleGame('melee', 1).battle;
     expect(planChessPerformance(state, state.log)).toBeUndefined();
+    const ended = command(state, { kind: 'end', actor: 'hero' });
+    expect(planChessPerformance(ended, ended.log.slice(state.log.length))).toBeUndefined();
+  });
+  it('远程攻击使用施法／远程起手并在命中帧触发受击', () => {
+    const moved = patchUnit(chessSampleGame('melee', 1).battle, 'black_a', { position: { col: 0, row: 0 } });
+    const before = patchUnit(moved, 'hero', {
+      attacks: [{ id: 'shortbow', name: '短弓', kind: 'ranged', bonus: 4, range: { normal: 16, max: 64 }, damage: '1d6+2', damageType: 'piercing' }],
+    });
+    const after = command(before, { kind: 'attack', actor: 'hero', target: 'black_b', attackId: 'shortbow', resource: 'action' });
+    const plan = planChessPerformance(after, after.log.slice(before.log.length))!;
+    const impact = plan.cues.find(item => item.cue.kind === 'impact')!;
+    expect(poseAt(plan, 'hero', impact.at).pose).toBe('cast');
+    expect(poseAt(plan, 'black_b', impact.at).pose).toBe('hurt');
   });
 });

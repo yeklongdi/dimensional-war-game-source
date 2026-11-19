@@ -103,7 +103,10 @@ export class BattleFx {
     this.shakeUntil = 0; this.holdStart = 0; this.holdUntil = 0;
     if (this.frame !== undefined) { cancelAnimationFrame(this.frame); this.frame = undefined; }
     this.base.style.transform = '';
-    if (this.ctx) this.ctx.clearRect(0, 0, 672, 480);
+    if (this.ctx) {
+      this.ctx.resetTransform();
+      this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
     if (moved) this.repaint();
   }
 
@@ -124,7 +127,7 @@ export class BattleFx {
 
   dispose() { this.disposed = true; this.clear(); }
 
-  /** 棋子样例由同一个虚拟时钟驱动人物、特效与音效；正常战斗仍走原 sync。 */
+  /** 棋子演出由同一个虚拟时钟驱动人物、特效与音效；传统调试棋盘仍走 sync。 */
   playCue(cue: FeedbackCue, state: BattleState) { this.play(cue, state, sfxFor(cue)); }
   paintAt(now: number) { this.tick(now); }
   poseTime(now: number) { return now < this.holdUntil ? this.holdStart : now; }

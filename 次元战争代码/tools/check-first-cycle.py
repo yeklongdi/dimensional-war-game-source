@@ -112,6 +112,9 @@ def fight_and_settle(page):
             click(page, "ability-slaying_bow")
             click(page, "ability-target-demo_enemy")
             click(page, "battle-ability-use")
+            _, kind = wait_turn(page)
+            if kind == "result":
+                break
         if page.get_by_test_id("battle-continue-story").is_visible():
             break
         click(page, "skill-end")

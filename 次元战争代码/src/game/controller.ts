@@ -45,6 +45,7 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
   const initial = hydrateRuntime(parsed.seed, store.read(), settingsStore.read(), newId(), storyLibrary);
   let state = initial.state;
   let timer: number | undefined, battleTimer: number | undefined;
+  let defeatMenuRevision: number | undefined;
   let timerToken = '', dispatching = false, disposed = false, audioScope = state.run;
   let view: PlayerView | BattleView | MenuView | MapView | LoopView | undefined, chrome: AppChrome | undefined;
   let viewKey = '';
@@ -71,7 +72,8 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
     if (battleTimer !== undefined) window.clearTimeout(battleTimer);
     battleTimer = undefined;
     const battle = state.battle;
-    if (paused(state) || state.progress?.confirming || state.screen !== 'battle' || !battle || battle.result || battle.pendingRoll || battle.pendingReaction) return;
+    if (paused(state) || document.hidden || state.progress?.confirming || state.screen !== 'battle' || !battle
+      || (view instanceof BattleView && view.isPerforming) || battle.result || battle.pendingRoll || battle.pendingReaction) return;
     let command: Command | undefined, origin: Envelope['origin'] = 'system';
     if (battle.opening) command = { kind: 'finish-opening' };
     else if (battle.pendingMove) command = { kind: 'step' };
@@ -80,7 +82,9 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
     if (!command) return;
     const token = battleToken(battle), planned = command, run = state.run, menuRevision = state.system!.uiRevision;
     battleTimer = window.setTimeout(() => {
-      if (disposed || paused(state) || state.system!.uiRevision !== menuRevision || state.run !== run || state.screen !== 'battle' || !state.battle || battleToken(state.battle) !== token) return;
+      if (disposed || document.hidden || paused(state) || state.system!.uiRevision !== menuRevision || state.run !== run
+        || state.screen !== 'battle' || !state.battle || battleToken(state.battle) !== token
+        || (view instanceof BattleView && view.isPerforming)) return;
       play({ type: 'command', envelope: { token, origin, command: planned } }, run);
     }, battle.opening ? 200 : battle.pendingMove ? 180 : 350);
   }
@@ -96,9 +100,30 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
     if (action.type === 'enter-level' || action.type === 'open-map') dispatch({ type: 'vault-external', read: store.read() });
     dispatch(action);
   }
+  function renderScreen() {
+    const system = state.system!;
+    const currentView = view!;
+    // 规则层已锁住战败操作。先让棋盘播完最后一击，再显示原有读取面板。
+    if (currentView instanceof BattleView && system.panel === 'load' && !system.stale && defeatMenuRevision === system.uiRevision) {
+      const visible = { ...state, system: { ...system, panel: undefined } };
+      currentView.render(visible);
+      if (currentView.isPerforming) {
+        chrome!.render(visible);
+        systemView.render(visible);
+        return;
+      }
+    }
+    defeatMenuRevision = undefined;
+    currentView.render(state);
+    chrome!.render(state);
+    systemView.render(state);
+  }
   function commit(transition: RuntimeTransition, force = false) {
     if (!force && state === transition.state) return;
     const runChanged = force || state.run !== transition.state.run;
+    if (runChanged) defeatMenuRevision = undefined;
+    if (!state.battle?.result && transition.state.postBattle && transition.state.battle?.result?.outcome === 'lose'
+      && transition.state.system?.panel === 'load') defeatMenuRevision = transition.state.system.uiRevision;
     state = transition.state;
     if (runChanged) { audio.resetSession(); audioScope = state.run; }
     audio.setSettings(state.settings!);
@@ -117,13 +142,20 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
       }, { decode: images.load, peek: images.peek }, () => { if (!disposed && state.run === scope) syncClock(); });
       else if (state.screen === 'battle') view = new BattleView(root, action => play(action, scope), () => {
         if (state.run === scope) dispatch({ type: 'system', intent: 'load', token: systemToken(state) });
-      }, id => audio.playSfx(id));
+      }, id => audio.playSfx(id, view instanceof BattleView ? view.presentationSpeed : 1), {
+        chess: true,
+        onPresentationIdle: () => {
+          if (disposed || state.run !== scope || state.screen !== 'battle') return;
+          if (defeatMenuRevision !== undefined) renderScreen();
+          syncBattleClock();
+        },
+      });
       else if (state.screen === 'map') view = new MapView(root, navigate, loopAction);
       else if (state.screen === 'loop') view = new LoopView(root, loopAction);
       else view = new MenuView(root, dispatch);
       chrome = new AppChrome(view.stage, dispatch);
     }
-    view!.render(state); chrome!.render(state); systemView.render(state); syncClock(); syncBattleClock();
+    renderScreen(); syncClock(); syncBattleClock();
     warmup.update(state, storyLibrary);
     for (const effect of transition.effects) {
       if (effect.kind === 'bgm') audio.setBgm(effect.id);
@@ -187,7 +219,7 @@ export function mountPlayer(root: HTMLElement, search = new URLSearchParams(loca
     if (event.key === settingsKey) { /* 偏好不自动覆盖当前窗口正在调节的值，刷新时读取最新持久设置。 */ }
   };
   const stopFast = () => { const action = currentForwardAction(state, 'stop'); if (action) dispatch(action); };
-  const visibilityChanged = () => { if (document.hidden) stopFast(); };
+  const visibilityChanged = () => { if (document.hidden) stopFast(); syncBattleClock(); };
   document.addEventListener('keydown', keydown, true); window.addEventListener('storage', storageChanged);
   window.addEventListener('blur', stopFast); document.addEventListener('visibilitychange', visibilityChanged);
   commit(initial, true);

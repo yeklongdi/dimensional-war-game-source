@@ -158,7 +158,7 @@ def skip_day(page):
 def wait_turn(page):
     page.wait_for_function("""() => {
       const state = document.querySelector('[data-testid="battle-stage"]')?.dataset;
-      return state && (state.waiting === 'player' || state.waiting === 'reaction' || state.waiting === 'result');
+      return state && state.chessBusy !== 'true' && (state.waiting === 'player' || state.waiting === 'reaction' || state.waiting === 'result');
     }""")
     stage = page.get_by_test_id("battle-stage")
     if stage.get_attribute("data-waiting") == "reaction":

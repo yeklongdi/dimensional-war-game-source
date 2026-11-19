@@ -11,6 +11,9 @@ export type ChessPerformance = {
 
 /** 一次已结算动作的只读演出计划；同一范围内的所有豁免和受击使用相同命中时刻。 */
 export function planChessPerformance(state: BattleState, events: readonly BattleEvent[]): ChessPerformance | undefined {
+  // 纯走格、切回合和查看资料不需要扫描战斗历史。
+  if (!events.some(event => event.kind === 'attack' || event.kind === 'damage' || event.kind === 'ability'
+    || event.kind === 'ability-save' || event.kind === 'condition')) return undefined;
   const first = events[0]?.seq ?? Infinity;
   const cues = feedbackCues(state, state.log).filter(cue => cue.seq >= first);
   const abilities = events.filter(event => event.kind === 'ability');
@@ -29,8 +32,8 @@ export function planChessPerformance(state: BattleState, events: readonly Battle
     }
     if (event.kind === 'attack') {
       contact = 460 + attackIndex++ * 740;
-      const spell = cues.some(cue => cue.seq === event.seq && cue.kind === 'swing' && cue.style === 'spell');
-      span(event.actor, spell ? 'cast' : 'attack', contact - 300, 560, event.target);
+      const projected = cues.some(cue => cue.seq === event.seq && cue.kind === 'swing' && (cue.style === 'spell' || cue.style === 'ranged'));
+      span(event.actor, projected ? 'cast' : 'attack', contact - 300, 560, event.target);
       span(event.target, 'idle', contact - 300, 300, event.actor);
     }
     contacts.set(event.seq, contact);

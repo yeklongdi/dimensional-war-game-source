@@ -10,8 +10,12 @@
 .battle-stage[data-chess="true"] .battle-roster { z-index: 4; }
 .battle-stage[data-chess="true"] .battle-header { z-index: 4; height: 68px; }
 .chess-inspection-label { color: #e4c68e !important; }
-.battle-stage[data-chess="true"] .battle-footer { height: 22px; padding: 0 10px; display: flex; align-items: center; overflow: hidden; }
-.battle-stage[data-chess="true"] .battle-footer > p:not(.chess-inspection-label) { display: none; }
+.battle-stage[data-chess="true"][data-screen="battle"] .battle-header { padding-right: 344px; }
+.battle-stage[data-chess="true"][data-screen="battle"] .chess-playback-controls { position: absolute; right: 234px; top: 2px; }
+.battle-stage[data-chess="true"][data-screen="battle"] .initiative-card { min-width: 0; }
+.battle-stage[data-chess="true"][data-screen="battle"] .battle-roster { max-height: 400px; overflow-y: auto; scrollbar-width: thin; }
+.battle-stage[data-chess="true"][data-screen="battle-debug"] .battle-footer { height: 22px; padding: 0 10px; display: flex; align-items: center; overflow: hidden; }
+.battle-stage[data-chess="true"][data-screen="battle-debug"] .battle-footer > p:not(.chess-inspection-label) { display: none; }
 .chess-sample-scenarios { position: absolute; left: 16px; top: 546px; width: 272px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; height: 52px; z-index: 5; }
 .chess-sample-scenarios .action-button { width: auto; min-height: 24px; height: 24px; padding: 0 10px; font-size: 12px; justify-content: center; }
 .chess-sample-scenarios .action-button[aria-pressed="true"] { border-color: #d8b45a; color: #f3d68c; }

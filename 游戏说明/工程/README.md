@@ -2,6 +2,22 @@
 
 > 2026-10-24目录整理：程序位于`E:\笔记\次元战争设定\次元战争代码`，本文件及原docs已移至说明区。当前路径与旧位置对照见[说明入口](../README.md)；后续终端命令均在代码目录运行。历史阶段结论仍按当时记录理解。
 
+## 2026-11-20：正式战斗接入棋子与棋上像素演出
+
+- **正式接入**：正式流程战斗（`screen === 'battle'`）已接入雕塑棋子与棋上像素同步演出，`/?debug=battle` 调试入口保留原显示方式，`dev-chess.html` 开发样例继续保留。
+- **占位与待补**：男高与黑衣人系列使用已有棋子及四帧动作图集；尚无棋上像素图集的单位（如金发青年、演示敌人等）绘制立体矢量占位棋子（骑兵／车／兵），单位资料栏明确标出“像素素材待补”，后续按角色补齐。
+- **节奏与衔接**：英雄激励二段伤害掷骰合并进同一段演出，回合切换与非战斗记录不触发多余演出；系统菜单打开时自动暂停演出虚拟时钟；1×／2×／4× 实时切速不重播也不改变掷骰与结算；战败最后一击动画播完后再触发读档对话框，演出期间暂隐结算弹层并在结束后显现。
+- **界面布局**：将 `.chess-playback-controls` 移至右上角安全区域（`right: 234px`）并为 `.battle-header` 预留右侧边距，消除与“系统菜单”及 `.save-feedback.in-game` 提示框的重叠；`.battle-roster` 限制最大高度并启用纵向滚动，防止与底部技能栏交叠。
+- **验收**：`npm run typecheck` 通过；`npm test` 通过 53 文件 724 项（含 `src/tests/chess-performance.test.ts` 11 项）；Pages 生产构建（`--base /dimensional-war-game-source/`，131 模块）通过；`python -B tools/check-chess-release.py` 通过 4 项正式战斗场景、控制台错误 0（[results.json](verification/chess-release/results.json)、[序幕仓库战](verification/chess-release/01-warehouse.jpg)、[正式施法胜利](verification/chess-release/02-victory.jpg)、[双人出战与占位](verification/chess-release/03-partner.jpg)、[战败后自动读档](verification/chess-release/04-final-hit.jpg)）；`python -B tools/check-chess-sample.py` 15 项通过；`python -B tools/check-first-cycle.py` 双路线通过。
+
+本轮实际文件清单：
+
+| 类别 | 文件 |
+|---|---|
+| 修改 | `次元战争代码/src/game/controller.ts`、`src/game/battle/chess-assets.ts`、`chess-performance.ts`、`render-chess.ts`、`src/game/ui/battle-choreography.ts`、`battle-fx.ts`、`battle-view.ts`、`src/styles/battle-chess.css` |
+| 修改 | `次元战争代码/src/tests/chess-performance.test.ts`、`tools/check-first-cycle.py`、`tools/check-post-prologue.py` 及本 README |
+| 新增 | `次元战争代码/tools/check-chess-release.py`、验收证据 `游戏说明/工程/verification/chess-release/`（4 张截图与 `results.json`） |
+
 ## 2026-11-18：首个十日周期
 
 - **路线**。序幕（三）后的夜战沿用显式跳过入口。序幕（四）C009 至 C012 使用新版蒙面与避战剧本。C013 结束进入 M101、M102，读完来信从第 1 天放学后开始日程。

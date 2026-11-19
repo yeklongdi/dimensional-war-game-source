@@ -54,6 +54,9 @@ export class BattleView {
   private logSession = -1;
   private logCount = 0;
   private paintGame?: GameState;
+  private paintOverlay?: MovementOverlay;
+  private lastFixture = false;
+  private lastFixtureDone = false;
   private readonly dispatch: (action: BattleAction) => void;
   private readonly load?: () => void;
 
@@ -80,7 +83,9 @@ export class BattleView {
     if (options.chess) {
       this.stage.dataset.chess = 'true';
       this.choreography = new BattleChoreography(this.stage, this.board, this.fxLayer, this.canvas, sfx ?? (() => {}), () => this.paintBoard(), () => {
-        this.renderedBattle = undefined; if (this.paintGame) this.render(this.paintGame); options.onPresentationIdle?.();
+        this.renderedBattle = undefined;
+        if (this.paintGame) this.render(this.paintGame, this.lastFixture, this.lastFixtureDone);
+        options.onPresentationIdle?.();
       }, options.assets);
       this.fx = this.choreography.fx;
     } else this.fx = new BattleFx(this.fxLayer, this.canvas, sfx ?? (() => {}), () => this.paintBoard());
@@ -102,9 +107,10 @@ export class BattleView {
   dispose() { if (this.choreography) this.choreography.dispose(); else this.fx.dispose(); this.resizeObserver.disconnect(); this.stage.remove(); }
 
   render(game: GameState, fixture = false, fixtureDone = false) {
+    this.lastFixture = fixture; this.lastFixtureDone = fixtureDone;
     const state = game.battle!; const actor = currentUnit(state), token = battleToken(state), mode = game.battleMode ?? 'idle';
     this.choreography?.sync(state);
-    this.choreography?.setPaused(Boolean(game.system?.panel || game.system?.stale));
+    this.choreography?.setPaused(Boolean(game.system?.panel || game.system?.stale || game.system?.pending));
     this.renderMovement(game);
     if (!this.choreography) this.fx.sync(state);
     if (this.renderedBattle === state && this.renderedMode === mode && this.renderedRun === game.run) return;
@@ -149,6 +155,7 @@ export class BattleView {
         if (unit.features.includes('martial_arts')) card.append(element('p', '', '附赠：徒手 ' + unit.attacks.find(attack => attack.id === 'unarmed')?.damage));
       }
       if (this.choreography) {
+        card.dataset.chessMaterial = this.choreography.material(unit);
         card.tabIndex = 0; card.setAttribute('role', 'button'); card.setAttribute('aria-label', `查看${unit.name}`);
         card.onclick = () => this.inspect(unit.id);
         card.onkeydown = event => { if (['Enter', ' '].includes(event.key)) { event.preventDefault(); if (!event.repeat) this.inspect(unit.id); } };
@@ -169,6 +176,7 @@ export class BattleView {
       if (this.choreography && (mode === 'idle' || mode === 'skills' || this.isPerforming)) {
         const inspected = state.units.find(unit => occupies(unit) && same(unit.position, point)) ?? state.units.find(unit => same(unit.position, point));
         if (inspected) this.inspect(inspected.id);
+        else if (!this.isPerforming) this.showHint('点击棋子查看角色，或从底部选择战斗操作');
         return;
       }
       if (mode === 'move') { const action = planningInput(game, 'add', point); if (action) this.dispatch(action); return; }
@@ -226,14 +234,13 @@ export class BattleView {
     this.footer.replaceChildren(element('p', '', label), this.hint);
     this.hint.textContent = '';
     if (['attack', 'bonus'].includes(mode) && !state.pendingMove && !state.result) this.footer.append(button('取消选择', 'battle-cancel', () => setMode('idle')));
-    renderBattleDialog(this.modal, game, send, this.dispatch, this.load);
-    if (this.isPerforming) this.modal.hidden = true;
-    else if (this.choreography && state.result) {
+    if (this.isPerforming) { this.modal.replaceChildren(); this.modal.hidden = true; }
+    else if (!formal && this.choreography && state.result) {
       const panel = element('section', 'battle-dialog');
       panel.append(element('h2', '', '本轮样例结束'), element('p', '', state.result.outcome === 'win' ? '交战与倒地演出已完成，可以重新开始或切换上方的样例场景。' : '失能状态已结算，可以重新开始查看演出。'),
         button('重新开始样例', 'chess-sample-restart', () => this.dispatch({ type: 'restart', token })));
       this.modal.replaceChildren(panel); this.modal.hidden = false;
-    }
+    } else renderBattleDialog(this.modal, game, send, this.dispatch, this.load);
     this.updateInspection();
   }
 
@@ -244,7 +251,10 @@ export class BattleView {
     const id = this.choreography.selectedId, unit = this.paintGame?.battle?.units.find(unit => unit.id === id);
     for (const card of Array.from(this.roster.querySelectorAll<HTMLElement>('.unit-summary'))) card.setAttribute('aria-pressed', String(card.dataset.testid === `unit-${id}`));
     this.footer.querySelector('.chess-inspection-label')?.remove();
-    if (unit) this.footer.prepend(element('p', 'chess-inspection-label', `正在查看：${unit.name}`));
+    if (unit) {
+      const placeholder = this.choreography.material(unit) === 'placeholder' ? ' · 像素素材待补' : '';
+      this.footer.prepend(element('p', 'chess-inspection-label', `正在查看：${unit.name}${placeholder}`));
+    }
   }
 
   private renderAbilityTargets(choices: readonly AbilityChoice[], selected?: AbilityChoice) {
@@ -258,7 +268,9 @@ export class BattleView {
   private renderMovement(game: GameState) {
     const overlay = movementOverlay(game);
     this.paintGame = game;
+    this.paintOverlay = overlay;
     this.paintBoard(overlay);
+    this.choreography?.paintPeople();
     this.movement.render(game, overlay); this.footer.hidden = !this.movement.root.hidden;
     Object.assign(this.stage.dataset, { routeKind: overlay?.kind ?? '', routePath: JSON.stringify(overlay?.path ?? []),
       routeWaypoints: JSON.stringify(overlay?.waypoints ?? []), routeRisks: JSON.stringify(overlay?.risks ?? []),
@@ -273,8 +285,8 @@ export class BattleView {
   private paintBoard(overlay?: MovementOverlay) {
     const game = this.paintGame;
     if (!game?.battle) return;
-    renderBoard(this.canvas, game.battle, game.battleMode ?? 'idle', overlay ?? movementOverlay(game), this.fx.reactions(), this.choreography?.painter);
-    this.choreography?.paintPeople();
+    renderBoard(this.canvas, game.battle, game.battleMode ?? 'idle', overlay ?? this.paintOverlay,
+      this.choreography ? undefined : this.fx.reactions(), this.choreography?.painter);
   }
 
   private renderPresentation(game: GameState) {
