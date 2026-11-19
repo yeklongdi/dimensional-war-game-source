@@ -54,8 +54,10 @@ export type EventData =
   | { kind: 'inspiration'; actor: string; purpose: PendingRoll['kind']; original: number[]; replacement?: number; dieIndex?: number; adopted: number[]; chosen: number; remaining: number }
   | { kind: 'result'; outcome: 'win' | 'lose'; reason: 'eliminated' | 'dead' | 'stable' };
 export type BattleEvent = EventData & { seq: number; round: number };
+export type BattleMapId = 'warehouse' | 'alley' | 'lab' | 'facility';
 export type BattleDefinition = {
   id: string; title: string; map: string[]; spawnOrder: string[];
+  mapAsset?: BattleMapId;
   heroLoadout?: { primary?: Attack; tempHp?: number; inspiration?: number };
   opening?: 'sword'; tutorial?: boolean; victoryText?: string;
 };
@@ -78,6 +80,7 @@ export type PendingRoll =
   | { kind: 'death-save'; actor: string; roll: D20Roll };
 export type BattleState = {
   id: string; title: string; session: number; revision: number; seed: number;
+  mapAsset?: BattleMapId;
   grid: Grid; units: Unit[]; order: InitiativeEntry[]; turnIndex: number; round: number;
   rng: RngState; initialRng: RngState; aiMoved: boolean; awaitingEnd: boolean;
   pendingMove?: { actor: string; path: Point[]; index: number; reactors: string[] | null };

@@ -26,6 +26,7 @@ export function createBattle(definition: BattleDefinition, templates: readonly C
   if (units.some(unit => !walkable(grid, unit.position, units, unit.id))) throw new Error('出生点必须为空地且不能重叠');
   const rolled = initiative(units, rng);
   let state: BattleState = { id: definition.id, title: definition.title, session, revision: 0, seed: rng.kind === 'seeded' ? rng.seed : 0,
+    ...(definition.mapAsset ? { mapAsset: definition.mapAsset } : {}),
     grid, units, order: rolled.order, turnIndex: 0, round: 1, rng: rolled.rng, initialRng: structuredClone(rng), aiMoved: false, awaitingEnd: false, log: [] };
   if (loop) state = { ...state, loop: structuredClone(loop), timed: [], turns: {} };
   const player = units.find(unit => unit.id === 'hero') ?? units.find(unit => unit.team === 'player')!;

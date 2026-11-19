@@ -30,7 +30,7 @@ window.startFixture = (classId = 'wizard', options = {}) => {
   }
   loop.rng = sequence([20, 1, 1, ...Array(100).fill(1)]);
   const battle = openEncounter(loop, 'boss', !!options.link, ++serial);
-  if (options.near) battle.units.find(unit => unit.id === 'demo_enemy').position = { col: 1, row: 2 };
+  if (options.near) battle.units.find(unit => unit.id === 'demo_enemy').position = { col: 5, row: 2 };
   game = { ...emptyState(serial), screen: 'battle', battleMode: 'idle', battle };
   view = new BattleView(document.querySelector('#app'), action => {
     if (action.type === 'mode') game = setBattleMode(game, action.mode);
@@ -130,17 +130,17 @@ def run(origin, output):
 
         click("ability-magic_missile")
         expect(page.get_by_test_id("battle-ability-use")).to_be_disabled()
-        expect(page.get_by_test_id("cell-5-2")).to_have_attribute("data-ability-target", "true")
-        click("cell-0-0")
-        expect(page.get_by_test_id("battle-ability-use")).to_be_disabled()
+        expect(page.get_by_test_id("cell-9-2")).to_have_attribute("data-ability-target", "true")
         click("cell-5-2")
-        expect(page.get_by_test_id("cell-5-2")).to_have_attribute("data-ability-selected", "true")
+        expect(page.get_by_test_id("battle-ability-use")).to_be_disabled()
+        click("cell-9-2")
+        expect(page.get_by_test_id("cell-9-2")).to_have_attribute("data-ability-selected", "true")
         expect(page.get_by_test_id("battle-ability-use")).to_be_enabled()
         unchanged(before)
         shot("05-spell-target")
         page.keyboard.press("Escape")
         expect(page.get_by_test_id("battle-ability-panel")).to_be_hidden()
-        expect(page.get_by_test_id("cell-5-2")).to_have_attribute("data-ability-target", "false")
+        expect(page.get_by_test_id("cell-9-2")).to_have_attribute("data-ability-target", "false")
         unchanged(before)
         checks.append("棋盘选目标、非法目标拒绝和Escape取消均不提前扣资源")
 
@@ -162,7 +162,7 @@ def run(origin, output):
 
         start()
         click("ability-missile_scroll")
-        click("cell-5-2")
+        click("cell-9-2")
         click("battle-ability-use")
         assert page.evaluate("snapshot().battle.loop.hero.wizardSlots") == 2
         assert page.evaluate("snapshot().battle.loop.items.missile_scroll") == 1
@@ -183,7 +183,7 @@ def run(origin, output):
         click("ability-sorcerous_burst")
         click("burst-cold")
         expect(page.get_by_test_id("burst-cold")).to_be_focused()
-        click("cell-5-2")
+        click("cell-9-2")
         shot("07-burst-damage")
         click("battle-ability-use")
         event = page.evaluate("snapshot().battle.log.filter(event => event.kind === 'attack').at(-1)")
@@ -194,8 +194,8 @@ def run(origin, output):
         start("sorcerer", near=True)
         click("ability-burning_hands")
         expect(page.get_by_text("会波及友方。", exact=False).first).to_be_visible()
-        expect(page.get_by_test_id("cell-1-2")).to_have_attribute("data-ability-target", "true")
-        click("cell-1-2")
+        expect(page.get_by_test_id("cell-5-2")).to_have_attribute("data-ability-target", "true")
+        click("cell-5-2")
         expect(page.get_by_test_id("battle-ability-use")).to_be_enabled()
         shot("08-area-direction")
         click("battle-ability-use")
@@ -216,11 +216,11 @@ def run(origin, output):
 
         start("wizard", link=True)
         click("ability-magic_missile")
-        click("cell-5-2")
+        click("cell-9-2")
         click("skill-end")
         expect(page.get_by_test_id("battle-ability-panel")).to_be_hidden()
         expect(page.get_by_test_id("ability-multiattack")).to_be_visible()
-        expect(page.get_by_test_id("cell-5-2")).to_have_attribute("data-ability-target", "false")
+        expect(page.get_by_test_id("cell-9-2")).to_have_attribute("data-ability-target", "false")
         click("skill-end")
         expect(bar).to_be_hidden()
         checks.append("换角色清理目标并切换能力；敌方回合隐藏操作栏")
@@ -277,7 +277,7 @@ def run(origin, output):
         expect(bar).to_be_visible()
         click("action-category-spells")
         click("ability-magic_missile")
-        click("cell-5-2")
+        click("cell-9-2")
         page.keyboard.press("Escape")
         expect(page.get_by_test_id("system-back")).to_be_visible()
         click("system-back")
@@ -287,7 +287,7 @@ def run(origin, output):
         click("battle-ability-close")
         assert page.get_by_test_id("battle-stage").get_attribute("data-rng-draws") == draws
         click("ability-magic_missile")
-        click("cell-5-2")
+        click("cell-9-2")
         click("battle-ability-use")
         expect(page.get_by_test_id("unit-hero")).to_have_attribute("data-action", "false")
         expect(page.get_by_test_id("ability-magic_missile")).to_have_attribute("data-unavailable", "true")

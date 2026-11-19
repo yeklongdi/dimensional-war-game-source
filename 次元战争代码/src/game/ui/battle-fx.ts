@@ -210,7 +210,8 @@ export class BattleFx {
     if (!ctx || this.disposed) return;
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    const ratio = (this.canvas.width || 672) / 672;
+    const logicalW = Number(this.canvas.dataset?.logicalWidth) || 672;
+    const ratio = (this.canvas.width || logicalW) / logicalW;
     ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
     // 顿帧期间时间停在命中帧，所有特效与后仰姿态保持不动。
     const frameNow = now < this.holdUntil ? this.holdStart : now;

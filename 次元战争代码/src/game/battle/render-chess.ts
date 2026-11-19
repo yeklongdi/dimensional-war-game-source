@@ -21,6 +21,7 @@ const placeholders = {
 
 function drawPlaceholderPiece(ctx: CanvasRenderingContext2D, unit: Unit) {
   const design = unit.team === 'player' ? placeholders.knight : unit.id === 'black_humanoid' ? placeholders.rook : placeholders.pawn;
+  ctx.scale(56 / 38, 68 / 46);
   ctx.translate(-19, -44);
   const finish = ctx.createLinearGradient(2, 4, 35, 28);
   finish.addColorStop(0, design.mid);
@@ -37,40 +38,48 @@ export function drawChessPiece(ctx: CanvasRenderingContext2D, unit: Unit, assets
   const x = unit.position.col * 96 + 48, y = unit.position.row * 96, subject = chessSubject(unit);
   const piece = subject && assets.image(subject, 'Piece'), down = unit.status !== 'active';
   ctx.save(); ctx.imageSmoothingEnabled = true;
-  ctx.fillStyle = '#0007'; ctx.beginPath(); ctx.ellipse(x, y + 76, 26, 7, 0, 0, Math.PI * 2); ctx.fill();
+  ctx.fillStyle = '#0007'; ctx.beginPath(); ctx.ellipse(x, y + 80, 32, 9, 0, 0, Math.PI * 2); ctx.fill();
   ctx.fillStyle = unit.team === 'player' ? '#244e69' : '#6e3038';
   ctx.strokeStyle = unit.team === 'player' ? '#72c9e6' : '#df8390'; ctx.lineWidth = 2;
-  ctx.beginPath(); ctx.ellipse(x, y + 72, 24, 7, 0, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
-  if (selected) { ctx.strokeStyle = '#f2d68d'; ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(x, y + 74, 28, 9, 0, 0, Math.PI * 2); ctx.stroke(); }
-  ctx.save(); ctx.translate(x, y + 70);
+  ctx.beginPath(); ctx.ellipse(x, y + 76, 30, 9, 0, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+  if (selected) { ctx.strokeStyle = '#f2d68d'; ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(x, y + 78, 34, 11, 0, 0, Math.PI * 2); ctx.stroke(); }
+  ctx.save(); ctx.translate(x, y + 74);
   if (down) { ctx.rotate(Math.PI / 2.8 * collapse); ctx.globalAlpha = 1 - .48 * collapse; ctx.filter = `saturate(${1 - .75 * collapse})`; }
-  if (piece) ctx.drawImage(piece, -19, -44, 38, 46);
+  if (piece) ctx.drawImage(piece, -28, -68, 56, 68);
   else drawPlaceholderPiece(ctx, unit);
   ctx.restore();
   ctx.textAlign = 'center'; ctx.font = '11px "Microsoft YaHei", sans-serif';
   const name = unit.name + (down ? ' · ' + statusText[unit.status] : '');
-  ctx.lineWidth = 3; ctx.strokeStyle = '#09101b'; ctx.strokeText(name, x, y + 85);
-  ctx.fillStyle = down ? '#c1b3a4' : '#e8e6e3'; ctx.fillText(name, x, y + 85);
-  ctx.fillStyle = '#09101b'; ctx.fillRect(x - 27, y + 90, 54, 4); ctx.fillStyle = '#7eb59b'; ctx.fillRect(x - 27, y + 90, 54 * unit.hp / unit.maxHp, 4);
-  if (unit.tempHp) { ctx.fillStyle = '#78c9e6'; ctx.fillRect(x - 27, y + 95, Math.min(54, 54 * unit.tempHp / unit.maxHp), 2); }
+  ctx.lineWidth = 3; ctx.strokeStyle = '#09101b'; ctx.strokeText(name, x, y + 84);
+  ctx.fillStyle = down ? '#c1b3a4' : '#e8e6e3'; ctx.fillText(name, x, y + 84);
+  ctx.fillStyle = '#09101b'; ctx.fillRect(x - 28, y + 89, 56, 4); ctx.fillStyle = '#7eb59b'; ctx.fillRect(x - 28, y + 89, 56 * unit.hp / unit.maxHp, 4);
+  if (unit.tempHp) { ctx.fillStyle = '#78c9e6'; ctx.fillRect(x - 28, y + 94, Math.min(56, 56 * unit.tempHp / unit.maxHp), 2); }
   ctx.restore();
 }
 
 export function drawChessPerson(ctx: CanvasRenderingContext2D, unit: Unit, assets: ChessAssets, pose: ChessPose, frame: number,
   faceLeft: boolean, alpha: number, reaction?: UnitReaction) {
   const subject = chessSubject(unit), sheet = subject && assets.image(subject, 'Poses');
-  const x = unit.position.col * 96 + 48, foot = unit.position.row * 96 + 30 + (pose === 'down' ? 34 * frame / 3 : 0);
+  const x = unit.position.col * 96 + 48, foot = unit.position.row * 96 - 2 + (pose === 'down' ? 40 * frame / 3 : 0);
   ctx.save(); ctx.translate(x + (reaction?.dx ?? 0), foot + (reaction?.dy ?? 0));
   ctx.globalAlpha = alpha; ctx.imageSmoothingEnabled = false;
+  if (alpha > 0.05 && pose !== 'down') {
+    ctx.save();
+    ctx.fillStyle = unit.team === 'player' ? '#244e695a' : '#6e30385a';
+    ctx.strokeStyle = unit.team === 'player' ? '#72c9e6be' : '#df8390be';
+    ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.ellipse(0, 0, 24, 6, 0, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+    ctx.restore();
+  }
   ctx.scale(sheet && faceLeft ? -1 : 1, reaction?.squash ?? 1);
   if (reaction?.flash) ctx.filter = `brightness(${1 + reaction.flash * 2})`;
-  if (sheet) ctx.drawImage(sheet, frame * 64, poseRows[pose] * 64, 64, 64, -24, -45, 48, 48);
+  if (sheet) ctx.drawImage(sheet, frame * 64, poseRows[pose] * 64, 64, 64, -40, -75, 80, 80);
   else {
-    ctx.beginPath(); ctx.roundRect(-16, -31, 32, 30, 4);
-    ctx.fillStyle = '#162130'; ctx.fill(); ctx.strokeStyle = '#9fb1c5'; ctx.stroke();
+    ctx.beginPath(); ctx.roundRect(-24, -52, 48, 46, 6);
+    ctx.fillStyle = '#162130'; ctx.fill(); ctx.strokeStyle = '#9fb1c5'; ctx.lineWidth = 1.5; ctx.stroke();
     ctx.fillStyle = '#e7eaf0'; ctx.textAlign = 'center';
-    ctx.font = 'bold 11px sans-serif'; ctx.fillText(unit.name.slice(0, 1), 0, -17);
-    ctx.font = '9px sans-serif'; ctx.fillText('占位', 0, -5);
+    ctx.font = 'bold 15px sans-serif'; ctx.fillText(unit.name.slice(0, 1), 0, -29);
+    ctx.font = '11px sans-serif'; ctx.fillText('占位', 0, -11);
   }
   ctx.restore();
 }

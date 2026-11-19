@@ -28,7 +28,8 @@ export function renderMovement(ctx: CanvasRenderingContext2D, state: BattleState
   ctx.globalAlpha = 1;
   for (const risk of overlay.risks) {
     const from = center(risk.from), to = center(risk.to);
-    const x = Math.max(14, Math.min(658, (from.x + to.x) / 2 + 13)), y = Math.max(16, Math.min(464, (from.y + to.y) / 2 - 12));
+    const maxX = state.grid.width * 96 - 14, maxY = state.grid.height * 96 - 16;
+    const x = Math.max(14, Math.min(maxX, (from.x + to.x) / 2 + 13)), y = Math.max(16, Math.min(maxY, (from.y + to.y) / 2 - 12));
     ctx.font = 'bold 23px sans-serif'; ctx.textAlign = 'center'; ctx.lineWidth = 4;
     ctx.strokeStyle = '#17202b'; ctx.strokeText('!', x, y); ctx.fillStyle = '#ff626f'; ctx.fillText('!', x, y);
   }

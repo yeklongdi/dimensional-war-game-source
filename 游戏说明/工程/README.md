@@ -2,7 +2,27 @@
 
 > 2026-10-24目录整理：程序位于`E:\笔记\次元战争设定\次元战争代码`，本文件及原docs已移至说明区。当前路径与旧位置对照见[说明入口](../README.md)；后续终端命令均在代码目录运行。历史阶段结论仍按当时记录理解。
 
+## 2026-11-20（二）：4K 动态战斗地图、拖动视野、放大悬浮棋子与空白取消选中
+
+- **4K 动态战斗地图**：将 `E:\地图` 下四套 4K 动态地图素材转码为静音循环 WebM（VP9 CRF 34）与 WebP 首帧海报，放进 `次元战争代码/public/assets/battle/maps-v1/`（`warehouse`、`alley`、`lab`、`facility`），分别接入序幕仓库／巷道战与循环 4 场演示战斗；`battle_debug_core` 与 `dev-chess.html` 维持原 `7×5` 调试棋盘与网格。
+- **完全无战术线（线条 0）**：当战斗使用动态地图时，棋盘保持原本 `96×96` 格子尺度不变并扩展为 `14×10`（`1344×960`），取消棋盘格子描边、网格线、坐标字与灰黑占位墙／箱，保留移动可达高亮、选格／靶点框与遮挡通行碰撞。
+- **可拖动平移视野**：`.battle-board` 视口维持 `672×480`，支持鼠标左键拖动（6px 起拖防误触点选）与滚轮平移查看 `14×10` 四周；自动居中开局战区，换回合或点选左侧角色卡时自动平滑拉入视口，右下角提供“居中”快捷按钮。
+- **放大与不穿模悬浮构图（方案 C + 构图 1）**：棋子放大至 `56×68`、悬浮像素小人放大至 `80×80` 并悬浮于棋子上方 `row×96 - 2` 处（不与棋子穿模），脚下增加随队伍切换的微光召唤环；`.battle-stage[data-chess="true"] .battle-board` 提升叠放层级（`z-index: 5`），确保顶行（`row 0`）角色头部完整显现不被先攻卡裁切。
+- **点击空白取消选中**：在待机／查看模式下点击棋盘空白格，或点击面板与棋盘以外的舞台／窗口空白背景，均彻底清空选中对象（清除金色框、隐藏悬浮像素人物与“正在查看”提示、同步重置 `aria-pressed="false"`）。
+- **验收**：`npm run typecheck` 通过；`npm test` 通过 54 文件 726 项（含新增 `src/tests/battle-maps.test.ts`）；`node tools/build-chess-preview.mjs` 与 `npm run build` 通过；Playwright 浏览器验收全部通过且控制台错误 0：`check-chess-release.py` 4/4（[results.json](verification/chess-release/results.json)、[仓库地图](verification/chess-release/01-warehouse.jpg)、[拖动平移](verification/chess-release/01a-warehouse-panned.jpg)、[空白取消选中](verification/chess-release/01b-warehouse-deselected.jpg)）、`check-chess-sample.py` 15/15（含 [顶行完整立绘](verification/chess-sample/11-top-row.png)）、`check-battle-actions.py` 16/16 与 `check-first-cycle.py` 双路线。
+
+本轮实际文件清单：
+
+| 类别 | 文件 |
+|---|---|
+| 新增素材与工具 | `次元战争代码/tools/prepare-battle-maps.py`、`public/assets/battle/maps-v1/`（4 组 `.webm`/`.webp` + `manifest.json`） |
+| 新增模块与测试 | `次元战争代码/src/game/battle/map-assets.ts`、`src/tests/battle-maps.test.ts` |
+| 修改引擎与渲染 | `次元战争代码/src/game/battle/types.ts`、`battle.ts`、`render.ts`、`render-chess.ts`、`render-movement.ts`、`src/content/battles.json`、`src/game/loop/encounters.ts` |
+| 修改界面与样式 | `次元战争代码/src/game/ui/battle-view.ts`、`battle-choreography.ts`、`battle-fx.ts`、`src/styles/battle.css`、`src/styles/battle-chess.css` |
+| 修改测试与验收 | `次元战争代码/src/tests/battle-m3.test.ts`、`post-prologue.test.ts`、`post-prologue-battle.test.ts`、`battle-actions.test.ts`、`battle-feedback.test.ts`、`tools/check-battle-actions.py`、`tools/check-chess-release.py`、本 README 及验收截图 |
+
 ## 2026-11-20：正式战斗接入棋子与棋上像素演出
+
 
 - **正式接入**：正式流程战斗（`screen === 'battle'`）已接入雕塑棋子与棋上像素同步演出，`/?debug=battle` 调试入口保留原显示方式，`dev-chess.html` 开发样例继续保留。
 - **占位与待补**：男高与黑衣人系列使用已有棋子及四帧动作图集；尚无棋上像素图集的单位（如金发青年、演示敌人等）绘制立体矢量占位棋子（骑兵／车／兵），单位资料栏明确标出“像素素材待补”，后续按角色补齐。

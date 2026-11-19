@@ -15,7 +15,7 @@ function encounter(classId: ClassId, dice: number[], withLink = false) {
   const loop = startLoop(0);
   const hero = { ...loop.hero, classId };
   const battle = openEncounter({ ...loop, hero, rng: sequence([20, 1, ...dice]), items: { healing_potion: 1, missile_scroll: 1, acid: 1 } }, 'first', withLink, 3);
-  return patchUnit(battle, 'demo_enemy', { position: withLink ? { col: 2, row: 2 } : { col: 1, row: 2 } });
+  return patchUnit(battle, 'demo_enemy', { position: withLink ? { col: 5, row: 3 } : { col: 4, row: 2 } });
 }
 const attackCmd = { kind: 'attack', actor: 'hero', target: 'black_a', attackId: 'unarmed', resource: 'action' } as const;
 const abilityCmd = (id: AbilityCommand['ability'], extra: Partial<AbilityCommand> = {}): AbilityCommand =>
@@ -70,11 +70,11 @@ describe('攻击命中与未命中', () => {
 describe('法术豁免、减免与多段结算', () => {
   it('酸液飞溅豁免成功不产生任何冲击；豁免失败逐目标依次播放', () => {
     const safe = patchUnit(encounter('sorcerer', [1, 3, 20, 20, 20], true), 'demo_enemy', { abilities: { str: 10, dex: 30, con: 10, int: 10, wis: 10, cha: 10 } });
-    const none = command(safe, abilityCmd('acid_splash', { point: { col: 2, row: 2 } }));
+    const none = command(safe, abilityCmd('acid_splash', { point: { col: 6, row: 2 } }));
     expect(none.log.some(event => event.kind === 'damage')).toBe(false);
     expect(strikes(none).some(cue => cue.kind === 'impact')).toBe(false);
 
-    const failed = command(encounter('sorcerer', [1, 1, 1, 1, 1], true), abilityCmd('acid_splash', { point: { col: 2, row: 2 } }));
+    const failed = command(encounter('sorcerer', [1, 1, 1, 1, 1], true), abilityCmd('acid_splash', { point: { col: 6, row: 2 } }));
     const impacts = cuesOf(failed).filter(cue => cue.kind === 'impact');
     expect(impacts).toHaveLength(2);
     expect(impacts.map(cue => cue.kind === 'impact' && cue.target)).toEqual(failed.log.filter(event => event.kind === 'damage').map(event => event.kind === 'damage' && event.target));
@@ -84,7 +84,7 @@ describe('法术豁免、减免与多段结算', () => {
 
   it('燃烧之手豁免成功仍减半，数字随实际结算', () => {
     const after = patchUnit(encounter('wizard', [3, 1, 1, 15]), 'demo_enemy', { abilities: { str: 10, dex: 30, con: 10, int: 10, wis: 10, cha: 10 } });
-    const cast = command(after, abilityCmd('burning_hands', { point: { col: 1, row: 2 } }));
+    const cast = command(after, abilityCmd('burning_hands', { point: { col: 4, row: 2 } }));
     const impact = cuesOf(cast).find(cue => cue.kind === 'impact');
     const save = cast.log.find(event => event.kind === 'ability-save');
     const report = cast.log.findLast(event => event.kind === 'damage');

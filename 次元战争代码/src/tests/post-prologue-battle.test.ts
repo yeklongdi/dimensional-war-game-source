@@ -15,7 +15,7 @@ function duel(classId: ClassId, dice: number[], hp?: number, fighter?: FighterBu
     hp: hp ?? (classId === 'fighter' ? 11 : classId === 'monk' ? 10 : 7) };
   const battle = openEncounter({ ...loop, hero, rng: sequence([20, 1, ...dice]),
     items: { healing_potion: 1, missile_scroll: 1, acid: 1 } }, 'boss', false, 4);
-  return patchUnit(battle, 'demo_enemy', { position: { col: 1, row: 2 } });
+  return patchUnit(battle, 'demo_enemy', { position: { col: 5, row: 2 } });
 }
 const ability = (id: AbilityCommand['ability'], target?: string): AbilityCommand =>
   ({ kind: 'ability', actor: 'hero', ability: id, target });
@@ -107,9 +107,9 @@ describe('回合内职业能力与消耗品', () => {
     const loop = startLoop(0);
     const created = openEncounter({ ...loop, hero: { ...loop.hero, hp: 2 }, rng: sequence([1, 1, 20, 1, 1, 1, 1]) }, 'first', true, 7);
     const link = getUnit(created, 'link')!;
-    const crate = { col: 3, row: 2 }, land = { col: 4, row: 2 };
-    expect(resolveMovePath(created, link, land, [{ col: 2, row: 2 }, crate, land]).reason).toBe('');
-    expect(resolveMovePath(created, link, crate, [{ col: 2, row: 2 }, crate]).reason).toContain('空地');
+    const crate = { col: 2, row: 3 }, land = { col: 2, row: 4 };
+    expect(resolveMovePath(created, link, land, [{ col: 4, row: 2 }, { col: 3, row: 2 }, crate, land]).reason).toBe('');
+    expect(resolveMovePath(created, link, crate, [{ col: 4, row: 2 }, { col: 3, row: 2 }, crate]).reason).toContain('空地');
     const healed = command(created, { kind: 'ability', actor: 'link', ability: 'divine_aid', target: 'hero' });
     expect(healed.loop?.divineAid).toBe(2);
     expect(getUnit(healed, 'hero')?.hp).toBe(10);

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "warehouse",
+    "title": "科幻仓库",
+    "cols": 14,
+    "rows": 10,
+    "width": 1344,
+    "height": 960,
+    "crop4k": {
+      "x": 1202,
+      "y": 310,
+      "w": 1540,
+      "h": 1100
+    },
+    "video": "/assets/battle/maps-v1/warehouse.webm",
+    "poster": "/assets/battle/maps-v1/warehouse.webp",
+    "videoBytes": 1079030,
+    "posterBytes": 105518
+  },
+  {
+    "id": "alley",
+    "title": "赛博朋克后巷",
+    "cols": 14,
+    "rows": 10,
+    "width": 1344,
+    "height": 960,
+    "crop4k": {
+      "x": 1644,
+      "y": 310,
+      "w": 1540,
+      "h": 1100
+    },
+    "video": "/assets/battle/maps-v1/alley.webm",
+    "poster": "/assets/battle/maps-v1/alley.webp",
+    "videoBytes": 1546055,
+    "posterBytes": 121920
+  },
+  {
+    "id": "lab",
+    "title": "物质测试实验室",
+    "cols": 14,
+    "rows": 10,
+    "width": 1344,
+    "height": 960,
+    "crop4k": {
+      "x": 1642,
+      "y": 90,
+      "w": 1540,
+      "h": 1100
+    },
+    "video": "/assets/battle/maps-v1/lab.webm",
+    "poster": "/assets/battle/maps-v1/lab.webp",
+    "videoBytes": 4310787,
+    "posterBytes": 95956
+  },
+  {
+    "id": "facility",
+    "title": "研究设施",
+    "cols": 14,
+    "rows": 10,
+    "width": 1344,
+    "height": 960,
+    "crop4k": {
+      "x": 1198,
+      "y": 640,
+      "w": 1540,
+      "h": 1100
+    },
+    "video": "/assets/battle/maps-v1/facility.webm",
+    "poster": "/assets/battle/maps-v1/facility.webp",
+    "videoBytes": 3077693,
+    "posterBytes": 213092
+  }
+]

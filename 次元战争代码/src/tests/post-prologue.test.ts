@@ -93,12 +93,11 @@ describe('序幕后日程与副本', () => {
     const alternate = openEncounter(h.state.postPrologue!, 'first', false, 7);
     const enemy = getUnit(h.state.battle!, 'demo_enemy')!;
     expect(enemy.maxHp).toBe(getUnit(alternate, 'demo_enemy')!.maxHp);
-    expect(getUnit(h.state.battle!, 'link')).toMatchObject({ hp: 297, ac: 21, initiativeBonus: 20, position: { col: 1, row: 2 } });
+    expect(getUnit(h.state.battle!, 'link')).toMatchObject({ hp: 297, ac: 21, initiativeBonus: 20, position: { col: 5, row: 2 } });
     const command = { kind: 'ability', actor: 'link', ability: 'slaying_bow', target: 'demo_enemy' } as const;
-    // 从首战出生格侧移避开挡住射线的箱子。
     const play = async (command: import('../game/battle/types.js').Command, origin: 'player' | 'system' = 'player') =>
       h.action({ type: 'play', run: h.state.run, action: { type: 'command', envelope: { token: battleToken(h.state.battle!), origin, command } } });
-    await play({ kind: 'move', actor: 'link', to: { col: 2, row: 0 } });
+    await play({ kind: 'move', actor: 'link', to: { col: 6, row: 2 } });
     while (h.state.battle?.pendingMove) await play({ kind: 'step' }, 'system');
     await play(command);
     expect(h.state.battle?.result?.outcome).toBe('win');

@@ -21,8 +21,9 @@ const stripPresentation = (events: readonly unknown[]) => events.map(raw => {
 describe('M3正式数据与装备隔离', () => {
   it('三个定义按id查找，调试场保持原图与原配置', () => {
     expect(debugBattle).toEqual({ id: 'battle_debug_core', title: 'M2 · 战棋核心调试场', map: ['.......', '..X....', 'H...X..', '.....E.', '......E'], spawnOrder: ['hero', 'black_a', 'black_b'] });
-    expect(getBattleDefinition('battle_prologue_tutorial').id).toBe('battle_prologue_tutorial');
-    expect(getBattleDefinition('battle_black_humanoid').map[3]).toBe('...B...');
+    expect(getBattleDefinition('battle_prologue_tutorial').mapAsset).toBe('warehouse');
+    expect(getBattleDefinition('battle_black_humanoid').mapAsset).toBe('alley');
+    expect(getBattleDefinition('battle_black_humanoid').map[3]).toBe('....X..B..####');
     expect(() => getBattleDefinition('missing')).toThrow();
   });
   it('男高、甲乙的批准值不变，第一幕武器是独立装配副本', () => {
@@ -52,8 +53,8 @@ describe('M3正式数据与装备隔离', () => {
   it('第一幕开场前临时HP=5、原最大HP10；首个行动前只授予一次', () => {
     const definition = getBattleDefinition('battle_black_humanoid');
     const initial = createBattle(definition, assembleCombatants(definition), seeded(42));
-    expect(getUnit(initial, 'hero')).toMatchObject({ hp: 10, maxHp: 10, tempHp: 5, position: { col: 0, row: 2 } });
-    expect(getUnit(initial, 'black_humanoid')!.position).toEqual({ col: 3, row: 3 });
+    expect(getUnit(initial, 'hero')).toMatchObject({ hp: 10, maxHp: 10, tempHp: 5, position: { col: 2, row: 2 } });
+    expect(getUnit(initial, 'black_humanoid')!.position).toEqual({ col: 7, row: 3 });
     expect(initial.log[0]).toMatchObject({ kind: 'temp-hp', amount: 5 });
     expect(reduceBattle(initial, { token: battleToken(initial), origin: 'player', command: { kind: 'move', actor: 'hero', to: { col: 1, row: 2 } } }).state).toBe(initial);
     const ready = command(initial, { kind: 'finish-opening' }, 'system');

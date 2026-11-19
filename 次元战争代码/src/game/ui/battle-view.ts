@@ -1,6 +1,7 @@
 import type { GameState } from '../state.js';
 import type { BattleAction } from '../battle/actions.js';
-import type { BattleState, Command } from '../battle/types.js';
+import { battleMapMedia } from '../battle/map-assets.js';
+import type { BattleMapId, BattleState, Command, Point } from '../battle/types.js';
 import { actionReason, playerAttack } from '../battle/battle.js';
 import { renderBoard } from '../battle/render.js';
 import { battleToken, currentUnit } from '../battle/state-helpers.js';
@@ -22,12 +23,24 @@ import type { ChessAssetUrls } from '../battle/chess-assets.js';
 
 export type BattleViewOptions = { chess?: boolean; title?: string; assets?: ChessAssetUrls; onPresentationIdle?: () => void };
 
+const VIEW_W = 672;
+const VIEW_H = 480;
+const OVERLAY_TOP_PAD = 84;
 const statusLabels = { active: '可行动', unconscious: '昏迷·倒地·失能', stable: '稳定·失去战斗能力', dead: '死亡', defeated: '被击败' };
+
 export class BattleView {
   readonly stage = element('main', 'stage battle-stage');
+  private readonly root: HTMLElement;
   private readonly heading = element('header', 'battle-header');
   private readonly roster = element('aside', 'battle-roster');
   private readonly board = element('div', 'battle-board');
+  private readonly viewport = element('div', 'battle-viewport');
+  private readonly world = element('div', 'battle-world');
+  private readonly mapPoster = element('img', 'battle-map-poster');
+  private readonly mapVideo = element('video', 'battle-map-video');
+  private readonly overlayViewport = element('div', 'battle-overlay-viewport');
+  private readonly overlayWorld = element('div', 'battle-overlay-world');
+  private readonly cameraBar = element('div', 'battle-camera-bar');
   private readonly canvas = element('canvas');
   private readonly fxLayer = element('canvas', 'battle-fx');
   private readonly hitGrid = element('div', 'battle-hit-grid');
@@ -53,6 +66,16 @@ export class BattleView {
   private openingKey = '';
   private logSession = -1;
   private logCount = 0;
+  private cameraSession = Number.NaN;
+  private cameraTurnId = '';
+  private activeMapAsset?: BattleMapId;
+  private gridKey = '';
+  private boardW = VIEW_W;
+  private boardH = VIEW_H;
+  private panX = 0;
+  private panY = 0;
+  private drag?: { id: number; startX: number; startY: number; startPanX: number; startPanY: number; moved: boolean };
+  private suppressBoardClickUntil = 0;
   private paintGame?: GameState;
   private paintOverlay?: MovementOverlay;
   private lastFixture = false;
@@ -61,6 +84,7 @@ export class BattleView {
   private readonly load?: () => void;
 
   constructor(root: HTMLElement, dispatch: (action: BattleAction) => void, load?: () => void, sfx?: (id: string) => void, options: BattleViewOptions = {}) {
+    this.root = root;
     this.options = options;
     this.dispatch = action => {
       if (this.isPerforming && action.type !== 'restart') { this.showHint('请等当前演出结束，可使用右上方按钮加速'); return; }
@@ -70,25 +94,43 @@ export class BattleView {
     this.controls = new BattleControls((choices, selected) => this.renderAbilityTargets(choices, selected));
     this.movement = new MovementControls(this.dispatch);
     this.stage.id = 'stage'; this.stage.dataset.testid = 'battle-stage'; this.stage.setAttribute('aria-label', '战棋调试场');
-    this.canvas.setAttribute('aria-label', '7×5 战棋棋盘'); this.canvas.style.width = '672px'; this.canvas.style.height = '480px';
+    this.canvas.setAttribute('aria-label', '7×5 战棋棋盘'); this.canvas.style.width = `${VIEW_W}px`; this.canvas.style.height = `${VIEW_H}px`;
     this.board.dataset.testid = 'battle-board';
     this.tutorial.dataset.testid = 'battle-tutorial'; this.tutorial.hidden = true;
     this.opening.dataset.testid = 'sword-opening'; this.opening.hidden = true;
-    for (let row = 0; row < 5; row++) for (let col = 0; col < 7; col++) {
-      const hit = element('button', 'battle-cell'); hit.type = 'button'; hit.dataset.testid = `cell-${col}-${row}`;
-      hit.dataset.col = String(col); hit.dataset.row = String(row); this.hitGrid.append(hit);
-    }
-    this.board.append(this.canvas, this.hitGrid, this.fxLayer, this.opening);
-    this.fxLayer.width = 672; this.fxLayer.height = 480; this.fxLayer.setAttribute('aria-hidden', 'true');
+
+    this.mapPoster.hidden = true; this.mapPoster.alt = ''; this.mapPoster.decoding = 'async';
+    this.mapVideo.hidden = true; this.mapVideo.muted = true; this.mapVideo.loop = true; this.mapVideo.autoplay = true; this.mapVideo.playsInline = true;
+    this.world.append(this.mapPoster, this.mapVideo, this.canvas, this.hitGrid);
+    this.viewport.append(this.world);
+    this.overlayViewport.append(this.overlayWorld);
+
+    const recenter = button('居中', 'camera-recenter', () => this.recenterCamera());
+    recenter.setAttribute('aria-label', '将视角重新居中到当前行动单位');
+    this.cameraBar.append(element('span', 'battle-camera-tip', '拖动地图查看四周'), recenter);
+    this.cameraBar.hidden = true;
+
+    this.fxLayer.width = VIEW_W; this.fxLayer.height = VIEW_H;
+    this.fxLayer.dataset.logicalWidth = String(VIEW_W);
+    this.fxLayer.setAttribute('aria-hidden', 'true');
     if (options.chess) {
       this.stage.dataset.chess = 'true';
-      this.choreography = new BattleChoreography(this.stage, this.board, this.fxLayer, this.canvas, sfx ?? (() => {}), () => this.paintBoard(), () => {
+      this.overlayWorld.append(this.fxLayer);
+      this.choreography = new BattleChoreography(this.stage, this.overlayWorld, this.fxLayer, this.canvas, sfx ?? (() => {}), () => this.paintBoard(), () => {
         this.renderedBattle = undefined;
         if (this.paintGame) this.render(this.paintGame, this.lastFixture, this.lastFixtureDone);
         options.onPresentationIdle?.();
       }, options.assets);
       this.fx = this.choreography.fx;
-    } else this.fx = new BattleFx(this.fxLayer, this.canvas, sfx ?? (() => {}), () => this.paintBoard());
+    } else {
+      this.world.append(this.fxLayer);
+      this.fx = new BattleFx(this.fxLayer, this.canvas, sfx ?? (() => {}), () => this.paintBoard());
+    }
+
+    this.board.append(this.viewport, this.overlayViewport, this.cameraBar, this.opening);
+    this.rebuildGrid(7, 5);
+    this.bindCameraEvents();
+
     this.board.addEventListener('focusin', event => this.focusIn?.(event));
     this.board.addEventListener('focusout', event => this.focusOut?.(event));
     this.log.tabIndex = 0; this.log.dataset.testid = 'battle-log';
@@ -97,18 +139,212 @@ export class BattleView {
     this.stage.append(this.heading, this.roster, this.board, this.controls.root, this.logPanel, this.footer, this.movement.root, this.tutorial,
       this.controls.details, this.controls.tooltip, this.modal);
     root.append(this.stage);
+    this.root.ownerDocument.addEventListener('click', this.handleBlankSpaceClick);
     const resize = () => { this.stage.style.transform = `translate(-50%, -50%) scale(${Math.min(root.clientWidth / 1280, root.clientHeight / 720)})`; };
     this.resizeObserver = new ResizeObserver(resize); this.resizeObserver.observe(root); resize();
+  }
+
+  private get maxPanX() { return Math.max(0, this.boardW - VIEW_W); }
+  private get maxPanY() { return Math.max(0, this.boardH - VIEW_H); }
+
+  private rebuildGrid(cols: number, rows: number) {
+    const gridKey = `${cols}x${rows}`;
+    if (this.gridKey === gridKey) return;
+    this.gridKey = gridKey;
+    this.boardW = cols * 96;
+    this.boardH = rows * 96;
+    this.world.style.width = `${this.boardW}px`;
+    this.world.style.height = `${this.boardH}px`;
+    this.canvas.style.width = `${this.boardW}px`;
+    this.canvas.style.height = `${this.boardH}px`;
+    this.canvas.setAttribute('aria-label', `${cols}×${rows} 战棋棋盘`);
+    this.overlayWorld.style.width = `${this.boardW}px`;
+    this.overlayWorld.style.height = `${this.boardH + OVERLAY_TOP_PAD}px`;
+    if (!this.choreography) {
+      this.fxLayer.width = this.boardW;
+      this.fxLayer.height = this.boardH;
+      this.fxLayer.dataset.logicalWidth = String(this.boardW);
+      this.fxLayer.style.width = `${this.boardW}px`;
+      this.fxLayer.style.height = `${this.boardH}px`;
+    }
+    this.hitGrid.style.gridTemplateColumns = `repeat(${cols}, 96px)`;
+    this.hitGrid.style.gridTemplateRows = `repeat(${rows}, 96px)`;
+    this.hitGrid.replaceChildren();
+    for (let row = 0; row < rows; row++) for (let col = 0; col < cols; col++) {
+      const hit = element('button', 'battle-cell'); hit.type = 'button'; hit.dataset.testid = `cell-${col}-${row}`;
+      hit.dataset.col = String(col); hit.dataset.row = String(row); this.hitGrid.append(hit);
+    }
+    this.board.dataset.maxPanX = String(this.maxPanX);
+    this.board.dataset.maxPanY = String(this.maxPanY);
+    this.cameraBar.hidden = this.maxPanX === 0 && this.maxPanY === 0;
+    this.setPan(this.panX, this.panY);
+  }
+
+  private setPan(x: number, y: number) {
+    this.panX = Math.max(0, Math.min(this.maxPanX, Math.round(x)));
+    this.panY = Math.max(0, Math.min(this.maxPanY, Math.round(y)));
+    const transform = `translate3d(${-this.panX}px, ${-this.panY}px, 0)`;
+    this.world.style.transform = transform;
+    this.overlayWorld.style.transform = transform;
+    this.board.dataset.panX = String(this.panX);
+    this.board.dataset.panY = String(this.panY);
+    this.updateTutorialPosition();
+  }
+
+  private centerCameraOn(points: readonly Point[]) {
+    if (!points.length || (this.maxPanX === 0 && this.maxPanY === 0)) { this.setPan(0, 0); return; }
+    const cols = points.map(p => p.col), rows = points.map(p => p.row);
+    const centerX = ((Math.min(...cols) + Math.max(...cols)) / 2) * 96 + 48;
+    const centerY = ((Math.min(...rows) + Math.max(...rows)) / 2) * 96 + 48;
+    this.setPan(centerX - VIEW_W / 2, centerY - VIEW_H / 2);
+  }
+
+  private ensureCellVisible(point: Point, margin = 96) {
+    if (this.maxPanX === 0 && this.maxPanY === 0) return;
+    const left = point.col * 96, right = left + 96;
+    const top = point.row * 96, bottom = top + 96;
+    let nextX = this.panX, nextY = this.panY;
+    if (left - margin < nextX) nextX = left - margin;
+    else if (right + margin > nextX + VIEW_W) nextX = right + margin - VIEW_W;
+    if (top - margin < nextY) nextY = top - margin;
+    else if (bottom + margin > nextY + VIEW_H) nextY = bottom + margin - VIEW_H;
+    this.setPan(nextX, nextY);
+  }
+
+  private recenterCamera() {
+    const state = this.paintGame?.battle;
+    if (!state) return;
+    const target = state.units.find(u => u.id === this.choreography?.selectedId) ?? currentUnit(state);
+    this.centerCameraOn([target.position]);
+  }
+
+  private bindCameraEvents() {
+    this.board.addEventListener('pointerdown', event => {
+      if (event.button !== 0) return;
+      if (event.target instanceof Element && event.target.closest('.battle-camera-bar')) return;
+      if (this.maxPanX === 0 && this.maxPanY === 0) return;
+      this.drag = { id: event.pointerId, startX: event.clientX, startY: event.clientY, startPanX: this.panX, startPanY: this.panY, moved: false };
+    });
+    window.addEventListener('pointermove', this.handleWindowPointerMove);
+    window.addEventListener('pointerup', this.handleWindowPointerUp);
+    window.addEventListener('pointercancel', this.handleWindowPointerUp);
+    this.board.addEventListener('wheel', event => {
+      if (this.maxPanX === 0 && this.maxPanY === 0) return;
+      event.preventDefault();
+      const dx = event.shiftKey && !event.deltaX ? event.deltaY : event.deltaX;
+      const dy = event.shiftKey && !event.deltaX ? 0 : event.deltaY;
+      this.setPan(this.panX + dx, this.panY + dy);
+    }, { passive: false });
+  }
+
+  private handleWindowPointerMove = (event: PointerEvent) => {
+    const drag = this.drag;
+    if (!drag || event.pointerId !== drag.id) return;
+    const rect = this.board.getBoundingClientRect();
+    const scale = rect.width > 0 ? rect.width / VIEW_W : 1;
+    const dx = (event.clientX - drag.startX) / scale, dy = (event.clientY - drag.startY) / scale;
+    if (!drag.moved && Math.hypot(dx, dy) >= 6) {
+      drag.moved = true;
+      this.board.dataset.dragging = 'true';
+    }
+    if (drag.moved) this.setPan(drag.startPanX - dx, drag.startPanY - dy);
+  };
+
+  private handleWindowPointerUp = (event: PointerEvent) => {
+    const drag = this.drag;
+    if (!drag || event.pointerId !== drag.id) return;
+    if (drag.moved) {
+      this.suppressBoardClickUntil = performance.now() + 120;
+      delete this.board.dataset.dragging;
+    }
+    this.drag = undefined;
+  };
+
+  private handleBlankSpaceClick = (event: MouseEvent) => {
+    if (event.defaultPrevented || !this.stage.isConnected || this.lastFixtureDone || this.isPerforming) return;
+    if (this.paintGame?.system?.panel || this.paintGame?.system?.stale || this.paintGame?.system?.pending) return;
+    if (performance.now() < this.suppressBoardClickUntil) return;
+    const target = event.target;
+    if (!(target instanceof Element)) return;
+    if (target.closest('.battle-board, .battle-roster, .battle-actions, .movement-planning-controls, .battle-ability-panel, .battle-log-panel, .battle-modal, .battle-title, .initiative-card, .chess-playback-controls, .battle-footer, .chess-sample-scenarios, .battle-camera-bar, .system-layer, .app-chrome, button, a, input, select')) {
+      return;
+    }
+    this.clearInspection();
+    const mode = this.paintGame?.battleMode ?? 'idle';
+    const state = this.paintGame?.battle;
+    if (state && ['attack', 'bonus', 'abilities'].includes(mode) && !state.pendingMove && !state.pendingReaction && !state.pendingRoll && !state.result) {
+      this.controls.cancel();
+    }
+    if (this.choreography) this.showHint('已取消选中');
+  };
+
+  private syncMapMedia(state: BattleState) {
+    const media = state.mapAsset ? battleMapMedia[state.mapAsset] : undefined;
+    if (!media) {
+      if (this.activeMapAsset) {
+        this.activeMapAsset = undefined;
+        delete this.board.dataset.mapAsset;
+        this.mapPoster.hidden = true;
+        this.mapVideo.hidden = true;
+        this.mapVideo.pause();
+        this.mapVideo.removeAttribute('src');
+      }
+      return;
+    }
+    this.board.dataset.mapAsset = media.id;
+    this.mapPoster.hidden = false;
+    this.mapVideo.hidden = false;
+    if (this.activeMapAsset !== media.id) {
+      this.activeMapAsset = media.id;
+      this.mapPoster.src = media.poster;
+      this.mapPoster.alt = media.title;
+      this.mapVideo.poster = media.poster;
+      this.mapVideo.src = media.video;
+      this.mapVideo.play().catch(() => {});
+    }
+  }
+
+  private clickCellPoint(event: MouseEvent, state: BattleState): Point | undefined {
+    if (event.detail === 0 && event.target instanceof HTMLElement && event.target.dataset.col !== undefined) {
+      return { col: Number(event.target.dataset.col), row: Number(event.target.dataset.row) };
+    }
+    const boardRect = this.board.getBoundingClientRect();
+    if (event.clientX < boardRect.left || event.clientX > boardRect.right || event.clientY < boardRect.top || event.clientY > boardRect.bottom) {
+      return undefined;
+    }
+    return canvasCell(event.clientX, event.clientY, this.canvas.getBoundingClientRect(), state.grid);
   }
 
   showHint(text: string) { if (!this.movement.root.hidden) this.movement.showHint(text); else this.hint.textContent = text; }
   get isPerforming() { return this.choreography?.busy ?? false; }
   get presentationSpeed() { return this.choreography?.clock.speed ?? 1; }
-  dispose() { if (this.choreography) this.choreography.dispose(); else this.fx.dispose(); this.resizeObserver.disconnect(); this.stage.remove(); }
+
+  dispose() {
+    window.removeEventListener('pointermove', this.handleWindowPointerMove);
+    window.removeEventListener('pointerup', this.handleWindowPointerUp);
+    window.removeEventListener('pointercancel', this.handleWindowPointerUp);
+    this.root.ownerDocument.removeEventListener('click', this.handleBlankSpaceClick);
+    if (this.choreography) this.choreography.dispose(); else this.fx.dispose();
+    this.resizeObserver.disconnect();
+    this.stage.remove();
+  }
 
   render(game: GameState, fixture = false, fixtureDone = false) {
     this.lastFixture = fixture; this.lastFixtureDone = fixtureDone;
     const state = game.battle!; const actor = currentUnit(state), token = battleToken(state), mode = game.battleMode ?? 'idle';
+    this.rebuildGrid(state.grid.width, state.grid.height);
+    this.syncMapMedia(state);
+    const isNewSession = this.cameraSession !== state.session;
+    const actorChanged = this.cameraTurnId !== actor.id;
+    this.cameraSession = state.session;
+    this.cameraTurnId = actor.id;
+    if (isNewSession) {
+      const activeUnits = state.units.filter(occupies);
+      this.centerCameraOn((activeUnits.length ? activeUnits : state.units).map(u => u.position));
+    } else if (actorChanged) {
+      this.ensureCellVisible(actor.position);
+    }
+
     this.choreography?.sync(state);
     this.choreography?.setPaused(Boolean(game.system?.panel || game.system?.stale || game.system?.pending));
     this.renderMovement(game);
@@ -157,26 +393,30 @@ export class BattleView {
       if (this.choreography) {
         card.dataset.chessMaterial = this.choreography.material(unit);
         card.tabIndex = 0; card.setAttribute('role', 'button'); card.setAttribute('aria-label', `查看${unit.name}`);
-        card.onclick = () => this.inspect(unit.id);
-        card.onkeydown = event => { if (['Enter', ' '].includes(event.key)) { event.preventDefault(); if (!event.repeat) this.inspect(unit.id); } };
+        card.onclick = () => { this.ensureCellVisible(unit.position); this.inspect(unit.id); };
+        card.onkeydown = event => { if (['Enter', ' '].includes(event.key)) { event.preventDefault(); if (!event.repeat) { this.ensureCellVisible(unit.position); this.inspect(unit.id); } } };
       }
       return card;
     });
     this.roster.replaceChildren(resources, ...cards);
+    const cols = state.grid.width;
     for (const cell of Array.from(this.hitGrid.children)) {
       const col = Number((cell as HTMLElement).dataset.col), row = Number((cell as HTMLElement).dataset.row);
       const units = state.units.filter(unit => same(unit.position, { col, row }));
-      cell.setAttribute('aria-label', `格 ${col},${row} ${state.grid.tiles[row * 7 + col]} ${units.map(unit => `${unit.name} HP${unit.hp} ${statusLabels[unit.status]}`).join(' ')}`);
+      cell.setAttribute('aria-label', `格 ${col},${row} ${state.grid.tiles[row * cols + col]} ${units.map(unit => `${unit.name} HP${unit.hp} ${statusLabels[unit.status]}`).join(' ')}`);
     }
     this.board.onclick = event => {
-      const rect = this.board.getBoundingClientRect();
-      const targetRect = event.target instanceof HTMLElement ? event.target.getBoundingClientRect() : rect;
-      const point = canvasCell(event.detail === 0 ? targetRect.left + targetRect.width / 2 : event.clientX, event.detail === 0 ? targetRect.top + targetRect.height / 2 : event.clientY, rect, state.grid);
-      if (!point || event.detail > 1 || fixtureDone) return;
+      if (performance.now() < this.suppressBoardClickUntil || fixtureDone) return;
+      if (event.target instanceof Element && event.target.closest('.battle-camera-bar')) return;
+      const point = this.clickCellPoint(event, state);
+      if (!point || event.detail > 1) return;
       if (this.choreography && (mode === 'idle' || mode === 'skills' || this.isPerforming)) {
         const inspected = state.units.find(unit => occupies(unit) && same(unit.position, point)) ?? state.units.find(unit => same(unit.position, point));
         if (inspected) this.inspect(inspected.id);
-        else if (!this.isPerforming) this.showHint('点击棋子查看角色，或从底部选择战斗操作');
+        else if (!this.isPerforming) {
+          this.clearInspection();
+          this.showHint('已取消选中；点击棋子或左侧角色栏可重新查看');
+        }
         return;
       }
       if (mode === 'move') { const action = planningInput(game, 'add', point); if (action) this.dispatch(action); return; }
@@ -199,15 +439,17 @@ export class BattleView {
       } else this.showHint('通过底部操作栏选择攻击、移动、技能或法术');
     };
     this.board.onpointermove = event => {
-      const point = canvasCell(event.clientX, event.clientY, this.board.getBoundingClientRect(), state.grid);
+      if (this.drag?.moved) return;
+      const point = canvasCell(event.clientX, event.clientY, this.canvas.getBoundingClientRect(), state.grid);
       const action = point && planningInput(game, 'hover', point); if (action) this.dispatch(action);
     };
     const leave = () => { const action = planningInput(game, 'leave'); if (action) this.dispatch(action); };
     this.board.onpointerleave = leave;
     this.focusIn = event => {
       if (!(event.target instanceof HTMLButtonElement)) return;
-      const rect = event.target.getBoundingClientRect(), point = canvasCell(rect.left + rect.width / 2, rect.top + rect.height / 2, this.board.getBoundingClientRect(), state.grid);
-      const action = point && planningInput(game, 'hover', point); if (action) this.dispatch(action);
+      if (event.target.dataset.col === undefined) return;
+      const point = { col: Number(event.target.dataset.col), row: Number(event.target.dataset.row) };
+      const action = planningInput(game, 'hover', point); if (action) this.dispatch(action);
     };
     this.focusOut = event => { if (!(event.relatedTarget instanceof Node) || !this.board.contains(event.relatedTarget)) leave(); };
     this.stage.onkeydown = event => {
@@ -245,11 +487,12 @@ export class BattleView {
   }
 
   private inspect(id: string) { this.choreography?.inspect(id); this.updateInspection(); }
+  private clearInspection() { this.choreography?.clearInspection(); this.updateInspection(); }
 
   private updateInspection() {
     if (!this.choreography) return;
     const id = this.choreography.selectedId, unit = this.paintGame?.battle?.units.find(unit => unit.id === id);
-    for (const card of Array.from(this.roster.querySelectorAll<HTMLElement>('.unit-summary'))) card.setAttribute('aria-pressed', String(card.dataset.testid === `unit-${id}`));
+    for (const card of Array.from(this.roster.querySelectorAll<HTMLElement>('.unit-summary'))) card.setAttribute('aria-pressed', String(Boolean(id) && card.dataset.testid === `unit-${id}`));
     this.footer.querySelector('.chess-inspection-label')?.remove();
     if (unit) {
       const placeholder = this.choreography.material(unit) === 'placeholder' ? ' · 像素素材待补' : '';
@@ -286,14 +529,21 @@ export class BattleView {
     const game = this.paintGame;
     if (!game?.battle) return;
     renderBoard(this.canvas, game.battle, game.battleMode ?? 'idle', overlay ?? this.paintOverlay,
-      this.choreography ? undefined : this.fx.reactions(), this.choreography?.painter);
+      this.choreography ? undefined : this.fx.reactions(), this.choreography?.painter,
+      this.choreography ? this.choreography.selectedId : undefined);
+  }
+
+  private updateTutorialPosition() {
+    const state = this.paintGame?.battle;
+    if (!state) return;
+    const hero = state.units.find(unit => unit.team === 'player')!;
+    this.tutorial.style.left = `${Math.max(130, Math.min(900, 304 + hero.position.col * 96 + 48 - this.panX))}px`;
+    this.tutorial.style.top = `${Math.max(100, 116 + hero.position.row * 96 - 46 - this.panY)}px`;
   }
 
   private renderPresentation(game: GameState) {
     const state = game.battle!, notice = state.tutorial?.notice;
-    const hero = state.units.find(unit => unit.team === 'player')!;
-    this.tutorial.style.left = `${Math.max(130, Math.min(900, 304 + hero.position.col * 96 + 48))}px`;
-    this.tutorial.style.top = `${Math.max(100, 116 + hero.position.row * 96 - 46)}px`;
+    this.updateTutorialPosition();
     const key = `${state.session}:${notice ?? ''}`;
     if (key !== this.tutorialKey) {
       this.tutorialKey = key; this.tutorial.replaceChildren(); this.tutorial.hidden = !notice;
@@ -302,7 +552,7 @@ export class BattleView {
     this.opening.hidden = !state.opening;
     if (state.opening && this.openingKey !== String(state.session)) {
       this.openingKey = String(state.session);
-      const canvas = element('canvas', 'sword-scar'); canvas.width = 672; canvas.height = 480;
+      const canvas = element('canvas', 'sword-scar'); canvas.width = VIEW_W; canvas.height = VIEW_H;
       const ctx = canvas.getContext('2d');
       if (ctx) { ctx.strokeStyle = '#f4d993'; ctx.lineWidth = 2; ctx.shadowBlur = 18; ctx.shadowColor = '#d8b45a'; ctx.beginPath(); ctx.moveTo(275, 340); ctx.lineTo(397, 140); ctx.stroke(); }
       this.opening.replaceChildren(canvas);

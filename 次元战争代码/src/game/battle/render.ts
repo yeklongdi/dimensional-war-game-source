@@ -9,28 +9,33 @@ export type UnitReaction = { dx: number; dy: number; squash: number; flash: numb
 export type UnitPainter = (ctx: CanvasRenderingContext2D, unit: BattleState['units'][number]) => void;
 
 export function renderBoard(canvas: HTMLCanvasElement, state: BattleState, mode: BattleMode, overlay?: MovementOverlay,
-  reactions?: ReadonlyMap<string, UnitReaction>, painter?: UnitPainter) {
+  reactions?: ReadonlyMap<string, UnitReaction>, painter?: UnitPainter, selectedUnitId?: string | null) {
   const ctx = canvas.getContext('2d');
   if (!ctx) throw new Error('当前浏览器无法创建 Canvas 2D');
   const ratio = window.devicePixelRatio || 1;
-  if (canvas.width !== 672 * ratio || canvas.height !== 480 * ratio) { canvas.width = 672 * ratio; canvas.height = 480 * ratio; }
+  const cols = state.grid.width, rows = state.grid.height, boardW = cols * 96, boardH = rows * 96;
+  if (canvas.width !== boardW * ratio || canvas.height !== boardH * ratio) { canvas.width = boardW * ratio; canvas.height = boardH * ratio; }
   ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
-  ctx.clearRect(0, 0, 672, 480);
+  ctx.clearRect(0, 0, boardW, boardH);
   const actor = currentUnit(state);
+  const highlightId = selectedUnitId === undefined ? actor.id : (selectedUnitId ?? '');
   const playerReady = actor.team === 'player' && active(actor) && !state.pendingMove && !state.pendingReaction && !state.result;
   const reachable = new Set(overlay?.reachable.map(key));
-  for (let row = 0; row < 5; row++) for (let col = 0; col < 7; col++) {
-    const x = col * 96, y = row * 96, terrain = state.grid.tiles[row * 7 + col];
-    ctx.fillStyle = (row + col) % 2 ? '#182332' : '#141e2b'; ctx.fillRect(x, y, 96, 96);
+  const videoMap = Boolean(state.mapAsset);
+  for (let row = 0; row < rows; row++) for (let col = 0; col < cols; col++) {
+    const x = col * 96, y = row * 96, terrain = state.grid.tiles[row * cols + col];
+    if (!videoMap) { ctx.fillStyle = (row + col) % 2 ? '#182332' : '#141e2b'; ctx.fillRect(x, y, 96, 96); }
     if (reachable.has(key({ col, row }))) { ctx.fillStyle = '#2b79c44d'; ctx.fillRect(x + 2, y + 2, 92, 92); }
-    ctx.strokeStyle = '#405167'; ctx.lineWidth = 1; ctx.strokeRect(x + .5, y + .5, 95, 95);
-    ctx.fillStyle = '#738297'; ctx.font = '11px Consolas, monospace'; ctx.textAlign = 'left'; ctx.fillText(`${col},${row}`, x + 6, y + 14);
-    if (terrain === 'wall') {
-      ctx.fillStyle = '#5d6574'; ctx.fillRect(x + 8, y + 8, 80, 80);
-      ctx.strokeStyle = '#2b3341'; for (let i = 0; i < 3; i++) { ctx.beginPath(); ctx.moveTo(x + 8, y + 28 + i * 22); ctx.lineTo(x + 88, y + 28 + i * 22); ctx.stroke(); }
-    } else if (terrain === 'crate') {
-      ctx.fillStyle = '#695139'; ctx.fillRect(x + 16, y + 16, 64, 64); ctx.strokeStyle = '#b29766'; ctx.lineWidth = 2; ctx.strokeRect(x + 16, y + 16, 64, 64);
-      ctx.beginPath(); ctx.moveTo(x + 17, y + 17); ctx.lineTo(x + 79, y + 79); ctx.moveTo(x + 79, y + 17); ctx.lineTo(x + 17, y + 79); ctx.stroke();
+    if (!videoMap) {
+      ctx.strokeStyle = '#405167'; ctx.lineWidth = 1; ctx.strokeRect(x + .5, y + .5, 95, 95);
+      ctx.fillStyle = '#738297'; ctx.font = '11px Consolas, monospace'; ctx.textAlign = 'left'; ctx.fillText(`${col},${row}`, x + 6, y + 14);
+      if (terrain === 'wall') {
+        ctx.fillStyle = '#5d6574'; ctx.fillRect(x + 8, y + 8, 80, 80);
+        ctx.strokeStyle = '#2b3341'; for (let i = 0; i < 3; i++) { ctx.beginPath(); ctx.moveTo(x + 8, y + 28 + i * 22); ctx.lineTo(x + 88, y + 28 + i * 22); ctx.stroke(); }
+      } else if (terrain === 'crate') {
+        ctx.fillStyle = '#695139'; ctx.fillRect(x + 16, y + 16, 64, 64); ctx.strokeStyle = '#b29766'; ctx.lineWidth = 2; ctx.strokeRect(x + 16, y + 16, 64, 64);
+        ctx.beginPath(); ctx.moveTo(x + 17, y + 17); ctx.lineTo(x + 79, y + 79); ctx.moveTo(x + 79, y + 17); ctx.lineTo(x + 17, y + 79); ctx.stroke();
+      }
     }
   }
   renderMovement(ctx, state, overlay);
@@ -38,7 +43,7 @@ export function renderBoard(canvas: HTMLCanvasElement, state: BattleState, mode:
     const x = unit.position.col * 96, y = unit.position.row * 96;
     const reaction = reactions?.get(unit.id);
     ctx.globalAlpha = occupies(unit) ? 1 : .35;
-    if (actor.id === unit.id) { ctx.strokeStyle = '#d8b45a'; ctx.lineWidth = 3; ctx.strokeRect(x + 4, y + 4, 88, 88); }
+    if (highlightId && highlightId === unit.id) { ctx.strokeStyle = '#d8b45a'; ctx.lineWidth = 3; ctx.strokeRect(x + 4, y + 4, 88, 88); }
     const resource = mode === 'bonus' ? 'bonus' : 'action';
     if (playerReady && ['attack', 'bonus'].includes(mode) && playerAttack(state, actor, unit, resource)) {
       ctx.strokeStyle = '#df6464'; ctx.lineWidth = 3; ctx.strokeRect(x + 7, y + 7, 82, 82);

@@ -11,6 +11,8 @@ import { BattleFx, reducedMotion } from './battle-fx.js';
 import { button, element } from './elements.js';
 import '../../styles/battle-chess.css';
 
+const TOP_PAD = 84;
+
 export class BattleChoreography {
   readonly toolbar = element('div', 'chess-playback-controls');
   readonly people = element('canvas', 'battle-chess-people');
@@ -20,8 +22,11 @@ export class BattleChoreography {
   private readonly speed = button('演出 1×', 'chess-speed', () => this.changeSpeed());
   private readonly status = element('span', 'chess-playback-status', '素材准备中');
   private readonly stage: HTMLElement;
+  private readonly fxLayer: HTMLCanvasElement;
   private readonly repaint: () => void;
   private readonly idle: () => void;
+  private boardW = 672;
+  private boardH = 480;
   private state?: BattleState;
   private before?: BattleState;
   private selected = '';
@@ -37,14 +42,14 @@ export class BattleChoreography {
   private played: number[] = [];
   private readonly warned = new Set<string>();
 
-  constructor(stage: HTMLElement, board: HTMLElement, fxLayer: HTMLCanvasElement, base: HTMLCanvasElement,
+  constructor(stage: HTMLElement, overlayHost: HTMLElement, fxLayer: HTMLCanvasElement, base: HTMLCanvasElement,
     sfx: (id: string) => void, repaint: () => void, idle: () => void, urls?: ChessAssetUrls) {
-    this.stage = stage; this.repaint = repaint; this.idle = idle;
-    this.people.width = 672; this.people.height = 512; this.people.setAttribute('aria-hidden', 'true');
-    fxLayer.height = 512; fxLayer.style.top = '-32px'; fxLayer.style.height = '512px';
+    this.stage = stage; this.fxLayer = fxLayer; this.repaint = repaint; this.idle = idle;
+    this.people.setAttribute('aria-hidden', 'true');
+    this.resizeLayer(672, 480);
     this.fx = new BattleFx(fxLayer, base, sfx, () => {}, { now: () => this.clock.now(), anchor: (state, id) => {
       const unit = state.units.find(unit => unit.id === id);
-      return unit ? { x: unit.position.col * 96 + 48, y: unit.position.row * 96 + 10 + 32, radius: 20, name: unit.name } : undefined;
+      return unit ? { x: unit.position.col * 96 + 48, y: unit.position.row * 96 + TOP_PAD - 38, radius: 24, name: unit.name } : undefined;
     } });
     this.assets = new ChessAssets(() => {
       if (this.disposed) return;
@@ -54,8 +59,19 @@ export class BattleChoreography {
     this.stage.dataset.chessAssets = 'loading';
     this.speed.setAttribute('aria-label', '切换战斗演出速度');
     this.status.setAttribute('role', 'status'); this.toolbar.append(this.speed, this.status);
-    board.append(this.people);
+    overlayHost.append(this.people);
     document.addEventListener('visibilitychange', this.visibility);
+  }
+
+  private resizeLayer(boardW: number, boardH: number) {
+    this.boardW = boardW; this.boardH = boardH;
+    const totalH = boardH + TOP_PAD;
+    this.people.width = boardW; this.people.height = totalH;
+    this.people.style.width = `${boardW}px`; this.people.style.height = `${totalH}px`;
+    this.fxLayer.width = boardW; this.fxLayer.height = totalH;
+    this.fxLayer.dataset.logicalWidth = String(boardW);
+    this.fxLayer.style.top = '0px';
+    this.fxLayer.style.width = `${boardW}px`; this.fxLayer.style.height = `${totalH}px`;
   }
 
   get busy() { return this.lock || this.stage.dataset.chessAssets === 'loading'; }
@@ -68,6 +84,8 @@ export class BattleChoreography {
 
   sync(state: BattleState) {
     if (state === this.state) return;
+    const boardW = state.grid.width * 96, boardH = state.grid.height * 96;
+    if (boardW !== this.boardW || boardH !== this.boardH) this.resizeLayer(boardW, boardH);
     const now = this.clock.now(), prior = this.state;
     if (!prior || prior.session !== state.session) {
       this.fx.clear(); this.plan = undefined; this.before = undefined; this.played = []; this.setLocked(false);
@@ -95,6 +113,11 @@ export class BattleChoreography {
     if (!this.state?.units.some(unit => unit.id === id)) return;
     if (this.selected !== id) this.selectedAt = this.clock.now();
     this.selected = id; this.repaint(); this.paintPeople(); this.requestFrame();
+  }
+
+  clearInspection() {
+    if (!this.selected && !this.state) return;
+    this.selected = ''; this.repaint(); this.paintPeople(); this.requestFrame();
   }
 
   setPaused(paused: boolean) {
@@ -127,7 +150,7 @@ export class BattleChoreography {
     const ctx = this.people.getContext('2d'), state = this.state;
     if (!ctx || !state || this.disposed) return;
     const now = this.fx.poseTime(this.clock.now()), elapsed = now - this.started;
-    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, 672, 512); ctx.translate(0, 32);
+    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, this.boardW, this.boardH + TOP_PAD); ctx.translate(0, TOP_PAD);
     const visible = state.units.filter(unit => unit.id === this.selected || Boolean(this.plan?.participants.includes(unit.id)));
     const poses: Record<string, { pose: ChessPose; frame: number }> = {};
     const reactions = this.fx.reactions(now);

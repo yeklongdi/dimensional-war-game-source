@@ -38,7 +38,7 @@ describe('战斗操作栏分类与目标选择', () => {
     const state = caster(), original = structuredClone(state);
     const choices = abilityChoices(state, 'magic_missile');
     expect(choices.map(choice => choice.command.target)).toEqual(['demo_enemy']);
-    expect(choiceAt(choices, { col: 5, row: 2 })?.command.target).toBe('demo_enemy');
+    expect(choiceAt(choices, { col: 9, row: 2 })?.command.target).toBe('demo_enemy');
     expect(choiceAt(choices, { col: 0, row: 2 })).toBeUndefined();
     expect(abilityChoices(state, 'shocking_grasp')).toEqual([]);
     expect(abilityChoices(state, 'healing_potion').map(choice => choice.command.target)).toEqual(['hero']);
@@ -49,7 +49,7 @@ describe('战斗操作栏分类与目标选择', () => {
     const state = caster('sorcerer'), choices = abilityChoices(state, 'acid_splash');
     expect(choices.length).toBeGreaterThan(0);
     expect(choices.every(choice => actionReason(state, choice.command, 'player') === '')).toBe(true);
-    expect(choices.some(choice => choice.command.point?.col === 5 && choice.command.point.row === 2)).toBe(true);
+    expect(choices.some(choice => choice.command.point?.col === 9 && choice.command.point.row === 2)).toBe(true);
     expect(abilityEntries(state).find(entry => entry.id === 'acid_splash')?.description).toContain('会波及友方');
   });
 

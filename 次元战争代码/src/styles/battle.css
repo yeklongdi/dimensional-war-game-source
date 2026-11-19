@@ -15,14 +15,26 @@
 .initiative-card span { font-size: 13px; color: #b0bccb; }
 .initiative-card.current { border-color: #d8b45a; background: #38332a; box-shadow: inset 0 0 0 1px #d8b45a40; }
 .battle-header > .action-button { width: 128px; min-height: 42px; justify-content: center; font-size: 16px; }
-.battle-board { position: absolute; left: 304px; top: 116px; width: 672px; height: 480px; box-shadow: 0 12px 40px #0005; }
+.battle-board { position: absolute; left: 304px; top: 116px; width: 672px; height: 480px; box-shadow: 0 12px 40px #0005; user-select: none; }
+.battle-board[data-max-pan-x]:not([data-max-pan-x="0"]) .battle-cell,
+.battle-board[data-max-pan-y]:not([data-max-pan-y="0"]) .battle-cell { cursor: grab; }
+.battle-board[data-dragging="true"],
+.battle-board[data-dragging="true"] .battle-cell { cursor: grabbing !important; }
+.battle-viewport { position: absolute; inset: 0; overflow: hidden; background: #0f1620; }
+.battle-world { position: relative; will-change: transform; }
+.battle-map-poster, .battle-map-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; z-index: 0; }
 .battle-board canvas { display: block; }
-.battle-fx { position: absolute; inset: 0; width: 672px; height: 480px; pointer-events: none; z-index: 3; }
-.battle-board > canvas:first-child { transition: transform 60ms linear; }
-.battle-hit-grid { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(7, 1fr); grid-template-rows: repeat(5, 1fr); }
+.battle-world > canvas:not(.battle-fx) { position: relative; z-index: 1; transition: transform 60ms linear; }
+.battle-overlay-viewport { position: absolute; left: 0; top: -84px; width: 672px; height: 576px; overflow: hidden; pointer-events: none; z-index: 2; }
+.battle-overlay-world { position: relative; will-change: transform; }
+.battle-fx { position: absolute; left: 0; top: 0; pointer-events: none; z-index: 3; }
+.battle-hit-grid { position: absolute; inset: 0; display: grid; z-index: 2; }
 .battle-cell { background: transparent; border: 0; padding: 0; border-radius: 0; color: transparent; cursor: pointer; }
 .battle-cell:hover { background: #ffffff0b; }
 .battle-cell:focus-visible { outline: 2px solid #c4dfff; outline-offset: -4px; }
+.battle-camera-bar { position: absolute; right: 8px; bottom: 8px; z-index: 7; display: flex; align-items: center; gap: 6px; padding: 3px 6px 3px 10px; border-radius: 999px; background: #0b111ab8; border: 1px solid #405167b8; backdrop-filter: blur(4px); }
+.battle-camera-tip { font-size: 11px; color: #b7c6d9; pointer-events: none; }
+.battle-camera-bar .action-button { width: auto; min-height: 22px; height: 22px; padding: 0 8px; font-size: 11px; justify-content: center; border-radius: 999px; }
 .battle-roster { position: absolute; left: 16px; top: 116px; width: 272px; }
 .turn-resources { background: #161a23e8; border: 1px solid #d8b45a60; border-radius: 10px; padding: 16px; margin-bottom: 18px; }
 .turn-resources h2 { font-size: 20px; color: #d8b45a; font-weight: 500; margin: 0 0 8px; }
